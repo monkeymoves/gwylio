@@ -8,6 +8,8 @@ edges of the domain:
 - ``CanonicalUrl``: the identity of a web resource used for deduplication.
 - ``IsoDate``: a calendar date parsed strictly from ``YYYY-MM-DD``.
 - ``KebabId``: a lowercase kebab-case identifier of at most 80 characters.
+- ``RunId``: a scan run identifier, the UTC minute the run started plus four
+  hex characters.
 """
 
 from __future__ import annotations
@@ -18,7 +20,16 @@ from datetime import date, datetime
 from typing import Any, ClassVar, Final, NoReturn
 from urllib.parse import urlsplit
 
-__all__ = ["KEBAB_MAX_LENGTH", "KEBAB_PATTERN", "CanonicalUrl", "CleanText", "IsoDate", "KebabId"]
+__all__ = [
+    "KEBAB_MAX_LENGTH",
+    "KEBAB_PATTERN",
+    "RUN_ID_PATTERN",
+    "CanonicalUrl",
+    "CleanText",
+    "IsoDate",
+    "KebabId",
+    "RunId",
+]
 
 _FORBIDDEN_DASHES: Final[dict[int, str]] = {
     0x2013: "EN DASH",
@@ -54,8 +65,32 @@ class CleanText(str):
         normalised = "\n".join(line.rstrip() for line in text.replace("\r\n", "\n").split("\n"))
         return super().__new__(cls, normalised)
 
+    @classmethod
+    def scrub(cls, text: str) -> CleanText:
+        """Clean external text (a web page title, a feed snippet) that may carry dashes.
+
+        Collectors call this on text they did not write, so a dash in a
+        publisher's headline never aborts a scan. A dash between two digits
+        becomes ``" to "`` (``2024`` dash ``25`` reads ``2024 to 25``), a dash
+        with space on both sides becomes ``", "``, and any other dash becomes a
+        hyphen. Whitespace around the result is trimmed. Text written by Gwylio
+        itself goes through the constructor, which refuses dashes outright.
+        """
+        if not isinstance(text, str):
+            raise TypeError(f"CleanText needs a str, got {type(text).__name__}")
+        text = _DASH_RANGE_RE.sub(" to ", text)
+        text = _DASH_SPACED_RE.sub(", ", text)
+        text = _DASH_ANY_RE.sub("-", text)
+        return cls(text.strip())
+
     def __repr__(self) -> str:
         return f"CleanText({str.__repr__(self)})"
+
+
+_DASH_CLASS: Final[str] = "[" + "".join(chr(code) for code in _FORBIDDEN_DASHES) + "]"
+_DASH_RANGE_RE: Final[re.Pattern[str]] = re.compile(rf"(?<=\d)\s*{_DASH_CLASS}\s*(?=\d)")
+_DASH_SPACED_RE: Final[re.Pattern[str]] = re.compile(rf"\s+{_DASH_CLASS}+\s+")
+_DASH_ANY_RE: Final[re.Pattern[str]] = re.compile(_DASH_CLASS)
 
 
 _TRACKING_EXACT: Final[frozenset[str]] = frozenset({"fbclid", "gclid", "mc_cid", "mc_eid"})
@@ -284,3 +319,32 @@ class KebabId(str):
 
     def __repr__(self) -> str:
         return f"KebabId({str.__repr__(self)})"
+
+
+RUN_ID_PATTERN: Final[str] = r"^[0-9]{8}T[0-9]{4}Z-[0-9a-f]{4}$"
+"""A scan run id as an anchored regular expression, for JSON Schema ``pattern``."""
+_RUN_ID_RE: Final[re.Pattern[str]] = re.compile(RUN_ID_PATTERN[1:-1])
+
+
+class RunId(str):
+    """A scan run identifier such as ``20261006T0215Z-3f9a``.
+
+    The UTC minute the run started (``YYYYMMDDTHHMMZ``), a hyphen and four
+    lower-case hex characters. Run ids sort by start time. Raises
+    ``ValueError`` on anything else.
+    """
+
+    __slots__ = ()
+
+    def __new__(cls, value: str) -> RunId:
+        if not isinstance(value, str):
+            raise TypeError(f"RunId needs a str, got {type(value).__name__}")
+        if not _RUN_ID_RE.fullmatch(value):
+            raise ValueError(
+                f"not a run id: {value!r}; expected the UTC minute and four hex characters, "
+                "such as '20261006T0215Z-3f9a'"
+            )
+        return super().__new__(cls, value)
+
+    def __repr__(self) -> str:
+        return f"RunId({str.__repr__(self)})"

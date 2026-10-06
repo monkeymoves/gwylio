@@ -14,7 +14,9 @@ import typer
 from typer.main import get_command
 
 from gwylio.cli.check import run_check
+from gwylio.cli.collect import run_collect, run_probe
 from gwylio.cli.schema import run_schema
+from gwylio.collection.model import Discipline
 from gwylio.infrastructure.config.paths import find_project_root
 
 app = typer.Typer(
@@ -84,6 +86,52 @@ def schema_command(
 ) -> None:
     """Generate JSON Schema, TypeScript types, the glossary and the skill reference."""
     raise typer.Exit(code=run_schema(_root(root), cli_verbs(), check_only=check))
+
+
+@app.command("collect")
+def collect_command(
+    root: RootOption = None,
+    dry_run: Annotated[
+        bool,
+        typer.Option("--dry-run", help="Use fake collectors and in-memory storage; keep nothing."),
+    ] = False,
+    out: Annotated[
+        Path | None,
+        typer.Option(
+            "--out",
+            help="Write the candidates file here (default: standard output).",
+            dir_okay=False,
+        ),
+    ] = None,
+    discipline: Annotated[
+        list[Discipline] | None,
+        typer.Option(
+            "--discipline",
+            help="Run only this discipline; repeat for more. Default: web, site and feed, "
+            "plus academic when GWYLIO_ACADEMIC=1.",
+        ),
+    ] = None,
+) -> None:
+    """Run the instrument once and write a candidates file, printing the funnel."""
+    raise typer.Exit(
+        code=run_collect(_root(root), dry_run=dry_run, out=out, disciplines=discipline or ())
+    )
+
+
+@app.command("probe")
+def probe_command(
+    text: Annotated[str, typer.Argument(help="The query text to try.")],
+    discipline: Annotated[
+        Discipline, typer.Option("--discipline", help="The discipline to probe with.")
+    ] = Discipline.OSINT_WEB,
+    source: Annotated[
+        list[str] | None,
+        typer.Option("--source", help="A source id for an osint_site probe; repeat for more."),
+    ] = None,
+    root: RootOption = None,
+) -> None:
+    """Try one query text and print its hits, storing nothing."""
+    raise typer.Exit(code=run_probe(_root(root), text, discipline, source or ()))
 
 
 if __name__ == "__main__":  # pragma: no cover

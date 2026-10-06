@@ -1,0 +1,6 @@
+{
+  "notes": "Rules for the gates every raw hit passes before deduplication. Hits on Natural Resources Wales (NRW) own domains are dropped, because the register tracks external signals only. A hit from an untrusted or unknown source survives the relevance gate only if its title, snippet or URL carries a relevance token as a whole word or phrase. The tokens are the words below plus the English and Welsh names of every place of the listed kinds in config/reference/places.json; a river drops its River or Afon prefix, so River Dee gives dee.",
+  "own_domains": ["naturalresources.wales", "cyfoethnaturiol.cymru", "naturalresourceswales.gov.uk", "cyfoethnaturiolcymru.gov.uk"],
+  "relevance_tokens": ["wales", "welsh", "cymru", "cymraeg", "senedd"],
+  "relevance_place_kinds": ["nation", "region", "river_basin"]
+}

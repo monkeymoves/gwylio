@@ -164,6 +164,10 @@ def test_invalid_json_and_missing_file_are_reported_together(project_copy: Path)
     assert report.notes == (
         "reference cross-checks skipped until the problems above are fixed",
         f"{SET_FILE}: taxonomy cross-checks skipped until the taxonomy loads",
+        "config/sources.json: cross-checks skipped until the catalogues load",
+        "config/gating.json: place tokens skipped until the catalogues load",
+        "config/instrument.json: cross-checks skipped until the catalogues, requirement sets "
+        "and sources load",
     )
 
 
@@ -184,3 +188,84 @@ def test_load_config_raises_with_every_problem(project_copy: Path) -> None:
         "requirements[0].scanability",
         "requirements[1].scanability",
     ]
+
+
+# Sources, gating rules and the instrument.
+
+SOURCES = "config/sources.json"
+INSTRUMENT = "config/instrument.json"
+GATING = "config/gating.json"
+
+
+def test_a_stale_instrument_hash_names_the_expected_hash(project_copy: Path) -> None:
+    edit(project_copy, INSTRUMENT, lambda d: d["queries"][0].update(text="a new query Wales"))
+    [message] = problems(project_copy)
+    assert message.startswith(f"{INSTRUMENT}: content_hash: content_hash is sha256:")
+    assert "bump the version and store the new hash" in message
+
+
+def test_an_unknown_site_source_is_reported(project_copy: Path) -> None:
+    def change(data: Any) -> None:
+        site = next(q for q in data["queries"] if q["discipline"] == "osint_site")
+        site["site_source_ids"].append("nobody")
+
+    edit(project_copy, INSTRUMENT, change)
+    found = problems(project_copy)
+    assert any("names unknown source 'nobody'" in p for p in found)
+
+
+def test_unknown_lane_and_actor_on_a_source(project_copy: Path) -> None:
+    def change(data: Any) -> None:
+        data["sources"][0]["lane"] = "cardiff-bay"
+        data["sources"][1]["actor"] = "nobody"
+
+    edit(project_copy, SOURCES, change)
+    found = problems(project_copy)
+    assert (
+        f"{SOURCES}: sources[0].lane: source 'welsh-government' names unknown lane 'cardiff-bay'"
+        in found
+    )
+    assert any(p.startswith(f"{SOURCES}: sources[1].actor: ") for p in found)
+
+
+def test_a_source_on_an_own_domain_is_refused(project_copy: Path) -> None:
+    edit(project_copy, SOURCES, lambda d: d["sources"][0].update(domain="naturalresources.wales"))
+    assert (
+        f"{SOURCES}: sources[0].domain: source 'welsh-government' is on an own domain"
+        in (problems(project_copy)[0])
+    )
+
+
+def test_a_feed_source_without_a_feed(project_copy: Path) -> None:
+    def change(data: Any) -> None:
+        feed = next(s for s in data["sources"] if s["discipline"] == "osint_feed")
+        del feed["feed_url"]
+
+    edit(project_copy, SOURCES, change)
+    [message] = problems(project_copy)
+    assert message.startswith(f"{SOURCES}: sources[6]: ")
+    assert "needs a feed_url" in message
+
+
+def test_a_bad_reliability_letter(project_copy: Path) -> None:
+    edit(project_copy, SOURCES, lambda d: d["sources"][0].update(reliability="G"))
+    [message] = problems(project_copy)
+    assert message.startswith(f"{SOURCES}: sources[0].reliability: Input should be")
+
+
+def test_a_dash_in_a_query_and_a_bad_gating_token(project_copy: Path) -> None:
+    edit(project_copy, INSTRUMENT, lambda d: d["queries"][0].update(text="2024" + EN_DASH + "25"))
+    edit(project_copy, GATING, lambda d: d["relevance_tokens"].append("Wales"))
+    found = problems(project_copy)
+    assert any(p.startswith(f"{INSTRUMENT}: queries[0].text: ") and "U+2013" in p for p in found)
+    assert (
+        f"{GATING}: relevance_tokens[5]: token 'Wales' must be lower-case words separated by "
+        "one space" in found
+    )
+
+
+def test_an_invalid_requirement_set_skips_the_instrument_cross_checks(project_copy: Path) -> None:
+    edit(project_copy, SET_FILE, lambda d: d["requirements"][0].update(scanability="perfect"))
+    report = check_config(project_copy)
+    assert [p.file for p in report.problems] == [SET_FILE]
+    assert report.notes[-1].startswith(f"{INSTRUMENT}: cross-checks skipped")

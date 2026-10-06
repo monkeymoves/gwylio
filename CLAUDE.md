@@ -18,10 +18,20 @@ make ci        # check, then test, then the static frontend build
 make e2e       # build the site, serve it with vite preview, run Playwright, write screenshots
 make schema    # regenerate JSON Schema, TypeScript types, GLOSSARY.md and skill/REFERENCE.md
 uv run --directory backend gwylio check     # validate every file under config/
+uv run --directory backend gwylio collect --dry-run --out /tmp/c.json   # fake collectors, prints the funnel
+uv run --directory backend gwylio probe "drought" --discipline osint_web  # try a query, stores nothing
 ```
 
 `seed`, `dev`, `collect`, `ingest` and `publish` are stubs until their work
-packages land; each prints which one.
+packages land; each prints which one. `gwylio collect` without `--dry-run`
+exits 2 until the real collectors arrive (WP4). A scan runs osint_web,
+osint_site and osint_feed by default; set `GWYLIO_ACADEMIC=1` or pass
+`--discipline osint_academic` to add the academic indexes.
+
+The query instrument (`config/instrument.json`) carries a content hash. After
+changing a query, run `gwylio check`: it prints the hash the content now has.
+Bump the version and store that hash; runs are comparable only while the
+instrument holds still.
 
 ## Rules that are enforced, not just written down
 

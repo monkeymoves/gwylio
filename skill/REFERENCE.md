@@ -9,6 +9,8 @@ Every closed value and identifier the analyst skill may write into a submission,
 | Verb | What it does |
 |---|---|
 | `gwylio check` | Validate every configuration file and print a summary per file. |
+| `gwylio collect` | Run the instrument once and write a candidates file, printing the funnel. |
+| `gwylio probe` | Try one query text and print its hits, storing nothing. |
 | `gwylio schema` | Generate JSON Schema, TypeScript types, the glossary and the skill reference. |
 | `gwylio version` | Print the package version. |
 
@@ -33,6 +35,42 @@ Computed, never written by hand. A blind spot is never rendered as quiet.
 | `thin` | One or two active reports. |
 | `quiet` | No active reports, and public sources could see movement if there were any. |
 | `blind_spot` | No active reports, and public sources cannot see this requirement: absence is not evidence, so never call it quiet. |
+
+## Disciplines
+
+The kind of collection that found a hit. Reserved disciplines have no collector yet.
+
+| Value | Meaning |
+|---|---|
+| `osint_web` | Open web search with a query text. |
+| `osint_feed` | Items read from the feeds of watched sources, matched to a query. |
+| `osint_site` | Web search restricted to the domains of named watched sources. |
+| `osint_academic` | Scholarly indexes searched with a query text. |
+| `geoint` | Reserved: geospatial intelligence, not collected in version 1. |
+| `sensor` | Reserved: sensor and monitoring data, not collected in version 1. |
+
+## Reliability
+
+The Admiralty reliability of a source. It comes from the source, never from a submission; the analyst judges credibility (1 to 6) per report.
+
+| Letter | Meaning |
+|---|---|
+| `A` | completely reliable |
+| `B` | usually reliable |
+| `C` | fairly reliable |
+| `D` | not usually reliable |
+| `E` | unreliable |
+| `F` | cannot be judged |
+
+## Candidate status
+
+What the collector knew about a candidate's canonical URL. Computed at collection.
+
+| Value | Meaning |
+|---|---|
+| `new` | No earlier run recorded the URL and it matches no report. |
+| `seen_before` | An earlier run recorded the URL; it matches no report. |
+| `reinforcement` | The URL, or failing that the exact title, matches a report. |
 
 ## Lenses and lanes
 
@@ -222,3 +260,68 @@ Version 2024-25 draft, transcription 1. Source: Impacts and SIs Doc-Master ENGLI
 | `bto` | British Trust for Ornithology (BTO) | `research` | `ecological-surveillance` |
 | `unep` | United Nations Environment Programme (UNEP) | `international` | `international` |
 | `eea` | European Environment Agency (EEA) | `international` | `international` |
+| `uk-government` | UK Government (GOV.UK) | `government` | `uk-government-and-regulators` |
+| `the-national-archives` | The National Archives (publisher of legislation.gov.uk) | `government` | `uk-government-and-regulators` |
+| `ons` | Office for National Statistics (ONS) | `public_body` | `uk-government-and-regulators` |
+| `public-health-wales` | Public Health Wales | `public_body` | `partnership-and-civil-society` |
+| `wlga` | Welsh Local Government Association (WLGA) | `other` | `partnership-and-civil-society` |
+| `keep-wales-tidy` | Keep Wales Tidy | `ngo` | `partnership-and-civil-society` |
+| `wildlife-trusts-wales` | Wildlife Trusts Wales | `ngo` | `partnership-and-civil-society` |
+| `national-trust` | National Trust | `ngo` | `partnership-and-civil-society` |
+| `woodland-trust` | Woodland Trust | `ngo` | `partnership-and-civil-society` |
+| `bevan-foundation` | Bevan Foundation | `research` | `research-evidence` |
+| `institute-of-welsh-affairs` | Institute of Welsh Affairs (IWA) | `research` | `research-evidence` |
+| `green-alliance` | Green Alliance | `research` | `research-evidence` |
+| `openalex` | OpenAlex (open scholarly index) | `research` | `research-evidence` |
+| `crossref` | Crossref (scholarly metadata registry) | `other` | `research-evidence` |
+| `leigh-day` | Leigh Day (law firm) | `business` | `legal-and-campaign` |
+| `surfers-against-sewage` | Surfers Against Sewage | `ngo` | `legal-and-campaign` |
+| `convention-on-biological-diversity` | Convention on Biological Diversity (CBD) Secretariat | `international` | `international` |
+
+### Sources
+
+| Id | Name | Lane | Discipline | Reliability | Trusted | Status |
+|---|---|---|---|---|---|---|
+| `welsh-government` | Welsh Government | `welsh-government` | `osint_site` | `B` | yes | `active` |
+| `senedd-cymru` | Senedd Cymru | `senedd` | `osint_site` | `B` | yes | `active` |
+| `senedd-research` | Senedd Research | `senedd` | `osint_site` | `B` | yes | `active` |
+| `statswales` | StatsWales | `welsh-government` | `osint_site` | `A` | yes | `active` |
+| `uk-legislation` | UK legislation | `uk-government-and-regulators` | `osint_site` | `A` | yes | `active` |
+| `uk-government` | UK Government | `uk-government-and-regulators` | `osint_site` | `B` | yes | `active` |
+| `climate-change-committee` | Climate Change Committee | `uk-government-and-regulators` | `osint_feed` | `B` | yes | `active` |
+| `jncc` | Joint Nature Conservation Committee (JNCC) | `uk-government-and-regulators` | `osint_site` | `B` | yes | `active` |
+| `ons` | Office for National Statistics (ONS) | `uk-government-and-regulators` | `osint_site` | `A` | yes | `active` |
+| `audit-wales` | Audit Wales | `governance-capacity` | `osint_feed` | `B` | yes | `active` |
+| `future-generations-commissioner` | Future Generations Commissioner | `governance-capacity` | `osint_site` | `B` | yes | `active` |
+| `public-health-wales` | Public Health Wales | `partnership-and-civil-society` | `osint_site` | `B` | yes | `active` |
+| `wlga` | Welsh Local Government Association (WLGA) | `partnership-and-civil-society` | `osint_site` | `C` | yes | `active` |
+| `ukri` | UK Research and Innovation (UKRI) | `research-evidence` | `osint_site` | `C` | yes | `active` |
+| `keep-wales-tidy` | Keep Wales Tidy | `partnership-and-civil-society` | `osint_site` | `C` | yes | `active` |
+| `wildlife-trusts-wales` | Wildlife Trusts Wales | `partnership-and-civil-society` | `osint_site` | `C` | yes | `active` |
+| `rspb-cymru` | RSPB Cymru | `partnership-and-civil-society` | `osint_site` | `C` | yes | `active` |
+| `dwr-cymru-welsh-water` | Dŵr Cymru Welsh Water | `partnership-and-civil-society` | `osint_site` | `C` | yes | `active` |
+| `unep` | UNEP | `international` | `osint_site` | `B` | yes | `active` |
+| `convention-on-biological-diversity` | Convention on Biological Diversity (CBD) | `international` | `osint_site` | `B` | yes | `active` |
+| `european-environment-agency` | European Environment Agency | `international` | `osint_site` | `B` | yes | `active` |
+| `bevan-foundation` | Bevan Foundation | `research-evidence` | `osint_site` | `C` | yes | `active` |
+| `openalex` | OpenAlex | `research-evidence` | `osint_academic` | `C` | no | `parked` |
+| `crossref` | Crossref | `research-evidence` | `osint_academic` | `C` | no | `parked` |
+| `nfu-cymru` | NFU Cymru | `partnership-and-civil-society` | `osint_site` | `C` | yes | `active` |
+| `farmers-union-of-wales` | Farmers' Union of Wales | `partnership-and-civil-society` | `osint_site` | `C` | yes | `active` |
+| `wales-environment-link` | Wales Environment Link | `partnership-and-civil-society` | `osint_site` | `C` | yes | `active` |
+| `institute-of-welsh-affairs` | Institute of Welsh Affairs | `research-evidence` | `osint_site` | `C` | yes | `active` |
+| `wales-centre-for-public-policy` | Wales Centre for Public Policy | `research-evidence` | `osint_site` | `C` | yes | `active` |
+| `green-alliance` | Green Alliance | `research-evidence` | `osint_site` | `C` | yes | `active` |
+| `wwf-cymru` | WWF Cymru | `partnership-and-civil-society` | `osint_site` | `C` | yes | `active` |
+| `national-trust` | National Trust | `partnership-and-civil-society` | `osint_site` | `C` | yes | `active` |
+| `woodland-trust` | Woodland Trust | `partnership-and-civil-society` | `osint_site` | `C` | yes | `active` |
+| `river-action` | River Action | `legal-and-campaign` | `osint_site` | `D` | yes | `active` |
+| `fish-legal` | Fish Legal | `legal-and-campaign` | `osint_site` | `D` | yes | `active` |
+| `leigh-day` | Leigh Day environment | `legal-and-campaign` | `osint_site` | `D` | yes | `active` |
+| `surfers-against-sewage` | Surfers Against Sewage | `legal-and-campaign` | `osint_site` | `D` | yes | `active` |
+| `nation-cymru` | Nation.Cymru | `independent-media` | `osint_site` | `C` | yes | `active` |
+| `senedd-petitions` | Senedd petitions | `senedd` | `osint_site` | `B` | yes | `active` |
+| `plant-health-portal` | UK Plant Health Information Portal | `ecological-surveillance` | `osint_site` | `B` | yes | `active` |
+| `forest-research` | Forest Research | `ecological-surveillance` | `osint_site` | `B` | yes | `active` |
+| `gb-non-native-species-secretariat` | GB Non-native Species Secretariat (GB NNSS) | `ecological-surveillance` | `osint_site` | `B` | yes | `active` |
+| `bto` | British Trust for Ornithology (BTO) | `ecological-surveillance` | `osint_site` | `C` | yes | `active` |

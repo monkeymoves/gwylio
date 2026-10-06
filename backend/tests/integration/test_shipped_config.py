@@ -29,6 +29,9 @@ def test_check_reports_no_problems_and_one_summary_per_file() -> None:
         "config/reference/places.json",
         "config/reference/actors.json",
         "config/requirement_sets/nrw-corporate-plan.json",
+        "config/sources.json",
+        "config/gating.json",
+        "config/instrument.json",
     ]
 
 

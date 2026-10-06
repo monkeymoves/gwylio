@@ -50,7 +50,7 @@ dev: ## Run the read API and the dev server together
 	@echo "dev: not yet implemented (WP7)"
 
 collect: ## Run a scan and write a candidates file
-	@echo "collect: not yet implemented (WP2)"
+	@echo "collect: real collectors arrive in WP4; for a dry run on fakes use: $(UV) gwylio collect --dry-run"
 
 ingest: ## Ingest an analyst submission
 	@echo "ingest: not yet implemented (WP5)"

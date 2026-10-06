@@ -14,26 +14,34 @@ from typing import Annotated, Final
 
 from pydantic import AfterValidator, BaseModel, ConfigDict, Field
 
+from gwylio.collection.model import SourceStatus
 from gwylio.direction.model import REQUIREMENT_CODE_PATTERN, GroupKind, Scanability
 from gwylio.direction.scanability import CoverageStatus
+from gwylio.processing.candidates_file import CandidatesFile
 from gwylio.reference.model import ActorKind, Lens, NodeKind, PlaceKind
-from gwylio.shared.values import KEBAB_MAX_LENGTH, KEBAB_PATTERN, CleanText, KebabId
+from gwylio.shared.values import KEBAB_MAX_LENGTH, KEBAB_PATTERN, CleanText, IsoDate, KebabId
+from gwylio.shared.vocabulary import Discipline, Reliability
 
 __all__ = [
     "SCHEMA_ENUMS",
     "SCHEMA_MODELS",
     "ActorConfig",
     "ActorsFile",
+    "GatingFile",
     "HazardConfig",
     "HazardsFile",
+    "InstrumentFile",
     "LaneConfig",
     "LanesFile",
     "PlaceConfig",
     "PlacesFile",
     "Prose",
+    "QueryConfig",
     "RequirementConfig",
     "RequirementGroupConfig",
     "RequirementSetFile",
+    "SourceConfig",
+    "SourcesFile",
     "TaxonomyAxisConfig",
     "TaxonomyFile",
     "TaxonomyNodeConfig",
@@ -56,6 +64,22 @@ Host = Annotated[
     Field(pattern=r"^[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+$"),
 ]
 """A bare lower-case host name such as ``gov.wales``."""
+
+
+def _iso_date(value: str) -> str:
+    IsoDate(value)
+    return value
+
+
+DateText = Annotated[
+    str,
+    Field(pattern=r"^[0-9]{4}-[0-9]{2}-[0-9]{2}$", description="A date, YYYY-MM-DD."),
+    AfterValidator(_iso_date),
+]
+"""A calendar date written ``YYYY-MM-DD``."""
+
+INSTRUMENT_VERSION_PATTERN: Final[str] = r"^[0-9]{4}\.[0-9]{1,2}\.[0-9]+$"
+"""Calendar versioning for the instrument: year, month, then a counter, such as 2026.10.0."""
 
 
 class _ConfigModel(BaseModel):
@@ -227,16 +251,103 @@ class RequirementSetFile(_ConfigModel):
     groups: list[RequirementGroupConfig] = Field(default_factory=list)
 
 
+# Collection: sources, the query instrument and the gating rules
+
+
+class SourceConfig(_ConfigModel):
+    """A watchlist entry: where hits come from, with a default reliability."""
+
+    id: Id
+    name: Prose
+    domain: Host = Field(description="Bare host; hits are matched to sources by exact domain.")
+    feed_url: str | None = Field(
+        default=None, pattern=r"^https?://[^\s]+$", description="Required for osint_feed sources."
+    )
+    discipline: Discipline
+    lane: Id
+    actor: Id = Field(description="The actor that publishes on this source.")
+    reliability: Reliability = Field(description="Admiralty reliability, A to F.")
+    trusted: bool = Field(description="A trusted source passes the relevance gate on domain alone.")
+    site_pass: bool = Field(description="Whether site queries may sweep this source's domain.")
+    status: SourceStatus = SourceStatus.ACTIVE
+    added_on: DateText
+    notes: Prose | None = None
+
+
+class SourcesFile(_ConfigModel):
+    """config/sources.json: the source watchlist."""
+
+    notes: Prose | None = None
+    sources: list[SourceConfig] = Field(min_length=1)
+
+
+class QueryConfig(_ConfigModel):
+    """One query in the instrument."""
+
+    id: Id
+    discipline: Discipline
+    lane: Id = Field(description="Where the query looks; feed queries read this lane's feeds.")
+    text: Prose = Field(description="Query text; site and feed queries OR-join quoted phrases.")
+    requirement_hints: list[Id] = Field(
+        default_factory=list, description="Requirement ids the hits may bear on; hints, not tags."
+    )
+    topic_hints: list[Id] = Field(default_factory=list, description="Topic ids; hints, not tags.")
+    negative_terms: list[Prose] = Field(
+        default_factory=list, description="Terms that drop a hit, after the global ones."
+    )
+    site_source_ids: list[Id] = Field(
+        default_factory=list, description="osint_site only: the sources to restrict the query to."
+    )
+
+
+class InstrumentFile(_ConfigModel):
+    """config/instrument.json: the versioned query instrument."""
+
+    notes: Prose | None = None
+    version: str = Field(pattern=INSTRUMENT_VERSION_PATTERN, description="Such as 2026.10.0.")
+    content_hash: str = Field(
+        pattern=r"^sha256:[0-9a-f]{64}$",
+        description="sha256 of the canonical JSON of every field except notes and this one.",
+    )
+    global_negative_terms: list[Prose] = Field(default_factory=list)
+    max_requests_per_run: int = Field(ge=1, description="The request budget of one scan run.")
+    queries: list[QueryConfig] = Field(min_length=1)
+
+
+class GatingFile(_ConfigModel):
+    """config/gating.json: own domains and relevance tokens for the gates."""
+
+    notes: Prose | None = None
+    own_domains: list[Host] = Field(
+        min_length=1, description="The organisation's own domains: hits on them are dropped."
+    )
+    relevance_tokens: list[Prose] = Field(
+        min_length=1, description="Lower-case words or phrases that make an untrusted hit relevant."
+    )
+    relevance_place_kinds: list[PlaceKind] = Field(
+        default_factory=list,
+        description="Places of these kinds add their English and Welsh names as tokens.",
+    )
+
+
 SCHEMA_MODELS: Final[dict[str, type[BaseModel]]] = {
     "actors": ActorsFile,
+    "candidates": CandidatesFile,
+    "gating": GatingFile,
     "hazards": HazardsFile,
+    "instrument": InstrumentFile,
     "lanes": LanesFile,
     "places": PlacesFile,
     "requirement-set": RequirementSetFile,
+    "sources": SourcesFile,
     "taxonomy": TaxonomyFile,
     "topics": TopicsFile,
 }
-"""Every file contract, by schema name: ``docs/schema/<name>.schema.json``."""
+"""Every file contract, by schema name: ``docs/schema/<name>.schema.json``.
+
+All are configuration files except ``candidates``, the handoff file contract
+from the Processing context, registered here so its schema and TypeScript
+type are generated with the rest."""
 
 SCHEMA_ENUMS: Final[tuple[type[Enum], ...]] = (CoverageStatus,)
 """Enums the front end needs that no configuration file mentions."""

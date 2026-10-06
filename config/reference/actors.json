@@ -30,6 +30,23 @@
     {"id": "gb-non-native-species-secretariat", "name": "GB Non-native Species Secretariat (GB NNSS)", "kind": "public_body", "lane": "ecological-surveillance", "domain": "nonnativespecies.org"},
     {"id": "bto", "name": "British Trust for Ornithology (BTO)", "kind": "research", "lane": "ecological-surveillance", "domain": "bto.org"},
     {"id": "unep", "name": "United Nations Environment Programme (UNEP)", "kind": "international", "lane": "international", "domain": "unep.org"},
-    {"id": "eea", "name": "European Environment Agency (EEA)", "kind": "international", "lane": "international", "domain": "eea.europa.eu"}
+    {"id": "eea", "name": "European Environment Agency (EEA)", "kind": "international", "lane": "international", "domain": "eea.europa.eu"},
+    {"id": "uk-government", "name": "UK Government (GOV.UK)", "kind": "government", "lane": "uk-government-and-regulators", "domain": "gov.uk"},
+    {"id": "the-national-archives", "name": "The National Archives (publisher of legislation.gov.uk)", "kind": "government", "lane": "uk-government-and-regulators", "domain": "nationalarchives.gov.uk"},
+    {"id": "ons", "name": "Office for National Statistics (ONS)", "kind": "public_body", "lane": "uk-government-and-regulators", "domain": "ons.gov.uk"},
+    {"id": "public-health-wales", "name": "Public Health Wales", "kind": "public_body", "lane": "partnership-and-civil-society", "domain": "phw.nhs.wales"},
+    {"id": "wlga", "name": "Welsh Local Government Association (WLGA)", "kind": "other", "lane": "partnership-and-civil-society", "domain": "wlga.wales"},
+    {"id": "keep-wales-tidy", "name": "Keep Wales Tidy", "kind": "ngo", "lane": "partnership-and-civil-society", "domain": "keepwalestidy.cymru"},
+    {"id": "wildlife-trusts-wales", "name": "Wildlife Trusts Wales", "kind": "ngo", "lane": "partnership-and-civil-society", "domain": "wtwales.org"},
+    {"id": "national-trust", "name": "National Trust", "kind": "ngo", "lane": "partnership-and-civil-society", "domain": "nationaltrust.org.uk"},
+    {"id": "woodland-trust", "name": "Woodland Trust", "kind": "ngo", "lane": "partnership-and-civil-society", "domain": "woodlandtrust.org.uk"},
+    {"id": "bevan-foundation", "name": "Bevan Foundation", "kind": "research", "lane": "research-evidence", "domain": "bevanfoundation.org"},
+    {"id": "institute-of-welsh-affairs", "name": "Institute of Welsh Affairs (IWA)", "kind": "research", "lane": "research-evidence", "domain": "iwa.wales"},
+    {"id": "green-alliance", "name": "Green Alliance", "kind": "research", "lane": "research-evidence", "domain": "green-alliance.org.uk"},
+    {"id": "openalex", "name": "OpenAlex (open scholarly index)", "kind": "research", "lane": "research-evidence", "domain": "openalex.org"},
+    {"id": "crossref", "name": "Crossref (scholarly metadata registry)", "kind": "other", "lane": "research-evidence", "domain": "crossref.org"},
+    {"id": "leigh-day", "name": "Leigh Day (law firm)", "kind": "business", "lane": "legal-and-campaign", "domain": "leighday.co.uk"},
+    {"id": "surfers-against-sewage", "name": "Surfers Against Sewage", "kind": "ngo", "lane": "legal-and-campaign", "domain": "sas.org.uk"},
+    {"id": "convention-on-biological-diversity", "name": "Convention on Biological Diversity (CBD) Secretariat", "kind": "international", "lane": "international", "domain": "cbd.int"}
   ]
 }

@@ -8,12 +8,17 @@ from typing import Final
 
 __all__ = [
     "ACTORS_FILE",
+    "CANDIDATES_DIR",
     "CONFIG_DIR",
+    "FAKE_HITS_FILE",
+    "GATING_FILE",
     "HAZARDS_FILE",
+    "INSTRUMENT_FILE",
     "LANES_FILE",
     "PLACES_FILE",
     "REQUIREMENT_SETS_DIR",
     "ROOT_ENV_VAR",
+    "SOURCES_FILE",
     "TAXONOMY_FILE",
     "TOPICS_FILE",
     "find_project_root",
@@ -27,6 +32,13 @@ HAZARDS_FILE: Final[str] = "config/reference/hazards.json"
 PLACES_FILE: Final[str] = "config/reference/places.json"
 ACTORS_FILE: Final[str] = "config/reference/actors.json"
 REQUIREMENT_SETS_DIR: Final[str] = "config/requirement_sets"
+SOURCES_FILE: Final[str] = "config/sources.json"
+INSTRUMENT_FILE: Final[str] = "config/instrument.json"
+GATING_FILE: Final[str] = "config/gating.json"
+CANDIDATES_DIR: Final[str] = "data/candidates"
+"""Where real scan runs write ``<run_id>.json``: append-only, committed facts."""
+FAKE_HITS_FILE: Final[str] = "backend/tests/fixtures/fake_hits.json"
+"""The scripted hits ``gwylio collect --dry-run`` and ``gwylio probe`` feed to fake collectors."""
 ROOT_ENV_VAR: Final[str] = "GWYLIO_ROOT"
 """Environment variable that names the project root explicitly."""
 

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from collections.abc import Iterable, Sequence
 
+from gwylio.collection.model import CandidateStatus, Discipline, Reliability
 from gwylio.direction.model import Scanability
 from gwylio.direction.scanability import CoverageStatus
 from gwylio.infrastructure.config.loaders import LoadedConfig
@@ -76,6 +77,25 @@ def reference_markdown(config: LoadedConfig, verbs: Sequence[CliVerb]) -> str:
         "Computed, never written by hand. A blind spot is never rendered as quiet.",
         "",
         *_table(["Value", "Meaning"], ((f"`{c.value}`", c.meaning) for c in CoverageStatus)),
+        "",
+        "## Disciplines",
+        "",
+        "The kind of collection that found a hit. Reserved disciplines have no collector yet.",
+        "",
+        *_table(["Value", "Meaning"], ((f"`{d.value}`", d.meaning) for d in Discipline)),
+        "",
+        "## Reliability",
+        "",
+        "The Admiralty reliability of a source. It comes from the source, never from a "
+        "submission; the analyst judges credibility (1 to 6) per report.",
+        "",
+        *_table(["Letter", "Meaning"], ((f"`{r.value}`", r.label) for r in Reliability)),
+        "",
+        "## Candidate status",
+        "",
+        "What the collector knew about a candidate's canonical URL. Computed at collection.",
+        "",
+        *_table(["Value", "Meaning"], ((f"`{c.value}`", c.meaning) for c in CandidateStatus)),
         "",
         "## Lenses and lanes",
         "",
@@ -177,6 +197,24 @@ def reference_markdown(config: LoadedConfig, verbs: Sequence[CliVerb]) -> str:
         _table(
             ["Id", "Name", "Kind", "Lane"],
             ((f"`{a.id}`", a.name, f"`{a.kind.value}`", f"`{a.lane}`") for a in catalogue.actors),
+        )
+    )
+    lines.extend(["", "### Sources", ""])
+    lines.extend(
+        _table(
+            ["Id", "Name", "Lane", "Discipline", "Reliability", "Trusted", "Status"],
+            (
+                (
+                    f"`{s.id}`",
+                    s.name,
+                    f"`{s.lane}`",
+                    f"`{s.discipline.value}`",
+                    f"`{s.reliability.value}`",
+                    "yes" if s.trusted else "no",
+                    f"`{s.status.value}`",
+                )
+                for s in config.sources
+            ),
         )
     )
     return "\n".join(lines) + "\n"

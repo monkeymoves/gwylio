@@ -8,6 +8,7 @@ from pathlib import Path
 
 import pytest
 
+from gwylio.infrastructure.config.loaders import LoadedConfig, load_config
 from gwylio.shared.clock import FixedClock
 from tests.support import PROJECT_ROOT
 
@@ -31,3 +32,9 @@ def project_copy(tmp_path: Path) -> Path:
     (tmp_path / "backend").mkdir()
     (tmp_path / "backend" / "pyproject.toml").write_text("[project]\n", encoding="utf-8")
     return tmp_path
+
+
+@pytest.fixture(scope="session")
+def shipped_config() -> LoadedConfig:
+    """The shipped config/ loaded through the real loaders, once per session."""
+    return load_config(PROJECT_ROOT)

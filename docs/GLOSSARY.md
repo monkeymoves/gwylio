@@ -16,11 +16,15 @@ The ubiquitous language of Gwylio, the Welsh environmental open-source intellige
 
 **Candidate**: A gated, deduplicated hit, one per canonical URL per scan run, waiting for the analyst's judgement.
 
+**Candidates file**: The file a scan run writes to data/candidates/<run_id>.json in the format gwylio.candidates/1: the run, its funnel, every candidate, every sighting and every reinforcement. It is an append-only fact from which the database can be rebuilt.
+
 **Canonical URL**: The identity of a web address (uniform resource locator, URL) used for deduplication: no scheme, no www, no fragment, no trailing slash and no tracking parameters, with other query parameters kept.
 
 **Collection**: The stage of the intelligence cycle that gathers raw hits from sources, gates and deduplicates them, and records candidates and sightings. It never scores or tags.
 
 **Collector**: An adapter that performs one discipline of collection, such as reading Really Simple Syndication (RSS) feeds or querying a web search interface.
+
+**Content hash**: The sha256 digest of an instrument's canonical JSON, stored with its version. A changed query changes the hash, so a run always says exactly which instrument it used.
 
 **Coverage status**: The state of one requirement in the picture, computed from its scanability and its count of active reports: covered, thin, quiet or blind spot.
 
@@ -76,6 +80,8 @@ The ubiquitous language of Gwylio, the Welsh environmental open-source intellige
 
 **OSINT**: Open-source intelligence: intelligence produced from publicly available sources.
 
+**Own domain**: A web domain belonging to the organisation the requirement set serves, such as Natural Resources Wales (NRW). Hits on own domains are dropped at the first gate, because the register tracks external signals only.
+
 **Place**: A named location in the reference catalogue: the nation, a region, a river basin, an area, a settlement or a site, with an optional parent place.
 
 **Priority Intelligence Requirement**: A question the organisation needs answered, abbreviated PIR. In Gwylio each requirement in a requirement set is one PIR.
@@ -94,6 +100,10 @@ The ubiquitous language of Gwylio, the Welsh environmental open-source intellige
 
 **Reference catalogue**: The validated bundle of taxonomy, topics, hazards, places, actors and lanes loaded from configuration.
 
+**Reinforcement**: A candidate whose canonical URL, or failing that its exact title, matches an existing intelligence report. The analyst confirms it as a new sighting of that report.
+
+**Relevance token**: A word or phrase, such as wales, senedd or the name of a Welsh river basin, that an untrusted hit must carry as a whole word to pass the relevance gate. A trusted source passes on its domain alone.
+
 **Reliability**: The Admiralty letter A to F for how far a source has proved trustworthy, set on the source and never by a submission.
 
 **Request budget**: The maximum number of requests a scan run may make. The run stops collecting when it is reached and says so.
@@ -109,6 +119,8 @@ The ubiquitous language of Gwylio, the Welsh environmental open-source intellige
 **Scan run**: One execution of collection. It is the unit of time for lifecycle maths and owns the funnel and the request budget. A complete run is immutable.
 
 **Scanability**: How far public, indexed sources can see a requirement at all: high, medium, low or none. It separates nothing happening from this instrument cannot see it.
+
+**Seen before**: A candidate whose canonical URL an earlier scan run already recorded, and which matches no report. It is listed again but needs no fresh triage.
 
 **Sighting**: A record that a source found a candidate in a scan run. Lifecycle maths counts sightings across runs.
 

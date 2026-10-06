@@ -265,6 +265,39 @@ GLOSSARY: Final[tuple[tuple[str, str], ...]] = (
         "sightings across runs.",
     ),
     (
+        "Own domain",
+        "A web domain belonging to the organisation the requirement set serves, such as "
+        "Natural Resources Wales (NRW). Hits on own domains are dropped at the first gate, "
+        "because the register tracks external signals only.",
+    ),
+    (
+        "Relevance token",
+        "A word or phrase, such as wales, senedd or the name of a Welsh river basin, that an "
+        "untrusted hit must carry as a whole word to pass the relevance gate. A trusted source "
+        "passes on its domain alone.",
+    ),
+    (
+        "Content hash",
+        "The sha256 digest of an instrument's canonical JSON, stored with its version. A "
+        "changed query changes the hash, so a run always says exactly which instrument it used.",
+    ),
+    (
+        "Seen before",
+        "A candidate whose canonical URL an earlier scan run already recorded, and which "
+        "matches no report. It is listed again but needs no fresh triage.",
+    ),
+    (
+        "Reinforcement",
+        "A candidate whose canonical URL, or failing that its exact title, matches an existing "
+        "intelligence report. The analyst confirms it as a new sighting of that report.",
+    ),
+    (
+        "Candidates file",
+        "The file a scan run writes to data/candidates/<run_id>.json in the format "
+        "gwylio.candidates/1: the run, its funnel, every candidate, every sighting and every "
+        "reinforcement. It is an append-only fact from which the database can be rebuilt.",
+    ),
+    (
         "Index echo",
         "The same canonical URL re-found in the same run or window. It is not evidence and "
         "does not move a report's lifecycle.",
