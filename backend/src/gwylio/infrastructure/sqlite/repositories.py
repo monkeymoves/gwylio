@@ -1,4 +1,4 @@
-"""SQLite repositories for the Reference, Direction and Collection contexts.
+"""SQLite repositories for the Reference, Direction, Collection and Intelligence contexts.
 
 Every SQL statement the application runs against its tables lives in this
 module. Each repository loads a whole aggregate on read and writes a whole
@@ -15,6 +15,11 @@ errors), with three differences that come from the database:
   then candidate id) rather than insertion order, so a database rebuilt from
   the files reads exactly like the one the scan wrote.
 
+The Intelligence repositories (reports, submissions, the sighting lookup and
+the source directory) follow the same pattern: a report is one aggregate
+across ``report`` and its child tables (assessments, tags, history,
+sightings), saved whole. Reports come back by id.
+
 ``save_config`` writes the whole configuration (catalogues, requirement sets,
 sources) in one transaction. Rows that facts point at (a source a candidate
 names, a lane) may vanish for a moment while their table is rewritten, so
@@ -30,6 +35,7 @@ from collections.abc import Callable, Iterable, Mapping, Sequence
 from datetime import UTC, datetime
 from typing import Final, TypeVar
 
+from gwylio.collection.dedup import normalise_title
 from gwylio.collection.model import (
     Candidate,
     Funnel,
@@ -53,6 +59,21 @@ from gwylio.direction.model import (
 )
 from gwylio.infrastructure.config.loaders import LoadedConfig
 from gwylio.infrastructure.sqlite.db import Database, Value
+from gwylio.intelligence.model import (
+    Assessment,
+    Grading,
+    HistoryEntry,
+    HistoryKind,
+    IntelligenceReport,
+    Scores,
+)
+from gwylio.intelligence.ports import (
+    DispositionRecord,
+    RunFact,
+    SightingFact,
+    SourceInfo,
+    SubmissionRecord,
+)
 from gwylio.reference.model import (
     Actor,
     ActorKind,
@@ -70,16 +91,32 @@ from gwylio.reference.model import (
 )
 from gwylio.shared.errors import DomainError, DuplicateId, UnknownReference
 from gwylio.shared.values import CanonicalUrl, CleanText, IsoDate, KebabId
-from gwylio.shared.vocabulary import Discipline, MatchedBy, Reliability
+from gwylio.shared.vocabulary import (
+    Bucket,
+    Credibility,
+    Direction,
+    Discipline,
+    DispositionOutcome,
+    IndicatorState,
+    Level,
+    MatchedBy,
+    Reliability,
+    ReportType,
+    TimeHorizon,
+)
 
 __all__ = [
     "TIMESTAMP_FORMAT",
     "SqliteCandidateRepository",
     "SqliteInstrumentRepository",
     "SqliteReferenceRepository",
+    "SqliteReportRepository",
     "SqliteRequirementSetRepository",
     "SqliteScanRunRepository",
+    "SqliteSightingLookup",
+    "SqliteSourceDirectory",
     "SqliteSourceRepository",
+    "SqliteSubmissionRepository",
     "dump_table",
     "format_timestamp",
     "parse_timestamp",
@@ -884,7 +921,12 @@ class SqliteCandidateRepository:
             ) from error
 
     def add_reinforcements(self, reinforcements: Sequence[Reinforcement]) -> None:
-        """Store reinforcements; refuse one for an unknown candidate."""
+        """Store reinforcements; refuse one for an unknown candidate or report.
+
+        The report is checked when the statement runs, unless the caller has
+        deferred foreign keys (a rebuild does: runs replay before the
+        submissions that create the reports they reinforce).
+        """
         self._each(reinforcements, self._add_reinforcement)
 
     def _add_reinforcement(self, r: Reinforcement) -> None:
@@ -902,7 +944,11 @@ class SqliteCandidateRepository:
                 {
                     "reinforcement.candidate_id": DuplicateId(
                         f"candidate '{r.candidate_id}' is already reinforced"
-                    )
+                    ),
+                    "FOREIGN KEY": UnknownReference(
+                        f"reinforcement of candidate '{r.candidate_id}' names report "
+                        f"'{r.report_id}', which is not stored"
+                    ),
                 },
             ) from error
 
@@ -943,6 +989,467 @@ class SqliteCandidateRepository:
             (run_id,),
         )
         return {str(row["canonical_url"]): RunId(row["first_seen"]) for row in rows}
+
+
+# Intelligence: the register.
+
+_REPORT_COLUMNS: Final[tuple[str, ...]] = (
+    "id",
+    "title",
+    "normalised_title",
+    "url",
+    "canonical_url",
+    "url_key",
+    "source_id",
+    "source_name",
+    "actor_id",
+    "lane",
+    "report_type",
+    "reliability",
+    "credibility",
+    "score_evidence",
+    "score_novelty",
+    "score_confidence",
+    "score_potential_impact",
+    "score_time_horizon",
+    "state",
+    "bucket",
+    "event_horizon",
+    "last_verified",
+    "summary",
+    "notes",
+    "owner",
+    "created_on",
+    "created_run_id",
+    "independent_confirmation",
+)
+_TAG_KINDS: Final[tuple[str, ...]] = ("topic", "hazard", "place")
+_ACTIVE_STATES: Final[tuple[str, ...]] = tuple(s.value for s in IndicatorState if s.active)
+
+
+def _opt_date(value: object) -> IsoDate | None:
+    return None if value is None else IsoDate(str(value))
+
+
+def _report_row(report: IntelligenceReport) -> tuple[Value, ...]:
+    scores = report.scores
+    return (
+        report.id,
+        report.title,
+        normalise_title(report.title),
+        report.url,
+        report.canonical_url.value,
+        report.canonical_url.match_key,
+        report.source_id,
+        report.source_name,
+        report.actor_id,
+        report.lane,
+        report.report_type.value,
+        report.grading.reliability.value,
+        int(report.grading.credibility),
+        scores.evidence.value,
+        scores.novelty.value,
+        scores.confidence.value,
+        scores.potential_impact.value,
+        scores.time_horizon.value,
+        report.state.value,
+        report.bucket.value,
+        None if report.event_horizon is None else str(report.event_horizon),
+        None if report.last_verified is None else str(report.last_verified),
+        report.summary,
+        report.notes,
+        report.owner,
+        str(report.created_on),
+        report.created_run_id,
+        report.independent_confirmation,
+    )
+
+
+class SqliteReportRepository:
+    """The register: intelligence reports with their assessments, tags, history and sightings."""
+
+    def __init__(self, db: Database) -> None:
+        self._db = db
+
+    def save(self, report: IntelligenceReport) -> None:
+        """Store the report, replacing a stored report with the same id and all its children."""
+        db = self._db
+        with db.transaction():
+            db.defer_foreign_keys()
+            for table in ("report_sighting", "report_history", "report_tag", "report_assessment"):
+                db.execute(f"DELETE FROM {table} WHERE report_id = ?", (report.id,))
+            db.execute("DELETE FROM report WHERE id = ?", (report.id,))
+            marks = ", ".join("?" for _ in _REPORT_COLUMNS)
+            try:
+                db.execute(
+                    f"INSERT INTO report ({', '.join(_REPORT_COLUMNS)}) VALUES ({marks})",
+                    _report_row(report),
+                )
+                db.executemany(
+                    "INSERT INTO report_assessment (report_id, position, requirement_id, "
+                    "direction) VALUES (?, ?, ?, ?)",
+                    [
+                        (report.id, i, a.requirement_id, a.direction.value)
+                        for i, a in enumerate(report.assessments)
+                    ],
+                )
+                db.executemany(
+                    "INSERT INTO report_tag (report_id, kind, position, tag_id) "
+                    "VALUES (?, ?, ?, ?)",
+                    [
+                        (report.id, kind, i, tag)
+                        for kind, tags in zip(
+                            _TAG_KINDS, (report.topics, report.hazards, report.places), strict=True
+                        )
+                        for i, tag in enumerate(tags)
+                    ],
+                )
+                db.executemany(
+                    "INSERT INTO report_history (report_id, position, on_date, kind, change) "
+                    "VALUES (?, ?, ?, ?, ?)",
+                    [
+                        (report.id, i, str(h.on), h.kind.value, h.change)
+                        for i, h in enumerate(report.history)
+                    ],
+                )
+                db.executemany(
+                    "INSERT INTO report_sighting (report_id, position, sighting_id) "
+                    "VALUES (?, ?, ?)",
+                    [(report.id, i, s) for i, s in enumerate(report.sighting_ids)],
+                )
+            except sqlite3.IntegrityError as error:
+                raise _integrity(
+                    error,
+                    {
+                        "report_sighting.sighting_id": DuplicateId(
+                            f"a sighting of report '{report.id}' already belongs to another report"
+                        ),
+                        "FOREIGN KEY": UnknownReference(
+                            f"report '{report.id}' names a source, actor, lane, run or sighting "
+                            "that is not stored"
+                        ),
+                    },
+                ) from error
+
+    def get(self, report_id: str) -> IntelligenceReport | None:
+        """The report with this id, or ``None``."""
+        row = self._db.fetch_one("SELECT * FROM report WHERE id = ?", (report_id,))
+        return None if row is None else self._load(row)
+
+    def list(self) -> tuple[IntelligenceReport, ...]:
+        """Every report, by id."""
+        rows = self._db.fetch_all("SELECT * FROM report ORDER BY id")
+        return tuple(self._load(row) for row in rows)
+
+    def list_active(self) -> tuple[IntelligenceReport, ...]:
+        """Every report in an active state, by id."""
+        marks = ", ".join("?" for _ in _ACTIVE_STATES)
+        rows = self._db.fetch_all(
+            f"SELECT * FROM report WHERE state IN ({marks}) ORDER BY id", _ACTIVE_STATES
+        )
+        return tuple(self._load(row) for row in rows)
+
+    def by_canonical_url(self, canonical_url: CanonicalUrl) -> IntelligenceReport | None:
+        """The first report by id whose canonical URL matches (escapes compared ignoring case)."""
+        row = self._db.fetch_one(
+            "SELECT * FROM report WHERE url_key = ? ORDER BY id LIMIT 1",
+            (canonical_url.match_key,),
+        )
+        return None if row is None else self._load(row)
+
+    def by_normalised_title(self, normalised_title: str) -> IntelligenceReport | None:
+        """The first report by id whose normalised title is exactly this."""
+        row = self._db.fetch_one(
+            "SELECT * FROM report WHERE normalised_title = ? ORDER BY id LIMIT 1",
+            (normalised_title,),
+        )
+        return None if row is None else self._load(row)
+
+    def url_keys(self) -> dict[str, str]:
+        """Every report's URL match key, mapped to the first report by id that holds it."""
+        rows = self._db.fetch_all("SELECT url_key, MIN(id) AS id FROM report GROUP BY url_key")
+        return {str(row["url_key"]): str(row["id"]) for row in rows}
+
+    def ids(self) -> frozenset[str]:
+        """Every report id."""
+        return frozenset(str(row[0]) for row in self._db.fetch_all("SELECT id FROM report"))
+
+    def _load(self, row: sqlite3.Row) -> IntelligenceReport:
+        db = self._db
+        report_id = str(row["id"])
+        assessments = tuple(
+            Assessment(KebabId(a["requirement_id"]), Direction(a["direction"]))
+            for a in db.fetch_all(
+                "SELECT requirement_id, direction FROM report_assessment WHERE report_id = ? "
+                "ORDER BY position",
+                (report_id,),
+            )
+        )
+        tags = _group_rows(
+            db.fetch_all(
+                "SELECT kind, tag_id FROM report_tag WHERE report_id = ? ORDER BY kind, position",
+                (report_id,),
+            ),
+            "kind",
+        )
+        history = tuple(
+            HistoryEntry(IsoDate(str(h["on_date"])), HistoryKind(h["kind"]), CleanText(h["change"]))
+            for h in db.fetch_all(
+                "SELECT on_date, kind, change FROM report_history WHERE report_id = ? "
+                "ORDER BY position",
+                (report_id,),
+            )
+        )
+        sightings = tuple(
+            KebabId(s["sighting_id"])
+            for s in db.fetch_all(
+                "SELECT sighting_id FROM report_sighting WHERE report_id = ? ORDER BY position",
+                (report_id,),
+            )
+        )
+
+        def tagged(kind: str) -> tuple[KebabId, ...]:
+            return tuple(KebabId(t["tag_id"]) for t in tags.get(kind, []))
+
+        return IntelligenceReport(
+            id=KebabId(report_id),
+            title=CleanText(row["title"]),
+            url=str(row["url"]),
+            canonical_url=CanonicalUrl(row["canonical_url"]),
+            source_id=_opt_kebab(row["source_id"]),
+            source_name=CleanText(row["source_name"]),
+            actor_id=_opt_kebab(row["actor_id"]),
+            lane=KebabId(row["lane"]),
+            report_type=ReportType(row["report_type"]),
+            grading=Grading(Reliability(row["reliability"]), Credibility(int(row["credibility"]))),
+            assessments=assessments,
+            topics=tagged("topic"),
+            hazards=tagged("hazard"),
+            places=tagged("place"),
+            scores=Scores(
+                evidence=Level(row["score_evidence"]),
+                novelty=Level(row["score_novelty"]),
+                confidence=Level(row["score_confidence"]),
+                potential_impact=Level(row["score_potential_impact"]),
+                time_horizon=TimeHorizon(row["score_time_horizon"]),
+            ),
+            state=IndicatorState(row["state"]),
+            bucket=Bucket(row["bucket"]),
+            event_horizon=_opt_date(row["event_horizon"]),
+            last_verified=_opt_date(row["last_verified"]),
+            summary=CleanText(row["summary"]),
+            notes=CleanText(row["notes"]),
+            owner=_opt_clean(row["owner"]),
+            created_on=IsoDate(str(row["created_on"])),
+            created_run_id=None if row["created_run_id"] is None else RunId(row["created_run_id"]),
+            independent_confirmation=bool(row["independent_confirmation"]),
+            history=history,
+            sighting_ids=sightings,
+        )
+
+
+def _submission(row: sqlite3.Row) -> SubmissionRecord:
+    return SubmissionRecord(
+        id=str(row["id"]),
+        run_id=None if row["run_id"] is None else RunId(row["run_id"]),
+        analyst=CleanText(row["analyst"]),
+        rubric_version=CleanText(row["rubric_version"]),
+        received_on=IsoDate(str(row["received_on"])),
+        method_note=CleanText(row["method_note"]),
+    )
+
+
+def _disposition(row: sqlite3.Row) -> DispositionRecord:
+    return DispositionRecord(
+        candidate_id=KebabId(row["candidate_id"]),
+        outcome=DispositionOutcome(row["outcome"]),
+        reason=CleanText(row["reason"]),
+        report_id=_opt_kebab(row["report_id"]),
+    )
+
+
+class SqliteSubmissionRepository:
+    """Every ingested submission, in ingest order, with its dispositions."""
+
+    def __init__(self, db: Database) -> None:
+        self._db = db
+
+    def record(
+        self, submission: SubmissionRecord, dispositions: Sequence[DispositionRecord]
+    ) -> None:
+        """Store a submission and its dispositions; refuse an id already stored."""
+        db = self._db
+        with db.transaction():
+            if self.get(submission.id) is not None:
+                raise DuplicateId(f"submission {submission.id} is already stored")
+            position = db.scalar("SELECT COALESCE(MAX(position) + 1, 0) FROM submission")
+            try:
+                db.execute(
+                    "INSERT INTO submission (id, position, run_id, analyst, rubric_version, "
+                    "received_on, method_note) VALUES (?, ?, ?, ?, ?, ?, ?)",
+                    (
+                        submission.id,
+                        int(position or 0),
+                        submission.run_id,
+                        submission.analyst,
+                        submission.rubric_version,
+                        str(submission.received_on),
+                        submission.method_note,
+                    ),
+                )
+                db.executemany(
+                    "INSERT INTO disposition (submission_id, position, candidate_id, outcome, "
+                    "reason, report_id) VALUES (?, ?, ?, ?, ?, ?)",
+                    [
+                        (submission.id, i, d.candidate_id, d.outcome.value, d.reason, d.report_id)
+                        for i, d in enumerate(dispositions)
+                    ],
+                )
+            except sqlite3.IntegrityError as error:
+                raise _integrity(
+                    error,
+                    {
+                        "disposition.submission_id, disposition.candidate_id": DuplicateId(
+                            f"submission {submission.id} disposes of a candidate twice"
+                        ),
+                        "FOREIGN KEY": UnknownReference(
+                            f"submission {submission.id} names a run, candidate or report that "
+                            "is not stored"
+                        ),
+                    },
+                ) from error
+
+    def get(self, submission_id: str) -> SubmissionRecord | None:
+        """The submission with this id, or ``None``."""
+        row = self._db.fetch_one("SELECT * FROM submission WHERE id = ?", (submission_id,))
+        return None if row is None else _submission(row)
+
+    def all(self) -> tuple[SubmissionRecord, ...]:
+        """Every submission, in ingest order."""
+        rows = self._db.fetch_all("SELECT * FROM submission ORDER BY position")
+        return tuple(_submission(row) for row in rows)
+
+    def dispositions(self, submission_id: str) -> tuple[DispositionRecord, ...]:
+        """The submission's dispositions, in file order."""
+        rows = self._db.fetch_all(
+            "SELECT * FROM disposition WHERE submission_id = ? ORDER BY position",
+            (submission_id,),
+        )
+        return tuple(_disposition(row) for row in rows)
+
+    def dispositions_for_candidate(
+        self, candidate_id: str
+    ) -> tuple[tuple[str, DispositionRecord], ...]:
+        """Every disposition of this candidate, oldest first, with its submission id."""
+        rows = self._db.fetch_all(
+            "SELECT d.* FROM disposition AS d JOIN submission AS s ON s.id = d.submission_id "
+            "WHERE d.candidate_id = ? ORDER BY s.position",
+            (candidate_id,),
+        )
+        return tuple((str(row["submission_id"]), _disposition(row)) for row in rows)
+
+    def final_dispositions(self) -> dict[str, tuple[str, str]]:
+        """Each candidate's latest disposition other than deferred: (submission id, outcome)."""
+        rows = self._db.fetch_all(
+            "SELECT d.candidate_id, d.submission_id, d.outcome FROM disposition AS d "
+            "JOIN submission AS s ON s.id = d.submission_id "
+            "WHERE d.outcome != 'deferred' ORDER BY s.position"
+        )
+        return {
+            str(row["candidate_id"]): (str(row["submission_id"]), str(row["outcome"]))
+            for row in rows
+        }
+
+
+_SIGHTING_FACT_SQL: Final[str] = (
+    "SELECT s.id, s.run_id, s.candidate_id, s.source_id, r.started_at FROM sighting AS s "
+    "JOIN scan_run AS r ON r.id = s.run_id"
+)
+
+
+def _sighting_fact(row: sqlite3.Row) -> SightingFact:
+    return SightingFact(
+        sighting_id=KebabId(row["id"]),
+        run_id=RunId(row["run_id"]),
+        run_started_at=parse_timestamp(row["started_at"]),
+        candidate_id=KebabId(row["candidate_id"]),
+        source_id=_opt_kebab(row["source_id"]),
+    )
+
+
+def _run_fact(row: sqlite3.Row) -> RunFact:
+    return RunFact(
+        run_id=RunId(row["id"]),
+        started_at=parse_timestamp(row["started_at"]),
+        complete=row["status"] == RunStatus.COMPLETE.value,
+        raw_hits=int(row["funnel_raw"]),
+    )
+
+
+class SqliteSightingLookup:
+    """The collection facts the register's lifecycle maths reads."""
+
+    def __init__(self, db: Database) -> None:
+        self._db = db
+
+    def sightings_of_candidate(self, candidate_id: str) -> tuple[SightingFact, ...]:
+        """Every sighting of the candidate, by sighting id."""
+        rows = self._db.fetch_all(
+            f"{_SIGHTING_FACT_SQL} WHERE s.candidate_id = ? ORDER BY s.id", (candidate_id,)
+        )
+        return tuple(_sighting_fact(row) for row in rows)
+
+    def sightings(self, sighting_ids: Sequence[str]) -> tuple[SightingFact, ...]:
+        """The named sightings, in the order given; unknown ids are left out."""
+        found: list[SightingFact] = []
+        for sighting_id in sighting_ids:
+            row = self._db.fetch_one(f"{_SIGHTING_FACT_SQL} WHERE s.id = ?", (sighting_id,))
+            if row is not None:
+                found.append(_sighting_fact(row))
+        return tuple(found)
+
+    def run(self, run_id: str) -> RunFact | None:
+        """The stored run, or ``None``."""
+        row = self._db.fetch_one(
+            "SELECT id, started_at, status, funnel_raw FROM scan_run WHERE id = ?", (run_id,)
+        )
+        return None if row is None else _run_fact(row)
+
+    def runs(self) -> tuple[RunFact, ...]:
+        """Every stored run, oldest first."""
+        rows = self._db.fetch_all(
+            "SELECT id, started_at, status, funnel_raw FROM scan_run ORDER BY started_at, id"
+        )
+        return tuple(_run_fact(row) for row in rows)
+
+    def report_of_sighting(self, sighting_id: str) -> str | None:
+        """The report the sighting is linked to, or ``None``."""
+        value = self._db.scalar(
+            "SELECT report_id FROM report_sighting WHERE sighting_id = ?", (sighting_id,)
+        )
+        return None if value is None else str(value)
+
+
+class SqliteSourceDirectory:
+    """The stored watchlist as the register reads it: grade, lane and actor per source."""
+
+    def __init__(self, db: Database) -> None:
+        self._db = db
+
+    def get(self, source_id: str) -> SourceInfo | None:
+        """The stored source with this id, or ``None``."""
+        row = self._db.fetch_one(
+            "SELECT id, name, reliability, lane, actor FROM source WHERE id = ?", (source_id,)
+        )
+        if row is None:
+            return None
+        return SourceInfo(
+            source_id=KebabId(row["id"]),
+            name=CleanText(row["name"]),
+            reliability=Reliability(row["reliability"]),
+            lane=KebabId(row["lane"]),
+            actor_id=KebabId(row["actor"]),
+        )
 
 
 # The whole configuration, and plain dumps for tests and summaries.

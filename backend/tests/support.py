@@ -281,3 +281,90 @@ def sqlite_scan(
     )
     with db.transaction():
         return scan.execute(config.instrument, config.sources, disciplines)
+
+
+# The register (work package 5).
+
+DROUGHT_URL: Final[str] = "https://nation.cymru/news/drought-declared-across-south-west-wales"
+"""A fake hit's URL: a report holding it makes that hit a reinforcement."""
+
+
+def promotion(
+    report_id: str = "drought-2026",
+    url: str = DROUGHT_URL,
+    **overrides: object,
+) -> dict[str, object]:
+    """A valid promotion with no watched source, as a submission file spells it."""
+    base: dict[str, object] = {
+        "id": report_id,
+        "title": "Drought declared across South West Wales",
+        "url": url,
+        "source_id": None,
+        "source_name": "Nation.Cymru",
+        "lane": "independent-media",
+        "report_type": "environmental",
+        "credibility": 2,
+        "reliability_if_unknown_source": "C",
+        "assessments": [{"requirement_id": "si1", "direction": "threatens"}],
+        "topics": ["water-resources"],
+        "hazards": ["drought-and-low-flows"],
+        "places": ["wales"],
+        "scores": {
+            "evidence": "high",
+            "novelty": "medium",
+            "confidence": "high",
+            "potential_impact": "medium",
+            "time_horizon": "immediate",
+        },
+        "bucket": "watch",
+        "summary": "NRW declared drought status for South West Wales.",
+    }
+    base.update(overrides)
+    return base
+
+
+def submission_document(
+    *,
+    run_id: str | None = None,
+    received_on: str = "2026-10-01",
+    **lists: object,
+) -> dict[str, object]:
+    """A valid submission document; keyword arguments replace its lists."""
+    document: dict[str, object] = {
+        "schema": "gwylio.submission/1",
+        "run_id": run_id,
+        "analyst": "test analyst",
+        "rubric_version": "2026.10",
+        "received_on": received_on,
+        "dispositions": [],
+        "promotions": [],
+        "updates": [],
+        "reinforcements": [],
+        "verifications": [],
+        "method_note": "Judged in a test.",
+    }
+    document.update(lists)
+    return document
+
+
+def add_reports(
+    db: Database,
+    config: LoadedConfig,
+    *promotions: dict[str, object],
+    stem: str = "direct__2026-10-01__1",
+    received_on: str = "2026-10-01",
+    data_dir: Path | None = None,
+) -> None:
+    """Ingest an out-of-run submission adding ``promotions``; with ``data_dir``, keep its file."""
+    from gwylio.infrastructure.handoff.submission_file import ingest_submission
+    from gwylio.processing.submission import Submission, dumps_submission
+
+    submission = Submission.model_validate(
+        submission_document(received_on=received_on, promotions=list(promotions or [promotion()]))
+    )
+    outcome = ingest_submission(db, config, submission, stem)
+    assert outcome.ok, outcome.problems
+    if data_dir is not None:
+        path = data_dir / "submissions" / f"{stem}.json"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(dumps_submission(submission), encoding="utf-8")

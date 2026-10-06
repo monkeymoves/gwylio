@@ -27,7 +27,20 @@ def test_version_prints_the_package_version() -> None:
 def test_help_lists_every_verb() -> None:
     result = runner.invoke(app, ["--help"])
     assert result.exit_code == 0
-    for verb in ("version", "check", "schema", "collect", "probe", "migrate", "export", "rebuild"):
+    for verb in (
+        "version",
+        "check",
+        "schema",
+        "collect",
+        "probe",
+        "migrate",
+        "export",
+        "rebuild",
+        "ingest",
+        "sweep",
+        "datecheck",
+        "import-legacy",
+    ):
         assert verb in result.stdout
 
 
@@ -36,11 +49,15 @@ def test_cli_verbs_are_sorted_with_help() -> None:
     assert [name for name, _ in verbs] == [
         "check",
         "collect",
+        "datecheck",
         "export",
+        "import-legacy",
+        "ingest",
         "migrate",
         "probe",
         "rebuild",
         "schema",
+        "sweep",
         "version",
     ]
     assert all(help_text for _, help_text in verbs)
@@ -60,7 +77,11 @@ def test_check_passes_on_the_shipped_config() -> None:
     ) in lines
     assert "ok     config/sources.json: 43 sources (41 active, 2 parked)" in lines
     assert "ok     config/gating.json: 4 own domains, 25 relevance tokens" in lines
-    assert lines[-1] == "check passed: 10 configuration files valid"
+    assert (
+        "ok     config/datecheck.json: 10 future-framed phrases, verification stale after 45 days"
+        in lines
+    )
+    assert lines[-1] == "check passed: 11 configuration files valid"
 
 
 @pytest.mark.integration

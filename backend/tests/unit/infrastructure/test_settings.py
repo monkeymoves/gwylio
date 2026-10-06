@@ -30,6 +30,9 @@ def test_defaults_sit_under_the_project_root() -> None:
     assert settings.candidates_dir == PROJECT_ROOT / "data" / "candidates"
     assert settings.instruments_dir == PROJECT_ROOT / "data" / "instruments"
     assert settings.runs_export_path == PROJECT_ROOT / "data" / "exports" / "runs.json"
+    assert settings.register_export_path == PROJECT_ROOT / "data" / "exports" / "register.json"
+    assert settings.submissions_dir == PROJECT_ROOT / "data" / "submissions"
+    assert settings.sweeps_dir == PROJECT_ROOT / "data" / "sweeps"
     assert settings.fake_hits_path == PROJECT_ROOT / "backend/tests/fixtures/fake_hits.json"
 
 

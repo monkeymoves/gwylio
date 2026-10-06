@@ -8,7 +8,19 @@ from gwylio.collection.model import CandidateStatus, Discipline, Reliability
 from gwylio.direction.model import Scanability
 from gwylio.direction.scanability import CoverageStatus
 from gwylio.infrastructure.config.loaders import LoadedConfig
+from gwylio.intelligence.datecheck import FindingKind
+from gwylio.processing.submission import RUBRIC_VERSION, UPDATABLE_FIELDS
 from gwylio.reference.model import Lens
+from gwylio.shared.vocabulary import (
+    Bucket,
+    Credibility,
+    Direction,
+    DispositionOutcome,
+    IndicatorState,
+    Level,
+    ReportType,
+    TimeHorizon,
+)
 
 __all__ = ["CliVerb", "glossary_markdown", "reference_markdown"]
 
@@ -96,6 +108,59 @@ def reference_markdown(config: LoadedConfig, verbs: Sequence[CliVerb]) -> str:
         "What the collector knew about a candidate's canonical URL. Computed at collection.",
         "",
         *_table(["Value", "Meaning"], ((f"`{c.value}`", c.meaning) for c in CandidateStatus)),
+        "",
+        "## Submissions",
+        "",
+        f"A submission is `gwylio.submission/1`, judged against rubric version `{RUBRIC_VERSION}` "
+        "(docs/RUBRIC.md). Every `new` candidate of the run needs a disposition and every "
+        "`reinforcement` candidate an entry in `reinforcements` (or a disposition); "
+        "`seen_before` candidates may have one.",
+        "",
+        "### Disposition outcomes",
+        "",
+        *_table(["Value", "Meaning"], ((f"`{o.value}`", o.meaning) for o in DispositionOutcome)),
+        "",
+        "### Credibility",
+        "",
+        "The analyst's judgement of one report's information. With the source's reliability it "
+        "makes the grading, such as B2.",
+        "",
+        *_table(["Digit", "Meaning"], ((f"`{int(c)}`", c.label) for c in Credibility)),
+        "",
+        "### Directions",
+        "",
+        *_table(["Value", "Meaning"], ((f"`{d.value}`", d.meaning) for d in Direction)),
+        "",
+        "### Report types, buckets and scores",
+        "",
+        *_table(
+            ["Field", "Values"],
+            (
+                ("`report_type`", ", ".join(f"`{t.value}`" for t in ReportType)),
+                ("`bucket`", ", ".join(f"`{b.value}`" for b in Bucket)),
+                (
+                    "`scores.evidence`, `scores.novelty`, `scores.confidence`, "
+                    "`scores.potential_impact`",
+                    ", ".join(f"`{level.value}`" for level in Level),
+                ),
+                ("`scores.time_horizon`", ", ".join(f"`{h.value}`" for h in TimeHorizon)),
+                ("`state_override`", "`matured`, `parked`"),
+                ("`updates[].set` keys", ", ".join(f"`{key}`" for key in UPDATABLE_FIELDS)),
+            ),
+        ),
+        "",
+        "### Indicator states",
+        "",
+        "Computed by the lifecycle from sightings. The analyst may set only `matured` or "
+        "`parked`, in an update or as a promotion's `state_override`.",
+        "",
+        *_table(["Value", "Meaning"], ((f"`{s.value}`", s.meaning) for s in IndicatorState)),
+        "",
+        "## Date check findings",
+        "",
+        "What `gwylio datecheck` reports. It informs and never blocks.",
+        "",
+        *_table(["Value", "Meaning"], ((f"`{k.value}`", k.meaning) for k in FindingKind)),
         "",
         "## Lenses and lanes",
         "",

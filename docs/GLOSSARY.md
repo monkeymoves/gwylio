@@ -10,6 +10,8 @@ The ubiquitous language of Gwylio, the Welsh environmental open-source intellige
 
 **Assessment**: A report's direction against one requirement: supports, threatens, neutral or informs_baseline.
 
+**Bias guard**: A question the analyst asks before closing a pass: optimism (what threatens?), mainstream (what is not official?) and streetlight (what could this instrument never find?).
+
 **Blind spot**: Coverage status of a requirement with low or no scanability and no active reports. The absence is not evidence, so a blind spot is never rendered as quiet.
 
 **Bucket**: Where a report goes next: brief, follow_up, watch or park.
@@ -31,6 +33,8 @@ The ubiquitous language of Gwylio, the Welsh environmental open-source intellige
 **Covered**: Coverage status of a requirement with three or more active reports.
 
 **Credibility**: The Admiralty digit 1 to 6 for how far one piece of information is confirmed, judged by the analyst for each report.
+
+**Date check**: The pass that looks for rot: passed event horizons nobody has looked at since, future-framed language, and verifications that are stale or missing. It informs and never blocks.
 
 **Direction**: The stage of the intelligence cycle that says what to look for: requirement sets, their requirements and groups, and how far public sources can see each requirement.
 
@@ -60,9 +64,13 @@ The ubiquitous language of Gwylio, the Welsh environmental open-source intellige
 
 **Impact statement**: A requirement group of kind impact: one of the six outcomes for 2030 in the NRW corporate plan, each served by several strategic indicators.
 
+**Independent confirmation**: The analyst's statement, made in an update, that a report was confirmed from an independent source. It reinforces the report as three distinct sources would.
+
 **Index echo**: The same canonical URL re-found in the same run or window. It is not evidence and does not move a report's lifecycle.
 
 **Indicator state**: Where a report sits in the indications and warnings lifecycle: emerging, tracking, reinforced, matured, faded or parked. Nothing is ever deleted.
+
+**Ingest**: Validating a submission and applying it to the register in one transaction: any problem anywhere and nothing is written.
 
 **Instrument**: The versioned query set used for collection, identified by a content hash so that results are only compared between runs that used the same instrument.
 
@@ -82,6 +90,8 @@ The ubiquitous language of Gwylio, the Welsh environmental open-source intellige
 
 **OSINT**: Open-source intelligence: intelligence produced from publicly available sources.
 
+**Out-of-run submission**: A submission with no scan run, such as the legacy import or a report the analyst adds directly. It promotes, updates and verifies, but disposes of no candidates.
+
 **Own domain**: A web domain belonging to the organisation the requirement set serves, such as Natural Resources Wales (NRW). Hits on own domains are dropped at the first gate, because the register tracks external signals only.
 
 **Place**: A named location in the reference catalogue: the nation, a region, a river basin, an area, a settlement or a site, with an optional parent place.
@@ -95,6 +105,8 @@ The ubiquitous language of Gwylio, the Welsh environmental open-source intellige
 **Product**: A finished output of the register at one level: strategic (annual), operational (monthly INTSUM) or tactical (alert).
 
 **Projection**: The SQLite database: a view of the configuration plus the facts under data/, never the record itself. Hand edits to it are lost on rebuild by design.
+
+**Promotion test**: The four questions a candidate must pass to become a report: external, consequential, verifiable from the page, and new or moved.
 
 **Quiet**: Coverage status of a requirement with high or medium scanability and no active reports: the sources could see movement and there is none.
 
@@ -139,6 +151,8 @@ The ubiquitous language of Gwylio, the Welsh environmental open-source intellige
 **Strategic indicator**: A measure in the NRW corporate plan performance framework, abbreviated SI. The NRW requirement set holds the twelve strategic indicators SI1 to SI12 as requirements.
 
 **Submission**: The judged file the analyst skill writes back for a scan run: dispositions, promotions, updates, reinforcements, verifications and a method note.
+
+**Sweep**: The pass that applies the fade rule: an active report with no sighting in the two most recent complete runs since it was created, and no history since the earlier of them, fades. Each sweep that fades anything is recorded as a sweep file under data/sweeps/.
 
 **Taxonomy**: The set of axes used to classify what a report is about. Axis one is the State of Natural Resources Report (SoNaRR) ecosystems and resources; axis two is the hazard families.
 

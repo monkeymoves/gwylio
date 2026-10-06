@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 import pytest
@@ -38,6 +39,8 @@ def test_every_expected_file_is_generated(generated: tuple[Path, list[str]]) -> 
     expected = {f"{SCHEMA_DIR}/{name}.schema.json" for name in SCHEMA_MODELS}
     expected |= {GLOSSARY_PATH, REFERENCE_PATH, TYPESCRIPT_PATH}
     assert set(paths) == expected
+    for contract in ("submission", "sweep", "datecheck"):
+        assert f"{SCHEMA_DIR}/{contract}.schema.json" in paths
 
 
 def test_committed_files_match_the_generators_byte_for_byte(
@@ -82,3 +85,21 @@ def test_reference_lists_every_cli_verb() -> None:
     text = (PROJECT_ROOT / REFERENCE_PATH).read_text(encoding="utf-8")
     for verb, _ in cli_verbs():
         assert f"`gwylio {verb}`" in text
+
+
+def test_reference_lists_every_value_a_submission_may_carry() -> None:
+    text = (PROJECT_ROOT / REFERENCE_PATH).read_text(encoding="utf-8")
+    for heading in ("### Disposition outcomes", "### Credibility", "### Indicator states"):
+        assert heading in text
+    for value in ("`informs_baseline`", "`follow_up`", "`data_release`", "`near_term`"):
+        assert value in text
+
+
+def test_the_submission_schema_names_the_contract_fields() -> None:
+    schema = json.loads(
+        (PROJECT_ROOT / SCHEMA_DIR / "submission.schema.json").read_text(encoding="utf-8")
+    )
+    assert schema["properties"]["schema"]["const"] == "gwylio.submission/1"
+    assert set(schema["required"]) >= {"schema", "run_id", "analyst", "received_on"}
+    update = schema["$defs"]["UpdateEntry"]
+    assert "set" in update["properties"]

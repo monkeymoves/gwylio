@@ -36,7 +36,7 @@ from gwylio.infrastructure.sqlite.repositories import (
 from gwylio.processing.candidates_file import dumps_candidates
 from gwylio.shared.clock import FixedClock
 from gwylio.shared.values import CleanText, RunId
-from tests.support import ALL, PROJECT_ROOT, sqlite_scan
+from tests.support import ALL, PROJECT_ROOT, add_reports, sqlite_scan
 
 pytestmark = pytest.mark.integration
 
@@ -85,7 +85,10 @@ def test_collect_fake_then_rebuild_gives_an_equivalent_database(tmp_path: Path) 
     rebuilt_path = tmp_path / "b" / "gwylio.sqlite"
     rebuilt = runner.invoke(app, ["rebuild", *root], env=env | {DB_PATH_ENV_VAR: str(rebuilt_path)})
     assert rebuilt.exit_code == 0, rebuilt.output
-    assert "replayed 3 candidates files and 1 archived instrument" in rebuilt.stdout
+    assert (
+        "replayed 3 candidates files, 0 submissions, 0 sweeps and 1 archived instrument"
+        in rebuilt.stdout
+    )
     documents = [read_candidates_file(p) for p in sorted((data / "candidates").iterdir())]
     with Database.open(data / "gwylio.sqlite") as a, Database.open(rebuilt_path) as b:
         for table, rows in (
@@ -120,6 +123,7 @@ def test_a_rebuild_replays_reinforcements_and_an_aborted_run(
         SqliteInstrumentRepository(configured).add(shipped_config.instrument)
         SqliteScanRunRepository(configured).add(aborted_run)
     persist(configured, data, RunResult(aborted_run, (), (), ()), shipped_config)
+    add_reports(configured, shipped_config, data_dir=data)
     known = StaticKnownReports(by_url={DROUGHT: "drought-2026"})
     result = sqlite_scan(configured, shipped_config, ALL, known=known)
     persist(configured, data, result, shipped_config)
@@ -129,7 +133,9 @@ def test_a_rebuild_replays_reinforcements_and_an_aborted_run(
     summary = rebuild_into(fresh, data, CONFIG_DIR)
     assert summary.candidates_files == 2
     assert summary.instrument_files == 1
+    assert summary.submission_files == 1
     assert summary.counts["reinforcement"] == 1
+    assert summary.counts["report"] == 1
     assert_equivalent(configured, fresh)
     assert SqliteScanRunRepository(fresh).get(aborted_run.id) == aborted_run
 
@@ -137,6 +143,7 @@ def test_a_rebuild_replays_reinforcements_and_an_aborted_run(
 def test_write_read_rebuild_round_trips_the_run_and_the_file_text(
     configured: Database, shipped_config: LoadedConfig, tmp_path: Path
 ) -> None:
+    add_reports(configured, shipped_config, data_dir=tmp_path)
     known = StaticKnownReports(by_url={DROUGHT: "drought-2026"})
     result = sqlite_scan(configured, shipped_config, ALL, known=known)
     path = persist(configured, tmp_path, result, shipped_config)
@@ -230,9 +237,37 @@ def test_an_empty_data_directory_rebuilds_the_configuration_only(
     assert summary.counts["scan_run"] == 0
     assert summary.counts["source"] == len(shipped_config.sources)
     assert summary.counts["instrument_version"] == 1
-    assert summary.table()[0] == "replayed 0 candidates files and 0 archived instruments"
+    assert summary.table()[0] == (
+        "replayed 0 candidates files, 0 submissions, 0 sweeps and 0 archived instruments"
+    )
     assert [p.name for p in tmp_path.iterdir()] == ["gwylio.sqlite"]
     with Database.open(db_path) as db:
         stored = SqliteInstrumentRepository(db).get(shipped_config.instrument.version)
         assert stored == shipped_config.instrument
         assert SqliteScanRunRepository(db).all() == ()
+
+
+def test_a_rebuild_replays_submissions_into_an_equivalent_register(tmp_path: Path) -> None:
+    data = tmp_path / "data"
+    env = {DATA_DIR_ENV_VAR: str(data)}
+    seed = PROJECT_ROOT / "backend" / "tests" / "fixtures" / "seed_submissions"
+    for args in (
+        ["collect", "--fake", "--at", "2026-09-01T09:00:00+0000"],
+        ["ingest", str(seed / "20260901T0900Z-0000__1.json")],
+        ["collect", "--fake", "--at", "2026-10-01T09:00:00+0000"],
+        ["ingest", str(seed / "20261001T0900Z-0000__1.json")],
+    ):
+        result = runner.invoke(app, [*args, "--root", str(PROJECT_ROOT)], env=env)
+        assert result.exit_code == 0, result.output
+    rebuilt_path = tmp_path / "b" / "gwylio.sqlite"
+    rebuilt = runner.invoke(
+        app,
+        ["rebuild", "--root", str(PROJECT_ROOT)],
+        env=env | {DB_PATH_ENV_VAR: str(rebuilt_path)},
+    )
+    assert rebuilt.exit_code == 0, rebuilt.output
+    assert "replayed 2 candidates files, 2 submissions, 0 sweeps" in rebuilt.stdout
+    with Database.open(data / "gwylio.sqlite") as a, Database.open(rebuilt_path) as b:
+        for table, rows in (("report", 10), ("submission", 2), ("reinforcement", 10)):
+            assert len(dump_table(a, table)) == rows, table
+        assert_equivalent(a, b)

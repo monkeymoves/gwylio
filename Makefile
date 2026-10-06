@@ -10,6 +10,9 @@ SHELL := /bin/bash
 
 UV := uv run --directory backend
 PNPM := pnpm -C frontend
+SEED_DIR := backend/tests/fixtures/seed
+SEED_SUBMISSIONS := $(CURDIR)/backend/tests/fixtures/seed_submissions
+SEED_ENV := GWYLIO_DATA_DIR=$(SEED_DIR) GWYLIO_DB_PATH= GWYLIO_ACADEMIC=
 
 .PHONY: help setup check test e2e ci build schema seed dev collect ingest publish
 
@@ -43,8 +46,14 @@ ci: check test build ## Everything continuous integration runs, except end to en
 schema: ## Generate JSON Schema, TypeScript types, the glossary and the skill reference
 	$(UV) gwylio schema
 
-seed: ## Seed the register from the legacy signals
-	@echo "seed: not yet implemented (WP5)"
+seed: ## Recreate the seed data under backend/tests/fixtures/seed: two fake runs, two submissions
+	rm -rf $(SEED_DIR)
+	$(SEED_ENV) $(UV) gwylio migrate
+	$(SEED_ENV) $(UV) gwylio collect --fake --at 2026-09-01T09:00:00+0000
+	$(SEED_ENV) $(UV) gwylio ingest $(SEED_SUBMISSIONS)/20260901T0900Z-0000__1.json
+	$(SEED_ENV) $(UV) gwylio collect --fake --at 2026-10-01T09:00:00+0000
+	$(SEED_ENV) $(UV) gwylio ingest $(SEED_SUBMISSIONS)/20261001T0900Z-0000__1.json
+	$(SEED_ENV) $(UV) gwylio datecheck --today 2026-10-06
 
 dev: ## Run the read API and the dev server together
 	@echo "dev: not yet implemented (WP7)"
@@ -52,8 +61,9 @@ dev: ## Run the read API and the dev server together
 collect: ## Run a scan and write a candidates file (web and site need a Brave key)
 	$(UV) gwylio collect
 
-ingest: ## Ingest an analyst submission
-	@echo "ingest: not yet implemented (WP5)"
+ingest: ## Ingest an analyst submission: make ingest FILE=data/submissions/<run_id>__<n>.json
+	@test -n "$(FILE)" || { echo "ingest: name the submission, make ingest FILE=path"; exit 2; }
+	$(UV) gwylio ingest $(abspath $(FILE))
 
 publish: ## Publish the snapshot the static site reads
 	@echo "publish: not yet implemented (WP7)"

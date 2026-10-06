@@ -1,0 +1,603 @@
+{
+  "format": "gwylio.candidates/1",
+  "run_id": "20261001T0900Z-0000",
+  "run_status": "complete",
+  "instrument_version": "2026.10.0",
+  "instrument_hash": "sha256:cf8e838f482996f11a7c9fdc1416fe8e6dd843faa50cd6187b7f5d99cebf0263",
+  "generated_at": "2026-10-01T09:00:00Z",
+  "started_at": "2026-10-01T09:00:00Z",
+  "finished_at": "2026-10-01T09:00:00Z",
+  "disciplines_run": [
+    "osint_web",
+    "osint_feed",
+    "osint_site"
+  ],
+  "max_requests_per_run": 150,
+  "requests_made": 148,
+  "budget_exhausted": false,
+  "funnel": {
+    "raw": 30,
+    "dropped_own": 2,
+    "dropped_negative": 5,
+    "dropped_unrelated": 3,
+    "passed": 20,
+    "unique": 17,
+    "seen_before": 7,
+    "new": 0,
+    "reinforcements": 10
+  },
+  "notes": [],
+  "warnings": [],
+  "candidates": [
+    {
+      "candidate_id": "c-20261001t0900z-0000-4b9c7e",
+      "status": "reinforcement",
+      "url": "https://www.audit.wales/publication/natural-resources-wales-funding-and-capacity",
+      "canonical_url": "audit.wales/publication/natural-resources-wales-funding-and-capacity",
+      "title": "Natural Resources Wales: funding and capacity",
+      "snippet": "Our review of how the regulator plans its workforce and budget.",
+      "published_on": "2026-09-24",
+      "first_seen_run_id": "20260901T0900Z-0000",
+      "source_id": "audit-wales",
+      "lane": "governance-capacity",
+      "discipline": "osint_feed",
+      "query_id": "feed-governance-capacity-governance-capacity",
+      "requirement_hints": [],
+      "topic_hints": [
+        "governance-and-funding"
+      ],
+      "trusted": true
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-4c5209",
+      "status": "reinforcement",
+      "url": "https://www.bbc.co.uk/news/articles/cx2phosphate",
+      "canonical_url": "bbc.co.uk/news/articles/cx2phosphate",
+      "title": "Phosphate levels in Welsh rivers remain high",
+      "snippet": "Monitoring shows little change since 2024.",
+      "published_on": "2026-09-21",
+      "first_seen_run_id": "20260901T0900Z-0000",
+      "source_id": null,
+      "lane": "welsh-government",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-02",
+      "requirement_hints": [
+        "si4"
+      ],
+      "topic_hints": [
+        "pollution-water-and-land"
+      ],
+      "trusted": false
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-53a20b",
+      "status": "reinforcement",
+      "url": "https://www.bbc.co.uk/news/articles/storm-claudia-monmouthshire?fbclid=abc123",
+      "canonical_url": "bbc.co.uk/news/articles/storm-claudia-monmouthshire",
+      "title": "Storm Claudia: homes flooded in Monmouthshire",
+      "snippet": "Flooding along the River Usk forced evacuations.",
+      "published_on": "2026-09-28",
+      "first_seen_run_id": "20260901T0900Z-0000",
+      "source_id": null,
+      "lane": "welsh-government",
+      "discipline": "osint_web",
+      "query_id": "web-people-place-resilience-04",
+      "requirement_hints": [
+        "si7",
+        "si8"
+      ],
+      "topic_hints": [
+        "people-place-and-resilience",
+        "flood-risk"
+      ],
+      "trusted": false
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-4affcd",
+      "status": "reinforcement",
+      "url": "https://www.bto.org/our-science/projects/avian-influenza-seabirds?utm_campaign=autumn",
+      "canonical_url": "bto.org/our-science/projects/avian-influenza-seabirds",
+      "title": "Avian influenza in seabirds: 2026 season",
+      "snippet": "Colony counts at Skomer and Grassholm fell again.",
+      "published_on": "2026-09-08",
+      "first_seen_run_id": "20260901T0900Z-0000",
+      "source_id": "bto",
+      "lane": "ecological-surveillance",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-03",
+      "requirement_hints": [
+        "si1",
+        "si2",
+        "si4"
+      ],
+      "topic_hints": [
+        "biosecurity",
+        "marine-and-coastal"
+      ],
+      "trusted": true
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-ab1076",
+      "status": "seen_before",
+      "url": "https://business.senedd.wales/mgIssueHistoryHome.aspx?IId=45001",
+      "canonical_url": "business.senedd.wales/mgIssueHistoryHome.aspx?IId=45001",
+      "title": "Consultation display | Senedd",
+      "snippet": "Petition: stop sewage discharges into rivers.",
+      "published_on": "2026-09-10",
+      "first_seen_run_id": "20260901T0900Z-0000",
+      "source_id": null,
+      "lane": "senedd",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-11",
+      "requirement_hints": [
+        "si4"
+      ],
+      "topic_hints": [
+        "pollution-water-and-land"
+      ],
+      "trusted": false
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-7489a4",
+      "status": "seen_before",
+      "url": "https://business.senedd.wales/mgIssueHistoryHome.aspx?IId=45002",
+      "canonical_url": "business.senedd.wales/mgIssueHistoryHome.aspx?IId=45002",
+      "title": "Consultation display | Senedd",
+      "snippet": "Inquiry into nature recovery targets.",
+      "published_on": "2026-09-11",
+      "first_seen_run_id": "20260901T0900Z-0000",
+      "source_id": null,
+      "lane": "senedd",
+      "discipline": "osint_web",
+      "query_id": "web-nature-ecosystems-08",
+      "requirement_hints": [
+        "si1",
+        "si2",
+        "si3"
+      ],
+      "topic_hints": [
+        "nature-and-ecosystems"
+      ],
+      "trusted": false
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-946ae7",
+      "status": "seen_before",
+      "url": "https://www.cbd.int/gbf/targets/3/",
+      "canonical_url": "cbd.int/gbf/targets/3",
+      "title": "Target 3: 30x30",
+      "snippet": "Conserve 30 per cent of land and sea by 2030.",
+      "published_on": null,
+      "first_seen_run_id": "20260901T0900Z-0000",
+      "source_id": "convention-on-biological-diversity",
+      "lane": "international",
+      "discipline": "osint_web",
+      "query_id": "web-international-lens-02",
+      "requirement_hints": [],
+      "topic_hints": [
+        "nature-and-ecosystems"
+      ],
+      "trusted": true
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-ce6509",
+      "status": "seen_before",
+      "url": "https://www.forestresearch.gov.uk/tools-and-resources/fthr/pest-and-disease-resources/phytophthora-pluvialis/",
+      "canonical_url": "forestresearch.gov.uk/tools-and-resources/fthr/pest-and-disease-resources/phytophthora-pluvialis",
+      "title": "Phytophthora pluvialis",
+      "snippet": "Outbreak management update for larch and Douglas fir.",
+      "published_on": "2026-09-05",
+      "first_seen_run_id": "20260901T0900Z-0000",
+      "source_id": "forest-research",
+      "lane": "ecological-surveillance",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-01",
+      "requirement_hints": [
+        "si1",
+        "si2",
+        "si4"
+      ],
+      "topic_hints": [
+        "biosecurity",
+        "woodland-and-forestry",
+        "marine-and-coastal"
+      ],
+      "trusted": true
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-b9c357",
+      "status": "seen_before",
+      "url": "https://www.gov.uk/government/news/storm-overflow-discharge-reduction-plan-updated",
+      "canonical_url": "gov.uk/government/news/storm-overflow-discharge-reduction-plan-updated",
+      "title": "Storm overflow discharge reduction plan updated",
+      "snippet": "Defra sets out revised targets for water companies in England.",
+      "published_on": "2026-09-22",
+      "first_seen_run_id": "20260901T0900Z-0000",
+      "source_id": "uk-government",
+      "lane": "uk-government-and-regulators",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-03",
+      "requirement_hints": [
+        "si4"
+      ],
+      "topic_hints": [
+        "pollution-water-and-land"
+      ],
+      "trusted": true
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-16aaf5",
+      "status": "seen_before",
+      "url": "https://www.gov.wales/national-survey-wales-results-viewer",
+      "canonical_url": "gov.wales/national-survey-wales-results-viewer",
+      "title": "National Survey for Wales: results viewer",
+      "snippet": "",
+      "published_on": null,
+      "first_seen_run_id": "20260901T0900Z-0000",
+      "source_id": "welsh-government",
+      "lane": "welsh-government",
+      "discipline": "osint_web",
+      "query_id": "web-partnership-society-02",
+      "requirement_hints": [
+        "si9",
+        "si10",
+        "si11"
+      ],
+      "topic_hints": [
+        "partnership-and-society"
+      ],
+      "trusted": true
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-dab594",
+      "status": "reinforcement",
+      "url": "https://www.gov.wales/nature-recovery-bill-consultation?utm_source=newsletter&utm_medium=email",
+      "canonical_url": "gov.wales/nature-recovery-bill-consultation",
+      "title": "Consultation on a Nature Recovery Bill for Wales",
+      "snippet": "The Welsh Government is consulting on a Nature Recovery Bill that would set statutory targets for nature recovery and protected sites.",
+      "published_on": "2026-09-29",
+      "first_seen_run_id": "20260901T0900Z-0000",
+      "source_id": "welsh-government",
+      "lane": "welsh-government",
+      "discipline": "osint_web",
+      "query_id": "web-nature-ecosystems-04",
+      "requirement_hints": [
+        "si1",
+        "si2",
+        "si3"
+      ],
+      "topic_hints": [
+        "nature-and-ecosystems",
+        "woodland-and-forestry"
+      ],
+      "trusted": true
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-4cb06a",
+      "status": "reinforcement",
+      "url": "https://www.gov.wales/reducing-emissions-domestic-solid-fuel-burning",
+      "canonical_url": "gov.wales/reducing-emissions-domestic-solid-fuel-burning",
+      "title": "Reducing emissions from domestic solid fuel burning",
+      "snippet": "Policy on wood burning stoves and air quality.",
+      "published_on": "2026-09-09",
+      "first_seen_run_id": "20260901T0900Z-0000",
+      "source_id": "welsh-government",
+      "lane": "welsh-government",
+      "discipline": "osint_web",
+      "query_id": "web-air-quality-02",
+      "requirement_hints": [
+        "si5"
+      ],
+      "topic_hints": [
+        "air-quality",
+        "climate-emissions"
+      ],
+      "trusted": true
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-97c176",
+      "status": "reinforcement",
+      "url": "https://nation.cymru/news/drought-declared-across-south-west-wales",
+      "canonical_url": "nation.cymru/news/drought-declared-across-south-west-wales",
+      "title": "Drought declared across South West Wales",
+      "snippet": "Hosepipe restrictions and low river flows on the Tywi and Teifi.",
+      "published_on": "2026-09-02",
+      "first_seen_run_id": "20260901T0900Z-0000",
+      "source_id": "nation-cymru",
+      "lane": "independent-media",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-05",
+      "requirement_hints": [
+        "si1",
+        "si2",
+        "si4"
+      ],
+      "topic_hints": [
+        "biosecurity",
+        "water-resources",
+        "woodland-and-forestry",
+        "marine-and-coastal"
+      ],
+      "trusted": true
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-e1213d",
+      "status": "reinforcement",
+      "url": "https://www.nfu-cymru.org.uk/news/sustainable-farming-scheme-concerns/",
+      "canonical_url": "nfu-cymru.org.uk/news/sustainable-farming-scheme-concerns",
+      "title": "NFU Cymru responds to Sustainable Farming Scheme changes",
+      "snippet": "Members raise concerns about the scheme's universal actions.",
+      "published_on": "2026-09-17",
+      "first_seen_run_id": "20260901T0900Z-0000",
+      "source_id": "nfu-cymru",
+      "lane": "partnership-and-civil-society",
+      "discipline": "osint_web",
+      "query_id": "web-nature-ecosystems-06",
+      "requirement_hints": [
+        "si1",
+        "si2",
+        "si3"
+      ],
+      "topic_hints": [
+        "nature-and-ecosystems"
+      ],
+      "trusted": true
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-abbe2c",
+      "status": "reinforcement",
+      "url": "https://www.riveractionuk.com/news/judicial-review-against-natural-resources-wales-granted/?utm_source=twitter",
+      "canonical_url": "riveractionuk.com/news/judicial-review-against-natural-resources-wales-granted",
+      "title": "River Action wins permission for judicial review",
+      "snippet": "Permission granted to challenge the regulator.",
+      "published_on": "2026-09-19",
+      "first_seen_run_id": "20260901T0900Z-0000",
+      "source_id": "river-action",
+      "lane": "legal-and-campaign",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-09",
+      "requirement_hints": [
+        "si4"
+      ],
+      "topic_hints": [
+        "pollution-water-and-land"
+      ],
+      "trusted": true
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-5e2e2c",
+      "status": "reinforcement",
+      "url": "https://www.theccc.org.uk/publication/progress-in-reducing-emissions-2026/",
+      "canonical_url": "theccc.org.uk/publication/progress-in-reducing-emissions-2026",
+      "title": "Progress in reducing emissions: 2026 report to Parliament",
+      "snippet": "Our annual assessment of progress across the UK.",
+      "published_on": "2026-07-10",
+      "first_seen_run_id": "20260901T0900Z-0000",
+      "source_id": "climate-change-committee",
+      "lane": "uk-government-and-regulators",
+      "discipline": "osint_feed",
+      "query_id": "feed-air-quality-uk-government-and-regulators",
+      "requirement_hints": [
+        "si5"
+      ],
+      "topic_hints": [
+        "air-quality",
+        "climate-emissions"
+      ],
+      "trusted": true
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-fec299",
+      "status": "seen_before",
+      "url": "https://www.walesonline.co.uk/news/wales-news/natural-resources-wales-budget-cuts-12345",
+      "canonical_url": "walesonline.co.uk/news/wales-news/natural-resources-wales-budget-cuts-12345",
+      "title": "Natural Resources Wales faces budget cuts",
+      "snippet": "Unions warn of job losses at the environment regulator.",
+      "published_on": "2026-09-26",
+      "first_seen_run_id": "20260901T0900Z-0000",
+      "source_id": null,
+      "lane": "governance-capacity",
+      "discipline": "osint_web",
+      "query_id": "web-governance-capacity-01",
+      "requirement_hints": [],
+      "topic_hints": [
+        "governance-and-funding"
+      ],
+      "trusted": false
+    }
+  ],
+  "reinforcements": [
+    {
+      "candidate_id": "c-20261001t0900z-0000-4affcd",
+      "report_id": "avian-influenza-seabirds-2026",
+      "matched_by": "url"
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-5e2e2c",
+      "report_id": "ccc-progress-report-2026",
+      "matched_by": "url"
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-4cb06a",
+      "report_id": "domestic-solid-fuel-burning-emissions",
+      "matched_by": "url"
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-dab594",
+      "report_id": "nature-recovery-bill-consultation",
+      "matched_by": "url"
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-4b9c7e",
+      "report_id": "nrw-funding-and-capacity-2026",
+      "matched_by": "url"
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-4c5209",
+      "report_id": "phosphate-welsh-rivers-2026",
+      "matched_by": "url"
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-abbe2c",
+      "report_id": "river-action-judicial-review-permission",
+      "matched_by": "url"
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-97c176",
+      "report_id": "south-west-wales-drought-2026",
+      "matched_by": "url"
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-53a20b",
+      "report_id": "storm-claudia-monmouthshire-flooding",
+      "matched_by": "url"
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-e1213d",
+      "report_id": "sustainable-farming-scheme-concerns",
+      "matched_by": "url"
+    }
+  ],
+  "sightings": [
+    {
+      "sighting_id": "s-20261001t0900z-0000-000001",
+      "candidate_id": "c-20261001t0900z-0000-dab594",
+      "source_id": "welsh-government",
+      "query_id": "web-nature-ecosystems-04",
+      "discipline": "osint_web"
+    },
+    {
+      "sighting_id": "s-20261001t0900z-0000-000002",
+      "candidate_id": "c-20261001t0900z-0000-dab594",
+      "source_id": "welsh-government",
+      "query_id": "site-nature-ecosystems-welsh-government",
+      "discipline": "osint_site"
+    },
+    {
+      "sighting_id": "s-20261001t0900z-0000-000003",
+      "candidate_id": "c-20261001t0900z-0000-e1213d",
+      "source_id": "nfu-cymru",
+      "query_id": "web-nature-ecosystems-06",
+      "discipline": "osint_web"
+    },
+    {
+      "sighting_id": "s-20261001t0900z-0000-000004",
+      "candidate_id": "c-20261001t0900z-0000-7489a4",
+      "source_id": null,
+      "query_id": "web-nature-ecosystems-08",
+      "discipline": "osint_web"
+    },
+    {
+      "sighting_id": "s-20261001t0900z-0000-000005",
+      "candidate_id": "c-20261001t0900z-0000-4c5209",
+      "source_id": null,
+      "query_id": "web-pollution-water-land-02",
+      "discipline": "osint_web"
+    },
+    {
+      "sighting_id": "s-20261001t0900z-0000-000006",
+      "candidate_id": "c-20261001t0900z-0000-b9c357",
+      "source_id": "uk-government",
+      "query_id": "web-pollution-water-land-03",
+      "discipline": "osint_web"
+    },
+    {
+      "sighting_id": "s-20261001t0900z-0000-000007",
+      "candidate_id": "c-20261001t0900z-0000-abbe2c",
+      "source_id": "river-action",
+      "query_id": "web-pollution-water-land-09",
+      "discipline": "osint_web"
+    },
+    {
+      "sighting_id": "s-20261001t0900z-0000-000008",
+      "candidate_id": "c-20261001t0900z-0000-abbe2c",
+      "source_id": "river-action",
+      "query_id": "site-pollution-water-land-legal-and-campaign",
+      "discipline": "osint_site"
+    },
+    {
+      "sighting_id": "s-20261001t0900z-0000-000009",
+      "candidate_id": "c-20261001t0900z-0000-ab1076",
+      "source_id": null,
+      "query_id": "web-pollution-water-land-11",
+      "discipline": "osint_web"
+    },
+    {
+      "sighting_id": "s-20261001t0900z-0000-000010",
+      "candidate_id": "c-20261001t0900z-0000-53a20b",
+      "source_id": null,
+      "query_id": "web-people-place-resilience-04",
+      "discipline": "osint_web"
+    },
+    {
+      "sighting_id": "s-20261001t0900z-0000-000011",
+      "candidate_id": "c-20261001t0900z-0000-16aaf5",
+      "source_id": "welsh-government",
+      "query_id": "web-partnership-society-02",
+      "discipline": "osint_web"
+    },
+    {
+      "sighting_id": "s-20261001t0900z-0000-000012",
+      "candidate_id": "c-20261001t0900z-0000-946ae7",
+      "source_id": "convention-on-biological-diversity",
+      "query_id": "web-international-lens-02",
+      "discipline": "osint_web"
+    },
+    {
+      "sighting_id": "s-20261001t0900z-0000-000013",
+      "candidate_id": "c-20261001t0900z-0000-ce6509",
+      "source_id": "forest-research",
+      "query_id": "web-ecological-early-warning-01",
+      "discipline": "osint_web"
+    },
+    {
+      "sighting_id": "s-20261001t0900z-0000-000014",
+      "candidate_id": "c-20261001t0900z-0000-4affcd",
+      "source_id": "bto",
+      "query_id": "web-ecological-early-warning-03",
+      "discipline": "osint_web"
+    },
+    {
+      "sighting_id": "s-20261001t0900z-0000-000015",
+      "candidate_id": "c-20261001t0900z-0000-97c176",
+      "source_id": "nation-cymru",
+      "query_id": "web-ecological-early-warning-05",
+      "discipline": "osint_web"
+    },
+    {
+      "sighting_id": "s-20261001t0900z-0000-000016",
+      "candidate_id": "c-20261001t0900z-0000-97c176",
+      "source_id": "nation-cymru",
+      "query_id": "site-ecological-early-warning-independent-media",
+      "discipline": "osint_site"
+    },
+    {
+      "sighting_id": "s-20261001t0900z-0000-000017",
+      "candidate_id": "c-20261001t0900z-0000-fec299",
+      "source_id": null,
+      "query_id": "web-governance-capacity-01",
+      "discipline": "osint_web"
+    },
+    {
+      "sighting_id": "s-20261001t0900z-0000-000018",
+      "candidate_id": "c-20261001t0900z-0000-4cb06a",
+      "source_id": "welsh-government",
+      "query_id": "web-air-quality-02",
+      "discipline": "osint_web"
+    },
+    {
+      "sighting_id": "s-20261001t0900z-0000-000019",
+      "candidate_id": "c-20261001t0900z-0000-4b9c7e",
+      "source_id": "audit-wales",
+      "query_id": "feed-governance-capacity-governance-capacity",
+      "discipline": "osint_feed"
+    },
+    {
+      "sighting_id": "s-20261001t0900z-0000-000020",
+      "candidate_id": "c-20261001t0900z-0000-5e2e2c",
+      "source_id": "climate-change-committee",
+      "query_id": "feed-air-quality-uk-government-and-regulators",
+      "discipline": "osint_feed"
+    }
+  ]
+}

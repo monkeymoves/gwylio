@@ -54,7 +54,9 @@ from tests.support import (
     CLOCK,
     DEFAULT,
     FAKE_HITS,
+    add_reports,
     instrument,
+    promotion,
     query,
     small_taxonomy,
     sqlite_scan,
@@ -216,6 +218,7 @@ def test_a_source_a_stored_run_names_cannot_leave_the_configuration(
 def test_a_scan_round_trips_through_every_repository(
     configured: Database, shipped_config: LoadedConfig
 ) -> None:
+    add_reports(configured, shipped_config)
     known = StaticKnownReports(by_url={DROUGHT: "drought-2026"})
     result = sqlite_scan(configured, shipped_config, ALL, known=known)
     runs = SqliteScanRunRepository(configured)
@@ -358,8 +361,9 @@ def test_a_candidate_must_name_stored_rows(configured: Database, stored: RunResu
 
 
 def test_sightings_and_reinforcements_need_a_known_candidate(
-    configured: Database, stored: RunResult
+    configured: Database, shipped_config: LoadedConfig, stored: RunResult
 ) -> None:
+    add_reports(configured, shipped_config, promotion("r-1"))
     candidates = SqliteCandidateRepository(configured)
     sighting = stored.sightings[0]
     with pytest.raises(UnknownReference, match="unknown candidate 'c-nobody'"):
@@ -377,6 +381,10 @@ def test_sightings_and_reinforcements_need_a_known_candidate(
     with pytest.raises(DuplicateId, match="already reinforced"):
         candidates.add_reinforcements([reinforcement])
     assert candidates.reinforcements_for_run(stored.run.id) == (reinforcement,)
+    with pytest.raises(UnknownReference, match="names report 'r-none', which is not stored"):
+        candidates.add_reinforcements(
+            [Reinforcement(stored.candidates[1].id, KebabId("r-none"), MatchedBy.URL)]
+        )
 
 
 def test_a_sighting_belongs_to_its_candidates_run(

@@ -10,6 +10,7 @@ __all__ = [
     "ACTORS_FILE",
     "CANDIDATES_DIR",
     "CONFIG_DIR",
+    "DATECHECK_FILE",
     "FAKE_HITS_FILE",
     "GATING_FILE",
     "HAZARDS_FILE",
@@ -35,6 +36,7 @@ REQUIREMENT_SETS_DIR: Final[str] = "config/requirement_sets"
 SOURCES_FILE: Final[str] = "config/sources.json"
 INSTRUMENT_FILE: Final[str] = "config/instrument.json"
 GATING_FILE: Final[str] = "config/gating.json"
+DATECHECK_FILE: Final[str] = "config/datecheck.json"
 CANDIDATES_DIR: Final[str] = "data/candidates"
 """Where real scan runs write ``<run_id>.json``: append-only, committed facts."""
 FAKE_HITS_FILE: Final[str] = "backend/tests/fixtures/fake_hits.json"

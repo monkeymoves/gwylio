@@ -12,12 +12,18 @@
 - ``--dry-run``: the fake collectors with in-memory repositories; the
   candidates file goes to ``--out`` or standard output and nothing is kept.
 
-With persistence, the run, its candidates, sightings and reinforcements are
-stored in SQLite in one transaction, and before that transaction commits the
+With persistence, the scan spots reinforcements against the register (a
+candidate whose canonical URL, or failing that exact title, matches a stored
+intelligence report), and the run, its candidates, sightings and
+reinforcements are stored in SQLite in one transaction, and before that transaction commits the
 instrument is archived under ``<data_dir>/instruments/`` and the candidates
 file written to ``<data_dir>/candidates/<run_id>.json``, so the files (the
 facts) never lag the database (their projection). The runs export is
 refreshed afterwards.
+
+``--at`` pins the clock of a ``--fake`` or ``--dry-run`` scan to one UTC
+instant and the run id suffix to ``0000``, so a fixture run (``make seed``)
+has the same run id and candidate ids every time.
 
 ``probe`` runs one query text through the real collector for a discipline
 (or the fake one with ``--fake``) and writes nothing.
@@ -29,6 +35,7 @@ import os
 import sqlite3
 from collections.abc import Mapping, Sequence
 from dataclasses import replace
+from datetime import datetime
 from pathlib import Path
 
 import typer
@@ -59,7 +66,7 @@ from gwylio.infrastructure.handoff.candidates_file import (
 )
 from gwylio.infrastructure.handoff.instrument_file import InstrumentFileError, archive_instrument
 from gwylio.infrastructure.http.client import HttpClient
-from gwylio.infrastructure.ids import RandomIdGenerator
+from gwylio.infrastructure.ids import FixedIdGenerator, RandomIdGenerator
 from gwylio.infrastructure.memory import (
     MemoryCandidateRepository,
     MemoryInstrumentRepository,
@@ -72,11 +79,13 @@ from gwylio.infrastructure.sqlite.migrate import migrate
 from gwylio.infrastructure.sqlite.repositories import (
     SqliteCandidateRepository,
     SqliteInstrumentRepository,
+    SqliteReportRepository,
     SqliteScanRunRepository,
     save_config,
 )
+from gwylio.intelligence.service import KnownReportsAdapter
 from gwylio.processing.candidates_file import dumps_candidates
-from gwylio.shared.clock import SystemClock
+from gwylio.shared.clock import Clock, FixedClock, SystemClock
 from gwylio.shared.errors import DomainError
 
 __all__ = [
@@ -154,8 +163,12 @@ def _fake_collectors(
 
 
 def _flag_problem(
-    *, dry_run: bool, fake: bool, out: Path | None, out_dir: Path | None
+    *, dry_run: bool, fake: bool, out: Path | None, out_dir: Path | None, at: datetime | None
 ) -> str | None:
+    if at is not None and not (dry_run or fake):
+        return "collect: --at goes with --fake or --dry-run; a real scan runs now"
+    if at is not None and (at.tzinfo is None or at.utcoffset() is None):
+        return "collect: --at needs a time zone, such as 2026-09-01T09:00:00+00:00"
     if dry_run and fake:
         return "collect: choose --dry-run (nothing kept) or --fake (stored), not both"
     if out is not None and not dry_run:
@@ -173,9 +186,10 @@ def run_collect(
     disciplines: Sequence[Discipline],
     fake: bool = False,
     out_dir: Path | None = None,
+    at: datetime | None = None,
 ) -> int:
     """Run a scan; return the exit code."""
-    problem = _flag_problem(dry_run=dry_run, fake=fake, out=out, out_dir=out_dir)
+    problem = _flag_problem(dry_run=dry_run, fake=fake, out=out, out_dir=out_dir, at=at)
     if problem is not None:
         typer.echo(problem, err=True)
         return 2
@@ -188,9 +202,16 @@ def run_collect(
     if config is None:
         return 1
     target = settings if out_dir is None else settings.with_data_dir(out_dir)
+    pinned = at is not None
+    clock: Clock = SystemClock() if at is None else FixedClock(at)
     if fake:
         return _collect_stored(
-            target, config, chosen, _fake_collectors(settings.fake_hits_path, chosen)
+            target,
+            config,
+            chosen,
+            _fake_collectors(settings.fake_hits_path, chosen),
+            clock=clock,
+            pinned=pinned,
         )
     if not dry_run:
         return _collect_real(target, config, chosen, explicit=bool(disciplines))
@@ -201,8 +222,8 @@ def run_collect(
         candidates=MemoryCandidateRepository(),
         known=NullKnownReports(),
         rules=config.gating,
-        clock=SystemClock(),
-        ids=RandomIdGenerator(),
+        clock=clock,
+        ids=FixedIdGenerator() if pinned else RandomIdGenerator(),
     )
     result = scan.execute(config.instrument, config.sources, chosen)
     table = funnel_table(result.run)
@@ -251,6 +272,9 @@ def _collect_stored(
     config: LoadedConfig,
     disciplines: Sequence[Discipline],
     collectors: Mapping[Discipline, Collector],
+    *,
+    clock: Clock | None = None,
+    pinned: bool = False,
 ) -> int:
     """Run ``collectors`` with SQLite persistence and the candidates file."""
     aborted: ScanAborted | None = None
@@ -271,10 +295,10 @@ def _collect_stored(
             instruments=SqliteInstrumentRepository(db),
             runs=SqliteScanRunRepository(db),
             candidates=SqliteCandidateRepository(db),
-            known=NullKnownReports(),
+            known=KnownReportsAdapter(SqliteReportRepository(db)),
             rules=config.gating,
-            clock=SystemClock(),
-            ids=RandomIdGenerator(),
+            clock=clock or SystemClock(),
+            ids=FixedIdGenerator() if pinned else RandomIdGenerator(),
         )
         try:
             # One transaction for the run and everything it found; the files are

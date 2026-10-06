@@ -10,11 +10,15 @@ Every closed value and identifier the analyst skill may write into a submission,
 |---|---|
 | `gwylio check` | Validate every configuration file and print a summary per file. |
 | `gwylio collect` | Run the instrument once and write a candidates file, printing the funnel. |
-| `gwylio export` | Write the deterministic runs export, data/exports/runs.json, from the database. |
+| `gwylio datecheck` | Print reports whose dates or wording may have rotted, grouped by kind; always exit 0. |
+| `gwylio export` | Write the deterministic exports, data/exports/runs.json and register.json. |
+| `gwylio import-legacy` | Seed the register from the old signals.json through a legacy submission. |
+| `gwylio ingest` | Validate a submission and apply it to the register, all or nothing. |
 | `gwylio migrate` | Create or upgrade the SQLite database at the settings database path. |
 | `gwylio probe` | Try one query text and print its hits, storing nothing. |
 | `gwylio rebuild` | Rebuild the database from config/ and the files under data/, printing row counts. |
 | `gwylio schema` | Generate JSON Schema, TypeScript types, the glossary and the skill reference. |
+| `gwylio sweep` | Fade active reports quiet in the two most recent complete runs; print faded ids. |
 | `gwylio version` | Print the package version. |
 
 ## Scanability
@@ -74,6 +78,77 @@ What the collector knew about a candidate's canonical URL. Computed at collectio
 | `new` | No earlier run recorded the URL and it matches no report. |
 | `seen_before` | An earlier run recorded the URL; it matches no report. |
 | `reinforcement` | The URL, or failing that the exact title, matches a report. |
+
+## Submissions
+
+A submission is `gwylio.submission/1`, judged against rubric version `2026.10` (docs/RUBRIC.md). Every `new` candidate of the run needs a disposition and every `reinforcement` candidate an entry in `reinforcements` (or a disposition); `seen_before` candidates may have one.
+
+### Disposition outcomes
+
+| Value | Meaning |
+|---|---|
+| `promoted` | Became a new intelligence report, named by report_id. |
+| `rejected` | Fails the promotion test; the reason says which part. |
+| `duplicate` | The same development as another candidate or report; report_id may name it. |
+| `deferred` | Not judged yet; a later submission may dispose of it. |
+| `reinforcement` | A new sighting of an existing report, named by report_id and confirmed in reinforcements. |
+
+### Credibility
+
+The analyst's judgement of one report's information. With the source's reliability it makes the grading, such as B2.
+
+| Digit | Meaning |
+|---|---|
+| `1` | confirmed |
+| `2` | probably true |
+| `3` | possibly true |
+| `4` | doubtful |
+| `5` | improbable |
+| `6` | cannot be judged |
+
+### Directions
+
+| Value | Meaning |
+|---|---|
+| `supports` | Makes progress on the requirement more likely or easier. |
+| `threatens` | Makes progress on the requirement less likely or harder. |
+| `neutral` | Bears on the requirement with no clear direction, or both ways at once. |
+| `informs_baseline` | Changes what we know about where the requirement stands now. |
+
+### Report types, buckets and scores
+
+| Field | Values |
+|---|---|
+| `report_type` | `policy`, `legislation`, `research`, `data_release`, `funding`, `partnership`, `international`, `legal`, `environmental`, `market`, `incident` |
+| `bucket` | `brief`, `follow_up`, `watch`, `park` |
+| `scores.evidence`, `scores.novelty`, `scores.confidence`, `scores.potential_impact` | `low`, `medium`, `high` |
+| `scores.time_horizon` | `immediate`, `near_term`, `medium_term`, `long_term` |
+| `state_override` | `matured`, `parked` |
+| `updates[].set` keys | `state`, `bucket`, `owner`, `notes`, `summary`, `title`, `event_horizon`, `independent_confirmation` |
+
+### Indicator states
+
+Computed by the lifecycle from sightings. The analyst may set only `matured` or `parked`, in an update or as a promotion's `state_override`.
+
+| Value | Meaning |
+|---|---|
+| `emerging` | New to the register, seen in one run only. |
+| `tracking` | Seen again in a strictly later run than the one that found it. |
+| `reinforced` | Seen by three distinct sources, or independently confirmed by the analyst. |
+| `matured` | Settled context, set by the analyst; sightings are still recorded. |
+| `faded` | Not seen in the two most recent complete runs; set by the sweep, revived by a sighting. |
+| `parked` | Set aside by the analyst; sightings are still recorded. |
+
+## Date check findings
+
+What `gwylio datecheck` reports. It informs and never blocks.
+
+| Value | Meaning |
+|---|---|
+| `passed_horizon` | The event horizon has passed and nobody has updated or verified the report since. |
+| `future_language` | The title, summary or notes use future-framed language that rots once the date passes. |
+| `stale_verification` | The report was last verified more than 45 days ago. |
+| `never_verified` | The report has never been verified against its source. |
 
 ## Lenses and lanes
 

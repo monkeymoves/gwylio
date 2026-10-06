@@ -97,6 +97,7 @@ _TRACKING_EXACT: Final[frozenset[str]] = frozenset({"fbclid", "gclid", "mc_cid",
 _TRACKING_PREFIXES: Final[tuple[str, ...]] = ("utm_",)
 _DEFAULT_PORTS: Final[dict[str, int]] = {"http": 80, "https": 443}
 _SCHEME_RE: Final[re.Pattern[str]] = re.compile(r"[A-Za-z][A-Za-z0-9+.\-]*://")
+_PERCENT_ESCAPE_RE: Final[re.Pattern[str]] = re.compile(r"%[0-9a-fA-F]{2}")
 
 
 def _is_unsafe(char: str) -> bool:
@@ -206,6 +207,17 @@ class CanonicalUrl(_Frozen):
     def host(self) -> str:
         """The lower-cased host without ``www.`` and without the port."""
         return self._host
+
+    @property
+    def match_key(self) -> str:
+        """The canonical string with its percent escapes in upper case, for matching reports.
+
+        A publisher's dash in a URL reaches Gwylio percent-encoded
+        (``%E2%80%93``, sometimes in lower case). Two contexts compare URLs
+        built from different spellings of one address (a candidate and a
+        report), so both use this key and an escape's case never decides a match.
+        """
+        return _PERCENT_ESCAPE_RE.sub(lambda match: match.group(0).upper(), self._value)
 
     def __str__(self) -> str:
         return self._value

@@ -17,16 +17,21 @@ from pydantic import AfterValidator, BaseModel, ConfigDict, Field
 from gwylio.collection.model import SourceStatus
 from gwylio.direction.model import REQUIREMENT_CODE_PATTERN, GroupKind, Scanability
 from gwylio.direction.scanability import CoverageStatus
+from gwylio.intelligence.datecheck import FindingKind, Severity
+from gwylio.intelligence.model import HistoryKind
 from gwylio.processing.candidates_file import CandidatesFile
+from gwylio.processing.ingest import SweepFile
+from gwylio.processing.submission import Submission
 from gwylio.reference.model import ActorKind, Lens, NodeKind, PlaceKind
 from gwylio.shared.values import KEBAB_MAX_LENGTH, KEBAB_PATTERN, CleanText, IsoDate, KebabId
-from gwylio.shared.vocabulary import Discipline, Reliability
+from gwylio.shared.vocabulary import Discipline, IndicatorState, Reliability
 
 __all__ = [
     "SCHEMA_ENUMS",
     "SCHEMA_MODELS",
     "ActorConfig",
     "ActorsFile",
+    "DatecheckFile",
     "GatingFile",
     "HazardConfig",
     "HazardsFile",
@@ -330,9 +335,23 @@ class GatingFile(_ConfigModel):
     )
 
 
+class DatecheckFile(_ConfigModel):
+    """config/datecheck.json: the rules gwylio datecheck applies."""
+
+    notes: Prose | None = None
+    future_phrases: list[Prose] = Field(
+        min_length=1,
+        description="Future-framed phrases that rot once their date passes, matched as words.",
+    )
+    stale_after_days: int = Field(
+        default=45, ge=1, description="A verification older than this many days is stale."
+    )
+
+
 SCHEMA_MODELS: Final[dict[str, type[BaseModel]]] = {
     "actors": ActorsFile,
     "candidates": CandidatesFile,
+    "datecheck": DatecheckFile,
     "gating": GatingFile,
     "hazards": HazardsFile,
     "instrument": InstrumentFile,
@@ -340,14 +359,23 @@ SCHEMA_MODELS: Final[dict[str, type[BaseModel]]] = {
     "places": PlacesFile,
     "requirement-set": RequirementSetFile,
     "sources": SourcesFile,
+    "submission": Submission,
+    "sweep": SweepFile,
     "taxonomy": TaxonomyFile,
     "topics": TopicsFile,
 }
 """Every file contract, by schema name: ``docs/schema/<name>.schema.json``.
 
-All are configuration files except ``candidates``, the handoff file contract
-from the Processing context, registered here so its schema and TypeScript
-type are generated with the rest."""
+All are configuration files except ``candidates``, ``submission`` and
+``sweep``, the handoff and fact file contracts from the Processing context,
+registered here so their schemas and TypeScript types are generated with the
+rest."""
 
-SCHEMA_ENUMS: Final[tuple[type[Enum], ...]] = (CoverageStatus,)
-"""Enums the front end needs that no configuration file mentions."""
+SCHEMA_ENUMS: Final[tuple[type[Enum], ...]] = (
+    CoverageStatus,
+    FindingKind,
+    HistoryKind,
+    IndicatorState,
+    Severity,
+)
+"""Enums the front end needs that no file contract mentions."""

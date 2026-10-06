@@ -30,6 +30,7 @@ from gwylio.infrastructure.config import paths
 from gwylio.infrastructure.config.schemas import (
     ActorConfig,
     ActorsFile,
+    DatecheckFile,
     GatingFile,
     HazardConfig,
     HazardsFile,
@@ -69,6 +70,7 @@ __all__ = [
     "CheckReport",
     "ConfigInvalidError",
     "ConfigProblem",
+    "DateCheckRules",
     "FileSummary",
     "LoadedConfig",
     "build_instrument",
@@ -111,14 +113,26 @@ class FileSummary:
 
 
 @dataclass(frozen=True, slots=True)
+class DateCheckRules:
+    """config/datecheck.json: the future-framed phrases and the verification age limit."""
+
+    future_phrases: tuple[CleanText, ...] = ()
+    stale_after_days: int = 45
+
+
+@dataclass(frozen=True, slots=True)
 class LoadedConfig:
-    """The validated configuration: catalogues, requirement sets, sources, instrument, gates."""
+    """The validated configuration: catalogues, requirement sets, sources, instrument, gates.
+
+    ``datecheck`` holds the date check rules from ``config/datecheck.json``.
+    """
 
     catalogue: ReferenceCatalogue
     requirement_sets: tuple[RequirementSet, ...]
     sources: tuple[Source, ...]
     instrument: QueryInstrument
     gating: GatingRules
+    datecheck: DateCheckRules = DateCheckRules()
 
     def requirement_set(self, set_id: str) -> RequirementSet:
         """The requirement set with this identifier, or ``KeyError``."""
@@ -335,6 +349,7 @@ _SCOPE_FILES = {
     "sources": paths.SOURCES_FILE,
     "instrument": paths.INSTRUMENT_FILE,
     "gating": paths.GATING_FILE,
+    "datecheck": paths.DATECHECK_FILE,
 }
 
 
@@ -521,6 +536,39 @@ def _load_gating(
     return None if len(collector.problems) > before else rules
 
 
+def _load_datecheck(collector: _Collector, summaries: list[FileSummary]) -> DateCheckRules | None:
+    before = len(collector.problems)
+    parsed = collector.parse(paths.DATECHECK_FILE, DatecheckFile)
+    if parsed is None:
+        return None
+    seen: set[str] = set()
+    for p, phrase in enumerate(parsed.future_phrases):
+        normal = " ".join(phrase.casefold().split())
+        if phrase != normal:
+            collector.add(
+                paths.DATECHECK_FILE,
+                f"future_phrases[{p}]",
+                f"phrase '{phrase}' must be lower-case words separated by one space",
+            )
+        elif normal in seen:
+            collector.add(
+                paths.DATECHECK_FILE, f"future_phrases[{p}]", f"phrase '{phrase}' is repeated"
+            )
+        seen.add(normal)
+    summaries.append(
+        FileSummary(
+            paths.DATECHECK_FILE,
+            f"{_plural(len(parsed.future_phrases), 'future-framed phrase')}, verification "
+            f"stale after {parsed.stale_after_days} days",
+        )
+    )
+    if len(collector.problems) > before:
+        return None
+    return DateCheckRules(
+        tuple(CleanText(phrase) for phrase in parsed.future_phrases), parsed.stale_after_days
+    )
+
+
 def _load_instrument(
     collector: _Collector,
     summaries: list[FileSummary],
@@ -592,13 +640,15 @@ def check_config(root: Path) -> CheckReport:
     gating = _load_gating(collector, summaries, catalogue, sources)
     all_sets = requirement_sets if len(requirement_sets) == len(set_files) else None
     instrument = _load_instrument(collector, summaries, catalogue, all_sets, sources)
+    datecheck = _load_datecheck(collector, summaries)
     problems = tuple(collector.problems)
     config = (
-        LoadedConfig(catalogue, tuple(requirement_sets), sources, instrument, gating)
+        LoadedConfig(catalogue, tuple(requirement_sets), sources, instrument, gating, datecheck)
         if catalogue is not None
         and sources is not None
         and instrument is not None
         and gating is not None
+        and datecheck is not None
         and not problems
         else None
     )

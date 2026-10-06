@@ -1,0 +1,90 @@
+{
+  "schema": "gwylio.submission/1",
+  "run_id": "20261001T0900Z-0000",
+  "analyst": "seed fixture",
+  "rubric_version": "2026.10",
+  "received_on": "2026-10-02",
+  "dispositions": [
+    {
+      "candidate_id": "c-20261001t0900z-0000-946ae7",
+      "outcome": "rejected",
+      "reason": "Still a standing target page with no decision; the deferred candidate from the first run is closed here.",
+      "report_id": null
+    }
+  ],
+  "promotions": [],
+  "updates": [
+    {
+      "report_id": "phosphate-welsh-rivers-2026",
+      "set": {
+        "bucket": "brief",
+        "notes": "Raised to brief: the second sighting confirms the pressure persists."
+      },
+      "change": "Moved to brief after a second sighting."
+    },
+    {
+      "report_id": "sustainable-farming-scheme-concerns",
+      "set": {
+        "state": "parked"
+      },
+      "change": "Parked until the scheme's final rules are published."
+    },
+    {
+      "report_id": "south-west-wales-drought-2026",
+      "set": {
+        "independent_confirmation": true
+      },
+      "change": "Confirmed independently against the NRW drought status page."
+    }
+  ],
+  "reinforcements": [
+    {
+      "report_id": "avian-influenza-seabirds-2026",
+      "candidate_id": "c-20261001t0900z-0000-4affcd"
+    },
+    {
+      "report_id": "ccc-progress-report-2026",
+      "candidate_id": "c-20261001t0900z-0000-5e2e2c"
+    },
+    {
+      "report_id": "domestic-solid-fuel-burning-emissions",
+      "candidate_id": "c-20261001t0900z-0000-4cb06a"
+    },
+    {
+      "report_id": "nature-recovery-bill-consultation",
+      "candidate_id": "c-20261001t0900z-0000-dab594"
+    },
+    {
+      "report_id": "nrw-funding-and-capacity-2026",
+      "candidate_id": "c-20261001t0900z-0000-4b9c7e"
+    },
+    {
+      "report_id": "phosphate-welsh-rivers-2026",
+      "candidate_id": "c-20261001t0900z-0000-4c5209"
+    },
+    {
+      "report_id": "river-action-judicial-review-permission",
+      "candidate_id": "c-20261001t0900z-0000-abbe2c"
+    },
+    {
+      "report_id": "south-west-wales-drought-2026",
+      "candidate_id": "c-20261001t0900z-0000-97c176"
+    },
+    {
+      "report_id": "storm-claudia-monmouthshire-flooding",
+      "candidate_id": "c-20261001t0900z-0000-53a20b"
+    },
+    {
+      "report_id": "sustainable-farming-scheme-concerns",
+      "candidate_id": "c-20261001t0900z-0000-e1213d"
+    }
+  ],
+  "verifications": [
+    {
+      "report_id": "avian-influenza-seabirds-2026",
+      "verified_on": "2026-10-02",
+      "note": "Checked against the BTO project page: the season summary stands."
+    }
+  ],
+  "method_note": "Seed fixture: the second fake run found every promoted page again; each reinforcement confirmed, one deferred candidate closed, one report parked, one independently confirmed."
+}

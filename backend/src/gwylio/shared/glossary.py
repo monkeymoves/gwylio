@@ -335,6 +335,21 @@ GLOSSARY: Final[tuple[tuple[str, str], ...]] = (
         "The fate the analyst gives every candidate: promoted, rejected, duplicate, deferred "
         "or reinforcement.",
     ),
+    (
+        "Out-of-run submission",
+        "A submission with no scan run, such as the legacy import or a report the analyst adds "
+        "directly. It promotes, updates and verifies, but disposes of no candidates.",
+    ),
+    (
+        "Promotion test",
+        "The four questions a candidate must pass to become a report: external, consequential, "
+        "verifiable from the page, and new or moved.",
+    ),
+    (
+        "Ingest",
+        "Validating a submission and applying it to the register in one transaction: any "
+        "problem anywhere and nothing is written.",
+    ),
     # Intelligence.
     (
         "Intelligence report",
@@ -372,6 +387,29 @@ GLOSSARY: Final[tuple[tuple[str, str], ...]] = (
         "Rot",
         "A claim that was true when written and has since gone stale, such as future-tense "
         "framing of an event that has now passed.",
+    ),
+    (
+        "Date check",
+        "The pass that looks for rot: passed event horizons nobody has looked at since, "
+        "future-framed language, and verifications that are stale or missing. It informs and "
+        "never blocks.",
+    ),
+    (
+        "Sweep",
+        "The pass that applies the fade rule: an active report with no sighting in the two most "
+        "recent complete runs since it was created, and no history since the earlier of them, "
+        "fades. Each sweep that fades anything is recorded as a sweep file under data/sweeps/.",
+    ),
+    (
+        "Independent confirmation",
+        "The analyst's statement, made in an update, that a report was confirmed from an "
+        "independent source. It reinforces the report as three distinct sources would.",
+    ),
+    (
+        "Bias guard",
+        "A question the analyst asks before closing a pass: optimism (what threatens?), "
+        "mainstream (what is not official?) and streetlight (what could this instrument never "
+        "find?).",
     ),
     # Dissemination.
     (

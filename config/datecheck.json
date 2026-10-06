@@ -1,0 +1,16 @@
+{
+  "notes": "Rules for gwylio datecheck, which looks for reports that may have rotted: claims that were true when written and may not be now. A report still in the picture (any state but faded and parked) is flagged when its title, summary or notes use one of these future-framed phrases (matched as whole words, ignoring case), because such a phrase reads wrong once the future arrives; when its event horizon has passed with no history entry since; and when it was last verified more than stale_after_days days ago, or never. Write dated claims instead: 'consultation closes 11 September 2026', not 'consultation closes soon'.",
+  "future_phrases": [
+    "upcoming",
+    "forthcoming",
+    "will be published",
+    "due to",
+    "expected to",
+    "consultation closes",
+    "later this year",
+    "next year",
+    "imminent",
+    "about to"
+  ],
+  "stale_after_days": 45
+}

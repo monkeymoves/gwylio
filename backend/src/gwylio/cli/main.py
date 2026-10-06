@@ -1,13 +1,14 @@
 """Entry point for the ``gwylio`` command line tool.
 
 Each verb's logic lives in its own module (``check.py``, ``schema.py``,
-``collect.py``, ``database.py``); this module only declares the Typer commands
+``collect.py``, ``database.py``, ``register.py``); this module only declares the Typer commands
 and registers them. Every command takes its paths from one ``Settings``
 object, built by ``_settings`` from ``--root`` and the ``GWYLIO_`` environment.
 """
 
 from __future__ import annotations
 
+from datetime import datetime
 from importlib.metadata import PackageNotFoundError, version
 from pathlib import Path
 from typing import Annotated
@@ -19,6 +20,7 @@ from typer.main import get_command
 from gwylio.cli.check import run_check
 from gwylio.cli.collect import run_collect, run_probe
 from gwylio.cli.database import run_export, run_migrate, run_rebuild
+from gwylio.cli.register import run_datecheck, run_import_legacy, run_ingest, run_sweep
 from gwylio.cli.schema import run_schema
 from gwylio.collection.model import Discipline
 from gwylio.infrastructure.config.settings import Settings
@@ -136,6 +138,15 @@ def collect_command(
             "plus academic when GWYLIO_ACADEMIC=1.",
         ),
     ] = None,
+    at: Annotated[
+        datetime | None,
+        typer.Option(
+            "--at",
+            formats=["%Y-%m-%dT%H:%M:%S%z"],
+            help="With --fake or --dry-run: pin the run's clock to this instant (such as "
+            "2026-09-01T09:00:00+0000) and its run id suffix to 0000, for reproducible fixtures.",
+        ),
+    ] = None,
 ) -> None:
     """Run the instrument once and write a candidates file, printing the funnel."""
     raise typer.Exit(
@@ -146,6 +157,7 @@ def collect_command(
             out=out,
             out_dir=out_dir,
             disciplines=discipline or (),
+            at=at,
         )
     )
 
@@ -182,7 +194,7 @@ def migrate_command(root: RootOption = None) -> None:
 
 @app.command("export")
 def export_command(root: RootOption = None) -> None:
-    """Write the deterministic runs export, data/exports/runs.json, from the database."""
+    """Write the deterministic exports, data/exports/runs.json and register.json."""
     raise typer.Exit(code=run_export(_settings(root)))
 
 
@@ -190,6 +202,71 @@ def export_command(root: RootOption = None) -> None:
 def rebuild_command(root: RootOption = None) -> None:
     """Rebuild the database from config/ and the files under data/, printing row counts."""
     raise typer.Exit(code=run_rebuild(_settings(root)))
+
+
+@app.command("ingest")
+def ingest_command(
+    file: Annotated[
+        Path,
+        typer.Argument(
+            help="The submission file. One outside data/submissions/ is copied in on success.",
+            dir_okay=False,
+        ),
+    ],
+    allow_deferred: Annotated[
+        bool,
+        typer.Option(
+            "--allow-deferred",
+            help="Accept a run submission that leaves candidates without a disposition.",
+        ),
+    ] = False,
+    root: RootOption = None,
+) -> None:
+    """Validate a submission and apply it to the register, all or nothing."""
+    raise typer.Exit(code=run_ingest(_settings(root), file, allow_deferred=allow_deferred))
+
+
+@app.command("sweep")
+def sweep_command(
+    today: Annotated[
+        str | None,
+        typer.Option("--today", help="The date to sweep on, YYYY-MM-DD (default: today, UTC)."),
+    ] = None,
+    root: RootOption = None,
+) -> None:
+    """Fade active reports quiet in the two most recent complete runs; print faded ids."""
+    raise typer.Exit(code=run_sweep(_settings(root), today=today))
+
+
+@app.command("datecheck")
+def datecheck_command(
+    today: Annotated[
+        str | None,
+        typer.Option("--today", help="The date to check against, YYYY-MM-DD (default: today)."),
+    ] = None,
+    root: RootOption = None,
+) -> None:
+    """Print reports whose dates or wording may have rotted, grouped by kind; always exit 0."""
+    raise typer.Exit(code=run_datecheck(_settings(root), today=today))
+
+
+@app.command("import-legacy")
+def import_legacy_command(
+    signals: Annotated[
+        Path,
+        typer.Argument(help="The old tool's data/signals.json.", dir_okay=False),
+    ],
+    received_on: Annotated[
+        str | None,
+        typer.Option(
+            "--received-on",
+            help="The legacy submission's date, YYYY-MM-DD (default: the file's scan_date).",
+        ),
+    ] = None,
+    root: RootOption = None,
+) -> None:
+    """Seed the register from the old signals.json through a legacy submission."""
+    raise typer.Exit(code=run_import_legacy(_settings(root), signals, received_on=received_on))
 
 
 if __name__ == "__main__":  # pragma: no cover

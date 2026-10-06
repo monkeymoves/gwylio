@@ -21,6 +21,16 @@ export interface ActorsFile {
 	actors: ActorConfig[];
 }
 
+/** Which way the report bears on one requirement. */
+export interface AssessmentEntry {
+	/** A requirement id from skill/REFERENCE.md, such as si4. */
+	requirement_id: string;
+	direction: Direction;
+}
+
+/** Where a report goes next. */
+export type Bucket = "brief" | "follow_up" | "watch" | "park";
+
 /** One candidate: a gated, deduplicated hit, one per canonical URL in the run. */
 export interface CandidateEntry {
 	candidate_id: string;
@@ -80,8 +90,50 @@ export interface CandidatesFile {
 /** The state of one requirement in the picture. */
 export type CoverageStatus = "covered" | "thin" | "quiet" | "blind_spot";
 
+/**
+ * The Admiralty credibility of one report's information, 1 (best) to 6 (cannot be judged).
+ *
+ * The analyst judges credibility per report; the source's reliability is
+ * fixed by the watchlist. The two together make the grading, such as B2.
+ */
+export type Credibility = 1 | 2 | 3 | 4 | 5 | 6;
+
+/** config/datecheck.json: the rules gwylio datecheck applies. */
+export interface DatecheckFile {
+	notes?: string | null;
+	/** Future-framed phrases that rot once their date passes, matched as words. */
+	future_phrases: string[];
+	/** A verification older than this many days is stale. */
+	stale_after_days?: number;
+}
+
+/** Which way a report bears on one requirement. */
+export type Direction = "supports" | "threatens" | "neutral" | "informs_baseline";
+
 /** The kind of collection a collector performs. */
 export type Discipline = "osint_web" | "osint_feed" | "osint_site" | "osint_academic" | "geoint" | "sensor";
+
+/** The fate of one candidate. */
+export interface DispositionEntry {
+	candidate_id: string;
+	outcome: DispositionOutcome;
+	/** One sentence: which part of the promotion test decided. */
+	reason: string;
+	/** promoted: the new report; reinforcement: the report it reinforces; duplicate: optionally, the report it duplicates. */
+	report_id?: string | null;
+}
+
+/** The fate the analyst gives one candidate in a submission. */
+export type DispositionOutcome = "promoted" | "rejected" | "duplicate" | "deferred" | "reinforcement";
+
+/** One report the sweep faded, and the reason recorded in its history. */
+export interface FadeEntry {
+	report_id: string;
+	change: string;
+}
+
+/** What the date check found wrong with a report. */
+export type FindingKind = "passed_horizon" | "future_language" | "stale_verification" | "never_verified";
 
 /**
  * How many hits survived each stage of the run.
@@ -132,6 +184,12 @@ export interface HazardsFile {
 	hazards: HazardConfig[];
 }
 
+/** What one history entry records. */
+export type HistoryKind = "created" | "sighted" | "state_changed" | "verified" | "updated" | "imported" | "faded" | "revived";
+
+/** Where a report is in the indications and warnings lifecycle. */
+export type IndicatorState = "emerging" | "tracking" | "reinforced" | "matured" | "faded" | "parked";
+
 /** config/instrument.json: the versioned query instrument. */
 export interface InstrumentFile {
 	notes?: string | null;
@@ -163,6 +221,9 @@ export interface LanesFile {
 /** The three viewpoints the commission asked for; every lane sits under one. */
 export type Lens = "government" | "partnership_society" | "international";
 
+/** A three-point score: low, medium or high. */
+export type Level = "low" | "medium" | "high";
+
 /** How a candidate was matched to an existing intelligence report. */
 export type MatchedBy = "url" | "title";
 
@@ -191,6 +252,54 @@ export interface PlacesFile {
 	places: PlaceConfig[];
 }
 
+/** One line of history the report had before it entered Gwylio (the legacy import). */
+export interface PriorHistoryEntry {
+	/** A date, YYYY-MM-DD. */
+	on: string;
+	change: string;
+}
+
+/** A new intelligence report. Reliability, lane and appearances are not the analyst's. */
+export interface PromotionEntry {
+	/** A new kebab-case report id. */
+	id: string;
+	/** The candidate this report was promoted from, if any. */
+	from_candidate?: string | null;
+	title: string;
+	/** The http or https URL. */
+	url: string;
+	/** The watched source, or null when unwatched. */
+	source_id: string | null;
+	/** Who published it, as a reader would name them. */
+	source_name: string;
+	/** The actor, when catalogued. */
+	actor_id?: string | null;
+	/** Where it was found; required when source_id is null, else the source's. */
+	lane?: string | null;
+	report_type: ReportType;
+	/** Admiralty credibility, 1 to 6. */
+	credibility: Credibility;
+	/** Required when source_id is null; ignored otherwise (the source decides). */
+	reliability_if_unknown_source?: Reliability | null;
+	assessments: AssessmentEntry[];
+	topics?: string[];
+	hazards?: string[];
+	places?: string[];
+	scores: ScoresEntry;
+	bucket: Bucket;
+	event_horizon?: string | null;
+	last_verified?: string | null;
+	summary: string;
+	notes?: string;
+	owner?: string | null;
+	/** Create the report as matured or parked instead of emerging. */
+	state_override?: "matured" | "parked" | null;
+	/** History from before Gwylio, carried as imported entries (legacy import). */
+	prior_history?: PriorHistoryEntry[];
+	/** The text of the creation history entry, if not the default. */
+	creation_note?: string | null;
+}
+
 /** One query in the instrument. */
 export interface QueryConfig {
 	id: string;
@@ -216,6 +325,12 @@ export interface ReinforcementEntry {
 	matched_by: MatchedBy;
 }
 
+/** A candidate whose sightings count for an existing report. */
+export interface ReinforcementLink {
+	report_id: string;
+	candidate_id: string;
+}
+
 /**
  * The Admiralty reliability of a source, A (best) to F (cannot be judged).
  *
@@ -223,6 +338,9 @@ export interface ReinforcementEntry {
  * credibility (1 to 6) per report, and the two together make the grading.
  */
 export type Reliability = "A" | "B" | "C" | "D" | "E" | "F";
+
+/** What kind of development an intelligence report describes. */
+export type ReportType = "policy" | "legislation" | "research" | "data_release" | "funding" | "partnership" | "international" | "legal" | "environmental" | "market" | "incident";
 
 /** One Priority Intelligence Requirement (PIR). */
 export interface RequirementConfig {
@@ -270,6 +388,19 @@ export interface RequirementSetFile {
 /** How far public, indexed sources can see a requirement at all. */
 export type Scanability = "high" | "medium" | "low" | "none";
 
+/** The analyst's scores for a report. */
+export interface ScoresEntry {
+	/** How strong the evidence on the page is. */
+	evidence: Level;
+	novelty: Level;
+	confidence: Level;
+	potential_impact: Level;
+	time_horizon: TimeHorizon;
+}
+
+/** How urgent a finding is: ``act`` before the report is quoted again, ``warn`` to check. */
+export type Severity = "warn" | "act";
+
 /** One hit that became part of a candidate. */
 export interface SightingEntry {
 	sighting_id: string;
@@ -312,6 +443,37 @@ export interface SourcesFile {
 	sources: SourceConfig[];
 }
 
+/** data/submissions/<run_id>__<n>.json: the analyst's judgements on one run, or none. */
+export interface Submission {
+	/** Always gwylio.submission/1. */
+	schema: "gwylio.submission/1";
+	/** The run judged, or null for out-of-run. */
+	run_id: string | null;
+	analyst: string;
+	/** Such as 2026.10. */
+	rubric_version: string;
+	/** A date, YYYY-MM-DD. */
+	received_on: string;
+	dispositions?: DispositionEntry[];
+	promotions?: PromotionEntry[];
+	updates?: UpdateEntry[];
+	reinforcements?: ReinforcementLink[];
+	verifications?: VerificationEntry[];
+	/** How the run was judged: what was read and skipped. */
+	method_note: string;
+}
+
+/** data/sweeps/<on>__<n>.json: the reports one sweep faded. */
+export interface SweepFile {
+	/** Always gwylio.sweep/1. */
+	format: "gwylio.sweep/1";
+	/** The day the sweep ran: the date of each fade. */
+	on: string;
+	/** How many submissions had been ingested when the sweep ran. */
+	after_submissions: number;
+	faded: FadeEntry[];
+}
+
 /** One dimension of the taxonomy. */
 export interface TaxonomyAxisConfig {
 	id: string;
@@ -334,6 +496,9 @@ export interface TaxonomyNodeConfig {
 	note?: string | null;
 }
 
+/** When a report's consequences are expected to land. */
+export type TimeHorizon = "immediate" | "near_term" | "medium_term" | "long_term";
+
 /** A subject area used to hint what a query or report is about. */
 export interface TopicConfig {
 	id: string;
@@ -345,4 +510,21 @@ export interface TopicConfig {
 export interface TopicsFile {
 	notes?: string | null;
 	topics: TopicConfig[];
+}
+
+/** Analyst changes to an existing report. */
+export interface UpdateEntry {
+	report_id: string;
+	/** Only state (matured or parked), bucket, owner, notes, summary, title, event_horizon and independent_confirmation (true) may be set. */
+	set: Record<string, unknown>;
+	/** Why: the history entry text. */
+	change: string;
+}
+
+/** The analyst checked the report's claims against the world. */
+export interface VerificationEntry {
+	report_id: string;
+	/** A date, YYYY-MM-DD. */
+	verified_on: string;
+	note: string;
 }

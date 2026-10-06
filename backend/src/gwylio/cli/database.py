@@ -6,7 +6,7 @@ import typer
 
 from gwylio.infrastructure.config.settings import Settings
 from gwylio.infrastructure.sqlite.db import Database
-from gwylio.infrastructure.sqlite.export import write_runs_export
+from gwylio.infrastructure.sqlite.export import write_register_export, write_runs_export
 from gwylio.infrastructure.sqlite.migrate import applied_versions, available_migrations, migrate
 from gwylio.infrastructure.sqlite.rebuild import RebuildError, rebuild
 
@@ -30,7 +30,7 @@ def run_migrate(settings: Settings) -> int:
 
 
 def run_export(settings: Settings) -> int:
-    """Write ``<data_dir>/exports/runs.json`` from the database; return the exit code."""
+    """Write ``runs.json`` and ``register.json`` under ``<data_dir>/exports/``; return the code."""
     if not settings.db_path.is_file():
         typer.echo(
             f"export: no database at {settings.db_path}; run `gwylio rebuild` or `gwylio migrate`",
@@ -46,8 +46,12 @@ def run_export(settings: Settings) -> int:
                 err=True,
             )
             return 1
-        path = write_runs_export(db, settings.runs_export_path)
-    typer.echo(f"wrote  {path}")
+        paths = (
+            write_runs_export(db, settings.runs_export_path),
+            write_register_export(db, settings.register_export_path),
+        )
+    for path in paths:
+        typer.echo(f"wrote  {path}")
     return 0
 
 

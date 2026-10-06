@@ -43,8 +43,11 @@ __all__ = [
     "DEFAULT_CONTACT_EMAIL",
     "EXPORTS_SUBDIR",
     "INSTRUMENTS_SUBDIR",
+    "REGISTER_EXPORT_FILE",
     "RUNS_EXPORT_FILE",
     "SEARCH_KEYS_FILE",
+    "SUBMISSIONS_SUBDIR",
+    "SWEEPS_SUBDIR",
     "Settings",
 ]
 
@@ -69,6 +72,11 @@ INSTRUMENTS_SUBDIR: Final[str] = "instruments"
 EXPORTS_SUBDIR: Final[str] = "exports"
 """Under the data directory: derived, deterministic exports such as ``runs.json``."""
 RUNS_EXPORT_FILE: Final[str] = "runs.json"
+REGISTER_EXPORT_FILE: Final[str] = "register.json"
+SUBMISSIONS_SUBDIR: Final[str] = "submissions"
+"""Under the data directory: the analyst's submissions, append-only facts."""
+SWEEPS_SUBDIR: Final[str] = "sweeps"
+"""Under the data directory: ``<on>__<n>.json`` per sweep that faded anything."""
 
 
 def _key_from_file(path: Path) -> str | None:
@@ -184,6 +192,21 @@ class Settings(BaseModel):
     def runs_export_path(self) -> Path:
         """``<data_dir>/exports/runs.json``."""
         return self.exports_dir / RUNS_EXPORT_FILE
+
+    @property
+    def register_export_path(self) -> Path:
+        """``<data_dir>/exports/register.json``."""
+        return self.exports_dir / REGISTER_EXPORT_FILE
+
+    @property
+    def submissions_dir(self) -> Path:
+        """``<data_dir>/submissions``."""
+        return self.data_dir / SUBMISSIONS_SUBDIR
+
+    @property
+    def sweeps_dir(self) -> Path:
+        """``<data_dir>/sweeps``."""
+        return self.data_dir / SWEEPS_SUBDIR
 
     @property
     def fake_hits_path(self) -> Path:

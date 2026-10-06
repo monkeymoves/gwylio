@@ -65,3 +65,21 @@ or deleted database.
   never the other way round.
 - Rebuild replays runs in the order they started (run ids sort only to the
   minute) and builds into a scratch file, replacing the database only on success.
+
+## Addendum: what the register added (work package 5)
+
+- `data/submissions/<stem>.json` replay after every candidates file, in
+  `received_on` then file name order, through the same ingest as `gwylio
+  ingest`. Because the order is fixed by the files, ingest refuses a
+  submission that would sort before one already ingested. A run submission
+  is named `<run_id>__<n>`, an out-of-run one `direct__<received_on>__<n>`,
+  and the legacy import `legacy__<received_on>` (ADR 0003).
+- `data/sweeps/<on>__<n>.json` joins the facts. The fade rule depends on
+  which runs and sightings existed when `gwylio sweep` ran, so a rebuild
+  applies the fades a sweep recorded rather than re-running the rule; each
+  file records how many submissions had been ingested, which places it among
+  them. A sweep that fades nothing writes no file.
+- A rebuild checks foreign keys at its commit, because a run can record a
+  reinforcement of a report that a later-replayed submission created.
+- A submission refused by ingest was never a fact: fix it (or remove it)
+  before the next rebuild, which refuses any submission that does not ingest.

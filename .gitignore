@@ -25,6 +25,8 @@ playwright-report/
 data/gwylio.sqlite
 data/gwylio.sqlite-*
 data/gwylio.sqlite.rebuilding*
+backend/tests/fixtures/seed/gwylio.sqlite
+backend/tests/fixtures/seed/gwylio.sqlite-*
 
 # Local settings and secrets
 config/settings.toml

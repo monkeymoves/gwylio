@@ -23,10 +23,15 @@ uv run --directory backend gwylio migrate        # create or upgrade data/gwylio
 uv run --directory backend gwylio collect --fake # fake collectors with real persistence and a candidates file
 uv run --directory backend gwylio export         # write data/exports/runs.json
 uv run --directory backend gwylio rebuild        # rebuild the database from config plus data files
+uv run --directory backend gwylio ingest data/submissions/<stem>.json [--allow-deferred]  # all or nothing
+uv run --directory backend gwylio sweep [--today YYYY-MM-DD]   # fade quiet reports; writes data/sweeps/
+uv run --directory backend gwylio datecheck                    # rot findings, always exit 0
+uv run --directory backend gwylio import-legacy <signals.json> # one-off seed from the old register
+make seed                                        # recreate backend/tests/fixtures/seed
 uv run --directory backend gwylio probe "drought" --discipline osint_feed  # try a query, stores nothing
 ```
 
-`seed`, `dev`, `ingest` and `publish` are stubs until their work
+`dev` and `publish` are stubs until their work
 packages land; each prints which one. `gwylio collect` (no flag) runs the real collectors: feeds always,
 Brave web and site search when a key is set (`GWYLIO_BRAVE_API_KEY`,
 `BRAVE_API_KEY`, or a gitignored `search_keys.txt` at the root), academic
@@ -64,7 +69,11 @@ instrument holds still.
   `data/instruments/<version>.json` archives each instrument version a run
   used, so a rebuild can restore it. `data/exports/register.json` is a
   derived export. Settings come from `GWYLIO_DATA_DIR`, `GWYLIO_CONFIG_DIR`
-  and `GWYLIO_DB_PATH`. See ADR 0002.
+  and `GWYLIO_DB_PATH`. `data/submissions/` replays in received_on then
+  file name order, so ingest refuses an out-of-order file; `data/sweeps/`
+  records fades; run `sweep` after `ingest`. A refused submission was never a
+  fact: fix or remove it before the next rebuild. The rubric is
+  `docs/RUBRIC.md`, version 2026.10. See ADR 0002 and 0003.
 - **Generated files are never edited by hand.** `docs/schema/`,
   `docs/GLOSSARY.md`, `skill/REFERENCE.md` and
   `frontend/src/lib/data/types.generated.ts` come from `gwylio schema`.

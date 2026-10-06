@@ -39,10 +39,11 @@ def test_migrate_creates_then_reports_up_to_date(tmp_path: Path, env: dict[str, 
     db_path = tmp_path / "data" / "gwylio.sqlite"
     assert first.stdout.splitlines() == [
         "applied 0001_init.sql",
-        f"migrated {db_path}: 1 migration",
+        "applied 0002_intelligence.sql",
+        f"migrated {db_path}: 2 migrations",
     ]
     again = runner.invoke(app, ["migrate", *ROOT], env=env)
-    assert again.stdout.strip() == f"{db_path} is up to date: 1 migration"
+    assert again.stdout.strip() == f"{db_path} is up to date: 2 migrations"
 
 
 def test_collect_fake_stores_the_run_and_writes_its_files(
@@ -87,6 +88,7 @@ def test_collect_fake_honours_out_dir(tmp_path: Path, env: dict[str, str]) -> No
         (["--fake", "--out", "x.json"], "--out goes with --dry-run"),
         (["--dry-run", "--out-dir", "x"], "--out-dir goes with a stored run, not --dry-run"),
         (["--fake", "--discipline", "sensor"], "no collector serves sensor"),
+        (["--at", "2026-09-01T09:00:00+0000"], "--at goes with --fake or --dry-run"),
     ],
 )
 def test_collect_refuses_flag_combinations(
@@ -122,19 +124,24 @@ def test_export_needs_a_database_then_writes_runs_json(tmp_path: Path, env: dict
     assert "no database at" in missing.stderr
     assert runner.invoke(app, ["collect", "--fake", *ROOT], env=env).exit_code == 0
     export = tmp_path / "data" / "exports" / "runs.json"
+    register = tmp_path / "data" / "exports" / "register.json"
     before = export.read_bytes()
     export.unlink()
     result = runner.invoke(app, ["export", *ROOT], env=env)
     assert result.exit_code == 0, result.output
-    assert result.stdout.strip() == f"wrote  {export}"
+    assert result.stdout.splitlines() == [f"wrote  {export}", f"wrote  {register}"]
     assert export.read_bytes() == before
+    assert json.loads(register.read_text(encoding="utf-8")) == {
+        "format": "gwylio.register/1",
+        "reports": [],
+    }
 
 
 def test_export_refuses_an_unmigrated_database(tmp_path: Path, env: dict[str, str]) -> None:
     Database.open(tmp_path / "data" / "gwylio.sqlite").close()
     result = runner.invoke(app, ["export", *ROOT], env=env)
     assert result.exit_code == 1
-    assert "needs 1 more migration" in result.stderr
+    assert "needs 2 more migrations" in result.stderr
 
 
 def test_rebuild_prints_the_summary_and_reports_failure(
@@ -144,7 +151,9 @@ def test_rebuild_prints_the_summary_and_reports_failure(
     result = runner.invoke(app, ["rebuild", *ROOT], env=env)
     assert result.exit_code == 0, result.output
     lines = result.stdout.splitlines()
-    assert lines[1] == "replayed 1 candidates file and 1 archived instrument"
+    assert lines[1] == (
+        "replayed 1 candidates file, 0 submissions, 0 sweeps and 1 archived instrument"
+    )
     assert "  scan_run                            1" in lines
     assert "  candidate                          17" in lines
     (tmp_path / "data" / "candidates" / "20261006T0000Z-0000.json").write_text("{", "utf-8")
@@ -165,3 +174,18 @@ def test_db_path_can_point_outside_the_data_directory(tmp_path: Path, env: dict[
     result = runner.invoke(app, ["migrate", *ROOT], env=env | {DB_PATH_ENV_VAR: str(db_path)})
     assert result.exit_code == 0, result.output
     assert db_path.is_file()
+
+
+def test_a_pinned_dry_run_is_reproducible(tmp_path: Path, env: dict[str, str]) -> None:
+    outputs = []
+    for name in ("a.json", "b.json"):
+        out = tmp_path / name
+        result = runner.invoke(
+            app,
+            ["collect", "--dry-run", "--at", "2026-09-01T09:00:00+0000", "--out", str(out), *ROOT],
+            env=env,
+        )
+        assert result.exit_code == 0, result.output
+        outputs.append(out.read_bytes())
+    assert outputs[0] == outputs[1]
+    assert json.loads(outputs[0])["run_id"] == "20260901T0900Z-0000"
