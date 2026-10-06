@@ -1,5 +1,10 @@
 // See https://svelte.dev/docs/kit/types#app.d.ts for what belongs here.
 declare global {
+	interface ImportMetaEnv {
+		/** Read API base, such as http://localhost:8000/api/v1; unset reads the snapshot. */
+		readonly PUBLIC_GWYLIO_API_BASE?: string;
+	}
+
 	namespace App {
 		// interface Error {}
 		// interface Locals {}

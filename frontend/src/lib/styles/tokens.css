@@ -36,8 +36,29 @@
 	--space-8: 32px;
 
 	--gutter: var(--space-6);
-	--content-max: 72rem;
+	--content-max: 75rem;
 	--radius: 6px;
+
+	/*
+	 * Direction colours for the stacked direction bars. Three hues from the
+	 * dataviz reference palette (blue, orange, aqua) that pass the all-pairs
+	 * colour-blind check in both schemes, plus a neutral grey for two-way, the
+	 * diverging midpoint. A bar segment can touch any other once a zero count
+	 * drops out, so all pairs were validated, not just neighbours. Colour is
+	 * never alone: every bar carries a legend with labels and counts.
+	 */
+	--dir-supports: #2a78d6;
+	--dir-threatens: #eb6834;
+	--dir-neutral: #52514e;
+	--dir-informs-baseline: #1baf7a;
+	--bar-track: #ecebe6;
+
+	/* Chips: a blind spot is inverse ink with a hatch, never the quiet outline. */
+	--chip-blind-bg: #1d2422;
+	--chip-blind-text: #ffffff;
+	--chip-blind-hatch: rgba(255, 255, 255, 0.16);
+	--banner-bg: #fff6e0;
+	--banner-border: #e3c27a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,6 +75,18 @@
 		--color-warn: #f2c14e;
 		--color-bad: #f28b82;
 		--color-neutral: #b4bfbb;
+
+		--dir-supports: #3987e5;
+		--dir-threatens: #d95926;
+		--dir-neutral: #c3c2b7;
+		--dir-informs-baseline: #199e70;
+		--bar-track: #27302d;
+
+		--chip-blind-bg: #e7ece9;
+		--chip-blind-text: #121715;
+		--chip-blind-hatch: rgba(0, 0, 0, 0.14);
+		--banner-bg: #2b2516;
+		--banner-border: #6b5a2c;
 	}
 }
 
@@ -70,6 +103,18 @@
 	--color-warn: #f2c14e;
 	--color-bad: #f28b82;
 	--color-neutral: #b4bfbb;
+
+	--dir-supports: #3987e5;
+	--dir-threatens: #d95926;
+	--dir-neutral: #c3c2b7;
+	--dir-informs-baseline: #199e70;
+	--bar-track: #27302d;
+
+	--chip-blind-bg: #e7ece9;
+	--chip-blind-text: #121715;
+	--chip-blind-hatch: rgba(0, 0, 0, 0.14);
+	--banner-bg: #2b2516;
+	--banner-border: #6b5a2c;
 }
 
 /* Phone width: 16px side gutter. */
@@ -106,4 +151,37 @@ svg,
 video {
 	max-width: 100%;
 	height: auto;
+}
+
+a {
+	color: var(--color-accent);
+}
+
+a:focus-visible,
+button:focus-visible,
+select:focus-visible,
+input:focus-visible,
+summary:focus-visible {
+	outline: 2px solid var(--color-accent);
+	outline-offset: 2px;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.muted {
+	color: var(--color-text-muted);
+}
+
+.tabular {
+	font-variant-numeric: tabular-nums;
 }
