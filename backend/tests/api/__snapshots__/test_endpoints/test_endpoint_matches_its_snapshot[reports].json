@@ -1,0 +1,521 @@
+[
+  {
+    "appearances": 3,
+    "assessments": [
+      {
+        "code": "SI1",
+        "direction": "threatens",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-09-02",
+    "credibility": 2,
+    "directions": [
+      "threatens"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C2",
+    "hazards": [
+      "avian-influenza"
+    ],
+    "id": "avian-influenza-seabirds-2026",
+    "lane": "ecological-surveillance",
+    "lane_name": "Ecological surveillance",
+    "last_changed": "2026-10-04",
+    "last_verified": "2026-10-02",
+    "places": [
+      "wales"
+    ],
+    "reliability": "C",
+    "report_type": "research",
+    "requirement_ids": [
+      "si1"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "bto",
+    "source_name": "British Trust for Ornithology (BTO)",
+    "state": "tracking",
+    "summary": "The BTO summarises the 2026 season of avian influenza in seabird colonies, including Welsh islands.",
+    "title": "Avian influenza in seabirds: 2026 season",
+    "topics": [
+      "biosecurity",
+      "marine-and-coastal"
+    ],
+    "url": "https://www.bto.org/our-science/projects/avian-influenza-seabirds"
+  },
+  {
+    "appearances": 3,
+    "assessments": [
+      {
+        "code": "SI6",
+        "direction": "informs_baseline",
+        "requirement_id": "si6",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-09-02",
+    "credibility": 1,
+    "directions": [
+      "informs_baseline"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B1",
+    "hazards": [],
+    "id": "ccc-progress-report-2026",
+    "lane": "uk-government-and-regulators",
+    "lane_name": "UK Government and regulators",
+    "last_changed": "2026-10-04",
+    "last_verified": "2026-09-02",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "research",
+    "requirement_ids": [
+      "si6"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "climate-change-committee",
+    "source_name": "Climate Change Committee",
+    "state": "matured",
+    "summary": "The Climate Change Committee's 2026 progress report sets the baseline for Welsh emissions.",
+    "title": "Progress in reducing emissions: 2026 report to Parliament",
+    "topics": [
+      "climate-emissions"
+    ],
+    "url": "https://www.theccc.org.uk/publication/progress-in-reducing-emissions-2026"
+  },
+  {
+    "appearances": 3,
+    "assessments": [
+      {
+        "code": "SI5",
+        "direction": "supports",
+        "requirement_id": "si5",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-09-02",
+    "credibility": 2,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [],
+    "id": "domestic-solid-fuel-burning-emissions",
+    "lane": "welsh-government",
+    "lane_name": "Welsh Government",
+    "last_changed": "2026-10-04",
+    "last_verified": "2026-09-02",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si5"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "welsh-government",
+    "source_name": "Welsh Government",
+    "state": "tracking",
+    "summary": "The Welsh Government sets out measures to cut fine particulate emissions from domestic solid fuel burning.",
+    "title": "Reducing emissions from domestic solid fuel burning",
+    "topics": [
+      "air-quality"
+    ],
+    "url": "https://www.gov.wales/reducing-emissions-domestic-solid-fuel-burning"
+  },
+  {
+    "appearances": 3,
+    "assessments": [
+      {
+        "code": "SI1",
+        "direction": "supports",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI2",
+        "direction": "supports",
+        "requirement_id": "si2",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "follow_up",
+    "created_on": "2026-09-02",
+    "credibility": 1,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": "2026-09-30",
+    "flags": [
+      "passed_horizon",
+      "future_language"
+    ],
+    "grading": "B1",
+    "hazards": [],
+    "id": "nature-recovery-bill-consultation",
+    "lane": "welsh-government",
+    "lane_name": "Welsh Government",
+    "last_changed": "2026-10-04",
+    "last_verified": "2026-09-02",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si1",
+      "si2"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "welsh-government",
+    "source_name": "Welsh Government",
+    "state": "tracking",
+    "summary": "The Welsh Government consults on a Nature Recovery Bill; the consultation closes on 30 September 2026.",
+    "title": "Consultation on a Nature Recovery Bill for Wales",
+    "topics": [
+      "nature-and-ecosystems"
+    ],
+    "url": "https://www.gov.wales/nature-recovery-bill-consultation"
+  },
+  {
+    "appearances": 3,
+    "assessments": [
+      {
+        "code": "SI4",
+        "direction": "threatens",
+        "requirement_id": "si4",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI1",
+        "direction": "threatens",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "brief",
+    "created_on": "2026-09-02",
+    "credibility": 2,
+    "directions": [
+      "threatens"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [
+      "public-funding-pressure"
+    ],
+    "id": "nrw-funding-and-capacity-2026",
+    "lane": "governance-capacity",
+    "lane_name": "Governance and capacity",
+    "last_changed": "2026-10-04",
+    "last_verified": "2026-09-02",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "research",
+    "requirement_ids": [
+      "si4",
+      "si1"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "audit-wales",
+    "source_name": "Audit Wales",
+    "state": "tracking",
+    "summary": "Audit Wales reports that NRW's funding has not kept pace with its duties, and that regulatory and monitoring capacity has fallen.",
+    "title": "Audit Wales: Natural Resources Wales funding and capacity",
+    "topics": [
+      "governance-and-funding"
+    ],
+    "url": "https://www.audit.wales/publication/natural-resources-wales-funding-and-capacity"
+  },
+  {
+    "appearances": 3,
+    "assessments": [
+      {
+        "code": "SI4",
+        "direction": "threatens",
+        "requirement_id": "si4",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "brief",
+    "created_on": "2026-09-02",
+    "credibility": 3,
+    "directions": [
+      "threatens"
+    ],
+    "distinct_sources": 3,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B3",
+    "hazards": [
+      "agricultural-pollution"
+    ],
+    "id": "phosphate-welsh-rivers-2026",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-04",
+    "last_verified": "2026-09-02",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "environmental",
+    "requirement_ids": [
+      "si4"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "BBC Wales News",
+    "state": "reinforced",
+    "summary": "BBC Wales reports that phosphate levels in Welsh special area of conservation rivers remain above targets.",
+    "title": "Phosphate levels in Welsh rivers remain high",
+    "topics": [
+      "pollution-water-and-land"
+    ],
+    "url": "https://www.bbc.co.uk/news/articles/cx2phosphate"
+  },
+  {
+    "appearances": 3,
+    "assessments": [
+      {
+        "code": "SI4",
+        "direction": "threatens",
+        "requirement_id": "si4",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "follow_up",
+    "created_on": "2026-09-02",
+    "credibility": 2,
+    "directions": [
+      "threatens"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "D2",
+    "hazards": [
+      "legal-challenge",
+      "agricultural-pollution"
+    ],
+    "id": "river-action-judicial-review-permission",
+    "lane": "legal-and-campaign",
+    "lane_name": "Legal and campaign",
+    "last_changed": "2026-10-04",
+    "last_verified": "2026-09-02",
+    "places": [
+      "wales"
+    ],
+    "reliability": "D",
+    "report_type": "legal",
+    "requirement_ids": [
+      "si4"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "river-action",
+    "source_name": "River Action",
+    "state": "tracking",
+    "summary": "River Action has been granted permission for a judicial review of NRW's permitting of poultry units.",
+    "title": "River Action wins permission for judicial review",
+    "topics": [
+      "pollution-water-and-land"
+    ],
+    "url": "https://www.riveractionuk.com/news/judicial-review-against-natural-resources-wales-granted"
+  },
+  {
+    "appearances": 3,
+    "assessments": [
+      {
+        "code": "SI1",
+        "direction": "threatens",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI8",
+        "direction": "threatens",
+        "requirement_id": "si8",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "brief",
+    "created_on": "2026-09-02",
+    "credibility": 3,
+    "directions": [
+      "threatens"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C3",
+    "hazards": [
+      "drought-and-low-flows"
+    ],
+    "id": "south-west-wales-drought-2026",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-04",
+    "last_verified": "2026-09-02",
+    "places": [
+      "wales",
+      "south-west-wales"
+    ],
+    "reliability": "C",
+    "report_type": "environmental",
+    "requirement_ids": [
+      "si1",
+      "si8"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "nation-cymru",
+    "source_name": "Nation.Cymru",
+    "state": "reinforced",
+    "summary": "Nation.Cymru reports that drought status has been declared across South West Wales after a dry summer.",
+    "title": "Drought declared across South West Wales",
+    "topics": [
+      "water-resources"
+    ],
+    "url": "https://nation.cymru/news/drought-declared-across-south-west-wales"
+  },
+  {
+    "appearances": 2,
+    "assessments": [
+      {
+        "code": "SI8",
+        "direction": "threatens",
+        "requirement_id": "si8",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-09-02",
+    "credibility": 2,
+    "directions": [
+      "threatens"
+    ],
+    "distinct_sources": 0,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [
+      "river-and-surface-water-flooding"
+    ],
+    "id": "storm-claudia-monmouthshire-flooding",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-05",
+    "last_verified": "2026-09-02",
+    "places": [
+      "wales",
+      "south-east-wales"
+    ],
+    "reliability": "B",
+    "report_type": "incident",
+    "requirement_ids": [
+      "si8"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "BBC Wales News",
+    "state": "faded",
+    "summary": "BBC Wales reports homes flooded in Monmouthshire during Storm Claudia.",
+    "title": "Storm Claudia: homes flooded in Monmouthshire",
+    "topics": [
+      "flood-risk"
+    ],
+    "url": "https://www.bbc.co.uk/news/articles/storm-claudia-monmouthshire"
+  },
+  {
+    "appearances": 3,
+    "assessments": [
+      {
+        "code": "SI1",
+        "direction": "neutral",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI6",
+        "direction": "neutral",
+        "requirement_id": "si6",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-09-02",
+    "credibility": 3,
+    "directions": [
+      "neutral"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C3",
+    "hazards": [
+      "farm-support-transition"
+    ],
+    "id": "sustainable-farming-scheme-concerns",
+    "lane": "partnership-and-civil-society",
+    "lane_name": "Partnership and civil society",
+    "last_changed": "2026-10-04",
+    "last_verified": "2026-09-02",
+    "places": [
+      "wales"
+    ],
+    "reliability": "C",
+    "report_type": "partnership",
+    "requirement_ids": [
+      "si1",
+      "si6"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "nfu-cymru",
+    "source_name": "NFU Cymru",
+    "state": "parked",
+    "summary": "NFU Cymru sets out members' concerns about the Sustainable Farming Scheme's tree and habitat requirements.",
+    "title": "NFU Cymru responds to Sustainable Farming Scheme concerns",
+    "topics": [
+      "partnership-and-society"
+    ],
+    "url": "https://www.nfu-cymru.org.uk/news/sustainable-farming-scheme-concerns"
+  }
+]

@@ -1,0 +1,119 @@
+{
+  "actor_id": "climate-change-committee",
+  "actor_name": "Climate Change Committee",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI8",
+      "direction": "supports",
+      "name": "Increasing the proportion of the population living in places that will continue to support and contribute to their health and well-being in a changing climate",
+      "requirement_id": "si8",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "follow_up",
+  "canonical_url": "theccc.org.uk/2026/07/13/response-to-new-adaptation-package",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "B3",
+  "hazards": [],
+  "history": [
+    {
+      "change": "added at the 2026-07-17 scan; found via the CCC RSS feed, which the site: pass had not surfaced",
+      "kind": "imported",
+      "on": "2026-07-17"
+    },
+    {
+      "change": "sighted again at 2026-07-20 scan; appearances 2; emerging to tracking",
+      "kind": "imported",
+      "on": "2026-07-20"
+    },
+    {
+      "change": "sighted again at 2026-07-22 scan; appearances bumped",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "development-baseline recalibration: lifecycle tracking to emerging, appearances reset to 1. Prior sightings were the same URL re-found by the same instrument during the July development week, which is not the independent confirmation that tracking and reinforced are meant to record.",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-23; last_seen bumped, appearances and lifecycle held (one day after the 22 July baseline, same development window per RUBRIC)",
+      "kind": "imported",
+      "on": "2026-07-23"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-25; last_seen bumped, lifecycle held (same development window as the 23 July scan)",
+      "kind": "imported",
+      "on": "2026-07-25"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "uk-climate-adaptation-package-2026",
+  "independent_confirmation": false,
+  "lane": "uk-government-and-regulators",
+  "lane_name": "UK Government and regulators",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-24",
+  "lens": "government",
+  "notes": "A 2 degree planning assumption is directly relevant to how SI8 defines places that will continue to support health and well-being in a changing climate. Check whether Wales adopts the same planning assumption, since the Climate Adaptation Strategy for Wales 2024 is the Welsh instrument.",
+  "owner": "Luke",
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si8"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "high",
+    "potential_impact": "medium",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "climate-change-committee",
+  "source_name": "Climate Change Committee",
+  "state": "emerging",
+  "summary": "CCC response of 13 July 2026 to a new government adaptation package that commits to planning for a minimum of 2 degrees of warming by 2050 with stronger measurable adaptation objectives. The Adaptation Committee calls it more ambitious and in line with its advice, but warns a far more concerted effort and significantly more funding is needed, citing over 2,700 heat-related deaths in England and Wales during the May to June heatwaves.",
+  "title": "UK adaptation package commits to planning for a minimum of 2 degrees warming by 2050; CCC says funding falls short",
+  "topics": [
+    {
+      "id": "people-place-and-resilience",
+      "name": "People, place and resilience"
+    }
+  ],
+  "url": "https://www.theccc.org.uk/2026/07/13/response-to-new-adaptation-package/"
+}

@@ -1,0 +1,117 @@
+{
+  "actor_id": "nation-cymru",
+  "actor_name": "Nation.Cymru",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI6",
+      "direction": "threatens",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "requirement_id": "si6",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI11",
+      "direction": "threatens",
+      "name": "Increasing the proportion of organisations and businesses who act to mitigate and adapt to the nature, climate and pollution crises",
+      "requirement_id": "si11",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "nation.cymru/news/welsh-council-drops-2030-net-zero-target-after-admitting-it-cannot-meet-deadline",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "threatens"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "C3",
+  "hazards": [],
+  "history": [
+    {
+      "change": "added at 2026-07-22 scan; first Welsh council to drop the 2030 operational net zero target",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-23; last_seen bumped, appearances and lifecycle held (one day after the 22 July baseline, same development window per RUBRIC)",
+      "kind": "imported",
+      "on": "2026-07-23"
+    },
+    {
+      "change": "added SI11 threatens tag: an organisation withdrawing climate action bears on the organisations-and-businesses indicator, which otherwise shows zero signals",
+      "kind": "imported",
+      "on": "2026-07-24"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-25; last_seen bumped, lifecycle held (same development window as the 23 July scan)",
+      "kind": "imported",
+      "on": "2026-07-25"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "bridgend-drops-2030-net-zero-target",
+  "independent_confirmation": false,
+  "lane": "independent-media",
+  "lane_name": "Independent media",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-24",
+  "lens": "partnership_society",
+  "notes": "A first-of-kind retreat from the Welsh public sector 2030 net zero ambition, and framed by officers as sector-wide pressure rather than one council's failure. If it cascades, the public-sector delivery context behind SI6 weakens. Weak signal by design: single council, but watch for followers and for Welsh Government's response. Also tagged SI11: a public body withdrawing a climate commitment is an organisation reducing its action, which is what SI11 measures, and officers describing the pressure as sector-wide makes it a leading indicator for other bodies. Added 24 July 2026; SI11's evidence is otherwise internal, so this is an incidental external sighting rather than genuine coverage of the indicator.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si6",
+    "si11"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "medium",
+    "novelty": "high",
+    "potential_impact": "medium",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "nation-cymru",
+  "source_name": "Nation.Cymru",
+  "state": "emerging",
+  "summary": "In July 2026 Bridgend council dropped its 2030 operational net zero target (adopted 2023) for a 'more realistic' efficiency-led strategy with a 2030 review, citing residual emissions and severe funding constraints; 72 percent of consultation respondents opposed keeping the target. Officers told scrutiny the new Welsh Government administration recognises 2030 net zero will be incredibly difficult across the public sector.",
+  "title": "Bridgend council drops its 2030 net zero target as unachievable; officers say the pressure is sector-wide",
+  "topics": [
+    {
+      "id": "climate-emissions",
+      "name": "Climate and emissions"
+    }
+  ],
+  "url": "https://nation.cymru/news/welsh-council-drops-2030-net-zero-target-after-admitting-it-cannot-meet-deadline/"
+}

@@ -1,0 +1,81 @@
+{
+  "schema": "gwylio.submission/1",
+  "run_id": "20261003T0900Z-0000",
+  "analyst": "seed fixture",
+  "rubric_version": "2026.10",
+  "received_on": "2026-10-04",
+  "dispositions": [
+    {
+      "candidate_id": "c-20261003t0900z-0000-4705e1",
+      "outcome": "reinforcement",
+      "reason": "Surfers Against Sewage maps the same failing river stretches: a third watched source on the story.",
+      "report_id": "phosphate-welsh-rivers-2026"
+    },
+    {
+      "candidate_id": "c-20261003t0900z-0000-913ebc",
+      "outcome": "reinforcement",
+      "reason": "Dwr Cymru Welsh Water reports the same phosphate failures in Welsh rivers: a second watched source on the story.",
+      "report_id": "phosphate-welsh-rivers-2026"
+    },
+    {
+      "candidate_id": "c-20261003t0900z-0000-cb136c",
+      "outcome": "reinforcement",
+      "reason": "Wildlife Trusts Wales reports the same phosphate pressure on river habitats: a fourth watched source on the story.",
+      "report_id": "phosphate-welsh-rivers-2026"
+    }
+  ],
+  "promotions": [],
+  "updates": [],
+  "reinforcements": [
+    {
+      "report_id": "avian-influenza-seabirds-2026",
+      "candidate_id": "c-20261003t0900z-0000-0e4cb8"
+    },
+    {
+      "report_id": "ccc-progress-report-2026",
+      "candidate_id": "c-20261003t0900z-0000-cbbd8a"
+    },
+    {
+      "report_id": "domestic-solid-fuel-burning-emissions",
+      "candidate_id": "c-20261003t0900z-0000-256eb4"
+    },
+    {
+      "report_id": "nature-recovery-bill-consultation",
+      "candidate_id": "c-20261003t0900z-0000-5044d6"
+    },
+    {
+      "report_id": "nrw-funding-and-capacity-2026",
+      "candidate_id": "c-20261003t0900z-0000-36a47c"
+    },
+    {
+      "report_id": "phosphate-welsh-rivers-2026",
+      "candidate_id": "c-20261003t0900z-0000-c357cb"
+    },
+    {
+      "report_id": "phosphate-welsh-rivers-2026",
+      "candidate_id": "c-20261003t0900z-0000-913ebc"
+    },
+    {
+      "report_id": "phosphate-welsh-rivers-2026",
+      "candidate_id": "c-20261003t0900z-0000-4705e1"
+    },
+    {
+      "report_id": "phosphate-welsh-rivers-2026",
+      "candidate_id": "c-20261003t0900z-0000-cb136c"
+    },
+    {
+      "report_id": "river-action-judicial-review-permission",
+      "candidate_id": "c-20261003t0900z-0000-4191c8"
+    },
+    {
+      "report_id": "south-west-wales-drought-2026",
+      "candidate_id": "c-20261003t0900z-0000-750908"
+    },
+    {
+      "report_id": "sustainable-farming-scheme-concerns",
+      "candidate_id": "c-20261003t0900z-0000-0b6c39"
+    }
+  ],
+  "verifications": [],
+  "method_note": "Seed fixture: the third fake run found most promoted pages again and three watched sources on the phosphate story; every reinforcement confirmed, so the phosphate report is seen by three distinct sources. The Storm Claudia page was not found, so the sweep fades it."
+}

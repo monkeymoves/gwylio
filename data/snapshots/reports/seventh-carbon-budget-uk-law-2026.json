@@ -1,0 +1,119 @@
+{
+  "actor_id": "climate-change-committee",
+  "actor_name": "Climate Change Committee",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI6",
+      "direction": "supports",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "requirement_id": "si6",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "theccc.org.uk/2026/06/24/response-to-parliament-passing-the-seventh-carbon-budget-into-law",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "B2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "added at the 2026-07-17 scan; found via the CCC RSS feed, which the site: pass had not surfaced",
+      "kind": "imported",
+      "on": "2026-07-17"
+    },
+    {
+      "change": "sighted again at 2026-07-20 scan; appearances 2; emerging to tracking",
+      "kind": "imported",
+      "on": "2026-07-20"
+    },
+    {
+      "change": "sighted again at 2026-07-22 scan; appearances bumped",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "development-baseline recalibration: lifecycle tracking to emerging, appearances reset to 1. Prior sightings were the same URL re-found by the same instrument during the July development week, which is not the independent confirmation that tracking and reinforced are meant to record.",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-23; last_seen bumped, appearances and lifecycle held (one day after the 22 July baseline, same development window per RUBRIC)",
+      "kind": "imported",
+      "on": "2026-07-23"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-25; last_seen bumped, lifecycle held (same development window as the 23 July scan)",
+      "kind": "imported",
+      "on": "2026-07-25"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "seventh-carbon-budget-uk-law-2026",
+  "independent_confirmation": false,
+  "lane": "uk-government-and-regulators",
+  "lane_name": "UK Government and regulators",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-24",
+  "lens": "government",
+  "notes": "UK-level, not Welsh. Tagged medium confidence on the read-across: the CCC response does not mention the devolved administrations.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "legislation",
+  "requirement_ids": [
+    "si6"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "high",
+    "novelty": "high",
+    "potential_impact": "medium",
+    "time_horizon": "long_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "climate-change-committee",
+  "source_name": "Climate Change Committee",
+  "state": "emerging",
+  "summary": "Parliament passed the Seventh Carbon Budget into law on or before 24 June 2026, setting a legally binding reduction of about 87 percent for 2038 to 2042. The CCC welcomed it and pressed for electrification at pace. This is the UK-level trajectory that sits above Wales' own carbon budgets, so it shapes the ambition context for SI6 even though Welsh budgets are set separately.",
+  "title": "UK Seventh Carbon Budget passes into law: about 87 percent reduction for 2038 to 2042",
+  "topics": [
+    {
+      "id": "climate-emissions",
+      "name": "Climate and emissions"
+    }
+  ],
+  "url": "https://www.theccc.org.uk/2026/06/24/response-to-parliament-passing-the-seventh-carbon-budget-into-law/"
+}

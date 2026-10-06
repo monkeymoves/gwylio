@@ -1,0 +1,103 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI1",
+      "direction": "threatens",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI3",
+      "direction": "neutral",
+      "name": "Increasing the integration of activities that support nature recovery into Wales' public services",
+      "requirement_id": "si3",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "gov.wales/marine-protected-area-network-management-progress-report-202223-202425",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "threatens",
+    "neutral"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-25, 73 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "B2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "added at scan 2026-07-25 via the new marine_coastal cluster; verified against the Welsh Government MPA progress report of 2 December 2025",
+      "kind": "imported",
+      "on": "2026-07-25"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "mpa-network-management-framework-expired-2026",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-25",
+  "lens": "government",
+  "notes": "The first marine signal on the register, and it is a governance gap rather than an event: the management framework for the Welsh MPA network has been out of date since 2023, with the review only commissioned in December 2025. Marine sits inside SI1 ecosystem resilience but is foregrounded by no indicator, which is why the scan missed it until the marine_coastal cluster was added on 24 July 2026. Watch for the JNCC review output and the next iteration of the Framework.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si1",
+    "si3"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "high",
+    "potential_impact": "medium",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government",
+  "state": "emerging",
+  "summary": "The Marine Protected Area Network Management Framework for Wales, published 6 September 2018, covered 2018 to 2023 and no successor has been published. The MPA Network Management Progress Report 2022 to 2024, published 2 December 2025, states that it concludes this iteration of the Framework, that the Framework runs on a five-year cycle and now requires an update for its next iteration, and that Welsh Government has asked the Joint Nature Conservation Committee to coordinate the review and update.",
+  "title": "Wales' marine protected area management framework expired in 2023 with no successor; JNCC asked to lead the review",
+  "topics": [
+    {
+      "id": "marine-and-coastal",
+      "name": "Marine and coastal"
+    }
+  ],
+  "url": "https://www.gov.wales/marine-protected-area-network-management-progress-report-202223-202425"
+}

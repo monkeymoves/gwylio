@@ -1,0 +1,30 @@
+{
+  "app_version": "0.1.0",
+  "counts": {
+    "active_sources": 41,
+    "products": 2,
+    "reports": 35,
+    "reports_by_state": {
+      "emerging": 33,
+      "faded": 0,
+      "matured": 2,
+      "parked": 0,
+      "reinforced": 0,
+      "tracking": 0
+    },
+    "requirement_sets": 1,
+    "runs": 0,
+    "sources": 43,
+    "submissions": 1
+  },
+  "default_requirement_set_id": "nrw-corporate-plan",
+  "generated_at": "2026-10-06T10:19:08Z",
+  "instrument_version": "2026.10.0",
+  "latest_run_id": null,
+  "latest_run_started_at": null,
+  "requirement_set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "rubric_version": "2026.10",
+  "today": "2026-10-06"
+}

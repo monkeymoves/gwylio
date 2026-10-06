@@ -1,0 +1,99 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI1",
+      "direction": "supports",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "gov.wales/written-statement-strategic-approach-welsh-fisheries-and-aquaculture-update",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "summary uses future-framed language: 'due to'",
+      "kind": "future_language",
+      "severity": "warn"
+    },
+    {
+      "detail": "last verified 2026-07-25, 73 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "B2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "added at scan 2026-07-25 via the new marine_coastal cluster; verified against the written statement of 29 January 2026",
+      "kind": "imported",
+      "on": "2026-07-25"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "welsh-fisheries-aquaculture-update-2026",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-25",
+  "lens": "government",
+  "notes": "Supports SI1 through active management of fishing pressure on marine ecosystems, the main lever Wales has over marine ecosystem condition. Surfaced by the new marine_coastal cluster. Read alongside the expired MPA management framework: fisheries management is progressing while the protected-area framework it sits inside is out of date.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si1"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "medium",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government",
+  "state": "emerging",
+  "summary": "A written statement of 29 January 2026 reports progress on the Strategic Approach to Welsh Fisheries and Aquaculture since December 2024: the King Scallop Fisheries Management Plan consultation has closed, a Wales-only crab and lobster plan consultation is due to launch, the Welsh Marine and Fisheries Scheme opened its sixth round on 7 January with an increased budget, 194,000 pounds has gone to inshore vessel monitoring systems, and multi-year science contracts and a carbon audit of the Welsh fleet have been commissioned.",
+  "title": "Welsh fisheries and aquaculture update reports progress on management plans and fleet decarbonisation",
+  "topics": [
+    {
+      "id": "marine-and-coastal",
+      "name": "Marine and coastal"
+    }
+  ],
+  "url": "https://www.gov.wales/written-statement-strategic-approach-welsh-fisheries-and-aquaculture-update"
+}

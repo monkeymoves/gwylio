@@ -1,0 +1,123 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI6",
+      "direction": "supports",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "requirement_id": "si6",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "brief",
+  "canonical_url": "gov.wales/written-statement-laying-regulations-set-carbon-budget-4-and-strengthen-wales-net-zero-framework",
+  "cited_in": [
+    "operational-2026-10"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "B2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "added at seed scan; tagged SI6 supports",
+      "kind": "imported",
+      "on": "2026-07-16"
+    },
+    {
+      "change": "sighted again at the 2026-07-17 scan; appearances 2; emerging to tracking",
+      "kind": "imported",
+      "on": "2026-07-17"
+    },
+    {
+      "change": "sighted again at 2026-07-20 scan; appearances 3; tracking to reinforced",
+      "kind": "imported",
+      "on": "2026-07-20"
+    },
+    {
+      "change": "verification sweep: Senedd approved regulations 2 December 2025 (WSI 2025/1268); retitled laid to approved; matured",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "sighted again at 2026-07-22 scan; appearances bumped",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-23; last_seen bumped, appearances and lifecycle held (one day after the 22 July baseline, same development window per RUBRIC)",
+      "kind": "imported",
+      "on": "2026-07-23"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-25; last_seen bumped, lifecycle held (same development window as the 23 July scan)",
+      "kind": "imported",
+      "on": "2026-07-25"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.; created as matured by analyst override",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "carbon-budget-4-regulations-wales-2025",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-24",
+  "lens": "government",
+  "notes": "Verified 22 July 2026: Senedd approval 2 December 2025 confirmed; lifecycle moved to matured (settled context).",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "legislation",
+  "requirement_ids": [
+    "si6"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "high",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government",
+  "state": "matured",
+  "summary": "Regulations laid 14 October 2025 set Carbon Budget 4 at a 73 percent average reduction in net Welsh emissions against 1990 levels for 2031 to 2035, as the CCC advised, and a zero percent offset limit for Carbon Budget 3 so 2026 to 2030 must be met entirely through domestic action. The Senedd approved the regulations on 2 December 2025 (the Climate Change (Carbon Budget) (Wales) Regulations 2025, WSI 2025/1268). The trajectory SI6 is measured against is now law.",
+  "title": "Carbon Budget 4 approved: 73 percent average emissions reduction for 2031 to 2035, with a zero offset limit for CB3",
+  "topics": [
+    {
+      "id": "climate-emissions",
+      "name": "Climate and emissions"
+    }
+  ],
+  "url": "https://www.gov.wales/written-statement-laying-regulations-set-carbon-budget-4-and-strengthen-wales-net-zero-framework"
+}

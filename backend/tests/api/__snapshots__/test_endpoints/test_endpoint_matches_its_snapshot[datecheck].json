@@ -1,0 +1,56 @@
+{
+  "groups": [
+    {
+      "count": 1,
+      "findings": [
+        {
+          "detail": "event horizon 2026-09-30 passed 6 days ago and nobody has updated or verified the report since",
+          "report_id": "nature-recovery-bill-consultation",
+          "severity": "act",
+          "state": "tracking",
+          "title": "Consultation on a Nature Recovery Bill for Wales"
+        }
+      ],
+      "kind": "passed_horizon",
+      "label": "Passed event horizons",
+      "meaning": "The event horizon has passed and nobody has updated or verified the report since. Check what happened, then rewrite the report in dated past tense.",
+      "severity": "act"
+    },
+    {
+      "count": 1,
+      "findings": [
+        {
+          "detail": "summary uses future-framed language: 'consultation closes'",
+          "report_id": "nature-recovery-bill-consultation",
+          "severity": "warn",
+          "state": "tracking",
+          "title": "Consultation on a Nature Recovery Bill for Wales"
+        }
+      ],
+      "kind": "future_language",
+      "label": "Future-framed language",
+      "meaning": "The title, summary or notes use language that rots once the date passes.",
+      "severity": "warn"
+    },
+    {
+      "count": 0,
+      "findings": [],
+      "kind": "stale_verification",
+      "label": "Stale verifications",
+      "meaning": "The report was last verified against its source too long ago.",
+      "severity": "warn"
+    },
+    {
+      "count": 0,
+      "findings": [],
+      "kind": "never_verified",
+      "label": "Never verified",
+      "meaning": "The report has never been verified against its source.",
+      "severity": "act"
+    }
+  ],
+  "reports_checked": 8,
+  "reports_flagged": 1,
+  "today": "2026-10-06",
+  "total": 2
+}

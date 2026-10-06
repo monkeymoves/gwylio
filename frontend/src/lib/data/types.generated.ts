@@ -21,10 +21,28 @@ export interface ActorsFile {
 	actors: ActorConfig[];
 }
 
+/** One assessment with its requirement named. */
+export interface AssessmentDetail {
+	requirement_id: string;
+	code: string | null;
+	name: string | null;
+	set_id: string | null;
+	direction: Direction;
+}
+
 /** Which way the report bears on one requirement. */
 export interface AssessmentEntry {
 	/** A requirement id from skill/REFERENCE.md, such as si4. */
 	requirement_id: string;
+	direction: Direction;
+}
+
+/** One assessment on a report list line. */
+export interface AssessmentLine {
+	requirement_id: string;
+	/** The requirement's code, null when no set holds it. */
+	code: string | null;
+	set_id: string | null;
 	direction: Direction;
 }
 
@@ -154,6 +172,39 @@ export interface Copy {
 	strategic: StrategicCopy;
 }
 
+/** coverage_<set>.json, GET /api/v1/coverage/{set}: both matrices and the legend. */
+export interface Coverage {
+	set_id: string;
+	set_name: string;
+	legend: LegendEntry[];
+	/** Requirements down, lanes across. */
+	lanes: CoverageMatrixView;
+	/** Taxonomy nodes down, one per axis. */
+	taxonomy: CoverageAxisView[];
+	/** Active reports assessed against the set, by credibility digit. */
+	credibility: CredibilityBar[];
+}
+
+/** One taxonomy axis by count. */
+export interface CoverageAxisView {
+	axis_id: string;
+	axis_name: string;
+	matrix: CoverageMatrixView;
+}
+
+/** One cell: a count and what it means. */
+export interface CoverageCellView {
+	column_id: string;
+	count: number;
+	status: CoverageStatus;
+}
+
+/** One column of a coverage matrix. */
+export interface CoverageColumn {
+	id: string;
+	name: string;
+}
+
 /** How each coverage status reads in a product. */
 export interface CoverageCopy {
 	/** Label for covered. */
@@ -166,6 +217,31 @@ export interface CoverageCopy {
 	blind_spot: string;
 }
 
+/** A coverage matrix: columns, rows and the report ids it counted. */
+export interface CoverageMatrixView {
+	columns: CoverageColumn[];
+	rows: CoverageRowView[];
+	report_ids: string[];
+}
+
+/**
+ * One row with its total and the row's status.
+ *
+ * On the lane matrix a row is a requirement and its status comes from its
+ * scanability and total, so a blind spot is never shown as quiet. On a
+ * taxonomy matrix a row is a node and ``expected`` counts the requirements
+ * expecting it.
+ */
+export interface CoverageRowView {
+	row_id: string;
+	label: string;
+	code: string | null;
+	cells: CoverageCellView[];
+	total: number;
+	status: CoverageStatus;
+	expected: number | null;
+}
+
 /** The state of one requirement in the picture. */
 export type CoverageStatus = "covered" | "thin" | "quiet" | "blind_spot";
 
@@ -176,6 +252,14 @@ export type CoverageStatus = "covered" | "thin" | "quiet" | "blind_spot";
  * fixed by the watchlist. The two together make the grading, such as B2.
  */
 export type Credibility = 1 | 2 | 3 | 4 | 5 | 6;
+
+/** How many reports carry one credibility digit: one bar of the grade inflation check. */
+export interface CredibilityBar {
+	credibility: Credibility;
+	/** The Admiralty wording, such as probably true. */
+	label: string;
+	count: number;
+}
 
 /** The Admiralty wording for each credibility digit. */
 export interface CredibilityCopy {
@@ -191,6 +275,46 @@ export interface CredibilityCopy {
 	five: string;
 	/** Credibility 6. */
 	six: string;
+}
+
+/** datecheck.json, GET /api/v1/datecheck: findings grouped by kind, every kind listed. */
+export interface DateCheck {
+	/** YYYY-MM-DD. */
+	today: string;
+	/** Reports still in the picture: active or matured. */
+	reports_checked: number;
+	total: number;
+	reports_flagged: number;
+	groups: DateCheckGroup[];
+}
+
+/** Date check findings counted by kind, their total, and the reports they flag. */
+export interface DateCheckCounts {
+	passed_horizon: number;
+	future_language: number;
+	stale_verification: number;
+	never_verified: number;
+	total: number;
+	reports_flagged: number;
+}
+
+/** Every finding of one kind. */
+export interface DateCheckGroup {
+	kind: FindingKind;
+	severity: Severity;
+	label: string;
+	meaning: string;
+	count: number;
+	findings: DateCheckLine[];
+}
+
+/** One finding in the verification queue. */
+export interface DateCheckLine {
+	report_id: string;
+	title: string;
+	state: IndicatorState;
+	detail: string;
+	severity: Severity;
 }
 
 /** config/datecheck.json: the rules gwylio datecheck applies. */
@@ -217,8 +341,32 @@ export interface DirectionCopy {
 	supports: string;
 }
 
+/** Reports counted by the direction of their assessment. */
+export interface DirectionCounts {
+	supports: number;
+	threatens: number;
+	neutral: number;
+	informs_baseline: number;
+}
+
 /** The kind of collection a collector performs. */
 export type Discipline = "osint_web" | "osint_feed" | "osint_site" | "osint_academic" | "geoint" | "sensor";
+
+/** One discipline's share of a run. */
+export interface DisciplineCount {
+	discipline: Discipline;
+	candidates: number;
+	sightings: number;
+}
+
+/** A run's candidates counted by their final disposition. */
+export interface DispositionCounts {
+	promoted: number;
+	rejected: number;
+	duplicate: number;
+	deferred: number;
+	reinforcement: number;
+}
 
 /** The fate of one candidate. */
 export interface DispositionEntry {
@@ -232,6 +380,54 @@ export interface DispositionEntry {
 
 /** The fate the analyst gives one candidate in a submission. */
 export type DispositionOutcome = "promoted" | "rejected" | "duplicate" | "deferred" | "reinforcement";
+
+/** What the analyst did with one run's candidates. */
+export interface DispositionView {
+	counts: DispositionCounts;
+	new: number;
+	disposed: number;
+	/** New candidates nobody has judged yet. */
+	undisposed: number;
+	/** Promoted over new candidates. */
+	promotion_rate: number | null;
+}
+
+/** One value of a closed vocabulary, with its label and what it means. */
+export interface EnumValue {
+	/** The stored value; credibility digits are written 1 to 6. */
+	value: string;
+	label: string;
+	meaning: string | null;
+}
+
+/** enums.json, GET /api/v1/meta/enums: every closed vocabulary, for legends and filters. */
+export interface Enums {
+	direction: EnumValue[];
+	indicator_state: EnumValue[];
+	bucket: EnumValue[];
+	coverage_status: EnumValue[];
+	scanability: EnumValue[];
+	reliability: EnumValue[];
+	credibility: EnumValue[];
+	report_type: EnumValue[];
+	score_level: EnumValue[];
+	time_horizon: EnumValue[];
+	finding_kind: EnumValue[];
+	severity: EnumValue[];
+	yield_reading: EnumValue[];
+	disposition_outcome: EnumValue[];
+	discipline: EnumValue[];
+	source_status: EnumValue[];
+	run_status: EnumValue[];
+	history_kind: EnumValue[];
+	product_level: EnumValue[];
+	group_kind: EnumValue[];
+	lens: EnumValue[];
+	/** The standing sentence that a blind spot is not quiet. */
+	blind_spot_rule: string;
+	/** The standing sentence that reports are not impact. */
+	undercount: string;
+}
 
 /** One report the sweep faded, and the reason recorded in its history. */
 export interface FadeEntry {
@@ -249,6 +445,13 @@ export interface FindingCopy {
 
 /** What the date check found wrong with a report. */
 export type FindingKind = "passed_horizon" | "future_language" | "stale_verification" | "never_verified";
+
+/** One date check finding on a report. */
+export interface FindingLine {
+	kind: FindingKind;
+	severity: Severity;
+	detail: string;
+}
 
 /**
  * How many hits survived each stage of the run.
@@ -270,6 +473,17 @@ export interface FunnelCounts {
 	reinforcements: number;
 }
 
+/** One run's funnel on the trend. */
+export interface FunnelPoint {
+	run_id: string;
+	/** ISO 8601, UTC. */
+	started_at: string;
+	funnel: FunnelCounts;
+	requests_made: number;
+	request_budget: number;
+	budget_exhausted: boolean;
+}
+
 /** config/gating.json: own domains and relevance tokens for the gates. */
 export interface GatingFile {
 	notes?: string | null;
@@ -284,6 +498,40 @@ export interface GatingFile {
 /** What a requirement group stands for. */
 export type GroupKind = "impact" | "wbo";
 
+/**
+ * One group on the picture, aggregated over its member requirements.
+ *
+ * ``active`` and ``total`` count distinct reports; ``directions`` counts
+ * distinct active reports with at least one assessment in that direction on
+ * a member, so a report that cuts two ways counts under both.
+ */
+export interface GroupTile {
+	group_id: string;
+	kind: GroupKind;
+	name: string;
+	statement: string | null;
+	members: string[];
+	active: number;
+	total: number;
+	directions: DirectionCounts;
+	states: StateCounts;
+	/** Member requirements by coverage status. */
+	statuses: StatusCounts;
+	latest_event_horizon: string | null;
+	latest_verified: string | null;
+}
+
+/** One group of requirements: an impact statement or a well-being objective (WBO). */
+export interface GroupView {
+	id: string;
+	kind: GroupKind;
+	name: string;
+	statement: string | null;
+	note: string | null;
+	members: string[];
+	related_groups: string[];
+}
+
 /** A named threat to the Welsh environment. */
 export interface HazardConfig {
 	id: string;
@@ -291,6 +539,14 @@ export interface HazardConfig {
 	/** A node id on the hazard-families taxonomy axis. */
 	family: string;
 	note?: string | null;
+}
+
+/** A hazard and its family on the hazard families axis. */
+export interface HazardRef {
+	id: string;
+	name: string;
+	family: string;
+	family_name: string;
 }
 
 /** config/reference/hazards.json: the hazard catalogue. */
@@ -301,6 +557,14 @@ export interface HazardsFile {
 
 /** What one history entry records. */
 export type HistoryKind = "created" | "sighted" | "state_changed" | "verified" | "updated" | "imported" | "faded" | "revived";
+
+/** One append-only history entry. */
+export interface HistoryLine {
+	/** YYYY-MM-DD. */
+	on: string;
+	kind: HistoryKind;
+	change: string;
+}
 
 /** Where a report is in the indications and warnings lifecycle. */
 export type IndicatorState = "emerging" | "tracking" | "reinforced" | "matured" | "faded" | "parked";
@@ -395,6 +659,13 @@ export interface LanesFile {
 	lanes: LaneConfig[];
 }
 
+/** One coverage status in the legend. */
+export interface LegendEntry {
+	status: CoverageStatus;
+	label: string;
+	meaning: string;
+}
+
 /** The three viewpoints the commission asked for; every lane sits under one. */
 export type Lens = "government" | "partnership_society" | "international";
 
@@ -403,6 +674,36 @@ export type Level = "low" | "medium" | "high";
 
 /** How a candidate was matched to an existing intelligence report. */
 export type MatchedBy = "url" | "title";
+
+/** meta.json, GET /api/v1/meta: when and from what the snapshot was built. */
+export interface Meta {
+	/** When the snapshot or response was built. */
+	generated_at: string;
+	/** The date the date check and the picture were computed for. */
+	today: string;
+	app_version: string;
+	rubric_version: string;
+	/** The current instrument in config/. */
+	instrument_version: string;
+	latest_run_id: string | null;
+	latest_run_started_at: string | null;
+	default_requirement_set_id: string;
+	requirement_set_ids: string[];
+	counts: MetaCounts;
+}
+
+/** How much the register and its machinery hold. */
+export interface MetaCounts {
+	reports: number;
+	reports_by_state: StateCounts;
+	runs: number;
+	/** Every source on the watchlist. */
+	sources: number;
+	active_sources: number;
+	submissions: number;
+	products: number;
+	requirement_sets: number;
+}
 
 /** The method note both products end with. */
 export interface MethodCopy {
@@ -452,6 +753,12 @@ export interface MethodCopy {
 	streetlight: string;
 }
 
+/** A catalogue entry named by id: a topic or a place. */
+export interface NamedRef {
+	id: string;
+	name: string;
+}
+
 /** What a taxonomy node stands for. */
 export type NodeKind = "ecosystem" | "resource" | "hazard_family";
 
@@ -463,6 +770,19 @@ export interface PeriodModel {
 	end: string;
 	/** YYYY-MM for a month, YYYY for a year. */
 	label: string;
+}
+
+/** picture_<set>.json, GET /api/v1/requirement-sets/{id}/picture. */
+export interface Picture {
+	set_id: string;
+	set_name: string;
+	version: string;
+	/** YYYY-MM-DD. */
+	today: string;
+	wbo_groups: GroupTile[];
+	impact_groups: GroupTile[];
+	requirements: RequirementTile[];
+	datecheck: DateCheckCounts;
 }
 
 /** A named location. */
@@ -494,6 +814,26 @@ export interface PriorHistoryEntry {
 	change: string;
 }
 
+/** products/<id>.json, GET /api/v1/products/{id}: one product's sections and Markdown. */
+export interface ProductDetail {
+	id: string;
+	level: ProductLevel;
+	requirement_set_id: string;
+	period: PeriodModel;
+	/** YYYY-MM-DD. */
+	generated_on: string;
+	title: string;
+	lead: string[];
+	sections: SectionModel[];
+	report_ids: string[];
+	method_note: string;
+	markdown_file: string;
+	/** Where the Markdown lives, relative to the data dir. */
+	markdown_path: string;
+	/** The product as Markdown. */
+	body: string;
+}
+
 /** data/products/<stem>.json: one rendered product's structure. */
 export interface ProductFile {
 	/** Always gwylio.product/1. */
@@ -515,6 +855,20 @@ export interface ProductFile {
 
 /** The level a product serves: the annual picture, the monthly summary, or an alert. */
 export type ProductLevel = "strategic" | "operational" | "tactical";
+
+/** One entry of products.json, GET /api/v1/products. */
+export interface ProductSummary {
+	id: string;
+	level: ProductLevel;
+	requirement_set_id: string;
+	period: PeriodModel;
+	/** YYYY-MM-DD. */
+	generated_on: string;
+	title: string;
+	report_count: number;
+	section_headings: string[];
+	markdown_file: string;
+}
 
 /** A new intelligence report. Reliability, lane and appearances are not the analyst's. */
 export interface PromotionEntry {
@@ -575,6 +929,14 @@ export interface QueryConfig {
 	site_source_ids?: string[];
 }
 
+/** Sources counted by yield reading. */
+export interface ReadingCounts {
+	earning_its_place: number;
+	high_volume_no_promotions: number;
+	low_volume: number;
+	silent: number;
+}
+
 /** A candidate that matched an existing intelligence report at collection time. */
 export interface ReinforcementEntry {
 	candidate_id: string;
@@ -595,6 +957,97 @@ export interface ReinforcementLink {
  * credibility (1 to 6) per report, and the two together make the grading.
  */
 export type Reliability = "A" | "B" | "C" | "D" | "E" | "F";
+
+/** reports/<id>.json, GET /api/v1/reports/{id}: everything about one report. */
+export interface ReportDetail {
+	id: string;
+	title: string;
+	url: string;
+	canonical_url: string;
+	grading: string;
+	reliability: Reliability;
+	reliability_label: string;
+	credibility: Credibility;
+	credibility_label: string;
+	report_type: ReportType;
+	state: IndicatorState;
+	bucket: Bucket;
+	lane: string;
+	lane_name: string;
+	lens: Lens;
+	source_id: string | null;
+	source_name: string;
+	actor_id: string | null;
+	actor_name: string | null;
+	directions: Direction[];
+	assessments: AssessmentDetail[];
+	requirement_ids: string[];
+	set_ids: string[];
+	topics: NamedRef[];
+	hazards: HazardRef[];
+	places: NamedRef[];
+	scores: ScoresView;
+	summary: string;
+	notes: string;
+	owner: string | null;
+	/** YYYY-MM-DD. */
+	created_on: string;
+	created_run_id: string | null;
+	/** YYYY-MM-DD. */
+	last_changed: string;
+	last_verified: string | null;
+	event_horizon: string | null;
+	independent_confirmation: boolean;
+	appearances: number;
+	distinct_sources: number;
+	history: HistoryLine[];
+	sightings: SightingLine[];
+	findings: FindingLine[];
+	/** Ids of the products that cite this report. */
+	cited_in: string[];
+}
+
+/** One entry of reports.json, GET /api/v1/reports: what the list and its filters need. */
+export interface ReportSummary {
+	id: string;
+	title: string;
+	url: string;
+	/** Reliability letter and credibility digit, such as B2. */
+	grading: string;
+	reliability: Reliability;
+	credibility: Credibility;
+	report_type: ReportType;
+	state: IndicatorState;
+	bucket: Bucket;
+	/** Distinct directions, in vocabulary order. */
+	directions: Direction[];
+	assessments: AssessmentLine[];
+	requirement_ids: string[];
+	set_ids: string[];
+	lane: string;
+	lane_name: string;
+	source_id: string | null;
+	source_name: string;
+	/** Topic ids. */
+	topics: string[];
+	/** Hazard ids. */
+	hazards: string[];
+	/** Place ids. */
+	places: string[];
+	summary: string;
+	/** YYYY-MM-DD. */
+	created_on: string;
+	/** The latest history entry's date. */
+	last_changed: string;
+	last_verified: string | null;
+	event_horizon: string | null;
+	/** Distinct runs with a sighting of the report. */
+	appearances: number;
+	/** Distinct watched sources that sighted it. */
+	distinct_sources: number;
+	/** The date check's findings on this report. */
+	flags: FindingKind[];
+}
 
 /** What kind of development an intelligence report describes. */
 export type ReportType = "policy" | "legislation" | "research" | "data_release" | "funding" | "partnership" | "international" | "legal" | "environmental" | "market" | "incident";
@@ -630,6 +1083,17 @@ export interface RequirementGroupConfig {
 	note?: string | null;
 }
 
+/** requirement_set_<id>.json, GET /api/v1/requirement-sets/{id}. */
+export interface RequirementSetDetail {
+	id: string;
+	name: string;
+	version: string;
+	source_doc: string;
+	is_default: boolean;
+	requirements: RequirementView[];
+	groups: GroupView[];
+}
+
 /** config/requirement_sets/<id>.json: one requirement set. */
 export interface RequirementSetFile {
 	notes?: string | null;
@@ -640,6 +1104,115 @@ export interface RequirementSetFile {
 	source_doc: string;
 	requirements: RequirementConfig[];
 	groups?: RequirementGroupConfig[];
+}
+
+/** One entry of requirement_sets.json, GET /api/v1/requirement-sets. */
+export interface RequirementSetSummary {
+	id: string;
+	name: string;
+	version: string;
+	source_doc: string;
+	requirements: number;
+	impact_groups: number;
+	wbo_groups: number;
+	is_default: boolean;
+}
+
+/**
+ * One requirement on the picture: its reports by direction and state, and its status.
+ *
+ * ``active`` counts the active reports (emerging, tracking, reinforced)
+ * assessed on it, and ``directions`` splits them by the direction of that
+ * assessment, so the directions add up to ``active``. ``states`` counts
+ * every report assessed on it. The latest dates come from reports still in
+ * the picture (active or matured).
+ */
+export interface RequirementTile {
+	requirement_id: string;
+	code: string;
+	short: string;
+	name: string;
+	scanability: Scanability;
+	status: CoverageStatus;
+	active: number;
+	total: number;
+	directions: DirectionCounts;
+	states: StateCounts;
+	latest_event_horizon: string | null;
+	latest_verified: string | null;
+	group_ids: string[];
+}
+
+/** One requirement (a Priority Intelligence Requirement, such as an SI). */
+export interface RequirementView {
+	id: string;
+	code: string;
+	name: string;
+	short: string;
+	scanability: Scanability;
+	scanability_note: string;
+	keywords: string[];
+	/** Taxonomy node ids. */
+	expected_coverage: string[];
+	metric_sources: string[];
+	development: boolean;
+	/** The groups (impacts, objectives) holding it. */
+	group_ids: string[];
+}
+
+/** runs/<id>.json, GET /api/v1/scan-runs/{id}: one run in full. */
+export interface RunDetail {
+	run_id: string;
+	/** ISO 8601, UTC. */
+	started_at: string;
+	finished_at: string | null;
+	status: RunStatus;
+	instrument_version: string;
+	instrument_hash: string;
+	disciplines: Discipline[];
+	funnel: FunnelCounts;
+	requests_made: number;
+	request_budget: number;
+	budget_exhausted: boolean;
+	candidates: number;
+	promoted: number;
+	undisposed: number;
+	submissions: string[];
+	/** Reinforcements spotted at collection. */
+	reinforcements_recorded: number;
+	/** What the run says about itself, such as the budget. */
+	notes: string[];
+	/** The collectors' warnings, from the candidates file. */
+	warnings: string[];
+	per_source: SourceCount[];
+	per_discipline: DisciplineCount[];
+	dispositions: DispositionView;
+	/** The reports this run created. */
+	credibility: CredibilityBar[];
+	promoted_report_ids: string[];
+}
+
+/** Where a scan run is in its life. A complete or aborted run never changes again. */
+export type RunStatus = "running" | "complete" | "aborted";
+
+/** One entry of runs.json, GET /api/v1/scan-runs. Runs are listed oldest first. */
+export interface RunSummary {
+	run_id: string;
+	/** ISO 8601, UTC. */
+	started_at: string;
+	finished_at: string | null;
+	status: RunStatus;
+	instrument_version: string;
+	disciplines: Discipline[];
+	funnel: FunnelCounts;
+	requests_made: number;
+	request_budget: number;
+	budget_exhausted: boolean;
+	candidates: number;
+	promoted: number;
+	undisposed: number;
+	/** Ids of the submissions that judged this run. */
+	submissions: string[];
 }
 
 /** How far public, indexed sources can see a requirement at all. */
@@ -660,6 +1233,15 @@ export interface ScanabilityCopy {
 /** The analyst's scores for a report. */
 export interface ScoresEntry {
 	/** How strong the evidence on the page is. */
+	evidence: Level;
+	novelty: Level;
+	confidence: Level;
+	potential_impact: Level;
+	time_horizon: TimeHorizon;
+}
+
+/** The analyst's scores for one report. */
+export interface ScoresView {
 	evidence: Level;
 	novelty: Level;
 	confidence: Level;
@@ -689,6 +1271,20 @@ export interface SightingEntry {
 	discipline: Discipline;
 }
 
+/** One sighting linked to a report: which run, which source, which page. */
+export interface SightingLine {
+	sighting_id: string;
+	run_id: string;
+	/** ISO 8601, UTC. */
+	run_started_at: string;
+	candidate_id: string;
+	url: string | null;
+	source_id: string | null;
+	source_name: string | null;
+	discipline: Discipline | null;
+	query_id: string | null;
+}
+
 /** A watchlist entry: where hits come from, with a default reliability. */
 export interface SourceConfig {
 	id: string;
@@ -713,13 +1309,67 @@ export interface SourceConfig {
 	notes?: string | null;
 }
 
+/** One source's share of a run: its sightings and the candidates it found first. */
+export interface SourceCount {
+	/** Null for the open web. */
+	source_id: string | null;
+	source_name: string | null;
+	sightings: number;
+	candidates: number;
+}
+
 /** Whether a source is watched. */
 export type SourceStatus = "active" | "parked" | "retired";
+
+/** One entry of sources.json, GET /api/v1/sources: the watchlist entry and its yield. */
+export interface SourceSummary {
+	id: string;
+	name: string;
+	domain: string;
+	feed_url: string | null;
+	discipline: Discipline;
+	lane: string;
+	lane_name: string;
+	lens: Lens;
+	actor: string;
+	actor_name: string;
+	reliability: Reliability;
+	reliability_label: string;
+	trusted: boolean;
+	site_pass: boolean;
+	status: SourceStatus;
+	/** YYYY-MM-DD. */
+	added_on: string;
+	notes: string | null;
+	/** Stored sightings: hits that passed the gates. */
+	raw_hits: number;
+	unique_candidates: number;
+	promoted: number;
+	/** Promoted over unique candidates. */
+	promotion_rate: number | null;
+	last_run_with_hits: string | null;
+	last_productive_run: string | null;
+	reading: YieldReading;
+}
 
 /** config/sources.json: the source watchlist. */
 export interface SourcesFile {
 	notes?: string | null;
 	sources: SourceConfig[];
+}
+
+/** sources_health.json, GET /api/v1/sources/health: the funnel trend and silent sources. */
+export interface SourcesHealth {
+	/** How many of the most recent runs the trend shows at most. */
+	window: number;
+	runs_total: number;
+	/** Oldest first. */
+	trend: FunnelPoint[];
+	sources: number;
+	active_sources: number;
+	readings: ReadingCounts;
+	/** Active sources with no hit in any run. */
+	silent_sources: string[];
 }
 
 /** How each indicator state reads in a product. */
@@ -736,6 +1386,24 @@ export interface StateCopy {
 	faded: string;
 	/** Label for parked. */
 	parked: string;
+}
+
+/** Reports counted by indicator state. */
+export interface StateCounts {
+	emerging: number;
+	tracking: number;
+	reinforced: number;
+	matured: number;
+	faded: number;
+	parked: number;
+}
+
+/** Requirements counted by coverage status. */
+export interface StatusCounts {
+	covered: number;
+	thin: number;
+	quiet: number;
+	blind_spot: number;
 }
 
 /** The strategic assessment: the annual picture per requirement set. */

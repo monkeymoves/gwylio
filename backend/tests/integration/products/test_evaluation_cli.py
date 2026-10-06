@@ -43,7 +43,7 @@ def test_yield_lists_silent_sources_last(seeded: Cli) -> None:
     result = seeded("yield")
     assert result.exit_code == 0, result.output
     lines = result.stdout.splitlines()
-    assert lines[0] == "yield of 43 sources over 2 runs"
+    assert lines[0] == "yield of 43 sources over 4 runs"
     rows = lines[2:-2]
     readings = [row.split()[-1] for row in rows]
     assert readings[0] == "earning_its_place"

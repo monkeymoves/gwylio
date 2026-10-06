@@ -1,0 +1,105 @@
+{
+  "actor_id": "nation-cymru",
+  "actor_name": "Nation.Cymru",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI1",
+      "direction": "threatens",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "nation.cymru/news/welsh-seabird-colony-may-not-recover-from-bird-flu-until-2041",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "threatens"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "C2",
+  "hazards": [
+    {
+      "family": "animal-disease",
+      "family_name": "Animal disease",
+      "id": "avian-influenza",
+      "name": "Avian influenza in wild birds"
+    }
+  ],
+  "history": [
+    {
+      "change": "added at scan 2026-07-23: 3 July 2026 study on Grassholm gannet recovery to 2041 after the 2022 HPAI outbreak; verified against source",
+      "kind": "imported",
+      "on": "2026-07-23"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "avian-flu-welsh-seabirds-recovery-2041",
+  "independent_confirmation": false,
+  "lane": "independent-media",
+  "lane_name": "Independent media",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-24",
+  "lens": "partnership_society",
+  "notes": "A biophysical shock to a flagship ecosystem-resilience population that the policy scan never surfaced. Threatens SI1: seabird colonies are a visible component of ecosystem resilience, and a nineteen-year recovery is a material, long-dated dent. Surfaced by the new ecological_early_warning lane. Verified date and framing against the nation.cymru report on 23 July 2026.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "research",
+  "requirement_ids": [
+    "si1"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "medium",
+    "time_horizon": "long_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "nation-cymru",
+  "source_name": "Nation.Cymru",
+  "state": "emerging",
+  "summary": "A study reported on 3 July 2026 projects that the Grassholm northern gannet colony, one of the world largest, may not recover to pre-outbreak levels until 2041, nineteen years after highly pathogenic avian influenza struck Welsh seabird colonies in 2022. It frames the 2022 to 2024 outbreak as a completed shock with a multi-decade recovery tail.",
+  "title": "Study projects Welsh seabird colonies may not recover from the 2022 avian flu outbreak until 2041",
+  "topics": [
+    {
+      "id": "biosecurity",
+      "name": "Biosecurity"
+    },
+    {
+      "id": "marine-and-coastal",
+      "name": "Marine and coastal"
+    }
+  ],
+  "url": "https://nation.cymru/news/welsh-seabird-colony-may-not-recover-from-bird-flu-until-2041/"
+}

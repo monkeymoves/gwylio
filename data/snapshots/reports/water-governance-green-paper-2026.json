@@ -1,0 +1,124 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI4",
+      "direction": "supports",
+      "name": "Decreasing the rate of pollution on land and entering water bodies",
+      "requirement_id": "si4",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "follow_up",
+  "canonical_url": "gov.wales/cleaner-rivers-stronger-regulation-better-accountability-wales-charts-new-course-water-governance",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "B3",
+  "hazards": [],
+  "history": [
+    {
+      "change": "added at seed scan; tagged SI4 supports",
+      "kind": "imported",
+      "on": "2026-07-16"
+    },
+    {
+      "change": "sighted again at the 2026-07-17 scan; appearances 2; emerging to tracking",
+      "kind": "imported",
+      "on": "2026-07-17"
+    },
+    {
+      "change": "sighted again at 2026-07-20 scan; appearances 3; tracking to reinforced",
+      "kind": "imported",
+      "on": "2026-07-20"
+    },
+    {
+      "change": "verification sweep: consultation closed 7 April 2026, was still described as open; summary of responses awaited",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "sighted again at 2026-07-22 scan; appearances bumped",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "development-baseline recalibration: lifecycle reinforced to emerging, appearances reset to 1. Prior sightings were the same URL re-found by the same instrument during the July development week, which is not the independent confirmation that tracking and reinforced are meant to record.",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-23; last_seen bumped, appearances and lifecycle held (one day after the 22 July baseline, same development window per RUBRIC)",
+      "kind": "imported",
+      "on": "2026-07-23"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-25; last_seen bumped, lifecycle held (same development window as the 23 July scan)",
+      "kind": "imported",
+      "on": "2026-07-25"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "water-governance-green-paper-2026",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-24",
+  "lens": "government",
+  "notes": "Consultation open. Decide whether NRW or IEG should track or respond; check the consultation closing date. Verified 22 July 2026: consultation closed 7 April 2026 (the register previously said open); watch for the summary of responses and the new government's decision on the White Paper.",
+  "owner": "Luke",
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si4"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "high",
+    "potential_impact": "high",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government",
+  "state": "emerging",
+  "summary": "Announced 3 February 2026: a Green Paper proposing fundamental water system reform, including a dedicated Welsh economic regulator for water, new legislation, and 5 million pounds in 2026-27 for enforcement and river improvement. The consultation closed on 7 April 2026; a summary of responses and next steps is awaited, and the Welsh Government signalled a White Paper to follow subject to the post-election government's agreement and the enactment of UK primary legislation.",
+  "title": "Green Paper: Shaping the Future of Water Governance in Wales",
+  "topics": [],
+  "url": "https://www.gov.wales/cleaner-rivers-stronger-regulation-better-accountability-wales-charts-new-course-water-governance"
+}

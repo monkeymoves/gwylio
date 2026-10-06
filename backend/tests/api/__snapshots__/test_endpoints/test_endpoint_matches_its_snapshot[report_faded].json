@@ -1,0 +1,136 @@
+{
+  "actor_id": "bbc-wales",
+  "actor_name": "BBC Wales News",
+  "appearances": 2,
+  "assessments": [
+    {
+      "code": "SI8",
+      "direction": "threatens",
+      "name": "Increasing the proportion of the population living in places that will continue to support and contribute to their health and well-being in a changing climate",
+      "requirement_id": "si8",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "bbc.co.uk/news/articles/storm-claudia-monmouthshire",
+  "cited_in": [
+    "operational-2026-10"
+  ],
+  "created_on": "2026-09-02",
+  "created_run_id": "20260901T0900Z-0000",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "threatens"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B2",
+  "hazards": [
+    {
+      "family": "flood-storm",
+      "family_name": "Flood and storm",
+      "id": "river-and-surface-water-flooding",
+      "name": "River and surface water flooding"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20260901t0900z-0000-546549 in run 20260901T0900Z-0000",
+      "kind": "created",
+      "on": "2026-09-02"
+    },
+    {
+      "change": "sighted in run 20260901T0900Z-0000 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-09-02"
+    },
+    {
+      "change": "sighted in run 20261001T0900Z-0000 by an unwatched source; 2 runs, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-02"
+    },
+    {
+      "change": "emerging to tracking: sighted in run 20261001T0900Z-0000, later than the run that found it",
+      "kind": "state_changed",
+      "on": "2026-10-02"
+    },
+    {
+      "change": "tracking to faded: no sighting in the two most recent complete runs, 20261003T0900Z-0000 and 20261004T0900Z-0000",
+      "kind": "faded",
+      "on": "2026-10-05"
+    }
+  ],
+  "id": "storm-claudia-monmouthshire-flooding",
+  "independent_confirmation": false,
+  "lane": "independent-media",
+  "lane_name": "Independent media",
+  "last_changed": "2026-10-05",
+  "last_verified": "2026-09-02",
+  "lens": "partnership_society",
+  "notes": "",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    },
+    {
+      "id": "south-east-wales",
+      "name": "South East Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "incident",
+  "requirement_ids": [
+    "si8"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "medium",
+    "time_horizon": "immediate"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20260901t0900z-0000-546549",
+      "discipline": "osint_web",
+      "query_id": "web-people-place-resilience-04",
+      "run_id": "20260901T0900Z-0000",
+      "run_started_at": "2026-09-01T09:00:00.000000Z",
+      "sighting_id": "s-20260901t0900z-0000-000010",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.bbc.co.uk/news/articles/storm-claudia-monmouthshire?fbclid=abc123"
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-53a20b",
+      "discipline": "osint_web",
+      "query_id": "web-people-place-resilience-04",
+      "run_id": "20261001T0900Z-0000",
+      "run_started_at": "2026-10-01T09:00:00.000000Z",
+      "sighting_id": "s-20261001t0900z-0000-000010",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.bbc.co.uk/news/articles/storm-claudia-monmouthshire?fbclid=abc123"
+    }
+  ],
+  "source_id": null,
+  "source_name": "BBC Wales News",
+  "state": "faded",
+  "summary": "BBC Wales reports homes flooded in Monmouthshire during Storm Claudia.",
+  "title": "Storm Claudia: homes flooded in Monmouthshire",
+  "topics": [
+    {
+      "id": "flood-risk",
+      "name": "Flood risk"
+    }
+  ],
+  "url": "https://www.bbc.co.uk/news/articles/storm-claudia-monmouthshire"
+}

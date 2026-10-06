@@ -1,0 +1,165 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI1",
+      "direction": "supports",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI2",
+      "direction": "supports",
+      "name": "Increasing the rate of habitat restoration",
+      "requirement_id": "si2",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI3",
+      "direction": "supports",
+      "name": "Increasing the integration of activities that support nature recovery into Wales' public services",
+      "requirement_id": "si3",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI6",
+      "direction": "supports",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "requirement_id": "si6",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI7",
+      "direction": "supports",
+      "name": "Increasing the proportion of the population who have access to high quality green or blue space, and who use them sustainably",
+      "requirement_id": "si7",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "follow_up",
+  "canonical_url": "gov.wales/nature-recovery-action-plan-2026-html",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "B2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "added at seed scan; tagged SI1 supports, SI2 supports, SI3 supports",
+      "kind": "imported",
+      "on": "2026-07-16"
+    },
+    {
+      "change": "full read of the plan HTML; retagged to add SI6 and SI7 supports and impact I2; evidence_strength and confidence raised to high; bucket brief to follow_up (Aim 6 monitoring framework overlaps IEG work on SI1 measurement)",
+      "kind": "imported",
+      "on": "2026-07-17"
+    },
+    {
+      "change": "sighted again at the 2026-07-17 scan; appearances 2; emerging to tracking",
+      "kind": "imported",
+      "on": "2026-07-17"
+    },
+    {
+      "change": "sighted again at 2026-07-20 scan; appearances 3; tracking to reinforced",
+      "kind": "imported",
+      "on": "2026-07-20"
+    },
+    {
+      "change": "sighted again at 2026-07-22 scan; appearances bumped",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "development-baseline recalibration: lifecycle reinforced to emerging, appearances reset to 1. Prior sightings were the same URL re-found by the same instrument during the July development week, which is not the independent confirmation that tracking and reinforced are meant to record.",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-23; last_seen bumped, appearances and lifecycle held (one day after the 22 July baseline, same development window per RUBRIC)",
+      "kind": "imported",
+      "on": "2026-07-23"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-25; last_seen bumped, lifecycle held (same development window as the 23 July scan)",
+      "kind": "imported",
+      "on": "2026-07-25"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "nature-recovery-action-plan-2026",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-24",
+  "lens": "government",
+  "notes": "Full read done 17 July 2026. Direct reads across the indicators: Aim 1 and the Nature Networks and Naturfa 30by30 work map to SI1 and SI2; refreshed Section 6 guidance for public authorities and biodiversity in impact assessments map to SI3; peatland and woodland targets are framed explicitly for net zero, so they carry SI6; SUDS, urban green infrastructure and catchment approaches touch SI7 and SI8. Aim 6 (evidence and monitoring) is the one to watch for IEG: the plan commits to a monitoring framework tied to the Bill's statutory targets, which is the same measurement problem as SI1 resilience assessment via SoNaRR and DECCA. The Sustainable Farming Scheme minimum of 10 percent habitat management per farm is the main delivery lever behind the SI2 restoration rate. Open question: the plan was published while the Bill was awaiting Royal Assent, so the target regulations timetable (two years from assent) is the date to track.",
+  "owner": "Luke",
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si1",
+    "si2",
+    "si3",
+    "si6",
+    "si7"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "high",
+    "potential_impact": "high",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government",
+  "state": "emerging",
+  "summary": "Published 27 March 2026: the updated national plan, structured around six strategic aims (protect and restore ecosystems; safeguard species; tackle pressures; governance and capacity; engagement; evidence and monitoring). It commits to halting and reversing biodiversity loss by 2030 and recovery by 2050, in line with the Global Biodiversity Framework. Hard numbers: peatland restoration tripled from 600 to 1,800 hectares a year, 45,000 hectares by 2050; a 21,500 hectare tree planting aspiration by 2030; and a 50 percent cut in new invasive non-native species establishments by 2030 against 2000 levels. It names the Environment (Principles, Governance and Biodiversity Targets) (Wales) Bill as the foundation, with statutory biodiversity target regulations due within two years of Royal Assent.",
+  "title": "Nature Recovery Action Plan 2026: six aims, tripled peatland target, statutory biodiversity targets within two years of Royal Assent",
+  "topics": [
+    {
+      "id": "peatland",
+      "name": "Peatland"
+    },
+    {
+      "id": "nature-and-ecosystems",
+      "name": "Nature and ecosystems"
+    }
+  ],
+  "url": "https://www.gov.wales/nature-recovery-action-plan-2026-html"
+}

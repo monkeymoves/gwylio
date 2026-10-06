@@ -1,0 +1,115 @@
+{
+  "actor_id": null,
+  "actor_name": null,
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI1",
+      "direction": "informs_baseline",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI2",
+      "direction": "informs_baseline",
+      "name": "Increasing the rate of habitat restoration",
+      "requirement_id": "si2",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI4",
+      "direction": "informs_baseline",
+      "name": "Decreasing the rate of pollution on land and entering water bodies",
+      "requirement_id": "si4",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "follow_up",
+  "canonical_url": "naturalresources.wales/evidence-and-data/research-and-reports/state-of-natural-resources-report-2025",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "informs_baseline"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "B2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "added: SoNaRR 2025 publication confirmed via NRW site; data_release, informs_baseline SI1/SI2; full read of findings still to do",
+      "kind": "imported",
+      "on": "2026-07-20"
+    },
+    {
+      "change": "SoNaRR 2025 findings read; added SI4 informs_baseline (40 percent water bodies good status) and impact I3; confidence to high; summary filled with headline findings",
+      "kind": "imported",
+      "on": "2026-07-20"
+    },
+    {
+      "change": "red-team verification corrected the publication framing: launched 29 January 2026 at a Cardiff event, not late 2025; findings unchanged",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "sonarr-2025-published",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-24",
+  "lens": "government",
+  "notes": "Findings read 20 July 2026 from the SoNaRR 2025 summary and assessments pages. The 'not resilient' conclusion is the current SI1 reading; the 40 percent water-bodies good-status figure is the SI4 baseline; the 1-in-5-species-at-risk and nature-depletion framing set the SI2 restoration context. SoNaRR is an NRW publication, so it sits primarily in the releases calendar; recorded here as the data_release that moves the baseline, like PaNS. Still to do: pull per-broad-habitat DECCA scores into the SI1 annex if a finer cut is needed.",
+  "owner": "Luke",
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "data_release",
+  "requirement_ids": [
+    "si1",
+    "si2",
+    "si4"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "high",
+    "potential_impact": "high",
+    "time_horizon": "immediate"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": null,
+  "source_name": "naturalresources.wales",
+  "state": "emerging",
+  "summary": "SoNaRR 2025, NRW's third statutory State of Natural Resources Report ('Bridges to the future'), launched 29 January 2026, is the evidence base the SI1 resilience assessment (DECCA) is built on. Headline findings: ecosystems in Wales are assessed as NOT resilient; Wales is one of the most nature-depleted countries in the world with almost 1 in 5 species at risk of extinction; only 40 percent of water bodies achieve good status; climate change is already reducing resilience across all ecosystems; and pollution from wastewater, towns, transport, agriculture and abandoned mines is compromising freshwater. Resilience is low across the country but varies spatially: uplands retain more semi-natural habitat and score better, intensively modified lowlands score worse. It resets the baseline for SI1, SI2 and (via the 40 percent good-status figure) SI4.",
+  "title": "SoNaRR 2025 published: the third State of Natural Resources Report, the SI1 resilience evidence base",
+  "topics": [],
+  "url": "https://naturalresources.wales/evidence-and-data/research-and-reports/state-of-natural-resources-report-2025/"
+}

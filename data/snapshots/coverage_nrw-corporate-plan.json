@@ -1,0 +1,1330 @@
+{
+  "credibility": [
+    {
+      "count": 0,
+      "credibility": 1,
+      "label": "confirmed"
+    },
+    {
+      "count": 23,
+      "credibility": 2,
+      "label": "probably true"
+    },
+    {
+      "count": 10,
+      "credibility": 3,
+      "label": "possibly true"
+    },
+    {
+      "count": 0,
+      "credibility": 4,
+      "label": "doubtful"
+    },
+    {
+      "count": 0,
+      "credibility": 5,
+      "label": "improbable"
+    },
+    {
+      "count": 0,
+      "credibility": 6,
+      "label": "cannot be judged"
+    }
+  ],
+  "lanes": {
+    "columns": [
+      {
+        "id": "welsh-government",
+        "name": "Welsh Government"
+      },
+      {
+        "id": "senedd",
+        "name": "Senedd"
+      },
+      {
+        "id": "uk-government-and-regulators",
+        "name": "UK Government and regulators"
+      },
+      {
+        "id": "research-evidence",
+        "name": "Research and evidence"
+      },
+      {
+        "id": "partnership-and-civil-society",
+        "name": "Partnership and civil society"
+      },
+      {
+        "id": "legal-and-campaign",
+        "name": "Legal and campaign"
+      },
+      {
+        "id": "independent-media",
+        "name": "Independent media"
+      },
+      {
+        "id": "ecological-surveillance",
+        "name": "Ecological surveillance"
+      },
+      {
+        "id": "international",
+        "name": "International"
+      },
+      {
+        "id": "governance-capacity",
+        "name": "Governance and capacity"
+      },
+      {
+        "id": "unattributed",
+        "name": "Unattributed"
+      }
+    ],
+    "report_ids": [
+      "audit-wales-sssi-designation-capacity-2025",
+      "avian-flu-welsh-seabirds-recovery-2041",
+      "bridgend-drops-2030-net-zero-target",
+      "ccc-2026-progress-report-welsh-emissions-fall",
+      "climate-perceptions-actions-survey-waves-3-4",
+      "control-of-agricultural-pollution-regulations-review-2025",
+      "eciu-wales-tree-planting-14-percent-of-target",
+      "environmental-principles-statement-consultation-2026",
+      "fcerm-programme-2026-27",
+      "first-asian-hornet-nest-wales-2026",
+      "flood-re-ends-2039-insurance-affordability",
+      "green-flag-2026-record-330-welsh-sites",
+      "metal-mine-water-pollution-wales",
+      "mpa-network-management-framework-expired-2026",
+      "nature-recovery-action-plan-2026",
+      "north-wales-drought-declared-2026",
+      "nrw-funding-gap-savings-2026-27",
+      "nrw-ir35-hmrc-settlement-2025",
+      "people-and-nature-survey-wales-2023-24",
+      "pm25-air-quality-target-regulations-wales-2026",
+      "river-action-judicial-review-nrw-poultry-permits",
+      "senedd-2026-net-zero-environment-battleground",
+      "senedd-soil-health-inquiry-2025",
+      "seventh-carbon-budget-uk-law-2026",
+      "sonarr-2025-published",
+      "uk-climate-adaptation-package-2026",
+      "uk-national-biodiversity-strategy-action-plan-2025",
+      "wales-wildfire-season-2026",
+      "water-governance-green-paper-2026",
+      "welsh-fisheries-aquaculture-update-2026",
+      "winter-2025-26-flooding-storm-claudia",
+      "wwf-nature-petition-new-welsh-government-2026",
+      "wye-lugg-usk-group-claim-avara-welsh-water"
+    ],
+    "rows": [
+      {
+        "cells": [
+          {
+            "column_id": "welsh-government",
+            "count": 6,
+            "status": "covered"
+          },
+          {
+            "column_id": "senedd",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "uk-government-and-regulators",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "research-evidence",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "partnership-and-civil-society",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "legal-and-campaign",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "independent-media",
+            "count": 2,
+            "status": "thin"
+          },
+          {
+            "column_id": "ecological-surveillance",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "international",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "governance-capacity",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "unattributed",
+            "count": 0,
+            "status": "quiet"
+          }
+        ],
+        "code": "SI1",
+        "expected": null,
+        "label": "SI1 Resilient ecosystems",
+        "row_id": "si1",
+        "status": "covered",
+        "total": 12
+      },
+      {
+        "cells": [
+          {
+            "column_id": "welsh-government",
+            "count": 3,
+            "status": "covered"
+          },
+          {
+            "column_id": "senedd",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "uk-government-and-regulators",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "research-evidence",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "partnership-and-civil-society",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "legal-and-campaign",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "independent-media",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "ecological-surveillance",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "international",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "governance-capacity",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "unattributed",
+            "count": 0,
+            "status": "quiet"
+          }
+        ],
+        "code": "SI2",
+        "expected": null,
+        "label": "SI2 Habitat restoration rate",
+        "row_id": "si2",
+        "status": "covered",
+        "total": 5
+      },
+      {
+        "cells": [
+          {
+            "column_id": "welsh-government",
+            "count": 3,
+            "status": "covered"
+          },
+          {
+            "column_id": "senedd",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "uk-government-and-regulators",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "research-evidence",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "partnership-and-civil-society",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "legal-and-campaign",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "independent-media",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "ecological-surveillance",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "international",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "governance-capacity",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "unattributed",
+            "count": 0,
+            "status": "quiet"
+          }
+        ],
+        "code": "SI3",
+        "expected": null,
+        "label": "SI3 Nature recovery in public services",
+        "row_id": "si3",
+        "status": "covered",
+        "total": 7
+      },
+      {
+        "cells": [
+          {
+            "column_id": "welsh-government",
+            "count": 5,
+            "status": "covered"
+          },
+          {
+            "column_id": "senedd",
+            "count": 2,
+            "status": "thin"
+          },
+          {
+            "column_id": "uk-government-and-regulators",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "research-evidence",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "partnership-and-civil-society",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "legal-and-campaign",
+            "count": 2,
+            "status": "thin"
+          },
+          {
+            "column_id": "independent-media",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "ecological-surveillance",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "international",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "governance-capacity",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "unattributed",
+            "count": 0,
+            "status": "quiet"
+          }
+        ],
+        "code": "SI4",
+        "expected": null,
+        "label": "SI4 Pollution to land and water",
+        "row_id": "si4",
+        "status": "covered",
+        "total": 10
+      },
+      {
+        "cells": [
+          {
+            "column_id": "welsh-government",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "senedd",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "uk-government-and-regulators",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "research-evidence",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "partnership-and-civil-society",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "legal-and-campaign",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "independent-media",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "ecological-surveillance",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "international",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "governance-capacity",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "unattributed",
+            "count": 0,
+            "status": "quiet"
+          }
+        ],
+        "code": "SI5",
+        "expected": null,
+        "label": "SI5 Air pollution",
+        "row_id": "si5",
+        "status": "thin",
+        "total": 2
+      },
+      {
+        "cells": [
+          {
+            "column_id": "welsh-government",
+            "count": 2,
+            "status": "thin"
+          },
+          {
+            "column_id": "senedd",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "uk-government-and-regulators",
+            "count": 2,
+            "status": "thin"
+          },
+          {
+            "column_id": "research-evidence",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "partnership-and-civil-society",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "legal-and-campaign",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "independent-media",
+            "count": 2,
+            "status": "thin"
+          },
+          {
+            "column_id": "ecological-surveillance",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "international",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "governance-capacity",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "unattributed",
+            "count": 0,
+            "status": "quiet"
+          }
+        ],
+        "code": "SI6",
+        "expected": null,
+        "label": "SI6 Greenhouse gas emissions and sequestration",
+        "row_id": "si6",
+        "status": "covered",
+        "total": 8
+      },
+      {
+        "cells": [
+          {
+            "column_id": "welsh-government",
+            "count": 3,
+            "status": "covered"
+          },
+          {
+            "column_id": "senedd",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "uk-government-and-regulators",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "research-evidence",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "partnership-and-civil-society",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "legal-and-campaign",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "independent-media",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "ecological-surveillance",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "international",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "governance-capacity",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "unattributed",
+            "count": 0,
+            "status": "quiet"
+          }
+        ],
+        "code": "SI7",
+        "expected": null,
+        "label": "SI7 Access to green and blue space",
+        "row_id": "si7",
+        "status": "covered",
+        "total": 5
+      },
+      {
+        "cells": [
+          {
+            "column_id": "welsh-government",
+            "count": 6,
+            "status": "covered"
+          },
+          {
+            "column_id": "senedd",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "uk-government-and-regulators",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "research-evidence",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "partnership-and-civil-society",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "legal-and-campaign",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "independent-media",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "ecological-surveillance",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "international",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "governance-capacity",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "unattributed",
+            "count": 0,
+            "status": "quiet"
+          }
+        ],
+        "code": "SI8",
+        "expected": null,
+        "label": "SI8 Places resilient to a changing climate",
+        "row_id": "si8",
+        "status": "covered",
+        "total": 9
+      },
+      {
+        "cells": [
+          {
+            "column_id": "welsh-government",
+            "count": 0,
+            "status": "blind_spot"
+          },
+          {
+            "column_id": "senedd",
+            "count": 0,
+            "status": "blind_spot"
+          },
+          {
+            "column_id": "uk-government-and-regulators",
+            "count": 0,
+            "status": "blind_spot"
+          },
+          {
+            "column_id": "research-evidence",
+            "count": 0,
+            "status": "blind_spot"
+          },
+          {
+            "column_id": "partnership-and-civil-society",
+            "count": 0,
+            "status": "blind_spot"
+          },
+          {
+            "column_id": "legal-and-campaign",
+            "count": 0,
+            "status": "blind_spot"
+          },
+          {
+            "column_id": "independent-media",
+            "count": 0,
+            "status": "blind_spot"
+          },
+          {
+            "column_id": "ecological-surveillance",
+            "count": 0,
+            "status": "blind_spot"
+          },
+          {
+            "column_id": "international",
+            "count": 0,
+            "status": "blind_spot"
+          },
+          {
+            "column_id": "governance-capacity",
+            "count": 0,
+            "status": "blind_spot"
+          },
+          {
+            "column_id": "unattributed",
+            "count": 0,
+            "status": "blind_spot"
+          }
+        ],
+        "code": "SI9",
+        "expected": null,
+        "label": "SI9 Impact of partnership approaches",
+        "row_id": "si9",
+        "status": "blind_spot",
+        "total": 0
+      },
+      {
+        "cells": [
+          {
+            "column_id": "welsh-government",
+            "count": 2,
+            "status": "thin"
+          },
+          {
+            "column_id": "senedd",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "uk-government-and-regulators",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "research-evidence",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "partnership-and-civil-society",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "legal-and-campaign",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "independent-media",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "ecological-surveillance",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "international",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "governance-capacity",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "unattributed",
+            "count": 0,
+            "status": "quiet"
+          }
+        ],
+        "code": "SI10",
+        "expected": null,
+        "label": "SI10 Public action on the crises",
+        "row_id": "si10",
+        "status": "thin",
+        "total": 2
+      },
+      {
+        "cells": [
+          {
+            "column_id": "welsh-government",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "senedd",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "uk-government-and-regulators",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "research-evidence",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "partnership-and-civil-society",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "legal-and-campaign",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "independent-media",
+            "count": 1,
+            "status": "thin"
+          },
+          {
+            "column_id": "ecological-surveillance",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "international",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "governance-capacity",
+            "count": 0,
+            "status": "quiet"
+          },
+          {
+            "column_id": "unattributed",
+            "count": 0,
+            "status": "quiet"
+          }
+        ],
+        "code": "SI11",
+        "expected": null,
+        "label": "SI11 Organisations acting on the crises",
+        "row_id": "si11",
+        "status": "thin",
+        "total": 1
+      },
+      {
+        "cells": [
+          {
+            "column_id": "welsh-government",
+            "count": 0,
+            "status": "blind_spot"
+          },
+          {
+            "column_id": "senedd",
+            "count": 0,
+            "status": "blind_spot"
+          },
+          {
+            "column_id": "uk-government-and-regulators",
+            "count": 0,
+            "status": "blind_spot"
+          },
+          {
+            "column_id": "research-evidence",
+            "count": 0,
+            "status": "blind_spot"
+          },
+          {
+            "column_id": "partnership-and-civil-society",
+            "count": 0,
+            "status": "blind_spot"
+          },
+          {
+            "column_id": "legal-and-campaign",
+            "count": 0,
+            "status": "blind_spot"
+          },
+          {
+            "column_id": "independent-media",
+            "count": 0,
+            "status": "blind_spot"
+          },
+          {
+            "column_id": "ecological-surveillance",
+            "count": 0,
+            "status": "blind_spot"
+          },
+          {
+            "column_id": "international",
+            "count": 0,
+            "status": "blind_spot"
+          },
+          {
+            "column_id": "governance-capacity",
+            "count": 0,
+            "status": "blind_spot"
+          },
+          {
+            "column_id": "unattributed",
+            "count": 0,
+            "status": "blind_spot"
+          }
+        ],
+        "code": "SI12",
+        "expected": null,
+        "label": "SI12 NRW colleague engagement",
+        "row_id": "si12",
+        "status": "blind_spot",
+        "total": 0
+      }
+    ]
+  },
+  "legend": [
+    {
+      "label": "covered",
+      "meaning": "Three or more active reports.",
+      "status": "covered"
+    },
+    {
+      "label": "thin",
+      "meaning": "One or two active reports.",
+      "status": "thin"
+    },
+    {
+      "label": "quiet",
+      "meaning": "No active reports, and public sources could see movement if there were any.",
+      "status": "quiet"
+    },
+    {
+      "label": "blind spot",
+      "meaning": "No active reports, and public sources cannot see this requirement: absence is not evidence, so never call it quiet.",
+      "status": "blind_spot"
+    }
+  ],
+  "set_id": "nrw-corporate-plan",
+  "set_name": "NRW corporate plan performance framework",
+  "taxonomy": [
+    {
+      "axis_id": "sonarr-ecosystems",
+      "axis_name": "SoNaRR ecosystems and resources",
+      "matrix": {
+        "columns": [
+          {
+            "id": "reports",
+            "name": "Active reports"
+          }
+        ],
+        "report_ids": [
+          "audit-wales-sssi-designation-capacity-2025",
+          "avian-flu-welsh-seabirds-recovery-2041",
+          "bridgend-drops-2030-net-zero-target",
+          "ccc-2026-progress-report-welsh-emissions-fall",
+          "control-of-agricultural-pollution-regulations-review-2025",
+          "eciu-wales-tree-planting-14-percent-of-target",
+          "environmental-principles-statement-consultation-2026",
+          "fcerm-programme-2026-27",
+          "first-asian-hornet-nest-wales-2026",
+          "flood-re-ends-2039-insurance-affordability",
+          "green-flag-2026-record-330-welsh-sites",
+          "metal-mine-water-pollution-wales",
+          "mpa-network-management-framework-expired-2026",
+          "nature-recovery-action-plan-2026",
+          "north-wales-drought-declared-2026",
+          "nrw-funding-gap-savings-2026-27",
+          "nrw-ir35-hmrc-settlement-2025",
+          "people-and-nature-survey-wales-2023-24",
+          "pm25-air-quality-target-regulations-wales-2026",
+          "river-action-judicial-review-nrw-poultry-permits",
+          "senedd-2026-net-zero-environment-battleground",
+          "senedd-soil-health-inquiry-2025",
+          "seventh-carbon-budget-uk-law-2026",
+          "sonarr-2025-published",
+          "uk-climate-adaptation-package-2026",
+          "uk-national-biodiversity-strategy-action-plan-2025",
+          "wales-wildfire-season-2026",
+          "water-governance-green-paper-2026",
+          "welsh-fisheries-aquaculture-update-2026",
+          "winter-2025-26-flooding-storm-claudia",
+          "wwf-nature-petition-new-welsh-government-2026",
+          "wye-lugg-usk-group-claim-avara-welsh-water"
+        ],
+        "rows": [
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 17,
+                "status": "covered"
+              }
+            ],
+            "code": null,
+            "expected": 3,
+            "label": "Marine",
+            "row_id": "marine",
+            "status": "covered",
+            "total": 17
+          },
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 28,
+                "status": "covered"
+              }
+            ],
+            "code": null,
+            "expected": 5,
+            "label": "Coastal margins",
+            "row_id": "coastal-margins",
+            "status": "covered",
+            "total": 28
+          },
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 28,
+                "status": "covered"
+              }
+            ],
+            "code": null,
+            "expected": 5,
+            "label": "Freshwaters",
+            "row_id": "freshwaters",
+            "status": "covered",
+            "total": 28
+          },
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 18,
+                "status": "covered"
+              }
+            ],
+            "code": null,
+            "expected": 4,
+            "label": "Mountains, moorlands and heaths",
+            "row_id": "mountains-moorlands-heaths",
+            "status": "covered",
+            "total": 18
+          },
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 16,
+                "status": "covered"
+              }
+            ],
+            "code": null,
+            "expected": 4,
+            "label": "Semi-natural grasslands",
+            "row_id": "semi-natural-grasslands",
+            "status": "covered",
+            "total": 16
+          },
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 25,
+                "status": "covered"
+              }
+            ],
+            "code": null,
+            "expected": 4,
+            "label": "Enclosed farmland",
+            "row_id": "enclosed-farmland",
+            "status": "covered",
+            "total": 25
+          },
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 23,
+                "status": "covered"
+              }
+            ],
+            "code": null,
+            "expected": 6,
+            "label": "Woodlands",
+            "row_id": "woodlands",
+            "status": "covered",
+            "total": 23
+          },
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 22,
+                "status": "covered"
+              }
+            ],
+            "code": null,
+            "expected": 5,
+            "label": "Urban",
+            "row_id": "urban",
+            "status": "covered",
+            "total": 22
+          },
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 9,
+                "status": "covered"
+              }
+            ],
+            "code": null,
+            "expected": 2,
+            "label": "Air",
+            "row_id": "air",
+            "status": "covered",
+            "total": 9
+          },
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 24,
+                "status": "covered"
+              }
+            ],
+            "code": null,
+            "expected": 3,
+            "label": "Soils",
+            "row_id": "soils",
+            "status": "covered",
+            "total": 24
+          },
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 16,
+                "status": "covered"
+              }
+            ],
+            "code": null,
+            "expected": 2,
+            "label": "Water",
+            "row_id": "water",
+            "status": "covered",
+            "total": 16
+          }
+        ]
+      }
+    },
+    {
+      "axis_id": "hazard-families",
+      "axis_name": "Hazard families",
+      "matrix": {
+        "columns": [
+          {
+            "id": "reports",
+            "name": "Active reports"
+          }
+        ],
+        "report_ids": [
+          "avian-flu-welsh-seabirds-recovery-2041",
+          "control-of-agricultural-pollution-regulations-review-2025",
+          "fcerm-programme-2026-27",
+          "metal-mine-water-pollution-wales",
+          "north-wales-drought-declared-2026",
+          "nrw-funding-gap-savings-2026-27",
+          "nrw-ir35-hmrc-settlement-2025",
+          "river-action-judicial-review-nrw-poultry-permits",
+          "wales-wildfire-season-2026",
+          "winter-2025-26-flooding-storm-claudia",
+          "wye-lugg-usk-group-claim-avara-welsh-water"
+        ],
+        "rows": [
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 0,
+                "status": "blind_spot"
+              }
+            ],
+            "code": null,
+            "expected": 0,
+            "label": "Plant and tree disease",
+            "row_id": "plant-tree-disease",
+            "status": "blind_spot",
+            "total": 0
+          },
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 1,
+                "status": "thin"
+              }
+            ],
+            "code": null,
+            "expected": 0,
+            "label": "Animal disease",
+            "row_id": "animal-disease",
+            "status": "thin",
+            "total": 1
+          },
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 0,
+                "status": "blind_spot"
+              }
+            ],
+            "code": null,
+            "expected": 0,
+            "label": "Invasive species",
+            "row_id": "invasive-species",
+            "status": "blind_spot",
+            "total": 0
+          },
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 1,
+                "status": "thin"
+              }
+            ],
+            "code": null,
+            "expected": 0,
+            "label": "Drought and water scarcity",
+            "row_id": "drought-water-scarcity",
+            "status": "thin",
+            "total": 1
+          },
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 2,
+                "status": "thin"
+              }
+            ],
+            "code": null,
+            "expected": 0,
+            "label": "Flood and storm",
+            "row_id": "flood-storm",
+            "status": "thin",
+            "total": 2
+          },
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 1,
+                "status": "thin"
+              }
+            ],
+            "code": null,
+            "expected": 0,
+            "label": "Wildfire",
+            "row_id": "wildfire",
+            "status": "thin",
+            "total": 1
+          },
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 3,
+                "status": "covered"
+              }
+            ],
+            "code": null,
+            "expected": 0,
+            "label": "Pollution incident",
+            "row_id": "pollution-incident",
+            "status": "covered",
+            "total": 3
+          },
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 0,
+                "status": "blind_spot"
+              }
+            ],
+            "code": null,
+            "expected": 0,
+            "label": "Climate extreme",
+            "row_id": "climate-extreme",
+            "status": "blind_spot",
+            "total": 0
+          },
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 2,
+                "status": "thin"
+              }
+            ],
+            "code": null,
+            "expected": 0,
+            "label": "Funding and capacity",
+            "row_id": "funding-capacity",
+            "status": "thin",
+            "total": 2
+          },
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 2,
+                "status": "thin"
+              }
+            ],
+            "code": null,
+            "expected": 0,
+            "label": "Regulatory and legal change",
+            "row_id": "regulatory-legal-change",
+            "status": "thin",
+            "total": 2
+          },
+          {
+            "cells": [
+              {
+                "column_id": "reports",
+                "count": 0,
+                "status": "blind_spot"
+              }
+            ],
+            "code": null,
+            "expected": 0,
+            "label": "Market and land use change",
+            "row_id": "market-land-use-change",
+            "status": "blind_spot",
+            "total": 0
+          }
+        ]
+      }
+    }
+  ]
+}

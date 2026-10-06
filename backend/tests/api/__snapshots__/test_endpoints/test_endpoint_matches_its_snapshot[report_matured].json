@@ -1,0 +1,131 @@
+{
+  "actor_id": "climate-change-committee",
+  "actor_name": "Climate Change Committee",
+  "appearances": 3,
+  "assessments": [
+    {
+      "code": "SI6",
+      "direction": "informs_baseline",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "requirement_id": "si6",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "theccc.org.uk/publication/progress-in-reducing-emissions-2026",
+  "cited_in": [
+    "operational-2026-10"
+  ],
+  "created_on": "2026-09-02",
+  "created_run_id": "20260901T0900Z-0000",
+  "credibility": 1,
+  "credibility_label": "confirmed",
+  "directions": [
+    "informs_baseline"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B1",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20260901t0900z-0000-209732 in run 20260901T0900Z-0000; created as matured by analyst override",
+      "kind": "created",
+      "on": "2026-09-02"
+    },
+    {
+      "change": "sighted in run 20260901T0900Z-0000 by climate-change-committee; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-09-02"
+    },
+    {
+      "change": "sighted in run 20261001T0900Z-0000 by climate-change-committee; 2 runs, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-02"
+    },
+    {
+      "change": "sighted in run 20261003T0900Z-0000 by climate-change-committee; 3 runs, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-04"
+    }
+  ],
+  "id": "ccc-progress-report-2026",
+  "independent_confirmation": false,
+  "lane": "uk-government-and-regulators",
+  "lane_name": "UK Government and regulators",
+  "last_changed": "2026-10-04",
+  "last_verified": "2026-09-02",
+  "lens": "government",
+  "notes": "",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "research",
+  "requirement_ids": [
+    "si6"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "low",
+    "potential_impact": "medium",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20260901t0900z-0000-209732",
+      "discipline": "osint_feed",
+      "query_id": "feed-air-quality-uk-government-and-regulators",
+      "run_id": "20260901T0900Z-0000",
+      "run_started_at": "2026-09-01T09:00:00.000000Z",
+      "sighting_id": "s-20260901t0900z-0000-000020",
+      "source_id": "climate-change-committee",
+      "source_name": "Climate Change Committee",
+      "url": "https://www.theccc.org.uk/publication/progress-in-reducing-emissions-2026/"
+    },
+    {
+      "candidate_id": "c-20261001t0900z-0000-5e2e2c",
+      "discipline": "osint_feed",
+      "query_id": "feed-air-quality-uk-government-and-regulators",
+      "run_id": "20261001T0900Z-0000",
+      "run_started_at": "2026-10-01T09:00:00.000000Z",
+      "sighting_id": "s-20261001t0900z-0000-000020",
+      "source_id": "climate-change-committee",
+      "source_name": "Climate Change Committee",
+      "url": "https://www.theccc.org.uk/publication/progress-in-reducing-emissions-2026/"
+    },
+    {
+      "candidate_id": "c-20261003t0900z-0000-cbbd8a",
+      "discipline": "osint_feed",
+      "query_id": "feed-air-quality-uk-government-and-regulators",
+      "run_id": "20261003T0900Z-0000",
+      "run_started_at": "2026-10-03T09:00:00.000000Z",
+      "sighting_id": "s-20261003t0900z-0000-000012",
+      "source_id": "climate-change-committee",
+      "source_name": "Climate Change Committee",
+      "url": "https://www.theccc.org.uk/publication/progress-in-reducing-emissions-2026/"
+    }
+  ],
+  "source_id": "climate-change-committee",
+  "source_name": "Climate Change Committee",
+  "state": "matured",
+  "summary": "The Climate Change Committee's 2026 progress report sets the baseline for Welsh emissions.",
+  "title": "Progress in reducing emissions: 2026 report to Parliament",
+  "topics": [
+    {
+      "id": "climate-emissions",
+      "name": "Climate and emissions"
+    }
+  ],
+  "url": "https://www.theccc.org.uk/publication/progress-in-reducing-emissions-2026"
+}

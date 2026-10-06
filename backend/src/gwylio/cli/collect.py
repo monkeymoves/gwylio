@@ -8,7 +8,8 @@
   that cannot run here is named with the reason and skipped; the run goes
   ahead on the rest (exit 0), and only when none can run does it exit 3.
 - ``--fake``: the fake collectors fed from the scripted hits in
-  ``backend/tests/fixtures/fake_hits.json``, with the same real persistence.
+  ``backend/tests/fixtures/fake_hits.json`` (or the file ``--hits`` names),
+  with the same real persistence.
 - ``--dry-run``: the fake collectors with in-memory repositories; the
   candidates file goes to ``--out`` or standard output and nothing is kept.
 
@@ -163,8 +164,18 @@ def _fake_collectors(
 
 
 def _flag_problem(
-    *, dry_run: bool, fake: bool, out: Path | None, out_dir: Path | None, at: datetime | None
+    *,
+    dry_run: bool,
+    fake: bool,
+    out: Path | None,
+    out_dir: Path | None,
+    at: datetime | None,
+    hits: Path | None = None,
 ) -> str | None:
+    if hits is not None and not (dry_run or fake):
+        return "collect: --hits goes with --fake or --dry-run; a real scan reads the network"
+    if hits is not None and not hits.is_file():
+        return f"collect: no scripted hits file at {hits}"
     if at is not None and not (dry_run or fake):
         return "collect: --at goes with --fake or --dry-run; a real scan runs now"
     if at is not None and (at.tzinfo is None or at.utcoffset() is None):
@@ -187,9 +198,10 @@ def run_collect(
     fake: bool = False,
     out_dir: Path | None = None,
     at: datetime | None = None,
+    hits: Path | None = None,
 ) -> int:
     """Run a scan; return the exit code."""
-    problem = _flag_problem(dry_run=dry_run, fake=fake, out=out, out_dir=out_dir, at=at)
+    problem = _flag_problem(dry_run=dry_run, fake=fake, out=out, out_dir=out_dir, at=at, hits=hits)
     if problem is not None:
         typer.echo(problem, err=True)
         return 2
@@ -203,20 +215,21 @@ def run_collect(
         return 1
     target = settings if out_dir is None else settings.with_data_dir(out_dir)
     pinned = at is not None
+    scripted = hits or settings.fake_hits_path
     clock: Clock = SystemClock() if at is None else FixedClock(at)
     if fake:
         return _collect_stored(
             target,
             config,
             chosen,
-            _fake_collectors(settings.fake_hits_path, chosen),
+            _fake_collectors(scripted, chosen),
             clock=clock,
             pinned=pinned,
         )
     if not dry_run:
         return _collect_real(target, config, chosen, explicit=bool(disciplines))
     scan = RunScan(
-        collectors=_fake_collectors(settings.fake_hits_path, chosen),
+        collectors=_fake_collectors(scripted, chosen),
         instruments=MemoryInstrumentRepository(),
         runs=MemoryScanRunRepository(),
         candidates=MemoryCandidateRepository(),

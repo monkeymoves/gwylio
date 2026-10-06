@@ -1,0 +1,178 @@
+{
+  "budget_exhausted": false,
+  "candidates": 17,
+  "credibility": [
+    {
+      "count": 2,
+      "credibility": 1,
+      "label": "confirmed"
+    },
+    {
+      "count": 5,
+      "credibility": 2,
+      "label": "probably true"
+    },
+    {
+      "count": 3,
+      "credibility": 3,
+      "label": "possibly true"
+    },
+    {
+      "count": 0,
+      "credibility": 4,
+      "label": "doubtful"
+    },
+    {
+      "count": 0,
+      "credibility": 5,
+      "label": "improbable"
+    },
+    {
+      "count": 0,
+      "credibility": 6,
+      "label": "cannot be judged"
+    }
+  ],
+  "disciplines": [
+    "osint_web",
+    "osint_feed",
+    "osint_site"
+  ],
+  "dispositions": {
+    "counts": {
+      "deferred": 1,
+      "duplicate": 0,
+      "promoted": 10,
+      "reinforcement": 1,
+      "rejected": 5
+    },
+    "disposed": 16,
+    "new": 17,
+    "promotion_rate": 0.5882,
+    "undisposed": 1
+  },
+  "finished_at": "2026-09-01T09:00:00.000000Z",
+  "funnel": {
+    "dropped_negative": 5,
+    "dropped_own": 2,
+    "dropped_unrelated": 3,
+    "new": 17,
+    "passed": 20,
+    "raw": 30,
+    "reinforcements": 0,
+    "seen_before": 0,
+    "unique": 17
+  },
+  "instrument_hash": "sha256:cf8e838f482996f11a7c9fdc1416fe8e6dd843faa50cd6187b7f5d99cebf0263",
+  "instrument_version": "2026.10.0",
+  "notes": [],
+  "per_discipline": [
+    {
+      "candidates": 15,
+      "discipline": "osint_web",
+      "sightings": 15
+    },
+    {
+      "candidates": 2,
+      "discipline": "osint_feed",
+      "sightings": 2
+    },
+    {
+      "candidates": 0,
+      "discipline": "osint_site",
+      "sightings": 3
+    }
+  ],
+  "per_source": [
+    {
+      "candidates": 1,
+      "sightings": 1,
+      "source_id": "audit-wales",
+      "source_name": "Audit Wales"
+    },
+    {
+      "candidates": 1,
+      "sightings": 1,
+      "source_id": "bto",
+      "source_name": "British Trust for Ornithology (BTO)"
+    },
+    {
+      "candidates": 1,
+      "sightings": 1,
+      "source_id": "climate-change-committee",
+      "source_name": "Climate Change Committee"
+    },
+    {
+      "candidates": 1,
+      "sightings": 1,
+      "source_id": "convention-on-biological-diversity",
+      "source_name": "Convention on Biological Diversity (CBD)"
+    },
+    {
+      "candidates": 1,
+      "sightings": 1,
+      "source_id": "forest-research",
+      "source_name": "Forest Research"
+    },
+    {
+      "candidates": 1,
+      "sightings": 2,
+      "source_id": "nation-cymru",
+      "source_name": "Nation.Cymru"
+    },
+    {
+      "candidates": 1,
+      "sightings": 1,
+      "source_id": "nfu-cymru",
+      "source_name": "NFU Cymru"
+    },
+    {
+      "candidates": 1,
+      "sightings": 2,
+      "source_id": "river-action",
+      "source_name": "River Action"
+    },
+    {
+      "candidates": 1,
+      "sightings": 1,
+      "source_id": "uk-government",
+      "source_name": "UK Government"
+    },
+    {
+      "candidates": 3,
+      "sightings": 4,
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government"
+    },
+    {
+      "candidates": 5,
+      "sightings": 5,
+      "source_id": null,
+      "source_name": null
+    }
+  ],
+  "promoted": 10,
+  "promoted_report_ids": [
+    "avian-influenza-seabirds-2026",
+    "ccc-progress-report-2026",
+    "domestic-solid-fuel-burning-emissions",
+    "nature-recovery-bill-consultation",
+    "nrw-funding-and-capacity-2026",
+    "phosphate-welsh-rivers-2026",
+    "river-action-judicial-review-permission",
+    "south-west-wales-drought-2026",
+    "storm-claudia-monmouthshire-flooding",
+    "sustainable-farming-scheme-concerns"
+  ],
+  "reinforcements_recorded": 0,
+  "request_budget": 150,
+  "requests_made": 148,
+  "run_id": "20260901T0900Z-0000",
+  "started_at": "2026-09-01T09:00:00.000000Z",
+  "status": "complete",
+  "submissions": [
+    "20260901T0900Z-0000__1"
+  ],
+  "undisposed": 1,
+  "warnings": []
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "generated_on": "2026-10-06",
+    "id": "operational-2026-10",
+    "level": "operational",
+    "markdown_file": "operational_2026-10.md",
+    "period": {
+      "end": "2026-10-31",
+      "label": "2026-10",
+      "start": "2026-10-01"
+    },
+    "report_count": 10,
+    "requirement_set_id": "nrw-corporate-plan",
+    "section_headings": [
+      "Summary",
+      "What moved",
+      "Nature is Recovering (SI1, SI2, SI3)",
+      "Communities are Resilient to Climate Change (SI6, SI7, SI8, SI10)",
+      "Pollution is Minimised (SI4, SI5)",
+      "Quiet and blind spots",
+      "Verification due",
+      "Passed event horizons",
+      "Future-framed language",
+      "Method note"
+    ],
+    "title": "Operational intelligence summary (INTSUM), October 2026"
+  },
+  {
+    "generated_on": "2026-10-06",
+    "id": "strategic-2026",
+    "level": "strategic",
+    "markdown_file": "strategic_2026.md",
+    "period": {
+      "end": "2026-12-31",
+      "label": "2026",
+      "start": "2026-01-01"
+    },
+    "report_count": 7,
+    "requirement_set_id": "nrw-corporate-plan",
+    "section_headings": [
+      "Purpose",
+      "Standing picture by requirement",
+      "SI1 Increasing the proportion of ecosystems that are defined as resilient",
+      "SI2 Increasing the rate of habitat restoration",
+      "SI3 Increasing the integration of activities that support nature recovery into Wales' public services",
+      "SI4 Decreasing the rate of pollution on land and entering water bodies",
+      "SI5 Decreasing the rate of pollution to air from industrial and non-industrial sources",
+      "SI6 Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "SI7 Increasing the proportion of the population who have access to high quality green or blue space, and who use them sustainably",
+      "SI8 Increasing the proportion of the population living in places that will continue to support and contribute to their health and well-being in a changing climate",
+      "SI9 Increasing the impact of partnership approaches which deliver multiple benefits and address the root causes of the nature, climate and pollution crises",
+      "SI10 Increasing the proportion of the population that act to mitigate and adapt to the nature, climate and pollution crises",
+      "SI11 Increasing the proportion of organisations and businesses who act to mitigate and adapt to the nature, climate and pollution crises",
+      "SI12 Increasing the proportion of NRW colleagues feeling engaged, enabled and empowered",
+      "Questions for each well-being objective",
+      "Nature is Recovering (SI1, SI2, SI3)",
+      "Communities are Resilient to Climate Change (SI6, SI7, SI8, SI10)",
+      "Pollution is Minimised (SI4, SI5)",
+      "Coverage audit",
+      "Requirements by lane",
+      "Taxonomy: SoNaRR ecosystems and resources",
+      "Taxonomy: Hazard families",
+      "Method note"
+    ],
+    "title": "Strategic assessment, 2026: NRW corporate plan performance framework"
+  }
+]

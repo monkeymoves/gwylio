@@ -1,0 +1,708 @@
+{
+  "datecheck": {
+    "future_language": 3,
+    "never_verified": 0,
+    "passed_horizon": 1,
+    "reports_flagged": 35,
+    "stale_verification": 35,
+    "total": 39
+  },
+  "impact_groups": [
+    {
+      "active": 24,
+      "directions": {
+        "informs_baseline": 3,
+        "neutral": 3,
+        "supports": 9,
+        "threatens": 11
+      },
+      "group_id": "i1",
+      "kind": "impact",
+      "latest_event_horizon": "2028-04-27",
+      "latest_verified": "2026-07-25",
+      "members": [
+        "si1",
+        "si2",
+        "si3",
+        "si4",
+        "si7"
+      ],
+      "name": "Nature recovering",
+      "statement": "By 2030 the decline in biodiversity is halted; effective regulation, habitat restoration and nature-based solutions contribute to increasingly resilient ecosystems enabling adaptation to change, benefiting people's well-being.",
+      "states": {
+        "emerging": 24,
+        "faded": 0,
+        "matured": 1,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "statuses": {
+        "blind_spot": 0,
+        "covered": 5,
+        "quiet": 0,
+        "thin": 0
+      },
+      "total": 25
+    },
+    {
+      "active": 27,
+      "directions": {
+        "informs_baseline": 8,
+        "neutral": 1,
+        "supports": 9,
+        "threatens": 13
+      },
+      "group_id": "i2",
+      "kind": "impact",
+      "latest_event_horizon": "2028-04-27",
+      "latest_verified": "2026-07-25",
+      "members": [
+        "si1",
+        "si2",
+        "si5",
+        "si6",
+        "si7",
+        "si8",
+        "si10"
+      ],
+      "name": "Climate action and adaptation",
+      "statement": "By 2030 sustained action on the causes, risks and impacts of climate change means nature and people are enabled and empowered to adapt, alleviating the effects on people's well-being.",
+      "states": {
+        "emerging": 27,
+        "faded": 0,
+        "matured": 2,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "statuses": {
+        "blind_spot": 0,
+        "covered": 5,
+        "quiet": 0,
+        "thin": 2
+      },
+      "total": 29
+    },
+    {
+      "active": 18,
+      "directions": {
+        "informs_baseline": 2,
+        "neutral": 3,
+        "supports": 6,
+        "threatens": 8
+      },
+      "group_id": "i3",
+      "kind": "impact",
+      "latest_event_horizon": "2027-02-28",
+      "latest_verified": "2026-07-25",
+      "members": [
+        "si4",
+        "si5",
+        "si6"
+      ],
+      "name": "Pollution minimised",
+      "statement": "By 2030 pollution is minimised through effective regulation and legislative reform, reducing harm to biodiversity and people's well-being, and driving the sustainable management and use of natural resources.",
+      "states": {
+        "emerging": 18,
+        "faded": 0,
+        "matured": 1,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "statuses": {
+        "blind_spot": 0,
+        "covered": 2,
+        "quiet": 0,
+        "thin": 1
+      },
+      "total": 19
+    },
+    {
+      "active": 12,
+      "directions": {
+        "informs_baseline": 4,
+        "neutral": 0,
+        "supports": 4,
+        "threatens": 4
+      },
+      "group_id": "i4",
+      "kind": "impact",
+      "latest_event_horizon": "2027-02-28",
+      "latest_verified": "2026-07-25",
+      "members": [
+        "si7",
+        "si8",
+        "si9"
+      ],
+      "name": "Social and environmental justice",
+      "statement": "By 2030 increased action for social and environmental justice is maximising benefits for nature, climate, and pollution and reducing social inequalities.",
+      "states": {
+        "emerging": 12,
+        "faded": 0,
+        "matured": 0,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "statuses": {
+        "blind_spot": 1,
+        "covered": 2,
+        "quiet": 0,
+        "thin": 0
+      },
+      "total": 12
+    },
+    {
+      "active": 10,
+      "directions": {
+        "informs_baseline": 2,
+        "neutral": 1,
+        "supports": 4,
+        "threatens": 3
+      },
+      "group_id": "i5",
+      "kind": "impact",
+      "latest_event_horizon": "2028-04-27",
+      "latest_verified": "2026-07-25",
+      "members": [
+        "si3",
+        "si9",
+        "si10",
+        "si11"
+      ],
+      "name": "Collaborative action",
+      "statement": "By 2030 sustained collaborative action means individuals and organisations are taking integrated decisions to address the nature, climate and pollution emergencies.",
+      "states": {
+        "emerging": 10,
+        "faded": 0,
+        "matured": 1,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "statuses": {
+        "blind_spot": 1,
+        "covered": 1,
+        "quiet": 0,
+        "thin": 2
+      },
+      "total": 11
+    },
+    {
+      "active": 0,
+      "directions": {
+        "informs_baseline": 0,
+        "neutral": 0,
+        "supports": 0,
+        "threatens": 0
+      },
+      "group_id": "i6",
+      "kind": "impact",
+      "latest_event_horizon": null,
+      "latest_verified": null,
+      "members": [
+        "si12"
+      ],
+      "name": "NRW values and behaviours",
+      "statement": "By 2030 consistent delivery of our values and behaviours in NRW mean colleagues, partners and communities are engaged, enabled and empowered to innovate and accelerate action.",
+      "states": {
+        "emerging": 0,
+        "faded": 0,
+        "matured": 0,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "statuses": {
+        "blind_spot": 1,
+        "covered": 0,
+        "quiet": 0,
+        "thin": 0
+      },
+      "total": 0
+    }
+  ],
+  "requirements": [
+    {
+      "active": 12,
+      "code": "SI1",
+      "directions": {
+        "informs_baseline": 2,
+        "neutral": 0,
+        "supports": 3,
+        "threatens": 7
+      },
+      "group_ids": [
+        "i1",
+        "i2",
+        "nature-recovering"
+      ],
+      "latest_event_horizon": "2028-04-27",
+      "latest_verified": "2026-07-25",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "scanability": "high",
+      "short": "Resilient ecosystems",
+      "states": {
+        "emerging": 12,
+        "faded": 0,
+        "matured": 1,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "status": "covered",
+      "total": 13
+    },
+    {
+      "active": 5,
+      "code": "SI2",
+      "directions": {
+        "informs_baseline": 1,
+        "neutral": 0,
+        "supports": 2,
+        "threatens": 2
+      },
+      "group_ids": [
+        "i1",
+        "i2",
+        "nature-recovering"
+      ],
+      "latest_event_horizon": "2028-04-27",
+      "latest_verified": "2026-07-25",
+      "name": "Increasing the rate of habitat restoration",
+      "requirement_id": "si2",
+      "scanability": "medium",
+      "short": "Habitat restoration rate",
+      "states": {
+        "emerging": 5,
+        "faded": 0,
+        "matured": 1,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "status": "covered",
+      "total": 6
+    },
+    {
+      "active": 7,
+      "code": "SI3",
+      "directions": {
+        "informs_baseline": 0,
+        "neutral": 1,
+        "supports": 4,
+        "threatens": 2
+      },
+      "group_ids": [
+        "i1",
+        "i5",
+        "nature-recovering"
+      ],
+      "latest_event_horizon": "2028-04-27",
+      "latest_verified": "2026-07-25",
+      "name": "Increasing the integration of activities that support nature recovery into Wales' public services",
+      "requirement_id": "si3",
+      "scanability": "high",
+      "short": "Nature recovery in public services",
+      "states": {
+        "emerging": 7,
+        "faded": 0,
+        "matured": 1,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "status": "covered",
+      "total": 8
+    },
+    {
+      "active": 10,
+      "code": "SI4",
+      "directions": {
+        "informs_baseline": 1,
+        "neutral": 2,
+        "supports": 3,
+        "threatens": 4
+      },
+      "group_ids": [
+        "i1",
+        "i3",
+        "pollution-minimised"
+      ],
+      "latest_event_horizon": "2026-10-24",
+      "latest_verified": "2026-07-25",
+      "name": "Decreasing the rate of pollution on land and entering water bodies",
+      "requirement_id": "si4",
+      "scanability": "high",
+      "short": "Pollution to land and water",
+      "states": {
+        "emerging": 10,
+        "faded": 0,
+        "matured": 0,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "status": "covered",
+      "total": 10
+    },
+    {
+      "active": 2,
+      "code": "SI5",
+      "directions": {
+        "informs_baseline": 0,
+        "neutral": 0,
+        "supports": 1,
+        "threatens": 1
+      },
+      "group_ids": [
+        "i2",
+        "i3",
+        "pollution-minimised"
+      ],
+      "latest_event_horizon": "2027-02-28",
+      "latest_verified": "2026-07-24",
+      "name": "Decreasing the rate of pollution to air from industrial and non-industrial sources",
+      "requirement_id": "si5",
+      "scanability": "high",
+      "short": "Air pollution",
+      "states": {
+        "emerging": 2,
+        "faded": 0,
+        "matured": 0,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "status": "thin",
+      "total": 2
+    },
+    {
+      "active": 8,
+      "code": "SI6",
+      "directions": {
+        "informs_baseline": 1,
+        "neutral": 1,
+        "supports": 2,
+        "threatens": 4
+      },
+      "group_ids": [
+        "i2",
+        "i3",
+        "communities-resilient-climate"
+      ],
+      "latest_event_horizon": null,
+      "latest_verified": "2026-07-25",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "requirement_id": "si6",
+      "scanability": "high",
+      "short": "Greenhouse gas emissions and sequestration",
+      "states": {
+        "emerging": 8,
+        "faded": 0,
+        "matured": 1,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "status": "covered",
+      "total": 9
+    },
+    {
+      "active": 5,
+      "code": "SI7",
+      "directions": {
+        "informs_baseline": 1,
+        "neutral": 0,
+        "supports": 2,
+        "threatens": 2
+      },
+      "group_ids": [
+        "i1",
+        "i2",
+        "i4",
+        "communities-resilient-climate"
+      ],
+      "latest_event_horizon": "2026-10-24",
+      "latest_verified": "2026-07-25",
+      "name": "Increasing the proportion of the population who have access to high quality green or blue space, and who use them sustainably",
+      "requirement_id": "si7",
+      "scanability": "medium",
+      "short": "Access to green and blue space",
+      "states": {
+        "emerging": 5,
+        "faded": 0,
+        "matured": 0,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "status": "covered",
+      "total": 5
+    },
+    {
+      "active": 9,
+      "code": "SI8",
+      "directions": {
+        "informs_baseline": 3,
+        "neutral": 0,
+        "supports": 2,
+        "threatens": 4
+      },
+      "group_ids": [
+        "i2",
+        "i4",
+        "communities-resilient-climate"
+      ],
+      "latest_event_horizon": "2027-02-28",
+      "latest_verified": "2026-07-25",
+      "name": "Increasing the proportion of the population living in places that will continue to support and contribute to their health and well-being in a changing climate",
+      "requirement_id": "si8",
+      "scanability": "high",
+      "short": "Places resilient to a changing climate",
+      "states": {
+        "emerging": 9,
+        "faded": 0,
+        "matured": 0,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "status": "covered",
+      "total": 9
+    },
+    {
+      "active": 0,
+      "code": "SI9",
+      "directions": {
+        "informs_baseline": 0,
+        "neutral": 0,
+        "supports": 0,
+        "threatens": 0
+      },
+      "group_ids": [
+        "i4",
+        "i5"
+      ],
+      "latest_event_horizon": null,
+      "latest_verified": null,
+      "name": "Increasing the impact of partnership approaches which deliver multiple benefits and address the root causes of the nature, climate and pollution crises",
+      "requirement_id": "si9",
+      "scanability": "low",
+      "short": "Impact of partnership approaches",
+      "states": {
+        "emerging": 0,
+        "faded": 0,
+        "matured": 0,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "status": "blind_spot",
+      "total": 0
+    },
+    {
+      "active": 2,
+      "code": "SI10",
+      "directions": {
+        "informs_baseline": 2,
+        "neutral": 0,
+        "supports": 0,
+        "threatens": 0
+      },
+      "group_ids": [
+        "i2",
+        "i5",
+        "communities-resilient-climate"
+      ],
+      "latest_event_horizon": null,
+      "latest_verified": "2026-07-25",
+      "name": "Increasing the proportion of the population that act to mitigate and adapt to the nature, climate and pollution crises",
+      "requirement_id": "si10",
+      "scanability": "medium",
+      "short": "Public action on the crises",
+      "states": {
+        "emerging": 2,
+        "faded": 0,
+        "matured": 0,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "status": "thin",
+      "total": 2
+    },
+    {
+      "active": 1,
+      "code": "SI11",
+      "directions": {
+        "informs_baseline": 0,
+        "neutral": 0,
+        "supports": 0,
+        "threatens": 1
+      },
+      "group_ids": [
+        "i5"
+      ],
+      "latest_event_horizon": null,
+      "latest_verified": "2026-07-24",
+      "name": "Increasing the proportion of organisations and businesses who act to mitigate and adapt to the nature, climate and pollution crises",
+      "requirement_id": "si11",
+      "scanability": "low",
+      "short": "Organisations acting on the crises",
+      "states": {
+        "emerging": 1,
+        "faded": 0,
+        "matured": 0,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "status": "thin",
+      "total": 1
+    },
+    {
+      "active": 0,
+      "code": "SI12",
+      "directions": {
+        "informs_baseline": 0,
+        "neutral": 0,
+        "supports": 0,
+        "threatens": 0
+      },
+      "group_ids": [
+        "i6"
+      ],
+      "latest_event_horizon": null,
+      "latest_verified": null,
+      "name": "Increasing the proportion of NRW colleagues feeling engaged, enabled and empowered",
+      "requirement_id": "si12",
+      "scanability": "none",
+      "short": "NRW colleague engagement",
+      "states": {
+        "emerging": 0,
+        "faded": 0,
+        "matured": 0,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "status": "blind_spot",
+      "total": 0
+    }
+  ],
+  "set_id": "nrw-corporate-plan",
+  "set_name": "NRW corporate plan performance framework",
+  "today": "2026-10-06",
+  "version": "2024-25 draft, transcription 1",
+  "wbo_groups": [
+    {
+      "active": 15,
+      "directions": {
+        "informs_baseline": 2,
+        "neutral": 1,
+        "supports": 6,
+        "threatens": 8
+      },
+      "group_id": "nature-recovering",
+      "kind": "wbo",
+      "latest_event_horizon": "2028-04-27",
+      "latest_verified": "2026-07-25",
+      "members": [
+        "si1",
+        "si2",
+        "si3"
+      ],
+      "name": "Nature is Recovering",
+      "statement": null,
+      "states": {
+        "emerging": 15,
+        "faded": 0,
+        "matured": 1,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "statuses": {
+        "blind_spot": 0,
+        "covered": 3,
+        "quiet": 0,
+        "thin": 0
+      },
+      "total": 16
+    },
+    {
+      "active": 19,
+      "directions": {
+        "informs_baseline": 6,
+        "neutral": 1,
+        "supports": 5,
+        "threatens": 8
+      },
+      "group_id": "communities-resilient-climate",
+      "kind": "wbo",
+      "latest_event_horizon": "2027-02-28",
+      "latest_verified": "2026-07-25",
+      "members": [
+        "si6",
+        "si7",
+        "si8",
+        "si10"
+      ],
+      "name": "Communities are Resilient to Climate Change",
+      "statement": null,
+      "states": {
+        "emerging": 19,
+        "faded": 0,
+        "matured": 1,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "statuses": {
+        "blind_spot": 0,
+        "covered": 3,
+        "quiet": 0,
+        "thin": 1
+      },
+      "total": 20
+    },
+    {
+      "active": 12,
+      "directions": {
+        "informs_baseline": 1,
+        "neutral": 2,
+        "supports": 4,
+        "threatens": 5
+      },
+      "group_id": "pollution-minimised",
+      "kind": "wbo",
+      "latest_event_horizon": "2027-02-28",
+      "latest_verified": "2026-07-25",
+      "members": [
+        "si4",
+        "si5"
+      ],
+      "name": "Pollution is Minimised",
+      "statement": null,
+      "states": {
+        "emerging": 12,
+        "faded": 0,
+        "matured": 0,
+        "parked": 0,
+        "reinforced": 0,
+        "tracking": 0
+      },
+      "statuses": {
+        "blind_spot": 0,
+        "covered": 1,
+        "quiet": 0,
+        "thin": 1
+      },
+      "total": 12
+    }
+  ]
+}

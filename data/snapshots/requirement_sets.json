@@ -1,0 +1,12 @@
+[
+  {
+    "id": "nrw-corporate-plan",
+    "impact_groups": 6,
+    "is_default": true,
+    "name": "NRW corporate plan performance framework",
+    "requirements": 12,
+    "source_doc": "Impacts and SIs Doc-Master ENGLISH.pdf (NRW corporate plan performance framework, draft for testing through 2024-25)",
+    "version": "2024-25 draft, transcription 1",
+    "wbo_groups": 3
+  }
+]

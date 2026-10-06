@@ -2,7 +2,7 @@
 
 Each verb's logic lives in its own module (``check.py``, ``schema.py``,
 ``collect.py``, ``database.py``, ``register.py``, ``evaluate.py``,
-``product.py``); this module only declares the Typer commands
+``product.py``, ``publish.py``, ``serve.py``); this module only declares the Typer commands
 and registers them. Every command takes its paths from one ``Settings``
 object, built by ``_settings`` from ``--root`` and the ``GWYLIO_`` environment.
 """
@@ -23,8 +23,10 @@ from gwylio.cli.collect import run_collect, run_probe
 from gwylio.cli.database import run_export, run_migrate, run_rebuild
 from gwylio.cli.evaluate import run_audit, run_yield
 from gwylio.cli.product import run_product
+from gwylio.cli.publish import run_publish
 from gwylio.cli.register import run_datecheck, run_import_legacy, run_ingest, run_sweep
 from gwylio.cli.schema import run_schema
+from gwylio.cli.serve import DEFAULT_HOST, DEFAULT_PORT, run_serve
 from gwylio.collection.model import Discipline
 from gwylio.dissemination.model import Level
 from gwylio.infrastructure.config.settings import Settings
@@ -151,6 +153,15 @@ def collect_command(
             "2026-09-01T09:00:00+0000) and its run id suffix to 0000, for reproducible fixtures.",
         ),
     ] = None,
+    hits: Annotated[
+        Path | None,
+        typer.Option(
+            "--hits",
+            help="With --fake or --dry-run: the scripted hits file to replay (default: "
+            "backend/tests/fixtures/fake_hits.json).",
+            dir_okay=False,
+        ),
+    ] = None,
 ) -> None:
     """Run the instrument once and write a candidates file, printing the funnel."""
     raise typer.Exit(
@@ -162,6 +173,7 @@ def collect_command(
             out_dir=out_dir,
             disciplines=discipline or (),
             at=at,
+            hits=hits,
         )
     )
 
@@ -322,6 +334,42 @@ def product_command(
     raise typer.Exit(
         code=run_product(_settings(root), level, period=period, set_id=set_id, on=today)
     )
+
+
+@app.command("publish")
+def publish_command(
+    out: Annotated[
+        list[Path] | None,
+        typer.Option(
+            "--out",
+            help="Write the snapshot here instead of frontend/static/data and data/snapshots; "
+            "repeat for more.",
+            file_okay=False,
+        ),
+    ] = None,
+    at: Annotated[
+        datetime | None,
+        typer.Option(
+            "--at",
+            formats=["%Y-%m-%dT%H:%M:%S%z"],
+            help="Pin the clock (generated_at and the date check's today), such as "
+            "2026-10-06T09:00:00+0000, for a reproducible snapshot.",
+        ),
+    ] = None,
+    root: RootOption = None,
+) -> None:
+    """Publish the JSON snapshot the static site reads; print the file count."""
+    raise typer.Exit(code=run_publish(_settings(root), out=out or (), at=at))
+
+
+@app.command("serve")
+def serve_command(
+    port: Annotated[int, typer.Option("--port", help="The port to listen on.")] = DEFAULT_PORT,
+    host: Annotated[str, typer.Option("--host", help="The address to bind.")] = DEFAULT_HOST,
+    root: RootOption = None,
+) -> None:
+    """Run the read API (a development tool) at http://HOST:PORT/api/v1."""
+    raise typer.Exit(code=run_serve(_settings(root), host=host, port=port))
 
 
 if __name__ == "__main__":  # pragma: no cover

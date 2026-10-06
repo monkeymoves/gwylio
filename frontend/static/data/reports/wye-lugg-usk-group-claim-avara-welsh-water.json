@@ -1,0 +1,101 @@
+{
+  "actor_id": "leigh-day",
+  "actor_name": "Leigh Day (law firm)",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI4",
+      "direction": "supports",
+      "name": "Decreasing the rate of pollution on land and entering water bodies",
+      "requirement_id": "si4",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "leighday.co.uk/news/press-releases/2026-news/first-court-hearing-for-river-wye-pollution-claim",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "D3",
+  "hazards": [
+    {
+      "family": "regulatory-legal-change",
+      "family_name": "Regulatory and legal change",
+      "id": "legal-challenge",
+      "name": "Legal challenge"
+    }
+  ],
+  "history": [
+    {
+      "change": "added from weak-signal probe (legal_civil_society lane); tagged SI4 supports via deterrence and disclosure effects; first CMC held 27 April 2026",
+      "kind": "imported",
+      "on": "2026-07-21"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "wye-lugg-usk-group-claim-avara-welsh-water",
+  "independent_confirmation": false,
+  "lane": "legal-and-campaign",
+  "lane_name": "Legal and campaign",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-24",
+  "lens": "partnership_society",
+  "notes": "Promoted from the weak-signal probe of 21 July 2026. Tagged supports for SI4 because the claim's existence changes the economics of agricultural and sewage pollution regardless of outcome: private litigation risk now sits alongside regulation as a deterrent, and disclosure could put poultry operation location data into the public domain, useful for the SI4 evidence base. The Usk is wholly Welsh and Welsh Water is a defendant, so this is not an England-only story. Watch the case management timetable and any disclosure ruling.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "D",
+  "reliability_label": "not usually reliable",
+  "report_type": "legal",
+  "requirement_ids": [
+    "si4"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "high",
+    "potential_impact": "high",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "leigh-day",
+  "source_name": "Leigh Day environment",
+  "state": "emerging",
+  "summary": "The largest domestic environmental pollution claim ever brought in the UK, filed at the High Court in autumn 2025, had its first case management hearing on 27 April 2026. More than 4,500 residents and businesses along the Wye, Lugg and Usk allege pollution from phosphorus, nitrogen and bacteria in poultry manure spread as fertiliser (Avara Foods and its subsidiary Freemans of Newent) and from sewage discharges (Welsh Water). All defendants deny the claims; claimants have sought disclosure of poultry operation locations across the region.",
+  "title": "Largest UK environmental pollution claim: over 4,500 claimants sue Avara Foods and Welsh Water over Wye, Lugg and Usk pollution",
+  "topics": [
+    {
+      "id": "pollution-water-and-land",
+      "name": "Pollution of water and land"
+    }
+  ],
+  "url": "https://www.leighday.co.uk/news/press-releases/2026-news/first-court-hearing-for-river-wye-pollution-claim/"
+}

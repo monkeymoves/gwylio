@@ -1,0 +1,104 @@
+{
+  "actor_id": "climate-change-committee",
+  "actor_name": "Climate Change Committee",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI6",
+      "direction": "informs_baseline",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "requirement_id": "si6",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "brief",
+  "canonical_url": "theccc.org.uk/publication/progress-in-reducing-emissions-2026-report-to-parliament",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "informs_baseline"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "B2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "added at supersession pass: CCC 24 June 2026 report, Welsh 2024 emissions fall driven by Port Talbot closures; informs SI6 baseline",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-23; last_seen bumped, appearances and lifecycle held (one day after the 22 July baseline, same development window per RUBRIC)",
+      "kind": "imported",
+      "on": "2026-07-23"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-25; last_seen bumped, lifecycle held (same development window as the 23 July scan)",
+      "kind": "imported",
+      "on": "2026-07-25"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "ccc-2026-progress-report-welsh-emissions-fall",
+  "independent_confirmation": false,
+  "lane": "uk-government-and-regulators",
+  "lane_name": "UK Government and regulators",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-24",
+  "lens": "government",
+  "notes": "Informs the SI6 baseline rather than pushing it: a large one-off industrial closure moves the number without evidencing systemic decarbonisation, and the distinction matters for how the 2024 data is read against Carbon Budget 4's zero-offset trajectory. Caught by the supersession pass of 22 July 2026 rather than collection, because the June CCC report predates the widened scan.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "research",
+  "requirement_ids": [
+    "si6"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "medium",
+    "time_horizon": "immediate"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "climate-change-committee",
+  "source_name": "Climate Change Committee",
+  "state": "emerging",
+  "summary": "The CCC's Progress in Reducing Emissions 2026 report to Parliament (24 June 2026) records that emissions in Wales fell significantly in 2024, with the reduction driven largely by the closure of the Port Talbot blast furnaces. The June 2026 devolved inventory carries the underlying figures.",
+  "title": "CCC 2026 progress report: Welsh emissions fell significantly in 2024, driven by the Port Talbot closures",
+  "topics": [
+    {
+      "id": "climate-emissions",
+      "name": "Climate and emissions"
+    }
+  ],
+  "url": "https://www.theccc.org.uk/publication/progress-in-reducing-emissions-2026-report-to-parliament/"
+}

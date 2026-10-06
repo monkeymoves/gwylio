@@ -1,0 +1,247 @@
+{
+  "body": "# Operational intelligence summary (INTSUM), October 2026\n\nRequirement set: NRW corporate plan performance framework, version 2024-25 draft, transcription 1.\n\nPeriod covered: 2026-10-01 to 2026-10-31. Rendered on 2026-10-06 from the register as it stood that day.\n\nThis monthly intelligence summary (INTSUM) records what moved in the register during the period, against the requirement set named above. It is assembled from the register and the standing copy: every sentence is a fixed form filled with counts and titles.\n\n## Summary\n\nNew reports created in the period: 0.\n\nLifecycle state changes recorded in the period: 12.\n\nReports faded by the sweep in the period: 1.\n\nReports verified against their source in the period: 1.\n\nAcross the reports that moved, 8 assessments threaten a requirement, 2 cut both ways, 1 inform the baseline and 3 support.\n\n| Measure | Count |\n|---|---|\n| New reports | 0 |\n| State changes | 12 |\n| Faded | 1 |\n| Verified | 1 |\n| Assessments: threatens | 8 |\n| Assessments: two-way | 2 |\n| Assessments: informs the baseline | 1 |\n| Assessments: supports | 3 |\n\n## What moved\n\nReports created or changed in the period, by well-being objective. Within each list, threats and two-way signals come first.\n\n### Nature is Recovering (SI1, SI2, SI3)\n\n- B2 Audit Wales: Natural Resources Wales funding and capacity [SI1 threatens] (tracking)\n- C2 Avian influenza in seabirds: 2026 season [SI1 threatens] (tracking)\n- C3 Drought declared across South West Wales [SI1 threatens] (reinforced)\n- C3 NFU Cymru responds to Sustainable Farming Scheme concerns [SI1 two-way] (parked)\n- B1 Consultation on a Nature Recovery Bill for Wales [SI1 supports, SI2 supports] (tracking)\n\n### Communities are Resilient to Climate Change (SI6, SI7, SI8, SI10)\n\n- C3 Drought declared across South West Wales [SI8 threatens] (reinforced)\n- B2 Storm Claudia: homes flooded in Monmouthshire [SI8 threatens] (faded)\n- C3 NFU Cymru responds to Sustainable Farming Scheme concerns [SI6 two-way] (parked)\n- B1 Progress in reducing emissions: 2026 report to Parliament [SI6 informs the baseline] (matured)\n\n### Pollution is Minimised (SI4, SI5)\n\n- B2 Audit Wales: Natural Resources Wales funding and capacity [SI4 threatens] (tracking)\n- B3 Phosphate levels in Welsh rivers remain high [SI4 threatens] (reinforced)\n- D2 River Action wins permission for judicial review [SI4 threatens] (tracking)\n- B2 Reducing emissions from domestic solid fuel burning [SI5 supports] (tracking)\n\n## Quiet and blind spots\n\nA blind spot is not quiet. A requirement whose evidence public sources cannot see (low or no scanability) and that has no active reports is invisible to this tool, not calm; its silence is not evidence of anything.\n\nNo report on these requirements was created or changed in the period.\n\n- SI3 Nature recovery in public services: quiet this period. Active reports in the register: 0. Scanability: high.\n- SI7 Access to green and blue space: quiet this period. Active reports in the register: 0. Scanability: medium.\n- SI9 Impact of partnership approaches: blind spot this period. Active reports in the register: 0. Scanability: low.\n- SI10 Public action on the crises: quiet this period. Active reports in the register: 0. Scanability: medium.\n- SI11 Organisations acting on the crises: blind spot this period. Active reports in the register: 0. Scanability: low.\n- SI12 NRW colleague engagement: blind spot this period. Active reports in the register: 0. Scanability: none.\n\n## Verification due\n\nThe date check run on 2026-10-06 found 2 things to look at again. Reports affected: 1.\n\n### Passed event horizons\n\nThe event horizon has passed and nobody has updated or verified the report since. Check what happened, then rewrite the report in dated past tense.\n\n- Consultation on a Nature Recovery Bill for Wales (nature-recovery-bill-consultation): event horizon 2026-09-30 passed 6 days ago and nobody has updated or verified the report since.\n\n### Future-framed language\n\nThe title, summary or notes use language that rots once the date passes.\n\n- Consultation on a Nature Recovery Bill for Wales (nature-recovery-bill-consultation): summary uses future-framed language: 'consultation closes'.\n\n## Method note\n\nScan runs started in the period: 3. Their funnels are in the first table below.\n\nFinal dispositions of those runs' candidates: promoted 0, rejected 1, duplicate 0, reinforcement 3, deferred 0. New candidates nobody has judged yet: 0.\n\nNo report was created in the period, so there is no non-government share or credibility spread to report.\n\nInstrument version used by the period's runs: 2026.10.0.\n\nKnown blind spots, requirements this tool cannot see and holds no active report on: SI9 Impact of partnership approaches, SI11 Organisations acting on the crises, SI12 NRW colleague engagement.\n\nThe scan only finds what already talks like the requirements. Biophysical, market, technological and institutional pressures that move a requirement before any publication names it are outside its reach.\n\nCounts of reports are not counts of impact. The register shows what surfaced publicly: at least this much, and known to undercount.\n\n| Run | Started | Instrument | Raw hits | Unique | New | Reinforcements | Requests | Budget exhausted |\n|---|---|---|---|---|---|---|---|---|\n| 20261001T0900Z-0000 | 2026-10-01 | 2026.10.0 | 30 | 17 | 0 | 10 | 148 | no |\n| 20261003T0900Z-0000 | 2026-10-03 | 2026.10.0 | 13 | 12 | 3 | 9 | 148 | no |\n| 20261004T0900Z-0000 | 2026-10-04 | 2026.10.0 | 13 | 12 | 0 | 9 | 148 | no |\n",
+  "generated_on": "2026-10-06",
+  "id": "operational-2026-10",
+  "lead": [
+    "Requirement set: NRW corporate plan performance framework, version 2024-25 draft, transcription 1.",
+    "Period covered: 2026-10-01 to 2026-10-31. Rendered on 2026-10-06 from the register as it stood that day.",
+    "This monthly intelligence summary (INTSUM) records what moved in the register during the period, against the requirement set named above. It is assembled from the register and the standing copy: every sentence is a fixed form filled with counts and titles."
+  ],
+  "level": "operational",
+  "markdown_file": "operational_2026-10.md",
+  "markdown_path": "products/operational_2026-10.md",
+  "method_note": "Scan runs started in the period: 3. Their funnels are in the first table below.\n\nFinal dispositions of those runs' candidates: promoted 0, rejected 1, duplicate 0, reinforcement 3, deferred 0. New candidates nobody has judged yet: 0.\n\nNo report was created in the period, so there is no non-government share or credibility spread to report.\n\nInstrument version used by the period's runs: 2026.10.0.\n\nKnown blind spots, requirements this tool cannot see and holds no active report on: SI9 Impact of partnership approaches, SI11 Organisations acting on the crises, SI12 NRW colleague engagement.\n\nThe scan only finds what already talks like the requirements. Biophysical, market, technological and institutional pressures that move a requirement before any publication names it are outside its reach.\n\nCounts of reports are not counts of impact. The register shows what surfaced publicly: at least this much, and known to undercount.",
+  "period": {
+    "end": "2026-10-31",
+    "label": "2026-10",
+    "start": "2026-10-01"
+  },
+  "report_ids": [
+    "avian-influenza-seabirds-2026",
+    "ccc-progress-report-2026",
+    "domestic-solid-fuel-burning-emissions",
+    "nature-recovery-bill-consultation",
+    "nrw-funding-and-capacity-2026",
+    "phosphate-welsh-rivers-2026",
+    "river-action-judicial-review-permission",
+    "south-west-wales-drought-2026",
+    "storm-claudia-monmouthshire-flooding",
+    "sustainable-farming-scheme-concerns"
+  ],
+  "requirement_set_id": "nrw-corporate-plan",
+  "sections": [
+    {
+      "body": [
+        "New reports created in the period: 0.",
+        "Lifecycle state changes recorded in the period: 12.",
+        "Reports faded by the sweep in the period: 1.",
+        "Reports verified against their source in the period: 1.",
+        "Across the reports that moved, 8 assessments threaten a requirement, 2 cut both ways, 1 inform the baseline and 3 support."
+      ],
+      "bullets": [],
+      "depth": 2,
+      "heading": "Summary",
+      "tables": [
+        {
+          "headers": [
+            "Measure",
+            "Count"
+          ],
+          "rows": [
+            [
+              "New reports",
+              "0"
+            ],
+            [
+              "State changes",
+              "12"
+            ],
+            [
+              "Faded",
+              "1"
+            ],
+            [
+              "Verified",
+              "1"
+            ],
+            [
+              "Assessments: threatens",
+              "8"
+            ],
+            [
+              "Assessments: two-way",
+              "2"
+            ],
+            [
+              "Assessments: informs the baseline",
+              "1"
+            ],
+            [
+              "Assessments: supports",
+              "3"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "body": [
+        "Reports created or changed in the period, by well-being objective. Within each list, threats and two-way signals come first."
+      ],
+      "bullets": [],
+      "depth": 2,
+      "heading": "What moved",
+      "tables": []
+    },
+    {
+      "body": [],
+      "bullets": [
+        "B2 Audit Wales: Natural Resources Wales funding and capacity [SI1 threatens] (tracking)",
+        "C2 Avian influenza in seabirds: 2026 season [SI1 threatens] (tracking)",
+        "C3 Drought declared across South West Wales [SI1 threatens] (reinforced)",
+        "C3 NFU Cymru responds to Sustainable Farming Scheme concerns [SI1 two-way] (parked)",
+        "B1 Consultation on a Nature Recovery Bill for Wales [SI1 supports, SI2 supports] (tracking)"
+      ],
+      "depth": 3,
+      "heading": "Nature is Recovering (SI1, SI2, SI3)",
+      "tables": []
+    },
+    {
+      "body": [],
+      "bullets": [
+        "C3 Drought declared across South West Wales [SI8 threatens] (reinforced)",
+        "B2 Storm Claudia: homes flooded in Monmouthshire [SI8 threatens] (faded)",
+        "C3 NFU Cymru responds to Sustainable Farming Scheme concerns [SI6 two-way] (parked)",
+        "B1 Progress in reducing emissions: 2026 report to Parliament [SI6 informs the baseline] (matured)"
+      ],
+      "depth": 3,
+      "heading": "Communities are Resilient to Climate Change (SI6, SI7, SI8, SI10)",
+      "tables": []
+    },
+    {
+      "body": [],
+      "bullets": [
+        "B2 Audit Wales: Natural Resources Wales funding and capacity [SI4 threatens] (tracking)",
+        "B3 Phosphate levels in Welsh rivers remain high [SI4 threatens] (reinforced)",
+        "D2 River Action wins permission for judicial review [SI4 threatens] (tracking)",
+        "B2 Reducing emissions from domestic solid fuel burning [SI5 supports] (tracking)"
+      ],
+      "depth": 3,
+      "heading": "Pollution is Minimised (SI4, SI5)",
+      "tables": []
+    },
+    {
+      "body": [
+        "A blind spot is not quiet. A requirement whose evidence public sources cannot see (low or no scanability) and that has no active reports is invisible to this tool, not calm; its silence is not evidence of anything.",
+        "No report on these requirements was created or changed in the period."
+      ],
+      "bullets": [
+        "SI3 Nature recovery in public services: quiet this period. Active reports in the register: 0. Scanability: high.",
+        "SI7 Access to green and blue space: quiet this period. Active reports in the register: 0. Scanability: medium.",
+        "SI9 Impact of partnership approaches: blind spot this period. Active reports in the register: 0. Scanability: low.",
+        "SI10 Public action on the crises: quiet this period. Active reports in the register: 0. Scanability: medium.",
+        "SI11 Organisations acting on the crises: blind spot this period. Active reports in the register: 0. Scanability: low.",
+        "SI12 NRW colleague engagement: blind spot this period. Active reports in the register: 0. Scanability: none."
+      ],
+      "depth": 2,
+      "heading": "Quiet and blind spots",
+      "tables": []
+    },
+    {
+      "body": [
+        "The date check run on 2026-10-06 found 2 things to look at again. Reports affected: 1."
+      ],
+      "bullets": [],
+      "depth": 2,
+      "heading": "Verification due",
+      "tables": []
+    },
+    {
+      "body": [
+        "The event horizon has passed and nobody has updated or verified the report since. Check what happened, then rewrite the report in dated past tense."
+      ],
+      "bullets": [
+        "Consultation on a Nature Recovery Bill for Wales (nature-recovery-bill-consultation): event horizon 2026-09-30 passed 6 days ago and nobody has updated or verified the report since."
+      ],
+      "depth": 3,
+      "heading": "Passed event horizons",
+      "tables": []
+    },
+    {
+      "body": [
+        "The title, summary or notes use language that rots once the date passes."
+      ],
+      "bullets": [
+        "Consultation on a Nature Recovery Bill for Wales (nature-recovery-bill-consultation): summary uses future-framed language: 'consultation closes'."
+      ],
+      "depth": 3,
+      "heading": "Future-framed language",
+      "tables": []
+    },
+    {
+      "body": [
+        "Scan runs started in the period: 3. Their funnels are in the first table below.",
+        "Final dispositions of those runs' candidates: promoted 0, rejected 1, duplicate 0, reinforcement 3, deferred 0. New candidates nobody has judged yet: 0.",
+        "No report was created in the period, so there is no non-government share or credibility spread to report.",
+        "Instrument version used by the period's runs: 2026.10.0.",
+        "Known blind spots, requirements this tool cannot see and holds no active report on: SI9 Impact of partnership approaches, SI11 Organisations acting on the crises, SI12 NRW colleague engagement.",
+        "The scan only finds what already talks like the requirements. Biophysical, market, technological and institutional pressures that move a requirement before any publication names it are outside its reach.",
+        "Counts of reports are not counts of impact. The register shows what surfaced publicly: at least this much, and known to undercount."
+      ],
+      "bullets": [],
+      "depth": 2,
+      "heading": "Method note",
+      "tables": [
+        {
+          "headers": [
+            "Run",
+            "Started",
+            "Instrument",
+            "Raw hits",
+            "Unique",
+            "New",
+            "Reinforcements",
+            "Requests",
+            "Budget exhausted"
+          ],
+          "rows": [
+            [
+              "20261001T0900Z-0000",
+              "2026-10-01",
+              "2026.10.0",
+              "30",
+              "17",
+              "0",
+              "10",
+              "148",
+              "no"
+            ],
+            [
+              "20261003T0900Z-0000",
+              "2026-10-03",
+              "2026.10.0",
+              "13",
+              "12",
+              "3",
+              "9",
+              "148",
+              "no"
+            ],
+            [
+              "20261004T0900Z-0000",
+              "2026-10-04",
+              "2026.10.0",
+              "13",
+              "12",
+              "0",
+              "9",
+              "148",
+              "no"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Operational intelligence summary (INTSUM), October 2026"
+}

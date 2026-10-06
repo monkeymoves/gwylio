@@ -1,0 +1,89 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI10",
+      "direction": "informs_baseline",
+      "name": "Increasing the proportion of the population that act to mitigate and adapt to the nature, climate and pollution crises",
+      "requirement_id": "si10",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "brief",
+  "canonical_url": "gov.wales/climate-change-perceptions-and-actions-survey-wave-3-and-4",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "informs_baseline"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-25, 73 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "B2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "added at scan 2026-07-25 via the new public_behaviour cluster; verified against gov.wales",
+      "kind": "imported",
+      "on": "2026-07-25"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "climate-perceptions-actions-survey-waves-3-4",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-25",
+  "lens": "government",
+  "notes": "This measures the SI10 concept (the proportion of the population acting to mitigate and adapt) more directly than any source already on the register, and it was invisible to the scan until the public_behaviour cluster was added on 24 July 2026. Informs the SI10 baseline rather than pushing it. Also a candidate for the metric release calendar: waves 3 and 4 landed 11 March 2026 and the publication date for waves 5 and 6 is not stated, so no next_expected is recorded.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "data_release",
+  "requirement_ids": [
+    "si10"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "high",
+    "potential_impact": "medium",
+    "time_horizon": "immediate"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government",
+  "state": "emerging",
+  "summary": "Welsh Government Social Research published waves 3 and 4 of its climate change perceptions and actions survey on 11 March 2026. The survey measures attitudes and behaviours related to reducing carbon emissions across six topics (demographics, perceptions and attitudes, home energy, food, daily life and travel), with up to 1,000 interviews per wave and six waves planned in total.",
+  "title": "Welsh Government climate change perceptions and actions survey publishes waves 3 and 4",
+  "topics": [],
+  "url": "https://www.gov.wales/climate-change-perceptions-and-actions-survey-wave-3-and-4"
+}

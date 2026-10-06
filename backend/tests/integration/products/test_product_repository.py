@@ -48,12 +48,16 @@ def test_a_product_round_trips_and_is_replaced_in_its_slot(
         ("south-west-wales-drought-2026", "storm-claudia-monmouthshire-flooding"), day="2026-10-20"
     )
     repo.save(second, "operational_2026-10.md")
-    [only] = repo.all()
+    stored_ids = [p.product.id for p in repo.all()]
+    assert stored_ids == ["operational-2026-10", "strategic-2026"], "the seed's two products"
+    [only] = [p for p in repo.all() if p.product.id == "operational-2026-10"]
     assert only.product == second
-    assert export_products(db)["products"][0]["generated_on"] == "2026-10-20"
+    exported = {p["id"]: p for p in export_products(db)["products"]}
+    assert exported["operational-2026-10"]["generated_on"] == "2026-10-20"
 
 
 def test_a_product_citing_an_unknown_report_is_refused(db: Database) -> None:
+    before = SqliteProductRepository(db).all()
     with pytest.raises(UnknownReference, match="cites a report that is not stored"):
         SqliteProductRepository(db).save(product_for(("no-such-report",)), "x.md")
-    assert SqliteProductRepository(db).all() == ()
+    assert SqliteProductRepository(db).all() == before

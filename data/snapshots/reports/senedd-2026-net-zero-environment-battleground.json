@@ -1,0 +1,148 @@
+{
+  "actor_id": "institute-of-welsh-affairs",
+  "actor_name": "Institute of Welsh Affairs (IWA)",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI6",
+      "direction": "threatens",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "requirement_id": "si6",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI5",
+      "direction": "threatens",
+      "name": "Decreasing the rate of pollution to air from industrial and non-industrial sources",
+      "requirement_id": "si5",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI1",
+      "direction": "threatens",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI3",
+      "direction": "threatens",
+      "name": "Increasing the integration of activities that support nature recovery into Wales' public services",
+      "requirement_id": "si3",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "follow_up",
+  "canonical_url": "iwa.wales/agenda/2026/05/iwa-view-senedd-2026-the-emergence-of-a-key-battle-ground-net-zero-and-the-environment",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "threatens"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "C3",
+  "hazards": [],
+  "history": [
+    {
+      "change": "added at 2026-07-20 scan from IWA (non-government source); tagged threatens across SI1, SI3, SI5, SI6; the standout new signal of the breadth-widened scan",
+      "kind": "imported",
+      "on": "2026-07-20"
+    },
+    {
+      "change": "post-election update: 7 May 2026 result folded in (Plaid Cymru minority government, Reform UK second, Labour third); pre-election framing rewritten, time horizon near_term to medium_term; caught by the new date-sensitivity check",
+      "kind": "imported",
+      "on": "2026-07-21"
+    },
+    {
+      "change": "sighted again at 2026-07-22 scan; emerging to tracking",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "development-baseline recalibration: lifecycle tracking to emerging, appearances reset to 1. Prior sightings were the same URL re-found by the same instrument during the July development week, which is not the independent confirmation that tracking and reinforced are meant to record.",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-23; last_seen bumped, appearances and lifecycle held (one day after the 22 July baseline, same development window per RUBRIC)",
+      "kind": "imported",
+      "on": "2026-07-23"
+    },
+    {
+      "change": "source-hygiene fix at full-register sweep: added a post-election source for the result (the cited IWA piece predates the vote)",
+      "kind": "imported",
+      "on": "2026-07-24"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-25; last_seen bumped, lifecycle held (same development window as the 23 July scan)",
+      "kind": "imported",
+      "on": "2026-07-25"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "senedd-2026-net-zero-environment-battleground",
+  "independent_confirmation": false,
+  "lane": "research-evidence",
+  "lane_name": "Research and evidence",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-24",
+  "lens": "partnership_society",
+  "notes": "Strategically significant: an electoral risk to the whole policy context the SIs assume, surfaced by a non-government source (IWA) the old gov-only scan would never have caught. Post-election update (21 July 2026): the right-of-centre bloc did not take power, so the acute threat receded, but the structural risk is live: a minority government, Reform UK as second party committed to halting renewables and scrapping NRW, and net zero now a partisan dividing line rather than a consensus. Direction stays threatens with reduced immediacy (time horizon moved to medium term). Watch the programme for government and any cooperation agreements for SI-relevant commitments, and Reform positioning on NRW and renewables as pressure on the policy context. The IWA analysis (5 May 2026) predates the 7 May election and is cited only for the battleground framing; the result and government formation are sourced to post-election coverage (House of Commons Library CBP-10838 and ITV News Wales, 9 May 2026).",
+  "owner": "Luke",
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si6",
+    "si5",
+    "si1",
+    "si3"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "high",
+    "potential_impact": "high",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "institute-of-welsh-affairs",
+  "source_name": "Institute of Welsh Affairs",
+  "state": "emerging",
+  "summary": "Institute of Welsh Affairs analysis (5 May 2026) argued net zero had moved from cross-party consensus to a central Senedd election dividing line, with a right-of-centre bloc proposing to halt large onshore renewables, deprioritise net zero and scrap Natural Resources Wales. The 7 May 2026 election has now taken place: Plaid Cymru became the largest party (43 seats) and formed a minority government under Rhun ap Iorwerth, with Reform UK second (34), Labour third (9), the Conservatives on 7 and the Greens entering the Senedd with 2. The bloc that would have halted renewables and scrapped NRW did not take power, and early analysis expects net zero and wider climate policy to remain priorities, but the polarisation the IWA described is now embedded in the chamber and the government governs without a majority.",
+  "title": "Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party",
+  "topics": [
+    {
+      "id": "climate-emissions",
+      "name": "Climate and emissions"
+    }
+  ],
+  "url": "https://www.iwa.wales/agenda/2026/05/iwa-view-senedd-2026-the-emergence-of-a-key-battle-ground-net-zero-and-the-environment/"
+}

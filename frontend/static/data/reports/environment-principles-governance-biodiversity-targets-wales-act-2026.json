@@ -1,0 +1,139 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI1",
+      "direction": "supports",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI2",
+      "direction": "supports",
+      "name": "Increasing the rate of habitat restoration",
+      "requirement_id": "si2",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI3",
+      "direction": "supports",
+      "name": "Increasing the integration of activities that support nature recovery into Wales' public services",
+      "requirement_id": "si3",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "brief",
+  "canonical_url": "gov.wales/wales-strengthens-environmental-protections-landmark-bill-passes-senedd",
+  "cited_in": [
+    "operational-2026-10"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": "2028-04-27",
+  "findings": [
+    {
+      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "B2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "added at seed scan; tagged SI1 supports, SI2 supports, SI3 supports",
+      "kind": "imported",
+      "on": "2026-07-16"
+    },
+    {
+      "change": "sighted again at the 2026-07-17 scan; appearances 2; emerging to tracking",
+      "kind": "imported",
+      "on": "2026-07-17"
+    },
+    {
+      "change": "sighted again at 2026-07-20 scan; appearances 3; tracking to reinforced",
+      "kind": "imported",
+      "on": "2026-07-20"
+    },
+    {
+      "change": "verification sweep: Royal Assent 27 April 2026 confirmed; retitled from Bill to Act; matured; event_horizon 2028-04-27 for the statutory target regulations",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "sighted again at 2026-07-22 scan; appearances bumped",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-23; last_seen bumped, appearances and lifecycle held (one day after the 22 July baseline, same development window per RUBRIC)",
+      "kind": "imported",
+      "on": "2026-07-23"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-25; last_seen bumped, lifecycle held (same development window as the 23 July scan)",
+      "kind": "imported",
+      "on": "2026-07-25"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.; created as matured by analyst override",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "environment-principles-governance-biodiversity-targets-wales-act-2026",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-24",
+  "lens": "government",
+  "notes": "Verified 22 July 2026: Royal Assent confirmed 27 April 2026; lifecycle moved to matured (Act is settled context); the live watch is the target regulations, event_horizon set to the two-year statutory deadline. A follow-on consultation on the Environmental Principles and Integrating Environmental Protection Statement launched 19 June 2026 (candidate for next triage).",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "legislation",
+  "requirement_ids": [
+    "si1",
+    "si2",
+    "si3"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "high",
+    "potential_impact": "high",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government",
+  "state": "matured",
+  "summary": "The Bill passed the Senedd on 24 February 2026 and received Royal Assent on 27 April 2026 (asc 2026/4). The Act creates the Office of Environmental Governance Wales, an independent watchdog over public authorities including NRW, embeds the four environmental principles in policy making, and requires Welsh Ministers to set legally binding biodiversity targets, with draft target regulations due within two years of Royal Assent, so by April 2028. Statutory targets give SI1 and SI2 a legal anchor, and the new oversight body changes the accountability context for everything NRW reports.",
+  "title": "Environment (Principles, Governance and Biodiversity Targets) (Wales) Act 2026: Royal Assent 27 April; statutory biodiversity targets due within two years",
+  "topics": [
+    {
+      "id": "nature-and-ecosystems",
+      "name": "Nature and ecosystems"
+    }
+  ],
+  "url": "https://www.gov.wales/wales-strengthens-environmental-protections-landmark-bill-passes-senedd"
+}

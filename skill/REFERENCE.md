@@ -18,8 +18,10 @@ Every closed value and identifier the analyst skill may write into a submission,
 | `gwylio migrate` | Create or upgrade the SQLite database at the settings database path. |
 | `gwylio probe` | Try one query text and print its hits, storing nothing. |
 | `gwylio product` | Render a product to data/products/ and record it; print the Markdown path. |
+| `gwylio publish` | Publish the JSON snapshot the static site reads; print the file count. |
 | `gwylio rebuild` | Rebuild the database from config/ and the files under data/, printing row counts. |
 | `gwylio schema` | Generate JSON Schema, TypeScript types, the glossary and the skill reference. |
+| `gwylio serve` | Run the read API (a development tool) at http://HOST:PORT/api/v1. |
 | `gwylio sweep` | Fade active reports quiet in the two most recent complete runs; print faded ids. |
 | `gwylio version` | Print the package version. |
 | `gwylio yield` | Print each watched source's yield and reading, silent sources last. |

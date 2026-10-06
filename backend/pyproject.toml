@@ -62,6 +62,10 @@ warn_unused_ignores = false
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-ra --strict-markers -m 'not live'"
+filterwarnings = [
+    # Starlette's TestClient (the read API tests) still runs on httpx; nothing to act on here.
+    "ignore:Using `httpx` with `starlette.testclient` is deprecated",
+]
 markers = [
     "integration: tests that touch the filesystem or recorded HTTP cassettes",
     "live: tests that reach the real network; excluded by default, run with: pytest -m live",

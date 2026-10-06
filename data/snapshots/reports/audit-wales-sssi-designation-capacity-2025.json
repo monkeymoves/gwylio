@@ -1,0 +1,102 @@
+{
+  "actor_id": "audit-wales",
+  "actor_name": "Audit Wales",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI1",
+      "direction": "threatens",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI3",
+      "direction": "threatens",
+      "name": "Increasing the integration of activities that support nature recovery into Wales' public services",
+      "requirement_id": "si3",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "brief",
+  "canonical_url": "audit.wales/publication/protecting-nature-future-generations",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "threatens"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-25, 73 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "B2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "added at scan 2026-07-25 via the new governance_capacity cluster; verified against audit.wales",
+      "kind": "imported",
+      "on": "2026-07-25"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "audit-wales-sssi-designation-capacity-2025",
+  "independent_confirmation": false,
+  "lane": "governance-capacity",
+  "lane_name": "Governance and capacity",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-25",
+  "lens": "government",
+  "notes": "The sharpest external evidence yet that NRW's capacity constraints are producing a concrete delivery failure, and it lands directly on the protected-site component of ecosystem resilience (SI1) and on integration of nature duties across public services (SI3). Independent audit scrutiny, so it belongs in the register as an external signal about NRW rather than an NRW publication. Pairs with the funding-gap signal: that one records the input cut, this one records the output. Surfaced by the governance_capacity cluster added on 24 July 2026.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "research",
+  "requirement_ids": [
+    "si1",
+    "si3"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "high",
+    "potential_impact": "high",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "audit-wales",
+  "source_name": "Audit Wales",
+  "state": "emerging",
+  "summary": "Audit Wales report 'Protecting Nature for Future Generations?' (11 November 2025) examines NRW's approach to designating Sites of Special Scientific Interest and finds that NRW has not been designating many SSSIs despite knowing of many places that may qualify for protection. It attributes this to three constraints: staff capacity, gaps in key data, and fragmented digital systems. Wales has 1,083 designated SSSIs. The report makes 8 recommendations.",
+  "title": "Audit Wales finds NRW is not designating SSSIs it knows may qualify, citing staff capacity and data gaps",
+  "topics": [
+    {
+      "id": "nature-and-ecosystems",
+      "name": "Nature and ecosystems"
+    }
+  ],
+  "url": "https://www.audit.wales/publication/protecting-nature-future-generations"
+}

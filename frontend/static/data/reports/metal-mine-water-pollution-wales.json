@@ -1,0 +1,106 @@
+{
+  "actor_id": null,
+  "actor_name": null,
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI4",
+      "direction": "threatens",
+      "name": "Decreasing the rate of pollution on land and entering water bodies",
+      "requirement_id": "si4",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "committees.parliament.uk/work/9811/metal-mine-pollution-in-wales",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "threatens"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "B2",
+  "hazards": [
+    {
+      "family": "pollution-incident",
+      "family_name": "Pollution incident",
+      "id": "metal-mine-pollution",
+      "name": "Metal mine pollution"
+    }
+  ],
+  "history": [
+    {
+      "change": "added 24 July 2026 via the coverage audit: ~1,300 abandoned mines, 500 tonnes metals/year, ~700km of rivers failing; live UK Parliament inquiry; verified against NRW figures and the Parliament inquiry page",
+      "kind": "imported",
+      "on": "2026-07-24"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-25; last_seen bumped, lifecycle held (same development window as the 23 July scan)",
+      "kind": "imported",
+      "on": "2026-07-25"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "metal-mine-water-pollution-wales",
+  "independent_confirmation": false,
+  "lane": "uk-government-and-regulators",
+  "lane_name": "UK Government and regulators",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-24",
+  "lens": "government",
+  "notes": "A chronic, major SI4 pressure the pollution cluster (focused on agriculture and sewage) never queried. It explains a significant share of why only 40 percent of Welsh water bodies reach good status, the SoNaRR baseline the indicator is read against, so it threatens SI4 and informs its baseline. Found via the July 2026 coverage audit; a metal-mine query was added to the pollution cluster.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "environmental",
+  "requirement_ids": [
+    "si4"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "medium",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": null,
+  "source_name": "committees.parliament.uk",
+  "state": "emerging",
+  "summary": "About 1,300 abandoned metal mines put over 500 tonnes of metals (zinc, lead, cadmium, iron) into Welsh rivers every year, causing roughly 700km, about 6 percent of Welsh rivers, to fail good chemical or ecological status. The Wales Metal Mines Programme (Natural Resources Wales with the Mining Remediation Authority, Welsh Government funded) is remediating priority sites, and a UK Parliament inquiry into metal mine pollution in Wales is live.",
+  "title": "Abandoned metal mines pollute about 700km of Welsh rivers, a major SI4 pressure with a live inquiry",
+  "topics": [
+    {
+      "id": "pollution-water-and-land",
+      "name": "Pollution of water and land"
+    }
+  ],
+  "url": "https://committees.parliament.uk/work/9811/metal-mine-pollution-in-wales/"
+}

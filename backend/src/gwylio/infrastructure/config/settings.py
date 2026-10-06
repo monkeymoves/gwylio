@@ -48,6 +48,8 @@ __all__ = [
     "REGISTER_EXPORT_FILE",
     "RUNS_EXPORT_FILE",
     "SEARCH_KEYS_FILE",
+    "SITE_DATA_DIR",
+    "SNAPSHOTS_SUBDIR",
     "SUBMISSIONS_SUBDIR",
     "SWEEPS_SUBDIR",
     "Settings",
@@ -82,6 +84,10 @@ SWEEPS_SUBDIR: Final[str] = "sweeps"
 PRODUCTS_SUBDIR: Final[str] = "products"
 """Under the data directory: ``<level>_<period>.md`` and ``.json`` per rendered product."""
 PRODUCTS_EXPORT_FILE: Final[str] = "products.json"
+SNAPSHOTS_SUBDIR: Final[str] = "snapshots"
+"""Under the data directory: the latest published snapshot, a copy of what the site reads."""
+SITE_DATA_DIR: Final[str] = "frontend/static/data"
+"""Under the project root: the published snapshot the static site is built from."""
 
 
 def _key_from_file(path: Path) -> str | None:
@@ -222,6 +228,16 @@ class Settings(BaseModel):
     def products_export_path(self) -> Path:
         """``<data_dir>/exports/products.json``."""
         return self.exports_dir / PRODUCTS_EXPORT_FILE
+
+    @property
+    def snapshots_dir(self) -> Path:
+        """``<data_dir>/snapshots``: the latest published snapshot."""
+        return self.data_dir / SNAPSHOTS_SUBDIR
+
+    @property
+    def site_data_dir(self) -> Path:
+        """``<root>/frontend/static/data``: the snapshot the static site is built from."""
+        return self.root / SITE_DATA_DIR
 
     @property
     def fake_hits_path(self) -> Path:

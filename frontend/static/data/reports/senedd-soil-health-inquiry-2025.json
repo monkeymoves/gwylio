@@ -1,0 +1,111 @@
+{
+  "actor_id": "senedd",
+  "actor_name": "Senedd Cymru (Welsh Parliament)",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI2",
+      "direction": "supports",
+      "name": "Increasing the rate of habitat restoration",
+      "requirement_id": "si2",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI4",
+      "direction": "supports",
+      "name": "Decreasing the rate of pollution on land and entering water bodies",
+      "requirement_id": "si4",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI6",
+      "direction": "neutral",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "requirement_id": "si6",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "follow_up",
+  "canonical_url": "laiddocuments.senedd.wales/cr-ld17564-en.pdf",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "supports",
+    "neutral"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-25, 73 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "B2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "added at scan 2026-07-25 via the new soil_land cluster; committee report verified to the laid document. Welsh Government response could not be found, recorded as unconfirmed",
+      "kind": "imported",
+      "on": "2026-07-25"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "senedd-soil-health-inquiry-2025",
+  "independent_confirmation": false,
+  "lane": "senedd",
+  "lane_name": "Senedd",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-25",
+  "lens": "government",
+  "notes": "The first soil signal on the register. Soils are one of SoNaRR's three cross-cutting natural resources but are foregrounded by no strategic indicator, which is why the scan missed this until the soil_land cluster was added on 24 July 2026. Supports SI2 and SI4 if the recommendations are taken up, since soil condition drives both habitat restoration and diffuse pollution. Confidence is medium rather than high for one reason: no Welsh Government response to the recommendations could be found, and the usual response window has long passed. That missing response is the live hook, so this is a follow-up rather than a watch item.",
+  "owner": "Luke",
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si2",
+    "si4",
+    "si6"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "high",
+    "novelty": "high",
+    "potential_impact": "medium",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "senedd-cymru",
+  "source_name": "Senedd Cymru",
+  "state": "emerging",
+  "summary": "The Senedd's Economy, Trade and Rural Affairs Committee published 'Digging the dirt: Improving Wales' soil health' on 18 November 2025, after evidence sessions in May and June 2025. Its recommendations include putting the GAEC 4 and 5 soil standards on a statutory footing, introducing a voluntary minimum standard for soil health that could later become statutory, and sharing soil data with farmers. The Agricultural Soil Policy Statement (28 April 2025) is the current policy baseline.",
+  "title": "Senedd committee report 'Digging the dirt' calls for statutory soil health standards; no government response published",
+  "topics": [
+    {
+      "id": "soil-and-land",
+      "name": "Soil and land"
+    }
+  ],
+  "url": "https://laiddocuments.senedd.wales/cr-ld17564-en.pdf"
+}

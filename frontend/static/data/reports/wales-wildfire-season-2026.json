@@ -1,0 +1,126 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI1",
+      "direction": "threatens",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI2",
+      "direction": "threatens",
+      "name": "Increasing the rate of habitat restoration",
+      "requirement_id": "si2",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI6",
+      "direction": "threatens",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "requirement_id": "si6",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI8",
+      "direction": "informs_baseline",
+      "name": "Increasing the proportion of the population living in places that will continue to support and contribute to their health and well-being in a changing climate",
+      "requirement_id": "si8",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "brief",
+  "canonical_url": "gov.wales/grassland-fires",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "threatens",
+    "informs_baseline"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "B2",
+  "hazards": [
+    {
+      "family": "wildfire",
+      "family_name": "Wildfire",
+      "id": "upland-wildfire",
+      "name": "Upland and heathland wildfire"
+    }
+  ],
+  "history": [
+    {
+      "change": "added in the 23 July correction pass after the wildfire gap was spotted: 2026 record UK wildfire year, Conwy Mountain major incident 12 July 2026; official Welsh grassland-fires series; verified against gov.wales and wildfire reporting",
+      "kind": "imported",
+      "on": "2026-07-23"
+    },
+    {
+      "change": "corrected at adversarial verification: 2026 is a severe but sub-record wildfire year; 2025 holds the record (47,879 ha vs 18,601 ha in 2026). Dropped the \"record\" framing; all other facts (hectares, Conwy major incident 12 July, official series) held",
+      "kind": "imported",
+      "on": "2026-07-24"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "wales-wildfire-season-2026",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-24",
+  "lens": "government",
+  "notes": "Wildfire was a gap in the instrument: no cluster carried a wildfire query, so fires only ever rode in as side-mentions on drought searches. A wildfire query was added to the ecological_early_warning lane on 23 July 2026 and this signal promoted. Threatens SI1 and SI2 (upland, moorland and protected habitats burned, habitat and woodland restoration set back), SI6 (fires emit carbon and destroy sequestration), and informs the SI8 baseline as part of the same heatwave-and-drought hazard. Tightly coupled to the North Wales drought signal: the same record dry conditions drive both.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "environmental",
+  "requirement_ids": [
+    "si1",
+    "si2",
+    "si6",
+    "si8"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "medium",
+    "time_horizon": "immediate"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government",
+  "state": "emerging",
+  "summary": "2026 has been a severe wildfire year across the UK, with over 18,600 hectares burned and 65 fires larger than 30 hectares by 16 July (below the record set in 2025), driven by the same heatwaves and record dry conditions as the drought. In Wales, a large wildfire near Conwy Mountain and the Sychnant Pass was declared a major incident on 12 July 2026, forcing evacuations. Welsh grassland, woodland and crop fires are tracked in an official annual statistics series (latest release April 2024 to March 2025, published 16 April 2026).",
+  "title": "Severe 2026 wildfire season burns Welsh uplands, with a major incident near Conwy",
+  "topics": [],
+  "url": "https://www.gov.wales/grassland-fires"
+}

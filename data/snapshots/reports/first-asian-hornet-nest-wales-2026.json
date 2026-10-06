@@ -1,0 +1,94 @@
+{
+  "actor_id": null,
+  "actor_name": null,
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI1",
+      "direction": "threatens",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "itv.com/news/wales/2026-01-20/warning-issued-after-first-asian-hornet-nest-found-in-wales",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "threatens"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "B2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "added at scan 2026-07-23: first Asian hornet nest in Wales near Wrexham, Welsh Gov 20 Jan 2026, contingency plan activated; verified against source",
+      "kind": "imported",
+      "on": "2026-07-23"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "first-asian-hornet-nest-wales-2026",
+  "independent_confirmation": false,
+  "lane": "ecological-surveillance",
+  "lane_name": "Ecological surveillance",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-24",
+  "lens": "government",
+  "notes": "A classic weak signal: the first breach of an invasive pollinator-predator into Wales. Current impact is low (the nest was dead) but novelty is high, which the RUBRIC treats as a valid promotion for a watch signal. Threatens SI1 through pollinator predation if the species establishes; the Asian hornet can take up to 50 honeybees a day. Surfaced by the new ecological_early_warning lane; verified against Welsh Government coverage on 23 July 2026.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "environmental",
+  "requirement_ids": [
+    "si1"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "high",
+    "potential_impact": "low",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": null,
+  "source_name": "itv.com",
+  "state": "emerging",
+  "summary": "On 20 January 2026 the Welsh Government confirmed the first Asian hornet nest found in Wales, near Wrexham. The nest was dead, but the Welsh Government asked the APHA National Bee Unit to respond under the Asian Hornet Contingency Plan and urged vigilance and reporting. There were 544 credible UK sightings and 161 confirmed nests in 2025.",
+  "title": "First Asian hornet nest confirmed in Wales, near Wrexham, triggering the contingency response",
+  "topics": [
+    {
+      "id": "biosecurity",
+      "name": "Biosecurity"
+    }
+  ],
+  "url": "https://www.itv.com/news/wales/2026-01-20/warning-issued-after-first-asian-hornet-nest-found-in-wales"
+}

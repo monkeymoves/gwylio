@@ -1,0 +1,138 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI5",
+      "direction": "supports",
+      "name": "Decreasing the rate of pollution to air from industrial and non-industrial sources",
+      "requirement_id": "si5",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI8",
+      "direction": "informs_baseline",
+      "name": "Increasing the proportion of the population living in places that will continue to support and contribute to their health and well-being in a changing climate",
+      "requirement_id": "si8",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "brief",
+  "canonical_url": "gov.wales/written-statement-consultation-draft-air-quality-target-regulations-fine-particulate-matter",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "supports",
+    "informs_baseline"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": "2027-02-28",
+  "findings": [
+    {
+      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "B2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "added at seed scan; tagged SI5 supports, SI8 informs_baseline",
+      "kind": "imported",
+      "on": "2026-07-16"
+    },
+    {
+      "change": "sighted again at the 2026-07-17 scan; appearances 2; emerging to tracking",
+      "kind": "imported",
+      "on": "2026-07-17"
+    },
+    {
+      "change": "sighted again at 2026-07-20 scan; appearances 3; tracking to reinforced",
+      "kind": "imported",
+      "on": "2026-07-20"
+    },
+    {
+      "change": "verification sweep: consultation closed 16 February 2026; statutory deadline February 2027 set as event_horizon; targets detailed (10 ug/m3 and 25 percent exposure cut by end 2035)",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "sighted again at 2026-07-22 scan; appearances bumped",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "development-baseline recalibration: lifecycle reinforced to emerging, appearances reset to 1. Prior sightings were the same URL re-found by the same instrument during the July development week, which is not the independent confirmation that tracking and reinforced are meant to record.",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-23; last_seen bumped, appearances and lifecycle held (one day after the 22 July baseline, same development window per RUBRIC)",
+      "kind": "imported",
+      "on": "2026-07-23"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-25; last_seen bumped, lifecycle held (same development window as the 23 July scan)",
+      "kind": "imported",
+      "on": "2026-07-25"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "pm25-air-quality-target-regulations-wales-2026",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-24",
+  "lens": "government",
+  "notes": "Verified 22 July 2026: consultation closed 16 February 2026; statutory backstop to lay draft regulations by February 2027 recorded as the event horizon.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "legislation",
+  "requirement_ids": [
+    "si5",
+    "si8"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "high",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government",
+  "state": "emerging",
+  "summary": "Written statement of 17 November 2025 opened consultation on the first legally binding national PM2.5 targets under the Environment (Air Quality and Soundscapes) (Wales) Act 2024: an annual mean of 10 micrograms per cubic metre and a 25 percent cut in average population exposure, both by the end of 2035. The consultation closed on 16 February 2026 and responses are under review, with the regulations to be made in 2026-27 subject to the new post-election ministers. The 2024 Act requires the draft PM2.5 target regulations to be laid within three years of its Royal Assent, so by February 2027.",
+  "title": "Draft Air Quality Target Regulations for fine particulate matter (PM2.5) under the 2024 Act",
+  "topics": [
+    {
+      "id": "air-quality",
+      "name": "Air quality"
+    }
+  ],
+  "url": "https://www.gov.wales/written-statement-consultation-draft-air-quality-target-regulations-fine-particulate-matter"
+}

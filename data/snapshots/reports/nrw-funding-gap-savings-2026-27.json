@@ -1,0 +1,131 @@
+{
+  "actor_id": "senedd",
+  "actor_name": "Senedd Cymru (Welsh Parliament)",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI4",
+      "direction": "threatens",
+      "name": "Decreasing the rate of pollution on land and entering water bodies",
+      "requirement_id": "si4",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI7",
+      "direction": "threatens",
+      "name": "Increasing the proportion of the population who have access to high quality green or blue space, and who use them sustainably",
+      "requirement_id": "si7",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI8",
+      "direction": "threatens",
+      "name": "Increasing the proportion of the population living in places that will continue to support and contribute to their health and well-being in a changing climate",
+      "requirement_id": "si8",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "brief",
+  "canonical_url": "research.senedd.wales/research-articles/nrw-finds-12m-of-savings-what-does-this-mean-for-its-services",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "threatens"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-25, 73 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "B2",
+  "hazards": [
+    {
+      "family": "funding-capacity",
+      "family_name": "Funding and capacity",
+      "id": "public-funding-pressure",
+      "name": "Public funding pressure"
+    }
+  ],
+  "history": [
+    {
+      "change": "added 24 July 2026 via the coverage audit: NRW funding gap to 17 million pounds, 12 million savings, 233 posts, reduced low-category pollution response; verified against Senedd Research",
+      "kind": "imported",
+      "on": "2026-07-24"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-25; last_seen bumped, lifecycle held (same development window as the 23 July scan)",
+      "kind": "imported",
+      "on": "2026-07-25"
+    },
+    {
+      "change": "reframed at scan 2026-07-25: the \"gap heading toward 17 million by 2026-27\" framing was a conditional 2024 projection and is now stale. Verified that 2026-27 revenue Grant in Aid rises 8.8 million to 151.5 million plus 7.3 million specific grants. The delivered cuts and their service effects stand; potential_impact lowered from high to medium",
+      "kind": "imported",
+      "on": "2026-07-25"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "nrw-funding-gap-savings-2026-27",
+  "independent_confirmation": false,
+  "lane": "senedd",
+  "lane_name": "Senedd",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-25",
+  "lens": "government",
+  "notes": "The cross-cutting delivery-capacity signal. Read it as a delivered cut whose service effects persist, not as a gap still growing: the reduced response to low-category pollution incidents (SI4), and the recreation, outdoor and climate programme reductions (SI7, SI8), took effect from April 2025 and have not been reversed by the better 2026-27 settlement. Two things pull the other way on capacity: the improved Grant in Aid, and against it the phased budget reductions recouping the 14.6 million pound HMRC settlement (see the IR35 signal). Reframed on 25 July 2026 after verification found the forward-looking 17 million pound framing had gone stale, which is exactly the failure mode the date check exists to catch. The 265-job figure in some coverage was the October 2024 proposal; 233 is the confirmed outcome agreed by NRW's Board on 5 November 2024. A separate 15 million pound gap reported in July 2020 was a COVID-era story and is unrelated.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si4",
+    "si7",
+    "si8"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "medium",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "senedd-research",
+  "source_name": "Senedd Research",
+  "state": "emerging",
+  "summary": "Natural Resources Wales delivered a 12 million pound savings programme against a funding gap of about 9 million pounds in 2024-25. Senedd Research (8 November 2024) records the removal of 233 posts, closure of visitor-centre cafes and shops and the Bangor library, and, most relevant to the indicators, a reduced response to low-category pollution incidents and cut resources for climate change, recreation and outdoor programmes. The often-quoted 17 million pounds was a projection of the gap by 2026-27 if nothing were done, not an outturn: action was taken, and NRW's Business Plan 2026-27 shows revenue Grant in Aid rising by 8.8 million pounds to 151.5 million, with a further 7.3 million in specific grants for nature recovery, climate action, coal tip safety, waste reform and water quality.",
+  "title": "NRW's savings programme cut 233 posts and reduced pollution-incident response; the 2026-27 settlement improves",
+  "topics": [
+    {
+      "id": "pollution-water-and-land",
+      "name": "Pollution of water and land"
+    },
+    {
+      "id": "governance-and-funding",
+      "name": "Governance and funding"
+    }
+  ],
+  "url": "https://research.senedd.wales/research-articles/nrw-finds-12m-of-savings-what-does-this-mean-for-its-services/"
+}

@@ -68,15 +68,26 @@ class Database:
         self.path = path
 
     @classmethod
-    def open(cls, path: Path) -> Database:
-        """Open (creating if needed) the database file at ``path``."""
+    def open(cls, path: Path, *, check_same_thread: bool = True) -> Database:
+        """Open (creating if needed) the database file at ``path``.
+
+        ``check_same_thread=False`` lets another thread use the connection, as
+        the read API does: it opens the database in one worker thread and may
+        read it in another, one request at a time.
+        """
         path.parent.mkdir(parents=True, exist_ok=True)
-        return cls(sqlite3.connect(path, isolation_level=None), path)
+        connection = sqlite3.connect(
+            path, isolation_level=None, check_same_thread=check_same_thread
+        )
+        return cls(connection, path)
 
     @classmethod
-    def memory(cls) -> Database:
-        """A private in-memory database, for tests."""
-        return cls(sqlite3.connect(":memory:", isolation_level=None))
+    def memory(cls, *, check_same_thread: bool = True) -> Database:
+        """A private in-memory database, for tests (any thread may use it when unchecked)."""
+        connection = sqlite3.connect(
+            ":memory:", isolation_level=None, check_same_thread=check_same_thread
+        )
+        return cls(connection)
 
     def close(self) -> None:
         """Close the connection; an open transaction is rolled back."""

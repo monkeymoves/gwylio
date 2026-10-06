@@ -31,11 +31,13 @@ make seed                                        # recreate backend/tests/fixtur
 uv run --directory backend gwylio audit [--set ID]   # coverage audit and credibility spread
 uv run --directory backend gwylio yield              # yield per watched source, silent sources last
 uv run --directory backend gwylio product --level operational|strategic [--period P] [--today D]  # tactical exits 4
+uv run --directory backend gwylio publish [--out DIR] [--at INSTANT]  # snapshot into frontend/static/data and data/snapshots
+uv run --directory backend gwylio serve [--port 8000]   # read API (dev tool) at /api/v1, docs at /api/v1/docs
+make dev         # read API and Vite dev server together (make serve, make frontend-dev run one each)
+make publish     # gwylio publish
 uv run --directory backend gwylio probe "drought" --discipline osint_feed  # try a query, stores nothing
 ```
 
-`dev` and `publish` are stubs until their work
-packages land; each prints which one. `gwylio collect` (no flag) runs the real collectors: feeds always,
 Brave web and site search when a key is set (`GWYLIO_BRAVE_API_KEY`,
 `BRAVE_API_KEY`, or a gitignored `search_keys.txt` at the root), academic
 indexes with `GWYLIO_ACADEMIC=1` or `--discipline osint_academic`. A
@@ -83,6 +85,12 @@ instrument holds still.
   `config/copy.json` (validated blanks, CleanText). A test refuses literal
   sentences in `dissemination/render_*.py`. The coverage rule lives in
   `gwylio/shared/coverage.py`.
+- **Snapshot equals API.** `api/schemas.py` holds the read models,
+  `infrastructure/readmodels.py` builds them, and `infrastructure/snapshot.py`
+  and `api/app.py` serialise them through one function. A contract test checks
+  every published file against its API response, and every file in
+  `frontend/static/data/` must have an API route. After changing a read model
+  run `make schema`, `pytest tests/api --snapshot-update`, then `gwylio publish`.
 - **Generated files are never edited by hand.** `docs/schema/`,
   `docs/GLOSSARY.md`, `skill/REFERENCE.md` and
   `frontend/src/lib/data/types.generated.ts` come from `gwylio schema`.

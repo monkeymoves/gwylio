@@ -1,0 +1,131 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI4",
+      "direction": "neutral",
+      "name": "Decreasing the rate of pollution on land and entering water bodies",
+      "requirement_id": "si4",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "follow_up",
+  "canonical_url": "gov.wales/written-statement-update-review-control-agricultural-pollutions-regulations",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "neutral"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "B2",
+  "hazards": [
+    {
+      "family": "pollution-incident",
+      "family_name": "Pollution incident",
+      "id": "agricultural-pollution",
+      "name": "Agricultural pollution"
+    }
+  ],
+  "history": [
+    {
+      "change": "added after critical appraisal pass; tagged SI4 neutral (direction genuinely uncertain); the seed scan had promoted only supportive signals, which looked like optimism bias",
+      "kind": "imported",
+      "on": "2026-07-17"
+    },
+    {
+      "change": "sighted again at the 2026-07-17 scan; appearances 2; emerging to tracking",
+      "kind": "imported",
+      "on": "2026-07-17"
+    },
+    {
+      "change": "reinforced: corroborated by NFU Cymru, FUW, BBC and Senedd coverage (farming counter-voices); confidence to high; lifecycle to reinforced; direction stays neutral (two-way)",
+      "kind": "imported",
+      "on": "2026-07-20"
+    },
+    {
+      "change": "sighted again at 2026-07-22 scan; appearances bumped",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "development-baseline recalibration: lifecycle reinforced to emerging, appearances reset to 1. Prior sightings were the same URL re-found by the same instrument during the July development week, which is not the independent confirmation that tracking and reinforced are meant to record.",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-23; last_seen bumped, appearances and lifecycle held (one day after the 22 July baseline, same development window per RUBRIC)",
+      "kind": "imported",
+      "on": "2026-07-23"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-25; last_seen bumped, lifecycle held (same development window as the 23 July scan)",
+      "kind": "imported",
+      "on": "2026-07-25"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "control-of-agricultural-pollution-regulations-review-2025",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-24",
+  "lens": "government",
+  "notes": "Tagged neutral because the net effect on the SI4 regime cannot honestly be called yet. Watch for the task and finish group, the consultation on regulatory changes, and whether the 170kg limit survives. NRW is directly involved through the enforcement funding. Corroborated 2026-07-20 from the farming side: NFU Cymru (31 March 2025) is 'frustrated' that the review response changed nothing material and continues to press to loosen the 170kg limit and closed periods; a Senedd bid to scrap the rules failed; the 2022 High Court challenge was dismissed. So the regulations have held (the supportive reading for SI4) under sustained pressure to weaken them. Multiple independent sources now, hence reinforced and confidence high; direction stays neutral because the review could still loosen them.",
+  "owner": "Luke",
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si4"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "high",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government",
+  "state": "emerging",
+  "summary": "Written statement of 8 October 2025: the independently chaired statutory review completed in March 2025 and Ministers will take all 23 recommendations forward in full and at pace. The direction for SI4 is genuinely two-way: alternatives to the closed periods and the 170kg nitrogen limit are being explored, which could loosen the core controls, while civil sanctions are being considered and 1.58 million pounds was committed for NRW enforcement in 2025-26, which strengthens them. Any substantive regulatory change goes to formal consultation.",
+  "title": "Control of Agricultural Pollution Regulations review: all 23 recommendations taken forward, alternatives to the 170kg limit on the table",
+  "topics": [
+    {
+      "id": "pollution-water-and-land",
+      "name": "Pollution of water and land"
+    }
+  ],
+  "url": "https://www.gov.wales/written-statement-update-review-control-agricultural-pollutions-regulations"
+}

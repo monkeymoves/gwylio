@@ -1,0 +1,117 @@
+{
+  "actor_id": "river-action",
+  "actor_name": "River Action",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI4",
+      "direction": "neutral",
+      "name": "Decreasing the rate of pollution on land and entering water bodies",
+      "requirement_id": "si4",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "follow_up",
+  "canonical_url": "riveractionuk.com/news/natural-resources-wales-must-prevent-pollution-not-pass-the-buck-as-the-wye-and-severn-decline",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "neutral"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "D3",
+  "hazards": [
+    {
+      "family": "pollution-incident",
+      "family_name": "Pollution incident",
+      "id": "agricultural-pollution",
+      "name": "Agricultural pollution"
+    },
+    {
+      "family": "regulatory-legal-change",
+      "family_name": "Regulatory and legal change",
+      "id": "legal-challenge",
+      "name": "Legal challenge"
+    }
+  ],
+  "history": [
+    {
+      "change": "added from weak-signal probe (legal_civil_society lane); tagged SI4 neutral, two-way by nature; follow up for permission decision and hearing date",
+      "kind": "imported",
+      "on": "2026-07-21"
+    },
+    {
+      "change": "sighted again at 2026-07-22 scan; emerging to tracking",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "development-baseline recalibration: lifecycle tracking to emerging, appearances reset to 1. Prior sightings were the same URL re-found by the same instrument during the July development week, which is not the independent confirmation that tracking and reinforced are meant to record.",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "river-action-judicial-review-nrw-poultry-permits",
+  "independent_confirmation": false,
+  "lane": "legal-and-campaign",
+  "lane_name": "Legal and campaign",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-24",
+  "lens": "partnership_society",
+  "notes": "First promotion from the new legal and civil society lane (probe of 21 July 2026): a legal challenge to NRW's own permitting practice that no government source would ever surface. Genuinely two-way for SI4, hence neutral: a ruling against NRW could force wider assessment of off-site nutrient pollution (tightening the regime the indicator depends on) while creating capacity and casework pressure; a ruling for NRW entrenches the current boundary interpretation that campaigners argue leaks pollution. Either way the scope of agricultural permitting in Wales is being tested in court. Watch for the permission decision and any hearing date, and set event_horizon when one is fixed.",
+  "owner": "Luke",
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "D",
+  "reliability_label": "not usually reliable",
+  "report_type": "legal",
+  "requirement_ids": [
+    "si4"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "high",
+    "potential_impact": "high",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "river-action",
+  "source_name": "River Action",
+  "state": "emerging",
+  "summary": "River Action has launched a judicial review of NRW's approval of permit variations allowing three intensive poultry units in Powys to expand (reported 17 February 2026). The claim argues NRW unlawfully treats the site boundary as the boundary of its regulatory responsibility, and that under the Environmental Permitting Regulations 2016 the regulator must assess and control pollution impacts from permitted activities including manure exported off site. Outcome pending.",
+  "title": "River Action takes NRW to judicial review over Powys poultry permit variations; scope of off-site pollution responsibility contested",
+  "topics": [
+    {
+      "id": "pollution-water-and-land",
+      "name": "Pollution of water and land"
+    }
+  ],
+  "url": "https://riveractionuk.com/news/natural-resources-wales-must-prevent-pollution-not-pass-the-buck-as-the-wye-and-severn-decline/"
+}

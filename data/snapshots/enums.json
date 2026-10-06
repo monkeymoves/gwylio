@@ -1,0 +1,521 @@
+{
+  "blind_spot_rule": "A blind spot is not quiet. A requirement whose evidence public sources cannot see (low or no scanability) and that has no active reports is invisible to this tool, not calm; its silence is not evidence of anything.",
+  "bucket": [
+    {
+      "label": "brief",
+      "meaning": null,
+      "value": "brief"
+    },
+    {
+      "label": "follow up",
+      "meaning": null,
+      "value": "follow_up"
+    },
+    {
+      "label": "watch",
+      "meaning": null,
+      "value": "watch"
+    },
+    {
+      "label": "park",
+      "meaning": null,
+      "value": "park"
+    }
+  ],
+  "coverage_status": [
+    {
+      "label": "covered",
+      "meaning": "Three or more active reports.",
+      "value": "covered"
+    },
+    {
+      "label": "thin",
+      "meaning": "One or two active reports.",
+      "value": "thin"
+    },
+    {
+      "label": "quiet",
+      "meaning": "No active reports, and public sources could see movement if there were any.",
+      "value": "quiet"
+    },
+    {
+      "label": "blind spot",
+      "meaning": "No active reports, and public sources cannot see this requirement: absence is not evidence, so never call it quiet.",
+      "value": "blind_spot"
+    }
+  ],
+  "credibility": [
+    {
+      "label": "confirmed",
+      "meaning": null,
+      "value": "1"
+    },
+    {
+      "label": "probably true",
+      "meaning": null,
+      "value": "2"
+    },
+    {
+      "label": "possibly true",
+      "meaning": null,
+      "value": "3"
+    },
+    {
+      "label": "doubtful",
+      "meaning": null,
+      "value": "4"
+    },
+    {
+      "label": "improbable",
+      "meaning": null,
+      "value": "5"
+    },
+    {
+      "label": "cannot be judged",
+      "meaning": null,
+      "value": "6"
+    }
+  ],
+  "direction": [
+    {
+      "label": "supports",
+      "meaning": "Makes progress on the requirement more likely or easier.",
+      "value": "supports"
+    },
+    {
+      "label": "threatens",
+      "meaning": "Makes progress on the requirement less likely or harder.",
+      "value": "threatens"
+    },
+    {
+      "label": "two-way",
+      "meaning": "Bears on the requirement with no clear direction, or both ways at once.",
+      "value": "neutral"
+    },
+    {
+      "label": "informs the baseline",
+      "meaning": "Changes what we know about where the requirement stands now.",
+      "value": "informs_baseline"
+    }
+  ],
+  "discipline": [
+    {
+      "label": "osint web",
+      "meaning": "Open web search with a query text.",
+      "value": "osint_web"
+    },
+    {
+      "label": "osint feed",
+      "meaning": "Items read from the feeds of watched sources, matched to a query.",
+      "value": "osint_feed"
+    },
+    {
+      "label": "osint site",
+      "meaning": "Web search restricted to the domains of named watched sources.",
+      "value": "osint_site"
+    },
+    {
+      "label": "osint academic",
+      "meaning": "Scholarly indexes searched with a query text.",
+      "value": "osint_academic"
+    },
+    {
+      "label": "geoint",
+      "meaning": "Reserved: geospatial intelligence, not collected in version 1.",
+      "value": "geoint"
+    },
+    {
+      "label": "sensor",
+      "meaning": "Reserved: sensor and monitoring data, not collected in version 1.",
+      "value": "sensor"
+    }
+  ],
+  "disposition_outcome": [
+    {
+      "label": "promoted",
+      "meaning": "Became a new intelligence report, named by report_id.",
+      "value": "promoted"
+    },
+    {
+      "label": "rejected",
+      "meaning": "Fails the promotion test; the reason says which part.",
+      "value": "rejected"
+    },
+    {
+      "label": "duplicate",
+      "meaning": "The same development as another candidate or report; report_id may name it.",
+      "value": "duplicate"
+    },
+    {
+      "label": "deferred",
+      "meaning": "Not judged yet; a later submission may dispose of it.",
+      "value": "deferred"
+    },
+    {
+      "label": "reinforcement",
+      "meaning": "A new sighting of an existing report, named by report_id and confirmed in reinforcements.",
+      "value": "reinforcement"
+    }
+  ],
+  "finding_kind": [
+    {
+      "label": "Passed event horizons",
+      "meaning": "The event horizon has passed and nobody has updated or verified the report since.",
+      "value": "passed_horizon"
+    },
+    {
+      "label": "Future-framed language",
+      "meaning": "The title, summary or notes use future-framed language that rots once the date passes.",
+      "value": "future_language"
+    },
+    {
+      "label": "Stale verifications",
+      "meaning": "The report was last verified more than 45 days ago.",
+      "value": "stale_verification"
+    },
+    {
+      "label": "Never verified",
+      "meaning": "The report has never been verified against its source.",
+      "value": "never_verified"
+    }
+  ],
+  "group_kind": [
+    {
+      "label": "impact",
+      "meaning": null,
+      "value": "impact"
+    },
+    {
+      "label": "well-being objective (WBO)",
+      "meaning": null,
+      "value": "wbo"
+    }
+  ],
+  "history_kind": [
+    {
+      "label": "created",
+      "meaning": null,
+      "value": "created"
+    },
+    {
+      "label": "sighted",
+      "meaning": null,
+      "value": "sighted"
+    },
+    {
+      "label": "state changed",
+      "meaning": null,
+      "value": "state_changed"
+    },
+    {
+      "label": "verified",
+      "meaning": null,
+      "value": "verified"
+    },
+    {
+      "label": "updated",
+      "meaning": null,
+      "value": "updated"
+    },
+    {
+      "label": "imported",
+      "meaning": null,
+      "value": "imported"
+    },
+    {
+      "label": "faded",
+      "meaning": null,
+      "value": "faded"
+    },
+    {
+      "label": "revived",
+      "meaning": null,
+      "value": "revived"
+    }
+  ],
+  "indicator_state": [
+    {
+      "label": "emerging",
+      "meaning": "New to the register, seen in one run only.",
+      "value": "emerging"
+    },
+    {
+      "label": "tracking",
+      "meaning": "Seen again in a strictly later run than the one that found it.",
+      "value": "tracking"
+    },
+    {
+      "label": "reinforced",
+      "meaning": "Seen by three distinct sources, or independently confirmed by the analyst.",
+      "value": "reinforced"
+    },
+    {
+      "label": "matured",
+      "meaning": "Settled context, set by the analyst; sightings are still recorded.",
+      "value": "matured"
+    },
+    {
+      "label": "faded",
+      "meaning": "Not seen in the two most recent complete runs; set by the sweep, revived by a sighting.",
+      "value": "faded"
+    },
+    {
+      "label": "parked",
+      "meaning": "Set aside by the analyst; sightings are still recorded.",
+      "value": "parked"
+    }
+  ],
+  "lens": [
+    {
+      "label": "government",
+      "meaning": null,
+      "value": "government"
+    },
+    {
+      "label": "partnership society",
+      "meaning": null,
+      "value": "partnership_society"
+    },
+    {
+      "label": "international",
+      "meaning": null,
+      "value": "international"
+    }
+  ],
+  "product_level": [
+    {
+      "label": "strategic",
+      "meaning": null,
+      "value": "strategic"
+    },
+    {
+      "label": "operational",
+      "meaning": null,
+      "value": "operational"
+    },
+    {
+      "label": "tactical",
+      "meaning": null,
+      "value": "tactical"
+    }
+  ],
+  "reliability": [
+    {
+      "label": "completely reliable",
+      "meaning": null,
+      "value": "A"
+    },
+    {
+      "label": "usually reliable",
+      "meaning": null,
+      "value": "B"
+    },
+    {
+      "label": "fairly reliable",
+      "meaning": null,
+      "value": "C"
+    },
+    {
+      "label": "not usually reliable",
+      "meaning": null,
+      "value": "D"
+    },
+    {
+      "label": "unreliable",
+      "meaning": null,
+      "value": "E"
+    },
+    {
+      "label": "cannot be judged",
+      "meaning": null,
+      "value": "F"
+    }
+  ],
+  "report_type": [
+    {
+      "label": "policy",
+      "meaning": null,
+      "value": "policy"
+    },
+    {
+      "label": "legislation",
+      "meaning": null,
+      "value": "legislation"
+    },
+    {
+      "label": "research",
+      "meaning": null,
+      "value": "research"
+    },
+    {
+      "label": "data release",
+      "meaning": null,
+      "value": "data_release"
+    },
+    {
+      "label": "funding",
+      "meaning": null,
+      "value": "funding"
+    },
+    {
+      "label": "partnership",
+      "meaning": null,
+      "value": "partnership"
+    },
+    {
+      "label": "international",
+      "meaning": null,
+      "value": "international"
+    },
+    {
+      "label": "legal",
+      "meaning": null,
+      "value": "legal"
+    },
+    {
+      "label": "environmental",
+      "meaning": null,
+      "value": "environmental"
+    },
+    {
+      "label": "market",
+      "meaning": null,
+      "value": "market"
+    },
+    {
+      "label": "incident",
+      "meaning": null,
+      "value": "incident"
+    }
+  ],
+  "run_status": [
+    {
+      "label": "running",
+      "meaning": null,
+      "value": "running"
+    },
+    {
+      "label": "complete",
+      "meaning": null,
+      "value": "complete"
+    },
+    {
+      "label": "aborted",
+      "meaning": null,
+      "value": "aborted"
+    }
+  ],
+  "scanability": [
+    {
+      "label": "high",
+      "meaning": "Public sources see the drivers and the evidence well.",
+      "value": "high"
+    },
+    {
+      "label": "medium",
+      "meaning": "Public sources see the drivers, but the evidence only at release.",
+      "value": "medium"
+    },
+    {
+      "label": "low",
+      "meaning": "Evidence is mostly internal; public sources see it only in known windows.",
+      "value": "low"
+    },
+    {
+      "label": "none",
+      "meaning": "Evidence is wholly internal; no public source will ever report on it.",
+      "value": "none"
+    }
+  ],
+  "score_level": [
+    {
+      "label": "low",
+      "meaning": null,
+      "value": "low"
+    },
+    {
+      "label": "medium",
+      "meaning": null,
+      "value": "medium"
+    },
+    {
+      "label": "high",
+      "meaning": null,
+      "value": "high"
+    }
+  ],
+  "severity": [
+    {
+      "label": "warn",
+      "meaning": null,
+      "value": "warn"
+    },
+    {
+      "label": "act",
+      "meaning": null,
+      "value": "act"
+    }
+  ],
+  "source_status": [
+    {
+      "label": "active",
+      "meaning": null,
+      "value": "active"
+    },
+    {
+      "label": "parked",
+      "meaning": null,
+      "value": "parked"
+    },
+    {
+      "label": "retired",
+      "meaning": null,
+      "value": "retired"
+    }
+  ],
+  "time_horizon": [
+    {
+      "label": "immediate",
+      "meaning": null,
+      "value": "immediate"
+    },
+    {
+      "label": "near term",
+      "meaning": null,
+      "value": "near_term"
+    },
+    {
+      "label": "medium term",
+      "meaning": null,
+      "value": "medium_term"
+    },
+    {
+      "label": "long term",
+      "meaning": null,
+      "value": "long_term"
+    }
+  ],
+  "undercount": "Counts of reports are not counts of impact. The register shows what surfaced publicly: at least this much, and known to undercount.",
+  "yield_reading": [
+    {
+      "label": "earning its place",
+      "meaning": "At least one of its candidates was promoted to a report.",
+      "value": "earning_its_place"
+    },
+    {
+      "label": "high volume no promotions",
+      "meaning": "Twenty or more candidates and no promotion: noise to tune out or a query to tighten.",
+      "value": "high_volume_no_promotions"
+    },
+    {
+      "label": "low volume",
+      "meaning": "Fewer than twenty candidates and no promotion yet.",
+      "value": "low_volume"
+    },
+    {
+      "label": "silent",
+      "meaning": "An active source that has not returned a hit in any run.",
+      "value": "silent"
+    }
+  ]
+}

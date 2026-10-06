@@ -1,0 +1,125 @@
+{
+  "notes": "Scripted hits for the seed's later fake runs (make seed, gwylio collect --fake --hits). They find most of the seed's reports again, leave the Storm Claudia report unseen so the sweep fades it, and bring three watched sources (Dwr Cymru Welsh Water, Wildlife Trusts Wales, Surfers Against Sewage) onto the phosphate story so the analyst can reinforce it. One hit is dropped by a negative term. With the default disciplines the funnel is: raw 13, dropped negative 1, passed 12, unique 12.",
+  "fetched_at": "2026-10-03T09:00:00Z",
+  "hits": [
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cx2phosphate",
+      "title": "Phosphate levels in Welsh rivers remain high",
+      "snippet": "Monitoring shows most Special Area of Conservation rivers still fail their targets.",
+      "published_on": "2026-08-28",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-02",
+      "note": "Reinforcement: the phosphate report's own URL, found again."
+    },
+    {
+      "url": "https://www.dwrcymru.com/en/our-services/phosphorus-in-welsh-rivers",
+      "title": "Phosphorus in Welsh rivers: our response",
+      "snippet": "Dwr Cymru sets out its phosphorus removal programme for the Wye, Usk and Teifi.",
+      "published_on": "2026-10-01",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-02",
+      "note": "New, then seen before: a second watched source on the phosphate story."
+    },
+    {
+      "url": "https://www.wtwales.org/news/phosphate-pollution-welsh-rivers",
+      "title": "Phosphate pollution in Welsh rivers persists",
+      "snippet": "Wildlife Trusts Wales warns that river habitats are still declining.",
+      "published_on": "2026-10-02",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-02",
+      "note": "New, then seen before: a third watched source on the phosphate story."
+    },
+    {
+      "url": "https://www.sas.org.uk/news/welsh-rivers-phosphate-targets",
+      "title": "Welsh rivers still failing phosphate targets",
+      "snippet": "Surfers Against Sewage maps the failing river stretches across Wales.",
+      "published_on": "2026-10-02",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-02",
+      "note": "New, then seen before: a fourth watched source on the phosphate story."
+    },
+    {
+      "url": "https://www.smh.com.au/environment/new-south-wales-drought-declared",
+      "title": "Drought declared across New South Wales",
+      "snippet": "Farmers in New South Wales face another dry season.",
+      "published_on": "2026-10-02",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-05",
+      "note": "Dropped by the global negative term new south wales."
+    },
+    {
+      "url": "https://www.bto.org/our-science/projects/avian-influenza-seabirds",
+      "title": "Avian influenza in seabirds: 2026 season",
+      "snippet": "Colony counts at Skomer and Grassholm fell again.",
+      "published_on": "2026-09-08",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-03",
+      "note": "Reinforcement of the avian influenza report."
+    },
+    {
+      "url": "https://nation.cymru/news/drought-declared-across-south-west-wales",
+      "title": "Drought declared across South West Wales",
+      "snippet": "Natural Resources Wales moved the area to drought status after a dry summer.",
+      "published_on": "2026-08-30",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-05",
+      "note": "Reinforcement of the drought report."
+    },
+    {
+      "url": "https://www.gov.wales/nature-recovery-bill-consultation",
+      "title": "Consultation on a Nature Recovery Bill for Wales",
+      "snippet": "The consultation on statutory nature recovery targets.",
+      "published_on": "2026-07-14",
+      "discipline": "osint_web",
+      "query_id": "web-nature-ecosystems-04",
+      "note": "Reinforcement of the Nature Recovery Bill report, whose event horizon has passed."
+    },
+    {
+      "url": "https://www.gov.wales/reducing-emissions-domestic-solid-fuel-burning",
+      "title": "Reducing emissions from domestic solid fuel burning",
+      "snippet": "Proposals to cut particulate emissions from wood and coal burning at home.",
+      "published_on": "2026-08-12",
+      "discipline": "osint_web",
+      "query_id": "web-air-quality-02",
+      "note": "Reinforcement of the solid fuel report."
+    },
+    {
+      "url": "https://www.riveractionuk.com/news/judicial-review-against-natural-resources-wales",
+      "title": "River Action wins permission for judicial review",
+      "snippet": "The High Court will hear the challenge to river pollution permitting in Wales.",
+      "published_on": "2026-09-15",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-09",
+      "note": "Reinforcement of the judicial review report."
+    },
+    {
+      "url": "https://www.nfu-cymru.org.uk/news/sustainable-farming-scheme-concerns/",
+      "title": "NFU Cymru responds to Sustainable Farming Scheme changes",
+      "snippet": "Farmers in Wales want clarity on the scheme's universal actions.",
+      "published_on": "2026-09-10",
+      "discipline": "osint_web",
+      "query_id": "web-nature-ecosystems-06",
+      "note": "Reinforcement of the parked Sustainable Farming Scheme report: recorded, state unchanged."
+    },
+    {
+      "url": "https://www.audit.wales/publication/natural-resources-wales-funding-and-capacity",
+      "title": "Natural Resources Wales: funding and capacity",
+      "snippet": "Our review of how the regulator plans its workforce and budget.",
+      "published_on": "2026-09-24",
+      "discipline": "osint_feed",
+      "query_id": "feed-governance-capacity-governance-capacity",
+      "source_id": "audit-wales",
+      "note": "Reinforcement from the Audit Wales feed."
+    },
+    {
+      "url": "https://www.theccc.org.uk/publication/progress-in-reducing-emissions-2026/",
+      "title": "Progress in reducing emissions: 2026 report to Parliament",
+      "snippet": "The Climate Change Committee's annual progress report, with a chapter on Wales.",
+      "published_on": "2026-09-03",
+      "discipline": "osint_feed",
+      "query_id": "feed-air-quality-uk-government-and-regulators",
+      "source_id": "climate-change-committee",
+      "note": "Reinforcement of the matured Climate Change Committee report: recorded, state unchanged."
+    }
+  ]
+}

@@ -3,7 +3,7 @@
   "reports": [
     {
       "actor_id": "bto",
-      "appearances": 2,
+      "appearances": 3,
       "assessments": [
         {
           "direction": "threatens",
@@ -46,6 +46,11 @@
           "change": "Checked against the BTO project page: the season summary stands.",
           "kind": "verified",
           "on": "2026-10-02"
+        },
+        {
+          "change": "sighted in run 20261003T0900Z-0000 by bto; 3 runs, 1 distinct source",
+          "kind": "sighted",
+          "on": "2026-10-04"
         }
       ],
       "id": "avian-influenza-seabirds-2026",
@@ -68,7 +73,8 @@
       },
       "sighting_ids": [
         "s-20260901t0900z-0000-000014",
-        "s-20261001t0900z-0000-000014"
+        "s-20261001t0900z-0000-000014",
+        "s-20261003t0900z-0000-000008"
       ],
       "source_id": "bto",
       "source_name": "British Trust for Ornithology (BTO)",
@@ -83,7 +89,7 @@
     },
     {
       "actor_id": "climate-change-committee",
-      "appearances": 2,
+      "appearances": 3,
       "assessments": [
         {
           "direction": "informs_baseline",
@@ -114,6 +120,11 @@
           "change": "sighted in run 20261001T0900Z-0000 by climate-change-committee; 2 runs, 1 distinct source",
           "kind": "sighted",
           "on": "2026-10-02"
+        },
+        {
+          "change": "sighted in run 20261003T0900Z-0000 by climate-change-committee; 3 runs, 1 distinct source",
+          "kind": "sighted",
+          "on": "2026-10-04"
         }
       ],
       "id": "ccc-progress-report-2026",
@@ -136,7 +147,8 @@
       },
       "sighting_ids": [
         "s-20260901t0900z-0000-000020",
-        "s-20261001t0900z-0000-000020"
+        "s-20261001t0900z-0000-000020",
+        "s-20261003t0900z-0000-000012"
       ],
       "source_id": "climate-change-committee",
       "source_name": "Climate Change Committee",
@@ -150,7 +162,7 @@
     },
     {
       "actor_id": "welsh-government",
-      "appearances": 2,
+      "appearances": 3,
       "assessments": [
         {
           "direction": "supports",
@@ -186,6 +198,11 @@
           "change": "emerging to tracking: sighted in run 20261001T0900Z-0000, later than the run that found it",
           "kind": "state_changed",
           "on": "2026-10-02"
+        },
+        {
+          "change": "sighted in run 20261003T0900Z-0000 by welsh-government; 3 runs, 1 distinct source",
+          "kind": "sighted",
+          "on": "2026-10-04"
         }
       ],
       "id": "domestic-solid-fuel-burning-emissions",
@@ -208,7 +225,8 @@
       },
       "sighting_ids": [
         "s-20260901t0900z-0000-000018",
-        "s-20261001t0900z-0000-000018"
+        "s-20261001t0900z-0000-000018",
+        "s-20261003t0900z-0000-000010"
       ],
       "source_id": "welsh-government",
       "source_name": "Welsh Government",
@@ -222,7 +240,7 @@
     },
     {
       "actor_id": "welsh-government",
-      "appearances": 2,
+      "appearances": 3,
       "assessments": [
         {
           "direction": "supports",
@@ -262,6 +280,11 @@
           "change": "emerging to tracking: sighted in run 20261001T0900Z-0000, later than the run that found it",
           "kind": "state_changed",
           "on": "2026-10-02"
+        },
+        {
+          "change": "sighted in run 20261003T0900Z-0000 by welsh-government; 3 runs, 1 distinct source",
+          "kind": "sighted",
+          "on": "2026-10-04"
         }
       ],
       "id": "nature-recovery-bill-consultation",
@@ -286,7 +309,8 @@
         "s-20260901t0900z-0000-000001",
         "s-20260901t0900z-0000-000002",
         "s-20261001t0900z-0000-000001",
-        "s-20261001t0900z-0000-000002"
+        "s-20261001t0900z-0000-000002",
+        "s-20261003t0900z-0000-000001"
       ],
       "source_id": "welsh-government",
       "source_name": "Welsh Government",
@@ -300,7 +324,7 @@
     },
     {
       "actor_id": "audit-wales",
-      "appearances": 2,
+      "appearances": 3,
       "assessments": [
         {
           "direction": "threatens",
@@ -342,6 +366,11 @@
           "change": "emerging to tracking: sighted in run 20261001T0900Z-0000, later than the run that found it",
           "kind": "state_changed",
           "on": "2026-10-02"
+        },
+        {
+          "change": "sighted in run 20261003T0900Z-0000 by audit-wales; 3 runs, 1 distinct source",
+          "kind": "sighted",
+          "on": "2026-10-04"
         }
       ],
       "id": "nrw-funding-and-capacity-2026",
@@ -365,7 +394,8 @@
       "sighting_ids": [
         "s-20260901t0900z-0000-000019",
         "s-20260901t0900z-0000-000017",
-        "s-20261001t0900z-0000-000019"
+        "s-20261001t0900z-0000-000019",
+        "s-20261003t0900z-0000-000011"
       ],
       "source_id": "audit-wales",
       "source_name": "Audit Wales",
@@ -379,7 +409,7 @@
     },
     {
       "actor_id": "bbc-wales",
-      "appearances": 2,
+      "appearances": 3,
       "assessments": [
         {
           "direction": "threatens",
@@ -391,7 +421,7 @@
       "created_on": "2026-09-02",
       "created_run_id": "20260901T0900Z-0000",
       "credibility": 3,
-      "distinct_sources": 0,
+      "distinct_sources": 3,
       "event_horizon": null,
       "grading": "B3",
       "hazards": [
@@ -422,6 +452,16 @@
           "change": "Moved to brief after a second sighting.",
           "kind": "updated",
           "on": "2026-10-02"
+        },
+        {
+          "change": "sighted in run 20261003T0900Z-0000 by an unwatched source; 3 runs, 0 distinct sources",
+          "kind": "sighted",
+          "on": "2026-10-04"
+        },
+        {
+          "change": "tracking to reinforced: 3 distinct sources",
+          "kind": "state_changed",
+          "on": "2026-10-04"
         }
       ],
       "id": "phosphate-welsh-rivers-2026",
@@ -444,11 +484,15 @@
       },
       "sighting_ids": [
         "s-20260901t0900z-0000-000005",
-        "s-20261001t0900z-0000-000005"
+        "s-20261001t0900z-0000-000005",
+        "s-20261003t0900z-0000-000003",
+        "s-20261003t0900z-0000-000004",
+        "s-20261003t0900z-0000-000006",
+        "s-20261003t0900z-0000-000005"
       ],
       "source_id": null,
       "source_name": "BBC Wales News",
-      "state": "tracking",
+      "state": "reinforced",
       "summary": "BBC Wales reports that phosphate levels in Welsh special area of conservation rivers remain above targets.",
       "title": "Phosphate levels in Welsh rivers remain high",
       "topics": [
@@ -458,7 +502,7 @@
     },
     {
       "actor_id": "river-action",
-      "appearances": 2,
+      "appearances": 3,
       "assessments": [
         {
           "direction": "threatens",
@@ -497,6 +541,11 @@
           "change": "emerging to tracking: sighted in run 20261001T0900Z-0000, later than the run that found it",
           "kind": "state_changed",
           "on": "2026-10-02"
+        },
+        {
+          "change": "sighted in run 20261003T0900Z-0000 by river-action; 3 runs, 1 distinct source",
+          "kind": "sighted",
+          "on": "2026-10-04"
         }
       ],
       "id": "river-action-judicial-review-permission",
@@ -521,7 +570,8 @@
         "s-20260901t0900z-0000-000007",
         "s-20260901t0900z-0000-000008",
         "s-20261001t0900z-0000-000007",
-        "s-20261001t0900z-0000-000008"
+        "s-20261001t0900z-0000-000008",
+        "s-20261003t0900z-0000-000007"
       ],
       "source_id": "river-action",
       "source_name": "River Action",
@@ -535,7 +585,7 @@
     },
     {
       "actor_id": "nation-cymru",
-      "appearances": 2,
+      "appearances": 3,
       "assessments": [
         {
           "direction": "threatens",
@@ -582,6 +632,11 @@
           "change": "tracking to reinforced: independently confirmed: Confirmed independently against the NRW drought status page.",
           "kind": "state_changed",
           "on": "2026-10-02"
+        },
+        {
+          "change": "sighted in run 20261003T0900Z-0000 by nation-cymru; 3 runs, 1 distinct source",
+          "kind": "sighted",
+          "on": "2026-10-04"
         }
       ],
       "id": "south-west-wales-drought-2026",
@@ -607,7 +662,8 @@
         "s-20260901t0900z-0000-000015",
         "s-20260901t0900z-0000-000016",
         "s-20261001t0900z-0000-000015",
-        "s-20261001t0900z-0000-000016"
+        "s-20261001t0900z-0000-000016",
+        "s-20261003t0900z-0000-000009"
       ],
       "source_id": "nation-cymru",
       "source_name": "Nation.Cymru",
@@ -659,6 +715,11 @@
           "change": "emerging to tracking: sighted in run 20261001T0900Z-0000, later than the run that found it",
           "kind": "state_changed",
           "on": "2026-10-02"
+        },
+        {
+          "change": "tracking to faded: no sighting in the two most recent complete runs, 20261003T0900Z-0000 and 20261004T0900Z-0000",
+          "kind": "faded",
+          "on": "2026-10-05"
         }
       ],
       "id": "storm-claudia-monmouthshire-flooding",
@@ -686,7 +747,7 @@
       ],
       "source_id": null,
       "source_name": "BBC Wales News",
-      "state": "tracking",
+      "state": "faded",
       "summary": "BBC Wales reports homes flooded in Monmouthshire during Storm Claudia.",
       "title": "Storm Claudia: homes flooded in Monmouthshire",
       "topics": [
@@ -696,7 +757,7 @@
     },
     {
       "actor_id": "nfu-cymru",
-      "appearances": 2,
+      "appearances": 3,
       "assessments": [
         {
           "direction": "neutral",
@@ -743,6 +804,11 @@
           "change": "tracking to parked: Parked until the scheme's final rules are published.",
           "kind": "state_changed",
           "on": "2026-10-02"
+        },
+        {
+          "change": "sighted in run 20261003T0900Z-0000 by nfu-cymru; 3 runs, 1 distinct source",
+          "kind": "sighted",
+          "on": "2026-10-04"
         }
       ],
       "id": "sustainable-farming-scheme-concerns",
@@ -765,7 +831,8 @@
       },
       "sighting_ids": [
         "s-20260901t0900z-0000-000003",
-        "s-20261001t0900z-0000-000003"
+        "s-20261001t0900z-0000-000003",
+        "s-20261003t0900z-0000-000002"
       ],
       "source_id": "nfu-cymru",
       "source_name": "NFU Cymru",

@@ -1,0 +1,112 @@
+{
+  "actor_id": "nation-cymru",
+  "actor_name": "Nation.Cymru",
+  "appearances": 0,
+  "assessments": [
+    {
+      "code": "SI2",
+      "direction": "threatens",
+      "name": "Increasing the rate of habitat restoration",
+      "requirement_id": "si2",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI6",
+      "direction": "threatens",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "requirement_id": "si6",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "brief",
+  "canonical_url": "nation.cymru/news/new-study-finds-wales-will-only-deliver-14-of-tree-planting-target",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-07-25",
+  "created_run_id": null,
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "threatens"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [
+    {
+      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
+      "kind": "stale_verification",
+      "severity": "warn"
+    }
+  ],
+  "grading": "C3",
+  "hazards": [],
+  "history": [
+    {
+      "change": "added at 2026-07-22 scan from nation.cymru reporting ECIU analysis; threatens SI2 and SI6 delivery",
+      "kind": "imported",
+      "on": "2026-07-22"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-23; last_seen bumped, appearances and lifecycle held (one day after the 22 July baseline, same development window per RUBRIC)",
+      "kind": "imported",
+      "on": "2026-07-23"
+    },
+    {
+      "change": "re-sighted at scan 2026-07-25; last_seen bumped, lifecycle held (same development window as the 23 July scan)",
+      "kind": "imported",
+      "on": "2026-07-25"
+    },
+    {
+      "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
+      "kind": "created",
+      "on": "2026-07-25"
+    }
+  ],
+  "id": "eciu-wales-tree-planting-14-percent-of-target",
+  "independent_confirmation": false,
+  "lane": "independent-media",
+  "lane_name": "Independent media",
+  "last_changed": "2026-07-25",
+  "last_verified": "2026-07-24",
+  "lens": "partnership_society",
+  "notes": "Direct challenge to the delivery trajectory behind the NRAP's 21,500 hectare by 2030 aspiration and the woodland share of net zero sequestration (SI6). A think-tank projection, so evidence medium, but the gap it names is enormous and no government source on the register says anything comparable. Watch official planting statistics against it.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "research",
+  "requirement_ids": [
+    "si2",
+    "si6"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "high",
+    "potential_impact": "high",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [],
+  "source_id": "nation-cymru",
+  "source_name": "Nation.Cymru",
+  "state": "emerging",
+  "summary": "Energy and Climate Intelligence Unit analysis (reported 7 June 2026) projects Wales will deliver only 14 percent of its 2030 woodland creation target, within a UK-wide cumulative shortfall of about 41,000 hectares by 2030. Over 70 percent of the carbon removal needed to 2050 depends on trees planted in the next five years, and polling shows 66 percent of Welsh adults support significantly increased planting.",
+  "title": "ECIU analysis: Wales projected to deliver just 14 percent of its 2030 tree planting target",
+  "topics": [
+    {
+      "id": "woodland-and-forestry",
+      "name": "Woodland and forestry"
+    }
+  ],
+  "url": "https://nation.cymru/news/new-study-finds-wales-will-only-deliver-14-of-tree-planting-target/"
+}

@@ -14,6 +14,7 @@ from typing import Annotated, Final
 
 from pydantic import AfterValidator, BaseModel, ConfigDict, Field
 
+from gwylio.api.schemas import READ_MODELS
 from gwylio.collection.model import SourceStatus
 from gwylio.direction.model import REQUIREMENT_CODE_PATTERN, GroupKind, Scanability
 from gwylio.direction.scanability import CoverageStatus
@@ -368,14 +369,17 @@ SCHEMA_MODELS: Final[dict[str, type[BaseModel]]] = {
     "sweep": SweepFile,
     "taxonomy": TaxonomyFile,
     "topics": TopicsFile,
+    **READ_MODELS,
 }
 """Every file contract, by schema name: ``docs/schema/<name>.schema.json``.
 
 All are configuration files except ``candidates``, ``submission`` and
 ``sweep``, the handoff and fact file contracts from the Processing context,
-and ``product``, the product file contract from the Dissemination context,
-registered here so their schemas and TypeScript types are generated with the
-rest. ``copy`` is configuration whose model the Dissemination context owns."""
+``product``, the product file contract from the Dissemination context, and
+the ``snapshot-*`` read models (``gwylio.api.schemas``) that the published
+snapshot and the read API serve, registered here so their schemas and
+TypeScript types are generated with the rest. ``copy`` is configuration
+whose model the Dissemination context owns."""
 
 SCHEMA_ENUMS: Final[tuple[type[Enum], ...]] = (
     CoverageStatus,

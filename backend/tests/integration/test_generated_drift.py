@@ -10,6 +10,7 @@ import pytest
 from gwylio.cli.main import cli_verbs
 from gwylio.infrastructure.codegen.generate import (
     GLOSSARY_PATH,
+    OPENAPI_PATH,
     REFERENCE_PATH,
     SCHEMA_DIR,
     TYPESCRIPT_PATH,
@@ -37,7 +38,7 @@ def generated(tmp_path_factory: pytest.TempPathFactory) -> tuple[Path, list[str]
 def test_every_expected_file_is_generated(generated: tuple[Path, list[str]]) -> None:
     _, paths = generated
     expected = {f"{SCHEMA_DIR}/{name}.schema.json" for name in SCHEMA_MODELS}
-    expected |= {GLOSSARY_PATH, REFERENCE_PATH, TYPESCRIPT_PATH}
+    expected |= {GLOSSARY_PATH, REFERENCE_PATH, TYPESCRIPT_PATH, OPENAPI_PATH}
     assert set(paths) == expected
     for contract in ("submission", "sweep", "datecheck"):
         assert f"{SCHEMA_DIR}/{contract}.schema.json" in paths
@@ -64,8 +65,12 @@ def test_no_stale_schema_files_are_committed() -> None:
 def test_every_generated_file_says_it_is_generated(generated: tuple[Path, list[str]]) -> None:
     out, paths = generated
     for path in paths:
-        head = (out / path).read_text(encoding="utf-8")[:300]
-        assert GENERATED_MARK in head, path
+        text = (out / path).read_text(encoding="utf-8")
+        if path == OPENAPI_PATH:
+            # OpenAPI allows no comment at its root, so the note is an info extension.
+            assert GENERATED_MARK in json.loads(text)["info"]["x-generated"]
+            continue
+        assert GENERATED_MARK in text[:300], path
 
 
 def test_generation_is_deterministic() -> None:
