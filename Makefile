@@ -14,8 +14,10 @@ SEED_DIR := backend/tests/fixtures/seed
 SEED_SUBMISSIONS := $(CURDIR)/backend/tests/fixtures/seed_submissions
 SEED_HITS := $(CURDIR)/backend/tests/fixtures/seed_hits.json
 SEED_ENV := GWYLIO_DATA_DIR=$(SEED_DIR) GWYLIO_DB_PATH= GWYLIO_ACADEMIC=
+SEED_SITE := $(CURDIR)/.seed-site
+SEED_SITE_ENV := GWYLIO_DATA_DIR=$(SEED_SITE)/data GWYLIO_DB_PATH= GWYLIO_ACADEMIC=
 
-.PHONY: help setup check test e2e ci build schema seed dev serve frontend-dev collect ingest publish
+.PHONY: help setup check test e2e ci build schema seed dev serve frontend-dev collect ingest publish deploy seed-screenshots
 
 help: ## List the targets
 	@grep -E '^[a-z][a-z-]*:.*## ' $(MAKEFILE_LIST) | awk -F ':.*## ' '{printf "  %-10s %s\n", $$1, $$2}'
@@ -80,3 +82,24 @@ ingest: ## Ingest an analyst submission: make ingest FILE=data/submissions/<run_
 
 publish: ## Publish the snapshot the static site reads (frontend/static/data and data/snapshots)
 	$(UV) gwylio publish
+
+deploy: ## Publish the snapshot, build the static site and deploy it to Firebase Hosting
+	@command -v firebase >/dev/null 2>&1 || { echo "deploy: the firebase command is missing; install the Firebase CLI (npm install -g firebase-tools), run firebase login and firebase use --add, then make deploy again" >&2; exit 1; }
+	$(UV) gwylio publish
+	$(PNPM) build
+	firebase deploy --only hosting
+
+seed-screenshots: ## Build a scratch copy of the site from the seed fixture, run Playwright on it, keep the screenshots in docs/evidence/seed
+	@if (exec 3<>/dev/tcp/127.0.0.1/4173) 2>/dev/null; then echo "seed-screenshots: port 4173 is in use; stop that server first" >&2; exit 1; fi
+	rm -rf $(SEED_SITE)
+	mkdir -p $(SEED_SITE)/frontend
+	cp -r $(SEED_DIR) $(SEED_SITE)/data
+	rm -f $(SEED_SITE)/data/gwylio.sqlite*
+	tar -C frontend --exclude=./node_modules --exclude=./build --exclude=./.svelte-kit --exclude=./static/data --exclude=./test-results -cf - . | tar -C $(SEED_SITE)/frontend -xf -
+	ln -s $(CURDIR)/frontend/node_modules $(SEED_SITE)/frontend/node_modules
+	$(SEED_SITE_ENV) $(UV) gwylio rebuild
+	$(SEED_SITE_ENV) $(UV) gwylio publish --out $(SEED_SITE)/frontend/static/data --at 2026-10-06T09:00:00+0000
+	status=0; pnpm -C $(SEED_SITE)/frontend e2e || status=$$?; \
+	rm -rf docs/evidence/seed; mkdir -p docs/evidence/seed; \
+	cp -r $(SEED_SITE)/docs/evidence/. docs/evidence/seed/; \
+	rm -rf $(SEED_SITE); exit $$status

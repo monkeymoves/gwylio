@@ -1,0 +1,25 @@
+{
+  "hosting": {
+    "public": "frontend/build",
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "headers": [
+      {
+        "source": "/data/**",
+        "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
+      },
+      {
+        "source": "/_app/immutable/**",
+        "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+      },
+      {
+        "source": "/products/*.md",
+        "headers": [
+          { "key": "Content-Type", "value": "text/markdown; charset=utf-8" },
+          { "key": "Cache-Control", "value": "no-cache" }
+        ]
+      }
+    ]
+  }
+}

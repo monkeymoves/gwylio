@@ -11,6 +11,9 @@
 		if (section.depth === 3) return 'h3';
 		return 'h4';
 	}
+
+	/** Above this many columns a product table is set tighter to fit the reading column. */
+	export const WIDE_TABLE_COLUMNS = 6;
 </script>
 
 <script lang="ts">
@@ -30,7 +33,7 @@
 			{/each}
 			{#each section.tables as table, t (t)}
 				<div class="table-scroll">
-					<table>
+					<table class:wide={table.headers.length > WIDE_TABLE_COLUMNS}>
 						<thead>
 							<tr>
 								{#each table.headers as header, h (h)}
@@ -136,6 +139,17 @@
 	th {
 		color: var(--color-text-muted);
 		font-weight: 600;
+	}
+
+	/* A wide table (such as the method note's runs, nine columns) is set smaller with
+	   tighter cells, so it fits the reading column at desktop width without breaking words. */
+	table.wide {
+		font-size: var(--text-xs);
+	}
+
+	table.wide th,
+	table.wide td {
+		padding: var(--space-2);
 	}
 
 	tbody tr:last-child td {

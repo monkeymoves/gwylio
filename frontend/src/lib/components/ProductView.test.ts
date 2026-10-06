@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/svelte';
 import { describe, expect, it } from 'vitest';
 import { snapshot } from '../../../tests/fixtures';
 import type { ProductDetail } from '$lib/data/types.generated';
-import ProductView, { headingTag } from './ProductView.svelte';
+import ProductView, { WIDE_TABLE_COLUMNS, headingTag } from './ProductView.svelte';
 
 const intsum = snapshot<ProductDetail>('products/operational-2026-10.json');
 
@@ -28,6 +28,24 @@ describe('ProductView', () => {
 				expect.arrayContaining(first.headers)
 			);
 		}
+	});
+
+	it('sets a table with many columns tighter, so the runs table fits at desktop width', () => {
+		const headers = (n: number) => Array.from({ length: n }, (_, i) => `Column ${i + 1}`);
+		const section = (n: number) => ({
+			heading: `Table of ${n}`,
+			depth: 2,
+			body: [],
+			tables: [{ headers: headers(n), rows: [headers(n)] }],
+			bullets: []
+		});
+		const product = {
+			...intsum,
+			sections: [section(WIDE_TABLE_COLUMNS), section(WIDE_TABLE_COLUMNS + 3)]
+		};
+		const { container } = render(ProductView, { product });
+		const tables = [...container.querySelectorAll('table')];
+		expect(tables.map((table) => table.classList.contains('wide'))).toEqual([false, true]);
 	});
 
 	it('clamps unusual depths to h2 to h4', () => {

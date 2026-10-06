@@ -23,6 +23,7 @@
 
 	--font-body: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 	--font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+	--text-xs: 0.8125rem;
 	--text-sm: 0.875rem;
 	--text-md: 1rem;
 	--text-lg: 1.25rem;

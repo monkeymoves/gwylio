@@ -1,0 +1,209 @@
+{
+  "schema": "gwylio.submission/1",
+  "run_id": "20261005T0900Z-0000",
+  "analyst": "dry run fixture",
+  "rubric_version": "2026.10",
+  "received_on": "2026-10-05",
+  "dispositions": [
+    {
+      "candidate_id": "c-20261005t0900z-0000-f27aba",
+      "outcome": "promoted",
+      "reason": "Passes all four tests: external, consequential for flood resilience, verifiable from the page and new.",
+      "report_id": "audit-wales-flood-risk-follow-up-2026"
+    },
+    {
+      "candidate_id": "c-20261005t0900z-0000-1da2b9",
+      "outcome": "rejected",
+      "reason": "Fails test 2, consequential: a general review of the sustainable development principle with no new development for any requirement.",
+      "report_id": null
+    },
+    {
+      "candidate_id": "c-20261005t0900z-0000-ca28b8",
+      "outcome": "promoted",
+      "reason": "Passes all four tests; an independent report from an unwatched outlet, so the reliability is given by hand.",
+      "report_id": "peatland-restoration-5000-hectares"
+    },
+    {
+      "candidate_id": "c-20261005t0900z-0000-4ade82",
+      "outcome": "promoted",
+      "reason": "Passes all four tests: the plan sets how habitat restoration will be funded to 2030.",
+      "report_id": "nature-recovery-action-plan-2026"
+    },
+    {
+      "candidate_id": "c-20261005t0900z-0000-0f4ef1",
+      "outcome": "duplicate",
+      "reason": "The same funding development as the Nature Recovery Action Plan, reported second hand.",
+      "report_id": "nature-recovery-action-plan-2026"
+    },
+    {
+      "candidate_id": "c-20261005t0900z-0000-4360c6",
+      "outcome": "rejected",
+      "reason": "Fails test 4, new or moved: a research briefing restating commitments already in the register.",
+      "report_id": null
+    },
+    {
+      "candidate_id": "c-20261005t0900z-0000-f89b6f",
+      "outcome": "promoted",
+      "reason": "Passes all four tests: a committee inquiry into whether the statutory targets are achievable.",
+      "report_id": "biodiversity-targets-inquiry-2026"
+    },
+    {
+      "candidate_id": "c-20261005t0900z-0000-1197d1",
+      "outcome": "deferred",
+      "reason": "Not judged yet: the explanatory memorandum is long and is read in the next pass.",
+      "report_id": null
+    },
+    {
+      "candidate_id": "c-20261005t0900z-0000-fa2f40",
+      "outcome": "promoted",
+      "reason": "Passes all four tests: the statutory progress report finds land use off track.",
+      "report_id": "ccc-wales-progress-2026"
+    },
+    {
+      "candidate_id": "c-20261005t0900z-0000-41fac8",
+      "outcome": "rejected",
+      "reason": "Fails test 2, consequential: a United Kingdom retrospective with no new Welsh development.",
+      "report_id": null
+    }
+  ],
+  "promotions": [
+    {
+      "id": "audit-wales-flood-risk-follow-up-2026",
+      "from_candidate": "c-20261005t0900z-0000-f27aba",
+      "title": "Audit Wales follows up its review of flood risk management",
+      "url": "https://www.audit.wales/publication/flood-risk-management-follow-up-review",
+      "source_id": "audit-wales",
+      "source_name": "Audit Wales",
+      "report_type": "research",
+      "credibility": 2,
+      "assessments": [{"requirement_id": "si8", "direction": "informs_baseline"}],
+      "topics": ["flood-risk", "governance-and-funding"],
+      "hazards": ["river-and-surface-water-flooding"],
+      "places": ["wales"],
+      "scores": {
+        "evidence": "high",
+        "novelty": "medium",
+        "confidence": "high",
+        "potential_impact": "medium",
+        "time_horizon": "near_term"
+      },
+      "bucket": "watch",
+      "summary": "Audit Wales followed up its 2024 review of how councils and partners manage flood risk."
+    },
+    {
+      "id": "peatland-restoration-5000-hectares",
+      "from_candidate": "c-20261005t0900z-0000-ca28b8",
+      "title": "Peatland restoration in Wales passes 5,000 hectares",
+      "url": "https://www.bbc.co.uk/news/articles/c4g7wales2026",
+      "source_id": null,
+      "source_name": "BBC Wales News",
+      "actor_id": "bbc-wales",
+      "lane": "independent-media",
+      "report_type": "environmental",
+      "credibility": 3,
+      "reliability_if_unknown_source": "C",
+      "assessments": [
+        {"requirement_id": "si6", "direction": "supports"},
+        {"requirement_id": "si2", "direction": "supports"}
+      ],
+      "topics": ["peatland"],
+      "hazards": [],
+      "places": ["mid-wales"],
+      "scores": {
+        "evidence": "medium",
+        "novelty": "medium",
+        "confidence": "medium",
+        "potential_impact": "medium",
+        "time_horizon": "medium_term"
+      },
+      "bucket": "watch",
+      "summary": "The scheme says work to rewet upland bogs across mid Wales has passed 5,000 hectares; reported second hand."
+    },
+    {
+      "id": "nature-recovery-action-plan-2026",
+      "from_candidate": "c-20261005t0900z-0000-4ade82",
+      "title": "Nature Recovery Action Plan for Wales 2026 to 2030",
+      "url": "https://www.gov.wales/nature-recovery-action-plan-wales-2026-2030",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "report_type": "policy",
+      "credibility": 2,
+      "assessments": [
+        {"requirement_id": "si1", "direction": "supports"},
+        {"requirement_id": "si2", "direction": "supports"}
+      ],
+      "topics": ["nature-and-ecosystems", "governance-and-funding"],
+      "hazards": [],
+      "places": ["wales"],
+      "scores": {
+        "evidence": "high",
+        "novelty": "high",
+        "confidence": "high",
+        "potential_impact": "high",
+        "time_horizon": "near_term"
+      },
+      "bucket": "brief",
+      "summary": "The Welsh Government sets out how habitat restoration will be funded through the Nature Networks Programme to 2030."
+    },
+    {
+      "id": "biodiversity-targets-inquiry-2026",
+      "from_candidate": "c-20261005t0900z-0000-f89b6f",
+      "title": "Senedd committee inquiry into the biodiversity targets",
+      "url": "https://senedd.wales/committees/climate-change-environment-and-infrastructure-committee/biodiversity-targets-inquiry/",
+      "source_id": "senedd-cymru",
+      "source_name": "Senedd Cymru",
+      "report_type": "policy",
+      "credibility": 3,
+      "assessments": [{"requirement_id": "si1", "direction": "neutral"}],
+      "topics": ["nature-and-ecosystems"],
+      "hazards": [],
+      "places": ["wales"],
+      "scores": {
+        "evidence": "medium",
+        "novelty": "high",
+        "confidence": "medium",
+        "potential_impact": "high",
+        "time_horizon": "near_term"
+      },
+      "bucket": "follow_up",
+      "event_horizon": "2026-12-01",
+      "summary": "The Climate Change, Environment and Infrastructure Committee is examining whether the statutory biodiversity targets for Wales are achievable by 2030; direction unclear.",
+      "owner": "Evidence team",
+      "notes": "Read the committee's terms of reference and note the evidence deadline."
+    },
+    {
+      "id": "ccc-wales-progress-2026",
+      "from_candidate": "c-20261005t0900z-0000-fa2f40",
+      "title": "Climate Change Committee: progress in reducing emissions in Wales, 2026",
+      "url": "https://www.theccc.org.uk/publication/progress-in-reducing-emissions-in-wales-2026/",
+      "source_id": "climate-change-committee",
+      "source_name": "Climate Change Committee",
+      "report_type": "research",
+      "credibility": 2,
+      "assessments": [{"requirement_id": "si6", "direction": "threatens"}],
+      "topics": ["climate-emissions"],
+      "hazards": [],
+      "places": ["wales"],
+      "scores": {
+        "evidence": "high",
+        "novelty": "medium",
+        "confidence": "high",
+        "potential_impact": "high",
+        "time_horizon": "near_term"
+      },
+      "bucket": "brief",
+      "last_verified": "2026-10-05",
+      "summary": "Emissions in Wales fell 3 per cent in 2025, but the Committee finds land use off track."
+    }
+  ],
+  "updates": [],
+  "reinforcements": [],
+  "verifications": [
+    {
+      "report_id": "ccc-wales-progress-2026",
+      "verified_on": "2026-10-05",
+      "note": "Checked the figures against the published report on theccc.org.uk."
+    }
+  ],
+  "method_note": "Dry run fixture: every candidate of the run read; five promoted, three rejected, one duplicate and one deferred. Optimism: the Climate Change Committee report threatens SI6 and the inquiry could go either way. Mainstream: one promotion, the BBC report, is not government or a regulator. Streetlight: SI9, SI11 and SI12 have low or no scanability and stay blind spots."
+}
