@@ -1,0 +1,109 @@
+/*
+ * Design tokens for Gwylio. Every colour, space and type size the site uses is
+ * defined here, with light values by default and dark values under
+ * prefers-color-scheme. A data-theme attribute on the root element can force
+ * either scheme.
+ */
+
+:root {
+	color-scheme: light dark;
+
+	--color-bg: #f7f6f2;
+	--color-surface: #ffffff;
+	--color-text: #1d2422;
+	--color-text-muted: #55605c;
+	--color-border: #d6dbd8;
+	--color-accent: #0b5d4b;
+	--color-accent-contrast: #ffffff;
+
+	--color-good: #1f6f43;
+	--color-warn: #8a5a00;
+	--color-bad: #a3262a;
+	--color-neutral: #4b5754;
+
+	--font-body: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	--font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+	--text-sm: 0.875rem;
+	--text-md: 1rem;
+	--text-lg: 1.25rem;
+	--text-xl: 1.75rem;
+
+	--space-1: 4px;
+	--space-2: 8px;
+	--space-3: 12px;
+	--space-4: 16px;
+	--space-6: 24px;
+	--space-8: 32px;
+
+	--gutter: var(--space-6);
+	--content-max: 72rem;
+	--radius: 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme='light']) {
+		--color-bg: #121715;
+		--color-surface: #1a211f;
+		--color-text: #e7ece9;
+		--color-text-muted: #a5b0ac;
+		--color-border: #33403c;
+		--color-accent: #5fc2a6;
+		--color-accent-contrast: #0c1311;
+
+		--color-good: #6fcf97;
+		--color-warn: #f2c14e;
+		--color-bad: #f28b82;
+		--color-neutral: #b4bfbb;
+	}
+}
+
+:root[data-theme='dark'] {
+	--color-bg: #121715;
+	--color-surface: #1a211f;
+	--color-text: #e7ece9;
+	--color-text-muted: #a5b0ac;
+	--color-border: #33403c;
+	--color-accent: #5fc2a6;
+	--color-accent-contrast: #0c1311;
+
+	--color-good: #6fcf97;
+	--color-warn: #f2c14e;
+	--color-bad: #f28b82;
+	--color-neutral: #b4bfbb;
+}
+
+/* Phone width: 16px side gutter. */
+@media (max-width: 600px) {
+	:root {
+		--gutter: var(--space-4);
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+}
+
+body {
+	background: var(--color-bg);
+	color: var(--color-text);
+	font-family: var(--font-body);
+	font-size: var(--text-md);
+	line-height: 1.5;
+	overflow-wrap: anywhere;
+}
+
+img,
+svg,
+video {
+	max-width: 100%;
+	height: auto;
+}

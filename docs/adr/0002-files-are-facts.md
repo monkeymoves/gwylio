@@ -1,0 +1,52 @@
+# ADR 0002: Files are the facts; the database is a projection
+
+- Status: accepted
+- Date: 2026-10-06
+- Deciders: Luke Maggs, with the planning agent
+
+## Context
+
+The previous tool stored its register as a hand-edited JavaScript Object
+Notation (JSON) file with no scan log, so it could not reconstruct what had
+been seen when, and its fade rule never worked. Gwylio needs relational
+queries (reports by requirement, sightings by run, yield by source) but also
+needs a history that a reviewer can read in git and that survives a corrupted
+or deleted database.
+
+## Decision
+
+- `data/candidates/<run_id>.json` (what a scan run collected) and
+  `data/submissions/<run_id>__<n>.json` (what the analyst judged) are the
+  facts. They are append-only: never edited after they are written, only
+  followed by later files. They are committed to git.
+- SQLite (`data/gwylio.sqlite`) is a projection. `gwylio rebuild`
+  reconstructs it from configuration plus the candidates and submissions on
+  disk, in order. The database file is not committed.
+- `data/exports/register.json` is a deterministic export of the register,
+  committed after each ingest so the current state is readable in a diff. It
+  is derived and is never read back as input.
+- Changes to existing intelligence reports go through a submission's
+  `updates` block, so they too are facts on disk. Hand edits to the database
+  are lost on rebuild, by design.
+- Git is the audit history: one commit per scan or ingest, with a dated message.
+
+## Consequences
+
+- The whole register can be rebuilt and checked at any time; a rebuild
+  equivalence test proves the projection matches.
+- Correcting a mistake means writing a new submission, never rewriting an old
+  file. That is slower for small fixes but keeps the history honest.
+- Ingest must be all or nothing: any validation error writes nothing.
+- The data directory grows with every run; that is acceptable at a few runs a
+  month and can be archived by year if it ever matters.
+- Seeding from the previous tool also goes through a file: `import-legacy`
+  writes a legacy submission and ingests it, so the seed is itself a fact.
+
+## Alternatives considered
+
+- **Database as the source of truth with backups.** Simpler writes, but no
+  readable history and no way to see why a report changed.
+- **JSON register edited in place.** What the previous tool did; it lost the
+  scan log and mixed facts with derived state.
+- **Event store with a framework.** More machinery than a few files per month
+  need.
