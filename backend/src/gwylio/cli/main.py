@@ -1,7 +1,9 @@
 """Entry point for the ``gwylio`` command line tool.
 
-Each verb's logic lives in its own module (``check.py``, ``schema.py``);
-this module only declares the Typer commands and registers them.
+Each verb's logic lives in its own module (``check.py``, ``schema.py``,
+``collect.py``, ``database.py``); this module only declares the Typer commands
+and registers them. Every command takes its paths from one ``Settings``
+object, built by ``_settings`` from ``--root`` and the ``GWYLIO_`` environment.
 """
 
 from __future__ import annotations
@@ -11,13 +13,15 @@ from pathlib import Path
 from typing import Annotated
 
 import typer
+from pydantic import ValidationError
 from typer.main import get_command
 
 from gwylio.cli.check import run_check
 from gwylio.cli.collect import run_collect, run_probe
+from gwylio.cli.database import run_export, run_migrate, run_rebuild
 from gwylio.cli.schema import run_schema
 from gwylio.collection.model import Discipline
-from gwylio.infrastructure.config.paths import find_project_root
+from gwylio.infrastructure.config.settings import Settings
 
 app = typer.Typer(
     name="gwylio",
@@ -52,11 +56,16 @@ def cli_verbs() -> tuple[tuple[str, str], ...]:
     return tuple((name, commands[name].get_short_help_str(limit=120)) for name in sorted(commands))
 
 
-def _root(root: Path | None) -> Path:
+def _settings(root: Path | None) -> Settings:
+    """The settings every command uses: ``--root`` (or the found root) plus the environment."""
     try:
-        return root.resolve() if root is not None else find_project_root()
+        return Settings.load(root)
     except FileNotFoundError as error:
         typer.echo(f"error  {error}", err=True)
+        raise typer.Exit(code=2) from error
+    except ValidationError as error:
+        for detail in error.errors(include_url=False):
+            typer.echo(f"error  settings: {detail['msg']}", err=True)
         raise typer.Exit(code=2) from error
 
 
@@ -74,7 +83,7 @@ def version_command() -> None:
 @app.command("check")
 def check_command(root: RootOption = None) -> None:
     """Validate every configuration file and print a summary per file."""
-    raise typer.Exit(code=run_check(_root(root)))
+    raise typer.Exit(code=run_check(_settings(root).config_root))
 
 
 @app.command("schema")
@@ -85,7 +94,7 @@ def schema_command(
     ] = False,
 ) -> None:
     """Generate JSON Schema, TypeScript types, the glossary and the skill reference."""
-    raise typer.Exit(code=run_schema(_root(root), cli_verbs(), check_only=check))
+    raise typer.Exit(code=run_schema(_settings(root).root, cli_verbs(), check_only=check))
 
 
 @app.command("collect")
@@ -95,12 +104,28 @@ def collect_command(
         bool,
         typer.Option("--dry-run", help="Use fake collectors and in-memory storage; keep nothing."),
     ] = False,
+    fake: Annotated[
+        bool,
+        typer.Option(
+            "--fake",
+            help="Use fake collectors with real storage: SQLite plus the candidates file.",
+        ),
+    ] = False,
     out: Annotated[
         Path | None,
         typer.Option(
             "--out",
-            help="Write the candidates file here (default: standard output).",
+            help="With --dry-run: write the candidates file here (default: standard output).",
             dir_okay=False,
+        ),
+    ] = None,
+    out_dir: Annotated[
+        Path | None,
+        typer.Option(
+            "--out-dir",
+            help="With --fake: use this data directory (database and candidates file) instead "
+            "of the settings data directory.",
+            file_okay=False,
         ),
     ] = None,
     discipline: Annotated[
@@ -114,7 +139,14 @@ def collect_command(
 ) -> None:
     """Run the instrument once and write a candidates file, printing the funnel."""
     raise typer.Exit(
-        code=run_collect(_root(root), dry_run=dry_run, out=out, disciplines=discipline or ())
+        code=run_collect(
+            _settings(root),
+            dry_run=dry_run,
+            fake=fake,
+            out=out,
+            out_dir=out_dir,
+            disciplines=discipline or (),
+        )
     )
 
 
@@ -131,7 +163,25 @@ def probe_command(
     root: RootOption = None,
 ) -> None:
     """Try one query text and print its hits, storing nothing."""
-    raise typer.Exit(code=run_probe(_root(root), text, discipline, source or ()))
+    raise typer.Exit(code=run_probe(_settings(root), text, discipline, source or ()))
+
+
+@app.command("migrate")
+def migrate_command(root: RootOption = None) -> None:
+    """Create or upgrade the SQLite database at the settings database path."""
+    raise typer.Exit(code=run_migrate(_settings(root)))
+
+
+@app.command("export")
+def export_command(root: RootOption = None) -> None:
+    """Write the deterministic runs export, data/exports/runs.json, from the database."""
+    raise typer.Exit(code=run_export(_settings(root)))
+
+
+@app.command("rebuild")
+def rebuild_command(root: RootOption = None) -> None:
+    """Rebuild the database from config/ and the files under data/, printing row counts."""
+    raise typer.Exit(code=run_rebuild(_settings(root)))
 
 
 if __name__ == "__main__":  # pragma: no cover

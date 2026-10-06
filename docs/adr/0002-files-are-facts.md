@@ -50,3 +50,18 @@ or deleted database.
   scan log and mixed facts with derived state.
 - **Event store with a framework.** More machinery than a few files per month
   need.
+
+## Addendum: what persistence added (work package 3)
+
+- `data/instruments/<version>.json` joins the facts. A candidates file names
+  its instrument by version and hash only, and `config/instrument.json`
+  holds only the current version, so `gwylio collect` archives each version
+  it uses, once, in the same format. A rebuild stores every archived version.
+- A run that aborts writes a candidates file too (`run_status: aborted`, no
+  candidates, a note saying why), so the aborted run in the database can also
+  be rebuilt.
+- A stored run writes its files inside its database transaction, before the
+  commit: if the commit fails the file stays and a rebuild restores the run,
+  never the other way round.
+- Rebuild replays runs in the order they started (run ids sort only to the
+  minute) and builds into a scratch file, replacing the database only on success.

@@ -10,7 +10,10 @@ Every closed value and identifier the analyst skill may write into a submission,
 |---|---|
 | `gwylio check` | Validate every configuration file and print a summary per file. |
 | `gwylio collect` | Run the instrument once and write a candidates file, printing the funnel. |
+| `gwylio export` | Write the deterministic runs export, data/exports/runs.json, from the database. |
+| `gwylio migrate` | Create or upgrade the SQLite database at the settings database path. |
 | `gwylio probe` | Try one query text and print its hits, storing nothing. |
+| `gwylio rebuild` | Rebuild the database from config/ and the files under data/, printing row counts. |
 | `gwylio schema` | Generate JSON Schema, TypeScript types, the glossary and the skill reference. |
 | `gwylio version` | Print the package version. |
 

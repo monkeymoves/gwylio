@@ -171,3 +171,49 @@ def broken(change: str) -> dict[str, Any]:
 def test_inconsistent_documents_are_refused(change: str, fragment: str) -> None:
     with pytest.raises(ValidationError, match=re.escape(fragment)):
         CandidatesFile.model_validate(broken(change))
+
+
+def aborted_document() -> dict[str, Any]:
+    doc = document()
+    doc["run_status"] = "aborted"
+    doc["funnel"] = {name: 0 for name in doc["funnel"]} | {"raw": 6}
+    doc["notes"] = ["aborted: ConnectionError: network down"]
+    doc["candidates"] = []
+    doc["reinforcements"] = []
+    doc["sightings"] = []
+    return doc
+
+
+def test_a_complete_run_is_the_default_status() -> None:
+    assert CandidatesFile.model_validate(document()).run_status == "complete"
+
+
+def test_an_aborted_run_keeps_only_its_raw_count_and_a_note() -> None:
+    parsed = CandidatesFile.model_validate(aborted_document())
+    assert parsed.run_status == "aborted"
+    assert parsed.funnel.raw == 6
+    assert json.loads(dumps_candidates(parsed))["run_status"] == "aborted"
+
+
+@pytest.mark.parametrize(
+    ("change", "fragment"),
+    [
+        ("candidates", "an aborted run keeps no candidates"),
+        ("funnel", "counts only raw hits, but passed is set"),
+        ("notes", "needs a note saying why it stopped"),
+        ("status", "Input should be 'complete' or 'aborted'"),
+    ],
+)
+def test_an_aborted_run_that_kept_something_is_refused(change: str, fragment: str) -> None:
+    doc = aborted_document()
+    if change == "candidates":
+        doc["candidates"] = [candidate("c-a", "gov.wales/a")]
+        doc["sightings"] = [sighting("s-1", "c-a")]
+    elif change == "funnel":
+        doc["funnel"]["passed"] = 1
+    elif change == "notes":
+        doc["notes"] = []
+    elif change == "status":
+        doc["run_status"] = "running"
+    with pytest.raises(ValidationError, match=re.escape(fragment)):
+        CandidatesFile.model_validate(doc)

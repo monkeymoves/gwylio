@@ -60,12 +60,16 @@ def _funnel_counts(funnel: Funnel) -> FunnelCounts:
 
 
 def candidates_document(result: RunResult) -> CandidatesFile:
-    """The candidates file for a completed run, in normalised order."""
+    """The candidates file for a finished (complete or aborted) run, in normalised order."""
     run = result.run
-    if run.status is not RunStatus.COMPLETE or run.finished_at is None:
+    if run.status is RunStatus.RUNNING or run.finished_at is None:
         raise CandidatesFileError(
-            f"run {run.id} is {run.status.value}; only complete runs are written"
+            f"run {run.id} is {run.status.value}; only finished runs are written"
         )
+    if run.status is RunStatus.ABORTED and (
+        result.candidates or result.sightings or result.reinforcements
+    ):
+        raise CandidatesFileError(f"run {run.id} aborted, so it keeps no candidates")
     candidates = [
         CandidateEntry(
             candidate_id=c.id,
@@ -89,6 +93,7 @@ def candidates_document(result: RunResult) -> CandidatesFile:
     document = CandidatesFile(
         format=CANDIDATES_FORMAT,
         run_id=run.id,
+        run_status="aborted" if run.status is RunStatus.ABORTED else "complete",
         instrument_version=run.instrument_version,
         instrument_hash=run.instrument_hash,
         generated_at=run.finished_at,
@@ -137,7 +142,7 @@ def result_from_document(document: CandidatesFile) -> RunResult:
         instrument_hash=document.instrument_hash,
         disciplines=tuple(document.disciplines_run),
         request_budget=document.max_requests_per_run,
-        status=RunStatus.COMPLETE,
+        status=RunStatus(document.run_status),
         finished_at=document.finished_at,
         funnel=Funnel(
             f.raw,

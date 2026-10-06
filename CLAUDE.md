@@ -18,12 +18,16 @@ make ci        # check, then test, then the static frontend build
 make e2e       # build the site, serve it with vite preview, run Playwright, write screenshots
 make schema    # regenerate JSON Schema, TypeScript types, GLOSSARY.md and skill/REFERENCE.md
 uv run --directory backend gwylio check     # validate every file under config/
-uv run --directory backend gwylio collect --dry-run --out /tmp/c.json   # fake collectors, prints the funnel
+uv run --directory backend gwylio collect --dry-run --out /tmp/c.json   # fake collectors, nothing persisted
+uv run --directory backend gwylio migrate        # create or upgrade data/gwylio.sqlite
+uv run --directory backend gwylio collect --fake # fake collectors with real persistence and a candidates file
+uv run --directory backend gwylio export         # write data/exports/runs.json
+uv run --directory backend gwylio rebuild        # rebuild the database from config plus data files
 uv run --directory backend gwylio probe "drought" --discipline osint_web  # try a query, stores nothing
 ```
 
 `seed`, `dev`, `collect`, `ingest` and `publish` are stubs until their work
-packages land; each prints which one. `gwylio collect` without `--dry-run`
+packages land; each prints which one. `gwylio collect` without `--dry-run` or `--fake`
 exits 2 until the real collectors arrive (WP4). A scan runs osint_web,
 osint_site and osint_feed by default; set `GWYLIO_ACADEMIC=1` or pass
 `--discipline osint_academic` to add the academic indexes.
@@ -51,7 +55,10 @@ instrument holds still.
 - **Files are facts.** Candidates files and submissions under `data/` are
   append-only and committed. SQLite is a projection rebuilt from configuration
   plus those files; hand edits to the database are lost on rebuild by design.
-  `data/exports/register.json` is a derived export. See ADR 0002.
+  `data/instruments/<version>.json` archives each instrument version a run
+  used, so a rebuild can restore it. `data/exports/register.json` is a
+  derived export. Settings come from `GWYLIO_DATA_DIR`, `GWYLIO_CONFIG_DIR`
+  and `GWYLIO_DB_PATH`. See ADR 0002.
 - **Generated files are never edited by hand.** `docs/schema/`,
   `docs/GLOSSARY.md`, `skill/REFERENCE.md` and
   `frontend/src/lib/data/types.generated.ts` come from `gwylio schema`.

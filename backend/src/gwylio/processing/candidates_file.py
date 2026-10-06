@@ -6,11 +6,16 @@ candidates, their sightings and the reinforcements spotted at collection. This
 module holds the contract only (Pydantic models, pure text conversion and the
 consistency rules); reading and writing the file is infrastructure's job.
 
-The file lists every candidate of the run with its ``status``: ``new`` ones
+A complete run's file lists every candidate of the run with its ``status``: ``new`` ones
 are what the analyst triages; ``seen_before`` ones were recorded by an earlier
 run; ``reinforcement`` ones matched an existing report, named in
 ``reinforcements``. Ordering is deterministic: candidates by canonical URL,
 reinforcements by report id then candidate id, sightings by sighting id.
+
+A run that aborted (a collector failed unexpectedly) is a fact too: its file
+has ``run_status`` ``aborted``, no candidates, sightings or reinforcements, and
+a funnel that counts only the raw hits collected before it stopped. Its last
+note says why it stopped.
 """
 
 from __future__ import annotations
@@ -138,6 +143,10 @@ class CandidatesFile(_FileModel):
 
     format: Literal["gwylio.candidates/1"] = Field(description="Always gwylio.candidates/1.")
     run_id: RunIdText
+    run_status: Literal["complete", "aborted"] = Field(
+        default="complete",
+        description="complete, or aborted when a collector failed: then nothing was kept.",
+    )
     instrument_version: Prose
     instrument_hash: str = Field(pattern=r"^sha256:[0-9a-f]{64}$")
     generated_at: AwareDatetime
@@ -164,7 +173,10 @@ class CandidatesFile(_FileModel):
     def problems(self) -> list[str]:
         """Every way the file contradicts itself, as sentences."""
         found: list[str] = []
-        found.extend(_funnel_problems(self.funnel))
+        if self.run_status == "aborted":
+            found.extend(self._aborted_problems())
+        else:
+            found.extend(_funnel_problems(self.funnel))
         if self.finished_at < self.started_at:
             found.append("finished_at is before started_at")
         if len(set(self.disciplines_run)) != len(self.disciplines_run):
@@ -200,6 +212,18 @@ class CandidatesFile(_FileModel):
                 found.append(
                     f"funnel {name} is {getattr(self.funnel, name)} but the file has {count}"
                 )
+        return found
+
+    def _aborted_problems(self) -> list[str]:
+        found: list[str] = []
+        for name in ("candidates", "sightings", "reinforcements"):
+            if getattr(self, name):
+                found.append(f"an aborted run keeps no {name}")
+        for name in FunnelCounts.model_fields:
+            if name != "raw" and getattr(self.funnel, name) != 0:
+                found.append(f"an aborted run's funnel counts only raw hits, but {name} is set")
+        if not self.notes:
+            found.append("an aborted run needs a note saying why it stopped")
         return found
 
     def _candidate_problems(

@@ -19,3 +19,21 @@ make ci      # lint, type check, unit tests and the static build
 make e2e     # Playwright smoke test with screenshots in docs/evidence/
 uv run --directory backend gwylio version
 ```
+
+## The database
+
+SQLite under `data/gwylio.sqlite` is a projection of `config/` plus the
+facts under `data/` (candidates files and archived instrument versions), and
+can be rebuilt from them at any time (see `docs/adr/0002-files-are-facts.md`).
+
+```bash
+uv run --directory backend gwylio migrate          # create or upgrade the database
+uv run --directory backend gwylio collect --fake   # a run on fake collectors, stored
+uv run --directory backend gwylio export           # data/exports/runs.json
+uv run --directory backend gwylio rebuild          # rebuild the database from the files
+```
+
+Paths come from environment variables: `GWYLIO_DATA_DIR` (default `data`),
+`GWYLIO_CONFIG_DIR` (default `config`) and `GWYLIO_DB_PATH` (default
+`<data_dir>/gwylio.sqlite`). Point `GWYLIO_DATA_DIR` at a scratch directory
+when trying `collect --fake`, so no fake run lands in the real `data/`.

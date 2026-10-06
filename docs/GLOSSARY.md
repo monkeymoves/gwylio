@@ -16,7 +16,7 @@ The ubiquitous language of Gwylio, the Welsh environmental open-source intellige
 
 **Candidate**: A gated, deduplicated hit, one per canonical URL per scan run, waiting for the analyst's judgement.
 
-**Candidates file**: The file a scan run writes to data/candidates/<run_id>.json in the format gwylio.candidates/1: the run, its funnel, every candidate, every sighting and every reinforcement. It is an append-only fact from which the database can be rebuilt.
+**Candidates file**: The file a scan run writes to data/candidates/<run_id>.json in the format gwylio.candidates/1: the run, its funnel, every candidate, every sighting and every reinforcement. It is an append-only fact from which the database can be rebuilt. A run that aborted writes one too, with no candidates and a note saying why it stopped.
 
 **Canonical URL**: The identity of a web address (uniform resource locator, URL) used for deduplication: no scheme, no www, no fragment, no trailing slash and no tracking parameters, with other query parameters kept.
 
@@ -66,6 +66,8 @@ The ubiquitous language of Gwylio, the Welsh environmental open-source intellige
 
 **Instrument**: The versioned query set used for collection, identified by a content hash so that results are only compared between runs that used the same instrument.
 
+**Instrument archive**: The files under data/instruments/, one per instrument version a scan run used, in the format of config/instrument.json. Written once and never changed, so a run can be rebuilt after the instrument moves on.
+
 **Intelligence**: The stage that holds the register of intelligence reports. The analysis itself happens outside the app, in the analyst skill working against the rubric.
 
 **Intelligence report**: An entry in the register: a judged signal with its grading, assessments, tags, sightings and history.
@@ -92,9 +94,13 @@ The ubiquitous language of Gwylio, the Welsh environmental open-source intellige
 
 **Product**: A finished output of the register at one level: strategic (annual), operational (monthly INTSUM) or tactical (alert).
 
+**Projection**: The SQLite database: a view of the configuration plus the facts under data/, never the record itself. Hand edits to it are lost on rebuild by design.
+
 **Quiet**: Coverage status of a requirement with high or medium scanability and no active reports: the sources could see movement and there is none.
 
 **Raw hit**: One result returned by a collector, before any gate or deduplication.
+
+**Rebuild**: Reconstructing the projection from config/ and the files under data/, replaying runs in the order they started. A rebuilt database equals the one the commands wrote.
 
 **Reference**: The shared catalogues every other context points at: the taxonomy, topics, hazards, places, actors and lanes.
 

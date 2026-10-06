@@ -295,7 +295,24 @@ GLOSSARY: Final[tuple[tuple[str, str], ...]] = (
         "Candidates file",
         "The file a scan run writes to data/candidates/<run_id>.json in the format "
         "gwylio.candidates/1: the run, its funnel, every candidate, every sighting and every "
-        "reinforcement. It is an append-only fact from which the database can be rebuilt.",
+        "reinforcement. It is an append-only fact from which the database can be rebuilt. A "
+        "run that aborted writes one too, with no candidates and a note saying why it stopped.",
+    ),
+    (
+        "Instrument archive",
+        "The files under data/instruments/, one per instrument version a scan run used, in "
+        "the format of config/instrument.json. Written once and never changed, so a run can be "
+        "rebuilt after the instrument moves on.",
+    ),
+    (
+        "Projection",
+        "The SQLite database: a view of the configuration plus the facts under data/, never "
+        "the record itself. Hand edits to it are lost on rebuild by design.",
+    ),
+    (
+        "Rebuild",
+        "Reconstructing the projection from config/ and the files under data/, replaying runs "
+        "in the order they started. A rebuilt database equals the one the commands wrote.",
     ),
     (
         "Index echo",

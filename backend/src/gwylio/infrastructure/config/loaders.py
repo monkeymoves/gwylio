@@ -71,6 +71,7 @@ __all__ = [
     "ConfigProblem",
     "FileSummary",
     "LoadedConfig",
+    "build_instrument",
     "check_config",
     "load_config",
 ]
@@ -303,6 +304,20 @@ def _query(config: QueryConfig) -> Query:
         topic_hints=tuple(KebabId(hint) for hint in config.topic_hints),
         negative_terms=tuple(CleanText(term) for term in config.negative_terms),
         site_source_ids=tuple(KebabId(source) for source in config.site_source_ids),
+    )
+
+
+def build_instrument(parsed: InstrumentFile) -> QueryInstrument:
+    """The instrument an instrument file describes, checked on its own (no cross-references).
+
+    Raises ``ValueError`` when a query or the instrument is malformed.
+    """
+    return QueryInstrument(
+        version=CleanText(parsed.version),
+        content_hash=parsed.content_hash,
+        global_negative_terms=tuple(CleanText(t) for t in parsed.global_negative_terms),
+        max_requests_per_run=parsed.max_requests_per_run,
+        queries=tuple(_query(query) for query in parsed.queries),
     )
 
 

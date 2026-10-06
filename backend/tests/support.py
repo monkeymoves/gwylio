@@ -29,6 +29,12 @@ from gwylio.infrastructure.memory import (
     NullKnownReports,
     StaticKnownReports,
 )
+from gwylio.infrastructure.sqlite.db import Database
+from gwylio.infrastructure.sqlite.repositories import (
+    SqliteCandidateRepository,
+    SqliteInstrumentRepository,
+    SqliteScanRunRepository,
+)
 from gwylio.reference.model import (
     HAZARD_FAMILIES_AXIS,
     SONARR_AXIS,
@@ -247,3 +253,31 @@ def earlier_candidate() -> Candidate:
         discipline=Discipline.OSINT_WEB,
         query_id=KebabId("web-partnership-society-02"),
     )
+
+
+# The same scan with SQLite persistence (work package 3).
+
+
+def sqlite_scan(
+    db: Database,
+    config: LoadedConfig,
+    disciplines: tuple[Discipline, ...] = DEFAULT,
+    *,
+    clock: FixedClock = CLOCK,
+    suffix: str = "3f9a",
+    known: StaticKnownReports | NullKnownReports | None = None,
+) -> RunResult:
+    """Run the fake hits through ``RunScan`` with the SQLite repositories, in one transaction."""
+    hits = load_fake_hits(FAKE_HITS)
+    scan = RunScan(
+        collectors={d: FakeCollector(d, hits) for d in disciplines},
+        instruments=SqliteInstrumentRepository(db),
+        runs=SqliteScanRunRepository(db),
+        candidates=SqliteCandidateRepository(db),
+        known=known or NullKnownReports(),
+        rules=config.gating,
+        clock=clock,
+        ids=FixedIdGenerator(suffix),
+    )
+    with db.transaction():
+        return scan.execute(config.instrument, config.sources, disciplines)

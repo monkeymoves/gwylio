@@ -24,6 +24,7 @@ playwright-report/
 # Data: the database is a projection, rebuilt from files on disk
 data/gwylio.sqlite
 data/gwylio.sqlite-*
+data/gwylio.sqlite.rebuilding*
 
 # Local settings and secrets
 config/settings.toml

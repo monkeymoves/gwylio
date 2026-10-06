@@ -56,6 +56,8 @@ export interface CandidatesFile {
 	format: "gwylio.candidates/1";
 	/** A scan run id. */
 	run_id: string;
+	/** complete, or aborted when a collector failed: then nothing was kept. */
+	run_status?: "complete" | "aborted";
 	instrument_version: string;
 	instrument_hash: string;
 	generated_at: string;

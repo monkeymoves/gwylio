@@ -386,6 +386,16 @@
       "title": "Run Id",
       "type": "string"
     },
+    "run_status": {
+      "default": "complete",
+      "description": "complete, or aborted when a collector failed: then nothing was kept.",
+      "enum": [
+        "complete",
+        "aborted"
+      ],
+      "title": "Run Status",
+      "type": "string"
+    },
     "sightings": {
       "items": {
         "$ref": "#/$defs/SightingEntry"

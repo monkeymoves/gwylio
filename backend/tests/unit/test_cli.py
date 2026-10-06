@@ -27,13 +27,22 @@ def test_version_prints_the_package_version() -> None:
 def test_help_lists_every_verb() -> None:
     result = runner.invoke(app, ["--help"])
     assert result.exit_code == 0
-    for verb in ("version", "check", "schema", "collect", "probe"):
+    for verb in ("version", "check", "schema", "collect", "probe", "migrate", "export", "rebuild"):
         assert verb in result.stdout
 
 
 def test_cli_verbs_are_sorted_with_help() -> None:
     verbs = cli_verbs()
-    assert [name for name, _ in verbs] == ["check", "collect", "probe", "schema", "version"]
+    assert [name for name, _ in verbs] == [
+        "check",
+        "collect",
+        "export",
+        "migrate",
+        "probe",
+        "rebuild",
+        "schema",
+        "version",
+    ]
     assert all(help_text for _, help_text in verbs)
 
 
