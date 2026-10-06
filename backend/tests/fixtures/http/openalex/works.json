@@ -1,0 +1,83 @@
+{
+  "notes": "Hand-written OpenAlex works response for 'peatland restoration Wales' (two of the usual fifteen). The first has a DOI and an inverted-index abstract; the second has no DOI, so its landing page is the URL. As the module docstring says, the index ignores geography: the second paper is about Scotland.",
+  "request": {
+    "method": "GET",
+    "url": "https://api.openalex.org/works",
+    "params": {
+      "search": "peatland restoration Wales",
+      "filter": "from_publication_date:2025-10-06",
+      "per_page": "15",
+      "mailto": "analyst@example.org"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/json"
+    },
+    "json": {
+      "meta": {
+        "count": 2,
+        "db_response_time_ms": 41,
+        "page": 1,
+        "per_page": 15
+      },
+      "results": [
+        {
+          "id": "https://openalex.org/W4401234567",
+          "doi": "https://doi.org/10.1016/j.scitotenv.2026.170123",
+          "title": "Carbon outcomes of upland peatland restoration in Wales",
+          "display_name": "Carbon outcomes of upland peatland restoration in Wales",
+          "publication_date": "2026-03-14",
+          "publication_year": 2026,
+          "primary_location": {
+            "landing_page_url": "https://doi.org/10.1016/j.scitotenv.2026.170123",
+            "source": {
+              "display_name": "Science of The Total Environment"
+            }
+          },
+          "abstract_inverted_index": {
+            "Rewetting": [
+              0
+            ],
+            "upland": [
+              1
+            ],
+            "blanket": [
+              2
+            ],
+            "bog": [
+              3
+            ],
+            "in": [
+              4
+            ],
+            "Wales": [
+              5
+            ],
+            "cut": [
+              6
+            ],
+            "emissions.": [
+              7
+            ]
+          }
+        },
+        {
+          "id": "https://openalex.org/W4409876543",
+          "doi": null,
+          "title": "Peatland restoration outcomes \u2013 a Scottish case study",
+          "display_name": "Peatland restoration outcomes \u2013 a Scottish case study",
+          "publication_date": "2025-11-02",
+          "publication_year": 2025,
+          "primary_location": {
+            "landing_page_url": "https://www.example-journal.org/articles/peat-scotland-2025",
+            "source": null
+          },
+          "abstract_inverted_index": null
+        }
+      ],
+      "group_by": []
+    }
+  }
+}

@@ -49,8 +49,8 @@ seed: ## Seed the register from the legacy signals
 dev: ## Run the read API and the dev server together
 	@echo "dev: not yet implemented (WP7)"
 
-collect: ## Run a scan and write a candidates file
-	@echo "collect: real collectors arrive in WP4; on fakes use: $(UV) gwylio collect --dry-run (nothing kept) or --fake (stored)"
+collect: ## Run a scan and write a candidates file (web and site need a Brave key)
+	$(UV) gwylio collect
 
 ingest: ## Ingest an analyst submission
 	@echo "ingest: not yet implemented (WP5)"

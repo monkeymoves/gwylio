@@ -1,0 +1,14 @@
+{
+  "notes": "Hand-written RSS 2.0 feed in the shape of the Climate Change Committee's WordPress feed. Four items: one about Wales (with a CDATA description holding an entity and an en dash), one matching 'seventh carbon budget' only through content:encoded and its title, and two that match neither phrase.",
+  "request": {
+    "method": "GET",
+    "url": "https://www.theccc.org.uk/feed/"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/rss+xml; charset=UTF-8"
+    },
+    "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<rss version=\"2.0\" xmlns:content=\"http://purl.org/rss/1.0/modules/content/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\">\n  <channel>\n    <title>Climate Change Committee</title>\n    <link>https://www.theccc.org.uk</link>\n    <description>Independent advice on tackling climate change</description>\n    <item>\n      <title>Progress in reducing emissions in Wales: 2026 report to the Senedd</title>\n      <link>https://www.theccc.org.uk/publication/progress-in-reducing-emissions-in-wales-2026/</link>\n      <pubDate>Thu, 24 Sep 2026 09:00:00 +0000</pubDate>\n      <description><![CDATA[<p>Our latest assessment of Wales&#8217;s progress \u2013 emissions fell 3% in 2025 &amp; land use remains off track.</p>]]></description>\n    </item>\n    <item>\n      <title>The Seventh Carbon Budget: one year on</title>\n      <link>https://www.theccc.org.uk/publication/seventh-carbon-budget-one-year-on/</link>\n      <pubDate>Mon, 07 Sep 2026 10:30:00 +0100</pubDate>\n      <content:encoded><![CDATA[<p>A look back at the Seventh Carbon Budget advice.</p>]]></content:encoded>\n    </item>\n    <item>\n      <title>Job vacancy: Senior Analyst</title>\n      <link>https://www.theccc.org.uk/careers/senior-analyst/</link>\n      <pubDate>Tue, 01 Sep 2026 08:00:00 +0000</pubDate>\n      <description>Join our analysis team.</description>\n    </item>\n    <item>\n      <title>Adapting to climate change in Northern Ireland</title>\n      <link>https://www.theccc.org.uk/publication/adapting-northern-ireland/</link>\n      <dc:date>2026-08-20T09:00:00Z</dc:date>\n      <description>Advice to the Northern Ireland Executive.</description>\n    </item>\n  </channel>\n</rss>\n"
+  }
+}

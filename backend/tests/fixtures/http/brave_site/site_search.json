@@ -1,0 +1,97 @@
+{
+  "notes": "Hand-written Brave Search API response for a site query over senedd.wales and research.senedd.wales. The second result is the same page as the second web result (without its trailing slash), so it deduplicates into one candidate with two sightings.",
+  "request": {
+    "method": "GET",
+    "url": "https://api.search.brave.com/res/v1/web/search",
+    "params": {
+      "q": "(site:senedd.wales OR site:research.senedd.wales) (\"nature recovery\" OR \"biodiversity targets\")",
+      "count": "20",
+      "country": "GB",
+      "search_lang": "en",
+      "safesearch": "off"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/json"
+    },
+    "json": {
+      "type": "search",
+      "query": {
+        "original": "(site:senedd.wales OR site:research.senedd.wales) (\"nature recovery\" OR \"biodiversity targets\")"
+      },
+      "web": {
+        "type": "search",
+        "results": [
+          {
+            "title": "What next for nature recovery in Wales?",
+            "url": "https://research.senedd.wales/research-articles/what-next-for-nature-recovery-in-wales/",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Senedd Research looks at the <strong>nature recovery</strong> commitments and the gap to 2030.",
+            "profile": {
+              "name": "research.senedd.wales",
+              "url": "https://research.senedd.wales/research-articles/what-next-for-nature-recovery-in-wales/",
+              "long_name": "research.senedd.wales"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "research.senedd.wales",
+              "hostname": "research.senedd.wales"
+            },
+            "page_age": "2026-09-01T00:00:00"
+          },
+          {
+            "title": "Biodiversity targets inquiry",
+            "url": "https://senedd.wales/committees/climate-change-environment-and-infrastructure-committee/biodiversity-targets-inquiry",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Terms of reference for the <strong>biodiversity targets</strong> inquiry.",
+            "profile": {
+              "name": "senedd.wales",
+              "url": "https://senedd.wales/committees/climate-change-environment-and-infrastructure-committee/biodiversity-targets-inquiry",
+              "long_name": "senedd.wales"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "senedd.wales",
+              "hostname": "senedd.wales"
+            },
+            "age": "September 20, 2026"
+          },
+          {
+            "title": "Environment (Principles, Governance and Biodiversity Targets) (Wales) Bill",
+            "url": "https://senedd.wales/media/abc123de/environment-principles-governance-and-biodiversity-targets-bill.pdf",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Explanatory memorandum for the Bill, including <strong>biodiversity targets</strong>.",
+            "profile": {
+              "name": "senedd.wales",
+              "url": "https://senedd.wales/media/abc123de/environment-principles-governance-and-biodiversity-targets-bill.pdf",
+              "long_name": "senedd.wales"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "senedd.wales",
+              "hostname": "senedd.wales"
+            },
+            "page_age": "2026-07-14T12:00:00"
+          }
+        ]
+      }
+    }
+  }
+}

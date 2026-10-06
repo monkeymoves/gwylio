@@ -123,8 +123,8 @@ def collect_command(
         Path | None,
         typer.Option(
             "--out-dir",
-            help="With --fake: use this data directory (database and candidates file) instead "
-            "of the settings data directory.",
+            help="For a stored run (real or --fake): use this data directory (database and "
+            "candidates file) instead of the settings data directory.",
             file_okay=False,
         ),
     ] = None,
@@ -158,12 +158,20 @@ def probe_command(
     ] = Discipline.OSINT_WEB,
     source: Annotated[
         list[str] | None,
-        typer.Option("--source", help="A source id for an osint_site probe; repeat for more."),
+        typer.Option(
+            "--source",
+            help="A source id: needed for osint_site, optional for osint_feed (default: every "
+            "active feed); repeat for more.",
+        ),
     ] = None,
+    fake: Annotated[
+        bool,
+        typer.Option("--fake", help="Use the fake collector and its scripted hits; no network."),
+    ] = False,
     root: RootOption = None,
 ) -> None:
     """Try one query text and print its hits, storing nothing."""
-    raise typer.Exit(code=run_probe(_settings(root), text, discipline, source or ()))
+    raise typer.Exit(code=run_probe(_settings(root), text, discipline, source or (), fake=fake))
 
 
 @app.command("migrate")

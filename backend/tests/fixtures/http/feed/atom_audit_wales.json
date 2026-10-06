@@ -1,0 +1,14 @@
+{
+  "notes": "Hand-written Atom feed in the shape of an Audit Wales publications feed. Four entries: a flood review (published date, escaped HTML summary), a natural resources review (relative link after a rel=self link, updated date only, content instead of summary), and two that match neither phrase.",
+  "request": {
+    "method": "GET",
+    "url": "https://www.audit.wales/rss.xml"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/atom+xml"
+    },
+    "text": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<feed xmlns=\"http://www.w3.org/2005/Atom\">\n  <title>Audit Wales publications</title>\n  <id>https://www.audit.wales/</id>\n  <updated>2026-09-30T08:00:00Z</updated>\n  <entry>\n    <title>Flood risk management in Wales: follow-up review</title>\n    <link rel=\"alternate\" href=\"https://www.audit.wales/publication/flood-risk-management-follow-up-review\"/>\n    <id>tag:audit.wales,2026:flood-follow-up</id>\n    <published>2026-09-10T10:00:00Z</published>\n    <updated>2026-09-11T08:00:00Z</updated>\n    <summary type=\"html\">&lt;p&gt;We followed up our 2024 review of how councils and partners manage flood risk.&lt;/p&gt;</summary>\n  </entry>\n  <entry>\n    <title>Sustainable development? Making best use of natural resources</title>\n    <link rel=\"self\" href=\"https://www.audit.wales/api/entries/4411\"/>\n    <link href=\"/publication/sustainable-development-natural-resources\"/>\n    <id>tag:audit.wales,2026:sd-natural-resources</id>\n    <updated>2026-08-01T09:00:00Z</updated>\n    <content type=\"html\">How public bodies apply the sustainable development principle to land and water.</content>\n  </entry>\n  <entry>\n    <title>Schools funding in Wales</title>\n    <link href=\"https://www.audit.wales/publication/schools-funding\"/>\n    <id>tag:audit.wales,2026:schools</id>\n    <updated>2026-07-15T09:00:00Z</updated>\n    <summary>How councils fund schools.</summary>\n  </entry>\n  <entry>\n    <title>Digital strategy review</title>\n    <link href=\"https://www.audit.wales/publication/digital-strategy-review\"/>\n    <id>tag:audit.wales,2026:digital</id>\n    <updated>2026-07-01T09:00:00Z</updated>\n    <summary>Progress on digital transformation.</summary>\n  </entry>\n</feed>\n"
+  }
+}

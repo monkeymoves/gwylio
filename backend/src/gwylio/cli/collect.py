@@ -1,42 +1,64 @@
 """``gwylio collect`` and ``gwylio probe``: run the instrument, or try one query.
 
-Real collectors arrive in work package 4 (WP4). Until then ``collect`` runs
-only on the fake collectors fed from the scripted hits in
-``backend/tests/fixtures/fake_hits.json``, in one of two ways:
+``collect`` runs in one of three ways:
 
-- ``--dry-run``: in-memory repositories; the candidates file goes to ``--out``
-  or standard output and nothing is kept.
-- ``--fake``: real persistence. The run, its candidates, sightings and
-  reinforcements are stored in SQLite in one transaction, and before that
-  transaction commits the instrument is archived under
-  ``<data_dir>/instruments/`` and the candidates file written to
-  ``<data_dir>/candidates/<run_id>.json``, so the files (the facts) never lag
-  the database (their projection). The runs export is refreshed afterwards.
+- no flag: the real collectors from ``infrastructure.collectors.registry``
+  (Brave web and site search with a key, the feeds always, the academic
+  indexes when switched on) with real persistence. A requested discipline
+  that cannot run here is named with the reason and skipped; the run goes
+  ahead on the rest (exit 0), and only when none can run does it exit 3.
+- ``--fake``: the fake collectors fed from the scripted hits in
+  ``backend/tests/fixtures/fake_hits.json``, with the same real persistence.
+- ``--dry-run``: the fake collectors with in-memory repositories; the
+  candidates file goes to ``--out`` or standard output and nothing is kept.
 
-``probe`` uses the same fake collectors and writes nothing.
+With persistence, the run, its candidates, sightings and reinforcements are
+stored in SQLite in one transaction, and before that transaction commits the
+instrument is archived under ``<data_dir>/instruments/`` and the candidates
+file written to ``<data_dir>/candidates/<run_id>.json``, so the files (the
+facts) never lag the database (their projection). The runs export is
+refreshed afterwards.
+
+``probe`` runs one query text through the real collector for a discipline
+(or the fake one with ``--fake``) and writes nothing.
 """
 
 from __future__ import annotations
 
 import os
 import sqlite3
-from collections.abc import Sequence
+from collections.abc import Mapping, Sequence
 from dataclasses import replace
 from pathlib import Path
 
 import typer
 
 from gwylio.collection.model import Discipline, Funnel, ScanRun, Source
-from gwylio.collection.service import PROBE_QUERY_ID, Probe, RunResult, RunScan, ScanAborted
+from gwylio.collection.ports import Collector
+from gwylio.collection.service import (
+    PROBE_QUERY_ID,
+    Probe,
+    ProbeResult,
+    RunResult,
+    RunScan,
+    ScanAborted,
+)
 from gwylio.infrastructure.collectors.fake import FakeCollector, load_fake_hits
+from gwylio.infrastructure.collectors.feed import FeedCollector
+from gwylio.infrastructure.collectors.registry import (
+    build_collectors,
+    describe_collector,
+    missing_disciplines,
+)
 from gwylio.infrastructure.config.loaders import LoadedConfig, check_config
-from gwylio.infrastructure.config.settings import Settings
+from gwylio.infrastructure.config.settings import ACADEMIC_ENV_VAR, Settings
 from gwylio.infrastructure.handoff.candidates_file import (
     CandidatesFileError,
     candidates_document,
     write_candidates_file,
 )
 from gwylio.infrastructure.handoff.instrument_file import InstrumentFileError, archive_instrument
+from gwylio.infrastructure.http.client import HttpClient
 from gwylio.infrastructure.ids import RandomIdGenerator
 from gwylio.infrastructure.memory import (
     MemoryCandidateRepository,
@@ -57,22 +79,36 @@ from gwylio.processing.candidates_file import dumps_candidates
 from gwylio.shared.clock import SystemClock
 from gwylio.shared.errors import DomainError
 
-__all__ = ["ACADEMIC_ENV_VAR", "default_disciplines", "funnel_table", "run_collect", "run_probe"]
+__all__ = [
+    "ACADEMIC_ENV_VAR",
+    "NONE_AVAILABLE_EXIT",
+    "default_disciplines",
+    "funnel_table",
+    "make_http_client",
+    "run_collect",
+    "run_probe",
+]
 
-ACADEMIC_ENV_VAR = "GWYLIO_ACADEMIC"
-"""Set to 1 to include osint_academic in a scan's default disciplines."""
-NOT_YET = (
-    "collect: real collectors arrive in WP4; until then use `gwylio collect --fake` "
-    "(fake collectors, stored) or `gwylio collect --dry-run` (fake collectors, nothing kept)"
-)
+NONE_AVAILABLE_EXIT = 3
+"""The exit code when no requested discipline has a collector in this environment."""
 
 
-def default_disciplines() -> tuple[Discipline, ...]:
-    """Web, site and feed; academic too when ``GWYLIO_ACADEMIC=1``."""
+def default_disciplines(academic_enabled: bool | None = None) -> tuple[Discipline, ...]:
+    """Web, site and feed; academic too when switched on.
+
+    ``academic_enabled`` defaults to ``GWYLIO_ACADEMIC=1`` in the environment.
+    """
+    if academic_enabled is None:
+        academic_enabled = os.environ.get(ACADEMIC_ENV_VAR, "").strip() == "1"
     chosen = [Discipline.OSINT_WEB, Discipline.OSINT_SITE, Discipline.OSINT_FEED]
-    if os.environ.get(ACADEMIC_ENV_VAR) == "1":
+    if academic_enabled:
         chosen.append(Discipline.OSINT_ACADEMIC)
     return tuple(d for d in Discipline if d in chosen)
+
+
+def make_http_client(settings: Settings) -> HttpClient:
+    """The HTTP client a real scan or probe uses; tests replace it with one that never sleeps."""
+    return HttpClient(contact_email=settings.contact_email)
 
 
 def funnel_table(run: ScanRun) -> str:
@@ -124,10 +160,8 @@ def _flag_problem(
         return "collect: choose --dry-run (nothing kept) or --fake (stored), not both"
     if out is not None and not dry_run:
         return "collect: --out goes with --dry-run; a stored run writes under the data directory"
-    if out_dir is not None and not fake:
-        return "collect: --out-dir goes with --fake"
-    if not dry_run and not fake:
-        return NOT_YET
+    if out_dir is not None and dry_run:
+        return "collect: --out-dir goes with a stored run, not --dry-run"
     return None
 
 
@@ -145,7 +179,7 @@ def run_collect(
     if problem is not None:
         typer.echo(problem, err=True)
         return 2
-    chosen = tuple(disciplines) or default_disciplines()
+    chosen = tuple(dict.fromkeys(disciplines)) or default_disciplines(settings.academic_enabled)
     reserved = [d.value for d in chosen if d.reserved]
     if reserved:
         typer.echo(f"collect: no collector serves {', '.join(reserved)} in version 1", err=True)
@@ -153,9 +187,13 @@ def run_collect(
     config = _load(settings.config_root)
     if config is None:
         return 1
+    target = settings if out_dir is None else settings.with_data_dir(out_dir)
     if fake:
-        target = settings if out_dir is None else settings.with_data_dir(out_dir)
-        return _collect_stored(target, config, chosen)
+        return _collect_stored(
+            target, config, chosen, _fake_collectors(settings.fake_hits_path, chosen)
+        )
+    if not dry_run:
+        return _collect_real(target, config, chosen, explicit=bool(disciplines))
     scan = RunScan(
         collectors=_fake_collectors(settings.fake_hits_path, chosen),
         instruments=MemoryInstrumentRepository(),
@@ -180,10 +218,41 @@ def run_collect(
     return 0
 
 
-def _collect_stored(
-    settings: Settings, config: LoadedConfig, disciplines: Sequence[Discipline]
+def _collect_real(
+    settings: Settings,
+    config: LoadedConfig,
+    chosen: Sequence[Discipline],
+    *,
+    explicit: bool,
 ) -> int:
-    """Run the fake collectors with SQLite persistence and the candidates file."""
+    """Run the real collectors that can run here, naming any requested one that cannot."""
+    if explicit and Discipline.OSINT_ACADEMIC in chosen:
+        settings = settings.with_academic()
+    with make_http_client(settings) as http:
+        collectors = build_collectors(settings, http)
+        for line in missing_disciplines(chosen, collectors):
+            typer.echo(f"skip   {line}", err=True)
+        runnable = tuple(d for d in chosen if d in collectors)
+        if not runnable:
+            typer.echo(
+                "collect: none of the requested disciplines can run here; nothing collected",
+                err=True,
+            )
+            return NONE_AVAILABLE_EXIT
+        code = _collect_stored(settings, config, runnable, collectors)
+    for collector in collectors.values():
+        if isinstance(collector, FeedCollector) and Discipline.OSINT_FEED in runnable:
+            typer.echo(collector.summary())
+    return code
+
+
+def _collect_stored(
+    settings: Settings,
+    config: LoadedConfig,
+    disciplines: Sequence[Discipline],
+    collectors: Mapping[Discipline, Collector],
+) -> int:
+    """Run ``collectors`` with SQLite persistence and the candidates file."""
     aborted: ScanAborted | None = None
     with Database.open(settings.db_path) as db:
         migrate(db)
@@ -198,7 +267,7 @@ def _collect_stored(
             )
             return 1
         scan = RunScan(
-            collectors=_fake_collectors(settings.fake_hits_path, disciplines),
+            collectors={d: collectors[d] for d in disciplines},
             instruments=SqliteInstrumentRepository(db),
             runs=SqliteScanRunRepository(db),
             candidates=SqliteCandidateRepository(db),
@@ -237,9 +306,14 @@ def _collect_stored(
 
 
 def run_probe(
-    settings: Settings, text: str, discipline: Discipline, source_ids: Sequence[str] = ()
+    settings: Settings,
+    text: str,
+    discipline: Discipline,
+    source_ids: Sequence[str] = (),
+    *,
+    fake: bool = False,
 ) -> int:
-    """Run one query text through a fake collector, print its hits and store nothing."""
+    """Run one query text through a real (or with ``fake``, scripted) collector; store nothing."""
     if discipline.reserved:
         typer.echo(f"probe: no collector serves {discipline.value} in version 1", err=True)
         return 2
@@ -255,6 +329,31 @@ def run_probe(
     if discipline is Discipline.OSINT_SITE and not sources:
         typer.echo("probe: an osint_site probe needs at least one --source", err=True)
         return 2
+    if fake:
+        return _probe_fake(settings, text, discipline, sources)
+    if discipline is Discipline.OSINT_FEED and not sources:
+        sources = tuple(
+            source
+            for source in config.sources
+            if source.active and source.discipline is Discipline.OSINT_FEED and source.feed_url
+        )
+    if discipline is Discipline.OSINT_ACADEMIC:
+        settings = settings.with_academic()
+    with make_http_client(settings) as http:
+        collectors = build_collectors(settings, http)
+        missing = missing_disciplines((discipline,), collectors)
+        if missing:
+            typer.echo(f"probe: cannot run {missing[0]}", err=True)
+            return NONE_AVAILABLE_EXIT
+        budget = max(2 if discipline is Discipline.OSINT_ACADEMIC else 1, len(sources))
+        result = Probe(collectors).run(text, discipline, sources=sources, budget=budget)
+    _print_probe(result, f"{discipline.value}, {describe_collector(discipline)}")
+    return 0
+
+
+def _probe_fake(
+    settings: Settings, text: str, discipline: Discipline, sources: Sequence[Source]
+) -> int:
     words = text.casefold().split()
     scripted = (
         replace(hit, query_id=PROBE_QUERY_ID)
@@ -266,10 +365,16 @@ def run_probe(
     result = Probe({discipline: collector}).run(
         text, discipline, sources=sources, budget=max(1, len(sources))
     )
+    _print_probe(result, f"{discipline.value}, fake collector")
+    return 0
+
+
+def _print_probe(result: ProbeResult, label: str) -> None:
     count = len(result.hits)
+    requests = result.requests_used
     typer.echo(
-        f"probe ({discipline.value}, fake collector): {count} hit{'' if count == 1 else 's'}, "
-        "nothing stored"
+        f"probe ({label}): {count} hit{'' if count == 1 else 's'}, "
+        f"{requests} request{'' if requests == 1 else 's'}, nothing stored"
     )
     for hit in result.hits:
         date = str(hit.published_on) if hit.published_on else "undated"
@@ -277,4 +382,3 @@ def run_probe(
         typer.echo(f"              {hit.url}")
     for warning in result.warnings:
         typer.echo(f"warn   {warning}", err=True)
-    return 0

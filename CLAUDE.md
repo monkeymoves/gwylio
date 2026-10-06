@@ -23,12 +23,18 @@ uv run --directory backend gwylio migrate        # create or upgrade data/gwylio
 uv run --directory backend gwylio collect --fake # fake collectors with real persistence and a candidates file
 uv run --directory backend gwylio export         # write data/exports/runs.json
 uv run --directory backend gwylio rebuild        # rebuild the database from config plus data files
-uv run --directory backend gwylio probe "drought" --discipline osint_web  # try a query, stores nothing
+uv run --directory backend gwylio probe "drought" --discipline osint_feed  # try a query, stores nothing
 ```
 
-`seed`, `dev`, `collect`, `ingest` and `publish` are stubs until their work
-packages land; each prints which one. `gwylio collect` without `--dry-run` or `--fake`
-exits 2 until the real collectors arrive (WP4). A scan runs osint_web,
+`seed`, `dev`, `ingest` and `publish` are stubs until their work
+packages land; each prints which one. `gwylio collect` (no flag) runs the real collectors: feeds always,
+Brave web and site search when a key is set (`GWYLIO_BRAVE_API_KEY`,
+`BRAVE_API_KEY`, or a gitignored `search_keys.txt` at the root), academic
+indexes with `GWYLIO_ACADEMIC=1` or `--discipline osint_academic`. A
+discipline that cannot run is named and skipped (exit 0); exit 3 when none can
+run. `GWYLIO_CONTACT_EMAIL` sets the User-Agent contact. `gwylio probe` uses
+the real collectors; add `--fake` for the scripted ones. Live network tests
+carry `@pytest.mark.live` and run only with `pytest -m live`. A scan runs osint_web,
 osint_site and osint_feed by default; set `GWYLIO_ACADEMIC=1` or pass
 `--discipline osint_academic` to add the academic indexes.
 

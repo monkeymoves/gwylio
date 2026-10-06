@@ -28,6 +28,7 @@ data/gwylio.sqlite.rebuilding*
 
 # Local settings and secrets
 config/settings.toml
+search_keys.txt
 .env
 .env.*
 !.env.example

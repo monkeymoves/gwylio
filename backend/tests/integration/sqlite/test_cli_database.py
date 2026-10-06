@@ -85,8 +85,7 @@ def test_collect_fake_honours_out_dir(tmp_path: Path, env: dict[str, str]) -> No
     [
         (["--fake", "--dry-run"], "not both"),
         (["--fake", "--out", "x.json"], "--out goes with --dry-run"),
-        (["--dry-run", "--out-dir", "x"], "--out-dir goes with --fake"),
-        ([], "real collectors arrive in WP4"),
+        (["--dry-run", "--out-dir", "x"], "--out-dir goes with a stored run, not --dry-run"),
         (["--fake", "--discipline", "sensor"], "no collector serves sensor"),
     ],
 )

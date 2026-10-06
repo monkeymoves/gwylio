@@ -92,14 +92,10 @@ def test_academic_runs_when_asked_and_exhausts_the_budget(tmp_path: Path) -> Non
 def test_default_disciplines_follow_the_academic_switch(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.delenv(ACADEMIC_ENV_VAR, raising=False)
     assert Discipline.OSINT_ACADEMIC not in default_disciplines()
+    assert default_disciplines(True)[-1] is Discipline.OSINT_ACADEMIC
     monkeypatch.setenv(ACADEMIC_ENV_VAR, "1")
     assert default_disciplines()[-1] is Discipline.OSINT_ACADEMIC
-
-
-def test_collect_without_dry_run_exits_2_naming_wp4() -> None:
-    result = runner.invoke(app, ["collect", *ROOT])
-    assert result.exit_code == 2
-    assert "real collectors arrive in WP4" in result.stderr
+    assert Discipline.OSINT_ACADEMIC not in default_disciplines(False)
 
 
 def test_reserved_discipline_exits_2() -> None:
@@ -116,10 +112,10 @@ def test_collect_on_invalid_config_exits_1(project_copy: Path) -> None:
 
 
 def test_probe_prints_matching_hits_and_writes_nothing(tmp_path: Path) -> None:
-    result = runner.invoke(app, ["probe", "drought", *ROOT])
+    result = runner.invoke(app, ["probe", "drought", "--fake", *ROOT])
     assert result.exit_code == 0, result.output
     assert result.stdout.splitlines() == [
-        "probe (osint_web, fake collector): 1 hit, nothing stored",
+        "probe (osint_web, fake collector): 1 hit, 1 request, nothing stored",
         "  2026-09-02  Drought declared across South West Wales",
         "              https://nation.cymru/news/drought-declared-across-south-west-wales",
     ]
@@ -141,9 +137,10 @@ def test_probe_site_needs_known_sources() -> None:
             "osint_site",
             "--source",
             "river-action",
+            "--fake",
             *ROOT,
         ],
     )
     assert found.exit_code == 0, found.output
-    assert "1 hit, nothing stored" in found.stdout
+    assert "1 hit, 1 request, nothing stored" in found.stdout
     assert runner.invoke(app, ["probe", "x", "--discipline", "sensor", *ROOT]).exit_code == 2

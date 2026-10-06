@@ -1,0 +1,191 @@
+{
+  "notes": "Hand-written Brave Search API web response for the query 'habitat restoration Wales'. Seven results: four pass the gates (gov.wales and senedd.wales and nation.cymru are trusted sources, bbc.co.uk carries 'wales'), one is on an NRW own domain, one names New South Wales (a global negative term), one is unrelated (no relevance token, unknown source). Titles carry an en dash range and a spaced em dash, and one URL an en dash, to exercise scrubbing and percent-encoding.",
+  "request": {
+    "method": "GET",
+    "url": "https://api.search.brave.com/res/v1/web/search",
+    "params": {
+      "q": "habitat restoration Wales",
+      "count": "20",
+      "country": "GB",
+      "search_lang": "en",
+      "safesearch": "off"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/json"
+    },
+    "json": {
+      "type": "search",
+      "query": {
+        "original": "habitat restoration Wales",
+        "show_strict_warning": false,
+        "is_navigational": false,
+        "country": "gb",
+        "more_results_available": true
+      },
+      "web": {
+        "type": "search",
+        "family_friendly": true,
+        "results": [
+          {
+            "title": "Nature Recovery Action Plan for Wales 2026\u20132030 | GOV.WALES",
+            "url": "https://www.gov.wales/nature-recovery-action-plan-wales-2026-2030",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "The <strong>Welsh Government</strong> sets out how <strong>habitat restoration</strong> will be funded through the Nature Networks Programme &amp; the Sustainable Farming Scheme.",
+            "profile": {
+              "name": "www.gov.wales",
+              "url": "https://www.gov.wales/nature-recovery-action-plan-wales-2026-2030",
+              "long_name": "www.gov.wales"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "gov.wales",
+              "hostname": "www.gov.wales"
+            },
+            "page_age": "2026-09-15T09:00:00",
+            "age": "September 15, 2026"
+          },
+          {
+            "title": "Biodiversity targets inquiry \u2014 Climate Change, Environment and Infrastructure Committee",
+            "url": "https://senedd.wales/committees/climate-change-environment-and-infrastructure-committee/biodiversity-targets-inquiry/",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "The Committee is examining whether statutory <strong>biodiversity</strong> targets for <strong>Wales</strong> are achievable by 2030.",
+            "profile": {
+              "name": "senedd.wales",
+              "url": "https://senedd.wales/committees/climate-change-environment-and-infrastructure-committee/biodiversity-targets-inquiry/",
+              "long_name": "senedd.wales"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "senedd.wales",
+              "hostname": "senedd.wales"
+            },
+            "age": "September 20, 2026"
+          },
+          {
+            "title": "Peatland restoration in Wales passes 5,000 hectares",
+            "url": "https://www.bbc.co.uk/news/articles/c4g7wales2026",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Work to rewet upland bogs across mid <strong>Wales</strong> has reached a milestone, the scheme says.",
+            "profile": {
+              "name": "www.bbc.co.uk",
+              "url": "https://www.bbc.co.uk/news/articles/c4g7wales2026",
+              "long_name": "www.bbc.co.uk"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "bbc.co.uk",
+              "hostname": "www.bbc.co.uk"
+            },
+            "page_age": "2026-09-28T06:12:45",
+            "age": "1 week ago"
+          },
+          {
+            "title": "Habitat restoration update",
+            "url": "https://naturalresources.wales/about-us/news-and-blogs/news/habitat-restoration-update/",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Our latest update on <strong>habitat restoration</strong> projects.",
+            "profile": {
+              "name": "naturalresources.wales",
+              "url": "https://naturalresources.wales/about-us/news-and-blogs/news/habitat-restoration-update/",
+              "long_name": "naturalresources.wales"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "naturalresources.wales",
+              "hostname": "naturalresources.wales"
+            },
+            "page_age": "2026-09-02T10:00:00"
+          },
+          {
+            "title": "Habitat restoration programme | NSW Environment",
+            "url": "https://www.environment.nsw.gov.au/topics/habitat-restoration",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Restoring native habitat across New South Wales.",
+            "profile": {
+              "name": "www.environment.nsw.gov.au",
+              "url": "https://www.environment.nsw.gov.au/topics/habitat-restoration",
+              "long_name": "www.environment.nsw.gov.au"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "environment.nsw.gov.au",
+              "hostname": "www.environment.nsw.gov.au"
+            },
+            "page_age": "2026-08-11T00:00:00"
+          },
+          {
+            "title": "Habitat restoration in the garden",
+            "url": "https://www.rhs.org.uk/wildlife/habitat-restoration-in-the-garden",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "How gardeners can restore habitat for pollinators and birds.",
+            "profile": {
+              "name": "www.rhs.org.uk",
+              "url": "https://www.rhs.org.uk/wildlife/habitat-restoration-in-the-garden",
+              "long_name": "www.rhs.org.uk"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "rhs.org.uk",
+              "hostname": "www.rhs.org.uk"
+            }
+          },
+          {
+            "title": "Habitat restoration funding boost for Welsh uplands",
+            "url": "https://nation.cymru/news/habitat\u2013restoration-funding-boost-for-welsh-uplands/",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Upland farms in Powys and Ceredigion will share new funding.",
+            "profile": {
+              "name": "nation.cymru",
+              "url": "https://nation.cymru/news/habitat\u2013restoration-funding-boost-for-welsh-uplands/",
+              "long_name": "nation.cymru"
+            },
+            "language": "en",
+            "family_friendly": true,
+            "type": "search_result",
+            "subtype": "generic",
+            "meta_url": {
+              "scheme": "https",
+              "netloc": "nation.cymru",
+              "hostname": "nation.cymru"
+            },
+            "age": "3 days ago"
+          }
+        ]
+      }
+    }
+  }
+}

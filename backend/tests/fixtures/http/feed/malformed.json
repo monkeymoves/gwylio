@@ -1,0 +1,14 @@
+{
+  "notes": "A feed body cut off mid-item, as a truncated transfer or a broken publisher template would leave it.",
+  "request": {
+    "method": "GET",
+    "url": "https://www.audit.wales/rss.xml"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/rss+xml"
+    },
+    "text": "<?xml version=\"1.0\"?>\n<rss version=\"2.0\"><channel><title>Audit Wales</title><item><title>Flood risk in Wales</title><link>https://www.audit.wales/publication/flood"
+  }
+}
