@@ -16,8 +16,8 @@ When the retries are spent, or the answer is a client error other than 429,
 it raises ``HttpError(status, url)``. Sleeping, the monotonic clock and the
 jitter are injectable, so tests run instantly and deterministically. Outbound
 HTTPS honours ``HTTPS_PROXY`` (httpx does by default); ``default_verify``
-picks the certificate bundle from ``SSL_CERT_FILE`` or the agent proxy's
-bundle when present, and never turns verification off.
+picks the certificate bundle from ``SSL_CERT_FILE`` when it names a readable
+file, and never turns verification off.
 """
 
 from __future__ import annotations
@@ -55,7 +55,6 @@ BACKOFF_BASE_SECONDS: Final[float] = 1.0
 MAX_RETRY_AFTER_SECONDS: Final[float] = 120.0
 """A ``Retry-After`` longer than this is capped: a scan never waits minutes for one host."""
 BRAVE_HOST: Final[str] = "api.search.brave.com"
-PROXY_CA_BUNDLE: Final[Path] = Path("/root/.ccr/ca-bundle.crt")
 _RETRY_STATUSES: Final[frozenset[int]] = frozenset({429})
 _RETRYABLE_ERRORS: Final[tuple[type[httpx.TransportError], ...]] = (
     httpx.TimeoutException,
@@ -121,14 +120,22 @@ def user_agent(contact_email: str, version: str = "0.1.0") -> str:
 def default_verify(environ: Mapping[str, str] | None = None) -> ssl.SSLContext | bool:
     """The certificate bundle to verify against: never ``False``.
 
-    ``SSL_CERT_FILE`` when it names a file, else the agent proxy's bundle when
-    present, else ``True`` (httpx's own bundle).
+    ``SSL_CERT_FILE`` when it names a file this process can read, else ``True``
+    (httpx's own bundle). A path that cannot be checked, such as one under a
+    directory the process may not enter, falls back to the default rather than
+    failing.
     """
     env = os.environ if environ is None else environ
     named = env.get("SSL_CERT_FILE", "").strip()
-    for candidate in (Path(named) if named else None, PROXY_CA_BUNDLE):
-        if candidate is not None and candidate.is_file():
-            return ssl.create_default_context(cafile=str(candidate))
+    if not named:
+        return True
+    candidate = Path(named)
+    try:
+        readable = candidate.is_file()
+    except OSError:
+        readable = False
+    if readable:
+        return ssl.create_default_context(cafile=str(candidate))
     return True
 
 

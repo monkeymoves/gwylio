@@ -2,15 +2,18 @@
 
 ``firebase.json`` serves the static build with clean URLs, never caches the
 snapshot, caches hashed assets for a year and serves product Markdown as
-text/markdown. The project id is the owner's, so no ``.firebaserc`` is
-committed. ``make deploy`` refuses with a clear line before publishing when
-the Firebase command line tool is missing.
+text/markdown. The project id is the owner's, so ``.firebaserc`` is
+gitignored and never committed, though a linked clone has one on disk.
+``make deploy`` refuses with a clear line before publishing when the Firebase
+command line tool is missing.
 """
 
 from __future__ import annotations
 
 import json
 import re
+import shutil
+import subprocess
 from typing import Any
 
 import pytest
@@ -55,7 +58,32 @@ def test_product_markdown_is_served_as_markdown() -> None:
 
 
 def test_no_project_id_is_committed() -> None:
-    assert not (PROJECT_ROOT / ".firebaserc").exists()
+    git = shutil.which("git")
+    if git is None:
+        pytest.skip("git is not installed")
+    inside = subprocess.run(
+        [git, "rev-parse", "--is-inside-work-tree"],
+        cwd=PROJECT_ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if inside.returncode != 0:
+        pytest.skip("not a git work tree")
+    tracked = subprocess.run(
+        [git, "ls-files", "--", ".firebaserc", ".firebase"],
+        cwd=PROJECT_ROOT,
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    assert tracked.stdout.strip() == ""
+
+
+def test_the_firebase_link_and_cache_are_gitignored() -> None:
+    ignored = (PROJECT_ROOT / ".gitignore").read_text(encoding="utf-8").splitlines()
+    assert ".firebaserc" in ignored
+    assert ".firebase/" in ignored
 
 
 def test_make_deploy_checks_for_firebase_before_publishing() -> None:

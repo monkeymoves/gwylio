@@ -2,11 +2,12 @@
  * Shared test data: a ReportSummary builder, the real published enums and
  * reports read from the snapshot under static/data, and the seed read models.
  *
- * The real snapshot has no scan runs yet, so the run, sources and coverage
- * components are also proven against `tests/seed/`: copies of the
- * backend's syrupy endpoint snapshots on the seed database
- * (`backend/tests/api/__snapshots__/test_endpoints/`), which hold four runs.
- * Refresh them by copying those files again after `make seed`.
+ * The real snapshot changes with every scan, so any test that needs a
+ * particular state (a date check finding, a blind spot, several runs) reads
+ * `tests/seed/` instead: copies of the backend's syrupy endpoint snapshots on
+ * the seed database (`backend/tests/api/__snapshots__/test_endpoints/`),
+ * which hold four runs and every lifecycle case. Refresh them by copying
+ * those files again after `make seed`.
  */
 import { readFileSync } from 'node:fs';
 import path from 'node:path';

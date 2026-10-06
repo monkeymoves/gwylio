@@ -30,6 +30,8 @@ backend/tests/fixtures/seed/gwylio.sqlite-*
 
 # Local settings and secrets
 config/settings.toml
+.firebaserc
+.firebase/
 search_keys.txt
 .env
 .env.*

@@ -1,10 +1,11 @@
 import { render, screen } from '@testing-library/svelte';
 import { describe, expect, it } from 'vitest';
-import { enums, snapshot } from '../../../tests/fixtures';
+import { enums, seed } from '../../../tests/fixtures';
 import type { Picture } from '$lib/data/types.generated';
 import RequirementTile from './RequirementTile.svelte';
 
-const picture = snapshot<Picture>('picture_nrw-corporate-plan.json');
+// The seed picture: SI1 is covered and SI12 a blind spot whatever the live register holds.
+const picture = seed<Picture>('picture.json');
 
 function tile(id: string) {
 	const found = picture.requirements.find((r) => r.requirement_id === id);

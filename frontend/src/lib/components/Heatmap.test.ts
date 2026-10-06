@@ -48,8 +48,9 @@ describe('Heatmap', () => {
 	});
 
 	it('heads each row with its label and a coverage chip; a blind spot never reads quiet', () => {
-		const { container } = renderLanes(real);
-		const blind = real.lanes.rows.filter((r) => r.status === 'blind_spot');
+		// The seed, not the live register: a live scan can leave no requirement a blind spot.
+		const { container } = renderLanes(seeded);
+		const blind = seeded.lanes.rows.filter((r) => r.status === 'blind_spot');
 		expect(blind.length).toBeGreaterThan(0);
 		for (const row of blind) {
 			const th = container.querySelector(`tr[data-row="${row.row_id}"] th`) as HTMLElement;

@@ -29,6 +29,22 @@ const meta = JSON.parse(readFileSync(path.join(dataDir, 'meta.json'), 'utf8')) a
 };
 const setId = meta.default_requirement_set_id;
 
+interface Tile {
+	requirement_id: string;
+	status: string;
+	scanability: string;
+}
+
+const picture = JSON.parse(
+	readFileSync(path.join(dataDir, `picture_${setId}.json`), 'utf8')
+) as { requirements: Tile[]; datecheck: { total: number } };
+const statusText: Record<string, RegExp> = {
+	covered: /covered/,
+	thin: /thin/,
+	quiet: /quiet/,
+	blind_spot: /blind spot: not scannable/
+};
+
 async function expectNoHorizontalScroll(page: Page): Promise<void> {
 	const overflow = await page.evaluate(
 		() => document.documentElement.scrollWidth - document.documentElement.clientWidth
@@ -49,7 +65,7 @@ function countWhere(requirement: string, direction: string): number {
 	).length;
 }
 
-test('picture: tiles per group and requirement, SI12 reads blind spot, not quiet', async ({
+test('picture: tiles per group and requirement, SI12 never reads quiet', async ({
 	page
 }, testInfo) => {
 	await page.goto(`/picture/${setId}`);
@@ -57,14 +73,27 @@ test('picture: tiles per group and requirement, SI12 reads blind spot, not quiet
 	await expect(page.getByRole('heading', { name: 'Well-being objectives' })).toBeVisible();
 	await expect(page.getByRole('heading', { name: 'Impacts' })).toBeVisible();
 
+	// SI12 has no public scanability: with no reports it is a blind spot, never
+	// quiet; with reports it shows its coverage. Read which from the snapshot.
+	const tile = picture.requirements.find((r) => r.requirement_id === 'si12');
+	if (!tile) throw new Error('The picture has no SI12 tile');
+	expect(tile.scanability).toBe('none');
+	expect(tile.status).not.toBe('quiet');
 	const si12 = page.locator('[data-requirement="si12"]');
-	const chip = si12.locator('[data-status="blind_spot"]');
-	await expect(chip).toHaveText(/blind spot: not scannable/);
-	await expect(chip).toHaveClass(/status-blind-spot/);
+	const chip = si12.locator(`[data-status="${tile.status}"]`);
+	await expect(chip).toHaveText(statusText[tile.status] ?? /./);
 	await expect(chip).not.toHaveClass(/status-quiet/);
+	if (tile.status === 'blind_spot') {
+		await expect(chip).toHaveClass(/status-blind-spot/);
+	}
 	await expect(si12).toHaveAttribute('href', '/reports?requirement=si12');
 
-	await expect(page.getByRole('complementary').filter({ hasText: 'Date check' })).toBeVisible();
+	const banner = page.getByRole('complementary').filter({ hasText: 'Date check' });
+	if (picture.datecheck.total > 0) {
+		await expect(banner).toBeVisible();
+	} else {
+		await expect(banner).toHaveCount(0);
+	}
 	await expectNoHorizontalScroll(page);
 	await evidence(page, testInfo, `picture-${setId}`);
 });

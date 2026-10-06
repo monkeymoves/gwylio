@@ -47,8 +47,9 @@ production (`docs/adr/0001-static-site-on-firebase.md`).
    ```
 
    Pick the project and give it an alias such as `default`. This writes
-   `.firebaserc` locally. Do not commit it unless you want the project id in
-   the repository.
+   `.firebaserc` locally. It is gitignored, as is the `.firebase/` deploy
+   cache, so the project id stays out of the repository. You can also create
+   the project from the command line with `firebase projects:create`.
 
 6. **Rebuild the database and look at the site locally.** The database is
    gitignored, so a fresh clone has none.

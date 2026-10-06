@@ -19,8 +19,9 @@ with the web, site and feed disciplines, and every one was read and judged
 against the rubric: 60 promoted, 48 reinforcements, 116 duplicates, 1,540
 rejected, none deferred. The register now holds 95 reports: the 35 imported
 from the previous tool, all verified on 6 October 2026, and the 60 new ones.
-The date check reports no findings. That scan exposed three test problems,
-listed as limits 9 to 11.
+The date check reports no findings. The scan and the deploy exposed three
+test problems; all three were fixed the same night (see "Fixed after the
+scan" below), and `make ci` and `make e2e` pass.
 
 Counts at the WP10 close, before the scan:
 
@@ -30,13 +31,13 @@ Counts at the WP10 close, before the scan:
 | Front end (Vitest) | 196 passed |
 | End to end (Playwright) | 24 on the committed snapshot, 26 on the seed copy |
 
-Counts after the deployment and the scan, on the owner's machine:
+Counts after the scan and the test fixes, on the owner's machine:
 
 | Suite | Count |
 |---|---|
-| Backend (pytest) | 919 passed, 7 skipped, 1 failed (limit 10), 1 live test deselected |
-| Front end (Vitest) | 192 passed, 4 failed (limit 9) |
-| End to end (Playwright) | not re-run |
+| Backend (pytest) | 923 passed, 7 skipped, 1 live test deselected |
+| Front end (Vitest) | 196 passed |
+| End to end (Playwright) | 26 on the committed snapshot |
 
 ## Known limits
 
@@ -69,19 +70,24 @@ Counts after the deployment and the scan, on the owner's machine:
    candidate pages in slices; the lead analyst merged duplicates across
    slices and lowered seven credibility grades on review. The method note in
    `data/submissions/20261006T2155Z-6ae7__1.json` records this.
-9. **Four front-end tests read the live snapshot.** `tests/routes/verify.test.ts`,
-   `Heatmap.test.ts` and `RequirementTile.test.ts` assume the committed
-   snapshot under `frontend/static/data` has date check findings and a blind
-   spot. After the scan it has neither, so they fail. They should read a
-   fixed fixture, as the seed copy does.
-10. **The hosting test fails on a linked clone.** `test_no_project_id_is_committed`
-    checks that `.firebaserc` does not exist on disk. The deploy guide's
-    `firebase use --add` writes it locally (it is uncommitted, as intended), so
-    the test should check git tracking instead.
-11. **Continuous integration fails on GitHub.** The workflow ran on the push of
-    the WP10b commit and failed: the academic collector tests read
-    `/root/.ccr/ca-bundle.crt`, a certificate path from the build container,
-    and get a permission error on the GitHub runner.
+
+## Fixed after the scan
+
+1. **Front-end tests read the live snapshot.** Four Vitest tests assumed the
+   committed snapshot had date check findings and a blind spot; after the
+   scan it had neither. They now read the seed read models in
+   `frontend/tests/seed/` (`datecheck.json` and `picture.json` were added).
+   The WP8 picture end to end test now reads SI12's status and the date
+   check count from the snapshot instead of assuming them.
+2. **The hosting test failed on a linked clone.** It checked that
+   `.firebaserc` did not exist on disk. It now checks that git does not track
+   it, and `.firebaserc` and `.firebase/` are in `.gitignore`.
+3. **Continuous integration failed on GitHub.** The HTTP client looked for a
+   certificate bundle at `/root/.ccr/ca-bundle.crt`, a build container path,
+   and checking it raised a permission error on the GitHub runner. The path
+   is gone: the client uses `SSL_CERT_FILE` when it names a readable file and
+   httpx's own bundle otherwise, and a path it cannot check falls back to the
+   default instead of failing.
 
 ## Plan items
 
@@ -99,7 +105,7 @@ Counts after the deployment and the scan, on the owner's machine:
 | Files are the facts, database is a projection (ADR 0002) | built | Rebuild reproduces every export byte for byte; proven by the dry run. |
 | Seed from the 35 legacy signals through a legacy submission (ADR 0003) | built | `data/submissions/legacy__2026-07-25.json`; 33 emerging, 2 matured. |
 | ADR template, ADR 0001 and 0002 | built | Also 0003 to 0005. |
-| CI workflow (backend, frontend, end to end; no search network) | partial | Runs on GitHub but fails on a container certificate path (limit 11). |
+| CI workflow (backend, frontend, end to end; no search network) | built | Runs on GitHub on every push; the container certificate path that broke it is removed. |
 | Hosting on Firebase, static site, API a development tool (ADR 0001) | built | Deployed to https://gwylio.web.app; cache headers checked on the live site. |
 | Cloud Run as a designed seam | deferred | Documented in ADR 0001 and `docs/ARCHITECTURE.md`; not built. |
 
@@ -213,13 +219,11 @@ Counts after the deployment and the scan, on the owner's machine:
 
 ## What the owner should do next
 
-1. Fix the three test problems (limits 9 to 11) so `make ci` and the GitHub
-   workflow pass again.
-2. Decide ADR 0005 now that the site is public.
-3. Review the grades of the 35 imported reports, and skim the 60 new
+1. Decide ADR 0005 now that the site is public.
+2. Review the grades of the 35 imported reports, and skim the 60 new
    promotions, especially the seven graded 3 on second-hand reporting.
-4. Run the next scan with the skill (`skill/SKILL.md`) and redeploy with
+3. Run the next scan with the skill (`skill/SKILL.md`) and redeploy with
    `make deploy`; the lifecycle and the fade rule start working from the
    second run.
-5. Review the instrument against the evergreen noise (limit 3) and report the
+4. Review the instrument against the evergreen noise (limit 3) and report the
    malformed Audit Wales feed (limit 2).

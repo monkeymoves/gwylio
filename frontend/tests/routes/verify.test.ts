@@ -1,10 +1,11 @@
 import { render, screen } from '@testing-library/svelte';
 import { describe, expect, it } from 'vitest';
-import { enums, snapshot } from '../fixtures';
+import { enums, seed } from '../fixtures';
 import type { DateCheck } from '$lib/data/types.generated';
 import Page from '../../src/routes/verify/+page.svelte';
 
-const datecheck = snapshot<DateCheck>('datecheck.json');
+// The seed date check, so the test never depends on what the live register holds.
+const datecheck = seed<DateCheck>('datecheck.json');
 
 function renderQueue(check: DateCheck) {
 	const data = { datecheck: check, enums } as unknown as Parameters<typeof Page>[1]['data'];

@@ -196,6 +196,20 @@ def test_default_verify_never_turns_verification_off(tmp_path: Path) -> None:
     assert default_verify({}) is not False
 
 
+def test_default_verify_falls_back_when_the_bundle_cannot_be_checked(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    def refuse(self: Path) -> bool:
+        raise PermissionError(13, "Permission denied", str(self))
+
+    monkeypatch.setattr(Path, "is_file", refuse)
+    assert default_verify({"SSL_CERT_FILE": "/root/private/ca-bundle.crt"}) is True
+
+
+def test_default_verify_uses_the_httpx_bundle_without_ssl_cert_file() -> None:
+    assert default_verify({}) is True
+
+
 def test_negative_retries_are_refused() -> None:
     with pytest.raises(ValueError):
         HttpClient(contact_email=CONTACT, max_retries=-1)
