@@ -1,0 +1,65 @@
+{
+  "notes": "Lanes say where we look; requirements say what a signal means, and the two are never merged. Each lane sits under one of the three lenses the commission asked for: government, partnership and wider society, and international.",
+  "lanes": [
+    {
+      "id": "welsh-government",
+      "name": "Welsh Government",
+      "lens": "government",
+      "description": "Welsh Government policy, legislation, consultations, statistics and the remit letter to Natural Resources Wales (NRW)."
+    },
+    {
+      "id": "senedd",
+      "name": "Senedd",
+      "lens": "government",
+      "description": "Senedd Cymru business: committee inquiries and reports, plenary questions, Bills and research briefings."
+    },
+    {
+      "id": "uk-government-and-regulators",
+      "name": "UK Government and regulators",
+      "lens": "government",
+      "description": "UK Government departments, UK-wide regulators and advisory bodies whose decisions reach Wales."
+    },
+    {
+      "id": "research-evidence",
+      "name": "Research and evidence",
+      "lens": "partnership_society",
+      "description": "Peer-reviewed research, research councils and evidence centres publishing findings relevant to the Welsh environment."
+    },
+    {
+      "id": "partnership-and-civil-society",
+      "name": "Partnership and civil society",
+      "lens": "partnership_society",
+      "description": "Partners, farming unions, environmental charities, public services boards and utilities working with or alongside NRW."
+    },
+    {
+      "id": "legal-and-campaign",
+      "name": "Legal and campaign",
+      "lens": "partnership_society",
+      "description": "Campaign groups and legal challenges that test regulators and policy, including judicial reviews and complaints."
+    },
+    {
+      "id": "independent-media",
+      "name": "Independent media",
+      "lens": "partnership_society",
+      "description": "News and investigative journalism reporting on the Welsh environment and the bodies that manage it."
+    },
+    {
+      "id": "ecological-surveillance",
+      "name": "Ecological surveillance",
+      "lens": "government",
+      "description": "Statutory and scientific surveillance schemes that give early warning of disease, invasive species, drought and other biophysical change."
+    },
+    {
+      "id": "international",
+      "name": "International",
+      "lens": "international",
+      "description": "United Nations, European Union and other international bodies, conventions and Conferences of the Parties (COPs) whose approaches bear on Wales."
+    },
+    {
+      "id": "governance-capacity",
+      "name": "Governance and capacity",
+      "lens": "government",
+      "description": "Audit, scrutiny and watchdog bodies reporting on the funding, governance and delivery capacity of Welsh public bodies."
+    }
+  ]
+}

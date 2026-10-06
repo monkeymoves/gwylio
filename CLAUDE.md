@@ -12,15 +12,16 @@ Run everything from this directory (the repository root).
 
 ```bash
 make setup     # uv sync (backend) and pnpm install (frontend), from the lock files
-make check     # ruff check, ruff format --check, mypy, svelte-check
+make check     # ruff, mypy, gwylio check, gwylio schema --check, svelte-check
 make test      # pytest, vitest
 make ci        # check, then test, then the static frontend build
 make e2e       # build the site, serve it with vite preview, run Playwright, write screenshots
-uv run --directory backend gwylio version   # the command line tool
+make schema    # regenerate JSON Schema, TypeScript types, GLOSSARY.md and skill/REFERENCE.md
+uv run --directory backend gwylio check     # validate every file under config/
 ```
 
-`schema`, `seed`, `dev`, `collect`, `ingest` and `publish` are stubs until
-their work packages land; each prints which one.
+`seed`, `dev`, `collect`, `ingest` and `publish` are stubs until their work
+packages land; each prints which one.
 
 ## Rules that are enforced, not just written down
 
@@ -41,6 +42,17 @@ their work packages land; each prints which one.
   append-only and committed. SQLite is a projection rebuilt from configuration
   plus those files; hand edits to the database are lost on rebuild by design.
   `data/exports/register.json` is a derived export. See ADR 0002.
+- **Generated files are never edited by hand.** `docs/schema/`,
+  `docs/GLOSSARY.md`, `skill/REFERENCE.md` and
+  `frontend/src/lib/data/types.generated.ts` come from `gwylio schema`.
+  Change the Pydantic models in `infrastructure/config/schemas.py`, the
+  glossary in `shared/glossary.py` or the files under `config/`, then run
+  `make schema`. A drift test fails when they disagree.
+- **Configuration is data, validated on load.** `config/` holds the taxonomy,
+  lanes, reference catalogues and requirement sets. Every prose field is
+  `CleanText`; every id is a kebab-case `KebabId` (so lane and node ids use
+  hyphens, while enum values such as `river_basin` use underscores).
+  `gwylio check` prints every problem with its file and path.
 - **The collector never scores.** Collectors gate, deduplicate and record what
   they found. Tagging, grading, lifecycle and buckets are analysis, done by
   the skill and validated on ingest.
@@ -55,5 +67,6 @@ Svelte 5 runes, TypeScript strict, vanilla CSS tokens in
 ## Where to read next
 
 - `docs/PLAN.md`: the approved architecture plan and the work packages.
-- `docs/GLOSSARY.md`: the ubiquitous language (generated, arrives in WP1).
+- `docs/GLOSSARY.md`: the ubiquitous language (generated from `shared/glossary.py`).
+- `skill/REFERENCE.md`: every closed value and id the analyst skill may use (generated).
 - `docs/adr/`: architecture decision records; copy `0000-template.md` for a new one.

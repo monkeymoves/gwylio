@@ -1,0 +1,149 @@
+{
+  "notes": "Two axes for classifying what a report is about. The first follows the State of Natural Resources Report (SoNaRR): its eight broad ecosystems plus the three cross-cutting resources (air, soils, water). The second holds the hazard families every hazard in config/reference/hazards.json belongs to. Node ids are unique across both axes.",
+  "axes": [
+    {
+      "id": "sonarr-ecosystems",
+      "name": "SoNaRR ecosystems and resources",
+      "nodes": [
+        {
+          "id": "marine",
+          "name": "Marine",
+          "kind": "ecosystem",
+          "note": "Welsh seas, about 32,000 square kilometres with 139 marine protected areas; seabed, water column, fisheries and blue carbon."
+        },
+        {
+          "id": "coastal-margins",
+          "name": "Coastal margins",
+          "kind": "ecosystem",
+          "note": "Dunes, saltmarsh, shingle, cliffs and intertidal habitats, including coastal squeeze and managed realignment."
+        },
+        {
+          "id": "freshwaters",
+          "name": "Freshwaters",
+          "kind": "ecosystem",
+          "note": "Rivers, lakes, ponds and wetlands as ecosystems: water quality, habitat and freshwater species."
+        },
+        {
+          "id": "mountains-moorlands-heaths",
+          "name": "Mountains, moorlands and heaths",
+          "kind": "ecosystem",
+          "note": "The uplands, including blanket bog and upland peat, heathland and montane habitats."
+        },
+        {
+          "id": "semi-natural-grasslands",
+          "name": "Semi-natural grasslands",
+          "kind": "ecosystem",
+          "note": "Species-rich meadows, pastures and road verges managed at low intensity."
+        },
+        {
+          "id": "enclosed-farmland",
+          "name": "Enclosed farmland",
+          "kind": "ecosystem",
+          "note": "Improved grassland, arable and the hedgerows between them: the largest land use in Wales."
+        },
+        {
+          "id": "woodlands",
+          "name": "Woodlands",
+          "kind": "ecosystem",
+          "note": "Broadleaved, conifer and mixed woodland, including commercial forestry, woodland creation and tree health."
+        },
+        {
+          "id": "urban",
+          "name": "Urban",
+          "kind": "ecosystem",
+          "note": "Towns and cities: green and blue infrastructure, urban trees and the built environment's natural resources."
+        },
+        {
+          "id": "air",
+          "name": "Air",
+          "kind": "resource",
+          "note": "Air quality and atmospheric deposition, including ammonia and nitrogen deposition on habitats."
+        },
+        {
+          "id": "soils",
+          "name": "Soils",
+          "kind": "resource",
+          "note": "Soil health, soil carbon, erosion, compaction and contaminated land."
+        },
+        {
+          "id": "water",
+          "name": "Water",
+          "kind": "resource",
+          "note": "Water as a resource: abstraction, supply, groundwater and water quantity."
+        }
+      ]
+    },
+    {
+      "id": "hazard-families",
+      "name": "Hazard families",
+      "nodes": [
+        {
+          "id": "plant-tree-disease",
+          "name": "Plant and tree disease",
+          "kind": "hazard_family",
+          "note": "Pathogens and pests of trees, crops and wild plants."
+        },
+        {
+          "id": "animal-disease",
+          "name": "Animal disease",
+          "kind": "hazard_family",
+          "note": "Disease in wild animals, livestock and fish that bears on the environment."
+        },
+        {
+          "id": "invasive-species",
+          "name": "Invasive species",
+          "kind": "hazard_family",
+          "note": "Invasive non-native species on land, in freshwater and at sea."
+        },
+        {
+          "id": "drought-water-scarcity",
+          "name": "Drought and water scarcity",
+          "kind": "hazard_family",
+          "note": "Low rainfall, low river flows and pressure on water supply."
+        },
+        {
+          "id": "flood-storm",
+          "name": "Flood and storm",
+          "kind": "hazard_family",
+          "note": "River, surface water and coastal flooding, storms and their knock-on effects such as coal tip instability."
+        },
+        {
+          "id": "wildfire",
+          "name": "Wildfire",
+          "kind": "hazard_family",
+          "note": "Vegetation fires on upland, heath, grassland and forest."
+        },
+        {
+          "id": "pollution-incident",
+          "name": "Pollution incident",
+          "kind": "hazard_family",
+          "note": "Point and diffuse pollution of water, land and air, from single incidents to chronic loading."
+        },
+        {
+          "id": "climate-extreme",
+          "name": "Climate extreme",
+          "kind": "hazard_family",
+          "note": "Heatwaves on land and at sea, extreme cold and other weather extremes not covered by flood, drought or fire."
+        },
+        {
+          "id": "funding-capacity",
+          "name": "Funding and capacity",
+          "kind": "hazard_family",
+          "note": "Pressure on the budgets, staffing and delivery capacity of public bodies and partners."
+        },
+        {
+          "id": "regulatory-legal-change",
+          "name": "Regulatory and legal change",
+          "kind": "hazard_family",
+          "note": "New, changed or challenged law and regulation, including court cases and regulatory divergence."
+        },
+        {
+          "id": "market-land-use-change",
+          "name": "Market and land use change",
+          "kind": "hazard_family",
+          "note": "Shifts in farm economics, energy, forestry markets, insurance and land use."
+        }
+      ]
+    }
+  ]
+}

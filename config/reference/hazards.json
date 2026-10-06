@@ -1,0 +1,22 @@
+{
+  "notes": "Named threats to the Welsh environment. Each belongs to one family on the hazard-families axis of config/taxonomy.json. Gwylio watches hazards, not adversaries.",
+  "hazards": [
+    {"id": "ash-dieback", "name": "Ash dieback", "family": "plant-tree-disease", "note": "Fungal disease (Hymenoscyphus fraxineus) killing ash trees across Wales, with roadside safety and woodland costs."},
+    {"id": "phytophthora-ramorum", "name": "Phytophthora ramorum", "family": "plant-tree-disease", "note": "Pathogen of larch and other trees that has driven large-scale felling in Welsh forests."},
+    {"id": "avian-influenza", "name": "Avian influenza in wild birds", "family": "animal-disease", "note": "Highly pathogenic avian influenza in seabirds and other wild birds, and the restrictions that follow."},
+    {"id": "invasive-non-native-plants", "name": "Invasive non-native plants", "family": "invasive-species", "note": "Species such as Japanese knotweed and Himalayan balsam spreading along rivers and roads."},
+    {"id": "invasive-aquatic-species", "name": "Invasive aquatic species", "family": "invasive-species", "note": "Freshwater and marine invaders such as signal crayfish and killer shrimp."},
+    {"id": "drought-and-low-flows", "name": "Drought and low river flows", "family": "drought-water-scarcity", "note": "Dry spells that lower river flows and reservoirs and trigger drought declarations."},
+    {"id": "river-and-surface-water-flooding", "name": "River and surface water flooding", "family": "flood-storm", "note": "Flooding from rivers and intense rainfall, including the communities and infrastructure at risk."},
+    {"id": "coastal-flooding-and-erosion", "name": "Coastal flooding and erosion", "family": "flood-storm", "note": "Storm surge, sea level rise and erosion along the Welsh coast."},
+    {"id": "coal-tip-instability", "name": "Coal tip instability", "family": "flood-storm", "note": "Disused coal tips made unstable by heavy rainfall, a legacy risk concentrated in the South Wales valleys."},
+    {"id": "upland-wildfire", "name": "Upland and heathland wildfire", "family": "wildfire", "note": "Vegetation fires on moorland, heath and forest, often in dry springs."},
+    {"id": "agricultural-pollution", "name": "Agricultural pollution", "family": "pollution-incident", "note": "Nutrient and slurry pollution from farming, including phosphorus in protected rivers."},
+    {"id": "storm-overflow-discharges", "name": "Storm overflow discharges", "family": "pollution-incident", "note": "Sewage released from storm overflows into rivers and coastal waters."},
+    {"id": "metal-mine-pollution", "name": "Metal mine pollution", "family": "pollution-incident", "note": "Metals leaching from abandoned mines into Welsh rivers."},
+    {"id": "marine-heatwave", "name": "Marine heatwave", "family": "climate-extreme", "note": "Periods of unusually warm sea temperatures that stress marine ecosystems."},
+    {"id": "public-funding-pressure", "name": "Public funding pressure", "family": "funding-capacity", "note": "Real-terms cuts or uncertainty in budgets for environmental bodies and their partners."},
+    {"id": "legal-challenge", "name": "Legal challenge", "family": "regulatory-legal-change", "note": "Judicial reviews, complaints and court rulings that test regulators and environmental policy."},
+    {"id": "farm-support-transition", "name": "Farm support transition", "family": "market-land-use-change", "note": "The move from the old farm payments to the Sustainable Farming Scheme and its effect on land use."}
+  ]
+}

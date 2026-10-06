@@ -18,7 +18,7 @@ from datetime import date, datetime
 from typing import Any, ClassVar, Final, NoReturn
 from urllib.parse import urlsplit
 
-__all__ = ["CanonicalUrl", "CleanText", "IsoDate", "KebabId"]
+__all__ = ["KEBAB_MAX_LENGTH", "KEBAB_PATTERN", "CanonicalUrl", "CleanText", "IsoDate", "KebabId"]
 
 _FORBIDDEN_DASHES: Final[dict[int, str]] = {
     0x2013: "EN DASH",
@@ -256,7 +256,9 @@ class IsoDate(_Frozen):
         return self._value >= other._value
 
 
-_KEBAB_RE: Final[re.Pattern[str]] = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*")
+KEBAB_PATTERN: Final[str] = r"^[a-z0-9]+(?:-[a-z0-9]+)*$"
+"""The kebab-case rule as an anchored regular expression, for JSON Schema ``pattern``."""
+_KEBAB_RE: Final[re.Pattern[str]] = re.compile(KEBAB_PATTERN[1:-1])
 KEBAB_MAX_LENGTH: Final[int] = 80
 
 

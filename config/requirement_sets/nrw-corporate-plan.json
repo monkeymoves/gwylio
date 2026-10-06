@@ -1,0 +1,429 @@
+{
+  "notes": "Transcribed from the earlier NRW horizon-scanning tool's frameworks.json, itself a transcription of the source document named below. Requirement names, scanability notes, keywords, metric sources and development flags are verbatim; scanability is that file's external_scanability. Two mappings are editorial judgements, edit freely: impact group membership inverts each indicator's impacts list, which the source document does not give as an explicit matrix; and expected_coverage maps each indicator to the State of Natural Resources Report (SoNaRR) ecosystems and resources it should touch, so the coverage audit can show which parts of the natural resource base the framework foregrounds. SI9 to SI12 are cross-cutting or internal and map to no ecosystem, so their expected_coverage is empty. The short names are new. Well-being objective (WBO) groups list each objective's primary indicators as members and the impact it maps to as a related group; their notes are verbatim.",
+  "id": "nrw-corporate-plan",
+  "name": "NRW corporate plan performance framework",
+  "version": "2024-25 draft, transcription 1",
+  "source_doc": "Impacts and SIs Doc-Master ENGLISH.pdf (NRW corporate plan performance framework, draft for testing through 2024-25)",
+  "requirements": [
+    {
+      "code": "SI1",
+      "id": "si1",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "short": "Resilient ecosystems",
+      "scanability": "high",
+      "scanability_note": "Drivers are external (targets, legislation, plans) even though the SoNaRR resilience assessment itself is NRW's.",
+      "keywords": [
+        "ecosystem resilience",
+        "DECCA",
+        "SoNaRR",
+        "habitat condition",
+        "connectivity"
+      ],
+      "expected_coverage": [
+        "marine",
+        "coastal-margins",
+        "freshwaters",
+        "mountains-moorlands-heaths",
+        "semi-natural-grasslands",
+        "enclosed-farmland",
+        "woodlands",
+        "urban",
+        "soils"
+      ],
+      "metric_sources": [
+        "SoNaRR / SoNaRR2020 resilience assessments (DECCA framework; update published 2025)"
+      ],
+      "development": false
+    },
+    {
+      "code": "SI2",
+      "id": "si2",
+      "name": "Increasing the rate of habitat restoration",
+      "short": "Habitat restoration rate",
+      "scanability": "medium",
+      "scanability_note": "Restoration rate data is largely NRW's and partners'; external scanning sees the funding and policy drivers, not the rate.",
+      "keywords": [
+        "habitat restoration",
+        "protected sites",
+        "SSSI condition",
+        "nature recovery"
+      ],
+      "expected_coverage": [
+        "marine",
+        "coastal-margins",
+        "freshwaters",
+        "mountains-moorlands-heaths",
+        "semi-natural-grasslands",
+        "woodlands"
+      ],
+      "metric_sources": [
+        "Protected sites metric (revamped)",
+        "Evaluated project outcomes (LIFE, Natur am Byth)"
+      ],
+      "development": false
+    },
+    {
+      "code": "SI3",
+      "id": "si3",
+      "name": "Increasing the integration of activities that support nature recovery into Wales' public services",
+      "short": "Nature recovery in public services",
+      "scanability": "high",
+      "scanability_note": "Section 6 reporting, PSB well-being plans and public body strategies are all published externally.",
+      "keywords": [
+        "Section 6 biodiversity duty",
+        "public services boards",
+        "nature recovery",
+        "biodiversity duty"
+      ],
+      "expected_coverage": [
+        "semi-natural-grasslands",
+        "woodlands",
+        "urban"
+      ],
+      "metric_sources": [
+        "Public bodies' Environment (Wales) Act Section 6 reporting",
+        "PSB well-being plans and Nature Charters",
+        "WFGA journey to a resilient Wales"
+      ],
+      "development": true
+    },
+    {
+      "code": "SI4",
+      "id": "si4",
+      "name": "Decreasing the rate of pollution on land and entering water bodies",
+      "short": "Pollution to land and water",
+      "scanability": "high",
+      "scanability_note": "WFD classification, regulations and water governance are external and well covered.",
+      "keywords": [
+        "water quality",
+        "Water Framework Directive",
+        "phosphorus",
+        "pollution incident",
+        "agricultural pollution",
+        "storm overflow"
+      ],
+      "expected_coverage": [
+        "coastal-margins",
+        "freshwaters",
+        "enclosed-farmland",
+        "soils",
+        "water"
+      ],
+      "metric_sources": [
+        "Water Framework Directive elements at most recent analysis",
+        "WIRS incident data and case studies",
+        "Land pollution element (forthcoming)"
+      ],
+      "development": false
+    },
+    {
+      "code": "SI5",
+      "id": "si5",
+      "name": "Decreasing the rate of pollution to air from industrial and non-industrial sources",
+      "short": "Air pollution",
+      "scanability": "high",
+      "scanability_note": "Air quality legislation, targets and standards are external and well covered.",
+      "keywords": [
+        "air quality",
+        "clean air",
+        "nitrogen deposition",
+        "ammonia",
+        "PM2.5"
+      ],
+      "expected_coverage": [
+        "mountains-moorlands-heaths",
+        "semi-natural-grasslands",
+        "enclosed-farmland",
+        "woodlands",
+        "urban",
+        "air"
+      ],
+      "metric_sources": [
+        "Air quality standards and objectives (PM2.5, PM10, NO2, SO2)",
+        "Critical levels and loads for protected sites (NH3, N deposition)",
+        "Clean Air (Wales) target setting via Clean Air Advisory Panel"
+      ],
+      "development": false
+    },
+    {
+      "code": "SI6",
+      "id": "si6",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "short": "Greenhouse gas emissions and sequestration",
+      "scanability": "high",
+      "scanability_note": "Carbon budgets and the UK GHG Inventory are external and published on a known cycle.",
+      "keywords": [
+        "greenhouse gas",
+        "carbon budget",
+        "net zero",
+        "sequestration",
+        "peatland",
+        "woodland creation"
+      ],
+      "expected_coverage": [
+        "marine",
+        "mountains-moorlands-heaths",
+        "enclosed-farmland",
+        "woodlands",
+        "air",
+        "soils"
+      ],
+      "metric_sources": [
+        "UK Greenhouse Gas Inventory statistics (Welsh reporting)",
+        "Internal data on woodland regeneration and restocking",
+        "NPAP outcomes and seagrass restoration"
+      ],
+      "development": false
+    },
+    {
+      "code": "SI7",
+      "id": "si7",
+      "name": "Increasing the proportion of the population who have access to high quality green or blue space, and who use them sustainably",
+      "short": "Access to green and blue space",
+      "scanability": "medium",
+      "scanability_note": "Green Flag and the GI data set are external but published annually; policy drivers are visible, use and access data less so.",
+      "keywords": [
+        "green space",
+        "blue space",
+        "green infrastructure",
+        "access to nature",
+        "outdoor recreation"
+      ],
+      "expected_coverage": [
+        "coastal-margins",
+        "freshwaters",
+        "woodlands",
+        "urban"
+      ],
+      "metric_sources": [
+        "Wales Green Infrastructure Data Set",
+        "Green Flag / Green Flag Community Award boundaries (Keep Wales Tidy, annual)",
+        "NRW Greenspace Toolkit standards",
+        "National social surveys (perceptions, distance, use, behaviours)"
+      ],
+      "development": true
+    },
+    {
+      "code": "SI8",
+      "id": "si8",
+      "name": "Increasing the proportion of the population living in places that will continue to support and contribute to their health and well-being in a changing climate",
+      "short": "Places resilient to a changing climate",
+      "scanability": "high",
+      "scanability_note": "Flood policy, SUDS, planning and WIMD are external; NRW's own flood data is not.",
+      "keywords": [
+        "flood risk",
+        "climate adaptation",
+        "SUDS",
+        "urban green infrastructure",
+        "coal tips",
+        "wildfire"
+      ],
+      "expected_coverage": [
+        "coastal-margins",
+        "freshwaters",
+        "urban",
+        "water"
+      ],
+      "metric_sources": [
+        "NRW flood maps and capital programme data",
+        "SUDS Approving Boards data",
+        "Planning system data and UGI case studies",
+        "Social survey data on perceived flood risk and well-being",
+        "Welsh Index of Multiple Deprivation"
+      ],
+      "development": true
+    },
+    {
+      "code": "SI9",
+      "id": "si9",
+      "name": "Increasing the impact of partnership approaches which deliver multiple benefits and address the root causes of the nature, climate and pollution crises",
+      "short": "Impact of partnership approaches",
+      "scanability": "low",
+      "scanability_note": "Evidence is mostly internal to NRW (grants, Area Statements, MoUs, Natur a Ni), but PSB well-being assessments and plans are published on a roughly 5-year cycle: the next assessments are due end 2026 to early 2027. So this is quiet between cycles with a known upcoming window, not permanently blind.",
+      "keywords": [
+        "partnership",
+        "grant scheme",
+        "area statements",
+        "well-being plan",
+        "citizens assembly"
+      ],
+      "expected_coverage": [],
+      "metric_sources": [
+        "Grants programme and partnership funding data and case studies",
+        "Area Statement impacts",
+        "PSB impacts",
+        "Strategic MoU improvements",
+        "Natur a Ni and Citizens' Assemblies qualitative data"
+      ],
+      "development": true
+    },
+    {
+      "code": "SI10",
+      "id": "si10",
+      "name": "Increasing the proportion of the population that act to mitigate and adapt to the nature, climate and pollution crises",
+      "short": "Public action on the crises",
+      "scanability": "medium",
+      "scanability_note": "PaNS Wales and the National Survey are external but only speak at release; between releases this indicator is genuinely quiet.",
+      "keywords": [
+        "pro-environmental behaviour",
+        "national survey",
+        "public attitudes",
+        "behaviour change"
+      ],
+      "expected_coverage": [],
+      "metric_sources": [
+        "People and Nature Survey Wales (PaNS)",
+        "National Survey for Wales (pro-environmental actions, flood preparedness)"
+      ],
+      "development": false
+    },
+    {
+      "code": "SI11",
+      "id": "si11",
+      "name": "Increasing the proportion of organisations and businesses who act to mitigate and adapt to the nature, climate and pollution crises",
+      "short": "Organisations acting on the crises",
+      "scanability": "low",
+      "scanability_note": "Business and organisational action is largely qualitative case-study evidence, much of it internal. PSB and partnership plans publishing 2027 to 2028 are the main external window; between them expect little, so absence is weak evidence rather than a finding.",
+      "keywords": [
+        "business environment action",
+        "corporate nature",
+        "private sector net zero",
+        "nature markets"
+      ],
+      "expected_coverage": [],
+      "metric_sources": [
+        "Case studies from PSBs",
+        "Case studies from partnerships with industry"
+      ],
+      "development": true
+    },
+    {
+      "code": "SI12",
+      "id": "si12",
+      "name": "Increasing the proportion of NRW colleagues feeling engaged, enabled and empowered",
+      "short": "NRW colleague engagement",
+      "scanability": "none",
+      "scanability_note": "Internal staff survey (Ein Llais). No external source will ever report on it.",
+      "keywords": [],
+      "expected_coverage": [],
+      "metric_sources": [
+        "Ein Llais staff survey"
+      ],
+      "development": false
+    }
+  ],
+  "groups": [
+    {
+      "id": "i1",
+      "kind": "impact",
+      "name": "Nature recovering",
+      "statement": "By 2030 the decline in biodiversity is halted; effective regulation, habitat restoration and nature-based solutions contribute to increasingly resilient ecosystems enabling adaptation to change, benefiting people's well-being.",
+      "members": [
+        "si1",
+        "si2",
+        "si3",
+        "si4",
+        "si7"
+      ]
+    },
+    {
+      "id": "i2",
+      "kind": "impact",
+      "name": "Climate action and adaptation",
+      "statement": "By 2030 sustained action on the causes, risks and impacts of climate change means nature and people are enabled and empowered to adapt, alleviating the effects on people's well-being.",
+      "members": [
+        "si1",
+        "si2",
+        "si5",
+        "si6",
+        "si7",
+        "si8",
+        "si10"
+      ]
+    },
+    {
+      "id": "i3",
+      "kind": "impact",
+      "name": "Pollution minimised",
+      "statement": "By 2030 pollution is minimised through effective regulation and legislative reform, reducing harm to biodiversity and people's well-being, and driving the sustainable management and use of natural resources.",
+      "members": [
+        "si4",
+        "si5",
+        "si6"
+      ]
+    },
+    {
+      "id": "i4",
+      "kind": "impact",
+      "name": "Social and environmental justice",
+      "statement": "By 2030 increased action for social and environmental justice is maximising benefits for nature, climate, and pollution and reducing social inequalities.",
+      "members": [
+        "si7",
+        "si8",
+        "si9"
+      ]
+    },
+    {
+      "id": "i5",
+      "kind": "impact",
+      "name": "Collaborative action",
+      "statement": "By 2030 sustained collaborative action means individuals and organisations are taking integrated decisions to address the nature, climate and pollution emergencies.",
+      "members": [
+        "si3",
+        "si9",
+        "si10",
+        "si11"
+      ]
+    },
+    {
+      "id": "i6",
+      "kind": "impact",
+      "name": "NRW values and behaviours",
+      "statement": "By 2030 consistent delivery of our values and behaviours in NRW mean colleagues, partners and communities are engaged, enabled and empowered to innovate and accelerate action.",
+      "members": [
+        "si12"
+      ]
+    },
+    {
+      "id": "nature-recovering",
+      "kind": "wbo",
+      "name": "Nature is Recovering",
+      "members": [
+        "si1",
+        "si2",
+        "si3"
+      ],
+      "related_groups": [
+        "i1"
+      ],
+      "note": "Also contributing: SI7, SI9, SI10 and SI11, through connecting people with nature, partnership and action."
+    },
+    {
+      "id": "communities-resilient-climate",
+      "kind": "wbo",
+      "name": "Communities are Resilient to Climate Change",
+      "members": [
+        "si6",
+        "si7",
+        "si8",
+        "si10"
+      ],
+      "related_groups": [
+        "i2"
+      ],
+      "note": "Also contributing: SI2, through nature-based solutions."
+    },
+    {
+      "id": "pollution-minimised",
+      "kind": "wbo",
+      "name": "Pollution is Minimised",
+      "members": [
+        "si4",
+        "si5"
+      ],
+      "related_groups": [
+        "i3"
+      ]
+    }
+  ]
+}

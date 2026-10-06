@@ -1,0 +1,20 @@
+{
+  "notes": "Subject areas drawn from the query clusters of the earlier NRW horizon-scanning tool, used as hints on queries and tags on reports. A topic says what something is about; it never says which requirement it bears on.",
+  "topics": [
+    {"id": "nature-and-ecosystems", "name": "Nature and ecosystems", "note": "Biodiversity, ecosystem resilience, protected sites and nature recovery."},
+    {"id": "pollution-water-and-land", "name": "Pollution of water and land", "note": "Water quality, agricultural and sewage pollution, contaminated land and mine water."},
+    {"id": "air-quality", "name": "Air quality", "note": "Air pollutants, clean air law and targets, ammonia and nitrogen deposition."},
+    {"id": "climate-emissions", "name": "Climate and emissions", "note": "Greenhouse gas emissions, carbon budgets, net zero and carbon sequestration."},
+    {"id": "people-place-and-resilience", "name": "People, place and resilience", "note": "Access to green and blue space, health and well-being, and climate adaptation where people live."},
+    {"id": "partnership-and-society", "name": "Partnership and society", "note": "Partnership working, public services boards, community action and citizen engagement."},
+    {"id": "marine-and-coastal", "name": "Marine and coastal", "note": "Marine planning, marine protected areas, fisheries, offshore energy and the coast."},
+    {"id": "soil-and-land", "name": "Soil and land", "note": "Soil health, land management, agriculture and land use change."},
+    {"id": "public-behaviour", "name": "Public behaviour", "note": "Public attitudes and action on nature, climate and pollution, from national surveys and research."},
+    {"id": "governance-and-funding", "name": "Governance and funding", "note": "Budgets, governance, audit and the delivery capacity of public bodies."},
+    {"id": "woodland-and-forestry", "name": "Woodland and forestry", "note": "Woodland creation, forest management, timber and tree health."},
+    {"id": "peatland", "name": "Peatland", "note": "Peatland condition, restoration and carbon."},
+    {"id": "flood-risk", "name": "Flood risk", "note": "Flood and coastal erosion risk management, sustainable drainage and flood events."},
+    {"id": "water-resources", "name": "Water resources", "note": "Water supply, abstraction, drought planning and the water industry."},
+    {"id": "biosecurity", "name": "Biosecurity", "note": "Plant and animal disease, invasive non-native species and the controls against them."}
+  ]
+}

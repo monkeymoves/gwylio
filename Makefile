@@ -20,10 +20,12 @@ setup: ## Install backend and frontend dependencies from the lock files
 	uv sync --directory backend --locked
 	$(PNPM) install --frozen-lockfile
 
-check: ## Lint, format check and type check both halves
+check: ## Lint, format check, type check, validate config and check generated files
 	$(UV) ruff check .
 	$(UV) ruff format --check .
 	$(UV) mypy
+	$(UV) gwylio check
+	$(UV) gwylio schema --check
 	$(PNPM) check
 
 test: ## Run the backend and frontend unit test suites
@@ -38,8 +40,8 @@ e2e: ## Build the site, serve it with vite preview and run Playwright
 
 ci: check test build ## Everything continuous integration runs, except end to end
 
-schema: ## Generate JSON Schema, TypeScript types and the glossary
-	@echo "schema: not yet implemented (WP1)"
+schema: ## Generate JSON Schema, TypeScript types, the glossary and the skill reference
+	$(UV) gwylio schema
 
 seed: ## Seed the register from the legacy signals
 	@echo "seed: not yet implemented (WP5)"

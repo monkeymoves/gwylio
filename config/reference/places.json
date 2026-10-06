@@ -1,0 +1,18 @@
+{
+  "notes": "Named places: Wales, its four regions and eight principal river basins. The Dee, Severn and Wye basins cross into England; their parent records where Gwylio watches them, not their full extent. Centroids are left empty until a geospatial discipline arrives.",
+  "places": [
+    {"id": "wales", "name": "Wales", "welsh_name": "Cymru", "kind": "nation", "parent": null, "centroid": null},
+    {"id": "north-wales", "name": "North Wales", "welsh_name": "Gogledd Cymru", "kind": "region", "parent": "wales", "centroid": null},
+    {"id": "mid-wales", "name": "Mid Wales", "welsh_name": "Canolbarth Cymru", "kind": "region", "parent": "wales", "centroid": null},
+    {"id": "south-west-wales", "name": "South West Wales", "welsh_name": "De-orllewin Cymru", "kind": "region", "parent": "wales", "centroid": null},
+    {"id": "south-east-wales", "name": "South East Wales", "welsh_name": "De-ddwyrain Cymru", "kind": "region", "parent": "wales", "centroid": null},
+    {"id": "dee", "name": "River Dee", "welsh_name": "Afon Dyfrdwy", "kind": "river_basin", "parent": "wales", "centroid": null},
+    {"id": "severn", "name": "River Severn", "welsh_name": "Afon Hafren", "kind": "river_basin", "parent": "wales", "centroid": null},
+    {"id": "wye", "name": "River Wye", "welsh_name": "Afon Gwy", "kind": "river_basin", "parent": "wales", "centroid": null},
+    {"id": "usk", "name": "River Usk", "welsh_name": "Afon Wysg", "kind": "river_basin", "parent": "wales", "centroid": null},
+    {"id": "tywi", "name": "River Tywi", "welsh_name": "Afon Tywi", "kind": "river_basin", "parent": "wales", "centroid": null},
+    {"id": "teifi", "name": "River Teifi", "welsh_name": "Afon Teifi", "kind": "river_basin", "parent": "wales", "centroid": null},
+    {"id": "conwy", "name": "River Conwy", "welsh_name": "Afon Conwy", "kind": "river_basin", "parent": "wales", "centroid": null},
+    {"id": "clwyd", "name": "River Clwyd", "welsh_name": "Afon Clwyd", "kind": "river_basin", "parent": "wales", "centroid": null}
+  ]
+}
