@@ -17,6 +17,9 @@ from pydantic import AfterValidator, BaseModel, ConfigDict, Field
 from gwylio.collection.model import SourceStatus
 from gwylio.direction.model import REQUIREMENT_CODE_PATTERN, GroupKind, Scanability
 from gwylio.direction.scanability import CoverageStatus
+from gwylio.dissemination.copy import Copy
+from gwylio.dissemination.product_file import ProductFile
+from gwylio.evaluation.yield_ import YieldReading
 from gwylio.intelligence.datecheck import FindingKind, Severity
 from gwylio.intelligence.model import HistoryKind
 from gwylio.processing.candidates_file import CandidatesFile
@@ -351,12 +354,14 @@ class DatecheckFile(_ConfigModel):
 SCHEMA_MODELS: Final[dict[str, type[BaseModel]]] = {
     "actors": ActorsFile,
     "candidates": CandidatesFile,
+    "copy": Copy,
     "datecheck": DatecheckFile,
     "gating": GatingFile,
     "hazards": HazardsFile,
     "instrument": InstrumentFile,
     "lanes": LanesFile,
     "places": PlacesFile,
+    "product": ProductFile,
     "requirement-set": RequirementSetFile,
     "sources": SourcesFile,
     "submission": Submission,
@@ -368,8 +373,9 @@ SCHEMA_MODELS: Final[dict[str, type[BaseModel]]] = {
 
 All are configuration files except ``candidates``, ``submission`` and
 ``sweep``, the handoff and fact file contracts from the Processing context,
+and ``product``, the product file contract from the Dissemination context,
 registered here so their schemas and TypeScript types are generated with the
-rest."""
+rest. ``copy`` is configuration whose model the Dissemination context owns."""
 
 SCHEMA_ENUMS: Final[tuple[type[Enum], ...]] = (
     CoverageStatus,
@@ -377,5 +383,6 @@ SCHEMA_ENUMS: Final[tuple[type[Enum], ...]] = (
     HistoryKind,
     IndicatorState,
     Severity,
+    YieldReading,
 )
 """Enums the front end needs that no file contract mentions."""

@@ -15,6 +15,7 @@ from dataclasses import dataclass, field
 from enum import StrEnum
 from typing import Final, Protocol
 
+from gwylio.shared.coverage import Scanability
 from gwylio.shared.errors import DomainError, DuplicateId, UnknownReference
 from gwylio.shared.values import CleanText, KebabId
 
@@ -36,28 +37,6 @@ SHORT_NAME_MAX_WORDS: Final[int] = 6
 
 _CODE_RE: Final[re.Pattern[str]] = re.compile(REQUIREMENT_CODE_PATTERN)
 _SCOPE: Final[str] = "requirement_set"
-
-
-class Scanability(StrEnum):
-    """How far public, indexed sources can see a requirement at all."""
-
-    HIGH = "high"
-    MEDIUM = "medium"
-    LOW = "low"
-    NONE = "none"
-
-    @property
-    def meaning(self) -> str:
-        """One sentence on what this value means for the scan."""
-        return _SCANABILITY_MEANINGS[self]
-
-
-_SCANABILITY_MEANINGS: Final[dict[Scanability, str]] = {
-    Scanability.HIGH: "Public sources see the drivers and the evidence well.",
-    Scanability.MEDIUM: "Public sources see the drivers, but the evidence only at release.",
-    Scanability.LOW: "Evidence is mostly internal; public sources see it only in known windows.",
-    Scanability.NONE: "Evidence is wholly internal; no public source will ever report on it.",
-}
 
 
 class GroupKind(StrEnum):

@@ -87,6 +87,85 @@ export interface CandidatesFile {
 	sightings: SightingEntry[];
 }
 
+/** Words both products share. */
+export interface CommonCopy {
+	/** Month names, January first. */
+	months: string[];
+	/** Lead line naming the requirement set. */
+	set_line: string;
+	/** Lead line naming the period and the render date. */
+	period_line: string;
+	/** What a list with nothing in it says. */
+	none: string;
+	/** Joins items in a running list, such as ', '. */
+	list_separator: string;
+	/** One item of a running count, such as 'supports 3'. */
+	count_pair: string;
+	/** One assessment on a report line. */
+	direction_tag: string;
+	/** A share written as a percentage. */
+	share: string;
+	/** A table cell for true. */
+	yes: string;
+	/** A table cell for false. */
+	no: string;
+	/** Column heading for reports with no resolvable lane. */
+	unattributed: string;
+	/** Table heading: the measure counted. */
+	header_measure: string;
+	/** Table heading: the count. */
+	header_count: string;
+	/** Table heading: the requirement. */
+	header_requirement: string;
+	/** Table heading: the row total. */
+	header_total: string;
+	/** Table heading: the coverage status. */
+	header_status: string;
+	/** Table heading: the taxonomy node. */
+	header_node: string;
+	/** Table heading: requirements expecting the node. */
+	header_expected: string;
+	/** Table heading: active reports. */
+	header_reports: string;
+	/** Table heading: the direction. */
+	header_direction: string;
+	/** Table heading: the credibility digit. */
+	header_credibility: string;
+	/** Table heading: the wording of a value. */
+	header_label: string;
+	/** The standing sentence that a blind spot is not quiet. */
+	blind_spot_rule: string;
+	/** The standing sentence that counts of reports are not counts of impact. */
+	undercount: string;
+	directions: DirectionCopy;
+	states: StateCopy;
+	statuses: CoverageCopy;
+	scanability: ScanabilityCopy;
+	credibility: CredibilityCopy;
+}
+
+/** config/copy.json: every heading and standing sentence the products use. */
+export interface Copy {
+	/** Free notes for whoever edits the copy. */
+	notes?: string | null;
+	common: CommonCopy;
+	method: MethodCopy;
+	intsum: IntsumCopy;
+	strategic: StrategicCopy;
+}
+
+/** How each coverage status reads in a product. */
+export interface CoverageCopy {
+	/** Label for covered. */
+	covered: string;
+	/** Label for thin. */
+	thin: string;
+	/** Label for quiet. */
+	quiet: string;
+	/** Label for blind spot. */
+	blind_spot: string;
+}
+
 /** The state of one requirement in the picture. */
 export type CoverageStatus = "covered" | "thin" | "quiet" | "blind_spot";
 
@@ -97,6 +176,22 @@ export type CoverageStatus = "covered" | "thin" | "quiet" | "blind_spot";
  * fixed by the watchlist. The two together make the grading, such as B2.
  */
 export type Credibility = 1 | 2 | 3 | 4 | 5 | 6;
+
+/** The Admiralty wording for each credibility digit. */
+export interface CredibilityCopy {
+	/** Credibility 1. */
+	one: string;
+	/** Credibility 2. */
+	two: string;
+	/** Credibility 3. */
+	three: string;
+	/** Credibility 4. */
+	four: string;
+	/** Credibility 5. */
+	five: string;
+	/** Credibility 6. */
+	six: string;
+}
 
 /** config/datecheck.json: the rules gwylio datecheck applies. */
 export interface DatecheckFile {
@@ -109,6 +204,18 @@ export interface DatecheckFile {
 
 /** Which way a report bears on one requirement. */
 export type Direction = "supports" | "threatens" | "neutral" | "informs_baseline";
+
+/** How each direction reads in a product. */
+export interface DirectionCopy {
+	/** Label for the threatens direction. */
+	threatens: string;
+	/** Label for the neutral (two-way) direction. */
+	neutral: string;
+	/** Label for the informs_baseline direction. */
+	informs_baseline: string;
+	/** Label for the supports direction. */
+	supports: string;
+}
 
 /** The kind of collection a collector performs. */
 export type Discipline = "osint_web" | "osint_feed" | "osint_site" | "osint_academic" | "geoint" | "sensor";
@@ -130,6 +237,14 @@ export type DispositionOutcome = "promoted" | "rejected" | "duplicate" | "deferr
 export interface FadeEntry {
 	report_id: string;
 	change: string;
+}
+
+/** A date check finding kind: a heading and the sentence that explains it. */
+export interface FindingCopy {
+	/** Heading for this kind of finding. */
+	heading: string;
+	/** One sentence on what this kind of finding means. */
+	meaning: string;
 }
 
 /** What the date check found wrong with a report. */
@@ -203,6 +318,68 @@ export interface InstrumentFile {
 	queries: QueryConfig[];
 }
 
+/** The operational intelligence summary (INTSUM). */
+export interface IntsumCopy {
+	/** Title of the INTSUM. */
+	title: string;
+	/** Lead sentence on what the INTSUM is for. */
+	purpose: string;
+	/** Heading of the summary. */
+	summary_heading: string;
+	/** Sentence: new reports in the period. */
+	summary_new: string;
+	/** Sentence: lifecycle state changes in the period. */
+	summary_state_changes: string;
+	/** Sentence: reports faded in the period. */
+	summary_faded: string;
+	/** Sentence: reports verified in the period. */
+	summary_verified: string;
+	/** Sentence: assessments on the reports that moved, by direction. */
+	summary_directions: string;
+	/** Summary table row: new reports. */
+	measure_new: string;
+	/** Summary table row: state changes. */
+	measure_state_changes: string;
+	/** Summary table row: faded. */
+	measure_faded: string;
+	/** Summary table row: verified. */
+	measure_verified: string;
+	/** Summary table row: assessments in one direction. */
+	measure_direction: string;
+	/** Heading of the reports that moved. */
+	moved_heading: string;
+	/** Sentence introducing the per objective lists. */
+	moved_intro: string;
+	/** Subheading for one well-being objective. */
+	group_heading: string;
+	/** Subheading for reports outside every well-being objective. */
+	outside_heading: string;
+	/** What an objective with nothing moving says. */
+	group_empty: string;
+	/** One report in a list. */
+	report_line: string;
+	/** Heading of the quiet requirements and blind spots. */
+	quiet_heading: string;
+	/** Sentence introducing the requirements with no movement. */
+	quiet_intro: string;
+	/** One requirement with no movement. */
+	quiet_line: string;
+	/** What the section says when every requirement moved. */
+	quiet_none: string;
+	/** Heading of the date check findings. */
+	verification_heading: string;
+	/** Sentence counting the date check findings. */
+	verification_intro: string;
+	/** What the section says when the date check found nothing. */
+	verification_none: string;
+	/** One finding. */
+	finding_line: string;
+	passed_horizon: FindingCopy;
+	future_language: FindingCopy;
+	stale_verification: FindingCopy;
+	never_verified: FindingCopy;
+}
+
 /** Where we look: a grouping of sources under one lens. */
 export interface LaneConfig {
 	id: string;
@@ -227,8 +404,66 @@ export type Level = "low" | "medium" | "high";
 /** How a candidate was matched to an existing intelligence report. */
 export type MatchedBy = "url" | "title";
 
+/** The method note both products end with. */
+export interface MethodCopy {
+	/** Heading of the method note. */
+	heading: string;
+	/** How many scan runs started in the period. */
+	runs: string;
+	/** What the note says when no run started in the period. */
+	no_runs: string;
+	/** Runs table heading: run id. */
+	header_run: string;
+	/** Runs table heading: start date. */
+	header_started: string;
+	/** Runs table heading: instrument version. */
+	header_instrument: string;
+	/** Runs table heading: raw hits. */
+	header_raw: string;
+	/** Runs table heading: unique candidates. */
+	header_unique: string;
+	/** Runs table heading: new candidates. */
+	header_new: string;
+	/** Runs table heading: reinforcements. */
+	header_reinforcements: string;
+	/** Runs table heading: requests made. */
+	header_requests: string;
+	/** Runs table heading: budget exhausted. */
+	header_budget: string;
+	/** Credibility table heading: reports created in the period. */
+	header_reports: string;
+	/** Dispositions of the period's candidates. */
+	dispositions: string;
+	/** Reports created in the period and the non-government share. */
+	promotions: string;
+	/** What the note says when no report was created in the period. */
+	no_promotions: string;
+	/** Introduces the credibility table for the period's reports. */
+	credibility: string;
+	/** The instrument versions the period's runs used. */
+	instrument: string;
+	/** The current instrument version, when no run used one in the period. */
+	instrument_current: string;
+	/** The requirements this tool cannot see. */
+	blind_spots: string;
+	/** What the note says when no requirement is a blind spot. */
+	no_blind_spots: string;
+	/** The standing sentence on what the queries would never find. */
+	streetlight: string;
+}
+
 /** What a taxonomy node stands for. */
 export type NodeKind = "ecosystem" | "resource" | "hazard_family";
+
+/** The dates a product covers, inclusive, and its label. */
+export interface PeriodModel {
+	/** A date, YYYY-MM-DD. */
+	start: string;
+	/** A date, YYYY-MM-DD. */
+	end: string;
+	/** YYYY-MM for a month, YYYY for a year. */
+	label: string;
+}
 
 /** A named location. */
 export interface PlaceConfig {
@@ -258,6 +493,28 @@ export interface PriorHistoryEntry {
 	on: string;
 	change: string;
 }
+
+/** data/products/<stem>.json: one rendered product's structure. */
+export interface ProductFile {
+	/** Always gwylio.product/1. */
+	format: "gwylio.product/1";
+	id: string;
+	level: ProductLevel;
+	requirement_set_id: string;
+	period: PeriodModel;
+	/** A date, YYYY-MM-DD. */
+	generated_on: string;
+	title: string;
+	lead: string[];
+	sections: SectionModel[];
+	report_ids: string[];
+	method_note: string;
+	/** The Markdown file beside this one. */
+	markdown_file: string;
+}
+
+/** The level a product serves: the annual picture, the monthly summary, or an alert. */
+export type ProductLevel = "strategic" | "operational" | "tactical";
 
 /** A new intelligence report. Reliability, lane and appearances are not the analyst's. */
 export interface PromotionEntry {
@@ -388,6 +645,18 @@ export interface RequirementSetFile {
 /** How far public, indexed sources can see a requirement at all. */
 export type Scanability = "high" | "medium" | "low" | "none";
 
+/** How each scanability value reads in a product. */
+export interface ScanabilityCopy {
+	/** Label for high scanability. */
+	high: string;
+	/** Label for medium scanability. */
+	medium: string;
+	/** Label for low scanability. */
+	low: string;
+	/** Label for no scanability. */
+	none: string;
+}
+
 /** The analyst's scores for a report. */
 export interface ScoresEntry {
 	/** How strong the evidence on the page is. */
@@ -396,6 +665,16 @@ export interface ScoresEntry {
 	confidence: Level;
 	potential_impact: Level;
 	time_horizon: TimeHorizon;
+}
+
+/** One section: heading, paragraphs, tables and bullets, rendered in that order. */
+export interface SectionModel {
+	heading: string;
+	/** 2 for a section, 3 for a subsection. */
+	depth: number;
+	body: string[];
+	tables: TableModel[];
+	bullets: string[];
 }
 
 /** How urgent a finding is: ``act`` before the report is quoted again, ``warn`` to check. */
@@ -443,6 +722,82 @@ export interface SourcesFile {
 	sources: SourceConfig[];
 }
 
+/** How each indicator state reads in a product. */
+export interface StateCopy {
+	/** Label for emerging. */
+	emerging: string;
+	/** Label for tracking. */
+	tracking: string;
+	/** Label for reinforced. */
+	reinforced: string;
+	/** Label for matured. */
+	matured: string;
+	/** Label for faded. */
+	faded: string;
+	/** Label for parked. */
+	parked: string;
+}
+
+/** The strategic assessment: the annual picture per requirement set. */
+export interface StrategicCopy {
+	/** Title of the strategic assessment. */
+	title: string;
+	/** Heading of the purpose. */
+	purpose_heading: string;
+	/** Paragraphs on what the assessment is for. */
+	purpose: string[];
+	/** Heading of the standing picture. */
+	picture_heading: string;
+	/** Sentence introducing the standing picture. */
+	picture_intro: string;
+	/** Subheading for one requirement. */
+	requirement_heading: string;
+	/** Coverage status of a requirement. */
+	status_line: string;
+	/** Active reports by direction. */
+	directions_line: string;
+	/** Active reports by state. */
+	states_line: string;
+	/** Grading spread of the active reports. */
+	grading_line: string;
+	/** Matured reports kept as settled context. */
+	matured_line: string;
+	/** Scanability, with the requirement's note verbatim. */
+	scanability_line: string;
+	/** Sentence introducing the highest potential impact reports. */
+	top_intro: string;
+	/** One report among the highest potential impact. */
+	top_line: string;
+	/** Potential impact: high. */
+	impact_high: string;
+	/** Potential impact: medium. */
+	impact_medium: string;
+	/** Potential impact: low. */
+	impact_low: string;
+	/** Heading of the questions per well-being objective. */
+	questions_heading: string;
+	/** Sentence on what the questions are and are not. */
+	questions_intro: string;
+	/** Subheading for one well-being objective. */
+	group_heading: string;
+	/** One question drawn from a threatening or two-way report. */
+	question: string;
+	/** What an objective with no threat or two-way report says. */
+	questions_none: string;
+	/** Heading of the coverage audit. */
+	coverage_heading: string;
+	/** Sentence introducing the coverage audit. */
+	coverage_intro: string;
+	/** Subheading of the requirement by lane matrix. */
+	lane_matrix_heading: string;
+	/** Sentence explaining the requirement by lane matrix. */
+	lane_matrix_note: string;
+	/** Subheading of one taxonomy axis. */
+	taxonomy_heading: string;
+	/** Sentence explaining the taxonomy counts. */
+	taxonomy_note: string;
+}
+
 /** data/submissions/<run_id>__<n>.json: the analyst's judgements on one run, or none. */
 export interface Submission {
 	/** Always gwylio.submission/1. */
@@ -472,6 +827,12 @@ export interface SweepFile {
 	/** How many submissions had been ingested when the sweep ran. */
 	after_submissions: number;
 	faded: FadeEntry[];
+}
+
+/** A table: header cells, then rows of cells as wide as the header. */
+export interface TableModel {
+	headers: string[];
+	rows: Array<string[]>;
 }
 
 /** One dimension of the taxonomy. */
@@ -528,3 +889,6 @@ export interface VerificationEntry {
 	verified_on: string;
 	note: string;
 }
+
+/** What a source's yield says about its place on the watchlist. */
+export type YieldReading = "earning_its_place" | "high_volume_no_promotions" | "low_volume" | "silent";

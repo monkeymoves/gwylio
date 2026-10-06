@@ -40,6 +40,9 @@ def test_help_lists_every_verb() -> None:
         "sweep",
         "datecheck",
         "import-legacy",
+        "audit",
+        "yield",
+        "product",
     ):
         assert verb in result.stdout
 
@@ -47,6 +50,7 @@ def test_help_lists_every_verb() -> None:
 def test_cli_verbs_are_sorted_with_help() -> None:
     verbs = cli_verbs()
     assert [name for name, _ in verbs] == [
+        "audit",
         "check",
         "collect",
         "datecheck",
@@ -55,10 +59,12 @@ def test_cli_verbs_are_sorted_with_help() -> None:
         "ingest",
         "migrate",
         "probe",
+        "product",
         "rebuild",
         "schema",
         "sweep",
         "version",
+        "yield",
     ]
     assert all(help_text for _, help_text in verbs)
 
@@ -81,7 +87,7 @@ def test_check_passes_on_the_shipped_config() -> None:
         "ok     config/datecheck.json: 10 future-framed phrases, verification stale after 45 days"
         in lines
     )
-    assert lines[-1] == "check passed: 11 configuration files valid"
+    assert lines[-1] == "check passed: 12 configuration files valid"
 
 
 @pytest.mark.integration

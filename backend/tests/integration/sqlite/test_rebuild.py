@@ -86,7 +86,7 @@ def test_collect_fake_then_rebuild_gives_an_equivalent_database(tmp_path: Path) 
     rebuilt = runner.invoke(app, ["rebuild", *root], env=env | {DB_PATH_ENV_VAR: str(rebuilt_path)})
     assert rebuilt.exit_code == 0, rebuilt.output
     assert (
-        "replayed 3 candidates files, 0 submissions, 0 sweeps and 1 archived instrument"
+        "replayed 3 candidates files, 0 submissions, 0 sweeps, 0 products and 1 archived instrument"
         in rebuilt.stdout
     )
     documents = [read_candidates_file(p) for p in sorted((data / "candidates").iterdir())]
@@ -238,7 +238,8 @@ def test_an_empty_data_directory_rebuilds_the_configuration_only(
     assert summary.counts["source"] == len(shipped_config.sources)
     assert summary.counts["instrument_version"] == 1
     assert summary.table()[0] == (
-        "replayed 0 candidates files, 0 submissions, 0 sweeps and 0 archived instruments"
+        "replayed 0 candidates files, 0 submissions, 0 sweeps, 0 products "
+        "and 0 archived instruments"
     )
     assert [p.name for p in tmp_path.iterdir()] == ["gwylio.sqlite"]
     with Database.open(db_path) as db:

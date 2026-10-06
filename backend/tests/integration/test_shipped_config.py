@@ -33,6 +33,7 @@ def test_check_reports_no_problems_and_one_summary_per_file() -> None:
         "config/gating.json",
         "config/instrument.json",
         "config/datecheck.json",
+        "config/copy.json",
     ]
 
 

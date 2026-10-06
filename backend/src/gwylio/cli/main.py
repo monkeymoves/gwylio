@@ -1,7 +1,8 @@
 """Entry point for the ``gwylio`` command line tool.
 
 Each verb's logic lives in its own module (``check.py``, ``schema.py``,
-``collect.py``, ``database.py``, ``register.py``); this module only declares the Typer commands
+``collect.py``, ``database.py``, ``register.py``, ``evaluate.py``,
+``product.py``); this module only declares the Typer commands
 and registers them. Every command takes its paths from one ``Settings``
 object, built by ``_settings`` from ``--root`` and the ``GWYLIO_`` environment.
 """
@@ -20,9 +21,12 @@ from typer.main import get_command
 from gwylio.cli.check import run_check
 from gwylio.cli.collect import run_collect, run_probe
 from gwylio.cli.database import run_export, run_migrate, run_rebuild
+from gwylio.cli.evaluate import run_audit, run_yield
+from gwylio.cli.product import run_product
 from gwylio.cli.register import run_datecheck, run_import_legacy, run_ingest, run_sweep
 from gwylio.cli.schema import run_schema
 from gwylio.collection.model import Discipline
+from gwylio.dissemination.model import Level
 from gwylio.infrastructure.config.settings import Settings
 
 app = typer.Typer(
@@ -194,7 +198,7 @@ def migrate_command(root: RootOption = None) -> None:
 
 @app.command("export")
 def export_command(root: RootOption = None) -> None:
-    """Write the deterministic exports, data/exports/runs.json and register.json."""
+    """Write the deterministic exports: runs.json, register.json and products.json."""
     raise typer.Exit(code=run_export(_settings(root)))
 
 
@@ -267,6 +271,57 @@ def import_legacy_command(
 ) -> None:
     """Seed the register from the old signals.json through a legacy submission."""
     raise typer.Exit(code=run_import_legacy(_settings(root), signals, received_on=received_on))
+
+
+@app.command("audit")
+def audit_command(
+    set_id: Annotated[
+        str | None,
+        typer.Option("--set", help="The requirement set to audit (default: the first configured)."),
+    ] = None,
+    root: RootOption = None,
+) -> None:
+    """Print the coverage audit: requirements by lane, taxonomy by count, credibility spread."""
+    raise typer.Exit(code=run_audit(_settings(root), set_id))
+
+
+@app.command("yield")
+def yield_command(root: RootOption = None) -> None:
+    """Print each watched source's yield and reading, silent sources last."""
+    raise typer.Exit(code=run_yield(_settings(root)))
+
+
+@app.command("product")
+def product_command(
+    level: Annotated[
+        Level,
+        typer.Option(
+            "--level",
+            help="operational (the monthly INTSUM), strategic (the annual picture) or tactical "
+            "(a seam, exits 4).",
+        ),
+    ],
+    period: Annotated[
+        str | None,
+        typer.Option(
+            "--period",
+            help="YYYY-MM for operational, YYYY for strategic (default: the one holding today).",
+        ),
+    ] = None,
+    set_id: Annotated[
+        str | None,
+        typer.Option("--set", help="The requirement set (default: the first configured)."),
+    ] = None,
+    today: Annotated[
+        str | None,
+        typer.Option("--today", help="The render date, YYYY-MM-DD (default: today, UTC)."),
+    ] = None,
+    root: RootOption = None,
+) -> None:
+    """Render a product to data/products/ and record it; print the Markdown path."""
+    raise typer.Exit(
+        code=run_product(_settings(root), level, period=period, set_id=set_id, on=today)
+    )
 
 
 if __name__ == "__main__":  # pragma: no cover

@@ -53,26 +53,33 @@ TABLES = {
     "report_history",
     "report_sighting",
     "disposition",
+    "product",
+    "product_report",
 }
 
 
 def test_migration_applies_on_an_empty_database_and_creates_every_table() -> None:
     db = Database.memory()
     applied = migrate(db, now=datetime(2026, 10, 6, 9, 0, tzinfo=UTC))
-    assert [m.path.name for m in applied] == ["0001_init.sql", "0002_intelligence.sql"]
+    assert [m.path.name for m in applied] == [
+        "0001_init.sql",
+        "0002_intelligence.sql",
+        "0003_products.sql",
+    ]
     assert set(db.table_names()) == TABLES
     rows = db.fetch_all("SELECT version, name, applied_at FROM schema_migrations ORDER BY version")
     assert [tuple(row) for row in rows] == [
         (1, "init", "2026-10-06T09:00:00.000000Z"),
         (2, "intelligence", "2026-10-06T09:00:00.000000Z"),
+        (3, "products", "2026-10-06T09:00:00.000000Z"),
     ]
 
 
 def test_migrate_is_idempotent() -> None:
     db = Database.memory()
-    assert len(migrate(db)) == 2
+    assert len(migrate(db)) == 3
     assert migrate(db) == ()
-    assert applied_versions(db) == (1, 2)
+    assert applied_versions(db) == (1, 2, 3)
 
 
 def test_migrate_upgrades_a_file_database_in_place(tmp_path: Path) -> None:

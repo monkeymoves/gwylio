@@ -26,6 +26,7 @@ from gwylio.direction.model import (
     RequirementGroup,
     RequirementSet,
 )
+from gwylio.dissemination.copy import Copy
 from gwylio.infrastructure.config import paths
 from gwylio.infrastructure.config.schemas import (
     ActorConfig,
@@ -124,7 +125,8 @@ class DateCheckRules:
 class LoadedConfig:
     """The validated configuration: catalogues, requirement sets, sources, instrument, gates.
 
-    ``datecheck`` holds the date check rules from ``config/datecheck.json``.
+    ``copy`` holds the products' standing copy from ``config/copy.json`` and
+    ``datecheck`` the date check rules from ``config/datecheck.json``.
     """
 
     catalogue: ReferenceCatalogue
@@ -132,6 +134,7 @@ class LoadedConfig:
     sources: tuple[Source, ...]
     instrument: QueryInstrument
     gating: GatingRules
+    copy: Copy
     datecheck: DateCheckRules = DateCheckRules()
 
     def requirement_set(self, set_id: str) -> RequirementSet:
@@ -350,6 +353,7 @@ _SCOPE_FILES = {
     "instrument": paths.INSTRUMENT_FILE,
     "gating": paths.GATING_FILE,
     "datecheck": paths.DATECHECK_FILE,
+    "copy": paths.COPY_FILE,
 }
 
 
@@ -569,6 +573,33 @@ def _load_datecheck(collector: _Collector, summaries: list[FileSummary]) -> Date
     )
 
 
+def _count_texts(value: object) -> int:
+    if isinstance(value, str):
+        return 1
+    if isinstance(value, list):
+        return sum(_count_texts(item) for item in value)
+    if isinstance(value, BaseModel):
+        return sum(
+            _count_texts(getattr(value, name))
+            for name in type(value).model_fields
+            if name != "notes"
+        )
+    return 0
+
+
+def _load_copy(collector: _Collector, summaries: list[FileSummary]) -> Copy | None:
+    parsed = collector.parse(paths.COPY_FILE, Copy)
+    if parsed is None:
+        return None
+    summaries.append(
+        FileSummary(
+            paths.COPY_FILE,
+            f"{_plural(_count_texts(parsed), 'heading or sentence', 'headings and sentences')}",
+        )
+    )
+    return parsed
+
+
 def _load_instrument(
     collector: _Collector,
     summaries: list[FileSummary],
@@ -641,14 +672,18 @@ def check_config(root: Path) -> CheckReport:
     all_sets = requirement_sets if len(requirement_sets) == len(set_files) else None
     instrument = _load_instrument(collector, summaries, catalogue, all_sets, sources)
     datecheck = _load_datecheck(collector, summaries)
+    copy = _load_copy(collector, summaries)
     problems = tuple(collector.problems)
     config = (
-        LoadedConfig(catalogue, tuple(requirement_sets), sources, instrument, gating, datecheck)
+        LoadedConfig(
+            catalogue, tuple(requirement_sets), sources, instrument, gating, copy, datecheck
+        )
         if catalogue is not None
         and sources is not None
         and instrument is not None
         and gating is not None
         and datecheck is not None
+        and copy is not None
         and not problems
         else None
     )

@@ -1,4 +1,4 @@
-"""Deterministic exports of the database: ``runs.json`` and ``register.json``.
+"""Deterministic exports of the database: ``runs.json``, ``register.json`` and ``products.json``.
 
 Exports are derived: written after a scan or an ingest so the state of the
 projection is readable in a diff, and never read back as input. Two exports
@@ -9,6 +9,9 @@ export time in the file.
 ``register.json`` holds every intelligence report with its history, its
 sighting ids and the two counts derived from those sightings: ``appearances``
 (distinct runs) and ``distinct_sources`` (distinct source ids).
+
+``products.json`` holds every rendered product as its product file records
+it (``gwylio.product/1``), by id.
 """
 
 from __future__ import annotations
@@ -18,9 +21,11 @@ from collections import Counter
 from pathlib import Path
 from typing import Any, Final
 
+from gwylio.dissemination.product_file import product_document
 from gwylio.infrastructure.sqlite.db import Database
 from gwylio.infrastructure.sqlite.repositories import (
     SqliteCandidateRepository,
+    SqliteProductRepository,
     SqliteReportRepository,
     SqliteScanRunRepository,
     SqliteSightingLookup,
@@ -30,12 +35,15 @@ from gwylio.intelligence.model import IntelligenceReport
 from gwylio.intelligence.service import derived_counts
 
 __all__ = [
+    "PRODUCTS_EXPORT_FORMAT",
     "REGISTER_EXPORT_FORMAT",
     "RUNS_EXPORT_FORMAT",
     "dumps_export",
+    "export_products",
     "export_register",
     "export_runs",
     "report_document",
+    "write_products_export",
     "write_register_export",
     "write_runs_export",
 ]
@@ -44,6 +52,8 @@ RUNS_EXPORT_FORMAT: Final[str] = "gwylio.runs/1"
 """The format identifier ``runs.json`` carries."""
 REGISTER_EXPORT_FORMAT: Final[str] = "gwylio.register/1"
 """The format identifier ``register.json`` carries."""
+PRODUCTS_EXPORT_FORMAT: Final[str] = "gwylio.products/1"
+"""The format identifier ``products.json`` carries."""
 
 
 def export_runs(db: Database) -> dict[str, Any]:
@@ -166,4 +176,20 @@ def write_register_export(db: Database, path: Path) -> Path:
     """Write ``register.json`` to ``path``, replacing any earlier export."""
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(dumps_export(export_register(db)), encoding="utf-8")
+    return path
+
+
+def export_products(db: Database) -> dict[str, Any]:
+    """Every stored product, by id, as its product file records it."""
+    products = [
+        product_document(stored.product, stored.markdown_file).model_dump(mode="json")
+        for stored in SqliteProductRepository(db).all()
+    ]
+    return {"format": PRODUCTS_EXPORT_FORMAT, "products": products}
+
+
+def write_products_export(db: Database, path: Path) -> Path:
+    """Write ``products.json`` to ``path``, replacing any earlier export."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(dumps_export(export_products(db)), encoding="utf-8")
     return path

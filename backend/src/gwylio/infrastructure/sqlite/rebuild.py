@@ -10,7 +10,10 @@ through the same repositories a scan writes with. Then it replays the
 register: every submission (``data/submissions/*.json``) in ``received_on``
 then file name order through the same ingest as ``gwylio ingest`` (with
 ``allow_deferred``, so a historic file always replays), and every sweep file
-(``data/sweeps/*.json``) at the point it ran. Everything after the migration
+(``data/sweeps/*.json``) at the point it ran. Last come the products
+(``data/products/*.json``): each was rendered from the register as it stood
+on its day, so the recorded product is stored rather than rendered again.
+Everything after the migration
 happens in one transaction, with foreign keys checked at the commit: a run
 can record a reinforcement of a report that a later-replayed submission
 creates.
@@ -33,6 +36,7 @@ from gwylio.infrastructure.config.loaders import ConfigInvalidError, load_config
 from gwylio.infrastructure.config.settings import (
     CANDIDATES_SUBDIR,
     INSTRUMENTS_SUBDIR,
+    PRODUCTS_SUBDIR,
     SUBMISSIONS_SUBDIR,
     SWEEPS_SUBDIR,
 )
@@ -44,6 +48,11 @@ from gwylio.infrastructure.handoff.candidates_file import (
 from gwylio.infrastructure.handoff.instrument_file import (
     InstrumentFileError,
     read_instrument_archives,
+)
+from gwylio.infrastructure.handoff.product_file import (
+    ProductFileError,
+    apply_product_file,
+    read_product_files,
 )
 from gwylio.infrastructure.handoff.submission_file import ingest_submission
 from gwylio.infrastructure.handoff.sweep_file import (
@@ -83,6 +92,7 @@ class RebuildSummary:
     counts: dict[str, int] = field(default_factory=dict)
     submission_files: int = 0
     sweep_files: int = 0
+    product_files: int = 0
 
     def table(self) -> list[str]:
         """The summary as aligned text lines: files read, then rows per table."""
@@ -93,7 +103,8 @@ class RebuildSummary:
 
         return [
             f"replayed {files(self.candidates_files, 'candidates file')}, "
-            f"{files(self.submission_files, 'submission')}, {files(self.sweep_files, 'sweep')} "
+            f"{files(self.submission_files, 'submission')}, {files(self.sweep_files, 'sweep')}, "
+            f"{files(self.product_files, 'product')} "
             f"and {files(self.instrument_files, 'archived instrument')}",
             f"  {'table'.ljust(width)}  {'rows':>6}",
             *(f"  {name.ljust(width)}  {count:>6}" for name, count in self.counts.items()),
@@ -161,6 +172,10 @@ def rebuild_into(db: Database, data_dir: Path, config_dir: Path) -> RebuildSumma
     submissions = _read_submissions(data_dir / SUBMISSIONS_SUBDIR)
     sweeps = _read_sweeps(data_dir / SWEEPS_SUBDIR)
     try:
+        products = read_product_files(data_dir / PRODUCTS_SUBDIR)
+    except ProductFileError as error:
+        raise RebuildError(str(error)) from error
+    try:
         steps = replay_order(
             [(s.received_on, stem) for stem, (_, s) in submissions.items()],
             [(d.after_submissions, stem) for stem, (_, d) in sweeps.items()],
@@ -202,12 +217,22 @@ def rebuild_into(db: Database, data_dir: Path, config_dir: Path) -> RebuildSumma
                         f"{path}: the submission no longer ingests:\n  "
                         + "\n  ".join(outcome.problems)
                     )
+            for path, product in products:
+                try:
+                    apply_product_file(db, product)
+                except ProductFileError as error:
+                    raise RebuildError(f"{path}: {error}") from error
     except (DomainError, ValueError) as error:
         raise RebuildError(f"rebuild failed: {error}") from error
     except sqlite3.IntegrityError as error:
         raise RebuildError(f"rebuild failed: the files do not agree: {error}") from error
     return RebuildSummary(
-        len(documents), len(archived), table_counts(db), len(submissions), len(sweeps)
+        len(documents),
+        len(archived),
+        table_counts(db),
+        len(submissions),
+        len(sweeps),
+        len(products),
     )
 
 

@@ -1,4 +1,4 @@
-"""SQLite repositories for the Reference, Direction, Collection and Intelligence contexts.
+"""SQLite repositories for Reference, Direction, Collection, Intelligence and Dissemination.
 
 Every SQL statement the application runs against its tables lives in this
 module. Each repository loads a whole aggregate on read and writes a whole
@@ -18,7 +18,9 @@ errors), with three differences that come from the database:
 The Intelligence repositories (reports, submissions, the sighting lookup and
 the source directory) follow the same pattern: a report is one aggregate
 across ``report`` and its child tables (assessments, tags, history,
-sightings), saved whole. Reports come back by id.
+sightings), saved whole. Reports come back by id. A product (Dissemination)
+is one aggregate across ``product`` and ``product_report``; saving one
+replaces any product in the same slot (level, requirement set and period).
 
 ``save_config`` writes the whole configuration (catalogues, requirement sets,
 sources) in one transaction. Rows that facts point at (a source a candidate
@@ -32,6 +34,7 @@ from __future__ import annotations
 import json
 import sqlite3
 from collections.abc import Callable, Iterable, Mapping, Sequence
+from dataclasses import dataclass
 from datetime import UTC, datetime
 from typing import Final, TypeVar
 
@@ -56,6 +59,15 @@ from gwylio.direction.model import (
     RequirementGroup,
     RequirementSet,
     Scanability,
+)
+from gwylio.dissemination.model import Product
+from gwylio.dissemination.product_file import (
+    PRODUCT_FORMAT,
+    PeriodModel,
+    ProductFile,
+    SectionModel,
+    product_document,
+    product_from_document,
 )
 from gwylio.infrastructure.config.loaders import LoadedConfig
 from gwylio.infrastructure.sqlite.db import Database, Value
@@ -109,6 +121,7 @@ __all__ = [
     "TIMESTAMP_FORMAT",
     "SqliteCandidateRepository",
     "SqliteInstrumentRepository",
+    "SqliteProductRepository",
     "SqliteReferenceRepository",
     "SqliteReportRepository",
     "SqliteRequirementSetRepository",
@@ -117,6 +130,7 @@ __all__ = [
     "SqliteSourceDirectory",
     "SqliteSourceRepository",
     "SqliteSubmissionRepository",
+    "StoredProduct",
     "dump_table",
     "format_timestamp",
     "parse_timestamp",
@@ -981,6 +995,11 @@ class SqliteCandidateRepository:
             for row in rows
         )
 
+    def all_candidates(self) -> tuple[Candidate, ...]:
+        """Every stored candidate, by run then canonical URL."""
+        rows = self._db.fetch_all("SELECT * FROM candidate ORDER BY run_id, canonical_url")
+        return tuple(_candidate(row) for row in rows)
+
     def canonical_urls_before(self, run_id: str) -> Mapping[str, RunId]:
         """Every canonical URL another run recorded, with the earliest run that first saw it."""
         rows = self._db.fetch_all(
@@ -1348,6 +1367,24 @@ class SqliteSubmissionRepository:
         )
         return tuple((str(row["submission_id"]), _disposition(row)) for row in rows)
 
+    def latest_outcomes(self) -> dict[str, DispositionOutcome]:
+        """Each disposed candidate's latest outcome: the latest that is not deferred, else deferred.
+
+        A candidate no submission names has no entry.
+        """
+        rows = self._db.fetch_all(
+            "SELECT d.candidate_id, d.outcome FROM disposition AS d "
+            "JOIN submission AS s ON s.id = d.submission_id ORDER BY s.position, d.position"
+        )
+        latest: dict[str, DispositionOutcome] = {}
+        for row in rows:
+            outcome = DispositionOutcome(row["outcome"])
+            candidate_id = str(row["candidate_id"])
+            if outcome is DispositionOutcome.DEFERRED and candidate_id in latest:
+                continue
+            latest[candidate_id] = outcome
+        return latest
+
     def final_dispositions(self) -> dict[str, tuple[str, str]]:
         """Each candidate's latest disposition other than deferred: (submission id, outcome)."""
         rows = self._db.fetch_all(
@@ -1408,6 +1445,11 @@ class SqliteSightingLookup:
                 found.append(_sighting_fact(row))
         return tuple(found)
 
+    def all_sightings(self) -> tuple[SightingFact, ...]:
+        """Every stored sighting, by sighting id."""
+        rows = self._db.fetch_all(f"{_SIGHTING_FACT_SQL} ORDER BY s.id")
+        return tuple(_sighting_fact(row) for row in rows)
+
     def run(self, run_id: str) -> RunFact | None:
         """The stored run, or ``None``."""
         row = self._db.fetch_one(
@@ -1450,6 +1492,122 @@ class SqliteSourceDirectory:
             lane=KebabId(row["lane"]),
             actor_id=KebabId(row["actor"]),
         )
+
+
+# Dissemination: the products.
+
+
+@dataclass(frozen=True, slots=True)
+class StoredProduct:
+    """A stored product and the Markdown file (beside its record) a reader opens."""
+
+    product: Product
+    markdown_file: str
+
+
+class SqliteProductRepository:
+    """Every rendered product, by id, with the reports it cites."""
+
+    def __init__(self, db: Database) -> None:
+        self._db = db
+
+    def save(self, product: Product, markdown_file: str) -> None:
+        """Store the product, replacing a stored product with the same id or the same slot.
+
+        A product's slot is its level, requirement set and period label: rendering
+        one again replaces the earlier one.
+        """
+        db = self._db
+        document = product_document(product, markdown_file)
+        sections = json.dumps(
+            [section.model_dump(mode="json") for section in document.sections],
+            ensure_ascii=False,
+            sort_keys=True,
+            separators=(",", ":"),
+        )
+        with db.transaction():
+            db.execute(
+                "DELETE FROM product WHERE id = ? OR (level = ? AND requirement_set_id = ? "
+                "AND period_label = ?) OR markdown_file = ?",
+                (
+                    product.id,
+                    product.level.value,
+                    product.requirement_set_id,
+                    product.period.label,
+                    markdown_file,
+                ),
+            )
+            try:
+                db.execute(
+                    "INSERT INTO product (id, level, requirement_set_id, period_label, "
+                    "period_start, period_end, generated_on, title, lead, sections, method_note, "
+                    "markdown_file) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                    (
+                        product.id,
+                        product.level.value,
+                        product.requirement_set_id,
+                        product.period.label,
+                        str(product.period.start),
+                        str(product.period.end),
+                        str(product.generated_on),
+                        product.title,
+                        _json(product.lead),
+                        sections,
+                        product.method_note,
+                        markdown_file,
+                    ),
+                )
+                db.executemany(
+                    "INSERT INTO product_report (product_id, position, report_id) VALUES (?, ?, ?)",
+                    [(product.id, i, r) for i, r in enumerate(product.report_ids)],
+                )
+            except sqlite3.IntegrityError as error:
+                raise _integrity(
+                    error,
+                    {
+                        "FOREIGN KEY": UnknownReference(
+                            f"product '{product.id}' cites a report that is not stored"
+                        )
+                    },
+                ) from error
+
+    def get(self, product_id: str) -> StoredProduct | None:
+        """The product with this id, or ``None``."""
+        row = self._db.fetch_one("SELECT * FROM product WHERE id = ?", (product_id,))
+        return None if row is None else self._load(row)
+
+    def all(self) -> tuple[StoredProduct, ...]:
+        """Every stored product, by id."""
+        rows = self._db.fetch_all("SELECT * FROM product ORDER BY id")
+        return tuple(self._load(row) for row in rows)
+
+    def _load(self, row: sqlite3.Row) -> StoredProduct:
+        report_ids = [
+            str(r["report_id"])
+            for r in self._db.fetch_all(
+                "SELECT report_id FROM product_report WHERE product_id = ? ORDER BY position",
+                (row["id"],),
+            )
+        ]
+        document = ProductFile(
+            format=PRODUCT_FORMAT,
+            id=str(row["id"]),
+            level=row["level"],
+            requirement_set_id=str(row["requirement_set_id"]),
+            period=PeriodModel(
+                start=str(row["period_start"]),
+                end=str(row["period_end"]),
+                label=str(row["period_label"]),
+            ),
+            generated_on=str(row["generated_on"]),
+            title=str(row["title"]),
+            lead=_strings(row["lead"]),
+            sections=[SectionModel.model_validate(s) for s in json.loads(row["sections"])],
+            report_ids=report_ids,
+            method_note=str(row["method_note"]),
+            markdown_file=str(row["markdown_file"]),
+        )
+        return StoredProduct(product_from_document(document), document.markdown_file)
 
 
 # The whole configuration, and plain dumps for tests and summaries.

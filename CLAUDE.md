@@ -28,6 +28,9 @@ uv run --directory backend gwylio sweep [--today YYYY-MM-DD]   # fade quiet repo
 uv run --directory backend gwylio datecheck                    # rot findings, always exit 0
 uv run --directory backend gwylio import-legacy <signals.json> # one-off seed from the old register
 make seed                                        # recreate backend/tests/fixtures/seed
+uv run --directory backend gwylio audit [--set ID]   # coverage audit and credibility spread
+uv run --directory backend gwylio yield              # yield per watched source, silent sources last
+uv run --directory backend gwylio product --level operational|strategic [--period P] [--today D]  # tactical exits 4
 uv run --directory backend gwylio probe "drought" --discipline osint_feed  # try a query, stores nothing
 ```
 
@@ -73,7 +76,13 @@ instrument holds still.
   file name order, so ingest refuses an out-of-order file; `data/sweeps/`
   records fades; run `sweep` after `ingest`. A refused submission was never a
   fact: fix or remove it before the next rebuild. The rubric is
-  `docs/RUBRIC.md`, version 2026.10. See ADR 0002 and 0003.
+  `docs/RUBRIC.md`, version 2026.10. `data/products/<level>_<period>.json`
+  records each rendered product and is replayed by rebuild, never re-rendered
+  (ADR 0004). See ADR 0002 and 0003.
+- **Products hold no prose.** Every heading and standing sentence lives in
+  `config/copy.json` (validated blanks, CleanText). A test refuses literal
+  sentences in `dissemination/render_*.py`. The coverage rule lives in
+  `gwylio/shared/coverage.py`.
 - **Generated files are never edited by hand.** `docs/schema/`,
   `docs/GLOSSARY.md`, `skill/REFERENCE.md` and
   `frontend/src/lib/data/types.generated.ts` come from `gwylio schema`.

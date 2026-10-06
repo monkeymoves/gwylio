@@ -9,65 +9,27 @@ reads only and always exits 0: it informs, it does not block.
 
 from __future__ import annotations
 
-import sqlite3
-from collections.abc import Iterator
-from contextlib import contextmanager
 from pathlib import Path
 
 import typer
 
-from gwylio.infrastructure.config.loaders import LoadedConfig, check_config
+from gwylio.cli.common import database as _database
+from gwylio.cli.common import load as _load
+from gwylio.cli.common import today as _today
 from gwylio.infrastructure.config.settings import Settings
 from gwylio.infrastructure.handoff.legacy import LegacyImportError, import_legacy
 from gwylio.infrastructure.handoff.submission_file import IngestOutcome, ingest_file
 from gwylio.infrastructure.handoff.sweep_file import sweep
 from gwylio.infrastructure.sqlite.db import Database
 from gwylio.infrastructure.sqlite.export import write_register_export, write_runs_export
-from gwylio.infrastructure.sqlite.migrate import applied_versions, available_migrations, migrate
+from gwylio.infrastructure.sqlite.migrate import applied_versions, available_migrations
 from gwylio.infrastructure.sqlite.repositories import (
-    SqliteInstrumentRepository,
     SqliteReportRepository,
-    save_config,
 )
 from gwylio.intelligence.datecheck import FindingKind, date_check
-from gwylio.shared.clock import SystemClock
-from gwylio.shared.errors import DomainError
 from gwylio.shared.values import IsoDate
 
 __all__ = ["run_datecheck", "run_import_legacy", "run_ingest", "run_sweep"]
-
-
-def _load(root: Path, verb: str) -> LoadedConfig | None:
-    report = check_config(root)
-    if report.config is None:
-        for problem in report.problems:
-            typer.echo(f"error  {problem}", err=True)
-        typer.echo(f"{verb}: configuration is invalid, run `gwylio check`", err=True)
-    return report.config
-
-
-@contextmanager
-def _database(settings: Settings, config: LoadedConfig, verb: str) -> Iterator[Database | None]:
-    """The migrated database holding the current configuration, or ``None`` after an error.
-
-    The current instrument is stored too (a no-op once stored), as a rebuild
-    does, so a database these verbs wrote rebuilds to the same projection.
-    """
-    with Database.open(settings.db_path) as db:
-        migrate(db)
-        try:
-            with db.transaction():
-                save_config(db, config)
-                SqliteInstrumentRepository(db).add(config.instrument)
-        except (sqlite3.IntegrityError, DomainError) as error:
-            typer.echo(
-                f"{verb}: config/ no longer matches the stored facts ({error}); retire sources "
-                "rather than removing them, or run `gwylio rebuild`",
-                err=True,
-            )
-            yield None
-            return
-        yield db
 
 
 def _exports(db: Database, settings: Settings) -> None:
@@ -133,16 +95,6 @@ def run_ingest(settings: Settings, path: Path, *, allow_deferred: bool = False) 
         _print_outcome(outcome, "ingest")
         _exports(db, settings)
     return 0
-
-
-def _today(value: str | None) -> IsoDate | None:
-    if value is None:
-        return IsoDate(SystemClock().today())
-    try:
-        return IsoDate(value)
-    except ValueError:
-        typer.echo(f"not a YYYY-MM-DD date: {value!r}", err=True)
-        return None
 
 
 def run_sweep(settings: Settings, *, today: str | None = None) -> int:

@@ -43,6 +43,8 @@ __all__ = [
     "DEFAULT_CONTACT_EMAIL",
     "EXPORTS_SUBDIR",
     "INSTRUMENTS_SUBDIR",
+    "PRODUCTS_EXPORT_FILE",
+    "PRODUCTS_SUBDIR",
     "REGISTER_EXPORT_FILE",
     "RUNS_EXPORT_FILE",
     "SEARCH_KEYS_FILE",
@@ -77,6 +79,9 @@ SUBMISSIONS_SUBDIR: Final[str] = "submissions"
 """Under the data directory: the analyst's submissions, append-only facts."""
 SWEEPS_SUBDIR: Final[str] = "sweeps"
 """Under the data directory: ``<on>__<n>.json`` per sweep that faded anything."""
+PRODUCTS_SUBDIR: Final[str] = "products"
+"""Under the data directory: ``<level>_<period>.md`` and ``.json`` per rendered product."""
+PRODUCTS_EXPORT_FILE: Final[str] = "products.json"
 
 
 def _key_from_file(path: Path) -> str | None:
@@ -207,6 +212,16 @@ class Settings(BaseModel):
     def sweeps_dir(self) -> Path:
         """``<data_dir>/sweeps``."""
         return self.data_dir / SWEEPS_SUBDIR
+
+    @property
+    def products_dir(self) -> Path:
+        """``<data_dir>/products``."""
+        return self.data_dir / PRODUCTS_SUBDIR
+
+    @property
+    def products_export_path(self) -> Path:
+        """``<data_dir>/exports/products.json``."""
+        return self.exports_dir / PRODUCTS_EXPORT_FILE
 
     @property
     def fake_hits_path(self) -> Path:

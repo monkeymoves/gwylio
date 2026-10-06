@@ -28,6 +28,10 @@ The ubiquitous language of Gwylio, the Welsh environmental open-source intellige
 
 **Content hash**: The sha256 digest of an instrument's canonical JSON, stored with its version. A changed query changes the hash, so a run always says exactly which instrument it used.
 
+**Copy**: Every heading and standing sentence the products use, held in config/copy.json. The renderers hold only structure; no prose is generated.
+
+**Coverage audit**: The check down both axes: active reports per requirement and lane, and per taxonomy node. A row's status comes from the requirement's scanability and its count, so a blind spot is never read as quiet; a node no requirement expects and no report touches is a blind spot of the framework.
+
 **Coverage status**: The state of one requirement in the picture, computed from its scanability and its count of active reports: covered, thin, quiet or blind spot.
 
 **Covered**: Coverage status of a requirement with three or more active reports.
@@ -53,6 +57,8 @@ The ubiquitous language of Gwylio, the Welsh environmental open-source intellige
 **Expected coverage**: The taxonomy nodes a requirement is expected to touch, recorded as an editorial judgement so the coverage audit can show which parts of the environment the requirement set foregrounds and which it barely names.
 
 **Funnel**: The counts a scan run keeps from raw hits through the gates and deduplication to new candidates, seen before and reinforcements.
+
+**Funnel trend**: The funnel counts of every scan run in start order, with what the analyst did with each run's candidates and the promotion rate (promotions over new candidates).
 
 **Gate**: A rule that drops a raw hit: the own-domain gate, the negative-term gate and the relevance gate, applied in that order.
 
@@ -87,6 +93,8 @@ The ubiquitous language of Gwylio, the Welsh environmental open-source intellige
 **Last verified**: The date a report's claims were last checked against the world.
 
 **Lens**: One of the three viewpoints the commission asked for: government, partnership and wider society, and international. Every lane sits under one lens.
+
+**Method note**: The closing section of every product: the period's runs and funnels, dispositions, promotions and their non-government share, the credibility spread, the instrument version and the known blind spots.
 
 **OSINT**: Open-source intelligence: intelligence produced from publicly available sources.
 
@@ -148,6 +156,8 @@ The ubiquitous language of Gwylio, the Welsh environmental open-source intellige
 
 **Source**: An entry on the watchlist: a publisher with a domain, an optional feed, a lane, an actor and a default reliability.
 
+**Strategic assessment**: The annual product for one requirement set: the standing picture per requirement, questions per well-being objective drawn from threatening and two-way reports, the coverage audit and the method note.
+
 **Strategic indicator**: A measure in the NRW corporate plan performance framework, abbreviated SI. The NRW requirement set holds the twelve strategic indicators SI1 to SI12 as requirements.
 
 **Submission**: The judged file the analyst skill writes back for a scan run: dispositions, promotions, updates, reinforcements, verifications and a method note.
@@ -165,3 +175,5 @@ The ubiquitous language of Gwylio, the Welsh environmental open-source intellige
 **Topic**: A subject area in the reference catalogue, such as peatland or air quality, used to hint what a query or report is about.
 
 **Well-being objective**: A requirement group of kind wbo, abbreviated WBO: one of NRW's three well-being objectives, each with its primary strategic indicators.
+
+**Yield**: How productive a watched source has been: its sightings, distinct candidates, promotions and the last runs it was seen and promoted in, read as earning its place, high volume with no promotions, low volume or silent.

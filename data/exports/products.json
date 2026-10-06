@@ -1,0 +1,1055 @@
+{
+  "format": "gwylio.products/1",
+  "products": [
+    {
+      "format": "gwylio.product/1",
+      "generated_on": "2026-10-06",
+      "id": "operational-2026-10",
+      "lead": [
+        "Requirement set: NRW corporate plan performance framework, version 2024-25 draft, transcription 1.",
+        "Period covered: 2026-10-01 to 2026-10-31. Rendered on 2026-10-06 from the register as it stood that day.",
+        "This monthly intelligence summary (INTSUM) records what moved in the register during the period, against the requirement set named above. It is assembled from the register and the standing copy: every sentence is a fixed form filled with counts and titles."
+      ],
+      "level": "operational",
+      "markdown_file": "operational_2026-10.md",
+      "method_note": "No scan run started in the period, so no candidates were collected or judged in it.\n\nNo report was created in the period, so there is no non-government share or credibility spread to report.\n\nNo run used the instrument in the period; the current instrument is version 2026.10.0.\n\nKnown blind spots, requirements this tool cannot see and holds no active report on: SI9 Impact of partnership approaches, SI12 NRW colleague engagement.\n\nThe scan only finds what already talks like the requirements. Biophysical, market, technological and institutional pressures that move a requirement before any publication names it are outside its reach.\n\nCounts of reports are not counts of impact. The register shows what surfaced publicly: at least this much, and known to undercount.",
+      "period": {
+        "end": "2026-10-31",
+        "label": "2026-10",
+        "start": "2026-10-01"
+      },
+      "report_ids": [
+        "audit-wales-sssi-designation-capacity-2025",
+        "avian-flu-welsh-seabirds-recovery-2041",
+        "bridgend-drops-2030-net-zero-target",
+        "carbon-budget-4-regulations-wales-2025",
+        "ccc-2026-progress-report-welsh-emissions-fall",
+        "climate-perceptions-actions-survey-waves-3-4",
+        "control-of-agricultural-pollution-regulations-review-2025",
+        "eciu-wales-tree-planting-14-percent-of-target",
+        "environment-principles-governance-biodiversity-targets-wales-act-2026",
+        "environmental-principles-statement-consultation-2026",
+        "fcerm-programme-2026-27",
+        "first-asian-hornet-nest-wales-2026",
+        "flood-re-ends-2039-insurance-affordability",
+        "green-flag-2026-record-330-welsh-sites",
+        "metal-mine-water-pollution-wales",
+        "mpa-network-management-framework-expired-2026",
+        "nature-recovery-action-plan-2026",
+        "north-wales-drought-declared-2026",
+        "nrw-funding-gap-savings-2026-27",
+        "nrw-ir35-hmrc-settlement-2025",
+        "people-and-nature-survey-wales-2023-24",
+        "pm25-air-quality-target-regulations-wales-2026",
+        "river-action-judicial-review-nrw-poultry-permits",
+        "senedd-2026-net-zero-environment-battleground",
+        "senedd-soil-health-inquiry-2025",
+        "seventh-carbon-budget-uk-law-2026",
+        "sonarr-2025-published",
+        "uk-climate-adaptation-package-2026",
+        "uk-national-biodiversity-strategy-action-plan-2025",
+        "wales-wildfire-season-2026",
+        "water-governance-green-paper-2026",
+        "welsh-fisheries-aquaculture-update-2026",
+        "winter-2025-26-flooding-storm-claudia",
+        "wwf-nature-petition-new-welsh-government-2026",
+        "wye-lugg-usk-group-claim-avara-welsh-water"
+      ],
+      "requirement_set_id": "nrw-corporate-plan",
+      "sections": [
+        {
+          "body": [
+            "New reports created in the period: 0.",
+            "Lifecycle state changes recorded in the period: 0.",
+            "Reports faded by the sweep in the period: 0.",
+            "Reports verified against their source in the period: 0.",
+            "Across the reports that moved, 0 assessments threaten a requirement, 0 cut both ways, 0 inform the baseline and 0 support."
+          ],
+          "bullets": [],
+          "depth": 2,
+          "heading": "Summary",
+          "tables": [
+            {
+              "headers": [
+                "Measure",
+                "Count"
+              ],
+              "rows": [
+                [
+                  "New reports",
+                  "0"
+                ],
+                [
+                  "State changes",
+                  "0"
+                ],
+                [
+                  "Faded",
+                  "0"
+                ],
+                [
+                  "Verified",
+                  "0"
+                ],
+                [
+                  "Assessments: threatens",
+                  "0"
+                ],
+                [
+                  "Assessments: two-way",
+                  "0"
+                ],
+                [
+                  "Assessments: informs the baseline",
+                  "0"
+                ],
+                [
+                  "Assessments: supports",
+                  "0"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "body": [
+            "Reports created or changed in the period, by well-being objective. Within each list, threats and two-way signals come first."
+          ],
+          "bullets": [],
+          "depth": 2,
+          "heading": "What moved",
+          "tables": []
+        },
+        {
+          "body": [
+            "Nothing moved against this objective in the period."
+          ],
+          "bullets": [],
+          "depth": 3,
+          "heading": "Nature is Recovering (SI1, SI2, SI3)",
+          "tables": []
+        },
+        {
+          "body": [
+            "Nothing moved against this objective in the period."
+          ],
+          "bullets": [],
+          "depth": 3,
+          "heading": "Communities are Resilient to Climate Change (SI6, SI7, SI8, SI10)",
+          "tables": []
+        },
+        {
+          "body": [
+            "Nothing moved against this objective in the period."
+          ],
+          "bullets": [],
+          "depth": 3,
+          "heading": "Pollution is Minimised (SI4, SI5)",
+          "tables": []
+        },
+        {
+          "body": [
+            "A blind spot is not quiet. A requirement whose evidence public sources cannot see (low or no scanability) and that has no active reports is invisible to this tool, not calm; its silence is not evidence of anything.",
+            "No report on these requirements was created or changed in the period."
+          ],
+          "bullets": [
+            "SI1 Resilient ecosystems: quiet this period. Active reports in the register: 12. Scanability: high.",
+            "SI2 Habitat restoration rate: quiet this period. Active reports in the register: 5. Scanability: medium.",
+            "SI3 Nature recovery in public services: quiet this period. Active reports in the register: 7. Scanability: high.",
+            "SI4 Pollution to land and water: quiet this period. Active reports in the register: 10. Scanability: high.",
+            "SI5 Air pollution: quiet this period. Active reports in the register: 2. Scanability: high.",
+            "SI6 Greenhouse gas emissions and sequestration: quiet this period. Active reports in the register: 8. Scanability: high.",
+            "SI7 Access to green and blue space: quiet this period. Active reports in the register: 5. Scanability: medium.",
+            "SI8 Places resilient to a changing climate: quiet this period. Active reports in the register: 9. Scanability: high.",
+            "SI9 Impact of partnership approaches: blind spot this period. Active reports in the register: 0. Scanability: low.",
+            "SI10 Public action on the crises: quiet this period. Active reports in the register: 2. Scanability: medium.",
+            "SI11 Organisations acting on the crises: blind spot this period. Active reports in the register: 1. Scanability: low.",
+            "SI12 NRW colleague engagement: blind spot this period. Active reports in the register: 0. Scanability: none."
+          ],
+          "depth": 2,
+          "heading": "Quiet and blind spots",
+          "tables": []
+        },
+        {
+          "body": [
+            "The date check run on 2026-10-06 found 39 things to look at again. Reports affected: 35."
+          ],
+          "bullets": [],
+          "depth": 2,
+          "heading": "Verification due",
+          "tables": []
+        },
+        {
+          "body": [
+            "The event horizon has passed and nobody has updated or verified the report since. Check what happened, then rewrite the report in dated past tense."
+          ],
+          "bullets": [
+            "Consultation opens on the Environmental Principles Statement that NRW must apply under the 2026 Act (environmental-principles-statement-consultation-2026): event horizon 2026-09-11 passed 25 days ago and nobody has updated or verified the report since."
+          ],
+          "depth": 3,
+          "heading": "Passed event horizons",
+          "tables": []
+        },
+        {
+          "body": [
+            "The title, summary or notes use language that rots once the date passes."
+          ],
+          "bullets": [
+            "Consultation opens on the Environmental Principles Statement that NRW must apply under the 2026 Act (environmental-principles-statement-consultation-2026): summary uses future-framed language: 'consultation closes'.",
+            "Flood Re ends in 2039: insurance affordability cliff if adaptation lags climate risk (flood-re-ends-2039-insurance-affordability): summary uses future-framed language: 'due to'.",
+            "Welsh fisheries and aquaculture update reports progress on management plans and fleet decarbonisation (welsh-fisheries-aquaculture-update-2026): summary uses future-framed language: 'due to'."
+          ],
+          "depth": 3,
+          "heading": "Future-framed language",
+          "tables": []
+        },
+        {
+          "body": [
+            "The report was last verified against its source too long ago."
+          ],
+          "bullets": [
+            "Audit Wales finds NRW is not designating SSSIs it knows may qualify, citing staff capacity and data gaps (audit-wales-sssi-designation-capacity-2025): last verified 2026-07-25, 73 days ago (more than 45).",
+            "Study projects Welsh seabird colonies may not recover from the 2022 avian flu outbreak until 2041 (avian-flu-welsh-seabirds-recovery-2041): last verified 2026-07-24, 74 days ago (more than 45).",
+            "Bridgend council drops its 2030 net zero target as unachievable; officers say the pressure is sector-wide (bridgend-drops-2030-net-zero-target): last verified 2026-07-24, 74 days ago (more than 45).",
+            "Carbon Budget 4 approved: 73 percent average emissions reduction for 2031 to 2035, with a zero offset limit for CB3 (carbon-budget-4-regulations-wales-2025): last verified 2026-07-24, 74 days ago (more than 45).",
+            "CCC 2026 progress report: Welsh emissions fell significantly in 2024, driven by the Port Talbot closures (ccc-2026-progress-report-welsh-emissions-fall): last verified 2026-07-24, 74 days ago (more than 45).",
+            "Welsh Government climate change perceptions and actions survey publishes waves 3 and 4 (climate-perceptions-actions-survey-waves-3-4): last verified 2026-07-25, 73 days ago (more than 45).",
+            "Control of Agricultural Pollution Regulations review: all 23 recommendations taken forward, alternatives to the 170kg limit on the table (control-of-agricultural-pollution-regulations-review-2025): last verified 2026-07-24, 74 days ago (more than 45).",
+            "ECIU analysis: Wales projected to deliver just 14 percent of its 2030 tree planting target (eciu-wales-tree-planting-14-percent-of-target): last verified 2026-07-24, 74 days ago (more than 45).",
+            "Environment (Principles, Governance and Biodiversity Targets) (Wales) Act 2026: Royal Assent 27 April; statutory biodiversity targets due within two years (environment-principles-governance-biodiversity-targets-wales-act-2026): last verified 2026-07-24, 74 days ago (more than 45).",
+            "Consultation opens on the Environmental Principles Statement that NRW must apply under the 2026 Act (environmental-principles-statement-consultation-2026): last verified 2026-07-24, 74 days ago (more than 45).",
+            "Flood and Coastal Erosion Risk Management Programme 2026-27: over 85 million pounds allocated (fcerm-programme-2026-27): last verified 2026-07-24, 74 days ago (more than 45).",
+            "First Asian hornet nest confirmed in Wales, near Wrexham, triggering the contingency response (first-asian-hornet-nest-wales-2026): last verified 2026-07-24, 74 days ago (more than 45).",
+            "Flood Re ends in 2039: insurance affordability cliff if adaptation lags climate risk (flood-re-ends-2039-insurance-affordability): last verified 2026-07-24, 74 days ago (more than 45).",
+            "Green Flag 2026: record 330 award-winning green spaces in Wales, third consecutive rise (green-flag-2026-record-330-welsh-sites): last verified 2026-07-24, 74 days ago (more than 45).",
+            "Abandoned metal mines pollute about 700km of Welsh rivers, a major SI4 pressure with a live inquiry (metal-mine-water-pollution-wales): last verified 2026-07-24, 74 days ago (more than 45).",
+            "Wales' marine protected area management framework expired in 2023 with no successor; JNCC asked to lead the review (mpa-network-management-framework-expired-2026): last verified 2026-07-25, 73 days ago (more than 45).",
+            "Nature Recovery Action Plan 2026: six aims, tripled peatland target, statutory biodiversity targets within two years of Royal Assent (nature-recovery-action-plan-2026): last verified 2026-07-24, 74 days ago (more than 45).",
+            "NRW declares drought status for North Wales as July 2026 nears a 190-year rainfall low (north-wales-drought-declared-2026): last verified 2026-07-24, 74 days ago (more than 45).",
+            "NRW's savings programme cut 233 posts and reduced pollution-incident response; the 2026-27 settlement improves (nrw-funding-gap-savings-2026-27): last verified 2026-07-25, 73 days ago (more than 45).",
+            "NRW settles a 14.6 million pound HMRC IR35 investigation, recouped through phased budget reductions (nrw-ir35-hmrc-settlement-2025): last verified 2026-07-25, 73 days ago (more than 45).",
+            "People and Nature Survey Wales, April 2023 to April 2024 results published (people-and-nature-survey-wales-2023-24): last verified 2026-07-24, 74 days ago (more than 45).",
+            "Draft Air Quality Target Regulations for fine particulate matter (PM2.5) under the 2024 Act (pm25-air-quality-target-regulations-wales-2026): last verified 2026-07-24, 74 days ago (more than 45).",
+            "River Action takes NRW to judicial review over Powys poultry permit variations; scope of off-site pollution responsibility contested (river-action-judicial-review-nrw-poultry-permits): last verified 2026-07-24, 74 days ago (more than 45).",
+            "Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party (senedd-2026-net-zero-environment-battleground): last verified 2026-07-24, 74 days ago (more than 45).",
+            "Senedd committee report 'Digging the dirt' calls for statutory soil health standards; no government response published (senedd-soil-health-inquiry-2025): last verified 2026-07-25, 73 days ago (more than 45).",
+            "UK Seventh Carbon Budget passes into law: about 87 percent reduction for 2038 to 2042 (seventh-carbon-budget-uk-law-2026): last verified 2026-07-24, 74 days ago (more than 45).",
+            "SoNaRR 2025 published: the third State of Natural Resources Report, the SI1 resilience evidence base (sonarr-2025-published): last verified 2026-07-24, 74 days ago (more than 45).",
+            "UK adaptation package commits to planning for a minimum of 2 degrees warming by 2050; CCC says funding falls short (uk-climate-adaptation-package-2026): last verified 2026-07-24, 74 days ago (more than 45).",
+            "UK National Biodiversity Strategy and Action Plan commits all four nations to the 23 GBF targets (uk-national-biodiversity-strategy-action-plan-2025): last verified 2026-07-24, 74 days ago (more than 45).",
+            "Severe 2026 wildfire season burns Welsh uplands, with a major incident near Conwy (wales-wildfire-season-2026): last verified 2026-07-24, 74 days ago (more than 45).",
+            "Green Paper: Shaping the Future of Water Governance in Wales (water-governance-green-paper-2026): last verified 2026-07-24, 74 days ago (more than 45).",
+            "Welsh fisheries and aquaculture update reports progress on management plans and fleet decarbonisation (welsh-fisheries-aquaculture-update-2026): last verified 2026-07-25, 73 days ago (more than 45).",
+            "Winter 2025-26 flooding hits about 400 Welsh homes (Storm Claudia), the flood side of the climate whiplash (winter-2025-26-flooding-storm-claudia): last verified 2026-07-24, 74 days ago (more than 45).",
+            "WWF petition presses the incoming Welsh Government to act on the nature crisis (wwf-nature-petition-new-welsh-government-2026): last verified 2026-07-24, 74 days ago (more than 45).",
+            "Largest UK environmental pollution claim: over 4,500 claimants sue Avara Foods and Welsh Water over Wye, Lugg and Usk pollution (wye-lugg-usk-group-claim-avara-welsh-water): last verified 2026-07-24, 74 days ago (more than 45)."
+          ],
+          "depth": 3,
+          "heading": "Stale verifications",
+          "tables": []
+        },
+        {
+          "body": [
+            "No scan run started in the period, so no candidates were collected or judged in it.",
+            "No report was created in the period, so there is no non-government share or credibility spread to report.",
+            "No run used the instrument in the period; the current instrument is version 2026.10.0.",
+            "Known blind spots, requirements this tool cannot see and holds no active report on: SI9 Impact of partnership approaches, SI12 NRW colleague engagement.",
+            "The scan only finds what already talks like the requirements. Biophysical, market, technological and institutional pressures that move a requirement before any publication names it are outside its reach.",
+            "Counts of reports are not counts of impact. The register shows what surfaced publicly: at least this much, and known to undercount."
+          ],
+          "bullets": [],
+          "depth": 2,
+          "heading": "Method note",
+          "tables": []
+        }
+      ],
+      "title": "Operational intelligence summary (INTSUM), October 2026"
+    },
+    {
+      "format": "gwylio.product/1",
+      "generated_on": "2026-10-06",
+      "id": "strategic-2026",
+      "lead": [
+        "Requirement set: NRW corporate plan performance framework, version 2024-25 draft, transcription 1.",
+        "Period covered: 2026-01-01 to 2026-12-31. Rendered on 2026-10-06 from the register as it stood that day."
+      ],
+      "level": "strategic",
+      "markdown_file": "strategic_2026.md",
+      "method_note": "No scan run started in the period, so no candidates were collected or judged in it.\n\nReports created in the period: 35, of which 9 (26 per cent) came from lanes outside government. The mainstream bias guard asks for this share: a register that skews official misses the earliest signals.\n\nThe credibility of those 35 reports, digit by digit, is in the table below. Grades inflate quietly: a consultation is a 3, however official the page.\n\nNo run used the instrument in the period; the current instrument is version 2026.10.0.\n\nKnown blind spots, requirements this tool cannot see and holds no active report on: SI9 Impact of partnership approaches, SI12 NRW colleague engagement.\n\nThe scan only finds what already talks like the requirements. Biophysical, market, technological and institutional pressures that move a requirement before any publication names it are outside its reach.\n\nCounts of reports are not counts of impact. The register shows what surfaced publicly: at least this much, and known to undercount.",
+      "period": {
+        "end": "2026-12-31",
+        "label": "2026",
+        "start": "2026-01-01"
+      },
+      "report_ids": [
+        "audit-wales-sssi-designation-capacity-2025",
+        "avian-flu-welsh-seabirds-recovery-2041",
+        "bridgend-drops-2030-net-zero-target",
+        "ccc-2026-progress-report-welsh-emissions-fall",
+        "climate-perceptions-actions-survey-waves-3-4",
+        "control-of-agricultural-pollution-regulations-review-2025",
+        "eciu-wales-tree-planting-14-percent-of-target",
+        "environmental-principles-statement-consultation-2026",
+        "fcerm-programme-2026-27",
+        "first-asian-hornet-nest-wales-2026",
+        "flood-re-ends-2039-insurance-affordability",
+        "green-flag-2026-record-330-welsh-sites",
+        "metal-mine-water-pollution-wales",
+        "mpa-network-management-framework-expired-2026",
+        "nature-recovery-action-plan-2026",
+        "north-wales-drought-declared-2026",
+        "nrw-funding-gap-savings-2026-27",
+        "nrw-ir35-hmrc-settlement-2025",
+        "people-and-nature-survey-wales-2023-24",
+        "pm25-air-quality-target-regulations-wales-2026",
+        "river-action-judicial-review-nrw-poultry-permits",
+        "senedd-2026-net-zero-environment-battleground",
+        "senedd-soil-health-inquiry-2025",
+        "seventh-carbon-budget-uk-law-2026",
+        "sonarr-2025-published",
+        "uk-climate-adaptation-package-2026",
+        "uk-national-biodiversity-strategy-action-plan-2025",
+        "wales-wildfire-season-2026",
+        "water-governance-green-paper-2026",
+        "welsh-fisheries-aquaculture-update-2026",
+        "winter-2025-26-flooding-storm-claudia",
+        "wwf-nature-petition-new-welsh-government-2026",
+        "wye-lugg-usk-group-claim-avara-welsh-water"
+      ],
+      "requirement_set_id": "nrw-corporate-plan",
+      "sections": [
+        {
+          "body": [
+            "This annual strategic assessment sets out the standing picture of the external signals bearing on each requirement in the set, to inform the annual prioritisation exercise.",
+            "It is assembled from the register and the standing copy: every sentence is a fixed form filled with counts and titles, and nothing in it is a recommendation. Each requirement's picture counts its active reports (emerging, tracking and reinforced); matured reports are settled context and named separately.",
+            "The questions for each well-being objective are drawn from the reports that threaten a requirement or cut both ways. They are questions about the world for the people who set priorities, not advice."
+          ],
+          "bullets": [],
+          "depth": 2,
+          "heading": "Purpose",
+          "tables": []
+        },
+        {
+          "body": [
+            "For each requirement: its coverage status, its active reports by direction and by state, their grading spread, its scanability in the framework's own words, and the active reports with the highest potential impact."
+          ],
+          "bullets": [],
+          "depth": 2,
+          "heading": "Standing picture by requirement",
+          "tables": []
+        },
+        {
+          "body": [
+            "Coverage status: covered, from 12 active reports.",
+            "By direction: threatens 7, informs the baseline 2, supports 3.",
+            "By state: emerging 12.",
+            "Grading spread: B2 8, B3 1, C2 1, C3 2.",
+            "Matured reports kept as settled context, not counted above: 1.",
+            "Scanability: high. Drivers are external (targets, legislation, plans) even though the SoNaRR resilience assessment itself is NRW's.",
+            "Highest potential impact among the active reports, threats first among equals:"
+          ],
+          "bullets": [
+            "B2 Audit Wales finds NRW is not designating SSSIs it knows may qualify, citing staff capacity and data gaps [SI1 threatens] (emerging, potential impact high)",
+            "C3 Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party [SI1 threatens] (emerging, potential impact high)",
+            "B2 SoNaRR 2025 published: the third State of Natural Resources Report, the SI1 resilience evidence base [SI1 informs the baseline] (emerging, potential impact high)"
+          ],
+          "depth": 3,
+          "heading": "SI1 Increasing the proportion of ecosystems that are defined as resilient",
+          "tables": []
+        },
+        {
+          "body": [
+            "Coverage status: covered, from 5 active reports.",
+            "By direction: threatens 2, informs the baseline 1, supports 2.",
+            "By state: emerging 5.",
+            "Grading spread: B2 4, C3 1.",
+            "Matured reports kept as settled context, not counted above: 1.",
+            "Scanability: medium. Restoration rate data is largely NRW's and partners'; external scanning sees the funding and policy drivers, not the rate.",
+            "Highest potential impact among the active reports, threats first among equals:"
+          ],
+          "bullets": [
+            "C3 ECIU analysis: Wales projected to deliver just 14 percent of its 2030 tree planting target [SI2 threatens] (emerging, potential impact high)",
+            "B2 SoNaRR 2025 published: the third State of Natural Resources Report, the SI1 resilience evidence base [SI2 informs the baseline] (emerging, potential impact high)",
+            "B2 Nature Recovery Action Plan 2026: six aims, tripled peatland target, statutory biodiversity targets within two years of Royal Assent [SI2 supports] (emerging, potential impact high)"
+          ],
+          "depth": 3,
+          "heading": "SI2 Increasing the rate of habitat restoration",
+          "tables": []
+        },
+        {
+          "body": [
+            "Coverage status: covered, from 7 active reports.",
+            "By direction: threatens 2, two-way 1, supports 4.",
+            "By state: emerging 7.",
+            "Grading spread: B2 4, B3 1, C3 2.",
+            "Matured reports kept as settled context, not counted above: 1.",
+            "Scanability: high. Section 6 reporting, PSB well-being plans and public body strategies are all published externally.",
+            "Highest potential impact among the active reports, threats first among equals:"
+          ],
+          "bullets": [
+            "B2 Audit Wales finds NRW is not designating SSSIs it knows may qualify, citing staff capacity and data gaps [SI3 threatens] (emerging, potential impact high)",
+            "C3 Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party [SI3 threatens] (emerging, potential impact high)",
+            "B2 Nature Recovery Action Plan 2026: six aims, tripled peatland target, statutory biodiversity targets within two years of Royal Assent [SI3 supports] (emerging, potential impact high)"
+          ],
+          "depth": 3,
+          "heading": "SI3 Increasing the integration of activities that support nature recovery into Wales' public services",
+          "tables": []
+        },
+        {
+          "body": [
+            "Coverage status: covered, from 10 active reports.",
+            "By direction: threatens 4, two-way 2, informs the baseline 1, supports 3.",
+            "By state: emerging 10.",
+            "Grading spread: B2 7, B3 1, D3 2.",
+            "Scanability: high. WFD classification, regulations and water governance are external and well covered.",
+            "Highest potential impact among the active reports, threats first among equals:"
+          ],
+          "bullets": [
+            "B2 Control of Agricultural Pollution Regulations review: all 23 recommendations taken forward, alternatives to the 170kg limit on the table [SI4 two-way] (emerging, potential impact high)",
+            "D3 River Action takes NRW to judicial review over Powys poultry permit variations; scope of off-site pollution responsibility contested [SI4 two-way] (emerging, potential impact high)",
+            "B2 SoNaRR 2025 published: the third State of Natural Resources Report, the SI1 resilience evidence base [SI4 informs the baseline] (emerging, potential impact high)"
+          ],
+          "depth": 3,
+          "heading": "SI4 Decreasing the rate of pollution on land and entering water bodies",
+          "tables": []
+        },
+        {
+          "body": [
+            "Coverage status: thin, from 2 active reports.",
+            "By direction: threatens 1, supports 1.",
+            "By state: emerging 2.",
+            "Grading spread: B2 1, C3 1.",
+            "Scanability: high. Air quality legislation, targets and standards are external and well covered.",
+            "Highest potential impact among the active reports, threats first among equals:"
+          ],
+          "bullets": [
+            "C3 Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party [SI5 threatens] (emerging, potential impact high)",
+            "B2 Draft Air Quality Target Regulations for fine particulate matter (PM2.5) under the 2024 Act [SI5 supports] (emerging, potential impact high)"
+          ],
+          "depth": 3,
+          "heading": "SI5 Decreasing the rate of pollution to air from industrial and non-industrial sources",
+          "tables": []
+        },
+        {
+          "body": [
+            "Coverage status: covered, from 8 active reports.",
+            "By direction: threatens 4, two-way 1, informs the baseline 1, supports 2.",
+            "By state: emerging 8.",
+            "Grading spread: B2 5, C3 3.",
+            "Matured reports kept as settled context, not counted above: 1.",
+            "Scanability: high. Carbon budgets and the UK GHG Inventory are external and published on a known cycle.",
+            "Highest potential impact among the active reports, threats first among equals:"
+          ],
+          "bullets": [
+            "C3 ECIU analysis: Wales projected to deliver just 14 percent of its 2030 tree planting target [SI6 threatens] (emerging, potential impact high)",
+            "C3 Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party [SI6 threatens] (emerging, potential impact high)",
+            "B2 Nature Recovery Action Plan 2026: six aims, tripled peatland target, statutory biodiversity targets within two years of Royal Assent [SI6 supports] (emerging, potential impact high)"
+          ],
+          "depth": 3,
+          "heading": "SI6 Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+          "tables": []
+        },
+        {
+          "body": [
+            "Coverage status: covered, from 5 active reports.",
+            "By direction: threatens 2, informs the baseline 1, supports 2.",
+            "By state: emerging 5.",
+            "Grading spread: B2 4, C2 1.",
+            "Scanability: medium. Green Flag and the GI data set are external but published annually; policy drivers are visible, use and access data less so.",
+            "Highest potential impact among the active reports, threats first among equals:"
+          ],
+          "bullets": [
+            "B2 Nature Recovery Action Plan 2026: six aims, tripled peatland target, statutory biodiversity targets within two years of Royal Assent [SI7 supports] (emerging, potential impact high)",
+            "B2 NRW's savings programme cut 233 posts and reduced pollution-incident response; the 2026-27 settlement improves [SI7 threatens] (emerging, potential impact medium)",
+            "B2 NRW settles a 14.6 million pound HMRC IR35 investigation, recouped through phased budget reductions [SI7 threatens] (emerging, potential impact medium)"
+          ],
+          "depth": 3,
+          "heading": "SI7 Increasing the proportion of the population who have access to high quality green or blue space, and who use them sustainably",
+          "tables": []
+        },
+        {
+          "body": [
+            "Coverage status: covered, from 9 active reports.",
+            "By direction: threatens 4, informs the baseline 3, supports 2.",
+            "By state: emerging 9.",
+            "Grading spread: B2 7, B3 2.",
+            "Scanability: high. Flood policy, SUDS, planning and WIMD are external; NRW's own flood data is not.",
+            "Highest potential impact among the active reports, threats first among equals:"
+          ],
+          "bullets": [
+            "B3 Flood Re ends in 2039: insurance affordability cliff if adaptation lags climate risk [SI8 threatens] (emerging, potential impact high)",
+            "B2 Draft Air Quality Target Regulations for fine particulate matter (PM2.5) under the 2024 Act [SI8 informs the baseline] (emerging, potential impact high)",
+            "B2 NRW's savings programme cut 233 posts and reduced pollution-incident response; the 2026-27 settlement improves [SI8 threatens] (emerging, potential impact medium)"
+          ],
+          "depth": 3,
+          "heading": "SI8 Increasing the proportion of the population living in places that will continue to support and contribute to their health and well-being in a changing climate",
+          "tables": []
+        },
+        {
+          "body": [
+            "Coverage status: blind spot, from 0 active reports.",
+            "By direction: none.",
+            "By state: none.",
+            "Grading spread: none.",
+            "Scanability: low. Evidence is mostly internal to NRW (grants, Area Statements, MoUs, Natur a Ni), but PSB well-being assessments and plans are published on a roughly 5-year cycle: the next assessments are due end 2026 to early 2027. So this is quiet between cycles with a known upcoming window, not permanently blind.",
+            "A blind spot is not quiet. A requirement whose evidence public sources cannot see (low or no scanability) and that has no active reports is invisible to this tool, not calm; its silence is not evidence of anything."
+          ],
+          "bullets": [],
+          "depth": 3,
+          "heading": "SI9 Increasing the impact of partnership approaches which deliver multiple benefits and address the root causes of the nature, climate and pollution crises",
+          "tables": []
+        },
+        {
+          "body": [
+            "Coverage status: thin, from 2 active reports.",
+            "By direction: informs the baseline 2.",
+            "By state: emerging 2.",
+            "Grading spread: B2 2.",
+            "Scanability: medium. PaNS Wales and the National Survey are external but only speak at release; between releases this indicator is genuinely quiet.",
+            "Highest potential impact among the active reports, threats first among equals:"
+          ],
+          "bullets": [
+            "B2 Welsh Government climate change perceptions and actions survey publishes waves 3 and 4 [SI10 informs the baseline] (emerging, potential impact medium)",
+            "B2 People and Nature Survey Wales, April 2023 to April 2024 results published [SI10 informs the baseline] (emerging, potential impact medium)"
+          ],
+          "depth": 3,
+          "heading": "SI10 Increasing the proportion of the population that act to mitigate and adapt to the nature, climate and pollution crises",
+          "tables": []
+        },
+        {
+          "body": [
+            "Coverage status: thin, from 1 active reports.",
+            "By direction: threatens 1.",
+            "By state: emerging 1.",
+            "Grading spread: C3 1.",
+            "Scanability: low. Business and organisational action is largely qualitative case-study evidence, much of it internal. PSB and partnership plans publishing 2027 to 2028 are the main external window; between them expect little, so absence is weak evidence rather than a finding.",
+            "Highest potential impact among the active reports, threats first among equals:"
+          ],
+          "bullets": [
+            "C3 Bridgend council drops its 2030 net zero target as unachievable; officers say the pressure is sector-wide [SI11 threatens] (emerging, potential impact medium)"
+          ],
+          "depth": 3,
+          "heading": "SI11 Increasing the proportion of organisations and businesses who act to mitigate and adapt to the nature, climate and pollution crises",
+          "tables": []
+        },
+        {
+          "body": [
+            "Coverage status: blind spot, from 0 active reports.",
+            "By direction: none.",
+            "By state: none.",
+            "Grading spread: none.",
+            "Scanability: none. Internal staff survey (Ein Llais). No external source will ever report on it.",
+            "A blind spot is not quiet. A requirement whose evidence public sources cannot see (low or no scanability) and that has no active reports is invisible to this tool, not calm; its silence is not evidence of anything."
+          ],
+          "bullets": [],
+          "depth": 3,
+          "heading": "SI12 Increasing the proportion of NRW colleagues feeling engaged, enabled and empowered",
+          "tables": []
+        },
+        {
+          "body": [
+            "One question for each active report that threatens a member requirement or cuts both ways, threats first."
+          ],
+          "bullets": [],
+          "depth": 2,
+          "heading": "Questions for each well-being objective",
+          "tables": []
+        },
+        {
+          "body": [],
+          "bullets": [
+            "What would change for SI1, SI3 if this holds: Audit Wales finds NRW is not designating SSSIs it knows may qualify, citing staff capacity and data gaps?",
+            "What would change for SI2 if this holds: ECIU analysis: Wales projected to deliver just 14 percent of its 2030 tree planting target?",
+            "What would change for SI1, SI3 if this holds: Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party?",
+            "What would change for SI1 if this holds: Study projects Welsh seabird colonies may not recover from the 2022 avian flu outbreak until 2041?",
+            "What would change for SI1, SI3 if this holds: Wales' marine protected area management framework expired in 2023 with no successor; JNCC asked to lead the review?",
+            "What would change for SI1 if this holds: NRW declares drought status for North Wales as July 2026 nears a 190-year rainfall low?",
+            "What would change for SI1, SI2 if this holds: Severe 2026 wildfire season burns Welsh uplands, with a major incident near Conwy?",
+            "What would change for SI1 if this holds: First Asian hornet nest confirmed in Wales, near Wrexham, triggering the contingency response?"
+          ],
+          "depth": 3,
+          "heading": "Nature is Recovering (SI1, SI2, SI3)",
+          "tables": []
+        },
+        {
+          "body": [],
+          "bullets": [
+            "What would change for SI6 if this holds: ECIU analysis: Wales projected to deliver just 14 percent of its 2030 tree planting target?",
+            "What would change for SI8 if this holds: Flood Re ends in 2039: insurance affordability cliff if adaptation lags climate risk?",
+            "What would change for SI6 if this holds: Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party?",
+            "What would change for SI6 if this holds: Bridgend council drops its 2030 net zero target as unachievable; officers say the pressure is sector-wide?",
+            "What would change for SI7, SI8 if this holds: NRW's savings programme cut 233 posts and reduced pollution-incident response; the 2026-27 settlement improves?",
+            "What would change for SI7, SI8 if this holds: NRW settles a 14.6 million pound HMRC IR35 investigation, recouped through phased budget reductions?",
+            "What would change for SI6 if this holds: Severe 2026 wildfire season burns Welsh uplands, with a major incident near Conwy?",
+            "What would change for SI8 if this holds: Winter 2025-26 flooding hits about 400 Welsh homes (Storm Claudia), the flood side of the climate whiplash?",
+            "What would change for SI6 if this holds: Senedd committee report 'Digging the dirt' calls for statutory soil health standards; no government response published?"
+          ],
+          "depth": 3,
+          "heading": "Communities are Resilient to Climate Change (SI6, SI7, SI8, SI10)",
+          "tables": []
+        },
+        {
+          "body": [],
+          "bullets": [
+            "What would change for SI5 if this holds: Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party?",
+            "What would change for SI4 if this holds: Abandoned metal mines pollute about 700km of Welsh rivers, a major SI4 pressure with a live inquiry?",
+            "What would change for SI4 if this holds: NRW declares drought status for North Wales as July 2026 nears a 190-year rainfall low?",
+            "What would change for SI4 if this holds: NRW's savings programme cut 233 posts and reduced pollution-incident response; the 2026-27 settlement improves?",
+            "What would change for SI4 if this holds: NRW settles a 14.6 million pound HMRC IR35 investigation, recouped through phased budget reductions?",
+            "What would change for SI4 if this holds: Control of Agricultural Pollution Regulations review: all 23 recommendations taken forward, alternatives to the 170kg limit on the table?",
+            "What would change for SI4 if this holds: River Action takes NRW to judicial review over Powys poultry permit variations; scope of off-site pollution responsibility contested?"
+          ],
+          "depth": 3,
+          "heading": "Pollution is Minimised (SI4, SI5)",
+          "tables": []
+        },
+        {
+          "body": [
+            "The audit runs down both axes: the requirements, by the lane each report was found in, and the taxonomy, by the ecosystems, resources and hazard families the reports touch."
+          ],
+          "bullets": [],
+          "depth": 2,
+          "heading": "Coverage audit",
+          "tables": []
+        },
+        {
+          "body": [
+            "Each cell counts the active reports assessed against the requirement that were found in the lane. A row's status comes from the requirement's scanability and its total, so a requirement public sources cannot see reads blind spot, never quiet."
+          ],
+          "bullets": [],
+          "depth": 3,
+          "heading": "Requirements by lane",
+          "tables": [
+            {
+              "headers": [
+                "Requirement",
+                "Welsh Government",
+                "Senedd",
+                "UK Government and regulators",
+                "Research and evidence",
+                "Partnership and civil society",
+                "Legal and campaign",
+                "Independent media",
+                "Ecological surveillance",
+                "International",
+                "Governance and capacity",
+                "Total",
+                "Status"
+              ],
+              "rows": [
+                [
+                  "SI1 Resilient ecosystems",
+                  "6",
+                  "0",
+                  "1",
+                  "1",
+                  "0",
+                  "0",
+                  "2",
+                  "1",
+                  "0",
+                  "1",
+                  "12",
+                  "covered"
+                ],
+                [
+                  "SI2 Habitat restoration rate",
+                  "3",
+                  "1",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "1",
+                  "0",
+                  "0",
+                  "0",
+                  "5",
+                  "covered"
+                ],
+                [
+                  "SI3 Nature recovery in public services",
+                  "3",
+                  "0",
+                  "1",
+                  "1",
+                  "0",
+                  "0",
+                  "1",
+                  "0",
+                  "0",
+                  "1",
+                  "7",
+                  "covered"
+                ],
+                [
+                  "SI4 Pollution to land and water",
+                  "5",
+                  "2",
+                  "1",
+                  "0",
+                  "0",
+                  "2",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "10",
+                  "covered"
+                ],
+                [
+                  "SI5 Air pollution",
+                  "1",
+                  "0",
+                  "0",
+                  "1",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "2",
+                  "thin"
+                ],
+                [
+                  "SI6 Greenhouse gas emissions and sequestration",
+                  "2",
+                  "1",
+                  "2",
+                  "1",
+                  "0",
+                  "0",
+                  "2",
+                  "0",
+                  "0",
+                  "0",
+                  "8",
+                  "covered"
+                ],
+                [
+                  "SI7 Access to green and blue space",
+                  "3",
+                  "1",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "1",
+                  "0",
+                  "0",
+                  "0",
+                  "5",
+                  "covered"
+                ],
+                [
+                  "SI8 Places resilient to a changing climate",
+                  "6",
+                  "1",
+                  "1",
+                  "1",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "9",
+                  "covered"
+                ],
+                [
+                  "SI9 Impact of partnership approaches",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "blind spot"
+                ],
+                [
+                  "SI10 Public action on the crises",
+                  "2",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "2",
+                  "thin"
+                ],
+                [
+                  "SI11 Organisations acting on the crises",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "1",
+                  "0",
+                  "0",
+                  "0",
+                  "1",
+                  "thin"
+                ],
+                [
+                  "SI12 NRW colleague engagement",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "blind spot"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "body": [
+            "Each node counts the active reports whose requirements expect it or whose hazards belong to it. A node no requirement expects and no report touches is a blind spot of the framework: the requirement set does not foreground it, so its silence says nothing."
+          ],
+          "bullets": [],
+          "depth": 3,
+          "heading": "Taxonomy: SoNaRR ecosystems and resources",
+          "tables": [
+            {
+              "headers": [
+                "Node",
+                "Requirements expecting it",
+                "Active reports",
+                "Status"
+              ],
+              "rows": [
+                [
+                  "Marine",
+                  "3",
+                  "17",
+                  "covered"
+                ],
+                [
+                  "Coastal margins",
+                  "5",
+                  "28",
+                  "covered"
+                ],
+                [
+                  "Freshwaters",
+                  "5",
+                  "28",
+                  "covered"
+                ],
+                [
+                  "Mountains, moorlands and heaths",
+                  "4",
+                  "18",
+                  "covered"
+                ],
+                [
+                  "Semi-natural grasslands",
+                  "4",
+                  "16",
+                  "covered"
+                ],
+                [
+                  "Enclosed farmland",
+                  "4",
+                  "25",
+                  "covered"
+                ],
+                [
+                  "Woodlands",
+                  "6",
+                  "23",
+                  "covered"
+                ],
+                [
+                  "Urban",
+                  "5",
+                  "22",
+                  "covered"
+                ],
+                [
+                  "Air",
+                  "2",
+                  "9",
+                  "covered"
+                ],
+                [
+                  "Soils",
+                  "3",
+                  "24",
+                  "covered"
+                ],
+                [
+                  "Water",
+                  "2",
+                  "16",
+                  "covered"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "body": [
+            "Each node counts the active reports whose requirements expect it or whose hazards belong to it. A node no requirement expects and no report touches is a blind spot of the framework: the requirement set does not foreground it, so its silence says nothing."
+          ],
+          "bullets": [],
+          "depth": 3,
+          "heading": "Taxonomy: Hazard families",
+          "tables": [
+            {
+              "headers": [
+                "Node",
+                "Requirements expecting it",
+                "Active reports",
+                "Status"
+              ],
+              "rows": [
+                [
+                  "Plant and tree disease",
+                  "0",
+                  "0",
+                  "blind spot"
+                ],
+                [
+                  "Animal disease",
+                  "0",
+                  "1",
+                  "thin"
+                ],
+                [
+                  "Invasive species",
+                  "0",
+                  "0",
+                  "blind spot"
+                ],
+                [
+                  "Drought and water scarcity",
+                  "0",
+                  "1",
+                  "thin"
+                ],
+                [
+                  "Flood and storm",
+                  "0",
+                  "2",
+                  "thin"
+                ],
+                [
+                  "Wildfire",
+                  "0",
+                  "1",
+                  "thin"
+                ],
+                [
+                  "Pollution incident",
+                  "0",
+                  "3",
+                  "covered"
+                ],
+                [
+                  "Climate extreme",
+                  "0",
+                  "0",
+                  "blind spot"
+                ],
+                [
+                  "Funding and capacity",
+                  "0",
+                  "2",
+                  "thin"
+                ],
+                [
+                  "Regulatory and legal change",
+                  "0",
+                  "2",
+                  "thin"
+                ],
+                [
+                  "Market and land use change",
+                  "0",
+                  "0",
+                  "blind spot"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "body": [
+            "No scan run started in the period, so no candidates were collected or judged in it.",
+            "Reports created in the period: 35, of which 9 (26 per cent) came from lanes outside government. The mainstream bias guard asks for this share: a register that skews official misses the earliest signals.",
+            "The credibility of those 35 reports, digit by digit, is in the table below. Grades inflate quietly: a consultation is a 3, however official the page.",
+            "No run used the instrument in the period; the current instrument is version 2026.10.0.",
+            "Known blind spots, requirements this tool cannot see and holds no active report on: SI9 Impact of partnership approaches, SI12 NRW colleague engagement.",
+            "The scan only finds what already talks like the requirements. Biophysical, market, technological and institutional pressures that move a requirement before any publication names it are outside its reach.",
+            "Counts of reports are not counts of impact. The register shows what surfaced publicly: at least this much, and known to undercount."
+          ],
+          "bullets": [],
+          "depth": 2,
+          "heading": "Method note",
+          "tables": [
+            {
+              "headers": [
+                "Credibility",
+                "Meaning",
+                "Reports created"
+              ],
+              "rows": [
+                [
+                  "1",
+                  "confirmed",
+                  "0"
+                ],
+                [
+                  "2",
+                  "probably true",
+                  "25"
+                ],
+                [
+                  "3",
+                  "possibly true",
+                  "10"
+                ],
+                [
+                  "4",
+                  "doubtful",
+                  "0"
+                ],
+                [
+                  "5",
+                  "improbable",
+                  "0"
+                ],
+                [
+                  "6",
+                  "cannot be judged",
+                  "0"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "title": "Strategic assessment, 2026: NRW corporate plan performance framework"
+    }
+  ]
+}

@@ -40,10 +40,11 @@ def test_migrate_creates_then_reports_up_to_date(tmp_path: Path, env: dict[str, 
     assert first.stdout.splitlines() == [
         "applied 0001_init.sql",
         "applied 0002_intelligence.sql",
-        f"migrated {db_path}: 2 migrations",
+        "applied 0003_products.sql",
+        f"migrated {db_path}: 3 migrations",
     ]
     again = runner.invoke(app, ["migrate", *ROOT], env=env)
-    assert again.stdout.strip() == f"{db_path} is up to date: 2 migrations"
+    assert again.stdout.strip() == f"{db_path} is up to date: 3 migrations"
 
 
 def test_collect_fake_stores_the_run_and_writes_its_files(
@@ -129,7 +130,12 @@ def test_export_needs_a_database_then_writes_runs_json(tmp_path: Path, env: dict
     export.unlink()
     result = runner.invoke(app, ["export", *ROOT], env=env)
     assert result.exit_code == 0, result.output
-    assert result.stdout.splitlines() == [f"wrote  {export}", f"wrote  {register}"]
+    products = tmp_path / "data" / "exports" / "products.json"
+    assert result.stdout.splitlines() == [
+        f"wrote  {export}",
+        f"wrote  {register}",
+        f"wrote  {products}",
+    ]
     assert export.read_bytes() == before
     assert json.loads(register.read_text(encoding="utf-8")) == {
         "format": "gwylio.register/1",
@@ -141,7 +147,7 @@ def test_export_refuses_an_unmigrated_database(tmp_path: Path, env: dict[str, st
     Database.open(tmp_path / "data" / "gwylio.sqlite").close()
     result = runner.invoke(app, ["export", *ROOT], env=env)
     assert result.exit_code == 1
-    assert "needs 2 more migrations" in result.stderr
+    assert "needs 3 more migrations" in result.stderr
 
 
 def test_rebuild_prints_the_summary_and_reports_failure(
@@ -152,7 +158,7 @@ def test_rebuild_prints_the_summary_and_reports_failure(
     assert result.exit_code == 0, result.output
     lines = result.stdout.splitlines()
     assert lines[1] == (
-        "replayed 1 candidates file, 0 submissions, 0 sweeps and 1 archived instrument"
+        "replayed 1 candidates file, 0 submissions, 0 sweeps, 0 products and 1 archived instrument"
     )
     assert "  scan_run                            1" in lines
     assert "  candidate                          17" in lines

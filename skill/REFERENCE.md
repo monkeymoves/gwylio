@@ -8,18 +8,21 @@ Every closed value and identifier the analyst skill may write into a submission,
 
 | Verb | What it does |
 |---|---|
+| `gwylio audit` | Print the coverage audit: requirements by lane, taxonomy by count, credibility spread. |
 | `gwylio check` | Validate every configuration file and print a summary per file. |
 | `gwylio collect` | Run the instrument once and write a candidates file, printing the funnel. |
 | `gwylio datecheck` | Print reports whose dates or wording may have rotted, grouped by kind; always exit 0. |
-| `gwylio export` | Write the deterministic exports, data/exports/runs.json and register.json. |
+| `gwylio export` | Write the deterministic exports: runs.json, register.json and products.json. |
 | `gwylio import-legacy` | Seed the register from the old signals.json through a legacy submission. |
 | `gwylio ingest` | Validate a submission and apply it to the register, all or nothing. |
 | `gwylio migrate` | Create or upgrade the SQLite database at the settings database path. |
 | `gwylio probe` | Try one query text and print its hits, storing nothing. |
+| `gwylio product` | Render a product to data/products/ and record it; print the Markdown path. |
 | `gwylio rebuild` | Rebuild the database from config/ and the files under data/, printing row counts. |
 | `gwylio schema` | Generate JSON Schema, TypeScript types, the glossary and the skill reference. |
 | `gwylio sweep` | Fade active reports quiet in the two most recent complete runs; print faded ids. |
 | `gwylio version` | Print the package version. |
+| `gwylio yield` | Print each watched source's yield and reading, silent sources last. |
 
 ## Scanability
 

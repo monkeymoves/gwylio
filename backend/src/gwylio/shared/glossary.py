@@ -426,8 +426,44 @@ GLOSSARY: Final[tuple[tuple[str, str], ...]] = (
         "The tactical product for a single urgent report. In version 1 it is a designed seam only.",
     ),
     (
+        "Strategic assessment",
+        "The annual product for one requirement set: the standing picture per requirement, "
+        "questions per well-being objective drawn from threatening and two-way reports, the "
+        "coverage audit and the method note.",
+    ),
+    (
+        "Copy",
+        "Every heading and standing sentence the products use, held in config/copy.json. The "
+        "renderers hold only structure; no prose is generated.",
+    ),
+    (
+        "Method note",
+        "The closing section of every product: the period's runs and funnels, dispositions, "
+        "promotions and their non-government share, the credibility spread, the instrument "
+        "version and the known blind spots.",
+    ),
+    (
         "Snapshot",
         "The set of JavaScript Object Notation (JSON) files the static site reads, published "
         "by the command line tool from the register.",
+    ),
+    # Evaluation.
+    (
+        "Coverage audit",
+        "The check down both axes: active reports per requirement and lane, and per taxonomy "
+        "node. A row's status comes from the requirement's scanability and its count, so a blind "
+        "spot is never read as quiet; a node no requirement expects and no report touches is a "
+        "blind spot of the framework.",
+    ),
+    (
+        "Yield",
+        "How productive a watched source has been: its sightings, distinct candidates, "
+        "promotions and the last runs it was seen and promoted in, read as earning its place, "
+        "high volume with no promotions, low volume or silent.",
+    ),
+    (
+        "Funnel trend",
+        "The funnel counts of every scan run in start order, with what the analyst did with each "
+        "run's candidates and the promotion rate (promotions over new candidates).",
     ),
 )
