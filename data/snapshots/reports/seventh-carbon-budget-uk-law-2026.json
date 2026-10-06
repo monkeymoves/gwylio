@@ -1,7 +1,7 @@
 {
   "actor_id": "climate-change-committee",
   "actor_name": "Climate Change Committee",
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI6",
@@ -24,15 +24,9 @@
   "directions": [
     "supports"
   ],
-  "distinct_sources": 0,
+  "distinct_sources": 1,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "B2",
   "hazards": [],
   "history": [
@@ -70,14 +64,24 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by climate-change-committee; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Re-read the CCC response of 24 June 2026 to Parliament passing the Seventh Carbon Budget into law (about 87 percent reduction for 2038 to 2042). The source still stands.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "seventh-carbon-budget-uk-law-2026",
   "independent_confirmation": false,
   "lane": "uk-government-and-regulators",
   "lane_name": "UK Government and regulators",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-24",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "government",
   "notes": "UK-level, not Welsh. Tagged medium confidence on the read-across: the CCC response does not mention the devolved administrations.",
   "owner": null,
@@ -103,7 +107,19 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-e871a2",
+      "discipline": "osint_site",
+      "query_id": "site-air-climate-emissions-uk-government-and-regulators",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001403",
+      "source_id": "climate-change-committee",
+      "source_name": "Climate Change Committee",
+      "url": "https://www.theccc.org.uk/wp-content/uploads/2026/03/Supplementary-analysis-of-the-Seventh-Carbon-Budget-7439yr0294u43ur034r02i.pdf"
+    }
+  ],
   "source_id": "climate-change-committee",
   "source_name": "Climate Change Committee",
   "state": "emerging",

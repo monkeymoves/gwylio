@@ -1,7 +1,7 @@
 {
   "actor_id": "nation-cymru",
   "actor_name": "Nation.Cymru",
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI7",
@@ -24,15 +24,9 @@
   "directions": [
     "supports"
   ],
-  "distinct_sources": 0,
+  "distinct_sources": 1,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "C2",
   "hazards": [],
   "history": [
@@ -55,14 +49,24 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Re-read the nation.cymru report of the 2026 Green Flag awards: 330 Welsh sites (93 full, 237 community), up from 315 in 2025 and 291 in 2024. The source still stands.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "green-flag-2026-record-330-welsh-sites",
   "independent_confirmation": false,
   "lane": "independent-media",
   "lane_name": "Independent media",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-24",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "partnership_society",
   "notes": "Green Flag is a named metric source for SI7, so this is the indicator's own data moving, positively, for a third consecutive year. Promoted after the release landed mid-July; the release calendar entry records the same facts.",
   "owner": null,
@@ -88,7 +92,30 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-901675",
+      "discipline": "osint_web",
+      "query_id": "web-people-place-resilience-01",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000466",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://cprw.org.uk/record-green-space-success-strengthens-case-for-protecting-the-places-wales-loves/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-a87116",
+      "discipline": "osint_site",
+      "query_id": "site-people-place-resilience-independent-media",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001621",
+      "source_id": "nation-cymru",
+      "source_name": "Nation.Cymru",
+      "url": "https://nation.cymru/news/wales-breaks-green-flag-record-with-330-award-winning-spaces/"
+    }
+  ],
   "source_id": "nation-cymru",
   "source_name": "Nation.Cymru",
   "state": "emerging",

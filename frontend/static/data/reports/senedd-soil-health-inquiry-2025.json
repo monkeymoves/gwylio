@@ -1,7 +1,7 @@
 {
   "actor_id": "senedd",
   "actor_name": "Senedd Cymru (Welsh Parliament)",
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI2",
@@ -25,7 +25,7 @@
       "set_id": "nrw-corporate-plan"
     }
   ],
-  "bucket": "follow_up",
+  "bucket": "watch",
   "canonical_url": "laiddocuments.senedd.wales/cr-ld17564-en.pdf",
   "cited_in": [
     "operational-2026-10",
@@ -39,15 +39,9 @@
     "supports",
     "neutral"
   ],
-  "distinct_sources": 0,
+  "distinct_sources": 1,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-25, 73 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "B2",
   "hazards": [],
   "history": [
@@ -60,16 +54,31 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by senedd-research; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Verification found a Welsh Government response dated 16 January 2026 that the register said did not exist, so the title, summary and notes are corrected and the item moves from follow up to watch.",
+      "kind": "updated",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Searched the Senedd business pages and downloaded the Welsh Government response of 16 January 2026 to 'Digging the dirt': the register's claim that no government response was published is contradicted. Of 7 recommendations it accepted 2, accepted 4 in principle and rejected 1, and the report was debated in Plenary on 4 February 2026.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "senedd-soil-health-inquiry-2025",
   "independent_confirmation": false,
   "lane": "senedd",
   "lane_name": "Senedd",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-25",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "government",
-  "notes": "The first soil signal on the register. Soils are one of SoNaRR's three cross-cutting natural resources but are foregrounded by no strategic indicator, which is why the scan missed this until the soil_land cluster was added on 24 July 2026. Supports SI2 and SI4 if the recommendations are taken up, since soil condition drives both habitat restoration and diffuse pollution. Confidence is medium rather than high for one reason: no Welsh Government response to the recommendations could be found, and the usual response window has long passed. That missing response is the live hook, so this is a follow-up rather than a watch item.",
+  "notes": "The first soil signal on the register. Soils are one of SoNaRR's three cross-cutting natural resources but are foregrounded by no strategic indicator, which is why the scan missed this until the soil_land cluster was added on 24 July 2026. Supports SI2 and SI4 if the recommendations are taken up, since soil condition drives both habitat restoration and diffuse pollution. Corrected 6 October 2026: the earlier note that no Welsh Government response could be found was wrong; the response of 16 January 2026 is on the Senedd business site. The live hook is now delivery: whether soil-loss protections are actually added to the Control of Agricultural Pollution Regulations, and the SLM soil health indicator the response said would be laid with Agriculture Act indicators and targets. With the missing-response hook gone, this reads as a watch item rather than a follow-up.",
   "owner": "Luke",
   "places": [
     {
@@ -95,12 +104,46 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-1b542b",
+      "discipline": "osint_web",
+      "query_id": "web-soil-land-01",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000932",
+      "source_id": "senedd-research",
+      "source_name": "Senedd Research",
+      "url": "https://research.senedd.wales/research-articles/eroding-potential-the-state-of-welsh-soils/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-1b542b",
+      "discipline": "osint_web",
+      "query_id": "web-soil-land-02",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000933",
+      "source_id": "senedd-research",
+      "source_name": "Senedd Research",
+      "url": "https://research.senedd.wales/research-articles/eroding-potential-the-state-of-welsh-soils/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-1b542b",
+      "discipline": "osint_web",
+      "query_id": "web-soil-land-03",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000934",
+      "source_id": "senedd-research",
+      "source_name": "Senedd Research",
+      "url": "https://research.senedd.wales/research-articles/eroding-potential-the-state-of-welsh-soils/"
+    }
+  ],
   "source_id": "senedd-cymru",
   "source_name": "Senedd Cymru",
   "state": "emerging",
-  "summary": "The Senedd's Economy, Trade and Rural Affairs Committee published 'Digging the dirt: Improving Wales' soil health' on 18 November 2025, after evidence sessions in May and June 2025. Its recommendations include putting the GAEC 4 and 5 soil standards on a statutory footing, introducing a voluntary minimum standard for soil health that could later become statutory, and sharing soil data with farmers. The Agricultural Soil Policy Statement (28 April 2025) is the current policy baseline.",
-  "title": "Senedd committee report 'Digging the dirt' calls for statutory soil health standards; no government response published",
+  "summary": "The Senedd's Economy, Trade and Rural Affairs Committee published 'Digging the dirt: Improving Wales' soil health' on 18 November 2025, after evidence sessions in May and June 2025, with 7 recommendations and 6 conclusions. The Welsh Government responded on 16 January 2026 and the report was debated in Plenary on 4 February 2026. It accepted the call to set out its regulatory plans, including putting the GAEC 4 and 5 soil standards on a statutory footing, pointing to the Control of Agricultural Pollution Regulations review recommendation to add soil-loss protections to those regulations; accepted in principle sharing SFS soil test data, but only aggregated through the ERAMMP national monitoring programme; accepted in principle the call for a voluntary minimum soil health standard while saying its new Sustainable Land Management soil health indicator will not create one; and rejected a planning framework to protect the best agricultural land. The Agricultural Soil Policy Statement (28 April 2025) is the current policy baseline.",
+  "title": "Senedd committee report 'Digging the dirt' calls for statutory soil health standards; Welsh Government response of 16 January 2026 accepts most but declines a minimum soil standard",
   "topics": [
     {
       "id": "soil-and-land",

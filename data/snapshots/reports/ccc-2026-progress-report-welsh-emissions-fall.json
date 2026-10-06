@@ -1,7 +1,7 @@
 {
   "actor_id": "climate-change-committee",
   "actor_name": "Climate Change Committee",
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI6",
@@ -24,15 +24,9 @@
   "directions": [
     "informs_baseline"
   ],
-  "distinct_sources": 0,
+  "distinct_sources": 2,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "B2",
   "hazards": [],
   "history": [
@@ -55,14 +49,24 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Re-read the CCC page 'Progress in reducing emissions: 2026 report to Parliament' (24 June 2026): it records Welsh emissions of 30 MtCO2e in 2024, 8.6 percent below 2023, with industry falling 25 percent on the Port Talbot blast furnace closures and accounting for 74 percent of the Welsh reduction. The source still stands and matches the summary.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "ccc-2026-progress-report-welsh-emissions-fall",
   "independent_confirmation": false,
   "lane": "uk-government-and-regulators",
   "lane_name": "UK Government and regulators",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-24",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "government",
   "notes": "Informs the SI6 baseline rather than pushing it: a large one-off industrial closure moves the number without evidencing systemic decarbonisation, and the distinction matters for how the 2024 data is read against Carbon Budget 4's zero-offset trajectory. Caught by the supersession pass of 22 July 2026 rather than collection, because the June CCC report predates the widened scan.",
   "owner": null,
@@ -88,7 +92,52 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-5f7eba",
+      "discipline": "osint_web",
+      "query_id": "web-air-quality-03",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001018",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.bbc.co.uk/news/articles/c39yrnm34d0o"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-93a920",
+      "discipline": "osint_site",
+      "query_id": "site-air-climate-emissions-independent-media",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001488",
+      "source_id": "nation-cymru",
+      "source_name": "Nation.Cymru",
+      "url": "https://nation.cymru/feature/wales-has-cut-its-carbon-emissions-almost-in-half-but-the-hardest-part-is-still-to-come/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-71f6b5",
+      "discipline": "osint_site",
+      "query_id": "site-nature-ecosystems-uk-government-and-regulators",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001148",
+      "source_id": "climate-change-committee",
+      "source_name": "Climate Change Committee",
+      "url": "https://www.theccc.org.uk/publication/progress-in-reducing-emissions-2026-report-to-parliament/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-71f6b5",
+      "discipline": "osint_site",
+      "query_id": "site-air-climate-emissions-uk-government-and-regulators",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001149",
+      "source_id": "climate-change-committee",
+      "source_name": "Climate Change Committee",
+      "url": "https://www.theccc.org.uk/publication/progress-in-reducing-emissions-2026-report-to-parliament/"
+    }
+  ],
   "source_id": "climate-change-committee",
   "source_name": "Climate Change Committee",
   "state": "emerging",

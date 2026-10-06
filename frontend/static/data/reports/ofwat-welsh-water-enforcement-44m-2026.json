@@ -1,0 +1,111 @@
+{
+  "actor_id": "ofwat",
+  "actor_name": "Water Services Regulation Authority (Ofwat)",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI4",
+      "direction": "supports",
+      "name": "Decreasing the rate of pollution on land and entering water bodies",
+      "requirement_id": "si4",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "brief",
+  "canonical_url": "theguardian.com/business/2026/mar/12/dwr-cymru-welsh-water-apologises-ofwat-enforcement-plan-regulator",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "C3",
+  "hazards": [
+    {
+      "family": "pollution-incident",
+      "family_name": "Pollution incident",
+      "id": "storm-overflow-discharges",
+      "name": "Storm overflow discharges"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-8df428 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "ofwat-welsh-water-enforcement-44m-2026",
+  "independent_confirmation": false,
+  "lane": "independent-media",
+  "lane_name": "Independent media",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "Regulatory confirmation of systemic overflow failures by Wales's main sewerage undertaker, the main SI4 pressure NRW permits and enforces against; the funded spill reductions and the open question of the future Welsh regulator both bear on NRW.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "legal",
+  "requirement_ids": [
+    "si4"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "high",
+    "potential_impact": "high",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-8df428",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-02",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000167",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.theguardian.com/business/2026/mar/12/dwr-cymru-welsh-water-apologises-ofwat-enforcement-plan-regulator"
+    }
+  ],
+  "source_id": null,
+  "source_name": "The Guardian",
+  "state": "emerging",
+  "summary": "On 12 March 2026 the Guardian reported that Ofwat had found serious and unacceptable breaches in how Dwr Cymru Welsh Water operated, maintained and upgraded its wastewater network, leading to excessive storm overflow spills. The proposed 44.7 million pound package comprised 40.6 million pounds to reduce spills at specific overflows and tackle groundwater ingress, plus 4.1 million pounds for river quality in extremely sensitive catchments; the company accepted the findings and apologised. It was the seventh case in Ofwat's sector-wide sewage investigation, and the report noted UK plans for a Welsh water regulator, with NRW's possible role not yet settled.",
+  "title": "Ofwat proposes a 44.7 million pound enforcement package against Welsh Water for serious breaches in operating its sewage works and networks",
+  "topics": [
+    {
+      "id": "pollution-water-and-land",
+      "name": "Pollution of water and land"
+    },
+    {
+      "id": "governance-and-funding",
+      "name": "Governance and funding"
+    }
+  ],
+  "url": "https://www.theguardian.com/business/2026/mar/12/dwr-cymru-welsh-water-apologises-ofwat-enforcement-plan-regulator"
+}

@@ -34,13 +34,7 @@
   ],
   "distinct_sources": 0,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-25, 73 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "B2",
   "hazards": [],
   "history": [
@@ -53,14 +47,19 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "Re-read the gov.wales page for the MPA Network Management Progress Report 2022/23 to 2024/25 (published 2 December 2025, not updated since) and searched for a successor framework or JNCC review output: none found by 6 October 2026. The source still stands.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "mpa-network-management-framework-expired-2026",
   "independent_confirmation": false,
   "lane": "welsh-government",
   "lane_name": "Welsh Government",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-25",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "government",
   "notes": "The first marine signal on the register, and it is a governance gap rather than an event: the management framework for the Welsh MPA network has been out of date since 2023, with the review only commissioned in December 2025. Marine sits inside SI1 ecosystem resilience but is foregrounded by no indicator, which is why the scan missed it until the marine_coastal cluster was added on 24 July 2026. Watch for the JNCC review output and the next iteration of the Framework.",
   "owner": null,

@@ -1,7 +1,7 @@
 {
   "actor_id": "river-action",
   "actor_name": "River Action",
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI4",
@@ -26,13 +26,7 @@
   ],
   "distinct_sources": 0,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "D3",
   "hazards": [
     {
@@ -68,14 +62,24 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Re-read the River Action article of 17 February 2026 and searched Farmers Weekly, FarmingUK and River Action news for a permission decision or hearing date on the challenge to NRW's November 2025 permit variations at Llanshay, Neuadd Isaf and Rhosddu farms: nothing found by 6 October 2026. The source still stands and 'outcome pending' remains accurate.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "river-action-judicial-review-nrw-poultry-permits",
   "independent_confirmation": false,
   "lane": "legal-and-campaign",
   "lane_name": "Legal and campaign",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-24",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "partnership_society",
   "notes": "First promotion from the new legal and civil society lane (probe of 21 July 2026): a legal challenge to NRW's own permitting practice that no government source would ever surface. Genuinely two-way for SI4, hence neutral: a ruling against NRW could force wider assessment of off-site nutrient pollution (tightening the regime the indicator depends on) while creating capacity and casework pressure; a ruling for NRW entrenches the current boundary interpretation that campaigners argue leaks pollution. Either way the scope of agricultural permitting in Wales is being tested in court. Watch for the permission decision and any hearing date, and set event_horizon when one is fixed.",
   "owner": "Luke",
@@ -101,7 +105,19 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-e97375",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-10",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000320",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.bbc.co.uk/news/articles/c0mgwgxvxj1o"
+    }
+  ],
   "source_id": "river-action",
   "source_name": "River Action",
   "state": "emerging",

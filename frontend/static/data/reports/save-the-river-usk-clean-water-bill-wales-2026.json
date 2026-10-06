@@ -1,0 +1,117 @@
+{
+  "actor_id": null,
+  "actor_name": null,
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI4",
+      "direction": "neutral",
+      "name": "Decreasing the rate of pollution on land and entering water bodies",
+      "requirement_id": "si4",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "park",
+  "canonical_url": "savetheriverusk.org",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "neutral"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "D2",
+  "hazards": [
+    {
+      "family": "pollution-incident",
+      "family_name": "Pollution incident",
+      "id": "storm-overflow-discharges",
+      "name": "Storm overflow discharges"
+    },
+    {
+      "family": "pollution-incident",
+      "family_name": "Pollution incident",
+      "id": "agricultural-pollution",
+      "name": "Agricultural pollution"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-6697fc in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "save-the-river-usk-clean-water-bill-wales-2026",
+  "independent_confirmation": false,
+  "lane": "legal-and-campaign",
+  "lane_name": "Legal and campaign",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "A grassroots push for legislation that criticises NRW's regulatory performance directly; it bears on the water governance Green Paper already in the register and is a marker of citizen science pressure in the Usk, though the low signature count limits its weight.",
+  "owner": null,
+  "places": [
+    {
+      "id": "usk",
+      "name": "River Usk"
+    }
+  ],
+  "reliability": "D",
+  "reliability_label": "not usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si4"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "medium",
+    "novelty": "medium",
+    "potential_impact": "low",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-6697fc",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-11",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000334",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.savetheriverusk.org/"
+    }
+  ],
+  "source_id": null,
+  "source_name": "Save the River Usk",
+  "state": "emerging",
+  "summary": "On 2 December 2025 the community group Save the River Usk launched a proposed Clean Water Bill for Wales at the Senedd, backed by its citizen science sampling programme of over 5,500 samples. Its Senedd petition asked Members to produce the Bill, with legally binding water quality targets, a regulator 'fit for purpose', tougher permits and SAC rivers tested to bathing water standards. The petition completed on 17 August 2026 with 1,316 signatures and was considered by the Petitions Committee.",
+  "title": "Save the River Usk campaigns for a Clean Water Bill for Wales; its Senedd petition closed on 17 August 2026 with 1,316 signatures",
+  "topics": [
+    {
+      "id": "pollution-water-and-land",
+      "name": "Pollution of water and land"
+    },
+    {
+      "id": "governance-and-funding",
+      "name": "Governance and funding"
+    }
+  ],
+  "url": "https://www.savetheriverusk.org/"
+}

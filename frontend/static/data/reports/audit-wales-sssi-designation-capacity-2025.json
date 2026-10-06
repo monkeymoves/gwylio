@@ -1,7 +1,7 @@
 {
   "actor_id": "audit-wales",
   "actor_name": "Audit Wales",
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI1",
@@ -31,15 +31,9 @@
   "directions": [
     "threatens"
   ],
-  "distinct_sources": 0,
+  "distinct_sources": 1,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-25, 73 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "B2",
   "hazards": [],
   "history": [
@@ -52,14 +46,24 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Re-read the Audit Wales publication page 'Protecting Nature for Future Generations?' on 6 October 2026: still dated 11 November 2025 with 8 recommendations to NRW and 1,083 SSSIs; a search found no later formal NRW or committee response that changes the finding. The source still stands.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "audit-wales-sssi-designation-capacity-2025",
   "independent_confirmation": false,
   "lane": "governance-capacity",
   "lane_name": "Governance and capacity",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-25",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "government",
   "notes": "The sharpest external evidence yet that NRW's capacity constraints are producing a concrete delivery failure, and it lands directly on the protected-site component of ecosystem resilience (SI1) and on integration of nature duties across public services (SI3). Independent audit scrutiny, so it belongs in the register as an external signal about NRW rather than an NRW publication. Pairs with the funding-gap signal: that one records the input cut, this one records the output. Surfaced by the governance_capacity cluster added on 24 July 2026.",
   "owner": null,
@@ -86,7 +90,30 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-39ca11",
+      "discipline": "osint_web",
+      "query_id": "web-governance-capacity-03",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000873",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://pembrokeshire-herald.com/126464/natural-resources-wales-responds-to-criticism-over-nature-protection/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-19ec25",
+      "discipline": "osint_web",
+      "query_id": "web-governance-capacity-03",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000874",
+      "source_id": "audit-wales",
+      "source_name": "Audit Wales",
+      "url": "https://www.audit.wales/publication/protecting-nature-future-generations"
+    }
+  ],
   "source_id": "audit-wales",
   "source_name": "Audit Wales",
   "state": "emerging",

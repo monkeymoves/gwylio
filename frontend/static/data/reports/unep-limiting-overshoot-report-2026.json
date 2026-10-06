@@ -1,0 +1,113 @@
+{
+  "actor_id": "unep",
+  "actor_name": "United Nations Environment Programme (UNEP)",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI8",
+      "direction": "informs_baseline",
+      "name": "Increasing the proportion of the population living in places that will continue to support and contribute to their health and well-being in a changing climate",
+      "requirement_id": "si8",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI6",
+      "direction": "neutral",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "requirement_id": "si6",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "unep.org/news-and-stories/press-release/unep-world-set-cross-15degc-global-warming-can-still-limit-adapt-and",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "neutral",
+    "informs_baseline"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B3",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-865fe1 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by unep; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "unep-limiting-overshoot-report-2026",
+  "independent_confirmation": false,
+  "lane": "international",
+  "lane_name": "International",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "international",
+  "notes": "Adds international weight to planning Welsh adaptation (SI8) for warming above 1.5 degrees, consistent with the UK package's 2 degree planning minimum already in the register; carbon dioxide removal through afforestation and peatland bears on SI6.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "international",
+  "requirement_ids": [
+    "si8",
+    "si6"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "medium",
+    "potential_impact": "medium",
+    "time_horizon": "long_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-865fe1",
+      "discipline": "osint_web",
+      "query_id": "web-international-lens-05",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000719",
+      "source_id": "unep",
+      "source_name": "UNEP",
+      "url": "https://www.unep.org/news-and-stories/press-release/unep-world-set-cross-15degc-global-warming-can-still-limit-adapt-and"
+    }
+  ],
+  "source_id": "unep",
+  "source_name": "UNEP",
+  "state": "emerging",
+  "summary": "On 2 September 2026 the UN Environment Programme published Limiting Overshoot, which found global temperature rise was set to cross 1.5 degrees, likely within a few years. Its most optimistic scenario peaked at 1.8 degrees and most others above 2 degrees. It recommended an overshoot, peak and decline pathway combining deep emission cuts including methane, governed carbon dioxide removal and adaptation, and warned of limits to adaptation.",
+  "title": "UNEP Limiting Overshoot report: the world is set to cross 1.5 degrees within years, with a best-case peak of 1.8 degrees",
+  "topics": [
+    {
+      "id": "climate-emissions",
+      "name": "Climate and emissions"
+    },
+    {
+      "id": "people-place-and-resilience",
+      "name": "People, place and resilience"
+    }
+  ],
+  "url": "https://www.unep.org/news-and-stories/press-release/unep-world-set-cross-15degc-global-warming-can-still-limit-adapt-and"
+}

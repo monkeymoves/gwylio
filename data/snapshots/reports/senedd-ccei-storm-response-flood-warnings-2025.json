@@ -1,0 +1,111 @@
+{
+  "actor_id": "senedd",
+  "actor_name": "Senedd Cymru (Welsh Parliament)",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI8",
+      "direction": "threatens",
+      "name": "Increasing the proportion of the population living in places that will continue to support and contribute to their health and well-being in a changing climate",
+      "requirement_id": "si8",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "research.senedd.wales/research-articles/building-wales-resilience-senedd-committee-s-verdict-on-storm-response",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "threatens"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B2",
+  "hazards": [
+    {
+      "family": "flood-storm",
+      "family_name": "Flood and storm",
+      "id": "river-and-surface-water-flooding",
+      "name": "River and surface water flooding"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-4d25fa in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by senedd-research; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "senedd-ccei-storm-response-flood-warnings-2025",
+  "independent_confirmation": false,
+  "lane": "senedd",
+  "lane_name": "Senedd",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "government",
+  "notes": "Directly scrutinises NRW's flood forecasting and warning service; the forecasting gap with England and the warning sign-up inequality bear on SI8 and on NRW's investment case.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si8"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "medium",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-4d25fa",
+      "discipline": "osint_web",
+      "query_id": "web-people-place-resilience-08",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000580",
+      "source_id": "senedd-research",
+      "source_name": "Senedd Research",
+      "url": "https://research.senedd.wales/research-articles/building-wales-resilience-senedd-committee-s-verdict-on-storm-response/"
+    }
+  ],
+  "source_id": "senedd-research",
+  "source_name": "Senedd Research",
+  "state": "emerging",
+  "summary": "On 5 November 2025 Senedd Research summarised the Climate Change, Environment and Infrastructure Committee's report on the response to Storms Bert and Darragh, debated in the Senedd on 12 November 2025. Witnesses said flood forecasting in Wales was diverging from England, where more was invested in modelling, longer lead times and surface water forecast trials, and the committee asked that NRW have access to the latest forecasting technology and future trials. It also reported low and unequal flood warning sign-up, ageing culverts and council infrastructure, and support for catchment-scale and natural flood management approaches.",
+  "title": "Senedd committee finds Welsh flood forecasting diverging from England and uneven warning sign-up after Storms Bert and Darragh",
+  "topics": [
+    {
+      "id": "flood-risk",
+      "name": "Flood risk"
+    },
+    {
+      "id": "people-place-and-resilience",
+      "name": "People, place and resilience"
+    }
+  ],
+  "url": "https://research.senedd.wales/research-articles/building-wales-resilience-senedd-committee-s-verdict-on-storm-response/"
+}

@@ -1,0 +1,100 @@
+{
+  "actor_id": null,
+  "actor_name": null,
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI12",
+      "direction": "threatens",
+      "name": "Increasing the proportion of NRW colleagues feeling engaged, enabled and empowered",
+      "requirement_id": "si12",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "theregister.com/security/2026/09/07/welsh-environment-regulators-foi-blunder-exposes-diversity-data-of-2000-staff/5294748",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "threatens"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "C2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-8097f2 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "nrw-staff-diversity-data-foi-breach-2026",
+  "independent_confirmation": false,
+  "lane": "independent-media",
+  "lane_name": "Independent media",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "A rare public signal on SI12, colleague engagement, which has no scanability: special category staff data exposed for five years may dent staff trust, and any Information Commissioner's Office action would be worth recording.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "incident",
+  "requirement_ids": [
+    "si12"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "high",
+    "potential_impact": "low",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-8097f2",
+      "discipline": "osint_web",
+      "query_id": "web-governance-capacity-04",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000880",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.theregister.com/security/2026/09/07/welsh-environment-regulators-foi-blunder-exposes-diversity-data-of-2000-staff/5294748"
+    }
+  ],
+  "source_id": null,
+  "source_name": "The Register",
+  "state": "emerging",
+  "summary": "On 7 September 2026 The Register reported that NRW had confirmed equality monitoring data on around 2,000 current and former employees who worked there between April 2013 and March 2018 was inadvertently published in a spreadsheet released in 2021 under the Freedom of Information Act. The data may have included ethnicity, disability, religion, sexual orientation and Welsh language ability. NRW said a member of the public alerted it on 23 August 2026, that it reported the breach to the Information Commissioner's Office and removed the file, and that it had no evidence of misuse.",
+  "title": "NRW discloses that diversity data on about 2,000 current and former staff was exposed through a 2021 Freedom of Information release",
+  "topics": [
+    {
+      "id": "governance-and-funding",
+      "name": "Governance and funding"
+    }
+  ],
+  "url": "https://www.theregister.com/security/2026/09/07/welsh-environment-regulators-foi-blunder-exposes-diversity-data-of-2000-staff/5294748"
+}

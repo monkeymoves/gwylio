@@ -33,13 +33,7 @@
   ],
   "distinct_sources": 0,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "C3",
   "hazards": [],
   "history": [
@@ -67,14 +61,24 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "Corrects the framing: verification found the July 2026 step was a scrutiny report feeding back to Cabinet, not a formal decision, so the title and summary now say the council is moving to drop the target pending Cabinet approval.",
+      "kind": "updated",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Read the Bridgend council report 'Net Zero Strategy' to the Communities, Environment and Housing Overview and Scrutiny Committee of 13 July 2026 and re-read the nation.cymru article: the revised strategy went to scrutiny for comment to feed back to Cabinet, and the article says final approval rests with Cabinet; no Cabinet decision was found by 6 October 2026.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "bridgend-drops-2030-net-zero-target",
   "independent_confirmation": false,
   "lane": "independent-media",
   "lane_name": "Independent media",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-24",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "partnership_society",
   "notes": "A first-of-kind retreat from the Welsh public sector 2030 net zero ambition, and framed by officers as sector-wide pressure rather than one council's failure. If it cascades, the public-sector delivery context behind SI6 weakens. Weak signal by design: single council, but watch for followers and for Welsh Government's response. Also tagged SI11: a public body withdrawing a climate commitment is an organisation reducing its action, which is what SI11 measures, and officers describing the pressure as sector-wide makes it a leading indicator for other bodies. Added 24 July 2026; SI11's evidence is otherwise internal, so this is an incidental external sighting rather than genuine coverage of the indicator.",
   "owner": null,
@@ -105,8 +109,8 @@
   "source_id": "nation-cymru",
   "source_name": "Nation.Cymru",
   "state": "emerging",
-  "summary": "In July 2026 Bridgend council dropped its 2030 operational net zero target (adopted 2023) for a 'more realistic' efficiency-led strategy with a 2030 review, citing residual emissions and severe funding constraints; 72 percent of consultation respondents opposed keeping the target. Officers told scrutiny the new Welsh Government administration recognises 2030 net zero will be incredibly difficult across the public sector.",
-  "title": "Bridgend council drops its 2030 net zero target as unachievable; officers say the pressure is sector-wide",
+  "summary": "On 13 July 2026 Bridgend council officers put a revised net zero strategy to the Communities, Environment and Housing Overview and Scrutiny Committee that abandons the 2030 operational net zero target (adopted by Cabinet in January 2023) for a 'more realistic' efficiency-led approach with a review of progress in 2030, citing residual emissions and severe funding constraints; 72 percent of the 129 respondents to the consultation that ended in January 2026 opposed keeping the target. Officers told scrutiny the new Welsh Government administration recognises 2030 net zero will be incredibly difficult across the public sector. The revised strategy still needs Cabinet approval, and no Cabinet decision had been published by 6 October 2026.",
+  "title": "Bridgend council moves to abandon its 2030 net zero target as unachievable; officers say the pressure is sector-wide",
   "topics": [
     {
       "id": "climate-emissions",

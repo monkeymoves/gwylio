@@ -1,0 +1,123 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI1",
+      "direction": "supports",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI9",
+      "direction": "supports",
+      "name": "Increasing the impact of partnership approaches which deliver multiple benefits and address the root causes of the nature, climate and pollution crises",
+      "requirement_id": "si9",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "gov.wales/mitigation-strategy-avian-influenza-wild-birds-england-and-wales-html",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B2",
+  "hazards": [
+    {
+      "family": "animal-disease",
+      "family_name": "Animal disease",
+      "id": "avian-influenza",
+      "name": "Avian influenza in wild birds"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-fa6c7e in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by welsh-government; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "avian-influenza-wild-birds-mitigation-strategy-2026",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "government",
+  "notes": "Defines NRW's formal role in wild bird avian influenza monitoring and site guidance, relevant to seabird colony recovery (see avian-flu-welsh-seabirds-recovery-2041).",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si1",
+    "si9"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "medium",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-fa6c7e",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-03",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000761",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/mitigation-strategy-avian-influenza-wild-birds-england-and-wales-html"
+    }
+  ],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government",
+  "state": "emerging",
+  "summary": "On 27 January 2026 the Welsh Government published the Mitigation Strategy for Avian Influenza in Wild Birds in England and Wales, setting out the policies of Defra and the Welsh Government and their delivery agencies APHA, Natural England and NRW. It assigned APHA surveillance, gave NE and NRW, with JNCC, the monitoring of wild bird populations, and covered site guidance and licensing; it was prepared with UKHSA, Public Health Wales and JNCC and is reviewed annually.",
+  "title": "Defra and Welsh Government publish a Mitigation Strategy for Avian Influenza in Wild Birds in England and Wales",
+  "topics": [
+    {
+      "id": "biosecurity",
+      "name": "Biosecurity"
+    },
+    {
+      "id": "nature-and-ecosystems",
+      "name": "Nature and ecosystems"
+    },
+    {
+      "id": "marine-and-coastal",
+      "name": "Marine and coastal"
+    }
+  ],
+  "url": "https://www.gov.wales/mitigation-strategy-avian-influenza-wild-birds-england-and-wales-html"
+}

@@ -1,0 +1,111 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI5",
+      "direction": "informs_baseline",
+      "name": "Decreasing the rate of pollution to air from industrial and non-industrial sources",
+      "requirement_id": "si5",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "brief",
+  "canonical_url": "airquality.gov.wales/sites/default/files/documents/2025-12/AQ-2025-English-Final_0.pdf",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "informs_baseline"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-1a8a70 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "air-quality-in-wales-2024-25-report",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "government",
+  "notes": "The latest official baseline for SI5 ahead of the new PM2.5 targets under the 2024 Act; ozone exceedances in heat episodes point to a climate-linked pressure that targets on primary pollutants miss.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "data_release",
+  "requirement_ids": [
+    "si5"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "medium",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-1a8a70",
+      "discipline": "osint_web",
+      "query_id": "web-air-climate-emissions-01",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000354",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.airquality.gov.wales/sites/default/files/documents/2025-12/AQ-2025-English-Final_0.pdf"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-1a8a70",
+      "discipline": "osint_web",
+      "query_id": "web-air-quality-01",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000355",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.airquality.gov.wales/sites/default/files/documents/2025-12/AQ-2025-English-Final_0.pdf"
+    }
+  ],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government (Welsh Air Quality Forum, airquality.gov.wales)",
+  "state": "emerging",
+  "summary": "In December 2025 the Welsh Air Quality Forum published its annual Air Quality in Wales 2024/25 report, prepared by Ricardo for the Welsh Government. It found that in 2024 no monitoring site in Wales exceeded a national objective or limit value for nitrogen dioxide, PM10, PM2.5, carbon monoxide, sulphur dioxide, benzene or lead, while three sites (Cardiff Centre, Cwmbran Crownbridge and Swansea St Thomas) exceeded the ozone objective during hot, still spells in May, July and August 2024. The network had 43 automatic monitoring sites at the end of 2024.",
+  "title": "Air Quality in Wales 2024/25: no monitoring site exceeded national objectives for NO2 or particulates in 2024, but three breached the ozone objective",
+  "topics": [
+    {
+      "id": "air-quality",
+      "name": "Air quality"
+    }
+  ],
+  "url": "https://www.airquality.gov.wales/sites/default/files/documents/2025-12/AQ-2025-English-Final_0.pdf"
+}

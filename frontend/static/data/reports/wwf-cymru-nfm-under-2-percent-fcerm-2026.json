@@ -1,0 +1,124 @@
+{
+  "actor_id": "wwf-cymru",
+  "actor_name": "WWF Cymru (World Wide Fund for Nature)",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI8",
+      "direction": "informs_baseline",
+      "name": "Increasing the proportion of the population living in places that will continue to support and contribute to their health and well-being in a changing climate",
+      "requirement_id": "si8",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI2",
+      "direction": "neutral",
+      "name": "Increasing the rate of habitat restoration",
+      "requirement_id": "si2",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "wwf.org.uk/updates/reducing-impact-flooding-working-nature",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "neutral",
+    "informs_baseline"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "C2",
+  "hazards": [
+    {
+      "family": "flood-storm",
+      "family_name": "Flood and storm",
+      "id": "river-and-surface-water-flooding",
+      "name": "River and surface water flooding"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-94e4f6 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by wwf-cymru; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "wwf-cymru-nfm-under-2-percent-fcerm-2026",
+  "independent_confirmation": false,
+  "lane": "partnership-and-civil-society",
+  "lane_name": "Partnership and civil society",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "Questions the balance of the Welsh flood programme that NRW helps deliver and argues for a shift towards natural flood management through farm support; a challenge voice on si8 delivery.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "research",
+  "requirement_ids": [
+    "si8",
+    "si2"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "high",
+    "potential_impact": "medium",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-94e4f6",
+      "discipline": "osint_site",
+      "query_id": "site-people-place-resilience-partnership-and-civil-society",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001599",
+      "source_id": "wwf-cymru",
+      "source_name": "WWF Cymru",
+      "url": "https://www.wwf.org.uk/updates/reducing-impact-flooding-working-nature"
+    }
+  ],
+  "source_id": "wwf-cymru",
+  "source_name": "WWF Cymru",
+  "state": "emerging",
+  "summary": "WWF Cymru published an independent report it commissioned (Sayers, July 2026) on flood risk and natural flood management in Wales. It found about 275,000 properties at risk of flooding, around 4,200 properties likely to flood each year with further climate change at about 93 million pounds a year in damage, and that less than 2 percent of flood risk management funding for 2022 to 2026 was directed at natural flood management. WWF Cymru called for the Sustainable Farming Scheme to be used to scale up nature-based solutions.",
+  "title": "WWF Cymru analysis finds less than 2 percent of Welsh flood risk funding for 2022 to 2026 went to natural flood management",
+  "topics": [
+    {
+      "id": "flood-risk",
+      "name": "Flood risk"
+    },
+    {
+      "id": "nature-and-ecosystems",
+      "name": "Nature and ecosystems"
+    },
+    {
+      "id": "governance-and-funding",
+      "name": "Governance and funding"
+    }
+  ],
+  "url": "https://www.wwf.org.uk/updates/reducing-impact-flooding-working-nature"
+}

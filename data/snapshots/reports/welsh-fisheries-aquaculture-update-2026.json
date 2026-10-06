@@ -1,7 +1,7 @@
 {
   "actor_id": "welsh-government",
   "actor_name": "Welsh Government",
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI1",
@@ -24,20 +24,9 @@
   "directions": [
     "supports"
   ],
-  "distinct_sources": 0,
-  "event_horizon": null,
-  "findings": [
-    {
-      "detail": "summary uses future-framed language: 'due to'",
-      "kind": "future_language",
-      "severity": "warn"
-    },
-    {
-      "detail": "last verified 2026-07-25, 73 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "distinct_sources": 1,
+  "event_horizon": "2026-10-27",
+  "findings": [],
   "grading": "B2",
   "hazards": [],
   "history": [
@@ -50,14 +39,29 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by welsh-government; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Replaces 'due to launch' with the dated launch of the crab and lobster plan consultation on 4 August 2026 and sets the horizon to its 27 October 2026 close.",
+      "kind": "updated",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Re-read the gov.wales written statement of 29 January 2026, which still stands, and the gov.wales consultation page 'Proposed fisheries management plan: crab and lobster', which shows the crab and lobster plan consultation opened on 4 August 2026 and runs to 27 October 2026.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "welsh-fisheries-aquaculture-update-2026",
   "independent_confirmation": false,
   "lane": "welsh-government",
   "lane_name": "Welsh Government",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-25",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "government",
   "notes": "Supports SI1 through active management of fishing pressure on marine ecosystems, the main lever Wales has over marine ecosystem condition. Surfaced by the new marine_coastal cluster. Read alongside the expired MPA management framework: fisheries management is progressing while the protected-area framework it sits inside is out of date.",
   "owner": null,
@@ -83,11 +87,23 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-a5ea5e",
+      "discipline": "osint_web",
+      "query_id": "web-marine-coastal-02",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000902",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/written-statement-strategic-approach-welsh-fisheries-and-aquaculture-update"
+    }
+  ],
   "source_id": "welsh-government",
   "source_name": "Welsh Government",
   "state": "emerging",
-  "summary": "A written statement of 29 January 2026 reports progress on the Strategic Approach to Welsh Fisheries and Aquaculture since December 2024: the King Scallop Fisheries Management Plan consultation has closed, a Wales-only crab and lobster plan consultation is due to launch, the Welsh Marine and Fisheries Scheme opened its sixth round on 7 January with an increased budget, 194,000 pounds has gone to inshore vessel monitoring systems, and multi-year science contracts and a carbon audit of the Welsh fleet have been commissioned.",
+  "summary": "A written statement of 29 January 2026 reported progress on the Strategic Approach to Welsh Fisheries and Aquaculture since December 2024: a consultation on King Scallop fishery management measures closed on 31 January 2026, the Welsh Marine and Fisheries Scheme opened its sixth round on 7 January with an increased budget, 194,000 pounds went to inshore vessel monitoring systems, and multi-year science contracts and a carbon audit of the Welsh fleet were commissioned. The Wales-only Crab and Lobster Fisheries Management Plan, which the statement said would soon go to consultation, opened for consultation on 4 August 2026, with responses invited until 27 October 2026.",
   "title": "Welsh fisheries and aquaculture update reports progress on management plans and fleet decarbonisation",
   "topics": [
     {

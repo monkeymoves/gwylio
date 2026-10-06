@@ -1,7 +1,7 @@
 {
   "actor_id": "welsh-government",
   "actor_name": "Welsh Government",
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI5",
@@ -32,15 +32,9 @@
     "supports",
     "informs_baseline"
   ],
-  "distinct_sources": 0,
-  "event_horizon": "2027-02-28",
-  "findings": [
-    {
-      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "distinct_sources": 2,
+  "event_horizon": "2027-02-14",
+  "findings": [],
   "grading": "B2",
   "hazards": [],
   "history": [
@@ -88,14 +82,29 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by senedd-research; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Adds the August 2026 government response confirming the targets will proceed unchanged, and pins the horizon to the exact statutory deadline of 14 February 2027.",
+      "kind": "updated",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Checked the gov.wales consultation page 'Fine particulate matter air quality targets' (updated 25 August 2026) and read the attached summary of responses with government response (WG55180, August 2026): 42 responses, broad support, and the Welsh Government says it will proceed with the regulations as originally drafted; no draft regulations had been laid by 6 October 2026.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "pm25-air-quality-target-regulations-wales-2026",
   "independent_confirmation": false,
   "lane": "welsh-government",
   "lane_name": "Welsh Government",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-24",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "government",
   "notes": "Verified 22 July 2026: consultation closed 16 February 2026; statutory backstop to lay draft regulations by February 2027 recorded as the event horizon.",
   "owner": null,
@@ -122,11 +131,56 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-3f91b5",
+      "discipline": "osint_web",
+      "query_id": "web-air-climate-emissions-01",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000349",
+      "source_id": "senedd-research",
+      "source_name": "Senedd Research",
+      "url": "https://research.senedd.wales/research-articles/air-quality-and-public-health/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-82c45b",
+      "discipline": "osint_web",
+      "query_id": "web-air-climate-emissions-02",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000376",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.rcp.ac.uk/news-and-media/news-and-opinion/rcp-cymru-wales-responds-to-welsh-government-consultation-on-air-quality/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-150b72",
+      "discipline": "osint_web",
+      "query_id": "web-air-climate-emissions-01",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000350",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/written-statement-consultation-draft-air-quality-target-regulations-fine-particulate-matter"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-150b72",
+      "discipline": "osint_web",
+      "query_id": "web-air-climate-emissions-02",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000351",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/written-statement-consultation-draft-air-quality-target-regulations-fine-particulate-matter"
+    }
+  ],
   "source_id": "welsh-government",
   "source_name": "Welsh Government",
   "state": "emerging",
-  "summary": "Written statement of 17 November 2025 opened consultation on the first legally binding national PM2.5 targets under the Environment (Air Quality and Soundscapes) (Wales) Act 2024: an annual mean of 10 micrograms per cubic metre and a 25 percent cut in average population exposure, both by the end of 2035. The consultation closed on 16 February 2026 and responses are under review, with the regulations to be made in 2026-27 subject to the new post-election ministers. The 2024 Act requires the draft PM2.5 target regulations to be laid within three years of its Royal Assent, so by February 2027.",
+  "summary": "Written statement of 17 November 2025 opened consultation on the first legally binding national PM2.5 targets under the Environment (Air Quality and Soundscapes) (Wales) Act 2024: an annual mean of 10 micrograms per cubic metre and a 25 percent cut in average population exposure against a 2017 to 2019 baseline, both by the end of 2035. The consultation closed on 16 February 2026. The Welsh Government published its summary of responses and government response in August 2026 (page updated 25 August): 42 responses showed broad support, some wanting the targets sooner or tougher, and the government said it will proceed with the regulations as originally drafted, adding a non-statutory aspiration to reach 10 micrograms by 2030 where feasible. The 2024 Act requires the draft PM2.5 target regulations to be laid within three years of its Royal Assent on 14 February 2024, so by 14 February 2027; they had not been laid by 6 October 2026.",
   "title": "Draft Air Quality Target Regulations for fine particulate matter (PM2.5) under the 2024 Act",
   "topics": [
     {

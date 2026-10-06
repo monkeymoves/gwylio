@@ -1,0 +1,120 @@
+{
+  "actor_id": null,
+  "actor_name": null,
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI10",
+      "direction": "informs_baseline",
+      "name": "Increasing the proportion of the population that act to mitigate and adapt to the nature, climate and pollution crises",
+      "requirement_id": "si10",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI6",
+      "direction": "informs_baseline",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "requirement_id": "si6",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "park",
+  "canonical_url": "nesta.org.uk/data-visualisation-and-interactive/funding-the-future-of-heat-lessons-from-scotland-and-wales",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "informs_baseline"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "C2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-89e4f6 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "nesta-heat-pump-uptake-scotland-wales-2026",
+  "independent_confirmation": false,
+  "lane": "research-evidence",
+  "lane_name": "Research and evidence",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "A useful baseline for household climate action (SI10) and residential emissions (SI6), showing rural, off-gas Wales leading and urban Wales lagging; pair it with the Welsh Government's Warm Homes review in this run.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    },
+    {
+      "id": "mid-wales",
+      "name": "Mid Wales"
+    },
+    {
+      "id": "north-wales",
+      "name": "North Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "research",
+  "requirement_ids": [
+    "si10",
+    "si6"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "medium",
+    "potential_impact": "low",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-89e4f6",
+      "discipline": "osint_web",
+      "query_id": "web-public-behaviour-04",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001078",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.nesta.org.uk/data-visualisation-and-interactive/funding-the-future-of-heat-lessons-from-scotland-and-wales/"
+    }
+  ],
+  "source_id": null,
+  "source_name": "Nesta",
+  "state": "emerging",
+  "summary": "On 4 June 2026 Nesta published an analysis of heat pump installations in Scotland and Wales using MCS data. It found that seven of the top 20 UK local authorities for air source heat pump installs per household were in Wales, led by Ceredigion (9.2 percent of homes) and the Isle of Anglesey (7.1 percent), while Cardiff and other cities were below 0.5 percent. It noted that the Seventh Carbon Budget implies about 1.3 million heat pumps in Wales by 2050, and that uptake rose and fell with funding schemes, so the planned end of the Energy Company Obligation could alter the trajectory.",
+  "title": "Nesta analysis finds Welsh heat pump uptake among the highest in the UK but highly uneven, from 9.2 percent of homes in Ceredigion to under 0.5 percent in Cardiff",
+  "topics": [
+    {
+      "id": "climate-emissions",
+      "name": "Climate and emissions"
+    },
+    {
+      "id": "public-behaviour",
+      "name": "Public behaviour"
+    }
+  ],
+  "url": "https://www.nesta.org.uk/data-visualisation-and-interactive/funding-the-future-of-heat-lessons-from-scotland-and-wales/"
+}

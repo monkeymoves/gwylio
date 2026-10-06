@@ -1,7 +1,7 @@
 {
   "actor_id": "welsh-government",
   "actor_name": "Welsh Government",
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI4",
@@ -24,15 +24,9 @@
   "directions": [
     "neutral"
   ],
-  "distinct_sources": 0,
+  "distinct_sources": 1,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "B2",
   "hazards": [
     {
@@ -82,14 +76,29 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Adds the 22 September 2026 Programme for Government commitment to move away from calendar-based controls, the clearest signal yet on the direction of the closed periods.",
+      "kind": "updated",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Re-read the gov.wales written statement of 8 October 2025 and searched for later steps: Senedd written question WQ99459 (answered 14 July 2026) says any change will be evidence based with a regulatory impact assessment, and the Programme for Government 2026 to 2030 (22 September 2026) commits to a new catchment approach to nutrients that moves away from 'farming by calendar'. No consultation on regulatory change has been published.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "control-of-agricultural-pollution-regulations-review-2025",
   "independent_confirmation": false,
   "lane": "welsh-government",
   "lane_name": "Welsh Government",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-24",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "government",
   "notes": "Tagged neutral because the net effect on the SI4 regime cannot honestly be called yet. Watch for the task and finish group, the consultation on regulatory changes, and whether the 170kg limit survives. NRW is directly involved through the enforcement funding. Corroborated 2026-07-20 from the farming side: NFU Cymru (31 March 2025) is 'frustrated' that the review response changed nothing material and continues to press to loosen the 170kg limit and closed periods; a Senedd bid to scrap the rules failed; the 2022 High Court challenge was dismissed. So the regulations have held (the supportive reading for SI4) under sustained pressure to weaken them. Multiple independent sources now, hence reinforced and confidence high; direction stays neutral because the review could still loosen them.",
   "owner": "Luke",
@@ -115,11 +124,34 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-616dd1",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-04",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000222",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://afonyddcymru.org/agricultural-pollution-progress/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-7c436b",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-04",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000205",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/written-statement-update-review-control-agricultural-pollutions-regulations"
+    }
+  ],
   "source_id": "welsh-government",
   "source_name": "Welsh Government",
   "state": "emerging",
-  "summary": "Written statement of 8 October 2025: the independently chaired statutory review completed in March 2025 and Ministers will take all 23 recommendations forward in full and at pace. The direction for SI4 is genuinely two-way: alternatives to the closed periods and the 170kg nitrogen limit are being explored, which could loosen the core controls, while civil sanctions are being considered and 1.58 million pounds was committed for NRW enforcement in 2025-26, which strengthens them. Any substantive regulatory change goes to formal consultation.",
+  "summary": "Written statement of 8 October 2025: the independently chaired statutory review completed in March 2025 and Ministers will take all 23 recommendations forward in full and at pace. The direction for SI4 is genuinely two-way: alternatives to the closed periods and the 170kg nitrogen limit are being explored, which could loosen the core controls, while civil sanctions are being considered and 1.58 million pounds was committed for NRW enforcement in 2025-26, which strengthens them. Any substantive regulatory change goes to formal consultation; a ministerial answer of 14 July 2026 confirmed any change will carry a regulatory impact assessment. The new government's Programme for Government (22 September 2026) commits to implement a new approach to managing nutrients across catchments, moving away from the 'farming by calendar' approach, which signals the closed periods are likely to be replaced. No consultation on changes had been published by 6 October 2026.",
   "title": "Control of Agricultural Pollution Regulations review: all 23 recommendations taken forward, alternatives to the 170kg limit on the table",
   "topics": [
     {

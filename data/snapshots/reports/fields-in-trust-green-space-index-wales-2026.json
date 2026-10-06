@@ -1,0 +1,104 @@
+{
+  "actor_id": null,
+  "actor_name": null,
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI7",
+      "direction": "informs_baseline",
+      "name": "Increasing the proportion of the population who have access to high quality green or blue space, and who use them sustainably",
+      "requirement_id": "si7",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "welshcountry.co.uk/wales-has-britains-best-protected-borough-for-green-space",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "informs_baseline"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "C2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-35eafe in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "fields-in-trust-green-space-index-wales-2026",
+  "independent_confirmation": false,
+  "lane": "partnership-and-civil-society",
+  "lane_name": "Partnership and civil society",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "An independent annual measure of local green space access and protection that can sit beside NRW's SI7 evidence; the policy ask is live in the National Development Framework consultation.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    },
+    {
+      "id": "north-wales",
+      "name": "North Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "data_release",
+  "requirement_ids": [
+    "si7"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "high",
+    "potential_impact": "medium",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-35eafe",
+      "discipline": "osint_web",
+      "query_id": "web-people-place-resilience-01",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000468",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.welshcountry.co.uk/wales-has-britains-best-protected-borough-for-green-space/"
+    }
+  ],
+  "source_id": null,
+  "source_name": "Welsh Country (Fields in Trust release)",
+  "state": "emerging",
+  "summary": "On 23 September 2026 Fields in Trust published its Green Space Index, finding that 19 percent of Welsh residents lived within a ten-minute walk of a permanently protected park, against 14 percent across Great Britain, and that 12 percent lived beyond a ten-minute walk of any green space. Wrexham reached 52 percent after a decade of legal protection agreements, while 23 percent of Gwynedd residents lived beyond a ten-minute walk of green space. The charity called on the Welsh Government, in its consultation on the National Development Framework, and all 22 councils to adopt its Deed of Dedication and Standards.",
+  "title": "Fields in Trust Green Space Index 2026: 19 percent of people in Wales live within a ten-minute walk of a permanently protected park",
+  "topics": [
+    {
+      "id": "people-place-and-resilience",
+      "name": "People, place and resilience"
+    }
+  ],
+  "url": "https://www.welshcountry.co.uk/wales-has-britains-best-protected-borough-for-green-space/"
+}

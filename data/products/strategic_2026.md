@@ -18,13 +18,13 @@ For each requirement: its coverage status, its active reports by direction and b
 
 ### SI1 Increasing the proportion of ecosystems that are defined as resilient
 
-Coverage status: covered, from 12 active reports.
+Coverage status: covered, from 30 active reports.
 
-By direction: threatens 7, informs the baseline 2, supports 3.
+By direction: threatens 13, informs the baseline 8, supports 9.
 
-By state: emerging 12.
+By state: emerging 30.
 
-Grading spread: B2 8, B3 1, C2 1, C3 2.
+Grading spread: B2 17, B3 3, C2 3, C3 7.
 
 Matured reports kept as settled context, not counted above: 1.
 
@@ -33,18 +33,18 @@ Scanability: high. Drivers are external (targets, legislation, plans) even thoug
 Highest potential impact among the active reports, threats first among equals:
 
 - B2 Audit Wales finds NRW is not designating SSSIs it knows may qualify, citing staff capacity and data gaps [SI1 threatens] (emerging, potential impact high)
-- C3 Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party [SI1 threatens] (emerging, potential impact high)
-- B2 SoNaRR 2025 published: the third State of Natural Resources Report, the SI1 resilience evidence base [SI1 informs the baseline] (emerging, potential impact high)
+- C3 Wild Cymru investigation links Welsh wildfires to illegal grassland burning and exposes an enforcement gap between the Welsh Government and NRW [SI1 threatens] (emerging, potential impact high)
+- C3 NRW applies for the first River Severn drought order in 37 years as Llyn Clywedog falls below half capacity [SI1 threatens] (emerging, potential impact high)
 
 ### SI2 Increasing the rate of habitat restoration
 
-Coverage status: covered, from 5 active reports.
+Coverage status: covered, from 16 active reports.
 
-By direction: threatens 2, informs the baseline 1, supports 2.
+By direction: threatens 3, two-way 3, informs the baseline 2, supports 8.
 
-By state: emerging 5.
+By state: emerging 16.
 
-Grading spread: B2 4, C3 1.
+Grading spread: B2 9, B3 1, C2 2, C3 4.
 
 Matured reports kept as settled context, not counted above: 1.
 
@@ -53,18 +53,18 @@ Scanability: medium. Restoration rate data is largely NRW's and partners'; exter
 Highest potential impact among the active reports, threats first among equals:
 
 - C3 ECIU analysis: Wales projected to deliver just 14 percent of its 2030 tree planting target [SI2 threatens] (emerging, potential impact high)
-- B2 SoNaRR 2025 published: the third State of Natural Resources Report, the SI1 resilience evidence base [SI2 informs the baseline] (emerging, potential impact high)
-- B2 Nature Recovery Action Plan 2026: six aims, tripled peatland target, statutory biodiversity targets within two years of Royal Assent [SI2 supports] (emerging, potential impact high)
+- C3 Wild Cymru investigation links Welsh wildfires to illegal grassland burning and exposes an enforcement gap between the Welsh Government and NRW [SI2 threatens] (emerging, potential impact high)
+- C2 Sustainable Farming Scheme opens for applications on 2 March 2026 with its Optional and Collaborative layers not yet available [SI2 two-way] (emerging, potential impact high)
 
 ### SI3 Increasing the integration of activities that support nature recovery into Wales' public services
 
-Coverage status: covered, from 7 active reports.
+Coverage status: covered, from 10 active reports.
 
-By direction: threatens 2, two-way 1, supports 4.
+By direction: threatens 2, two-way 2, supports 6.
 
-By state: emerging 7.
+By state: emerging 10.
 
-Grading spread: B2 4, B3 1, C3 2.
+Grading spread: B2 6, B3 1, C2 1, C3 2.
 
 Matured reports kept as settled context, not counted above: 1.
 
@@ -78,31 +78,31 @@ Highest potential impact among the active reports, threats first among equals:
 
 ### SI4 Decreasing the rate of pollution on land and entering water bodies
 
-Coverage status: covered, from 10 active reports.
+Coverage status: covered, from 19 active reports.
 
-By direction: threatens 4, two-way 2, informs the baseline 1, supports 3.
+By direction: threatens 5, two-way 6, informs the baseline 1, supports 7.
 
-By state: emerging 10.
+By state: emerging 19.
 
-Grading spread: B2 7, B3 1, D3 2.
+Grading spread: B2 8, B3 1, C2 1, C3 4, D2 1, D3 3, F3 1.
 
 Scanability: high. WFD classification, regulations and water governance are external and well covered.
 
 Highest potential impact among the active reports, threats first among equals:
 
+- F3 New Welsh environment minister declares the closed-period ban on spreading slurry and manure ineffective, signalling a revision of the agricultural pollution rules [SI4 threatens] (emerging, potential impact high)
 - B2 Control of Agricultural Pollution Regulations review: all 23 recommendations taken forward, alternatives to the 170kg limit on the table [SI4 two-way] (emerging, potential impact high)
 - D3 River Action takes NRW to judicial review over Powys poultry permit variations; scope of off-site pollution responsibility contested [SI4 two-way] (emerging, potential impact high)
-- B2 SoNaRR 2025 published: the third State of Natural Resources Report, the SI1 resilience evidence base [SI4 informs the baseline] (emerging, potential impact high)
 
 ### SI5 Decreasing the rate of pollution to air from industrial and non-industrial sources
 
-Coverage status: thin, from 2 active reports.
+Coverage status: covered, from 7 active reports.
 
-By direction: threatens 1, supports 1.
+By direction: threatens 2, informs the baseline 1, supports 4.
 
-By state: emerging 2.
+By state: emerging 7.
 
-Grading spread: B2 1, C3 1.
+Grading spread: B2 3, B3 1, C2 1, C3 2.
 
 Scanability: high. Air quality legislation, targets and standards are external and well covered.
 
@@ -110,16 +110,17 @@ Highest potential impact among the active reports, threats first among equals:
 
 - C3 Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party [SI5 threatens] (emerging, potential impact high)
 - B2 Draft Air Quality Target Regulations for fine particulate matter (PM2.5) under the 2024 Act [SI5 supports] (emerging, potential impact high)
+- C3 Green Alliance warns a reported cut to the zero emission vehicle mandate, from 80 to 50 percent, would add about 70 MtCO2 to Carbon Budget Seven [SI5 threatens] (emerging, potential impact medium)
 
 ### SI6 Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration
 
-Coverage status: covered, from 8 active reports.
+Coverage status: covered, from 25 active reports.
 
-By direction: threatens 4, two-way 1, informs the baseline 1, supports 2.
+By direction: threatens 7, two-way 9, informs the baseline 3, supports 6.
 
-By state: emerging 8.
+By state: emerging 25.
 
-Grading spread: B2 5, C3 3.
+Grading spread: B2 9, B3 5, C2 3, C3 7, D3 1.
 
 Matured reports kept as settled context, not counted above: 1.
 
@@ -128,18 +129,18 @@ Scanability: high. Carbon budgets and the UK GHG Inventory are external and publ
 Highest potential impact among the active reports, threats first among equals:
 
 - C3 ECIU analysis: Wales projected to deliver just 14 percent of its 2030 tree planting target [SI6 threatens] (emerging, potential impact high)
+- C3 Wild Cymru investigation links Welsh wildfires to illegal grassland burning and exposes an enforcement gap between the Welsh Government and NRW [SI6 threatens] (emerging, potential impact high)
 - C3 Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party [SI6 threatens] (emerging, potential impact high)
-- B2 Nature Recovery Action Plan 2026: six aims, tripled peatland target, statutory biodiversity targets within two years of Royal Assent [SI6 supports] (emerging, potential impact high)
 
 ### SI7 Increasing the proportion of the population who have access to high quality green or blue space, and who use them sustainably
 
-Coverage status: covered, from 5 active reports.
+Coverage status: covered, from 8 active reports.
 
-By direction: threatens 2, informs the baseline 1, supports 2.
+By direction: threatens 2, two-way 1, informs the baseline 2, supports 3.
 
-By state: emerging 5.
+By state: emerging 8.
 
-Grading spread: B2 4, C2 1.
+Grading spread: B2 5, C2 3.
 
 Scanability: medium. Green Flag and the GI data set are external but published annually; policy drivers are visible, use and access data less so.
 
@@ -151,54 +152,77 @@ Highest potential impact among the active reports, threats first among equals:
 
 ### SI8 Increasing the proportion of the population living in places that will continue to support and contribute to their health and well-being in a changing climate
 
-Coverage status: covered, from 9 active reports.
+Coverage status: covered, from 22 active reports.
 
-By direction: threatens 4, informs the baseline 3, supports 2.
+By direction: threatens 7, two-way 4, informs the baseline 6, supports 5.
 
-By state: emerging 9.
+By state: emerging 22.
 
-Grading spread: B2 7, B3 2.
+Grading spread: B2 12, B3 4, C2 3, C3 3.
 
 Scanability: high. Flood policy, SUDS, planning and WIMD are external; NRW's own flood data is not.
 
 Highest potential impact among the active reports, threats first among equals:
 
 - B3 Flood Re ends in 2039: insurance affordability cliff if adaptation lags climate risk [SI8 threatens] (emerging, potential impact high)
-- B2 Draft Air Quality Target Regulations for fine particulate matter (PM2.5) under the 2024 Act [SI8 informs the baseline] (emerging, potential impact high)
-- B2 NRW's savings programme cut 233 posts and reduced pollution-incident response; the 2026-27 settlement improves [SI8 threatens] (emerging, potential impact medium)
+- C3 NRW applies for the first River Severn drought order in 37 years as Llyn Clywedog falls below half capacity [SI8 threatens] (emerging, potential impact high)
+- B2 Summer 2026 was the hottest on record in Wales, with the first red extreme heat warning and persistent marine heatwave conditions [SI8 threatens] (emerging, potential impact high)
 
 ### SI9 Increasing the impact of partnership approaches which deliver multiple benefits and address the root causes of the nature, climate and pollution crises
 
-Coverage status: blind spot, from 0 active reports.
+Coverage status: covered, from 9 active reports.
 
-By direction: none.
+By direction: supports 9.
 
-By state: none.
+By state: emerging 9.
 
-Grading spread: none.
+Grading spread: B2 5, C2 2, C3 2.
 
 Scanability: low. Evidence is mostly internal to NRW (grants, Area Statements, MoUs, Natur a Ni), but PSB well-being assessments and plans are published on a roughly 5-year cycle: the next assessments are due end 2026 to early 2027. So this is quiet between cycles with a known upcoming window, not permanently blind.
 
-A blind spot is not quiet. A requirement whose evidence public sources cannot see (low or no scanability) and that has no active reports is invisible to this tool, not calm; its silence is not evidence of anything.
+Highest potential impact among the active reports, threats first among equals:
+
+- B2 Welsh Government 30by30 framework: only protected sites in favourable or recovering condition will count, with Naturfa sites as Wales' OECMs [SI9 supports] (emerging, potential impact high)
+- B2 Defra and Welsh Government publish a Mitigation Strategy for Avian Influenza in Wild Birds in England and Wales [SI9 supports] (emerging, potential impact medium)
+- C3 Marches Forward Partnership councils, including Powys and Monmouthshire, seek 5 million pounds to deliver the Severn Valley flood strategy [SI9 supports] (emerging, potential impact medium)
 
 ### SI10 Increasing the proportion of the population that act to mitigate and adapt to the nature, climate and pollution crises
 
-Coverage status: thin, from 2 active reports.
+Coverage status: covered, from 11 active reports.
 
-By direction: informs the baseline 2.
+By direction: two-way 1, informs the baseline 4, supports 6.
 
-By state: emerging 2.
+By state: emerging 11.
 
-Grading spread: B2 2.
+Grading spread: B2 4, B3 2, C2 4, D3 1.
 
 Scanability: medium. PaNS Wales and the National Survey are external but only speak at release; between releases this indicator is genuinely quiet.
 
 Highest potential impact among the active reports, threats first among equals:
 
-- B2 Welsh Government climate change perceptions and actions survey publishes waves 3 and 4 [SI10 informs the baseline] (emerging, potential impact medium)
-- B2 People and Nature Survey Wales, April 2023 to April 2024 results published [SI10 informs the baseline] (emerging, potential impact medium)
+- B3 Welsh Government starts Wales's first Climate and Nature Action Plan, aiming for net zero by 2040 and substantive nature recovery by 2050 [SI10 supports] (emerging, potential impact high)
+- B3 Welsh Government discussion paper opens engagement on the next emissions reduction plan for 2026 to 2030 [SI10 supports] (emerging, potential impact high)
+- D3 Welsh Government consults on a 'Best for Wales' Deposit Return Scheme; Surfers Against Sewage presses for glass and reuse targets [SI10 two-way] (emerging, potential impact medium)
 
 ### SI11 Increasing the proportion of organisations and businesses who act to mitigate and adapt to the nature, climate and pollution crises
+
+Coverage status: covered, from 7 active reports.
+
+By direction: threatens 2, two-way 1, informs the baseline 1, supports 3.
+
+By state: emerging 7.
+
+Grading spread: B3 1, C2 2, C3 3, D3 1.
+
+Scanability: low. Business and organisational action is largely qualitative case-study evidence, much of it internal. PSB and partnership plans publishing 2027 to 2028 are the main external window; between them expect little, so absence is weak evidence rather than a finding.
+
+Highest potential impact among the active reports, threats first among equals:
+
+- C3 Bridgend council moves to abandon its 2030 net zero target as unachievable; officers say the pressure is sector-wide [SI11 threatens] (emerging, potential impact medium)
+- D3 TaxPayers' Alliance puts the 2030 Welsh public sector net zero target at 7.8 to 13.3 billion pounds and calls for it to be withdrawn [SI11 threatens] (emerging, potential impact medium)
+- B3 Future Generations Commissioner announces a Section 20 review of energy policy and decision-making in Wales [SI11 two-way] (emerging, potential impact medium)
+
+### SI12 Increasing the proportion of NRW colleagues feeling engaged, enabled and empowered
 
 Coverage status: thin, from 1 active reports.
 
@@ -206,27 +230,13 @@ By direction: threatens 1.
 
 By state: emerging 1.
 
-Grading spread: C3 1.
-
-Scanability: low. Business and organisational action is largely qualitative case-study evidence, much of it internal. PSB and partnership plans publishing 2027 to 2028 are the main external window; between them expect little, so absence is weak evidence rather than a finding.
-
-Highest potential impact among the active reports, threats first among equals:
-
-- C3 Bridgend council drops its 2030 net zero target as unachievable; officers say the pressure is sector-wide [SI11 threatens] (emerging, potential impact medium)
-
-### SI12 Increasing the proportion of NRW colleagues feeling engaged, enabled and empowered
-
-Coverage status: blind spot, from 0 active reports.
-
-By direction: none.
-
-By state: none.
-
-Grading spread: none.
+Grading spread: C2 1.
 
 Scanability: none. Internal staff survey (Ein Llais). No external source will ever report on it.
 
-A blind spot is not quiet. A requirement whose evidence public sources cannot see (low or no scanability) and that has no active reports is invisible to this tool, not calm; its silence is not evidence of anything.
+Highest potential impact among the active reports, threats first among equals:
+
+- C2 NRW discloses that diversity data on about 2,000 current and former staff was exposed through a 2021 Freedom of Information release [SI12 threatens] (emerging, potential impact low)
 
 ## Questions for each well-being objective
 
@@ -236,34 +246,69 @@ One question for each active report that threatens a member requirement or cuts 
 
 - What would change for SI1, SI3 if this holds: Audit Wales finds NRW is not designating SSSIs it knows may qualify, citing staff capacity and data gaps?
 - What would change for SI2 if this holds: ECIU analysis: Wales projected to deliver just 14 percent of its 2030 tree planting target?
+- What would change for SI1, SI2 if this holds: Wild Cymru investigation links Welsh wildfires to illegal grassland burning and exposes an enforcement gap between the Welsh Government and NRW?
+- What would change for SI1 if this holds: NRW applies for the first River Severn drought order in 37 years as Llyn Clywedog falls below half capacity?
 - What would change for SI1, SI3 if this holds: Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party?
+- What would change for SI1 if this holds: Lower Wye reached 27.7C in June 2026, and an NRW specialist warned several of Wales' 22 principal salmon rivers are close to unsustainable?
 - What would change for SI1 if this holds: Study projects Welsh seabird colonies may not recover from the 2022 avian flu outbreak until 2041?
 - What would change for SI1, SI3 if this holds: Wales' marine protected area management framework expired in 2023 with no successor; JNCC asked to lead the review?
-- What would change for SI1 if this holds: NRW declares drought status for North Wales as July 2026 nears a 190-year rainfall low?
-- What would change for SI1, SI2 if this holds: Severe 2026 wildfire season burns Welsh uplands, with a major incident near Conwy?
+- What would change for SI1 if this holds: NRW declared drought in North Wales on 23 July 2026, extended it to all of Wales by 30 July after the driest July on record?
+- What would change for SI1 if this holds: Senedd petition seeks to stop all development on Welsh peatland, claiming renewable schemes threaten 36 percent of peat?
+- What would change for SI1 if this holds: Met Office warns a long-lasting UK marine heatwave could reach extreme levels, with Welsh offshore waters 4 to 5 degrees above normal?
+- What would change for SI1, SI2 if this holds: Severe 2026 wildfire season burns Welsh uplands: four major incidents, a Welsh Government wildfire review and summit?
+- What would change for SI1, SI2 if this holds: Welsh Government holds biodiversity funding at about 36 million pounds for 2026-27 after Senedd committee warns 30 by 30 is predicted to be missed?
 - What would change for SI1 if this holds: First Asian hornet nest confirmed in Wales, near Wrexham, triggering the contingency response?
+- What would change for SI2 if this holds: Sustainable Farming Scheme opens for applications on 2 March 2026 with its Optional and Collaborative layers not yet available?
+- What would change for SI3 if this holds: Welsh Government responds to the Section 6 biodiversity duty evaluation, proposing to publish which public authorities are in scope?
+- What would change for SI2 if this holds: WWF Cymru analysis finds less than 2 percent of Welsh flood risk funding for 2022 to 2026 went to natural flood management?
 
 ### Communities are Resilient to Climate Change (SI6, SI7, SI8, SI10)
 
 - What would change for SI6 if this holds: ECIU analysis: Wales projected to deliver just 14 percent of its 2030 tree planting target?
 - What would change for SI8 if this holds: Flood Re ends in 2039: insurance affordability cliff if adaptation lags climate risk?
+- What would change for SI6 if this holds: Wild Cymru investigation links Welsh wildfires to illegal grassland burning and exposes an enforcement gap between the Welsh Government and NRW?
+- What would change for SI8 if this holds: NRW applies for the first River Severn drought order in 37 years as Llyn Clywedog falls below half capacity?
 - What would change for SI6 if this holds: Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party?
-- What would change for SI6 if this holds: Bridgend council drops its 2030 net zero target as unachievable; officers say the pressure is sector-wide?
+- What would change for SI8 if this holds: Summer 2026 was the hottest on record in Wales, with the first red extreme heat warning and persistent marine heatwave conditions?
+- What would change for SI6 if this holds: Bridgend council moves to abandon its 2030 net zero target as unachievable; officers say the pressure is sector-wide?
+- What would change for SI6 if this holds: Green Alliance warns a reported cut to the zero emission vehicle mandate, from 80 to 50 percent, would add about 70 MtCO2 to Carbon Budget Seven?
 - What would change for SI7, SI8 if this holds: NRW's savings programme cut 233 posts and reduced pollution-incident response; the 2026-27 settlement improves?
 - What would change for SI7, SI8 if this holds: NRW settles a 14.6 million pound HMRC IR35 investigation, recouped through phased budget reductions?
-- What would change for SI6 if this holds: Severe 2026 wildfire season burns Welsh uplands, with a major incident near Conwy?
+- What would change for SI8 if this holds: Senedd committee finds Welsh flood forecasting diverging from England and uneven warning sign-up after Storms Bert and Darragh?
+- What would change for SI6 if this holds: TaxPayers' Alliance puts the 2030 Welsh public sector net zero target at 7.8 to 13.3 billion pounds and calls for it to be withdrawn?
+- What would change for SI6 if this holds: Severe 2026 wildfire season burns Welsh uplands: four major incidents, a Welsh Government wildfire review and summit?
 - What would change for SI8 if this holds: Winter 2025-26 flooding hits about 400 Welsh homes (Storm Claudia), the flood side of the climate whiplash?
-- What would change for SI6 if this holds: Senedd committee report 'Digging the dirt' calls for statutory soil health standards; no government response published?
+- What would change for SI8 if this holds: One year on, the Disused Mine and Quarry Tips (Wales) Act 2025: Disused Tips Authority due April 2027, with remediation funding beyond 2026-27 unresolved?
+- What would change for SI6 if this holds: National Energy Strategy to replace Wales' renewable electricity targets with an emissions-based energy target?
+- What would change for SI6 if this holds: Welsh Government discussion paper opens engagement on the next emissions reduction plan for 2026 to 2030?
+- What would change for SI6 if this holds: Sustainable Farming Scheme opens for applications on 2 March 2026 with its Optional and Collaborative layers not yet available?
+- What would change for SI6 if this holds: Future Generations Commissioner announces a Section 20 review of energy policy and decision-making in Wales?
+- What would change for SI8 if this holds: Marches Forward Partnership councils, including Powys and Monmouthshire, seek 5 million pounds to deliver the Severn Valley flood strategy?
+- What would change for SI8 if this holds: Welsh Government reports progress on the NICW flood resilience recommendations, deferring a new long-term strategy and governance changes to the next Senedd?
+- What would change for SI8 if this holds: Rhondda Cynon Taf council votes to buy and demolish 16 flood-prone homes on Clydach Terrace, Ynysybwl, after defences proved unviable?
+- What would change for SI6 if this holds: Senedd petition seeks to stop all development on Welsh peatland, claiming renewable schemes threaten 36 percent of peat?
+- What would change for SI6 if this holds: Senedd Research briefing on data centres in Wales: two AI Growth Zones and doubling electricity use raise energy, grid and water questions?
+- What would change for SI6 if this holds: Senedd committee report 'Digging the dirt' calls for statutory soil health standards; Welsh Government response of 16 January 2026 accepts most but declines a minimum soil standard?
+- What would change for SI6 if this holds: UNEP Limiting Overshoot report: the world is set to cross 1.5 degrees within years, with a best-case peak of 1.8 degrees?
+- What would change for SI10 if this holds: Welsh Government consults on a 'Best for Wales' Deposit Return Scheme; Surfers Against Sewage presses for glass and reuse targets?
+- What would change for SI6 if this holds: Refreshed NHS Wales Decarbonisation Strategic Delivery Plan published; supply chain emissions still rising?
+- What would change for SI7 if this holds: River Tawe illness reports: NRW review finds no pollution or permit breach to explain them; routine monitoring is not designed for bathing?
 
 ### Pollution is Minimised (SI4, SI5)
 
+- What would change for SI4 if this holds: New Welsh environment minister declares the closed-period ban on spreading slurry and manure ineffective, signalling a revision of the agricultural pollution rules?
 - What would change for SI5 if this holds: Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party?
+- What would change for SI5 if this holds: Green Alliance warns a reported cut to the zero emission vehicle mandate, from 80 to 50 percent, would add about 70 MtCO2 to Carbon Budget Seven?
 - What would change for SI4 if this holds: Abandoned metal mines pollute about 700km of Welsh rivers, a major SI4 pressure with a live inquiry?
-- What would change for SI4 if this holds: NRW declares drought status for North Wales as July 2026 nears a 190-year rainfall low?
+- What would change for SI4 if this holds: NRW declared drought in North Wales on 23 July 2026, extended it to all of Wales by 30 July after the driest July on record?
 - What would change for SI4 if this holds: NRW's savings programme cut 233 posts and reduced pollution-incident response; the 2026-27 settlement improves?
 - What would change for SI4 if this holds: NRW settles a 14.6 million pound HMRC IR35 investigation, recouped through phased budget reductions?
 - What would change for SI4 if this holds: Control of Agricultural Pollution Regulations review: all 23 recommendations taken forward, alternatives to the 170kg limit on the table?
 - What would change for SI4 if this holds: River Action takes NRW to judicial review over Powys poultry permit variations; scope of off-site pollution responsibility contested?
+- What would change for SI4 if this holds: NRW applies for the first River Severn drought order in 37 years as Llyn Clywedog falls below half capacity?
+- What would change for SI4 if this holds: Wrexham councillors attack NRW over a single Lower Dee phosphate sample that held more than 100 planning applications; NRW drops the nutrient neutrality requirement?
+- What would change for SI4 if this holds: River Tawe illness reports: NRW review finds no pollution or permit breach to explain them; routine monitoring is not designed for bathing?
+- What would change for SI4 if this holds: Save the River Usk campaigns for a Clean Water Bill for Wales; its Senedd petition closed on 17 August 2026 with 1,316 signatures?
 
 ## Coverage audit
 
@@ -275,18 +320,18 @@ Each cell counts the active reports assessed against the requirement that were f
 
 | Requirement | Welsh Government | Senedd | UK Government and regulators | Research and evidence | Partnership and civil society | Legal and campaign | Independent media | Ecological surveillance | International | Governance and capacity | Total | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| SI1 Resilient ecosystems | 6 | 0 | 1 | 1 | 0 | 0 | 2 | 1 | 0 | 1 | 12 | covered |
-| SI2 Habitat restoration rate | 3 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 5 | covered |
-| SI3 Nature recovery in public services | 3 | 0 | 1 | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 7 | covered |
-| SI4 Pollution to land and water | 5 | 2 | 1 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 10 | covered |
-| SI5 Air pollution | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | thin |
-| SI6 Greenhouse gas emissions and sequestration | 2 | 1 | 2 | 1 | 0 | 0 | 2 | 0 | 0 | 0 | 8 | covered |
-| SI7 Access to green and blue space | 3 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 5 | covered |
-| SI8 Places resilient to a changing climate | 6 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 9 | covered |
-| SI9 Impact of partnership approaches | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | blind spot |
-| SI10 Public action on the crises | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | thin |
-| SI11 Organisations acting on the crises | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | thin |
-| SI12 NRW colleague engagement | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | blind spot |
+| SI1 Resilient ecosystems | 12 | 2 | 3 | 1 | 1 | 0 | 8 | 2 | 0 | 1 | 30 | covered |
+| SI2 Habitat restoration rate | 7 | 2 | 0 | 0 | 3 | 0 | 4 | 0 | 0 | 0 | 16 | covered |
+| SI3 Nature recovery in public services | 5 | 0 | 1 | 1 | 0 | 0 | 2 | 0 | 0 | 1 | 10 | covered |
+| SI4 Pollution to land and water | 6 | 3 | 2 | 0 | 0 | 4 | 4 | 0 | 0 | 0 | 19 | covered |
+| SI5 Air pollution | 4 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 7 | covered |
+| SI6 Greenhouse gas emissions and sequestration | 7 | 3 | 2 | 3 | 0 | 1 | 7 | 0 | 1 | 1 | 25 | covered |
+| SI7 Access to green and blue space | 4 | 1 | 0 | 0 | 1 | 0 | 2 | 0 | 0 | 0 | 8 | covered |
+| SI8 Places resilient to a changing climate | 8 | 4 | 2 | 2 | 1 | 0 | 3 | 0 | 2 | 0 | 22 | covered |
+| SI9 Impact of partnership approaches | 4 | 0 | 0 | 0 | 1 | 0 | 4 | 0 | 0 | 0 | 9 | covered |
+| SI10 Public action on the crises | 6 | 0 | 0 | 2 | 0 | 1 | 2 | 0 | 0 | 0 | 11 | covered |
+| SI11 Organisations acting on the crises | 0 | 0 | 0 | 1 | 0 | 1 | 3 | 0 | 1 | 1 | 7 | covered |
+| SI12 NRW colleague engagement | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | thin |
 
 ### Taxonomy: SoNaRR ecosystems and resources
 
@@ -294,17 +339,17 @@ Each node counts the active reports whose requirements expect it or whose hazard
 
 | Node | Requirements expecting it | Active reports | Status |
 |---|---|---|---|
-| Marine | 3 | 17 | covered |
-| Coastal margins | 5 | 28 | covered |
-| Freshwaters | 5 | 28 | covered |
-| Mountains, moorlands and heaths | 4 | 18 | covered |
-| Semi-natural grasslands | 4 | 16 | covered |
-| Enclosed farmland | 4 | 25 | covered |
-| Woodlands | 6 | 23 | covered |
-| Urban | 5 | 22 | covered |
-| Air | 2 | 9 | covered |
-| Soils | 3 | 24 | covered |
-| Water | 2 | 16 | covered |
+| Marine | 3 | 52 | covered |
+| Coastal margins | 5 | 68 | covered |
+| Freshwaters | 5 | 68 | covered |
+| Mountains, moorlands and heaths | 4 | 57 | covered |
+| Semi-natural grasslands | 4 | 46 | covered |
+| Enclosed farmland | 4 | 68 | covered |
+| Woodlands | 6 | 67 | covered |
+| Urban | 5 | 59 | covered |
+| Air | 2 | 30 | covered |
+| Soils | 3 | 63 | covered |
+| Water | 2 | 37 | covered |
 
 ### Taxonomy: Hazard families
 
@@ -313,38 +358,44 @@ Each node counts the active reports whose requirements expect it or whose hazard
 | Node | Requirements expecting it | Active reports | Status |
 |---|---|---|---|
 | Plant and tree disease | 0 | 0 | blind spot |
-| Animal disease | 0 | 1 | thin |
-| Invasive species | 0 | 0 | blind spot |
-| Drought and water scarcity | 0 | 1 | thin |
-| Flood and storm | 0 | 2 | thin |
-| Wildfire | 0 | 1 | thin |
-| Pollution incident | 0 | 3 | covered |
-| Climate extreme | 0 | 0 | blind spot |
-| Funding and capacity | 0 | 2 | thin |
+| Animal disease | 0 | 2 | thin |
+| Invasive species | 0 | 2 | thin |
+| Drought and water scarcity | 0 | 4 | covered |
+| Flood and storm | 0 | 9 | covered |
+| Wildfire | 0 | 3 | covered |
+| Pollution incident | 0 | 7 | covered |
+| Climate extreme | 0 | 2 | thin |
+| Funding and capacity | 0 | 7 | covered |
 | Regulatory and legal change | 0 | 2 | thin |
-| Market and land use change | 0 | 0 | blind spot |
+| Market and land use change | 0 | 2 | thin |
 
 ## Method note
 
-No scan run started in the period, so no candidates were collected or judged in it.
+Scan runs started in the period: 1. Their funnels are in the first table below.
 
-Reports created in the period: 35, of which 9 (26 per cent) came from lanes outside government. The mainstream bias guard asks for this share: a register that skews official misses the earliest signals.
+Final dispositions of those runs' candidates: promoted 60, rejected 1540, duplicate 116, reinforcement 48, deferred 0. New candidates nobody has judged yet: 0.
 
-The credibility of those 35 reports, digit by digit, is in the table below. Grades inflate quietly: a consultation is a 3, however official the page.
+Reports created in the period: 95, of which 42 (44 per cent) came from lanes outside government. The mainstream bias guard asks for this share: a register that skews official misses the earliest signals.
 
-No run used the instrument in the period; the current instrument is version 2026.10.0.
+The credibility of those 95 reports, digit by digit, is in the table below. Grades inflate quietly: a consultation is a 3, however official the page.
 
-Known blind spots, requirements this tool cannot see and holds no active report on: SI9 Impact of partnership approaches, SI12 NRW colleague engagement.
+Instrument version used by the period's runs: 2026.10.0.
+
+No requirement reads as a blind spot.
 
 The scan only finds what already talks like the requirements. Biophysical, market, technological and institutional pressures that move a requirement before any publication names it are outside its reach.
 
 Counts of reports are not counts of impact. The register shows what surfaced publicly: at least this much, and known to undercount.
 
+| Run | Started | Instrument | Raw hits | Unique | New | Reinforcements | Requests | Budget exhausted |
+|---|---|---|---|---|---|---|---|---|
+| 20261006T2155Z-6ae7 | 2026-10-06 | 2026.10.0 | 2301 | 1782 | 1764 | 18 | 139 | no |
+
 | Credibility | Meaning | Reports created |
 |---|---|---|
 | 1 | confirmed | 0 |
-| 2 | probably true | 25 |
-| 3 | possibly true | 10 |
+| 2 | probably true | 62 |
+| 3 | possibly true | 33 |
 | 4 | doubtful | 0 |
 | 5 | improbable | 0 |
 | 6 | cannot be judged | 0 |

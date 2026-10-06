@@ -1,0 +1,135 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI1",
+      "direction": "threatens",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI2",
+      "direction": "neutral",
+      "name": "Increasing the rate of habitat restoration",
+      "requirement_id": "si2",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "business.senedd.wales/documents/s170571/CCEI%20Cttee%20response%20to%20draft%20scrutiny%20budget%20report%202026-27%20-%20En.pdf",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "threatens",
+    "neutral"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B2",
+  "hazards": [
+    {
+      "family": "funding-capacity",
+      "family_name": "Funding and capacity",
+      "id": "public-funding-pressure",
+      "name": "Public funding pressure"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-d9224a in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "wg-biodiversity-budget-2026-27-30by30-response",
+  "independent_confirmation": false,
+  "lane": "senedd",
+  "lane_name": "Senedd",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "government",
+  "notes": "Sets the funding envelope for habitat restoration (SI2) and protected site condition (SI1) going into the new Senedd term, with an official acknowledgement that 30 by 30 is off track; the saltmarsh and seagrass plans are restoration levers NRW partners on.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si1",
+    "si2"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "medium",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-d9224a",
+      "discipline": "osint_web",
+      "query_id": "web-governance-capacity-02",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000850",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://business.senedd.wales/documents/s170571/CCEI%20Cttee%20response%20to%20draft%20scrutiny%20budget%20report%202026-27%20-%20En.pdf"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-d9224a",
+      "discipline": "osint_site",
+      "query_id": "site-people-place-resilience-senedd",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000851",
+      "source_id": "senedd-cymru",
+      "source_name": "Senedd Cymru",
+      "url": "https://business.senedd.wales/documents/s170571/CCEI%20Cttee%20response%20to%20draft%20scrutiny%20budget%20report%202026-27%20-%20En.pdf"
+    }
+  ],
+  "source_id": null,
+  "source_name": "Welsh Government response to the Senedd Climate Change, Environment and Infrastructure Committee (published by Senedd Cymru)",
+  "state": "emerging",
+  "summary": "In its response to the Senedd Climate Change, Environment and Infrastructure Committee's scrutiny of the Draft Budget 2026-27, published in early 2026, the Welsh Government accepted in principle a recommendation that noted the 30 by 30 target was predicted to be missed, but committed only to over 36 million pounds for biodiversity in 2026-27 and to consider increases if opportunities arose. It declined to write a dedicated ecology skills strategy, said the outline Saltmarsh Action Plan would be delivered by the end of March 2026, offered about 70,000 pounds for phase 2 of the Seagrass Action Plan, and confirmed NRW's IR35 settlement of 14.6 million pounds would be recouped through budget reductions from 2025-26.",
+  "title": "Welsh Government holds biodiversity funding at about 36 million pounds for 2026-27 after Senedd committee warns 30 by 30 is predicted to be missed",
+  "topics": [
+    {
+      "id": "governance-and-funding",
+      "name": "Governance and funding"
+    },
+    {
+      "id": "nature-and-ecosystems",
+      "name": "Nature and ecosystems"
+    },
+    {
+      "id": "marine-and-coastal",
+      "name": "Marine and coastal"
+    }
+  ],
+  "url": "https://business.senedd.wales/documents/s170571/CCEI%20Cttee%20response%20to%20draft%20scrutiny%20budget%20report%202026-27%20-%20En.pdf"
+}

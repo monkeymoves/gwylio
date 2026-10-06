@@ -1,0 +1,386 @@
+{
+  "budget_exhausted": false,
+  "candidates": 1782,
+  "credibility": [
+    {
+      "count": 0,
+      "credibility": 1,
+      "label": "confirmed"
+    },
+    {
+      "count": 37,
+      "credibility": 2,
+      "label": "probably true"
+    },
+    {
+      "count": 23,
+      "credibility": 3,
+      "label": "possibly true"
+    },
+    {
+      "count": 0,
+      "credibility": 4,
+      "label": "doubtful"
+    },
+    {
+      "count": 0,
+      "credibility": 5,
+      "label": "improbable"
+    },
+    {
+      "count": 0,
+      "credibility": 6,
+      "label": "cannot be judged"
+    }
+  ],
+  "disciplines": [
+    "osint_web",
+    "osint_feed",
+    "osint_site"
+  ],
+  "dispositions": {
+    "counts": {
+      "deferred": 0,
+      "duplicate": 116,
+      "promoted": 60,
+      "reinforcement": 48,
+      "rejected": 1540
+    },
+    "disposed": 1764,
+    "new": 1764,
+    "promotion_rate": 0.034,
+    "undisposed": 0
+  },
+  "finished_at": "2026-10-06T21:57:40.334560Z",
+  "funnel": {
+    "dropped_negative": 9,
+    "dropped_own": 120,
+    "dropped_unrelated": 212,
+    "new": 1764,
+    "passed": 1960,
+    "raw": 2301,
+    "reinforcements": 18,
+    "seen_before": 0,
+    "unique": 1782
+  },
+  "instrument_hash": "sha256:cf8e838f482996f11a7c9fdc1416fe8e6dd843faa50cd6187b7f5d99cebf0263",
+  "instrument_version": "2026.10.0",
+  "notes": [],
+  "per_discipline": [
+    {
+      "candidates": 968,
+      "discipline": "osint_web",
+      "sightings": 1063
+    },
+    {
+      "candidates": 1,
+      "discipline": "osint_feed",
+      "sightings": 1
+    },
+    {
+      "candidates": 813,
+      "discipline": "osint_site",
+      "sightings": 896
+    }
+  ],
+  "per_source": [
+    {
+      "candidates": 47,
+      "sightings": 51,
+      "source_id": "audit-wales",
+      "source_name": "Audit Wales"
+    },
+    {
+      "candidates": 53,
+      "sightings": 62,
+      "source_id": "climate-change-committee",
+      "source_name": "Climate Change Committee"
+    },
+    {
+      "candidates": 16,
+      "sightings": 17,
+      "source_id": "dwr-cymru-welsh-water",
+      "source_name": "Dŵr Cymru Welsh Water"
+    },
+    {
+      "candidates": 1,
+      "sightings": 1,
+      "source_id": "farmers-union-of-wales",
+      "source_name": "Farmers' Union of Wales"
+    },
+    {
+      "candidates": 2,
+      "sightings": 2,
+      "source_id": "fish-legal",
+      "source_name": "Fish Legal"
+    },
+    {
+      "candidates": 3,
+      "sightings": 4,
+      "source_id": "forest-research",
+      "source_name": "Forest Research"
+    },
+    {
+      "candidates": 28,
+      "sightings": 32,
+      "source_id": "future-generations-commissioner",
+      "source_name": "Future Generations Commissioner"
+    },
+    {
+      "candidates": 6,
+      "sightings": 6,
+      "source_id": "gb-non-native-species-secretariat",
+      "source_name": "GB Non-native Species Secretariat (GB NNSS)"
+    },
+    {
+      "candidates": 20,
+      "sightings": 21,
+      "source_id": "green-alliance",
+      "source_name": "Green Alliance"
+    },
+    {
+      "candidates": 16,
+      "sightings": 17,
+      "source_id": "institute-of-welsh-affairs",
+      "source_name": "Institute of Welsh Affairs"
+    },
+    {
+      "candidates": 57,
+      "sightings": 63,
+      "source_id": "jncc",
+      "source_name": "Joint Nature Conservation Committee (JNCC)"
+    },
+    {
+      "candidates": 4,
+      "sightings": 4,
+      "source_id": "keep-wales-tidy",
+      "source_name": "Keep Wales Tidy"
+    },
+    {
+      "candidates": 1,
+      "sightings": 1,
+      "source_id": "leigh-day",
+      "source_name": "Leigh Day environment"
+    },
+    {
+      "candidates": 143,
+      "sightings": 147,
+      "source_id": "nation-cymru",
+      "source_name": "Nation.Cymru"
+    },
+    {
+      "candidates": 23,
+      "sightings": 23,
+      "source_id": "national-trust",
+      "source_name": "National Trust"
+    },
+    {
+      "candidates": 14,
+      "sightings": 17,
+      "source_id": "nfu-cymru",
+      "source_name": "NFU Cymru"
+    },
+    {
+      "candidates": 2,
+      "sightings": 2,
+      "source_id": "ons",
+      "source_name": "Office for National Statistics (ONS)"
+    },
+    {
+      "candidates": 9,
+      "sightings": 9,
+      "source_id": "plant-health-portal",
+      "source_name": "UK Plant Health Information Portal"
+    },
+    {
+      "candidates": 2,
+      "sightings": 2,
+      "source_id": "public-health-wales",
+      "source_name": "Public Health Wales"
+    },
+    {
+      "candidates": 29,
+      "sightings": 40,
+      "source_id": "river-action",
+      "source_name": "River Action"
+    },
+    {
+      "candidates": 44,
+      "sightings": 45,
+      "source_id": "rspb-cymru",
+      "source_name": "RSPB Cymru"
+    },
+    {
+      "candidates": 88,
+      "sightings": 97,
+      "source_id": "senedd-cymru",
+      "source_name": "Senedd Cymru"
+    },
+    {
+      "candidates": 17,
+      "sightings": 17,
+      "source_id": "senedd-petitions",
+      "source_name": "Senedd petitions"
+    },
+    {
+      "candidates": 54,
+      "sightings": 72,
+      "source_id": "senedd-research",
+      "source_name": "Senedd Research"
+    },
+    {
+      "candidates": 4,
+      "sightings": 4,
+      "source_id": "statswales",
+      "source_name": "StatsWales"
+    },
+    {
+      "candidates": 40,
+      "sightings": 42,
+      "source_id": "surfers-against-sewage",
+      "source_name": "Surfers Against Sewage"
+    },
+    {
+      "candidates": 9,
+      "sightings": 9,
+      "source_id": "uk-government",
+      "source_name": "UK Government"
+    },
+    {
+      "candidates": 15,
+      "sightings": 19,
+      "source_id": "uk-legislation",
+      "source_name": "UK legislation"
+    },
+    {
+      "candidates": 68,
+      "sightings": 71,
+      "source_id": "ukri",
+      "source_name": "UK Research and Innovation (UKRI)"
+    },
+    {
+      "candidates": 10,
+      "sightings": 10,
+      "source_id": "unep",
+      "source_name": "UNEP"
+    },
+    {
+      "candidates": 2,
+      "sightings": 2,
+      "source_id": "wales-centre-for-public-policy",
+      "source_name": "Wales Centre for Public Policy"
+    },
+    {
+      "candidates": 6,
+      "sightings": 7,
+      "source_id": "wales-environment-link",
+      "source_name": "Wales Environment Link"
+    },
+    {
+      "candidates": 314,
+      "sightings": 377,
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government"
+    },
+    {
+      "candidates": 14,
+      "sightings": 15,
+      "source_id": "wildlife-trusts-wales",
+      "source_name": "Wildlife Trusts Wales"
+    },
+    {
+      "candidates": 42,
+      "sightings": 44,
+      "source_id": "woodland-trust",
+      "source_name": "Woodland Trust"
+    },
+    {
+      "candidates": 32,
+      "sightings": 35,
+      "source_id": "wwf-cymru",
+      "source_name": "WWF Cymru"
+    },
+    {
+      "candidates": 547,
+      "sightings": 573,
+      "source_id": null,
+      "source_name": null
+    }
+  ],
+  "promoted": 60,
+  "promoted_report_ids": [
+    "air-quality-in-wales-2024-25-report",
+    "avian-influenza-wild-birds-mitigation-strategy-2026",
+    "ccc-well-adapted-uk-ccra4-2026",
+    "climate-nature-action-plan-net-zero-2040",
+    "coap-closed-period-overhaul-minister-2026",
+    "disused-tips-authority-2027-funding-gap",
+    "eciu-welsh-net-zero-economy-2025",
+    "energy-generation-use-wales-combined-report-2026",
+    "fgc-section-20-review-energy-policy-2026",
+    "fields-in-trust-green-space-index-wales-2026",
+    "green-alliance-zev-mandate-weakening-cb7-2026",
+    "gwent-green-grid-nature-networks-lottery-award-2026",
+    "illegal-grassland-burning-enforcement-gap-2026",
+    "jncc-invasive-species-indicator-2025",
+    "lower-dee-phosphate-wrexham-dispute-2026",
+    "marches-forward-severn-flood-funding-bid-2026",
+    "national-energy-strategy-emissions-target-2026",
+    "nature-estate-cymru-landowner-group-2026",
+    "nature-networks-fund-2026-round",
+    "nature-networks-private-finance-landscapes-2026",
+    "nesta-heat-pump-uptake-scotland-wales-2026",
+    "net-zero-wales-2026-2030-plan-engagement-2025",
+    "nhs-wales-climate-adaptation-accelerator-2025-26",
+    "nhs-wales-decarbonisation-delivery-plan-2025",
+    "nicw-flood-resilience-2050-progress-2026",
+    "nrw-staff-diversity-data-foi-breach-2026",
+    "ofwat-welsh-water-enforcement-44m-2026",
+    "phytophthora-pluvialis-restrictions-lifted-2026",
+    "promoting-awareness-air-pollution-delivery-plan-2026",
+    "rct-clydach-terrace-flood-buyout-2026",
+    "river-severn-drought-order-application-2026",
+    "river-tawe-illness-reports-review-2026",
+    "save-the-river-usk-clean-water-bill-wales-2026",
+    "section-6-biodiversity-duty-evaluation-response-2025",
+    "section-7-priority-list-update-2026",
+    "senedd-ccei-storm-response-flood-warnings-2025",
+    "senedd-contaminated-land-polluter-pays-2026",
+    "senedd-petition-peatland-renewables-2026",
+    "senedd-research-30by30-wales-2-percent-2026",
+    "senedd-research-data-centres-wales-2026",
+    "sfs-optional-habitat-review-opens-2026",
+    "sustainable-farming-scheme-opens-march-2026",
+    "swansea-burn-alert-pilot-evaluation-2026",
+    "taxpayers-alliance-welsh-public-sector-net-zero-cost-2026",
+    "tir-natur-cwm-doethie-rewilding-2026",
+    "troir-llanw-community-climate-action-fund-2026",
+    "tywi-llandeilo-river-bathing-water-2026",
+    "uk-marine-heatwave-extreme-2026",
+    "uk-solid-fuel-burning-consultation-2026",
+    "unep-limiting-overshoot-report-2026",
+    "wales-30by30-framework-counting-criteria-2026",
+    "wales-deposit-return-scheme-consultation-2025",
+    "wales-summer-2026-record-heat-red-warning",
+    "warm-homes-programme-first-100-days-review-2026",
+    "welsh-public-sector-ev-fleet-savings-2026",
+    "welsh-rivers-lethal-temperatures-salmon-2026",
+    "wg-biodiversity-budget-2026-27-30by30-response",
+    "what-works-centre-climate-resilient-uk-2026",
+    "wtsww-invasive-species-nature-networks-award-2026",
+    "wwf-cymru-nfm-under-2-percent-fcerm-2026"
+  ],
+  "reinforcements_recorded": 18,
+  "request_budget": 150,
+  "requests_made": 139,
+  "run_id": "20261006T2155Z-6ae7",
+  "started_at": "2026-10-06T21:55:22.431740Z",
+  "status": "complete",
+  "submissions": [
+    "20261006T2155Z-6ae7__1"
+  ],
+  "undisposed": 0,
+  "warnings": [
+    "feed audit-wales (https://www.audit.wales/rss.xml) gave nothing: not well-formed XML: XML or text declaration not at start of entity: line 6, column 0"
+  ]
+}

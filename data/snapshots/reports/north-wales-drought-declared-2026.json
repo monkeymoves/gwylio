@@ -1,7 +1,7 @@
 {
   "actor_id": "welsh-government",
   "actor_name": "Welsh Government",
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI1",
@@ -39,15 +39,9 @@
     "threatens",
     "informs_baseline"
   ],
-  "distinct_sources": 0,
+  "distinct_sources": 1,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "B2",
   "hazards": [
     {
@@ -77,14 +71,29 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Replaces 'nears a 190-year low' with the confirmed driest July on record and adds the drought's spread to all of Wales on 30 July and the partial recovery on 28 September 2026.",
+      "kind": "updated",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Checked the gov.wales written statement of 23 July 2026, NRW's Dry weather blog 2026 (latest update 28 September 2026), the Met Office July 2026 statistics release and nation.cymru (25 September 2026): drought spread to all of Wales on 30 July 2026, July 2026 was confirmed as Wales' driest July on record, and on 28 September 2026 south-west Wales moved to recovery from drought while south-east Wales, North Wales and the Upper Severn remained in drought.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "north-wales-drought-declared-2026",
   "independent_confirmation": false,
   "lane": "welsh-government",
   "lane_name": "Welsh Government",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-24",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "government",
   "notes": "The first signal surfaced by the new ecological_early_warning lane. Threatens SI1 (acute stress on freshwater ecosystems, fish and habitats from record-low flows) and SI4 (reduced dilution concentrates pollutants and worsens measured water quality); informs the SI8 baseline as a climate-change hazard materialising, the pressure the resilience indicator is about. The horizon point is structural, not seasonal: 2022 was the first official Welsh drought since 2005/06, and 2025 and 2026 have followed, so three declared droughts in five years read as a recurrent climate-driven pressure on the freshwater and climate-resilience indicators, which a policy-worded scan would never have caught. Cited to the Welsh Government Written Statement (external to NRW) rather than NRW own pages. The flow specifics and the 190-year figure are carried by NRW's Dry Weather Blog 2026 (the cited Welsh Government Written Statement covers the declaration and areas); the July record is described as a projection (on course for), not a confirmed figure.",
   "owner": null,
@@ -112,12 +121,90 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-094022",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-05",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000791",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.bbc.co.uk/news/articles/c80n5rvx917o"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-1f08ae",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-05",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000801",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.watermagazine.co.uk/2026/07/31/drought-status-extended-across-all-of-wales-as-environment-continues-to-feel-the-strain/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-6d0ed0",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-05",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000797",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://afonyddcymru.org/lowest-recorded-levels/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-6dc65f",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-05",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000800",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.bbc.co.uk/news/articles/c8jn1v37znvo"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-cf0db0",
+      "discipline": "osint_site",
+      "query_id": "site-ecological-early-warning-independent-media",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001897",
+      "source_id": "nation-cymru",
+      "source_name": "Nation.Cymru",
+      "url": "https://nation.cymru/news/intense-thunderstorms-could-cause-travel-disruption-met-office-warns/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-ed0ea5",
+      "discipline": "osint_web",
+      "query_id": "web-people-place-resilience-04",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000506",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.theguardian.com/environment/2026/aug/27/homes-damaged-storms-floods-follow-heatwaves-england-wales"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-ede449",
+      "discipline": "osint_site",
+      "query_id": "site-ecological-early-warning-independent-media",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001888",
+      "source_id": "nation-cymru",
+      "source_name": "Nation.Cymru",
+      "url": "https://nation.cymru/feature/welsh-farmers-warn-drought-is-having-a-devastating-impact-on-crops/"
+    }
+  ],
   "source_id": "welsh-government",
   "source_name": "Welsh Government",
   "state": "emerging",
-  "summary": "On 23 July 2026 Natural Resources Wales declared drought status for Gwynedd, Ynys Mon, Clwyd, the Dee and the Upper Severn, with South and West Wales moving to prolonged dry weather. A Welsh Government Written Statement the same day confirms exceptionally low flows on the Clwyd, Dyfi, Alyn, Clywedog, Conwy and Tanat, with new record minimum flows on the Clwyd and the Erch, alongside wildfires and successive heatwaves. North Wales and the Upper Severn had under 2 percent of expected July rainfall, on course for the driest July in almost 190 years.",
-  "title": "NRW declares drought status for North Wales as July 2026 nears a 190-year rainfall low",
+  "summary": "On 23 July 2026 Natural Resources Wales declared drought status for Gwynedd, Ynys Mon, Clwyd, the Dee and the Upper Severn, with South and West Wales moving to prolonged dry weather; a Welsh Government Written Statement the same day confirmed the declaration amid wildfires and successive heatwaves. NRW reported exceptionally low flows on the Clwyd, Dyfi, Alyn, Clywedog, Conwy and Tanat, with new record minimum flows on the Clwyd and the Erch. By 30 July 2026 all of Wales was in drought. The Met Office confirmed July 2026 as Wales' driest July in records going back about 190 years, with 9.3mm of rain (9 percent of average) against the previous record of 22.6mm in 1911. Dwr Cymru imposed a temporary use ban on about 33,000 properties in Ceredigion, Pembrokeshire and Carmarthenshire from 19 July, citing demand rather than reservoir levels. After September rainfall, NRW moved south-west Wales to recovery from drought on 28 September 2026, while south-east Wales, North Wales and the Upper Severn remained in drought, with groundwater still exceptionally low in places.",
+  "title": "NRW declared drought in North Wales on 23 July 2026, extended it to all of Wales by 30 July after the driest July on record",
   "topics": [
     {
       "id": "water-resources",

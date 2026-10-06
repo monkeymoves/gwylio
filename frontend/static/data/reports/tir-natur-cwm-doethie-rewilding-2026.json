@@ -1,0 +1,116 @@
+{
+  "actor_id": "nation-cymru",
+  "actor_name": "Nation.Cymru",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI2",
+      "direction": "supports",
+      "name": "Increasing the rate of habitat restoration",
+      "requirement_id": "si2",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI9",
+      "direction": "supports",
+      "name": "Increasing the impact of partnership approaches which deliver multiple benefits and address the root causes of the nature, climate and pollution crises",
+      "requirement_id": "si9",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "nation.cymru/news/charity-secures-1000-acres-for-wales-largest-rewilding-project",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "C3",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-789f5e in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by nation-cymru; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "tir-natur-cwm-doethie-rewilding-2026",
+  "independent_confirmation": false,
+  "lane": "independent-media",
+  "lane_name": "Independent media",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "A privately funded, landscape-scale restoration inside an SSSI that NRW will regulate and may partner on; it tests how rewilding sits alongside upland farming and counts towards the SI2 restoration rate.",
+  "owner": null,
+  "places": [
+    {
+      "id": "mid-wales",
+      "name": "Mid Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "partnership",
+  "requirement_ids": [
+    "si2",
+    "si9"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "medium",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-789f5e",
+      "discipline": "osint_site",
+      "query_id": "site-nature-ecosystems-independent-media",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001212",
+      "source_id": "nation-cymru",
+      "source_name": "Nation.Cymru",
+      "url": "https://nation.cymru/news/charity-secures-1000-acres-for-wales-largest-rewilding-project/"
+    }
+  ],
+  "source_id": "nation-cymru",
+  "source_name": "Nation.Cymru",
+  "state": "emerging",
+  "summary": "Nation.Cymru reported on 10 February 2026 that the rewilding charity Tir Natur had acquired the 1,195-acre Cwm Doethie site in the Elenydd (Cambrian Mountains), Ceredigion, for Wales' largest rewilding project, using a philanthropic bridging loan after raising over half of the 2.2 million pound cost. The land lies within the Mynydd Mallaen and Cwm Doethie Site of Special Scientific Interest; the charity planned conservation grazing with hardy cattle and ponies and peatland rewetting over five to ten years. A further report in August 2026 recorded cattle returning to the site.",
+  "title": "Tir Natur buys 1,195 acres at Cwm Doethie in the Cambrian Mountains for Wales' largest rewilding project",
+  "topics": [
+    {
+      "id": "nature-and-ecosystems",
+      "name": "Nature and ecosystems"
+    },
+    {
+      "id": "peatland",
+      "name": "Peatland"
+    },
+    {
+      "id": "partnership-and-society",
+      "name": "Partnership and society"
+    }
+  ],
+  "url": "https://nation.cymru/news/charity-secures-1000-acres-for-wales-largest-rewilding-project/"
+}

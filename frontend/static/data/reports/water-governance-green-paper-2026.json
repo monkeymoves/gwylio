@@ -1,7 +1,7 @@
 {
   "actor_id": "welsh-government",
   "actor_name": "Welsh Government",
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI4",
@@ -24,15 +24,9 @@
   "directions": [
     "supports"
   ],
-  "distinct_sources": 0,
+  "distinct_sources": 1,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "B3",
   "hazards": [],
   "history": [
@@ -80,16 +74,31 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by senedd-research; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Replaces 'a summary of responses is awaited' with the published summary (92 responses, White Paper and policy response to follow) and adds the 22 September 2026 Programme for Government commitments on water devolution.",
+      "kind": "updated",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Checked the gov.wales Green Paper consultation page (updated 14 September 2026) and read its summary of responses (WG54114, July 2026): 92 responses, a separate policy response and a White Paper to follow, and engagement on the UK Clean Water Bill; also read the Programme for Government 2026 to 2030 (22 September 2026), which commits to request full devolution of water powers.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "water-governance-green-paper-2026",
   "independent_confirmation": false,
   "lane": "welsh-government",
   "lane_name": "Welsh Government",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-24",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "government",
-  "notes": "Consultation open. Decide whether NRW or IEG should track or respond; check the consultation closing date. Verified 22 July 2026: consultation closed 7 April 2026 (the register previously said open); watch for the summary of responses and the new government's decision on the White Paper.",
+  "notes": "Verified 22 July 2026: consultation closed 7 April 2026. Verified 6 October 2026: the summary of responses is published, the policy response and White Paper are still to come with no dates given, and the route now runs through the UK Clean Water Bill and a devolution request in the Programme for Government. Watch for the policy response, the Clean Water Bill's Welsh provisions and the White Paper; decide whether NRW or IEG should engage, since the Green Paper keeps environmental regulation within NRW.",
   "owner": "Luke",
   "places": [
     {
@@ -113,11 +122,23 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-146638",
+      "discipline": "osint_site",
+      "query_id": "site-pollution-water-land-senedd",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001265",
+      "source_id": "senedd-research",
+      "source_name": "Senedd Research",
+      "url": "https://research.senedd.wales/research-articles/at-a-watershed-designing-a-welsh-water-sector-for-the-future/"
+    }
+  ],
   "source_id": "welsh-government",
   "source_name": "Welsh Government",
   "state": "emerging",
-  "summary": "Announced 3 February 2026: a Green Paper proposing fundamental water system reform, including a dedicated Welsh economic regulator for water, new legislation, and 5 million pounds in 2026-27 for enforcement and river improvement. The consultation closed on 7 April 2026; a summary of responses and next steps is awaited, and the Welsh Government signalled a White Paper to follow subject to the post-election government's agreement and the enactment of UK primary legislation.",
+  "summary": "Announced 3 February 2026: a Green Paper proposing fundamental water system reform, including a dedicated Welsh economic regulator for water, new legislation, and 5 million pounds in 2026-27 for enforcement and river improvement. The consultation ran from 3 February to 7 April 2026 and drew 92 responses. The new Welsh Government published a summary of responses (dated July 2026, on gov.wales by 14 September 2026) saying it will publish a separate policy response, press the UK Government to make sure the UK Clean Water Bill announced in the King's Speech devolves the powers needed, and then publish a White Paper ahead of Welsh legislation. Its Programme for Government (22 September 2026) commits to formally request full devolution of power over water and to seek Senedd powers to create a new economic regulator and planning body for Wales.",
   "title": "Green Paper: Shaping the Future of Water Governance in Wales",
   "topics": [],
   "url": "https://www.gov.wales/cleaner-rivers-stronger-regulation-better-accountability-wales-charts-new-course-water-governance"

@@ -1,0 +1,140 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI3",
+      "direction": "supports",
+      "name": "Increasing the integration of activities that support nature recovery into Wales' public services",
+      "requirement_id": "si3",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI1",
+      "direction": "informs_baseline",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "brief",
+  "canonical_url": "gov.wales/section-7-habitats-and-species-principal-importance-maintaining-and-enhancing-biodiversity-html",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "supports",
+    "informs_baseline"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-dd9e2d in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by welsh-government; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Date check: replaced future-framed wording in the notes with the statutory deadline.",
+      "kind": "updated",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "section-7-priority-list-update-2026",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "government",
+  "notes": "Widens what every Section 6 public authority must have regard to (SI3) and resets the priority baseline for SI1 resilience and for the statutory biodiversity targets, whose draft regulations the 2026 Act requires by April 2028; NRW advice and casework will need to reflect the longer list.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si3",
+    "si1"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "high",
+    "potential_impact": "medium",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-dd9e2d",
+      "discipline": "osint_web",
+      "query_id": "web-nature-ecosystems-03",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000053",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/section-7-habitats-and-species-principal-importance-maintaining-and-enhancing-biodiversity-html"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-dd9e2d",
+      "discipline": "osint_site",
+      "query_id": "site-nature-ecosystems-welsh-government",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000054",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/section-7-habitats-and-species-principal-importance-maintaining-and-enhancing-biodiversity-html"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-dd9e2d",
+      "discipline": "osint_site",
+      "query_id": "site-ecological-early-warning-welsh-government",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000055",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/section-7-habitats-and-species-principal-importance-maintaining-and-enhancing-biodiversity-html"
+    }
+  ],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government",
+  "state": "emerging",
+  "summary": "On 26 March 2026 the Welsh Government published the first full update of the Section 7 list of species and habitats of principal importance under the Environment (Wales) Act 2016, replacing the interim list carried over from the Section 42 list. NRW assessed 3,156 species, and the list rose to 1,322 species (from 557) and 69 habitat types (from 55, including 19 marine), with large increases for vascular plants, invertebrates, birds and fungi and the addition of beaver. Ffridd was proposed but not included. The list created no new offences, but public authorities must have regard to it under the Section 6 duty, in planning, grants, licensing and land management.",
+  "title": "Updated Section 7 list of priority species and habitats more than doubles to 1,322 species and 69 habitats",
+  "topics": [
+    {
+      "id": "nature-and-ecosystems",
+      "name": "Nature and ecosystems"
+    },
+    {
+      "id": "partnership-and-society",
+      "name": "Partnership and society"
+    }
+  ],
+  "url": "https://www.gov.wales/section-7-habitats-and-species-principal-importance-maintaining-and-enhancing-biodiversity-html"
+}

@@ -1,0 +1,112 @@
+{
+  "actor_id": "future-generations-commissioner",
+  "actor_name": "Future Generations Commissioner for Wales",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI6",
+      "direction": "neutral",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "requirement_id": "si6",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI11",
+      "direction": "neutral",
+      "name": "Increasing the proportion of organisations and businesses who act to mitigate and adapt to the nature, climate and pollution crises",
+      "requirement_id": "si11",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "futuregenerations.wales/work/climate-and-nature",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "neutral"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B3",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-44e125 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by future-generations-commissioner; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "fgc-section-20-review-energy-policy-2026",
+  "independent_confirmation": false,
+  "lane": "governance-capacity",
+  "lane_name": "Governance and capacity",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "government",
+  "notes": "A statutory review of how energy decisions are made in Wales could produce recommendations bearing on NRW's advisory, permitting and landholding roles in energy projects; direction is open until terms and findings are published.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si6",
+    "si11"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "high",
+    "potential_impact": "medium",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-44e125",
+      "discipline": "osint_web",
+      "query_id": "web-partnership-society-01",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000584",
+      "source_id": "future-generations-commissioner",
+      "source_name": "Future Generations Commissioner",
+      "url": "https://www.futuregenerations.wales/work/climate-and-nature/"
+    }
+  ],
+  "source_id": "future-generations-commissioner",
+  "source_name": "Future Generations Commissioner for Wales",
+  "state": "emerging",
+  "summary": "The Future Generations Commissioner's Climate and Nature page, updated on 24 August 2026, recorded that in July 2026 the Commissioner announced he would undertake a Section 20 Review into energy policy and decision-making in Wales, using his strongest powers. The same page recorded his call for the Welsh Government to double its ambition for community energy.",
+  "title": "Future Generations Commissioner announces a Section 20 review of energy policy and decision-making in Wales",
+  "topics": [
+    {
+      "id": "climate-emissions",
+      "name": "Climate and emissions"
+    },
+    {
+      "id": "governance-and-funding",
+      "name": "Governance and funding"
+    }
+  ],
+  "url": "https://www.futuregenerations.wales/work/climate-and-nature/"
+}

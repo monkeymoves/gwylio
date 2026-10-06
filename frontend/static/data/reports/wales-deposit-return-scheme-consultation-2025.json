@@ -1,0 +1,117 @@
+{
+  "actor_id": "surfers-against-sewage",
+  "actor_name": "Surfers Against Sewage",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI4",
+      "direction": "supports",
+      "name": "Decreasing the rate of pollution on land and entering water bodies",
+      "requirement_id": "si4",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI10",
+      "direction": "neutral",
+      "name": "Increasing the proportion of the population that act to mitigate and adapt to the nature, climate and pollution crises",
+      "requirement_id": "si10",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "sas.org.uk/updates/respond-to-the-welsh-deposit-return-scheme-consultation",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "supports",
+    "neutral"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "D3",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-c293f3 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by surfers-against-sewage; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "wales-deposit-return-scheme-consultation-2025",
+  "independent_confirmation": false,
+  "lane": "legal-and-campaign",
+  "lane_name": "Legal and campaign",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "A Welsh deposit return scheme would cut drinks container litter reaching beaches and rivers, a land and water pollution pressure under SI4. The source is a campaign group arguing a case, and the government response is the next thing to look for.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "D",
+  "reliability_label": "not usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si4",
+    "si10"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "high",
+    "potential_impact": "medium",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-c293f3",
+      "discipline": "osint_site",
+      "query_id": "site-partnership-society-legal-and-campaign",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001751",
+      "source_id": "surfers-against-sewage",
+      "source_name": "Surfers Against Sewage",
+      "url": "https://www.sas.org.uk/updates/respond-to-the-welsh-deposit-return-scheme-consultation/"
+    }
+  ],
+  "source_id": "surfers-against-sewage",
+  "source_name": "Surfers Against Sewage",
+  "state": "emerging",
+  "summary": "Surfers Against Sewage published a guide urging responses to the Welsh Government consultation 'Delivering a Best for Wales Deposit Return Scheme', which closed on 20 November 2025. It called for an all-in scheme including glass, legally binding reuse targets separate from recycling targets, and a wider national plan to end plastic pollution, citing Million Mile Clean data of 121,674 volunteers collecting over 54 tonnes of rubbish from January to September 2025. The consultation outcome and the scheme design were not settled on the page.",
+  "title": "Welsh Government consults on a 'Best for Wales' Deposit Return Scheme; Surfers Against Sewage presses for glass and reuse targets",
+  "topics": [
+    {
+      "id": "pollution-water-and-land",
+      "name": "Pollution of water and land"
+    },
+    {
+      "id": "marine-and-coastal",
+      "name": "Marine and coastal"
+    },
+    {
+      "id": "public-behaviour",
+      "name": "Public behaviour"
+    }
+  ],
+  "url": "https://www.sas.org.uk/updates/respond-to-the-welsh-deposit-return-scheme-consultation/"
+}

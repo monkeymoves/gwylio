@@ -1,0 +1,115 @@
+{
+  "actor_id": "nation-cymru",
+  "actor_name": "Nation.Cymru",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI1",
+      "direction": "threatens",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "brief",
+  "canonical_url": "nation.cymru/news/wales-wildlife-pushed-to-breaking-point-as-rivers-hit-lethal-temperatures",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "threatens"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "C3",
+  "hazards": [
+    {
+      "family": "drought-water-scarcity",
+      "family_name": "Drought and water scarcity",
+      "id": "drought-and-low-flows",
+      "name": "Drought and low river flows"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-19294e in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by nation-cymru; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "welsh-rivers-lethal-temperatures-salmon-2026",
+  "independent_confirmation": false,
+  "lane": "independent-media",
+  "lane_name": "Independent media",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "A direct ecological consequence of the 2026 heat and drought for SI1 resilience of freshwater ecosystems; NRW's own temperature and salmon data should be checked before this is briefed.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wye",
+      "name": "River Wye"
+    },
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "environmental",
+  "requirement_ids": [
+    "si1"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "high",
+    "potential_impact": "high",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-19294e",
+      "discipline": "osint_site",
+      "query_id": "site-ecological-early-warning-independent-media",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001882",
+      "source_id": "nation-cymru",
+      "source_name": "Nation.Cymru",
+      "url": "https://nation.cymru/news/wales-wildlife-pushed-to-breaking-point-as-rivers-hit-lethal-temperatures/"
+    }
+  ],
+  "source_id": "nation-cymru",
+  "source_name": "Nation.Cymru",
+  "state": "emerging",
+  "summary": "Nation.Cymru published a Local Democracy Reporting Service article on 24 August 2026 reporting that the lower River Wye reached 27.7C at the end of June 2026 and that its average temperature exceeded 20C on 72 days between 3 March and 17 August. NRW's lead specialist adviser for freshwater and migratory fish said several of Wales' 22 principal salmon rivers were fairly close to being unable to sustain a salmon population, with low flows cutting returning adults and fry survival, though no mass mortalities had been seen. Afonydd Cymru said some Welsh rivers recorded their lowest levels of the summer.",
+  "title": "Lower Wye reached 27.7C in June 2026, and an NRW specialist warned several of Wales' 22 principal salmon rivers are close to unsustainable",
+  "topics": [
+    {
+      "id": "nature-and-ecosystems",
+      "name": "Nature and ecosystems"
+    },
+    {
+      "id": "water-resources",
+      "name": "Water resources"
+    }
+  ],
+  "url": "https://nation.cymru/news/wales-wildlife-pushed-to-breaking-point-as-rivers-hit-lethal-temperatures/"
+}

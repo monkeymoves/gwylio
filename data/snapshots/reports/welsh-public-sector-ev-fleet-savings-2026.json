@@ -1,0 +1,112 @@
+{
+  "actor_id": "nation-cymru",
+  "actor_name": "Nation.Cymru",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI6",
+      "direction": "supports",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "requirement_id": "si6",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI11",
+      "direction": "supports",
+      "name": "Increasing the proportion of organisations and businesses who act to mitigate and adapt to the nature, climate and pollution crises",
+      "requirement_id": "si11",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "park",
+  "canonical_url": "nation.cymru/news/electric-vehicles-saving-welsh-public-sector-up-to-1-9m-a-year-analysis-finds",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "C3",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-637bb6 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by nation-cymru; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "welsh-public-sector-ev-fleet-savings-2026",
+  "independent_confirmation": false,
+  "lane": "independent-media",
+  "lane_name": "Independent media",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "A modest but concrete measure of public bodies acting on decarbonisation (SI11, a low-scanability requirement), and of diesel exhaust removed from depots, schools and town centres.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "data_release",
+  "requirement_ids": [
+    "si6",
+    "si11"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "medium",
+    "potential_impact": "low",
+    "time_horizon": "immediate"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-637bb6",
+      "discipline": "osint_site",
+      "query_id": "site-air-climate-emissions-independent-media",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001483",
+      "source_id": "nation-cymru",
+      "source_name": "Nation.Cymru",
+      "url": "https://nation.cymru/news/electric-vehicles-saving-welsh-public-sector-up-to-1-9m-a-year-analysis-finds/"
+    }
+  ],
+  "source_id": "nation-cymru",
+  "source_name": "Nation.Cymru",
+  "state": "emerging",
+  "summary": "Nation.Cymru reported on 20 September 2026 that the Welsh Government Energy Service had analysed 2,045 electric vehicles operating across the Welsh public sector. The analysis estimated 2.4 million litres of diesel avoided a year, a net energy saving of 1.4 to 1.9 million pounds and about 6,151 tonnes CO2e of well-to-wheel emissions avoided annually.",
+  "title": "Welsh Government Energy Service estimates 2,045 public sector electric vehicles save up to 1.9 million pounds and about 6,151 tonnes CO2e a year",
+  "topics": [
+    {
+      "id": "climate-emissions",
+      "name": "Climate and emissions"
+    },
+    {
+      "id": "air-quality",
+      "name": "Air quality"
+    }
+  ],
+  "url": "https://nation.cymru/news/electric-vehicles-saving-welsh-public-sector-up-to-1-9m-a-year-analysis-finds/"
+}

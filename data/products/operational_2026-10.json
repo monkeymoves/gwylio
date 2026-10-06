@@ -9,46 +9,106 @@
   ],
   "level": "operational",
   "markdown_file": "operational_2026-10.md",
-  "method_note": "No scan run started in the period, so no candidates were collected or judged in it.\n\nNo report was created in the period, so there is no non-government share or credibility spread to report.\n\nNo run used the instrument in the period; the current instrument is version 2026.10.0.\n\nKnown blind spots, requirements this tool cannot see and holds no active report on: SI9 Impact of partnership approaches, SI12 NRW colleague engagement.\n\nThe scan only finds what already talks like the requirements. Biophysical, market, technological and institutional pressures that move a requirement before any publication names it are outside its reach.\n\nCounts of reports are not counts of impact. The register shows what surfaced publicly: at least this much, and known to undercount.",
+  "method_note": "Scan runs started in the period: 1. Their funnels are in the first table below.\n\nFinal dispositions of those runs' candidates: promoted 60, rejected 1540, duplicate 116, reinforcement 48, deferred 0. New candidates nobody has judged yet: 0.\n\nReports created in the period: 60, of which 33 (55 per cent) came from lanes outside government. The mainstream bias guard asks for this share: a register that skews official misses the earliest signals.\n\nThe credibility of those 60 reports, digit by digit, is in the table below. Grades inflate quietly: a consultation is a 3, however official the page.\n\nInstrument version used by the period's runs: 2026.10.0.\n\nNo requirement reads as a blind spot.\n\nThe scan only finds what already talks like the requirements. Biophysical, market, technological and institutional pressures that move a requirement before any publication names it are outside its reach.\n\nCounts of reports are not counts of impact. The register shows what surfaced publicly: at least this much, and known to undercount.",
   "period": {
     "end": "2026-10-31",
     "label": "2026-10",
     "start": "2026-10-01"
   },
   "report_ids": [
+    "air-quality-in-wales-2024-25-report",
     "audit-wales-sssi-designation-capacity-2025",
     "avian-flu-welsh-seabirds-recovery-2041",
+    "avian-influenza-wild-birds-mitigation-strategy-2026",
     "bridgend-drops-2030-net-zero-target",
     "carbon-budget-4-regulations-wales-2025",
     "ccc-2026-progress-report-welsh-emissions-fall",
+    "ccc-well-adapted-uk-ccra4-2026",
+    "climate-nature-action-plan-net-zero-2040",
     "climate-perceptions-actions-survey-waves-3-4",
+    "coap-closed-period-overhaul-minister-2026",
     "control-of-agricultural-pollution-regulations-review-2025",
+    "disused-tips-authority-2027-funding-gap",
     "eciu-wales-tree-planting-14-percent-of-target",
+    "eciu-welsh-net-zero-economy-2025",
+    "energy-generation-use-wales-combined-report-2026",
     "environment-principles-governance-biodiversity-targets-wales-act-2026",
     "environmental-principles-statement-consultation-2026",
     "fcerm-programme-2026-27",
+    "fgc-section-20-review-energy-policy-2026",
+    "fields-in-trust-green-space-index-wales-2026",
     "first-asian-hornet-nest-wales-2026",
     "flood-re-ends-2039-insurance-affordability",
+    "green-alliance-zev-mandate-weakening-cb7-2026",
     "green-flag-2026-record-330-welsh-sites",
+    "gwent-green-grid-nature-networks-lottery-award-2026",
+    "illegal-grassland-burning-enforcement-gap-2026",
+    "jncc-invasive-species-indicator-2025",
+    "lower-dee-phosphate-wrexham-dispute-2026",
+    "marches-forward-severn-flood-funding-bid-2026",
     "metal-mine-water-pollution-wales",
     "mpa-network-management-framework-expired-2026",
+    "national-energy-strategy-emissions-target-2026",
+    "nature-estate-cymru-landowner-group-2026",
+    "nature-networks-fund-2026-round",
+    "nature-networks-private-finance-landscapes-2026",
     "nature-recovery-action-plan-2026",
+    "nesta-heat-pump-uptake-scotland-wales-2026",
+    "net-zero-wales-2026-2030-plan-engagement-2025",
+    "nhs-wales-climate-adaptation-accelerator-2025-26",
+    "nhs-wales-decarbonisation-delivery-plan-2025",
+    "nicw-flood-resilience-2050-progress-2026",
     "north-wales-drought-declared-2026",
     "nrw-funding-gap-savings-2026-27",
     "nrw-ir35-hmrc-settlement-2025",
+    "nrw-staff-diversity-data-foi-breach-2026",
+    "ofwat-welsh-water-enforcement-44m-2026",
     "people-and-nature-survey-wales-2023-24",
+    "phytophthora-pluvialis-restrictions-lifted-2026",
     "pm25-air-quality-target-regulations-wales-2026",
+    "promoting-awareness-air-pollution-delivery-plan-2026",
+    "rct-clydach-terrace-flood-buyout-2026",
     "river-action-judicial-review-nrw-poultry-permits",
+    "river-severn-drought-order-application-2026",
+    "river-tawe-illness-reports-review-2026",
+    "save-the-river-usk-clean-water-bill-wales-2026",
+    "section-6-biodiversity-duty-evaluation-response-2025",
+    "section-7-priority-list-update-2026",
     "senedd-2026-net-zero-environment-battleground",
+    "senedd-ccei-storm-response-flood-warnings-2025",
+    "senedd-contaminated-land-polluter-pays-2026",
+    "senedd-petition-peatland-renewables-2026",
+    "senedd-research-30by30-wales-2-percent-2026",
+    "senedd-research-data-centres-wales-2026",
     "senedd-soil-health-inquiry-2025",
     "seventh-carbon-budget-uk-law-2026",
+    "sfs-optional-habitat-review-opens-2026",
     "sonarr-2025-published",
+    "sustainable-farming-scheme-opens-march-2026",
+    "swansea-burn-alert-pilot-evaluation-2026",
+    "taxpayers-alliance-welsh-public-sector-net-zero-cost-2026",
+    "tir-natur-cwm-doethie-rewilding-2026",
+    "troir-llanw-community-climate-action-fund-2026",
+    "tywi-llandeilo-river-bathing-water-2026",
     "uk-climate-adaptation-package-2026",
+    "uk-marine-heatwave-extreme-2026",
     "uk-national-biodiversity-strategy-action-plan-2025",
+    "uk-solid-fuel-burning-consultation-2026",
+    "unep-limiting-overshoot-report-2026",
+    "wales-30by30-framework-counting-criteria-2026",
+    "wales-deposit-return-scheme-consultation-2025",
+    "wales-summer-2026-record-heat-red-warning",
     "wales-wildfire-season-2026",
+    "warm-homes-programme-first-100-days-review-2026",
     "water-governance-green-paper-2026",
     "welsh-fisheries-aquaculture-update-2026",
+    "welsh-public-sector-ev-fleet-savings-2026",
+    "welsh-rivers-lethal-temperatures-salmon-2026",
+    "wg-biodiversity-budget-2026-27-30by30-response",
+    "what-works-centre-climate-resilient-uk-2026",
     "winter-2025-26-flooding-storm-claudia",
+    "wtsww-invasive-species-nature-networks-award-2026",
+    "wwf-cymru-nfm-under-2-percent-fcerm-2026",
     "wwf-nature-petition-new-welsh-government-2026",
     "wye-lugg-usk-group-claim-avara-welsh-water"
   ],
@@ -56,11 +116,11 @@
   "sections": [
     {
       "body": [
-        "New reports created in the period: 0.",
+        "New reports created in the period: 60.",
         "Lifecycle state changes recorded in the period: 0.",
         "Reports faded by the sweep in the period: 0.",
-        "Reports verified against their source in the period: 0.",
-        "Across the reports that moved, 0 assessments threaten a requirement, 0 cut both ways, 0 inform the baseline and 0 support."
+        "Reports verified against their source in the period: 35.",
+        "Across the reports that moved, 44 assessments threaten a requirement, 27 cut both ways, 28 inform the baseline and 70 support."
       ],
       "bullets": [],
       "depth": 2,
@@ -74,7 +134,7 @@
           "rows": [
             [
               "New reports",
-              "0"
+              "60"
             ],
             [
               "State changes",
@@ -86,23 +146,23 @@
             ],
             [
               "Verified",
-              "0"
+              "35"
             ],
             [
               "Assessments: threatens",
-              "0"
+              "44"
             ],
             [
               "Assessments: two-way",
-              "0"
+              "27"
             ],
             [
               "Assessments: informs the baseline",
-              "0"
+              "28"
             ],
             [
               "Assessments: supports",
-              "0"
+              "70"
             ]
           ]
         }
@@ -118,58 +178,174 @@
       "tables": []
     },
     {
-      "body": [
-        "Nothing moved against this objective in the period."
+      "body": [],
+      "bullets": [
+        "B2 Audit Wales finds NRW is not designating SSSIs it knows may qualify, citing staff capacity and data gaps [SI1 threatens, SI3 threatens] (emerging)",
+        "C3 ECIU analysis: Wales projected to deliver just 14 percent of its 2030 tree planting target [SI2 threatens] (emerging)",
+        "C3 Wild Cymru investigation links Welsh wildfires to illegal grassland burning and exposes an enforcement gap between the Welsh Government and NRW [SI1 threatens, SI2 threatens] (emerging)",
+        "C3 NRW applies for the first River Severn drought order in 37 years as Llyn Clywedog falls below half capacity [SI1 threatens] (emerging)",
+        "C3 Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party [SI1 threatens, SI3 threatens] (emerging)",
+        "C3 Lower Wye reached 27.7C in June 2026, and an NRW specialist warned several of Wales' 22 principal salmon rivers are close to unsustainable [SI1 threatens] (emerging)",
+        "C2 Study projects Welsh seabird colonies may not recover from the 2022 avian flu outbreak until 2041 [SI1 threatens] (emerging)",
+        "B2 Wales' marine protected area management framework expired in 2023 with no successor; JNCC asked to lead the review [SI1 threatens, SI3 two-way] (emerging)",
+        "B2 NRW declared drought in North Wales on 23 July 2026, extended it to all of Wales by 30 July after the driest July on record [SI1 threatens] (emerging)",
+        "C3 Senedd petition seeks to stop all development on Welsh peatland, claiming renewable schemes threaten 36 percent of peat [SI1 threatens] (emerging)",
+        "B2 Met Office warns a long-lasting UK marine heatwave could reach extreme levels, with Welsh offshore waters 4 to 5 degrees above normal [SI1 threatens] (emerging)",
+        "B2 Severe 2026 wildfire season burns Welsh uplands: four major incidents, a Welsh Government wildfire review and summit [SI1 threatens, SI2 threatens] (emerging)",
+        "B2 Welsh Government holds biodiversity funding at about 36 million pounds for 2026-27 after Senedd committee warns 30 by 30 is predicted to be missed [SI1 threatens, SI2 two-way] (emerging)",
+        "B2 First Asian hornet nest confirmed in Wales, near Wrexham, triggering the contingency response [SI1 threatens] (emerging)",
+        "C2 Sustainable Farming Scheme opens for applications on 2 March 2026 with its Optional and Collaborative layers not yet available [SI2 two-way, SI1 supports] (emerging)",
+        "B2 Welsh Government responds to the Section 6 biodiversity duty evaluation, proposing to publish which public authorities are in scope [SI3 two-way] (emerging)",
+        "C2 WWF Cymru analysis finds less than 2 percent of Welsh flood risk funding for 2022 to 2026 went to natural flood management [SI2 two-way] (emerging)",
+        "B2 CCC's A Well-Adapted UK (CCRA4 independent assessment): plan for at least 2 degrees of warming by 2050, about 11 billion pounds a year, and measurable adaptation targets for Wales [SI1 informs the baseline] (emerging)",
+        "B2 SoNaRR 2025 published: the third State of Natural Resources Report, the SI1 resilience evidence base [SI1 informs the baseline, SI2 informs the baseline] (emerging)",
+        "B2 Summer 2026 was the hottest on record in Wales, with the first red extreme heat warning and persistent marine heatwave conditions [SI1 informs the baseline] (emerging)",
+        "B2 JNCC invasive species indicator 2025: pressure deteriorating in freshwater, marine and terrestrial environments of Great Britain [SI1 informs the baseline] (emerging)",
+        "B2 Updated Section 7 list of priority species and habitats more than doubles to 1,322 species and 69 habitats [SI1 informs the baseline, SI3 supports] (emerging)",
+        "B3 Senedd Research: only 2.14 percent of Welsh land meets 30by30 criteria as the Seventh Senedd begins [SI1 informs the baseline, SI2 informs the baseline] (emerging)",
+        "B3 UK National Biodiversity Strategy and Action Plan commits all four nations to the 23 GBF targets [SI1 informs the baseline, SI3 supports] (emerging)",
+        "B2 Phytophthora pluvialis no longer treated as a threat in Wales; demarcated areas revoked [SI1 informs the baseline] (emerging)",
+        "B3 Welsh Government starts Wales's first Climate and Nature Action Plan, aiming for net zero by 2040 and substantive nature recovery by 2050 [SI1 supports] (emerging)",
+        "B2 Environment (Principles, Governance and Biodiversity Targets) (Wales) Act 2026: Royal Assent 27 April; statutory biodiversity targets due within two years [SI1 supports, SI2 supports, SI3 supports] (matured)",
+        "B2 Nature Recovery Action Plan 2026: six aims, tripled peatland target, statutory biodiversity targets within two years of Royal Assent [SI1 supports, SI2 supports, SI3 supports] (emerging)",
+        "B2 Welsh Government 30by30 framework: only protected sites in favourable or recovering condition will count, with Naturfa sites as Wales' OECMs [SI1 supports, SI2 supports] (emerging)",
+        "B2 Defra and Welsh Government publish a Mitigation Strategy for Avian Influenza in Wild Birds in England and Wales [SI1 supports] (emerging)",
+        "B2 Consultation on the Environmental Principles Statement that NRW must apply under the 2026 Act closed on 11 September 2026 [SI3 supports] (emerging)",
+        "B2 Nature Estate Cymru launched: major Welsh landowners, including NRW, convened to drive tree planting and 30by30; first four Naturfa sites named [SI2 supports] (emerging)",
+        "C3 Nature Networks Fund reopens with grants of 250,000 pounds to 1 million pounds for protected site resilience [SI1 supports, SI2 supports] (emerging)",
+        "B2 Nature Networks Fund backs a Wildlife Trusts project to build investment-ready nature recovery proposals for Bannau Brycheiniog and the Gwent Levels [SI2 supports] (emerging)",
+        "B2 Senedd committee report 'Digging the dirt' calls for statutory soil health standards; Welsh Government response of 16 January 2026 accepts most but declines a minimum soil standard [SI2 supports] (emerging)",
+        "B2 Sustainable Farming Scheme Optional layer opens its Habitat Review, with a pilot selection in September 2026 [SI2 supports] (emerging)",
+        "C3 Tir Natur buys 1,195 acres at Cwm Doethie in the Cambrian Mountains for Wales' largest rewilding project [SI2 supports] (emerging)",
+        "B2 Welsh fisheries and aquaculture update reports progress on management plans and fleet decarbonisation [SI1 supports] (emerging)",
+        "C3 WWF petition presses the incoming Welsh Government to act on the nature crisis [SI1 supports, SI3 supports] (emerging)",
+        "C2 Gwent Green Grid Partnership wins 999,974 pounds from the National Lottery Nature Networks Fund for a three-year nature recovery programme [SI3 supports] (emerging)",
+        "C2 Wildlife Trust of South and West Wales wins 926,905 pounds from the Nature Networks Fund to tackle invasive species on 41 sites [SI1 supports] (emerging)"
       ],
-      "bullets": [],
       "depth": 3,
       "heading": "Nature is Recovering (SI1, SI2, SI3)",
       "tables": []
     },
     {
-      "body": [
-        "Nothing moved against this objective in the period."
+      "body": [],
+      "bullets": [
+        "C3 ECIU analysis: Wales projected to deliver just 14 percent of its 2030 tree planting target [SI6 threatens] (emerging)",
+        "B3 Flood Re ends in 2039: insurance affordability cliff if adaptation lags climate risk [SI8 threatens] (emerging)",
+        "C3 Wild Cymru investigation links Welsh wildfires to illegal grassland burning and exposes an enforcement gap between the Welsh Government and NRW [SI6 threatens] (emerging)",
+        "C3 NRW applies for the first River Severn drought order in 37 years as Llyn Clywedog falls below half capacity [SI8 threatens] (emerging)",
+        "C3 Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party [SI6 threatens] (emerging)",
+        "B2 Summer 2026 was the hottest on record in Wales, with the first red extreme heat warning and persistent marine heatwave conditions [SI8 threatens] (emerging)",
+        "C3 Bridgend council moves to abandon its 2030 net zero target as unachievable; officers say the pressure is sector-wide [SI6 threatens] (emerging)",
+        "C3 Green Alliance warns a reported cut to the zero emission vehicle mandate, from 80 to 50 percent, would add about 70 MtCO2 to Carbon Budget Seven [SI6 threatens] (emerging)",
+        "B2 NRW's savings programme cut 233 posts and reduced pollution-incident response; the 2026-27 settlement improves [SI7 threatens, SI8 threatens] (emerging)",
+        "B2 NRW settles a 14.6 million pound HMRC IR35 investigation, recouped through phased budget reductions [SI7 threatens, SI8 threatens] (emerging)",
+        "B2 Senedd committee finds Welsh flood forecasting diverging from England and uneven warning sign-up after Storms Bert and Darragh [SI8 threatens] (emerging)",
+        "D3 TaxPayers' Alliance puts the 2030 Welsh public sector net zero target at 7.8 to 13.3 billion pounds and calls for it to be withdrawn [SI6 threatens] (emerging)",
+        "B2 Severe 2026 wildfire season burns Welsh uplands: four major incidents, a Welsh Government wildfire review and summit [SI6 threatens, SI8 informs the baseline] (emerging)",
+        "B2 Winter 2025-26 flooding hits about 400 Welsh homes (Storm Claudia), the flood side of the climate whiplash [SI8 threatens] (emerging)",
+        "B2 One year on, the Disused Mine and Quarry Tips (Wales) Act 2025: Disused Tips Authority due April 2027, with remediation funding beyond 2026-27 unresolved [SI8 two-way] (emerging)",
+        "B3 National Energy Strategy to replace Wales' renewable electricity targets with an emissions-based energy target [SI6 two-way] (emerging)",
+        "B3 Welsh Government discussion paper opens engagement on the next emissions reduction plan for 2026 to 2030 [SI6 two-way, SI10 supports] (emerging)",
+        "C2 Sustainable Farming Scheme opens for applications on 2 March 2026 with its Optional and Collaborative layers not yet available [SI6 two-way] (emerging)",
+        "B3 Future Generations Commissioner announces a Section 20 review of energy policy and decision-making in Wales [SI6 two-way] (emerging)",
+        "C3 Marches Forward Partnership councils, including Powys and Monmouthshire, seek 5 million pounds to deliver the Severn Valley flood strategy [SI8 two-way] (emerging)",
+        "B2 Welsh Government reports progress on the NICW flood resilience recommendations, deferring a new long-term strategy and governance changes to the next Senedd [SI8 two-way] (emerging)",
+        "C2 Rhondda Cynon Taf council votes to buy and demolish 16 flood-prone homes on Clydach Terrace, Ynysybwl, after defences proved unviable [SI8 two-way] (emerging)",
+        "C3 Senedd petition seeks to stop all development on Welsh peatland, claiming renewable schemes threaten 36 percent of peat [SI6 two-way] (emerging)",
+        "B2 Senedd Research briefing on data centres in Wales: two AI Growth Zones and doubling electricity use raise energy, grid and water questions [SI6 two-way] (emerging)",
+        "B2 Senedd committee report 'Digging the dirt' calls for statutory soil health standards; Welsh Government response of 16 January 2026 accepts most but declines a minimum soil standard [SI6 two-way] (emerging)",
+        "B3 UNEP Limiting Overshoot report: the world is set to cross 1.5 degrees within years, with a best-case peak of 1.8 degrees [SI6 two-way, SI8 informs the baseline] (emerging)",
+        "D3 Welsh Government consults on a 'Best for Wales' Deposit Return Scheme; Surfers Against Sewage presses for glass and reuse targets [SI10 two-way] (emerging)",
+        "C2 Refreshed NHS Wales Decarbonisation Strategic Delivery Plan published; supply chain emissions still rising [SI6 two-way] (emerging)",
+        "B2 River Tawe illness reports: NRW review finds no pollution or permit breach to explain them; routine monitoring is not designed for bathing [SI7 two-way] (emerging)",
+        "B2 CCC's A Well-Adapted UK (CCRA4 independent assessment): plan for at least 2 degrees of warming by 2050, about 11 billion pounds a year, and measurable adaptation targets for Wales [SI8 informs the baseline] (emerging)",
+        "B2 Draft Air Quality Target Regulations for fine particulate matter (PM2.5) under the 2024 Act [SI8 informs the baseline] (emerging)",
+        "B2 CCC 2026 progress report: Welsh emissions fell significantly in 2024, driven by the Port Talbot closures [SI6 informs the baseline] (emerging)",
+        "B2 Welsh Government climate change perceptions and actions survey publishes waves 3 and 4 [SI10 informs the baseline] (emerging)",
+        "B2 Energy generation and use in Wales, first combined report: renewables met 55 percent of 2024 electricity use, and generation must triple for the 2035 target [SI6 informs the baseline] (emerging)",
+        "C2 Fields in Trust Green Space Index 2026: 19 percent of people in Wales live within a ten-minute walk of a permanently protected park [SI7 informs the baseline] (emerging)",
+        "B2 NRW declared drought in North Wales on 23 July 2026, extended it to all of Wales by 30 July after the driest July on record [SI8 informs the baseline] (emerging)",
+        "B2 People and Nature Survey Wales, April 2023 to April 2024 results published [SI7 informs the baseline, SI10 informs the baseline] (emerging)",
+        "C2 WWF Cymru analysis finds less than 2 percent of Welsh flood risk funding for 2022 to 2026 went to natural flood management [SI8 informs the baseline] (emerging)",
+        "C2 Nesta analysis finds Welsh heat pump uptake among the highest in the UK but highly uneven, from 9.2 percent of homes in Ceredigion to under 0.5 percent in Cardiff [SI6 informs the baseline, SI10 informs the baseline] (emerging)",
+        "C2 Peer-reviewed evaluation of a Swansea pilot finds voluntary burn alerts cut some domestic wood burning [SI10 informs the baseline] (emerging)",
+        "B2 Carbon Budget 4 approved: 73 percent average emissions reduction for 2031 to 2035, with a zero offset limit for CB3 [SI6 supports] (matured)",
+        "B3 Welsh Government starts Wales's first Climate and Nature Action Plan, aiming for net zero by 2040 and substantive nature recovery by 2050 [SI6 supports, SI8 supports, SI10 supports] (emerging)",
+        "B2 Nature Recovery Action Plan 2026: six aims, tripled peatland target, statutory biodiversity targets within two years of Royal Assent [SI6 supports, SI7 supports] (emerging)",
+        "B2 Flood and Coastal Erosion Risk Management Programme 2026-27: over 85 million pounds allocated [SI8 supports] (emerging)",
+        "C2 Green Flag 2026: record 330 award-winning green spaces in Wales, third consecutive rise [SI7 supports] (emerging)",
+        "B2 Nature Estate Cymru launched: major Welsh landowners, including NRW, convened to drive tree planting and 30by30; first four Naturfa sites named [SI6 supports] (emerging)",
+        "B2 Welsh Government publishes its Promoting Awareness of Air Pollution delivery plan, 2025 to 2028 [SI10 supports] (emerging)",
+        "B2 UK Seventh Carbon Budget passes into law: about 87 percent reduction for 2038 to 2042 [SI6 supports] (emerging)",
+        "C2 Llandeilo Swing Bridge on the Tywi designated as Wales' second river bathing water after a community campaign [SI7 supports, SI10 supports] (emerging)",
+        "B3 UK adaptation package commits to planning for a minimum of 2 degrees warming by 2050; CCC says funding falls short [SI8 supports] (emerging)",
+        "B2 Welsh Government's First 100 Days review of the Warm Homes Programme proposes more funding for Nest and Optimise, area-based pilots and a cross-tenure retrofit review [SI6 supports, SI10 supports] (emerging)",
+        "C2 UKRI opens a call for a What Works Centre for a climate resilient UK, worth up to 21.1 million pounds, with the Welsh Government as a partner [SI8 supports] (emerging)",
+        "C3 All 13 NHS Wales organisations develop climate risk assessments and adaptation plans through the Climate Adaptation Accelerator Programme 2025-26 [SI8 supports] (emerging)",
+        "C2 Troi'r Llanw / Turning the Tide: Centre for Alternative Technology leads a 1.5 million pound Wales-wide community climate action programme [SI10 supports] (emerging)",
+        "C3 Welsh Government Energy Service estimates 2,045 public sector electric vehicles save up to 1.9 million pounds and about 6,151 tonnes CO2e a year [SI6 supports] (emerging)"
       ],
-      "bullets": [],
       "depth": 3,
       "heading": "Communities are Resilient to Climate Change (SI6, SI7, SI8, SI10)",
       "tables": []
     },
     {
-      "body": [
-        "Nothing moved against this objective in the period."
+      "body": [],
+      "bullets": [
+        "F3 New Welsh environment minister declares the closed-period ban on spreading slurry and manure ineffective, signalling a revision of the agricultural pollution rules [SI4 threatens] (emerging)",
+        "C3 Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party [SI5 threatens] (emerging)",
+        "C3 Green Alliance warns a reported cut to the zero emission vehicle mandate, from 80 to 50 percent, would add about 70 MtCO2 to Carbon Budget Seven [SI5 threatens] (emerging)",
+        "B2 Abandoned metal mines pollute about 700km of Welsh rivers, a major SI4 pressure with a live inquiry [SI4 threatens] (emerging)",
+        "B2 NRW declared drought in North Wales on 23 July 2026, extended it to all of Wales by 30 July after the driest July on record [SI4 threatens] (emerging)",
+        "B2 NRW's savings programme cut 233 posts and reduced pollution-incident response; the 2026-27 settlement improves [SI4 threatens] (emerging)",
+        "B2 NRW settles a 14.6 million pound HMRC IR35 investigation, recouped through phased budget reductions [SI4 threatens] (emerging)",
+        "B2 Control of Agricultural Pollution Regulations review: all 23 recommendations taken forward, alternatives to the 170kg limit on the table [SI4 two-way] (emerging)",
+        "D3 River Action takes NRW to judicial review over Powys poultry permit variations; scope of off-site pollution responsibility contested [SI4 two-way] (emerging)",
+        "C3 NRW applies for the first River Severn drought order in 37 years as Llyn Clywedog falls below half capacity [SI4 two-way] (emerging)",
+        "C3 Wrexham councillors attack NRW over a single Lower Dee phosphate sample that held more than 100 planning applications; NRW drops the nutrient neutrality requirement [SI4 two-way] (emerging)",
+        "B2 River Tawe illness reports: NRW review finds no pollution or permit breach to explain them; routine monitoring is not designed for bathing [SI4 two-way] (emerging)",
+        "D2 Save the River Usk campaigns for a Clean Water Bill for Wales; its Senedd petition closed on 17 August 2026 with 1,316 signatures [SI4 two-way] (emerging)",
+        "B2 SoNaRR 2025 published: the third State of Natural Resources Report, the SI1 resilience evidence base [SI4 informs the baseline] (emerging)",
+        "B2 Air Quality in Wales 2024/25: no monitoring site exceeded national objectives for NO2 or particulates in 2024, but three breached the ozone objective [SI5 informs the baseline] (emerging)",
+        "C3 Ofwat proposes a 44.7 million pound enforcement package against Welsh Water for serious breaches in operating its sewage works and networks [SI4 supports] (emerging)",
+        "B2 Draft Air Quality Target Regulations for fine particulate matter (PM2.5) under the 2024 Act [SI5 supports] (emerging)",
+        "B3 Green Paper: Shaping the Future of Water Governance in Wales [SI4 supports] (emerging)",
+        "D3 Largest UK environmental pollution claim: over 5,100 claimants sue Avara Foods and Welsh Water over Wye, Lugg and Usk pollution [SI4 supports] (emerging)",
+        "B2 Welsh Government publishes its Promoting Awareness of Air Pollution delivery plan, 2025 to 2028 [SI5 supports] (emerging)",
+        "C3 Senedd backs a polluter pays approach and a national testing framework for contaminated land; Welsh Government pledges a Wales-wide strategy [SI4 supports] (emerging)",
+        "B2 Senedd committee report 'Digging the dirt' calls for statutory soil health standards; Welsh Government response of 16 January 2026 accepts most but declines a minimum soil standard [SI4 supports] (emerging)",
+        "C2 Llandeilo Swing Bridge on the Tywi designated as Wales' second river bathing water after a community campaign [SI4 supports] (emerging)",
+        "B3 UK-wide consultation on stove emission limits and fuel labelling to cut PM2.5 closed; outcome awaited [SI5 supports] (emerging)",
+        "D3 Welsh Government consults on a 'Best for Wales' Deposit Return Scheme; Surfers Against Sewage presses for glass and reuse targets [SI4 supports] (emerging)",
+        "C2 Peer-reviewed evaluation of a Swansea pilot finds voluntary burn alerts cut some domestic wood burning [SI5 supports] (emerging)"
       ],
-      "bullets": [],
       "depth": 3,
       "heading": "Pollution is Minimised (SI4, SI5)",
       "tables": []
     },
     {
+      "body": [],
+      "bullets": [
+        "C2 NRW discloses that diversity data on about 2,000 current and former staff was exposed through a 2021 Freedom of Information release [SI12 threatens] (emerging)",
+        "C2 ECIU analysis values the Welsh net zero economy at 4 billion pounds of output and 41,300 jobs [SI11 informs the baseline] (emerging)"
+      ],
+      "depth": 3,
+      "heading": "Outside the well-being objectives",
+      "tables": []
+    },
+    {
       "body": [
         "A blind spot is not quiet. A requirement whose evidence public sources cannot see (low or no scanability) and that has no active reports is invisible to this tool, not calm; its silence is not evidence of anything.",
-        "No report on these requirements was created or changed in the period."
+        "Every requirement in the set saw movement in the period."
       ],
-      "bullets": [
-        "SI1 Resilient ecosystems: quiet this period. Active reports in the register: 12. Scanability: high.",
-        "SI2 Habitat restoration rate: quiet this period. Active reports in the register: 5. Scanability: medium.",
-        "SI3 Nature recovery in public services: quiet this period. Active reports in the register: 7. Scanability: high.",
-        "SI4 Pollution to land and water: quiet this period. Active reports in the register: 10. Scanability: high.",
-        "SI5 Air pollution: quiet this period. Active reports in the register: 2. Scanability: high.",
-        "SI6 Greenhouse gas emissions and sequestration: quiet this period. Active reports in the register: 8. Scanability: high.",
-        "SI7 Access to green and blue space: quiet this period. Active reports in the register: 5. Scanability: medium.",
-        "SI8 Places resilient to a changing climate: quiet this period. Active reports in the register: 9. Scanability: high.",
-        "SI9 Impact of partnership approaches: blind spot this period. Active reports in the register: 0. Scanability: low.",
-        "SI10 Public action on the crises: quiet this period. Active reports in the register: 2. Scanability: medium.",
-        "SI11 Organisations acting on the crises: blind spot this period. Active reports in the register: 1. Scanability: low.",
-        "SI12 NRW colleague engagement: blind spot this period. Active reports in the register: 0. Scanability: none."
-      ],
+      "bullets": [],
       "depth": 2,
       "heading": "Quiet and blind spots",
       "tables": []
     },
     {
       "body": [
-        "The date check run on 2026-10-06 found 39 things to look at again. Reports affected: 35."
+        "The date check found nothing to look at again."
       ],
       "bullets": [],
       "depth": 2,
@@ -178,86 +354,85 @@
     },
     {
       "body": [
-        "The event horizon has passed and nobody has updated or verified the report since. Check what happened, then rewrite the report in dated past tense."
-      ],
-      "bullets": [
-        "Consultation opens on the Environmental Principles Statement that NRW must apply under the 2026 Act (environmental-principles-statement-consultation-2026): event horizon 2026-09-11 passed 25 days ago and nobody has updated or verified the report since."
-      ],
-      "depth": 3,
-      "heading": "Passed event horizons",
-      "tables": []
-    },
-    {
-      "body": [
-        "The title, summary or notes use language that rots once the date passes."
-      ],
-      "bullets": [
-        "Consultation opens on the Environmental Principles Statement that NRW must apply under the 2026 Act (environmental-principles-statement-consultation-2026): summary uses future-framed language: 'consultation closes'.",
-        "Flood Re ends in 2039: insurance affordability cliff if adaptation lags climate risk (flood-re-ends-2039-insurance-affordability): summary uses future-framed language: 'due to'.",
-        "Welsh fisheries and aquaculture update reports progress on management plans and fleet decarbonisation (welsh-fisheries-aquaculture-update-2026): summary uses future-framed language: 'due to'."
-      ],
-      "depth": 3,
-      "heading": "Future-framed language",
-      "tables": []
-    },
-    {
-      "body": [
-        "The report was last verified against its source too long ago."
-      ],
-      "bullets": [
-        "Audit Wales finds NRW is not designating SSSIs it knows may qualify, citing staff capacity and data gaps (audit-wales-sssi-designation-capacity-2025): last verified 2026-07-25, 73 days ago (more than 45).",
-        "Study projects Welsh seabird colonies may not recover from the 2022 avian flu outbreak until 2041 (avian-flu-welsh-seabirds-recovery-2041): last verified 2026-07-24, 74 days ago (more than 45).",
-        "Bridgend council drops its 2030 net zero target as unachievable; officers say the pressure is sector-wide (bridgend-drops-2030-net-zero-target): last verified 2026-07-24, 74 days ago (more than 45).",
-        "Carbon Budget 4 approved: 73 percent average emissions reduction for 2031 to 2035, with a zero offset limit for CB3 (carbon-budget-4-regulations-wales-2025): last verified 2026-07-24, 74 days ago (more than 45).",
-        "CCC 2026 progress report: Welsh emissions fell significantly in 2024, driven by the Port Talbot closures (ccc-2026-progress-report-welsh-emissions-fall): last verified 2026-07-24, 74 days ago (more than 45).",
-        "Welsh Government climate change perceptions and actions survey publishes waves 3 and 4 (climate-perceptions-actions-survey-waves-3-4): last verified 2026-07-25, 73 days ago (more than 45).",
-        "Control of Agricultural Pollution Regulations review: all 23 recommendations taken forward, alternatives to the 170kg limit on the table (control-of-agricultural-pollution-regulations-review-2025): last verified 2026-07-24, 74 days ago (more than 45).",
-        "ECIU analysis: Wales projected to deliver just 14 percent of its 2030 tree planting target (eciu-wales-tree-planting-14-percent-of-target): last verified 2026-07-24, 74 days ago (more than 45).",
-        "Environment (Principles, Governance and Biodiversity Targets) (Wales) Act 2026: Royal Assent 27 April; statutory biodiversity targets due within two years (environment-principles-governance-biodiversity-targets-wales-act-2026): last verified 2026-07-24, 74 days ago (more than 45).",
-        "Consultation opens on the Environmental Principles Statement that NRW must apply under the 2026 Act (environmental-principles-statement-consultation-2026): last verified 2026-07-24, 74 days ago (more than 45).",
-        "Flood and Coastal Erosion Risk Management Programme 2026-27: over 85 million pounds allocated (fcerm-programme-2026-27): last verified 2026-07-24, 74 days ago (more than 45).",
-        "First Asian hornet nest confirmed in Wales, near Wrexham, triggering the contingency response (first-asian-hornet-nest-wales-2026): last verified 2026-07-24, 74 days ago (more than 45).",
-        "Flood Re ends in 2039: insurance affordability cliff if adaptation lags climate risk (flood-re-ends-2039-insurance-affordability): last verified 2026-07-24, 74 days ago (more than 45).",
-        "Green Flag 2026: record 330 award-winning green spaces in Wales, third consecutive rise (green-flag-2026-record-330-welsh-sites): last verified 2026-07-24, 74 days ago (more than 45).",
-        "Abandoned metal mines pollute about 700km of Welsh rivers, a major SI4 pressure with a live inquiry (metal-mine-water-pollution-wales): last verified 2026-07-24, 74 days ago (more than 45).",
-        "Wales' marine protected area management framework expired in 2023 with no successor; JNCC asked to lead the review (mpa-network-management-framework-expired-2026): last verified 2026-07-25, 73 days ago (more than 45).",
-        "Nature Recovery Action Plan 2026: six aims, tripled peatland target, statutory biodiversity targets within two years of Royal Assent (nature-recovery-action-plan-2026): last verified 2026-07-24, 74 days ago (more than 45).",
-        "NRW declares drought status for North Wales as July 2026 nears a 190-year rainfall low (north-wales-drought-declared-2026): last verified 2026-07-24, 74 days ago (more than 45).",
-        "NRW's savings programme cut 233 posts and reduced pollution-incident response; the 2026-27 settlement improves (nrw-funding-gap-savings-2026-27): last verified 2026-07-25, 73 days ago (more than 45).",
-        "NRW settles a 14.6 million pound HMRC IR35 investigation, recouped through phased budget reductions (nrw-ir35-hmrc-settlement-2025): last verified 2026-07-25, 73 days ago (more than 45).",
-        "People and Nature Survey Wales, April 2023 to April 2024 results published (people-and-nature-survey-wales-2023-24): last verified 2026-07-24, 74 days ago (more than 45).",
-        "Draft Air Quality Target Regulations for fine particulate matter (PM2.5) under the 2024 Act (pm25-air-quality-target-regulations-wales-2026): last verified 2026-07-24, 74 days ago (more than 45).",
-        "River Action takes NRW to judicial review over Powys poultry permit variations; scope of off-site pollution responsibility contested (river-action-judicial-review-nrw-poultry-permits): last verified 2026-07-24, 74 days ago (more than 45).",
-        "Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party (senedd-2026-net-zero-environment-battleground): last verified 2026-07-24, 74 days ago (more than 45).",
-        "Senedd committee report 'Digging the dirt' calls for statutory soil health standards; no government response published (senedd-soil-health-inquiry-2025): last verified 2026-07-25, 73 days ago (more than 45).",
-        "UK Seventh Carbon Budget passes into law: about 87 percent reduction for 2038 to 2042 (seventh-carbon-budget-uk-law-2026): last verified 2026-07-24, 74 days ago (more than 45).",
-        "SoNaRR 2025 published: the third State of Natural Resources Report, the SI1 resilience evidence base (sonarr-2025-published): last verified 2026-07-24, 74 days ago (more than 45).",
-        "UK adaptation package commits to planning for a minimum of 2 degrees warming by 2050; CCC says funding falls short (uk-climate-adaptation-package-2026): last verified 2026-07-24, 74 days ago (more than 45).",
-        "UK National Biodiversity Strategy and Action Plan commits all four nations to the 23 GBF targets (uk-national-biodiversity-strategy-action-plan-2025): last verified 2026-07-24, 74 days ago (more than 45).",
-        "Severe 2026 wildfire season burns Welsh uplands, with a major incident near Conwy (wales-wildfire-season-2026): last verified 2026-07-24, 74 days ago (more than 45).",
-        "Green Paper: Shaping the Future of Water Governance in Wales (water-governance-green-paper-2026): last verified 2026-07-24, 74 days ago (more than 45).",
-        "Welsh fisheries and aquaculture update reports progress on management plans and fleet decarbonisation (welsh-fisheries-aquaculture-update-2026): last verified 2026-07-25, 73 days ago (more than 45).",
-        "Winter 2025-26 flooding hits about 400 Welsh homes (Storm Claudia), the flood side of the climate whiplash (winter-2025-26-flooding-storm-claudia): last verified 2026-07-24, 74 days ago (more than 45).",
-        "WWF petition presses the incoming Welsh Government to act on the nature crisis (wwf-nature-petition-new-welsh-government-2026): last verified 2026-07-24, 74 days ago (more than 45).",
-        "Largest UK environmental pollution claim: over 4,500 claimants sue Avara Foods and Welsh Water over Wye, Lugg and Usk pollution (wye-lugg-usk-group-claim-avara-welsh-water): last verified 2026-07-24, 74 days ago (more than 45)."
-      ],
-      "depth": 3,
-      "heading": "Stale verifications",
-      "tables": []
-    },
-    {
-      "body": [
-        "No scan run started in the period, so no candidates were collected or judged in it.",
-        "No report was created in the period, so there is no non-government share or credibility spread to report.",
-        "No run used the instrument in the period; the current instrument is version 2026.10.0.",
-        "Known blind spots, requirements this tool cannot see and holds no active report on: SI9 Impact of partnership approaches, SI12 NRW colleague engagement.",
+        "Scan runs started in the period: 1. Their funnels are in the first table below.",
+        "Final dispositions of those runs' candidates: promoted 60, rejected 1540, duplicate 116, reinforcement 48, deferred 0. New candidates nobody has judged yet: 0.",
+        "Reports created in the period: 60, of which 33 (55 per cent) came from lanes outside government. The mainstream bias guard asks for this share: a register that skews official misses the earliest signals.",
+        "The credibility of those 60 reports, digit by digit, is in the table below. Grades inflate quietly: a consultation is a 3, however official the page.",
+        "Instrument version used by the period's runs: 2026.10.0.",
+        "No requirement reads as a blind spot.",
         "The scan only finds what already talks like the requirements. Biophysical, market, technological and institutional pressures that move a requirement before any publication names it are outside its reach.",
         "Counts of reports are not counts of impact. The register shows what surfaced publicly: at least this much, and known to undercount."
       ],
       "bullets": [],
       "depth": 2,
       "heading": "Method note",
-      "tables": []
+      "tables": [
+        {
+          "headers": [
+            "Run",
+            "Started",
+            "Instrument",
+            "Raw hits",
+            "Unique",
+            "New",
+            "Reinforcements",
+            "Requests",
+            "Budget exhausted"
+          ],
+          "rows": [
+            [
+              "20261006T2155Z-6ae7",
+              "2026-10-06",
+              "2026.10.0",
+              "2301",
+              "1782",
+              "1764",
+              "18",
+              "139",
+              "no"
+            ]
+          ]
+        },
+        {
+          "headers": [
+            "Credibility",
+            "Meaning",
+            "Reports created"
+          ],
+          "rows": [
+            [
+              "1",
+              "confirmed",
+              "0"
+            ],
+            [
+              "2",
+              "probably true",
+              "37"
+            ],
+            [
+              "3",
+              "possibly true",
+              "23"
+            ],
+            [
+              "4",
+              "doubtful",
+              "0"
+            ],
+            [
+              "5",
+              "improbable",
+              "0"
+            ],
+            [
+              "6",
+              "cannot be judged",
+              "0"
+            ]
+          ]
+        }
+      ]
     }
   ],
   "title": "Operational intelligence summary (INTSUM), October 2026"

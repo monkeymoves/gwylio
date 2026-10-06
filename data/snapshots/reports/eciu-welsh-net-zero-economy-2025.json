@@ -1,0 +1,104 @@
+{
+  "actor_id": null,
+  "actor_name": null,
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI11",
+      "direction": "informs_baseline",
+      "name": "Increasing the proportion of organisations and businesses who act to mitigate and adapt to the nature, climate and pollution crises",
+      "requirement_id": "si11",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "park",
+  "canonical_url": "eciu.net/analysis/reports/welsh-net-zero-economy-in-2025",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "informs_baseline"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "C2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-f1c246 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "eciu-welsh-net-zero-economy-2025",
+  "independent_confirmation": false,
+  "lane": "research-evidence",
+  "lane_name": "Research and evidence",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "An independent baseline on how far Welsh organisations are engaged in the transition (SI11), and a counterweight to cost-focused critiques of net zero targets.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "research",
+  "requirement_ids": [
+    "si11"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "medium",
+    "potential_impact": "low",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-f1c246",
+      "discipline": "osint_web",
+      "query_id": "web-partnership-society-08",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000693",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://eciu.net/analysis/reports/welsh-net-zero-economy-in-2025"
+    }
+  ],
+  "source_id": null,
+  "source_name": "Energy and Climate Intelligence Unit (ECIU)",
+  "state": "emerging",
+  "summary": "On 21 May 2026 the Energy and Climate Intelligence Unit published The Welsh Net Zero Economy in 2025, with analysis by CBI Economics and The Data City. It found net zero activity contributed 4.0 billion pounds of gross value added, 4.3 percent of Welsh output, and over 41,300 full-time equivalent jobs across about 1,342 employers, 87 percent of them small or medium-sized. It put the Welsh renewable generation pipeline at 13.1 billion pounds and 10.9 GW.",
+  "title": "ECIU analysis values the Welsh net zero economy at 4 billion pounds of output and 41,300 jobs",
+  "topics": [
+    {
+      "id": "climate-emissions",
+      "name": "Climate and emissions"
+    },
+    {
+      "id": "partnership-and-society",
+      "name": "Partnership and society"
+    }
+  ],
+  "url": "https://eciu.net/analysis/reports/welsh-net-zero-economy-in-2025"
+}

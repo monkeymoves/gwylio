@@ -1,7 +1,7 @@
 {
   "actor_id": "welsh-government",
   "actor_name": "Welsh Government",
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI1",
@@ -48,13 +48,7 @@
   ],
   "distinct_sources": 0,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "B2",
   "hazards": [
     {
@@ -79,14 +73,29 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Adds what happened after mid-July: three further major incidents, the 11 August South Wales major incident, the UK burned-area total to 1 September, and the Welsh Government's wildfire review and summit.",
+      "kind": "updated",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Checked the gov.wales grassland fires statistics page (latest release still 16 April 2026) and the Senedd Research article 'Wildfires in summer 2026 in brief' (10 September 2026), which records four Welsh wildfire major incidents in July and August, 28,299 hectares burned in the UK to 1 September, and a Welsh Government wildfire review and planned Wildfire Summit; ITV Wales (2 September 2026) reported South Wales Fire and Rescue's three-week major incident.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "wales-wildfire-season-2026",
   "independent_confirmation": false,
   "lane": "welsh-government",
   "lane_name": "Welsh Government",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-24",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "government",
   "notes": "Wildfire was a gap in the instrument: no cluster carried a wildfire query, so fires only ever rode in as side-mentions on drought searches. A wildfire query was added to the ecological_early_warning lane on 23 July 2026 and this signal promoted. Threatens SI1 and SI2 (upland, moorland and protected habitats burned, habitat and woodland restoration set back), SI6 (fires emit carbon and destroy sequestration), and informs the SI8 baseline as part of the same heatwave-and-drought hazard. Tightly coupled to the North Wales drought signal: the same record dry conditions drive both.",
   "owner": null,
@@ -115,12 +124,46 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-469244",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-06",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000811",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.mawwfire.gov.uk/eng/newsroom/incident-update-llangynidr-reservoir-moorland-wildfire/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-587f10",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-06",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000808",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.bbc.co.uk/news/articles/c0qvp00x707o"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-db6fe8",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-06",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000815",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.walesonline.co.uk/news/wales-news/new-wildfires-flare-up-firefighters-34439811"
+    }
+  ],
   "source_id": "welsh-government",
   "source_name": "Welsh Government",
   "state": "emerging",
-  "summary": "2026 has been a severe wildfire year across the UK, with over 18,600 hectares burned and 65 fires larger than 30 hectares by 16 July (below the record set in 2025), driven by the same heatwaves and record dry conditions as the drought. In Wales, a large wildfire near Conwy Mountain and the Sychnant Pass was declared a major incident on 12 July 2026, forcing evacuations. Welsh grassland, woodland and crop fires are tracked in an official annual statistics series (latest release April 2024 to March 2025, published 16 April 2026).",
-  "title": "Severe 2026 wildfire season burns Welsh uplands, with a major incident near Conwy",
+  "summary": "2026 was a severe wildfire year across the UK, driven by the same heatwaves and record dry conditions as the drought: over 18,600 hectares had burned by 16 July, and by 1 September the UK total reached 28,299 hectares, the second highest on record after 2025. Welsh fire and rescue services declared four wildfire major incidents in July and August 2026: Conwy Mountain and the Sychnant Pass (12 July, with evacuations), Llanwonno Mountain in Rhondda Cynon Taf, Llangynidr Reservoir near Ebbw Vale, and Rhandirmwyn in Carmarthenshire. South Wales Fire and Rescue Service declared a major incident on 11 August, received military assistance, and dealt with 961 grass fires including 115 wildfires over three weeks. By mid-August, fire services in Wales and England had attended more wildfires than in the whole of 2025. Senedd Research (10 September 2026) reports that the Welsh Government has announced a wildfire review and a Wildfire Summit. Welsh grassland, woodland and crop fires are tracked in an official annual statistics series (latest release April 2024 to March 2025, published 16 April 2026); Wales-level burned-area figures for 2026 were not yet published.",
+  "title": "Severe 2026 wildfire season burns Welsh uplands: four major incidents, a Welsh Government wildfire review and summit",
   "topics": [],
   "url": "https://www.gov.wales/grassland-fires"
 }

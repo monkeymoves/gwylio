@@ -1,0 +1,131 @@
+{
+  "actor_id": "nation-cymru",
+  "actor_name": "Nation.Cymru",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI1",
+      "direction": "threatens",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI6",
+      "direction": "threatens",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "requirement_id": "si6",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI2",
+      "direction": "threatens",
+      "name": "Increasing the rate of habitat restoration",
+      "requirement_id": "si2",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "follow_up",
+  "canonical_url": "nation.cymru/feature/illegal-grassland-burns-why-is-wales-the-wildfire-capital-of-the-uk",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "threatens"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "C3",
+  "hazards": [
+    {
+      "family": "wildfire",
+      "family_name": "Wildfire",
+      "id": "upland-wildfire",
+      "name": "Upland and heathland wildfire"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-1a7a87 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by nation-cymru; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "illegal-grassland-burning-enforcement-gap-2026",
+  "independent_confirmation": false,
+  "lane": "independent-media",
+  "lane_name": "Independent media",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "A public accountability gap that names NRW directly, in what NRW staff called possibly the worst wildfire year Wales has had; the Evidence team should establish NRW's actual enforcement role under the 2008 Regulations, since the upland burning season opened on 1 October 2026.",
+  "owner": "Evidence team",
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "environmental",
+  "requirement_ids": [
+    "si1",
+    "si6",
+    "si2"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "low",
+    "novelty": "high",
+    "potential_impact": "high",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-1a7a87",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-06",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000814",
+      "source_id": "nation-cymru",
+      "source_name": "Nation.Cymru",
+      "url": "https://nation.cymru/feature/illegal-grassland-burns-why-is-wales-the-wildfire-capital-of-the-uk/"
+    }
+  ],
+  "source_id": "nation-cymru",
+  "source_name": "Nation.Cymru",
+  "state": "emerging",
+  "summary": "On 1 August 2026 Nation.Cymru reported a Wild Cymru investigation into illegal grassland burns as a cause of Welsh wildfires. Freedom of information data showed Mid and West Wales Fire and Rescue Service was notified of controlled burns 2,117 times between April and September 2025, all outside the legal burning season, though the figures are hard to verify. Asked who enforces the Heather and Grass etc. Burning (Wales) Regulations 2008, NRW said the Welsh Government, and the Welsh Government said investigation and enforcement were operational matters for NRW, the police and local authorities.",
+  "title": "Wild Cymru investigation links Welsh wildfires to illegal grassland burning and exposes an enforcement gap between the Welsh Government and NRW",
+  "topics": [
+    {
+      "id": "nature-and-ecosystems",
+      "name": "Nature and ecosystems"
+    },
+    {
+      "id": "peatland",
+      "name": "Peatland"
+    },
+    {
+      "id": "governance-and-funding",
+      "name": "Governance and funding"
+    }
+  ],
+  "url": "https://nation.cymru/feature/illegal-grassland-burns-why-is-wales-the-wildfire-capital-of-the-uk/"
+}

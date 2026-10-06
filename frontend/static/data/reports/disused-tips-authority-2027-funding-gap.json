@@ -1,0 +1,125 @@
+{
+  "actor_id": "senedd",
+  "actor_name": "Senedd Cymru (Welsh Parliament)",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI8",
+      "direction": "neutral",
+      "name": "Increasing the proportion of the population living in places that will continue to support and contribute to their health and well-being in a changing climate",
+      "requirement_id": "si8",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "follow_up",
+  "canonical_url": "research.senedd.wales/research-articles/disused-coal-tips-who-acts-who-pays-and-what-comes-next",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "neutral"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": "2027-04-01",
+  "findings": [],
+  "grading": "B2",
+  "hazards": [
+    {
+      "family": "flood-storm",
+      "family_name": "Flood and storm",
+      "id": "coal-tip-instability",
+      "name": "Coal tip instability"
+    },
+    {
+      "family": "funding-capacity",
+      "family_name": "Funding and capacity",
+      "id": "public-funding-pressure",
+      "name": "Public funding pressure"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-06931a in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by senedd-research; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "disused-tips-authority-2027-funding-gap",
+  "independent_confirmation": false,
+  "lane": "senedd",
+  "lane_name": "Senedd",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "government",
+  "notes": "NRW currently inspects and maintains tips on its land and will hand some functions to the new Authority from April 2027; the transfer, NRW's grant-funded works and the unresolved funding split all bear on SI8, with climate change raising slip risk.",
+  "owner": "Evidence team",
+  "places": [
+    {
+      "id": "south-east-wales",
+      "name": "South East Wales"
+    },
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "legislation",
+  "requirement_ids": [
+    "si8"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "high",
+    "potential_impact": "high",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-06931a",
+      "discipline": "osint_web",
+      "query_id": "web-people-place-resilience-07",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000560",
+      "source_id": "senedd-research",
+      "source_name": "Senedd Research",
+      "url": "https://research.senedd.wales/research-articles/disused-coal-tips-who-acts-who-pays-and-what-comes-next/"
+    }
+  ],
+  "source_id": "senedd-research",
+  "source_name": "Senedd Research",
+  "state": "emerging",
+  "summary": "On 11 September 2026, the first anniversary of the Disused Mine and Quarry Tips (Wales) Act 2025, Senedd Research reported that a new Disused Tips Authority was scheduled to be established in April 2027 to keep a register of disused tips, assess every tip and plan management of the highest-risk ones, taking over functions now held by local authorities and NRW. It noted 368 tips assessed as having potential to impact public safety, an earlier remediation estimate of at least 600 million pounds, and a January 2026 multi-year grant to NRW and ten councils. UK Government contributions were set at 39.3 million pounds a year to 2029, but the Welsh Government had made no budget decisions for 2027-28 and 2028-29, and the First Minister said in June 2026 that the UK Government should pay.",
+  "title": "One year on, the Disused Mine and Quarry Tips (Wales) Act 2025: Disused Tips Authority due April 2027, with remediation funding beyond 2026-27 unresolved",
+  "topics": [
+    {
+      "id": "people-place-and-resilience",
+      "name": "People, place and resilience"
+    },
+    {
+      "id": "governance-and-funding",
+      "name": "Governance and funding"
+    },
+    {
+      "id": "soil-and-land",
+      "name": "Soil and land"
+    }
+  ],
+  "url": "https://research.senedd.wales/research-articles/disused-coal-tips-who-acts-who-pays-and-what-comes-next/"
+}

@@ -1,7 +1,7 @@
 {
   "actor_id": "welsh-government",
   "actor_name": "Welsh Government",
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI6",
@@ -23,15 +23,9 @@
   "directions": [
     "supports"
   ],
-  "distinct_sources": 0,
+  "distinct_sources": 3,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "B2",
   "hazards": [],
   "history": [
@@ -74,14 +68,24 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.; created as matured by analyst override",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by uk-legislation; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Re-read the Welsh Government written statement of 14 October 2025 on laying the Carbon Budget 4 regulations (73 percent average reduction for 2031 to 2035, zero offset limit for Carbon Budget 3); the Senedd approval of 2 December 2025 was confirmed at the last verification and nothing since changes it. The source still stands.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "carbon-budget-4-regulations-wales-2025",
   "independent_confirmation": false,
   "lane": "welsh-government",
   "lane_name": "Welsh Government",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-24",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "government",
   "notes": "Verified 22 July 2026: Senedd approval 2 December 2025 confirmed; lifecycle moved to matured (settled context).",
   "owner": null,
@@ -107,7 +111,52 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-011c11",
+      "discipline": "osint_web",
+      "query_id": "web-air-climate-emissions-03",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000386",
+      "source_id": "uk-legislation",
+      "source_name": "UK legislation",
+      "url": "https://www.legislation.gov.uk/wsi/2025/1268/made"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-52bb18",
+      "discipline": "osint_site",
+      "query_id": "site-air-climate-emissions-senedd",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001402",
+      "source_id": "senedd-cymru",
+      "source_name": "Senedd Cymru",
+      "url": "https://laiddocuments.senedd.wales/sub-ld17525-en.pdf"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-76a094",
+      "discipline": "osint_site",
+      "query_id": "site-air-climate-emissions-senedd",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001394",
+      "source_id": "senedd-cymru",
+      "source_name": "Senedd Cymru",
+      "url": "https://laiddocuments.senedd.wales/sub-ld17547-em-en.pdf"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-cf9d56",
+      "discipline": "osint_web",
+      "query_id": "web-air-climate-emissions-03",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000388",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/written-statement-laying-regulations-set-carbon-budget-4-and-strengthen-wales-net-zero-framework"
+    }
+  ],
   "source_id": "welsh-government",
   "source_name": "Welsh Government",
   "state": "matured",

@@ -1,6 +1,53 @@
 [
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI5",
+        "direction": "informs_baseline",
+        "requirement_id": "si5",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "brief",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "informs_baseline"
+    ],
+    "distinct_sources": 0,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [],
+    "id": "air-quality-in-wales-2024-25-report",
+    "lane": "welsh-government",
+    "lane_name": "Welsh Government",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "data_release",
+    "requirement_ids": [
+      "si5"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "welsh-government",
+    "source_name": "Welsh Government (Welsh Air Quality Forum, airquality.gov.wales)",
+    "state": "emerging",
+    "summary": "In December 2025 the Welsh Air Quality Forum published its annual Air Quality in Wales 2024/25 report, prepared by Ricardo for the Welsh Government. It found that in 2024 no monitoring site in Wales exceeded a national objective or limit value for nitrogen dioxide, PM10, PM2.5, carbon monoxide, sulphur dioxide, benzene or lead, while three sites (Cardiff Centre, Cwmbran Crownbridge and Swansea St Thomas) exceeded the ozone objective during hot, still spells in May, July and August 2024. The network had 43 automatic monitoring sites at the end of 2024.",
+    "title": "Air Quality in Wales 2024/25: no monitoring site exceeded national objectives for NO2 or particulates in 2024, but three breached the ozone objective",
+    "topics": [
+      "air-quality"
+    ],
+    "url": "https://www.airquality.gov.wales/sites/default/files/documents/2025-12/AQ-2025-English-Final_0.pdf"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI1",
@@ -21,18 +68,16 @@
     "directions": [
       "threatens"
     ],
-    "distinct_sources": 0,
+    "distinct_sources": 1,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B2",
     "hazards": [],
     "id": "audit-wales-sssi-designation-capacity-2025",
     "lane": "governance-capacity",
     "lane_name": "Governance and capacity",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-25",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -56,7 +101,7 @@
     "url": "https://www.audit.wales/publication/protecting-nature-future-generations"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI1",
@@ -71,11 +116,9 @@
     "directions": [
       "threatens"
     ],
-    "distinct_sources": 0,
+    "distinct_sources": 1,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "C2",
     "hazards": [
       "avian-influenza"
@@ -83,8 +126,8 @@
     "id": "avian-flu-welsh-seabirds-recovery-2041",
     "lane": "independent-media",
     "lane_name": "Independent media",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -106,6 +149,64 @@
       "marine-and-coastal"
     ],
     "url": "https://nation.cymru/news/welsh-seabird-colony-may-not-recover-from-bird-flu-until-2041/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI1",
+        "direction": "supports",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI9",
+        "direction": "supports",
+        "requirement_id": "si9",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [
+      "avian-influenza"
+    ],
+    "id": "avian-influenza-wild-birds-mitigation-strategy-2026",
+    "lane": "welsh-government",
+    "lane_name": "Welsh Government",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si1",
+      "si9"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "welsh-government",
+    "source_name": "Welsh Government",
+    "state": "emerging",
+    "summary": "On 27 January 2026 the Welsh Government published the Mitigation Strategy for Avian Influenza in Wild Birds in England and Wales, setting out the policies of Defra and the Welsh Government and their delivery agencies APHA, Natural England and NRW. It assigned APHA surveillance, gave NE and NRW, with JNCC, the monitoring of wild bird populations, and covered site guidance and licensing; it was prepared with UKHSA, Public Health Wales and JNCC and is reviewed annually.",
+    "title": "Defra and Welsh Government publish a Mitigation Strategy for Avian Influenza in Wild Birds in England and Wales",
+    "topics": [
+      "biosecurity",
+      "nature-and-ecosystems",
+      "marine-and-coastal"
+    ],
+    "url": "https://www.gov.wales/mitigation-strategy-avian-influenza-wild-birds-england-and-wales-html"
   },
   {
     "appearances": 0,
@@ -131,16 +232,14 @@
     ],
     "distinct_sources": 0,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "C3",
     "hazards": [],
     "id": "bridgend-drops-2030-net-zero-target",
     "lane": "independent-media",
     "lane_name": "Independent media",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -156,15 +255,15 @@
     "source_id": "nation-cymru",
     "source_name": "Nation.Cymru",
     "state": "emerging",
-    "summary": "In July 2026 Bridgend council dropped its 2030 operational net zero target (adopted 2023) for a 'more realistic' efficiency-led strategy with a 2030 review, citing residual emissions and severe funding constraints; 72 percent of consultation respondents opposed keeping the target. Officers told scrutiny the new Welsh Government administration recognises 2030 net zero will be incredibly difficult across the public sector.",
-    "title": "Bridgend council drops its 2030 net zero target as unachievable; officers say the pressure is sector-wide",
+    "summary": "On 13 July 2026 Bridgend council officers put a revised net zero strategy to the Communities, Environment and Housing Overview and Scrutiny Committee that abandons the 2030 operational net zero target (adopted by Cabinet in January 2023) for a 'more realistic' efficiency-led approach with a review of progress in 2030, citing residual emissions and severe funding constraints; 72 percent of the 129 respondents to the consultation that ended in January 2026 opposed keeping the target. Officers told scrutiny the new Welsh Government administration recognises 2030 net zero will be incredibly difficult across the public sector. The revised strategy still needs Cabinet approval, and no Cabinet decision had been published by 6 October 2026.",
+    "title": "Bridgend council moves to abandon its 2030 net zero target as unachievable; officers say the pressure is sector-wide",
     "topics": [
       "climate-emissions"
     ],
     "url": "https://nation.cymru/news/welsh-council-drops-2030-net-zero-target-after-admitting-it-cannot-meet-deadline/"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI6",
@@ -179,18 +278,16 @@
     "directions": [
       "supports"
     ],
-    "distinct_sources": 0,
+    "distinct_sources": 3,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B2",
     "hazards": [],
     "id": "carbon-budget-4-regulations-wales-2025",
     "lane": "welsh-government",
     "lane_name": "Welsh Government",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -213,7 +310,7 @@
     "url": "https://www.gov.wales/written-statement-laying-regulations-set-carbon-budget-4-and-strengthen-wales-net-zero-framework"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI6",
@@ -228,18 +325,16 @@
     "directions": [
       "informs_baseline"
     ],
-    "distinct_sources": 0,
+    "distinct_sources": 2,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B2",
     "hazards": [],
     "id": "ccc-2026-progress-report-welsh-emissions-fall",
     "lane": "uk-government-and-regulators",
     "lane_name": "UK Government and regulators",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -262,7 +357,136 @@
     "url": "https://www.theccc.org.uk/publication/progress-in-reducing-emissions-2026-report-to-parliament/"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI8",
+        "direction": "informs_baseline",
+        "requirement_id": "si8",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI1",
+        "direction": "informs_baseline",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "brief",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "informs_baseline"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [
+      "river-and-surface-water-flooding",
+      "drought-and-low-flows"
+    ],
+    "id": "ccc-well-adapted-uk-ccra4-2026",
+    "lane": "uk-government-and-regulators",
+    "lane_name": "UK Government and regulators",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "research",
+    "requirement_ids": [
+      "si8",
+      "si1"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "climate-change-committee",
+    "source_name": "Climate Change Committee",
+    "state": "emerging",
+    "summary": "On 20 May 2026 the Climate Change Committee published A Well-Adapted UK, its independent assessment for the fourth UK Climate Change Risk Assessment (CCRA4), commissioned with the devolved governments including Wales. It advised that the UK should prepare at minimum for 2 degrees of global warming by 2050, estimated adaptation investment of about 11 billion pounds a year, and named cooling, flood preparedness and water management as top priorities. It found that national adaptation plans, including the Welsh Government's, lacked clear time-bound and measurable targets, and it expected the Welsh Government to respond in its next national adaptation plan.",
+    "title": "CCC's A Well-Adapted UK (CCRA4 independent assessment): plan for at least 2 degrees of warming by 2050, about 11 billion pounds a year, and measurable adaptation targets for Wales",
+    "topics": [
+      "people-place-and-resilience",
+      "flood-risk",
+      "water-resources"
+    ],
+    "url": "https://www.theccc.org.uk/publication/a-well-adapted-uk/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI6",
+        "direction": "supports",
+        "requirement_id": "si6",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI1",
+        "direction": "supports",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI8",
+        "direction": "supports",
+        "requirement_id": "si8",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI10",
+        "direction": "supports",
+        "requirement_id": "si10",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "brief",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B3",
+    "hazards": [],
+    "id": "climate-nature-action-plan-net-zero-2040",
+    "lane": "welsh-government",
+    "lane_name": "Welsh Government",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si6",
+      "si1",
+      "si8",
+      "si10"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "welsh-government",
+    "source_name": "Welsh Government",
+    "state": "emerging",
+    "summary": "On 19 August 2026 the Welsh Government announced that work had begun on Wales's first Climate and Nature Action Plan, treating climate change and nature loss as one connected challenge. The plan was framed around net zero by 2040, ten years earlier than the statutory 2050 target, and substantive nature recovery by 2050. A Climate and Nature Board chaired by Llyr Gruffydd, Cabinet Minister for Rural Resilience and Sustainability, was to be established with external expertise to shape the plan and hold delivery to account. No publication date or legislative route for the 2040 date was given.",
+    "title": "Welsh Government starts Wales's first Climate and Nature Action Plan, aiming for net zero by 2040 and substantive nature recovery by 2050",
+    "topics": [
+      "climate-emissions",
+      "nature-and-ecosystems",
+      "governance-and-funding"
+    ],
+    "url": "https://www.gov.wales/work-begins-waless-first-climate-and-nature-action-plan"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI10",
@@ -277,18 +501,16 @@
     "directions": [
       "informs_baseline"
     ],
-    "distinct_sources": 0,
+    "distinct_sources": 1,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B2",
     "hazards": [],
     "id": "climate-perceptions-actions-survey-waves-3-4",
     "lane": "welsh-government",
     "lane_name": "Welsh Government",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-25",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -309,7 +531,56 @@
     "url": "https://www.gov.wales/climate-change-perceptions-and-actions-survey-wave-3-and-4"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI4",
+        "direction": "threatens",
+        "requirement_id": "si4",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "follow_up",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "threatens"
+    ],
+    "distinct_sources": 0,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "F3",
+    "hazards": [
+      "agricultural-pollution"
+    ],
+    "id": "coap-closed-period-overhaul-minister-2026",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "F",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si4"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "EnviroLink Network",
+    "state": "emerging",
+    "summary": "On 23 May 2026 EnviroLink reported that the new Welsh environment minister had declared that the ban on spreading muck and agricultural waste in the closed period \"doesn't work\". The report described this as a significant shift that could lead the government to revise or abandon the current approach to agricultural water protection under the Control of Agricultural Pollution Regulations. Farming unions had campaigned against the calendar-based closed periods ahead of the May 2026 Senedd election.",
+    "title": "New Welsh environment minister declares the closed-period ban on spreading slurry and manure ineffective, signalling a revision of the agricultural pollution rules",
+    "topics": [
+      "pollution-water-and-land"
+    ],
+    "url": "https://www.envirolink.org/2026/05/23/new-welsh-minister-declares-river-protection-rules-for-farm-waste-spreading-ineffective/"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI4",
@@ -324,11 +595,9 @@
     "directions": [
       "neutral"
     ],
-    "distinct_sources": 0,
+    "distinct_sources": 1,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B2",
     "hazards": [
       "agricultural-pollution"
@@ -336,8 +605,8 @@
     "id": "control-of-agricultural-pollution-regulations-review-2025",
     "lane": "welsh-government",
     "lane_name": "Welsh Government",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -352,7 +621,7 @@
     "source_id": "welsh-government",
     "source_name": "Welsh Government",
     "state": "emerging",
-    "summary": "Written statement of 8 October 2025: the independently chaired statutory review completed in March 2025 and Ministers will take all 23 recommendations forward in full and at pace. The direction for SI4 is genuinely two-way: alternatives to the closed periods and the 170kg nitrogen limit are being explored, which could loosen the core controls, while civil sanctions are being considered and 1.58 million pounds was committed for NRW enforcement in 2025-26, which strengthens them. Any substantive regulatory change goes to formal consultation.",
+    "summary": "Written statement of 8 October 2025: the independently chaired statutory review completed in March 2025 and Ministers will take all 23 recommendations forward in full and at pace. The direction for SI4 is genuinely two-way: alternatives to the closed periods and the 170kg nitrogen limit are being explored, which could loosen the core controls, while civil sanctions are being considered and 1.58 million pounds was committed for NRW enforcement in 2025-26, which strengthens them. Any substantive regulatory change goes to formal consultation; a ministerial answer of 14 July 2026 confirmed any change will carry a regulatory impact assessment. The new government's Programme for Government (22 September 2026) commits to implement a new approach to managing nutrients across catchments, moving away from the 'farming by calendar' approach, which signals the closed periods are likely to be replaced. No consultation on changes had been published by 6 October 2026.",
     "title": "Control of Agricultural Pollution Regulations review: all 23 recommendations taken forward, alternatives to the 170kg limit on the table",
     "topics": [
       "pollution-water-and-land"
@@ -360,7 +629,60 @@
     "url": "https://www.gov.wales/written-statement-update-review-control-agricultural-pollutions-regulations"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI8",
+        "direction": "neutral",
+        "requirement_id": "si8",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "follow_up",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "neutral"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": "2027-04-01",
+    "flags": [],
+    "grading": "B2",
+    "hazards": [
+      "coal-tip-instability",
+      "public-funding-pressure"
+    ],
+    "id": "disused-tips-authority-2027-funding-gap",
+    "lane": "senedd",
+    "lane_name": "Senedd",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "south-east-wales",
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "legislation",
+    "requirement_ids": [
+      "si8"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "senedd-research",
+    "source_name": "Senedd Research",
+    "state": "emerging",
+    "summary": "On 11 September 2026, the first anniversary of the Disused Mine and Quarry Tips (Wales) Act 2025, Senedd Research reported that a new Disused Tips Authority was scheduled to be established in April 2027 to keep a register of disused tips, assess every tip and plan management of the highest-risk ones, taking over functions now held by local authorities and NRW. It noted 368 tips assessed as having potential to impact public safety, an earlier remediation estimate of at least 600 million pounds, and a January 2026 multi-year grant to NRW and ten councils. UK Government contributions were set at 39.3 million pounds a year to 2029, but the Welsh Government had made no budget decisions for 2027-28 and 2028-29, and the First Minister said in June 2026 that the UK Government should pay.",
+    "title": "One year on, the Disused Mine and Quarry Tips (Wales) Act 2025: Disused Tips Authority due April 2027, with remediation funding beyond 2026-27 unresolved",
+    "topics": [
+      "people-place-and-resilience",
+      "governance-and-funding",
+      "soil-and-land"
+    ],
+    "url": "https://research.senedd.wales/research-articles/disused-coal-tips-who-acts-who-pays-and-what-comes-next/"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI2",
@@ -381,18 +703,16 @@
     "directions": [
       "threatens"
     ],
-    "distinct_sources": 0,
+    "distinct_sources": 1,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "C3",
     "hazards": [],
     "id": "eciu-wales-tree-planting-14-percent-of-target",
     "lane": "independent-media",
     "lane_name": "Independent media",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -408,7 +728,7 @@
     "source_id": "nation-cymru",
     "source_name": "Nation.Cymru",
     "state": "emerging",
-    "summary": "Energy and Climate Intelligence Unit analysis (reported 7 June 2026) projects Wales will deliver only 14 percent of its 2030 woodland creation target, within a UK-wide cumulative shortfall of about 41,000 hectares by 2030. Over 70 percent of the carbon removal needed to 2050 depends on trees planted in the next five years, and polling shows 66 percent of Welsh adults support significantly increased planting.",
+    "summary": "Energy and Climate Intelligence Unit analysis (reported 7 June 2026) projects Wales will deliver only 14 percent of its 2030 woodland creation target, within a UK-wide cumulative shortfall of about 41,000 hectares by 2030. Over 70 percent of the carbon removal needed to 2050 depends on trees planted in the next five years, and polling shows 66 percent of Welsh adults support significantly increased planting. Official provisional statistics published by Forest Research on 25 June 2026 bear the projection out: only 680 hectares of new woodland were created in Wales in the year to 31 March 2026, about 10 percent of the 6,000 hectare annual target and down from 960 hectares in 2024-25.",
     "title": "ECIU analysis: Wales projected to deliver just 14 percent of its 2030 tree planting target",
     "topics": [
       "woodland-and-forestry"
@@ -416,7 +736,102 @@
     "url": "https://nation.cymru/news/new-study-finds-wales-will-only-deliver-14-of-tree-planting-target/"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI11",
+        "direction": "informs_baseline",
+        "requirement_id": "si11",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "park",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "informs_baseline"
+    ],
+    "distinct_sources": 0,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C2",
+    "hazards": [],
+    "id": "eciu-welsh-net-zero-economy-2025",
+    "lane": "research-evidence",
+    "lane_name": "Research and evidence",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "C",
+    "report_type": "research",
+    "requirement_ids": [
+      "si11"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "Energy and Climate Intelligence Unit (ECIU)",
+    "state": "emerging",
+    "summary": "On 21 May 2026 the Energy and Climate Intelligence Unit published The Welsh Net Zero Economy in 2025, with analysis by CBI Economics and The Data City. It found net zero activity contributed 4.0 billion pounds of gross value added, 4.3 percent of Welsh output, and over 41,300 full-time equivalent jobs across about 1,342 employers, 87 percent of them small or medium-sized. It put the Welsh renewable generation pipeline at 13.1 billion pounds and 10.9 GW.",
+    "title": "ECIU analysis values the Welsh net zero economy at 4 billion pounds of output and 41,300 jobs",
+    "topics": [
+      "climate-emissions",
+      "partnership-and-society"
+    ],
+    "url": "https://eciu.net/analysis/reports/welsh-net-zero-economy-in-2025"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI6",
+        "direction": "informs_baseline",
+        "requirement_id": "si6",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "brief",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "informs_baseline"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [],
+    "id": "energy-generation-use-wales-combined-report-2026",
+    "lane": "welsh-government",
+    "lane_name": "Welsh Government",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "data_release",
+    "requirement_ids": [
+      "si6"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "welsh-government",
+    "source_name": "Welsh Government",
+    "state": "emerging",
+    "summary": "The Welsh Government published Energy Generation and Use in Wales: first combined report on 18 March 2026 and revised it on 27 August 2026 after a data error. Renewable electricity generation was equivalent to 55 percent of Welsh electricity consumption in 2024, against targets of 70 percent by 2030 and 100 percent by 2035, while demand was projected to rise from 14.5 TWh in 2024 to 23.8 TWh in 2035, so renewable generation would need to triple. About 31,000 heat pumps had been installed (5 percent of the 580,000 target for 2035), renewable capacity reached 4.8 GW and locally owned capacity 0.99 GW against a 1.5 GW target.",
+    "title": "Energy generation and use in Wales, first combined report: renewables met 55 percent of 2024 electricity use, and generation must triple for the 2035 target",
+    "topics": [
+      "climate-emissions"
+    ],
+    "url": "https://www.gov.wales/energy-generation-and-use-wales"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI1",
@@ -443,18 +858,16 @@
     "directions": [
       "supports"
     ],
-    "distinct_sources": 0,
+    "distinct_sources": 2,
     "event_horizon": "2028-04-27",
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B2",
     "hazards": [],
     "id": "environment-principles-governance-biodiversity-targets-wales-act-2026",
     "lane": "welsh-government",
     "lane_name": "Welsh Government",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -495,19 +908,15 @@
       "supports"
     ],
     "distinct_sources": 0,
-    "event_horizon": "2026-09-11",
-    "flags": [
-      "passed_horizon",
-      "future_language",
-      "stale_verification"
-    ],
+    "event_horizon": null,
+    "flags": [],
     "grading": "B2",
     "hazards": [],
     "id": "environmental-principles-statement-consultation-2026",
     "lane": "welsh-government",
     "lane_name": "Welsh Government",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -522,13 +931,13 @@
     "source_id": "welsh-government",
     "source_name": "Welsh Government",
     "state": "emerging",
-    "summary": "On 19 June 2026 the Welsh Government opened consultation on the draft Environmental Principles and Integrating Environmental Protection Statement under the Environment (Principles, Governance and Biodiversity Targets) (Wales) Act 2026. The statement operationalises the four principles (prevention, precaution, rectification at source, polluter pays) that Welsh Ministers and NRW must apply in policy making. Consultation closes 11 September 2026.",
-    "title": "Consultation opens on the Environmental Principles Statement that NRW must apply under the 2026 Act",
+    "summary": "On 19 June 2026 the Welsh Government opened consultation on the draft Environmental Principles and Integrating Environmental Protection Statement under the Environment (Principles, Governance and Biodiversity Targets) (Wales) Act 2026. The statement operationalises the four principles (prevention, precaution, rectification at source, polluter pays) that Welsh Ministers and NRW must apply in policy making. The consultation closed on 11 September 2026; as of 6 October 2026 the Welsh Government was reviewing responses and had not published the outcome or the final statement, which the Act requires to be laid before the Senedd with a summary of representations.",
+    "title": "Consultation on the Environmental Principles Statement that NRW must apply under the 2026 Act closed on 11 September 2026",
     "topics": [],
     "url": "https://www.gov.wales/written-statement-launch-consultation-environmental-principles-and-integrating-environmental"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI8",
@@ -543,11 +952,9 @@
     "directions": [
       "supports"
     ],
-    "distinct_sources": 0,
+    "distinct_sources": 1,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B2",
     "hazards": [
       "coastal-flooding-and-erosion"
@@ -555,8 +962,8 @@
     "id": "fcerm-programme-2026-27",
     "lane": "welsh-government",
     "lane_name": "Welsh Government",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -580,7 +987,110 @@
     "url": "https://www.gov.wales/written-statement-flood-and-coastal-erosion-risk-management-programme-2026-27"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI6",
+        "direction": "neutral",
+        "requirement_id": "si6",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI11",
+        "direction": "neutral",
+        "requirement_id": "si11",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "neutral"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B3",
+    "hazards": [],
+    "id": "fgc-section-20-review-energy-policy-2026",
+    "lane": "governance-capacity",
+    "lane_name": "Governance and capacity",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si6",
+      "si11"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "future-generations-commissioner",
+    "source_name": "Future Generations Commissioner for Wales",
+    "state": "emerging",
+    "summary": "The Future Generations Commissioner's Climate and Nature page, updated on 24 August 2026, recorded that in July 2026 the Commissioner announced he would undertake a Section 20 Review into energy policy and decision-making in Wales, using his strongest powers. The same page recorded his call for the Welsh Government to double its ambition for community energy.",
+    "title": "Future Generations Commissioner announces a Section 20 review of energy policy and decision-making in Wales",
+    "topics": [
+      "climate-emissions",
+      "governance-and-funding"
+    ],
+    "url": "https://www.futuregenerations.wales/work/climate-and-nature/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI7",
+        "direction": "informs_baseline",
+        "requirement_id": "si7",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "informs_baseline"
+    ],
+    "distinct_sources": 0,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C2",
+    "hazards": [],
+    "id": "fields-in-trust-green-space-index-wales-2026",
+    "lane": "partnership-and-civil-society",
+    "lane_name": "Partnership and civil society",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales",
+      "north-wales"
+    ],
+    "reliability": "C",
+    "report_type": "data_release",
+    "requirement_ids": [
+      "si7"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "Welsh Country (Fields in Trust release)",
+    "state": "emerging",
+    "summary": "On 23 September 2026 Fields in Trust published its Green Space Index, finding that 19 percent of Welsh residents lived within a ten-minute walk of a permanently protected park, against 14 percent across Great Britain, and that 12 percent lived beyond a ten-minute walk of any green space. Wrexham reached 52 percent after a decade of legal protection agreements, while 23 percent of Gwynedd residents lived beyond a ten-minute walk of green space. The charity called on the Welsh Government, in its consultation on the National Development Framework, and all 22 councils to adopt its Deed of Dedication and Standards.",
+    "title": "Fields in Trust Green Space Index 2026: 19 percent of people in Wales live within a ten-minute walk of a permanently protected park",
+    "topics": [
+      "people-place-and-resilience"
+    ],
+    "url": "https://www.welshcountry.co.uk/wales-has-britains-best-protected-borough-for-green-space/"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI1",
@@ -597,16 +1107,14 @@
     ],
     "distinct_sources": 0,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B2",
     "hazards": [],
     "id": "first-asian-hornet-nest-wales-2026",
     "lane": "ecological-surveillance",
     "lane_name": "Ecological surveillance",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -629,7 +1137,7 @@
     "url": "https://www.itv.com/news/wales/2026-01-20/warning-issued-after-first-asian-hornet-nest-found-in-wales"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI8",
@@ -646,17 +1154,14 @@
     ],
     "distinct_sources": 0,
     "event_horizon": null,
-    "flags": [
-      "future_language",
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B3",
     "hazards": [],
     "id": "flood-re-ends-2039-insurance-affordability",
     "lane": "research-evidence",
     "lane_name": "Research and evidence",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -671,7 +1176,7 @@
     "source_id": null,
     "source_name": "insurancejournal.com",
     "state": "emerging",
-    "summary": "The Flood Re reinsurance scheme that keeps UK flood insurance affordable is due to end in 2039 on the assumption that flood risk will have fallen enough for risk-reflective pricing. Industry analysis (February 2026) doubts adaptation will move fast enough, with around 8 million properties in England alone projected at flood risk by 2050 and rising numbers of homes already hard to insure.",
+    "summary": "The Flood Re reinsurance scheme that keeps UK flood insurance affordable is scheduled to end in 2039 on the assumption that flood risk will have fallen enough for risk-reflective pricing. Industry analysis (February 2026) doubts adaptation will move fast enough, with around 8 million properties in England alone projected at flood risk by 2050 and rising numbers of homes already hard to insure. On 1 July 2026 Flood Re and Defra announced a reform package to prepare for the 2039 exit: Flood Performance Certificates with premium discounts, an expanded Build Back Better resilience grant of up to 10,000 pounds, and a cut in contents-only premiums for Council Tax Bands A and B from 52 to 25 pounds from April 2027.",
     "title": "Flood Re ends in 2039: insurance affordability cliff if adaptation lags climate risk",
     "topics": [
       "flood-risk",
@@ -680,7 +1185,62 @@
     "url": "https://www.insurancejournal.com/news/international/2026/02/20/858854.htm"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI6",
+        "direction": "threatens",
+        "requirement_id": "si6",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI5",
+        "direction": "threatens",
+        "requirement_id": "si5",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "threatens"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C3",
+    "hazards": [],
+    "id": "green-alliance-zev-mandate-weakening-cb7-2026",
+    "lane": "research-evidence",
+    "lane_name": "Research and evidence",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "C",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si6",
+      "si5"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "green-alliance",
+    "source_name": "Green Alliance",
+    "state": "emerging",
+    "summary": "Green Alliance published a briefing on 22 June 2026 stating that the UK Government was reportedly preparing to consult on cutting the zero emission vehicle mandate for 2030 from 80 percent of new car sales to 50 percent. Its analysis found the change could leave about 70 million tonnes of extra carbon dioxide to remove during the Seventh Carbon Budget period (2038 to 2042). The consultation was reported, not confirmed, on the page.",
+    "title": "Green Alliance warns a reported cut to the zero emission vehicle mandate, from 80 to 50 percent, would add about 70 MtCO2 to Carbon Budget Seven",
+    "topics": [
+      "climate-emissions",
+      "air-quality"
+    ],
+    "url": "https://green-alliance.org.uk/briefing/wrong-turn-why-watering-down-the-zero-emissions-mandate-endangers-carbon-budget-seven/"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI7",
@@ -695,18 +1255,16 @@
     "directions": [
       "supports"
     ],
-    "distinct_sources": 0,
+    "distinct_sources": 1,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "C2",
     "hazards": [],
     "id": "green-flag-2026-record-330-welsh-sites",
     "lane": "independent-media",
     "lane_name": "Independent media",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -729,7 +1287,289 @@
     "url": "https://nation.cymru/news/wales-breaks-green-flag-record-with-330-award-winning-spaces/"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI3",
+        "direction": "supports",
+        "requirement_id": "si3",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI9",
+        "direction": "supports",
+        "requirement_id": "si9",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "park",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C2",
+    "hazards": [],
+    "id": "gwent-green-grid-nature-networks-lottery-award-2026",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "south-east-wales"
+    ],
+    "reliability": "C",
+    "report_type": "funding",
+    "requirement_ids": [
+      "si3",
+      "si9"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "nation-cymru",
+    "source_name": "Nation.Cymru",
+    "state": "emerging",
+    "summary": "Nation.Cymru reported on 16 March 2026 that the Gwent Green Grid Partnership, the five Gwent local authorities working with Natural Resources Wales and others, had secured 999,974 pounds from the National Lottery Nature Networks Fund. Monmouthshire County Council leads the three-year programme, which funds freshwater and wetland habitat restoration, natural flood management and sustainable drainage, and community volunteering and green skills.",
+    "title": "Gwent Green Grid Partnership wins 999,974 pounds from the National Lottery Nature Networks Fund for a three-year nature recovery programme",
+    "topics": [
+      "nature-and-ecosystems",
+      "partnership-and-society",
+      "flood-risk"
+    ],
+    "url": "https://nation.cymru/news/council-secures-999974-lottery-funding-for-major-nature-recovery-programme/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI1",
+        "direction": "threatens",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI6",
+        "direction": "threatens",
+        "requirement_id": "si6",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI2",
+        "direction": "threatens",
+        "requirement_id": "si2",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "follow_up",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "threatens"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C3",
+    "hazards": [
+      "upland-wildfire"
+    ],
+    "id": "illegal-grassland-burning-enforcement-gap-2026",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "C",
+    "report_type": "environmental",
+    "requirement_ids": [
+      "si1",
+      "si6",
+      "si2"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "nation-cymru",
+    "source_name": "Nation.Cymru",
+    "state": "emerging",
+    "summary": "On 1 August 2026 Nation.Cymru reported a Wild Cymru investigation into illegal grassland burns as a cause of Welsh wildfires. Freedom of information data showed Mid and West Wales Fire and Rescue Service was notified of controlled burns 2,117 times between April and September 2025, all outside the legal burning season, though the figures are hard to verify. Asked who enforces the Heather and Grass etc. Burning (Wales) Regulations 2008, NRW said the Welsh Government, and the Welsh Government said investigation and enforcement were operational matters for NRW, the police and local authorities.",
+    "title": "Wild Cymru investigation links Welsh wildfires to illegal grassland burning and exposes an enforcement gap between the Welsh Government and NRW",
+    "topics": [
+      "nature-and-ecosystems",
+      "peatland",
+      "governance-and-funding"
+    ],
+    "url": "https://nation.cymru/feature/illegal-grassland-burns-why-is-wales-the-wildfire-capital-of-the-uk/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI1",
+        "direction": "informs_baseline",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "park",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "informs_baseline"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [
+      "invasive-non-native-plants",
+      "invasive-aquatic-species"
+    ],
+    "id": "jncc-invasive-species-indicator-2025",
+    "lane": "uk-government-and-regulators",
+    "lane_name": "UK Government and regulators",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "data_release",
+    "requirement_ids": [
+      "si1"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "jncc",
+    "source_name": "Joint Nature Conservation Committee (JNCC)",
+    "state": "emerging",
+    "summary": "In December 2025 JNCC updated the UK biodiversity indicator on pressure from invasive species, with data to 2024. It assessed the long term trend (1969 to 2024) in the number of invasive non-native species established across 10 percent or more of Great Britain as deteriorating in freshwater, marine (coastal) and terrestrial environments, with 14 freshwater, 30 marine and 64 terrestrial species at that extent in 2024, and found little or no change in the rate of new establishments. The indicator is the UK's headline measure for Global Biodiversity Framework Target 6.",
+    "title": "JNCC invasive species indicator 2025: pressure deteriorating in freshwater, marine and terrestrial environments of Great Britain",
+    "topics": [
+      "biosecurity",
+      "nature-and-ecosystems"
+    ],
+    "url": "https://jncc.gov.uk/our-work/ukbi-invasive-species/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI4",
+        "direction": "neutral",
+        "requirement_id": "si4",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "follow_up",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "neutral"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C3",
+    "hazards": [],
+    "id": "lower-dee-phosphate-wrexham-dispute-2026",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "dee",
+      "north-wales"
+    ],
+    "reliability": "C",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si4"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "nation-cymru",
+    "source_name": "Nation.Cymru",
+    "state": "emerging",
+    "summary": "In July 2026 a Wrexham County Borough Council planning report found that a single high phosphorus sample taken in March 2025 had kept the Lower Dee classed as failing its target, while Environment Agency samples showed acceptable levels; more than 100 planning applications had been on hold for five years over phosphates. A councillor accused NRW of professional ineptitude and called for it to be broken up. NRW said councils, not NRW, decided to pause applications, that it had recommended the waterbody would not require nutrient neutrality, and that its next River Dee assessment was scheduled for 2027.",
+    "title": "Wrexham councillors attack NRW over a single Lower Dee phosphate sample that held more than 100 planning applications; NRW drops the nutrient neutrality requirement",
+    "topics": [
+      "pollution-water-and-land",
+      "governance-and-funding"
+    ],
+    "url": "https://nation.cymru/news/natural-resources-wales-defends-river-dee-phosphate-monitoring-following-criticism/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI8",
+        "direction": "neutral",
+        "requirement_id": "si8",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI9",
+        "direction": "supports",
+        "requirement_id": "si9",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "supports",
+      "neutral"
+    ],
+    "distinct_sources": 0,
+    "event_horizon": "2027-03-31",
+    "flags": [],
+    "grading": "C3",
+    "hazards": [
+      "river-and-surface-water-flooding",
+      "public-funding-pressure"
+    ],
+    "id": "marches-forward-severn-flood-funding-bid-2026",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "severn",
+      "mid-wales"
+    ],
+    "reliability": "C",
+    "report_type": "funding",
+    "requirement_ids": [
+      "si8",
+      "si9"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "Shropshire Star",
+    "state": "emerging",
+    "summary": "The Shropshire Star reported on 26 September 2026 that the Marches Forward Partnership (Shropshire, Herefordshire, Powys and Monmouthshire councils) planned to ask the Senedd and Westminster for about 5 million pounds, 2.5 million from each, partly to deliver the Severn Valley Water Management Scheme strategy. The scheme, led by the Environment Agency, NRW, Powys and Shropshire councils, had about 14 million pounds of central funding, which ends at the close of the 2026-27 financial year. Two-way for SI8: a delivery route if funded, a gap if not.",
+    "title": "Marches Forward Partnership councils, including Powys and Monmouthshire, seek 5 million pounds to deliver the Severn Valley flood strategy",
+    "topics": [
+      "flood-risk",
+      "governance-and-funding",
+      "partnership-and-society"
+    ],
+    "url": "https://www.shropshirestar.com/news/shropshire-and-welsh-councils-unite-in-ps5m-bid-for-severn-flood-plans-9176737"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI4",
@@ -746,9 +1586,7 @@
     ],
     "distinct_sources": 0,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B2",
     "hazards": [
       "metal-mine-pollution"
@@ -756,8 +1594,8 @@
     "id": "metal-mine-water-pollution-wales",
     "lane": "uk-government-and-regulators",
     "lane_name": "UK Government and regulators",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -772,7 +1610,7 @@
     "source_id": null,
     "source_name": "committees.parliament.uk",
     "state": "emerging",
-    "summary": "About 1,300 abandoned metal mines put over 500 tonnes of metals (zinc, lead, cadmium, iron) into Welsh rivers every year, causing roughly 700km, about 6 percent of Welsh rivers, to fail good chemical or ecological status. The Wales Metal Mines Programme (Natural Resources Wales with the Mining Remediation Authority, Welsh Government funded) is remediating priority sites, and a UK Parliament inquiry into metal mine pollution in Wales is live.",
+    "summary": "About 1,300 abandoned metal mines put over 500 tonnes of metals (zinc, lead, cadmium, iron) into Welsh rivers every year, causing roughly 700km, about 6 percent of Welsh rivers, to fail good chemical or ecological status. The Wales Metal Mines Programme (Natural Resources Wales with the Mining Remediation Authority, Welsh Government funded) is remediating priority sites. The House of Commons Welsh Affairs Committee inquiry into metal mine pollution in Wales took oral evidence on 1 July 2026 and on 21 July 2026 wrote to the Secretary of State for Wales calling for four-nation lead testing of children, food testing standards, farmer support and clearer public risk information, with a reply requested by 7 September 2026; the committee pressed again in a letter reported on 15 September 2026, and no government reply had been published by 6 October 2026. The Welsh Government's Programme for Government (22 September 2026) commits to a Wales-wide strategy to map, prioritise and restore contaminated post-industrial land and polluted waterways, while pressing the UK Government to fund it.",
     "title": "Abandoned metal mines pollute about 700km of Welsh rivers, a major SI4 pressure with a live inquiry",
     "topics": [
       "pollution-water-and-land"
@@ -804,16 +1642,14 @@
     ],
     "distinct_sources": 0,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B2",
     "hazards": [],
     "id": "mpa-network-management-framework-expired-2026",
     "lane": "welsh-government",
     "lane_name": "Welsh Government",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-25",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -837,7 +1673,230 @@
     "url": "https://www.gov.wales/marine-protected-area-network-management-progress-report-202223-202425"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI6",
+        "direction": "neutral",
+        "requirement_id": "si6",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "brief",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "neutral"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B3",
+    "hazards": [],
+    "id": "national-energy-strategy-emissions-target-2026",
+    "lane": "senedd",
+    "lane_name": "Senedd",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si6"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "senedd-cymru",
+    "source_name": "Senedd Cymru",
+    "state": "emerging",
+    "summary": "In Senedd plenary questions on 23 September 2026, Cabinet Minister Adam Price said the Welsh Government's National Energy Strategy would take a whole-systems approach, replacing the previous renewable electricity generation target with an emissions-based energy target, in support of an ambition of net zero by 2040. He said the strategy would set a more planned spatial approach to energy development, mandate a minimum level of community ownership for larger schemes and progress undergrounding of lines at 132kV and below. Nation.Cymru had reported on 21 August 2026 that the strategy was being finalised and would weigh protection of productive agricultural land. The strategy itself had not been published by 6 October 2026.",
+    "title": "National Energy Strategy to replace Wales' renewable electricity targets with an emissions-based energy target",
+    "topics": [
+      "climate-emissions",
+      "governance-and-funding"
+    ],
+    "url": "https://record.senedd.wales/Plenary/16263?lang=en-GB"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI9",
+        "direction": "supports",
+        "requirement_id": "si9",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI2",
+        "direction": "supports",
+        "requirement_id": "si2",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI6",
+        "direction": "supports",
+        "requirement_id": "si6",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [],
+    "id": "nature-estate-cymru-landowner-group-2026",
+    "lane": "welsh-government",
+    "lane_name": "Welsh Government",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "partnership",
+    "requirement_ids": [
+      "si9",
+      "si2",
+      "si6"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "welsh-government",
+    "source_name": "Welsh Government",
+    "state": "emerging",
+    "summary": "The Welsh Government announced on 13 March 2026 that Nature Estate Cymru, convened by the Deputy First Minister, held its first meeting on 12 March at the National Botanic Garden of Wales. It brought together major landowners including Natural Resources Wales, the three national park authorities, the National Trust, RSPB and Dwr Cymru, with an initial focus on tree planting targets and 30by30, and further work on water quality, invasive species, wildfire risk and public access. The same release named the first four sites recommended for full Naturfa status after a pilot that assessed twelve.",
+    "title": "Nature Estate Cymru launched: major Welsh landowners, including NRW, convened to drive tree planting and 30by30; first four Naturfa sites named",
+    "topics": [
+      "partnership-and-society",
+      "woodland-and-forestry",
+      "nature-and-ecosystems"
+    ],
+    "url": "https://www.gov.wales/nature-estate-cymru-launches-protect-wales-land-and-climate"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI2",
+        "direction": "supports",
+        "requirement_id": "si2",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI1",
+        "direction": "supports",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 0,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C3",
+    "hazards": [],
+    "id": "nature-networks-fund-2026-round",
+    "lane": "partnership-and-civil-society",
+    "lane_name": "Partnership and civil society",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "C",
+    "report_type": "funding",
+    "requirement_ids": [
+      "si2",
+      "si1"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "National Biodiversity Network Trust",
+    "state": "emerging",
+    "summary": "On 15 July 2026 the National Biodiversity Network reported that the Welsh Government's Nature Networks Fund had opened a new round, delivered by the National Lottery Heritage Fund in partnership with NRW, offering grants of 250,000 pounds to 1 million pounds for work in and around Wales' network of protected sites. Expressions of interest were due by noon on 5 August 2026. Since its launch in 2021 the fund had awarded 147 projects a share of 54 million pounds.",
+    "title": "Nature Networks Fund reopens with grants of 250,000 pounds to 1 million pounds for protected site resilience",
+    "topics": [
+      "nature-and-ecosystems",
+      "governance-and-funding"
+    ],
+    "url": "https://nbn.org.uk/news/the-welsh-governments-nature-networks-fund-is-now-open/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI2",
+        "direction": "supports",
+        "requirement_id": "si2",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI9",
+        "direction": "supports",
+        "requirement_id": "si9",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 0,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [],
+    "id": "nature-networks-private-finance-landscapes-2026",
+    "lane": "partnership-and-civil-society",
+    "lane_name": "Partnership and civil society",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "south-east-wales",
+      "mid-wales"
+    ],
+    "reliability": "B",
+    "report_type": "funding",
+    "requirement_ids": [
+      "si2",
+      "si9"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "The National Lottery Heritage Fund",
+    "state": "emerging",
+    "summary": "The Heritage Fund published on 24 July 2026 a Nature Networks Fund Round 5 award, made on 15 December 2025 to the Royal Society of Wildlife Trusts, for a project to develop nature recovery proposals ready for private investment. It focuses on Bannau Brycheiniog National Park and the Gwent Levels, working with farmers, utilities and a National Park on carbon markets, nature-based solutions and voluntary biodiversity net gain, and is meant to feed Welsh Government policy on sustainable finance.",
+    "title": "Nature Networks Fund backs a Wildlife Trusts project to build investment-ready nature recovery proposals for Bannau Brycheiniog and the Gwent Levels",
+    "topics": [
+      "nature-and-ecosystems",
+      "governance-and-funding",
+      "partnership-and-society"
+    ],
+    "url": "https://www.heritagefund.org.uk/projects/supporting-nature-recovery-wales"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI1",
@@ -876,18 +1935,16 @@
     "directions": [
       "supports"
     ],
-    "distinct_sources": 0,
+    "distinct_sources": 1,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B2",
     "hazards": [],
     "id": "nature-recovery-action-plan-2026",
     "lane": "welsh-government",
     "lane_name": "Welsh Government",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -915,7 +1972,291 @@
     "url": "https://www.gov.wales/nature-recovery-action-plan-2026-html"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI10",
+        "direction": "informs_baseline",
+        "requirement_id": "si10",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI6",
+        "direction": "informs_baseline",
+        "requirement_id": "si6",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "park",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "informs_baseline"
+    ],
+    "distinct_sources": 0,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C2",
+    "hazards": [],
+    "id": "nesta-heat-pump-uptake-scotland-wales-2026",
+    "lane": "research-evidence",
+    "lane_name": "Research and evidence",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales",
+      "mid-wales",
+      "north-wales"
+    ],
+    "reliability": "C",
+    "report_type": "research",
+    "requirement_ids": [
+      "si10",
+      "si6"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "Nesta",
+    "state": "emerging",
+    "summary": "On 4 June 2026 Nesta published an analysis of heat pump installations in Scotland and Wales using MCS data. It found that seven of the top 20 UK local authorities for air source heat pump installs per household were in Wales, led by Ceredigion (9.2 percent of homes) and the Isle of Anglesey (7.1 percent), while Cardiff and other cities were below 0.5 percent. It noted that the Seventh Carbon Budget implies about 1.3 million heat pumps in Wales by 2050, and that uptake rose and fell with funding schemes, so the planned end of the Energy Company Obligation could alter the trajectory.",
+    "title": "Nesta analysis finds Welsh heat pump uptake among the highest in the UK but highly uneven, from 9.2 percent of homes in Ceredigion to under 0.5 percent in Cardiff",
+    "topics": [
+      "climate-emissions",
+      "public-behaviour"
+    ],
+    "url": "https://www.nesta.org.uk/data-visualisation-and-interactive/funding-the-future-of-heat-lessons-from-scotland-and-wales/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI6",
+        "direction": "neutral",
+        "requirement_id": "si6",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI10",
+        "direction": "supports",
+        "requirement_id": "si10",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "supports",
+      "neutral"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B3",
+    "hazards": [],
+    "id": "net-zero-wales-2026-2030-plan-engagement-2025",
+    "lane": "welsh-government",
+    "lane_name": "Welsh Government",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si6",
+      "si10"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "welsh-government",
+    "source_name": "Welsh Government",
+    "state": "emerging",
+    "summary": "In October 2025 the Welsh Government published a discussion paper, 'Enabling the People of Wales to Deliver and Benefit from the Net Zero Transition in 2026-2030 and beyond', to inform the next emissions reduction plan for the third carbon budget period. The paper said most decarbonisation to date had come from power and industry, and that the next plan, scheduled for publication by the end of 2026, must set a path for agriculture and land use, housing and transport. It was used at Wales Climate Week (3 to 5 November 2025) and in Climate Conversations community events running to the end of February 2026.",
+    "title": "Welsh Government discussion paper opens engagement on the next emissions reduction plan for 2026 to 2030",
+    "topics": [
+      "climate-emissions",
+      "partnership-and-society"
+    ],
+    "url": "https://www.gov.wales/sites/default/files/publications/2025-10/net-zero-transition-2026-to-2030-and-beyond.pdf"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI11",
+        "direction": "supports",
+        "requirement_id": "si11",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI8",
+        "direction": "supports",
+        "requirement_id": "si8",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 0,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C3",
+    "hazards": [],
+    "id": "nhs-wales-climate-adaptation-accelerator-2025-26",
+    "lane": "international",
+    "lane_name": "International",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "C",
+    "report_type": "partnership",
+    "requirement_ids": [
+      "si11",
+      "si8"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "ATACH Community of Practice (Alliance for Transformative Action on Climate and Health)",
+    "state": "emerging",
+    "summary": "A case study published on the ATACH community of practice site in November 2025 reported that, through the Climate Adaptation Accelerator Programme 2025-2026, all 13 NHS Wales organisations were developing climate risk assessments and adaptation plans using a Climate Adaptation Toolkit. The programme trained Climate Preparedness Leads through workshops and e-learning and was presented as a systematic, sector-wide approach rather than ad hoc initiatives.",
+    "title": "All 13 NHS Wales organisations develop climate risk assessments and adaptation plans through the Climate Adaptation Accelerator Programme 2025-26",
+    "topics": [
+      "people-place-and-resilience",
+      "partnership-and-society"
+    ],
+    "url": "https://www.atachcommunity.com/our-impact/case-studies/climate-adaptation-toolkit-the-experience-of-wales/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI11",
+        "direction": "supports",
+        "requirement_id": "si11",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI6",
+        "direction": "neutral",
+        "requirement_id": "si6",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "park",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "supports",
+      "neutral"
+    ],
+    "distinct_sources": 0,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C2",
+    "hazards": [],
+    "id": "nhs-wales-decarbonisation-delivery-plan-2025",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "C",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si11",
+      "si6"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "Wales247",
+    "state": "emerging",
+    "summary": "On 7 November 2025, during Wales Climate Week, the Welsh Government published a refreshed NHS Wales Decarbonisation Strategic Delivery Plan setting a route to the 2050 net zero target. NHS organisations cut emissions from non supply chain sources such as buildings and transport by almost a quarter between 2018-19 and 2024, but overall NHS Wales emissions rose over the same period because of its large supply chain.",
+    "title": "Refreshed NHS Wales Decarbonisation Strategic Delivery Plan published; supply chain emissions still rising",
+    "topics": [
+      "climate-emissions",
+      "partnership-and-society"
+    ],
+    "url": "https://www.wales247.co.uk/new-plan-unveiled-to-accelerate-nhs-wales-journey-to-net-zero"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI8",
+        "direction": "neutral",
+        "requirement_id": "si8",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI9",
+        "direction": "supports",
+        "requirement_id": "si9",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "supports",
+      "neutral"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [
+      "river-and-surface-water-flooding",
+      "coastal-flooding-and-erosion"
+    ],
+    "id": "nicw-flood-resilience-2050-progress-2026",
+    "lane": "welsh-government",
+    "lane_name": "Welsh Government",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si8",
+      "si9"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "welsh-government",
+    "source_name": "Welsh Government",
+    "state": "emerging",
+    "summary": "On 25 March 2026 the Deputy First Minister published a written statement on progress against the National Infrastructure Commission for Wales (NICW) report Building Resilience to Flooding in Wales by 2050. It agreed in principle to a new long-term flood and coastal resilience strategy and deferred decisions on national governance and statutory roles to the next Senedd term, linking both to the water governance Green Paper. It reported over 5 million pounds for natural flood management in 2026-27, the Taff Strategy as the catchment pilot, and declined multi-year funding settlements because budgets are set annually.",
+    "title": "Welsh Government reports progress on the NICW flood resilience recommendations, deferring a new long-term strategy and governance changes to the next Senedd",
+    "topics": [
+      "flood-risk",
+      "people-place-and-resilience",
+      "governance-and-funding"
+    ],
+    "url": "https://www.gov.wales/written-statement-progress-commitments-response-nicws-report-building-resilience-flooding-wales"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI1",
@@ -943,11 +2284,9 @@
       "threatens",
       "informs_baseline"
     ],
-    "distinct_sources": 0,
+    "distinct_sources": 1,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B2",
     "hazards": [
       "drought-and-low-flows"
@@ -955,8 +2294,8 @@
     "id": "north-wales-drought-declared-2026",
     "lane": "welsh-government",
     "lane_name": "Welsh Government",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -973,15 +2312,15 @@
     "source_id": "welsh-government",
     "source_name": "Welsh Government",
     "state": "emerging",
-    "summary": "On 23 July 2026 Natural Resources Wales declared drought status for Gwynedd, Ynys Mon, Clwyd, the Dee and the Upper Severn, with South and West Wales moving to prolonged dry weather. A Welsh Government Written Statement the same day confirms exceptionally low flows on the Clwyd, Dyfi, Alyn, Clywedog, Conwy and Tanat, with new record minimum flows on the Clwyd and the Erch, alongside wildfires and successive heatwaves. North Wales and the Upper Severn had under 2 percent of expected July rainfall, on course for the driest July in almost 190 years.",
-    "title": "NRW declares drought status for North Wales as July 2026 nears a 190-year rainfall low",
+    "summary": "On 23 July 2026 Natural Resources Wales declared drought status for Gwynedd, Ynys Mon, Clwyd, the Dee and the Upper Severn, with South and West Wales moving to prolonged dry weather; a Welsh Government Written Statement the same day confirmed the declaration amid wildfires and successive heatwaves. NRW reported exceptionally low flows on the Clwyd, Dyfi, Alyn, Clywedog, Conwy and Tanat, with new record minimum flows on the Clwyd and the Erch. By 30 July 2026 all of Wales was in drought. The Met Office confirmed July 2026 as Wales' driest July in records going back about 190 years, with 9.3mm of rain (9 percent of average) against the previous record of 22.6mm in 1911. Dwr Cymru imposed a temporary use ban on about 33,000 properties in Ceredigion, Pembrokeshire and Carmarthenshire from 19 July, citing demand rather than reservoir levels. After September rainfall, NRW moved south-west Wales to recovery from drought on 28 September 2026, while south-east Wales, North Wales and the Upper Severn remained in drought, with groundwater still exceptionally low in places.",
+    "title": "NRW declared drought in North Wales on 23 July 2026, extended it to all of Wales by 30 July after the driest July on record",
     "topics": [
       "water-resources"
     ],
     "url": "https://www.gov.wales/written-statement-update-dry-weather-drought-and-water-resources-wales"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI4",
@@ -1008,11 +2347,9 @@
     "directions": [
       "threatens"
     ],
-    "distinct_sources": 0,
+    "distinct_sources": 2,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B2",
     "hazards": [
       "public-funding-pressure"
@@ -1020,8 +2357,8 @@
     "id": "nrw-funding-gap-savings-2026-27",
     "lane": "senedd",
     "lane_name": "Senedd",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-25",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -1047,7 +2384,7 @@
     "url": "https://research.senedd.wales/research-articles/nrw-finds-12m-of-savings-what-does-this-mean-for-its-services/"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI4",
@@ -1074,11 +2411,9 @@
     "directions": [
       "threatens"
     ],
-    "distinct_sources": 0,
+    "distinct_sources": 1,
     "event_horizon": "2026-10-24",
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B2",
     "hazards": [
       "public-funding-pressure"
@@ -1086,8 +2421,8 @@
     "id": "nrw-ir35-hmrc-settlement-2025",
     "lane": "welsh-government",
     "lane_name": "Welsh Government",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-25",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -1112,7 +2447,104 @@
     "url": "https://www.gov.wales/written-statement-hm-revenue-and-customs-investigation-conclusion-natural-resources-wales-ir35-tax"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI12",
+        "direction": "threatens",
+        "requirement_id": "si12",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "threatens"
+    ],
+    "distinct_sources": 0,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C2",
+    "hazards": [],
+    "id": "nrw-staff-diversity-data-foi-breach-2026",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "C",
+    "report_type": "incident",
+    "requirement_ids": [
+      "si12"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "The Register",
+    "state": "emerging",
+    "summary": "On 7 September 2026 The Register reported that NRW had confirmed equality monitoring data on around 2,000 current and former employees who worked there between April 2013 and March 2018 was inadvertently published in a spreadsheet released in 2021 under the Freedom of Information Act. The data may have included ethnicity, disability, religion, sexual orientation and Welsh language ability. NRW said a member of the public alerted it on 23 August 2026, that it reported the breach to the Information Commissioner's Office and removed the file, and that it had no evidence of misuse.",
+    "title": "NRW discloses that diversity data on about 2,000 current and former staff was exposed through a 2021 Freedom of Information release",
+    "topics": [
+      "governance-and-funding"
+    ],
+    "url": "https://www.theregister.com/security/2026/09/07/welsh-environment-regulators-foi-blunder-exposes-diversity-data-of-2000-staff/5294748"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI4",
+        "direction": "supports",
+        "requirement_id": "si4",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "brief",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 0,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C3",
+    "hazards": [
+      "storm-overflow-discharges"
+    ],
+    "id": "ofwat-welsh-water-enforcement-44m-2026",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "C",
+    "report_type": "legal",
+    "requirement_ids": [
+      "si4"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "The Guardian",
+    "state": "emerging",
+    "summary": "On 12 March 2026 the Guardian reported that Ofwat had found serious and unacceptable breaches in how Dwr Cymru Welsh Water operated, maintained and upgraded its wastewater network, leading to excessive storm overflow spills. The proposed 44.7 million pound package comprised 40.6 million pounds to reduce spills at specific overflows and tackle groundwater ingress, plus 4.1 million pounds for river quality in extremely sensitive catchments; the company accepted the findings and apologised. It was the seventh case in Ofwat's sector-wide sewage investigation, and the report noted UK plans for a Welsh water regulator, with NRW's possible role not yet settled.",
+    "title": "Ofwat proposes a 44.7 million pound enforcement package against Welsh Water for serious breaches in operating its sewage works and networks",
+    "topics": [
+      "pollution-water-and-land",
+      "governance-and-funding"
+    ],
+    "url": "https://www.theguardian.com/business/2026/mar/12/dwr-cymru-welsh-water-apologises-ofwat-enforcement-plan-regulator"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI10",
@@ -1133,18 +2565,16 @@
     "directions": [
       "informs_baseline"
     ],
-    "distinct_sources": 0,
-    "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "distinct_sources": 1,
+    "event_horizon": "2026-11-30",
+    "flags": [],
     "grading": "B2",
     "hazards": [],
     "id": "people-and-nature-survey-wales-2023-24",
     "lane": "welsh-government",
     "lane_name": "Welsh Government",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -1160,13 +2590,61 @@
     "source_id": "welsh-government",
     "source_name": "Welsh Government",
     "state": "emerging",
-    "summary": "Released 30 September 2025, covering April 2023 to April 2024, and still the latest edition. PaNS Wales is the named metric source for SI10 (population acting on the crises) and feeds SI7 use-of-greenspace evidence, so each edition is the baseline refresh for those indicators. Worth watching for the next release cycle.",
+    "summary": "Released 30 September 2025, covering April 2023 to April 2024, and still the latest edition as of 6 October 2026. PaNS Wales is the named metric source for SI10 (population acting on the crises) and feeds SI7 use-of-greenspace evidence, so each edition is the baseline refresh for those indicators. The gov.wales release page gives the next edition as scheduled for November 2026.",
     "title": "People and Nature Survey Wales, April 2023 to April 2024 results published",
     "topics": [],
     "url": "https://www.gov.wales/people-and-nature-survey-wales-april-2023-april-2024"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI1",
+        "direction": "informs_baseline",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "park",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "informs_baseline"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [],
+    "id": "phytophthora-pluvialis-restrictions-lifted-2026",
+    "lane": "welsh-government",
+    "lane_name": "Welsh Government",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si1"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "welsh-government",
+    "source_name": "Welsh Government",
+    "state": "emerging",
+    "summary": "On 4 March 2026 the Welsh Government updated its Phytophthora pluvialis guidance to say the pathogen was no longer considered a threat to Welsh woodlands, that sightings no longer needed to be reported, and that the demarcated areas set up after the first Welsh finding in December 2021 had been revoked.",
+    "title": "Phytophthora pluvialis no longer treated as a threat in Wales; demarcated areas revoked",
+    "topics": [
+      "biosecurity",
+      "woodland-and-forestry"
+    ],
+    "url": "https://www.gov.wales/phytophthora-pluvialis"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI5",
@@ -1188,18 +2666,16 @@
       "supports",
       "informs_baseline"
     ],
-    "distinct_sources": 0,
-    "event_horizon": "2027-02-28",
-    "flags": [
-      "stale_verification"
-    ],
+    "distinct_sources": 2,
+    "event_horizon": "2027-02-14",
+    "flags": [],
     "grading": "B2",
     "hazards": [],
     "id": "pm25-air-quality-target-regulations-wales-2026",
     "lane": "welsh-government",
     "lane_name": "Welsh Government",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -1215,7 +2691,7 @@
     "source_id": "welsh-government",
     "source_name": "Welsh Government",
     "state": "emerging",
-    "summary": "Written statement of 17 November 2025 opened consultation on the first legally binding national PM2.5 targets under the Environment (Air Quality and Soundscapes) (Wales) Act 2024: an annual mean of 10 micrograms per cubic metre and a 25 percent cut in average population exposure, both by the end of 2035. The consultation closed on 16 February 2026 and responses are under review, with the regulations to be made in 2026-27 subject to the new post-election ministers. The 2024 Act requires the draft PM2.5 target regulations to be laid within three years of its Royal Assent, so by February 2027.",
+    "summary": "Written statement of 17 November 2025 opened consultation on the first legally binding national PM2.5 targets under the Environment (Air Quality and Soundscapes) (Wales) Act 2024: an annual mean of 10 micrograms per cubic metre and a 25 percent cut in average population exposure against a 2017 to 2019 baseline, both by the end of 2035. The consultation closed on 16 February 2026. The Welsh Government published its summary of responses and government response in August 2026 (page updated 25 August): 42 responses showed broad support, some wanting the targets sooner or tougher, and the government said it will proceed with the regulations as originally drafted, adding a non-statutory aspiration to reach 10 micrograms by 2030 where feasible. The 2024 Act requires the draft PM2.5 target regulations to be laid within three years of its Royal Assent on 14 February 2024, so by 14 February 2027; they had not been laid by 6 October 2026.",
     "title": "Draft Air Quality Target Regulations for fine particulate matter (PM2.5) under the 2024 Act",
     "topics": [
       "air-quality"
@@ -1223,7 +2699,112 @@
     "url": "https://www.gov.wales/written-statement-consultation-draft-air-quality-target-regulations-fine-particulate-matter"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI5",
+        "direction": "supports",
+        "requirement_id": "si5",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI10",
+        "direction": "supports",
+        "requirement_id": "si10",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [],
+    "id": "promoting-awareness-air-pollution-delivery-plan-2026",
+    "lane": "welsh-government",
+    "lane_name": "Welsh Government",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si5",
+      "si10"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "welsh-government",
+    "source_name": "Welsh Government",
+    "state": "emerging",
+    "summary": "On 27 March 2026 the Welsh Government published its delivery plan to meet the awareness duty in the Environment (Air Quality and Soundscapes) (Wales) Act 2024, after consulting from 5 August to 28 October 2025. The plan set actions under four themes (communities, health and well-being, children and young people, and cross-cutting), including campaigns on domestic burning, engine idling and fireworks, and messaging on air pollution's harm to habitats, noting that 88 percent of Welsh habitats are at risk. Delivery runs to the end of 2028 and will be evaluated.",
+    "title": "Welsh Government publishes its Promoting Awareness of Air Pollution delivery plan, 2025 to 2028",
+    "topics": [
+      "air-quality",
+      "public-behaviour"
+    ],
+    "url": "https://www.gov.wales/promoting-awareness-air-pollution-wales-delivery-plan-2025-2028-html"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI8",
+        "direction": "neutral",
+        "requirement_id": "si8",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "follow_up",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "neutral"
+    ],
+    "distinct_sources": 0,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C2",
+    "hazards": [
+      "river-and-surface-water-flooding"
+    ],
+    "id": "rct-clydach-terrace-flood-buyout-2026",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "south-east-wales"
+    ],
+    "reliability": "C",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si8"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "The Guardian",
+    "state": "emerging",
+    "summary": "On 2 February 2026 Rhondda Cynon Taf council's cabinet voted unanimously to buy and demolish 16 riverside homes on Clydach Terrace, Ynysybwl, for about 2.5 million pounds plus relocation costs, after repeated flooding since Storm Dennis. The Guardian reported that NRW had found a raised defence wall was not economically viable under UK and Welsh Government funding rules. The council believed it was the first UK local authority to buy so many inland homes to retreat from climate-driven flood risk.",
+    "title": "Rhondda Cynon Taf council votes to buy and demolish 16 flood-prone homes on Clydach Terrace, Ynysybwl, after defences proved unviable",
+    "topics": [
+      "flood-risk",
+      "people-place-and-resilience"
+    ],
+    "url": "https://www.theguardian.com/uk-news/2026/feb/02/south-wales-council-buy-demolish-homes-flooding-clydach-terrace-ynysybwl"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI4",
@@ -1240,9 +2821,7 @@
     ],
     "distinct_sources": 0,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "D3",
     "hazards": [
       "agricultural-pollution",
@@ -1251,8 +2830,8 @@
     "id": "river-action-judicial-review-nrw-poultry-permits",
     "lane": "legal-and-campaign",
     "lane_name": "Legal and campaign",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -1275,7 +2854,286 @@
     "url": "https://riveractionuk.com/news/natural-resources-wales-must-prevent-pollution-not-pass-the-buck-as-the-wye-and-severn-decline/"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI8",
+        "direction": "threatens",
+        "requirement_id": "si8",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI1",
+        "direction": "threatens",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI4",
+        "direction": "neutral",
+        "requirement_id": "si4",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "brief",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "threatens",
+      "neutral"
+    ],
+    "distinct_sources": 0,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C3",
+    "hazards": [
+      "drought-and-low-flows"
+    ],
+    "id": "river-severn-drought-order-application-2026",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "severn",
+      "mid-wales",
+      "north-wales"
+    ],
+    "reliability": "C",
+    "report_type": "environmental",
+    "requirement_ids": [
+      "si8",
+      "si1",
+      "si4"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "North Wales Daily Post",
+    "state": "emerging",
+    "summary": "The Daily Post reported on 20 August 2026 that NRW had applied to the Welsh Government for a drought order on the River Severn, the first sought for the river in 37 years, after Llyn Clywedog fell below 50 percent capacity, a level NRW called critical. The order would cut Hafren Dyfrdwy's abstraction from the Severn by an initial 5 percent, lower the legal minimum release from the reservoir and cap releases at 300 megalitres a day for up to six months; the Environment Agency applied for a related order in England. NRW said that without it Clywedog releases could cease and parts of the upper Severn could dry, with natural recovery expected within one to three years of normal rainfall.",
+    "title": "NRW applies for the first River Severn drought order in 37 years as Llyn Clywedog falls below half capacity",
+    "topics": [
+      "water-resources",
+      "nature-and-ecosystems"
+    ],
+    "url": "https://www.dailypost.co.uk/news/north-wales-news/north-wales-water-supplies-could-34489008"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI4",
+        "direction": "neutral",
+        "requirement_id": "si4",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI7",
+        "direction": "neutral",
+        "requirement_id": "si7",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "neutral"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [
+      "storm-overflow-discharges"
+    ],
+    "id": "river-tawe-illness-reports-review-2026",
+    "lane": "welsh-government",
+    "lane_name": "Welsh Government",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "south-west-wales"
+    ],
+    "reliability": "B",
+    "report_type": "incident",
+    "requirement_ids": [
+      "si4",
+      "si7"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "welsh-government",
+    "source_name": "Welsh Government",
+    "state": "emerging",
+    "summary": "On 2 September 2026 the Cabinet Minister for Rural Resilience and Sustainability updated the Senedd on reports of illness linked to recreational use of the River Tawe, first raised in the Senedd on 2 June 2026. NRW had reviewed incident reports, water quality data and storm overflow information and found no evidence of pollution, permit non-compliance or another incident that would explain the illnesses or warrant enforcement. The statement noted that routine monitoring of the Tawe assesses Water Framework Directive condition rather than bathing water quality.",
+    "title": "River Tawe illness reports: NRW review finds no pollution or permit breach to explain them; routine monitoring is not designed for bathing",
+    "topics": [
+      "pollution-water-and-land",
+      "people-place-and-resilience"
+    ],
+    "url": "https://www.gov.wales/written-statement-update-river-tawe-water-quality"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI4",
+        "direction": "neutral",
+        "requirement_id": "si4",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "park",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "neutral"
+    ],
+    "distinct_sources": 0,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "D2",
+    "hazards": [
+      "storm-overflow-discharges",
+      "agricultural-pollution"
+    ],
+    "id": "save-the-river-usk-clean-water-bill-wales-2026",
+    "lane": "legal-and-campaign",
+    "lane_name": "Legal and campaign",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "usk"
+    ],
+    "reliability": "D",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si4"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "Save the River Usk",
+    "state": "emerging",
+    "summary": "On 2 December 2025 the community group Save the River Usk launched a proposed Clean Water Bill for Wales at the Senedd, backed by its citizen science sampling programme of over 5,500 samples. Its Senedd petition asked Members to produce the Bill, with legally binding water quality targets, a regulator 'fit for purpose', tougher permits and SAC rivers tested to bathing water standards. The petition completed on 17 August 2026 with 1,316 signatures and was considered by the Petitions Committee.",
+    "title": "Save the River Usk campaigns for a Clean Water Bill for Wales; its Senedd petition closed on 17 August 2026 with 1,316 signatures",
+    "topics": [
+      "pollution-water-and-land",
+      "governance-and-funding"
+    ],
+    "url": "https://www.savetheriverusk.org/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI3",
+        "direction": "neutral",
+        "requirement_id": "si3",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "neutral"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [],
+    "id": "section-6-biodiversity-duty-evaluation-response-2025",
+    "lane": "welsh-government",
+    "lane_name": "Welsh Government",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si3"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "welsh-government",
+    "source_name": "Welsh Government",
+    "state": "emerging",
+    "summary": "On 16 September 2025 the Welsh Government published its response to the evaluation of the Section 6 biodiversity and resilience of ecosystems duty, which had found public authorities unsure whether they were in scope and 38 authorities that did not respond to the review. Following an Audit Wales study, it said it now proposed to publish a list of in-scope authorities, would have the Cabinet Secretary remind authorities that their third round of reports was due at the end of 2025, and pointed to the planned Office of Environmental Governance Wales overseeing compliance. A guide to what counts as a Section 6 public authority followed on 18 December 2025, and the third reporting round closed on 31 December 2025.",
+    "title": "Welsh Government responds to the Section 6 biodiversity duty evaluation, proposing to publish which public authorities are in scope",
+    "topics": [
+      "nature-and-ecosystems",
+      "governance-and-funding"
+    ],
+    "url": "https://www.gov.wales/evaluation-implementation-section-6-biodiversity-duty-response-reports-recommendations-html"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI3",
+        "direction": "supports",
+        "requirement_id": "si3",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI1",
+        "direction": "informs_baseline",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "brief",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "supports",
+      "informs_baseline"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [],
+    "id": "section-7-priority-list-update-2026",
+    "lane": "welsh-government",
+    "lane_name": "Welsh Government",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si3",
+      "si1"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "welsh-government",
+    "source_name": "Welsh Government",
+    "state": "emerging",
+    "summary": "On 26 March 2026 the Welsh Government published the first full update of the Section 7 list of species and habitats of principal importance under the Environment (Wales) Act 2016, replacing the interim list carried over from the Section 42 list. NRW assessed 3,156 species, and the list rose to 1,322 species (from 557) and 69 habitat types (from 55, including 19 marine), with large increases for vascular plants, invertebrates, birds and fungi and the addition of beaver. Ffridd was proposed but not included. The list created no new offences, but public authorities must have regard to it under the Section 6 duty, in planning, grants, licensing and land management.",
+    "title": "Updated Section 7 list of priority species and habitats more than doubles to 1,322 species and 69 habitats",
+    "topics": [
+      "nature-and-ecosystems",
+      "partnership-and-society"
+    ],
+    "url": "https://www.gov.wales/section-7-habitats-and-species-principal-importance-maintaining-and-enhancing-biodiversity-html"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI6",
@@ -1308,18 +3166,16 @@
     "directions": [
       "threatens"
     ],
-    "distinct_sources": 0,
+    "distinct_sources": 2,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "C3",
     "hazards": [],
     "id": "senedd-2026-net-zero-environment-battleground",
     "lane": "research-evidence",
     "lane_name": "Research and evidence",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -1337,7 +3193,7 @@
     "source_id": "institute-of-welsh-affairs",
     "source_name": "Institute of Welsh Affairs",
     "state": "emerging",
-    "summary": "Institute of Welsh Affairs analysis (5 May 2026) argued net zero had moved from cross-party consensus to a central Senedd election dividing line, with a right-of-centre bloc proposing to halt large onshore renewables, deprioritise net zero and scrap Natural Resources Wales. The 7 May 2026 election has now taken place: Plaid Cymru became the largest party (43 seats) and formed a minority government under Rhun ap Iorwerth, with Reform UK second (34), Labour third (9), the Conservatives on 7 and the Greens entering the Senedd with 2. The bloc that would have halted renewables and scrapped NRW did not take power, and early analysis expects net zero and wider climate policy to remain priorities, but the polarisation the IWA described is now embedded in the chamber and the government governs without a majority.",
+    "summary": "Institute of Welsh Affairs analysis (5 May 2026) argued net zero had moved from cross-party consensus to a central Senedd election dividing line, with a right-of-centre bloc proposing to halt large onshore renewables, deprioritise net zero and scrap Natural Resources Wales. In the 7 May 2026 election Plaid Cymru became the largest party (43 seats) and formed a minority government under Rhun ap Iorwerth, with Reform UK second (34), Labour third (9), the Conservatives on 7 and the Greens entering the Senedd with 2. The bloc that would have halted renewables and scrapped NRW did not take power. The government's Programme for Government 2026 to 2030, published on 22 September 2026, committed to a cross-government Climate and Nature Action Plan overseen by a Climate and Nature Board, identifying a pathway to net zero by 2040 (ten years ahead of the statutory 2050 target), ambitious targets for substantive nature recovery by 2050, a National Energy Strategy, and a strong, independent Office for Environmental Governance Wales. The polarisation the IWA described is embedded in the chamber, and the government governs without a majority.",
     "title": "Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party",
     "topics": [
       "climate-emissions"
@@ -1345,7 +3201,271 @@
     "url": "https://www.iwa.wales/agenda/2026/05/iwa-view-senedd-2026-the-emergence-of-a-key-battle-ground-net-zero-and-the-environment/"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI8",
+        "direction": "threatens",
+        "requirement_id": "si8",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "threatens"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [
+      "river-and-surface-water-flooding"
+    ],
+    "id": "senedd-ccei-storm-response-flood-warnings-2025",
+    "lane": "senedd",
+    "lane_name": "Senedd",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si8"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "senedd-research",
+    "source_name": "Senedd Research",
+    "state": "emerging",
+    "summary": "On 5 November 2025 Senedd Research summarised the Climate Change, Environment and Infrastructure Committee's report on the response to Storms Bert and Darragh, debated in the Senedd on 12 November 2025. Witnesses said flood forecasting in Wales was diverging from England, where more was invested in modelling, longer lead times and surface water forecast trials, and the committee asked that NRW have access to the latest forecasting technology and future trials. It also reported low and unequal flood warning sign-up, ageing culverts and council infrastructure, and support for catchment-scale and natural flood management approaches.",
+    "title": "Senedd committee finds Welsh flood forecasting diverging from England and uneven warning sign-up after Storms Bert and Darragh",
+    "topics": [
+      "flood-risk",
+      "people-place-and-resilience"
+    ],
+    "url": "https://research.senedd.wales/research-articles/building-wales-resilience-senedd-committee-s-verdict-on-storm-response/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI4",
+        "direction": "supports",
+        "requirement_id": "si4",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "follow_up",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 0,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C3",
+    "hazards": [
+      "public-funding-pressure"
+    ],
+    "id": "senedd-contaminated-land-polluter-pays-2026",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "C",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si4"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "Farmers Weekly",
+    "state": "emerging",
+    "summary": "On 30 September 2026 a Senedd member debate led by Niamh Salkeld MS won cross-party support for a polluter pays approach to historic contaminated land, a national framework to test and assess potentially contaminated sites, more support for councils, and a UK Government funding mechanism where costs cannot be recovered. Farmers Weekly reported on 5 October 2026 that the Welsh Government called contaminated land a key priority and pledged a Wales-wide strategy to restore post-industrial land, strengthening the polluter pays principle. NRW said a 2015 survey had identified more than 9,000 potential sites needing investigation and that farmland near historic sites was monitored by risk rather than routinely.",
+    "title": "Senedd backs a polluter pays approach and a national testing framework for contaminated land; Welsh Government pledges a Wales-wide strategy",
+    "topics": [
+      "pollution-water-and-land",
+      "soil-and-land",
+      "governance-and-funding"
+    ],
+    "url": "https://www.fwi.co.uk/news/environment/senedd-backs-polluter-pays-call-over-contaminated-land"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI6",
+        "direction": "neutral",
+        "requirement_id": "si6",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI1",
+        "direction": "threatens",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "threatens",
+      "neutral"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C3",
+    "hazards": [],
+    "id": "senedd-petition-peatland-renewables-2026",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales",
+      "mid-wales"
+    ],
+    "reliability": "C",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si6",
+      "si1"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "nation-cymru",
+    "source_name": "Nation.Cymru",
+    "state": "emerging",
+    "summary": "On 18 August 2026 Nation.Cymru reported that a Senedd petition, Stop all developments on peatlands across Wales, launched in April 2026 by Friends of the Earth Cymru with community groups, the Wildlife Trust of South and West Wales and the Cambrian Mountains Society, had reached 1,400 of the 10,000 signatures needed for a Senedd debate. The petitioners claimed that about 60 large renewable developments proposed in Wales threaten around 36 percent of the peat resource, naming Waun Hesgog energy park and Lluest y Gwynt wind farm. The figure is the campaigners' own and is unverified.",
+    "title": "Senedd petition seeks to stop all development on Welsh peatland, claiming renewable schemes threaten 36 percent of peat",
+    "topics": [
+      "peatland",
+      "climate-emissions"
+    ],
+    "url": "https://nation.cymru/news/calls-to-protect-welsh-peatlands-amid-surge-in-renewable-energy-developments/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI1",
+        "direction": "informs_baseline",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI2",
+        "direction": "informs_baseline",
+        "requirement_id": "si2",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "informs_baseline"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B3",
+    "hazards": [],
+    "id": "senedd-research-30by30-wales-2-percent-2026",
+    "lane": "senedd",
+    "lane_name": "Senedd",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "research",
+    "requirement_ids": [
+      "si1",
+      "si2"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "senedd-research",
+    "source_name": "Senedd Research",
+    "state": "emerging",
+    "summary": "Senedd Research published 'What's next for nature and climate action?' on 5 June 2026 in its key issues collection for the Seventh Senedd. Citing the environment sector's 2025 UK-wide 30by30 progress report, it stated that only 2.14 percent of land in Wales met the 30by30 criteria, and that statutory biodiversity targets must be introduced by regulations by April 2028. It also recorded that the Office of Environmental Governance Wales was to be set up during the Seventh Senedd.",
+    "title": "Senedd Research: only 2.14 percent of Welsh land meets 30by30 criteria as the Seventh Senedd begins",
+    "topics": [
+      "nature-and-ecosystems",
+      "governance-and-funding"
+    ],
+    "url": "https://research.senedd.wales/research-articles/what-s-next-for-nature-and-climate-action/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI6",
+        "direction": "neutral",
+        "requirement_id": "si6",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "neutral"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [],
+    "id": "senedd-research-data-centres-wales-2026",
+    "lane": "senedd",
+    "lane_name": "Senedd",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "north-wales",
+      "south-east-wales",
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "research",
+    "requirement_ids": [
+      "si6"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "senedd-research",
+    "source_name": "Senedd Research",
+    "state": "emerging",
+    "summary": "Senedd Research published a briefing in July 2026 on how Wales will manage a rapidly growing data centre industry. It reported 154 MW of data centre capacity in Wales in 2024, two UK Government AI Growth Zones in North and South Wales, and Department for Energy Security and Net Zero analysis that data centre electricity use in south-west England and Wales doubled between 2020 and 2024. It identified energy demand, grid capacity, water use for cooling, planning policy and community impacts as issues for Wales.",
+    "title": "Senedd Research briefing on data centres in Wales: two AI Growth Zones and doubling electricity use raise energy, grid and water questions",
+    "topics": [
+      "climate-emissions",
+      "water-resources",
+      "governance-and-funding"
+    ],
+    "url": "https://research.senedd.wales/media/eytgh5cx/data-centres-in-wales.pdf"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI2",
@@ -1366,25 +3486,23 @@
         "set_id": "nrw-corporate-plan"
       }
     ],
-    "bucket": "follow_up",
+    "bucket": "watch",
     "created_on": "2026-07-25",
     "credibility": 2,
     "directions": [
       "supports",
       "neutral"
     ],
-    "distinct_sources": 0,
+    "distinct_sources": 1,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B2",
     "hazards": [],
     "id": "senedd-soil-health-inquiry-2025",
     "lane": "senedd",
     "lane_name": "Senedd",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-25",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -1401,15 +3519,15 @@
     "source_id": "senedd-cymru",
     "source_name": "Senedd Cymru",
     "state": "emerging",
-    "summary": "The Senedd's Economy, Trade and Rural Affairs Committee published 'Digging the dirt: Improving Wales' soil health' on 18 November 2025, after evidence sessions in May and June 2025. Its recommendations include putting the GAEC 4 and 5 soil standards on a statutory footing, introducing a voluntary minimum standard for soil health that could later become statutory, and sharing soil data with farmers. The Agricultural Soil Policy Statement (28 April 2025) is the current policy baseline.",
-    "title": "Senedd committee report 'Digging the dirt' calls for statutory soil health standards; no government response published",
+    "summary": "The Senedd's Economy, Trade and Rural Affairs Committee published 'Digging the dirt: Improving Wales' soil health' on 18 November 2025, after evidence sessions in May and June 2025, with 7 recommendations and 6 conclusions. The Welsh Government responded on 16 January 2026 and the report was debated in Plenary on 4 February 2026. It accepted the call to set out its regulatory plans, including putting the GAEC 4 and 5 soil standards on a statutory footing, pointing to the Control of Agricultural Pollution Regulations review recommendation to add soil-loss protections to those regulations; accepted in principle sharing SFS soil test data, but only aggregated through the ERAMMP national monitoring programme; accepted in principle the call for a voluntary minimum soil health standard while saying its new Sustainable Land Management soil health indicator will not create one; and rejected a planning framework to protect the best agricultural land. The Agricultural Soil Policy Statement (28 April 2025) is the current policy baseline.",
+    "title": "Senedd committee report 'Digging the dirt' calls for statutory soil health standards; Welsh Government response of 16 January 2026 accepts most but declines a minimum soil standard",
     "topics": [
       "soil-and-land"
     ],
     "url": "https://laiddocuments.senedd.wales/cr-ld17564-en.pdf"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI6",
@@ -1424,18 +3542,16 @@
     "directions": [
       "supports"
     ],
-    "distinct_sources": 0,
+    "distinct_sources": 1,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B2",
     "hazards": [],
     "id": "seventh-carbon-budget-uk-law-2026",
     "lane": "uk-government-and-regulators",
     "lane_name": "UK Government and regulators",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -1458,7 +3574,57 @@
     "url": "https://www.theccc.org.uk/2026/06/24/response-to-parliament-passing-the-seventh-carbon-budget-into-law/"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI2",
+        "direction": "supports",
+        "requirement_id": "si2",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [
+      "farm-support-transition"
+    ],
+    "id": "sfs-optional-habitat-review-opens-2026",
+    "lane": "welsh-government",
+    "lane_name": "Welsh Government",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "funding",
+    "requirement_ids": [
+      "si2"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "welsh-government",
+    "source_name": "Welsh Government",
+    "state": "emerging",
+    "summary": "The Welsh Government published guidance on 27 August 2026, updated on 14 September 2026, opening applications for the Habitat Review, an Optional layer category of the Sustainable Farming Scheme (SFS) for farmers who claimed the Universal Layer. Field Support Officers produce a five-year habitat management plan and schedule of works; the review carries no funding itself, and payment depends on a separate SFS Optional habitat actions grant that had not yet opened. A small pilot selection ran in the week commencing 14 September 2026, with the next selection scheduled for February 2027 and then about every two months.",
+    "title": "Sustainable Farming Scheme Optional layer opens its Habitat Review, with a pilot selection in September 2026",
+    "topics": [
+      "nature-and-ecosystems",
+      "soil-and-land"
+    ],
+    "url": "https://www.gov.wales/sfs-optional-habitat-review-general-guidance-html"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI1",
@@ -1487,16 +3653,14 @@
     ],
     "distinct_sources": 0,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B2",
     "hazards": [],
     "id": "sonarr-2025-published",
     "lane": "welsh-government",
     "lane_name": "Welsh Government",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -1519,6 +3683,359 @@
     "url": "https://naturalresources.wales/evidence-and-data/research-and-reports/state-of-natural-resources-report-2025/"
   },
   {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI1",
+        "direction": "supports",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI2",
+        "direction": "neutral",
+        "requirement_id": "si2",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI6",
+        "direction": "neutral",
+        "requirement_id": "si6",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "brief",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "supports",
+      "neutral"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C2",
+    "hazards": [
+      "farm-support-transition"
+    ],
+    "id": "sustainable-farming-scheme-opens-march-2026",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "C",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si1",
+      "si2",
+      "si6"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "Farmers Weekly",
+    "state": "emerging",
+    "summary": "Farmers Weekly reported on 27 February 2026 that farmers in Wales could apply for the Universal layer of the Sustainable Farming Scheme (SFS) from Monday 2 March 2026, but the Welsh Government confirmed that the Collaborative and Optional layers would not open until later in the year. Digon yw Digon and the Welsh Conservatives criticised asking farmers to commit to multi-year agreements before those layers were defined, while the Farmers' Union of Wales and NFU Cymru said their priority was a workable Universal layer.",
+    "title": "Sustainable Farming Scheme opens for applications on 2 March 2026 with its Optional and Collaborative layers not yet available",
+    "topics": [
+      "nature-and-ecosystems",
+      "soil-and-land"
+    ],
+    "url": "https://www.fwi.co.uk/news/farm-policy/key-elements-of-new-welsh-farm-support-scheme-incomplete"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI5",
+        "direction": "supports",
+        "requirement_id": "si5",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI10",
+        "direction": "informs_baseline",
+        "requirement_id": "si10",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "park",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "supports",
+      "informs_baseline"
+    ],
+    "distinct_sources": 0,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C2",
+    "hazards": [],
+    "id": "swansea-burn-alert-pilot-evaluation-2026",
+    "lane": "research-evidence",
+    "lane_name": "Research and evidence",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "south-west-wales"
+    ],
+    "reliability": "C",
+    "report_type": "research",
+    "requirement_ids": [
+      "si5",
+      "si10"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "Environmental Management (Springer Nature)",
+    "state": "emerging",
+    "summary": "An article published in Environmental Management on 22 April 2026 evaluated a four week pilot in Swansea that sent postcode level PM2.5 alerts by text and email asking households not to burn during poor air quality episodes. Of 49 participants, 84 percent reported avoiding burning at least once after an alert and 606 hours of avoided burning were reported, with air quality literacy rising; recruitment was low, and the authors concluded that population level reductions depend on pairing such alerts with regulation, public information and help with energy costs.",
+    "title": "Peer-reviewed evaluation of a Swansea pilot finds voluntary burn alerts cut some domestic wood burning",
+    "topics": [
+      "air-quality",
+      "public-behaviour"
+    ],
+    "url": "https://link.springer.com/article/10.1007/s00267-026-02463-8"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI11",
+        "direction": "threatens",
+        "requirement_id": "si11",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI6",
+        "direction": "threatens",
+        "requirement_id": "si6",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "threatens"
+    ],
+    "distinct_sources": 0,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "D3",
+    "hazards": [
+      "public-funding-pressure"
+    ],
+    "id": "taxpayers-alliance-welsh-public-sector-net-zero-cost-2026",
+    "lane": "legal-and-campaign",
+    "lane_name": "Legal and campaign",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "D",
+    "report_type": "research",
+    "requirement_ids": [
+      "si11",
+      "si6"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "TaxPayers' Alliance",
+    "state": "emerging",
+    "summary": "On 23 February 2026 the TaxPayers' Alliance published a note estimating that reaching net zero across the Welsh public sector by 2030 would cost between 7.8 and 13.3 billion pounds. It reported public sector net emissions of 2.6 million tonnes of carbon dioxide equivalent in 2023-24, with 82 percent from scope 3 emissions, and found cost estimates in only eight public bodies as of January 2026. It called for the 2030 target to be withdrawn or suspended until a fully costed and funded plan was available.",
+    "title": "TaxPayers' Alliance puts the 2030 Welsh public sector net zero target at 7.8 to 13.3 billion pounds and calls for it to be withdrawn",
+    "topics": [
+      "climate-emissions",
+      "governance-and-funding"
+    ],
+    "url": "https://taxpayersalliance.com/the-cost-of-net-zero-in-the-welsh-public-sector/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI2",
+        "direction": "supports",
+        "requirement_id": "si2",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI9",
+        "direction": "supports",
+        "requirement_id": "si9",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C3",
+    "hazards": [],
+    "id": "tir-natur-cwm-doethie-rewilding-2026",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "mid-wales"
+    ],
+    "reliability": "C",
+    "report_type": "partnership",
+    "requirement_ids": [
+      "si2",
+      "si9"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "nation-cymru",
+    "source_name": "Nation.Cymru",
+    "state": "emerging",
+    "summary": "Nation.Cymru reported on 10 February 2026 that the rewilding charity Tir Natur had acquired the 1,195-acre Cwm Doethie site in the Elenydd (Cambrian Mountains), Ceredigion, for Wales' largest rewilding project, using a philanthropic bridging loan after raising over half of the 2.2 million pound cost. The land lies within the Mynydd Mallaen and Cwm Doethie Site of Special Scientific Interest; the charity planned conservation grazing with hardy cattle and ponies and peatland rewetting over five to ten years. A further report in August 2026 recorded cattle returning to the site.",
+    "title": "Tir Natur buys 1,195 acres at Cwm Doethie in the Cambrian Mountains for Wales' largest rewilding project",
+    "topics": [
+      "nature-and-ecosystems",
+      "peatland",
+      "partnership-and-society"
+    ],
+    "url": "https://nation.cymru/news/charity-secures-1000-acres-for-wales-largest-rewilding-project/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI10",
+        "direction": "supports",
+        "requirement_id": "si10",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI9",
+        "direction": "supports",
+        "requirement_id": "si9",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "park",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C2",
+    "hazards": [],
+    "id": "troir-llanw-community-climate-action-fund-2026",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "C",
+    "report_type": "funding",
+    "requirement_ids": [
+      "si10",
+      "si9"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "nation-cymru",
+    "source_name": "Nation.Cymru",
+    "state": "emerging",
+    "summary": "Nation.Cymru reported on 5 June 2026 that Troi'r Llanw / Turning the Tide had been awarded 1,499,800 pounds over three years from The National Lottery Community Fund's Climate Action Fund. Led by the Centre for Alternative Technology with Cwmpas, Youth Cymru, Mentrau Iaith Cymru and the Ethnic Minorities and Youth Support Team Wales, it set out to build a bilingual Wales-wide network of community climate initiatives, train environmental champions and create an advice hub, with a focus on underrepresented communities.",
+    "title": "Troi'r Llanw / Turning the Tide: Centre for Alternative Technology leads a 1.5 million pound Wales-wide community climate action programme",
+    "topics": [
+      "public-behaviour",
+      "partnership-and-society",
+      "climate-emissions"
+    ],
+    "url": "https://nation.cymru/news/new-wales-wide-climate-action-project-launched-with-1-5m-national-lottery-funding/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI4",
+        "direction": "supports",
+        "requirement_id": "si4",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI7",
+        "direction": "supports",
+        "requirement_id": "si7",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI10",
+        "direction": "supports",
+        "requirement_id": "si10",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C2",
+    "hazards": [],
+    "id": "tywi-llandeilo-river-bathing-water-2026",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "tywi",
+      "south-west-wales"
+    ],
+    "reliability": "C",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si4",
+      "si7",
+      "si10"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "nation-cymru",
+    "source_name": "Nation.Cymru",
+    "state": "emerging",
+    "summary": "On 3 April 2026 Nation.Cymru reported that the Welsh Government had confirmed Bathing Water Designation for the Swing Bridge site on the River Tywi at Llandeilo, after an application by the community group Tywi Bathers. From the 2026 bathing season the site became subject to regular water quality monitoring by NRW and a legal obligation to improve water quality. It is the second river bathing water in Wales, after The Warren on the Wye at Hay-on-Wye in 2024.",
+    "title": "Llandeilo Swing Bridge on the Tywi designated as Wales' second river bathing water after a community campaign",
+    "topics": [
+      "pollution-water-and-land",
+      "public-behaviour"
+    ],
+    "url": "https://nation.cymru/news/popular-visitor-destination-gains-official-bathing-water-status/"
+  },
+  {
     "appearances": 0,
     "assessments": [
       {
@@ -1536,16 +4053,14 @@
     ],
     "distinct_sources": 0,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B3",
     "hazards": [],
     "id": "uk-climate-adaptation-package-2026",
     "lane": "uk-government-and-regulators",
     "lane_name": "UK Government and regulators",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -1568,7 +4083,58 @@
     "url": "https://www.theccc.org.uk/2026/07/13/response-to-new-adaptation-package/"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI1",
+        "direction": "threatens",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "threatens"
+    ],
+    "distinct_sources": 0,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [
+      "marine-heatwave"
+    ],
+    "id": "uk-marine-heatwave-extreme-2026",
+    "lane": "ecological-surveillance",
+    "lane_name": "Ecological surveillance",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "environmental",
+    "requirement_ids": [
+      "si1"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "Met Office",
+    "state": "emerging",
+    "summary": "On 3 July 2026 the Met Office reported moderate to severe marine heatwave conditions across north-west European seas, with waters on average 2 degrees warmer than usual and anomalies of 4 to 5 degrees offshore parts of the Welsh and English coasts. Category 2 conditions covered much of the Welsh coastline, and in tidally mixed areas such as the Irish Sea the warming extended below the surface. It said the event could reach the rarely recorded extreme category the following week, and later coverage described it as the third and most intense UK marine heatwave of 2026.",
+    "title": "Met Office warns a long-lasting UK marine heatwave could reach extreme levels, with Welsh offshore waters 4 to 5 degrees above normal",
+    "topics": [
+      "marine-and-coastal",
+      "climate-emissions",
+      "nature-and-ecosystems"
+    ],
+    "url": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2026/long-lasting-uk-marine-heatwave-likely-to-reach-extreme-levels-next-week"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI1",
@@ -1590,18 +4156,16 @@
       "supports",
       "informs_baseline"
     ],
-    "distinct_sources": 0,
+    "distinct_sources": 1,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B3",
     "hazards": [],
     "id": "uk-national-biodiversity-strategy-action-plan-2025",
     "lane": "uk-government-and-regulators",
     "lane_name": "UK Government and regulators",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -1625,7 +4189,288 @@
     "url": "https://www.gov.uk/government/publications/uk-national-biodiversity-strategy-and-action-plan"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI5",
+        "direction": "supports",
+        "requirement_id": "si5",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B3",
+    "hazards": [],
+    "id": "uk-solid-fuel-burning-consultation-2026",
+    "lane": "welsh-government",
+    "lane_name": "Welsh Government",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si5"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "welsh-government",
+    "source_name": "Welsh Government",
+    "state": "emerging",
+    "summary": "From 22 January to 19 March 2026 the Welsh Government carried a consultation, held on the Defra site, on UK Government proposals to reduce fine particulate matter (PM2.5) and smoke from solid fuel burning, including a new emission limit for stoves, mandatory appliance labelling and mandatory health labelling of fuels. The page said some options would be taken forward UK-wide and some might apply in England only, and that responses were being reviewed.",
+    "title": "UK-wide consultation on stove emission limits and fuel labelling to cut PM2.5 closed; outcome awaited",
+    "topics": [
+      "air-quality"
+    ],
+    "url": "https://www.gov.wales/solid-fuel-burning"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI8",
+        "direction": "informs_baseline",
+        "requirement_id": "si8",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI6",
+        "direction": "neutral",
+        "requirement_id": "si6",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "neutral",
+      "informs_baseline"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B3",
+    "hazards": [],
+    "id": "unep-limiting-overshoot-report-2026",
+    "lane": "international",
+    "lane_name": "International",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "international",
+    "requirement_ids": [
+      "si8",
+      "si6"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "unep",
+    "source_name": "UNEP",
+    "state": "emerging",
+    "summary": "On 2 September 2026 the UN Environment Programme published Limiting Overshoot, which found global temperature rise was set to cross 1.5 degrees, likely within a few years. Its most optimistic scenario peaked at 1.8 degrees and most others above 2 degrees. It recommended an overshoot, peak and decline pathway combining deep emission cuts including methane, governed carbon dioxide removal and adaptation, and warned of limits to adaptation.",
+    "title": "UNEP Limiting Overshoot report: the world is set to cross 1.5 degrees within years, with a best-case peak of 1.8 degrees",
+    "topics": [
+      "climate-emissions",
+      "people-place-and-resilience"
+    ],
+    "url": "https://www.unep.org/news-and-stories/press-release/unep-world-set-cross-15degc-global-warming-can-still-limit-adapt-and"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI1",
+        "direction": "supports",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI2",
+        "direction": "supports",
+        "requirement_id": "si2",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI9",
+        "direction": "supports",
+        "requirement_id": "si9",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "follow_up",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [],
+    "id": "wales-30by30-framework-counting-criteria-2026",
+    "lane": "welsh-government",
+    "lane_name": "Welsh Government",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si1",
+      "si2",
+      "si9"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "welsh-government",
+    "source_name": "Welsh Government",
+    "state": "emerging",
+    "summary": "The Welsh Government's 'A 30by30 framework for Wales', first published on 18 June 2025 and last updated on 7 August 2026, sits within the updated Nature Recovery Action Plan (2026). It set criteria for areas counting towards protecting 30 percent of land, freshwater and sea by 2030: Sites of Special Scientific Interest, Special Areas of Conservation and Special Protection Areas count only where evidence supports a favourable or unfavourable recovering condition assessment. Designated sites covered about 11 percent of land and about 69 percent of the inshore marine area as of 2025, and voluntary Naturfa sites are Wales' recognition of other effective area-based conservation measures.",
+    "title": "Welsh Government 30by30 framework: only protected sites in favourable or recovering condition will count, with Naturfa sites as Wales' OECMs",
+    "topics": [
+      "nature-and-ecosystems",
+      "marine-and-coastal"
+    ],
+    "url": "https://www.gov.wales/30by30-framework-wales-html"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI4",
+        "direction": "supports",
+        "requirement_id": "si4",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI10",
+        "direction": "neutral",
+        "requirement_id": "si10",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "supports",
+      "neutral"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "D3",
+    "hazards": [],
+    "id": "wales-deposit-return-scheme-consultation-2025",
+    "lane": "legal-and-campaign",
+    "lane_name": "Legal and campaign",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "D",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si4",
+      "si10"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "surfers-against-sewage",
+    "source_name": "Surfers Against Sewage",
+    "state": "emerging",
+    "summary": "Surfers Against Sewage published a guide urging responses to the Welsh Government consultation 'Delivering a Best for Wales Deposit Return Scheme', which closed on 20 November 2025. It called for an all-in scheme including glass, legally binding reuse targets separate from recycling targets, and a wider national plan to end plastic pollution, citing Million Mile Clean data of 121,674 volunteers collecting over 54 tonnes of rubbish from January to September 2025. The consultation outcome and the scheme design were not settled on the page.",
+    "title": "Welsh Government consults on a 'Best for Wales' Deposit Return Scheme; Surfers Against Sewage presses for glass and reuse targets",
+    "topics": [
+      "pollution-water-and-land",
+      "marine-and-coastal",
+      "public-behaviour"
+    ],
+    "url": "https://www.sas.org.uk/updates/respond-to-the-welsh-deposit-return-scheme-consultation/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI8",
+        "direction": "threatens",
+        "requirement_id": "si8",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI1",
+        "direction": "informs_baseline",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "brief",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "threatens",
+      "informs_baseline"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [
+      "marine-heatwave",
+      "upland-wildfire"
+    ],
+    "id": "wales-summer-2026-record-heat-red-warning",
+    "lane": "senedd",
+    "lane_name": "Senedd",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "environmental",
+    "requirement_ids": [
+      "si8",
+      "si1"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "senedd-research",
+    "source_name": "Senedd Research",
+    "state": "emerging",
+    "summary": "Senedd Research published an article on 24 September 2026 finding that summer 2026 was the hottest on record in Wales by average June to August temperature, almost 3C above the late twentieth century average, after the hottest spring and a driest, joint-hottest July. Wales had its first red extreme heat warning, official heatwaves in every month from May to August and marine heatwave conditions in Welsh seas for most of the summer. Fire and rescue services declared four major wildfire incidents in July and August, and the First Minister said he would convene a climate change and resilience summit on wildfires in October 2026.",
+    "title": "Summer 2026 was the hottest on record in Wales, with the first red extreme heat warning and persistent marine heatwave conditions",
+    "topics": [
+      "people-place-and-resilience",
+      "marine-and-coastal"
+    ],
+    "url": "https://research.senedd.wales/research-articles/extreme-heat-in-wales-causes-impacts-adaptations/"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI1",
@@ -1661,9 +4506,7 @@
     ],
     "distinct_sources": 0,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B2",
     "hazards": [
       "upland-wildfire"
@@ -1671,8 +4514,8 @@
     "id": "wales-wildfire-season-2026",
     "lane": "welsh-government",
     "lane_name": "Welsh Government",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -1690,13 +4533,68 @@
     "source_id": "welsh-government",
     "source_name": "Welsh Government",
     "state": "emerging",
-    "summary": "2026 has been a severe wildfire year across the UK, with over 18,600 hectares burned and 65 fires larger than 30 hectares by 16 July (below the record set in 2025), driven by the same heatwaves and record dry conditions as the drought. In Wales, a large wildfire near Conwy Mountain and the Sychnant Pass was declared a major incident on 12 July 2026, forcing evacuations. Welsh grassland, woodland and crop fires are tracked in an official annual statistics series (latest release April 2024 to March 2025, published 16 April 2026).",
-    "title": "Severe 2026 wildfire season burns Welsh uplands, with a major incident near Conwy",
+    "summary": "2026 was a severe wildfire year across the UK, driven by the same heatwaves and record dry conditions as the drought: over 18,600 hectares had burned by 16 July, and by 1 September the UK total reached 28,299 hectares, the second highest on record after 2025. Welsh fire and rescue services declared four wildfire major incidents in July and August 2026: Conwy Mountain and the Sychnant Pass (12 July, with evacuations), Llanwonno Mountain in Rhondda Cynon Taf, Llangynidr Reservoir near Ebbw Vale, and Rhandirmwyn in Carmarthenshire. South Wales Fire and Rescue Service declared a major incident on 11 August, received military assistance, and dealt with 961 grass fires including 115 wildfires over three weeks. By mid-August, fire services in Wales and England had attended more wildfires than in the whole of 2025. Senedd Research (10 September 2026) reports that the Welsh Government has announced a wildfire review and a Wildfire Summit. Welsh grassland, woodland and crop fires are tracked in an official annual statistics series (latest release April 2024 to March 2025, published 16 April 2026); Wales-level burned-area figures for 2026 were not yet published.",
+    "title": "Severe 2026 wildfire season burns Welsh uplands: four major incidents, a Welsh Government wildfire review and summit",
     "topics": [],
     "url": "https://www.gov.wales/grassland-fires"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI6",
+        "direction": "supports",
+        "requirement_id": "si6",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI10",
+        "direction": "supports",
+        "requirement_id": "si10",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [],
+    "id": "warm-homes-programme-first-100-days-review-2026",
+    "lane": "welsh-government",
+    "lane_name": "Welsh Government",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si6",
+      "si10"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "welsh-government",
+    "source_name": "Welsh Government",
+    "state": "emerging",
+    "summary": "On 16 July 2026 the Welsh Government published the report of its First 100 Days review of the Warm Homes Programme. It recorded that homes produce 8 percent of Welsh greenhouse gas emissions, that the Climate Change Committee pathway needs about 25,000 low carbon heating installations a year by 2030, and that 25 percent of households (340,000) were in fuel poverty in October 2024. It identified immediate opportunities to inject funding into the Nest and Optimise Retrofit schemes and to pilot area-based delivery over 18 months, with a longer cross-tenure review to inform the next emissions reduction plan.",
+    "title": "Welsh Government's First 100 Days review of the Warm Homes Programme proposes more funding for Nest and Optimise, area-based pilots and a cross-tenure retrofit review",
+    "topics": [
+      "climate-emissions",
+      "public-behaviour"
+    ],
+    "url": "https://www.gov.wales/first-100-days-warmer-and-more-energy-efficient-homes-html"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI4",
@@ -1711,18 +4609,16 @@
     "directions": [
       "supports"
     ],
-    "distinct_sources": 0,
+    "distinct_sources": 1,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B3",
     "hazards": [],
     "id": "water-governance-green-paper-2026",
     "lane": "welsh-government",
     "lane_name": "Welsh Government",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -1737,13 +4633,13 @@
     "source_id": "welsh-government",
     "source_name": "Welsh Government",
     "state": "emerging",
-    "summary": "Announced 3 February 2026: a Green Paper proposing fundamental water system reform, including a dedicated Welsh economic regulator for water, new legislation, and 5 million pounds in 2026-27 for enforcement and river improvement. The consultation closed on 7 April 2026; a summary of responses and next steps is awaited, and the Welsh Government signalled a White Paper to follow subject to the post-election government's agreement and the enactment of UK primary legislation.",
+    "summary": "Announced 3 February 2026: a Green Paper proposing fundamental water system reform, including a dedicated Welsh economic regulator for water, new legislation, and 5 million pounds in 2026-27 for enforcement and river improvement. The consultation ran from 3 February to 7 April 2026 and drew 92 responses. The new Welsh Government published a summary of responses (dated July 2026, on gov.wales by 14 September 2026) saying it will publish a separate policy response, press the UK Government to make sure the UK Clean Water Bill announced in the King's Speech devolves the powers needed, and then publish a White Paper ahead of Welsh legislation. Its Programme for Government (22 September 2026) commits to formally request full devolution of power over water and to seek Senedd powers to create a new economic regulator and planning body for Wales.",
     "title": "Green Paper: Shaping the Future of Water Governance in Wales",
     "topics": [],
     "url": "https://www.gov.wales/cleaner-rivers-stronger-regulation-better-accountability-wales-charts-new-course-water-governance"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI1",
@@ -1758,19 +4654,16 @@
     "directions": [
       "supports"
     ],
-    "distinct_sources": 0,
-    "event_horizon": null,
-    "flags": [
-      "future_language",
-      "stale_verification"
-    ],
+    "distinct_sources": 1,
+    "event_horizon": "2026-10-27",
+    "flags": [],
     "grading": "B2",
     "hazards": [],
     "id": "welsh-fisheries-aquaculture-update-2026",
     "lane": "welsh-government",
     "lane_name": "Welsh Government",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-25",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -1785,7 +4678,7 @@
     "source_id": "welsh-government",
     "source_name": "Welsh Government",
     "state": "emerging",
-    "summary": "A written statement of 29 January 2026 reports progress on the Strategic Approach to Welsh Fisheries and Aquaculture since December 2024: the King Scallop Fisheries Management Plan consultation has closed, a Wales-only crab and lobster plan consultation is due to launch, the Welsh Marine and Fisheries Scheme opened its sixth round on 7 January with an increased budget, 194,000 pounds has gone to inshore vessel monitoring systems, and multi-year science contracts and a carbon audit of the Welsh fleet have been commissioned.",
+    "summary": "A written statement of 29 January 2026 reported progress on the Strategic Approach to Welsh Fisheries and Aquaculture since December 2024: a consultation on King Scallop fishery management measures closed on 31 January 2026, the Welsh Marine and Fisheries Scheme opened its sixth round on 7 January with an increased budget, 194,000 pounds went to inshore vessel monitoring systems, and multi-year science contracts and a carbon audit of the Welsh fleet were commissioned. The Wales-only Crab and Lobster Fisheries Management Plan, which the statement said would soon go to consultation, opened for consultation on 4 August 2026, with responses invited until 27 October 2026.",
     "title": "Welsh fisheries and aquaculture update reports progress on management plans and fleet decarbonisation",
     "topics": [
       "marine-and-coastal"
@@ -1793,7 +4686,220 @@
     "url": "https://www.gov.wales/written-statement-strategic-approach-welsh-fisheries-and-aquaculture-update"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI6",
+        "direction": "supports",
+        "requirement_id": "si6",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI11",
+        "direction": "supports",
+        "requirement_id": "si11",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "park",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C3",
+    "hazards": [],
+    "id": "welsh-public-sector-ev-fleet-savings-2026",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "C",
+    "report_type": "data_release",
+    "requirement_ids": [
+      "si6",
+      "si11"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "nation-cymru",
+    "source_name": "Nation.Cymru",
+    "state": "emerging",
+    "summary": "Nation.Cymru reported on 20 September 2026 that the Welsh Government Energy Service had analysed 2,045 electric vehicles operating across the Welsh public sector. The analysis estimated 2.4 million litres of diesel avoided a year, a net energy saving of 1.4 to 1.9 million pounds and about 6,151 tonnes CO2e of well-to-wheel emissions avoided annually.",
+    "title": "Welsh Government Energy Service estimates 2,045 public sector electric vehicles save up to 1.9 million pounds and about 6,151 tonnes CO2e a year",
+    "topics": [
+      "climate-emissions",
+      "air-quality"
+    ],
+    "url": "https://nation.cymru/news/electric-vehicles-saving-welsh-public-sector-up-to-1-9m-a-year-analysis-finds/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI1",
+        "direction": "threatens",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "brief",
+    "created_on": "2026-10-06",
+    "credibility": 3,
+    "directions": [
+      "threatens"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C3",
+    "hazards": [
+      "drought-and-low-flows"
+    ],
+    "id": "welsh-rivers-lethal-temperatures-salmon-2026",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wye",
+      "wales"
+    ],
+    "reliability": "C",
+    "report_type": "environmental",
+    "requirement_ids": [
+      "si1"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "nation-cymru",
+    "source_name": "Nation.Cymru",
+    "state": "emerging",
+    "summary": "Nation.Cymru published a Local Democracy Reporting Service article on 24 August 2026 reporting that the lower River Wye reached 27.7C at the end of June 2026 and that its average temperature exceeded 20C on 72 days between 3 March and 17 August. NRW's lead specialist adviser for freshwater and migratory fish said several of Wales' 22 principal salmon rivers were fairly close to being unable to sustain a salmon population, with low flows cutting returning adults and fry survival, though no mass mortalities had been seen. Afonydd Cymru said some Welsh rivers recorded their lowest levels of the summer.",
+    "title": "Lower Wye reached 27.7C in June 2026, and an NRW specialist warned several of Wales' 22 principal salmon rivers are close to unsustainable",
+    "topics": [
+      "nature-and-ecosystems",
+      "water-resources"
+    ],
+    "url": "https://nation.cymru/news/wales-wildlife-pushed-to-breaking-point-as-rivers-hit-lethal-temperatures/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI1",
+        "direction": "threatens",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI2",
+        "direction": "neutral",
+        "requirement_id": "si2",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "threatens",
+      "neutral"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "B2",
+    "hazards": [
+      "public-funding-pressure"
+    ],
+    "id": "wg-biodiversity-budget-2026-27-30by30-response",
+    "lane": "senedd",
+    "lane_name": "Senedd",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "B",
+    "report_type": "policy",
+    "requirement_ids": [
+      "si1",
+      "si2"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": null,
+    "source_name": "Welsh Government response to the Senedd Climate Change, Environment and Infrastructure Committee (published by Senedd Cymru)",
+    "state": "emerging",
+    "summary": "In its response to the Senedd Climate Change, Environment and Infrastructure Committee's scrutiny of the Draft Budget 2026-27, published in early 2026, the Welsh Government accepted in principle a recommendation that noted the 30 by 30 target was predicted to be missed, but committed only to over 36 million pounds for biodiversity in 2026-27 and to consider increases if opportunities arose. It declined to write a dedicated ecology skills strategy, said the outline Saltmarsh Action Plan would be delivered by the end of March 2026, offered about 70,000 pounds for phase 2 of the Seagrass Action Plan, and confirmed NRW's IR35 settlement of 14.6 million pounds would be recouped through budget reductions from 2025-26.",
+    "title": "Welsh Government holds biodiversity funding at about 36 million pounds for 2026-27 after Senedd committee warns 30 by 30 is predicted to be missed",
+    "topics": [
+      "governance-and-funding",
+      "nature-and-ecosystems",
+      "marine-and-coastal"
+    ],
+    "url": "https://business.senedd.wales/documents/s170571/CCEI%20Cttee%20response%20to%20draft%20scrutiny%20budget%20report%202026-27%20-%20En.pdf"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI8",
+        "direction": "supports",
+        "requirement_id": "si8",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": "2026-12-15",
+    "flags": [],
+    "grading": "C2",
+    "hazards": [],
+    "id": "what-works-centre-climate-resilient-uk-2026",
+    "lane": "research-evidence",
+    "lane_name": "Research and evidence",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "C",
+    "report_type": "funding",
+    "requirement_ids": [
+      "si8"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "ukri",
+    "source_name": "UK Research and Innovation (UKRI)",
+    "state": "emerging",
+    "summary": "UKRI and the Economic and Social Research Council opened a funding call on 1 October 2026, with Defra, DAERA, the Scottish Government and the Welsh Government, to establish an independent What Works Centre for a climate resilient UK. The centre can receive up to 21.1 million pounds, must start by 1 August 2027, and has the UK and devolved governments, including the Welsh Government, as its primary audience. The call is scheduled to close on 15 December 2026.",
+    "title": "UKRI opens a call for a What Works Centre for a climate resilient UK, worth up to 21.1 million pounds, with the Welsh Government as a partner",
+    "topics": [
+      "people-place-and-resilience",
+      "governance-and-funding"
+    ],
+    "url": "https://www.ukri.org/opportunity/what-works-centre-for-a-climate-resilient-uk/"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI8",
@@ -1810,9 +4916,7 @@
     ],
     "distinct_sources": 0,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "B2",
     "hazards": [
       "river-and-surface-water-flooding"
@@ -1820,8 +4924,8 @@
     "id": "winter-2025-26-flooding-storm-claudia",
     "lane": "welsh-government",
     "lane_name": "Welsh Government",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -1844,7 +4948,116 @@
     "url": "https://www.gov.wales/written-statement-flood-and-coastal-erosion-risk-management-programme-2026-27"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI1",
+        "direction": "supports",
+        "requirement_id": "si1",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "park",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "supports"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C2",
+    "hazards": [
+      "invasive-non-native-plants"
+    ],
+    "id": "wtsww-invasive-species-nature-networks-award-2026",
+    "lane": "independent-media",
+    "lane_name": "Independent media",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "south-west-wales"
+    ],
+    "reliability": "C",
+    "report_type": "funding",
+    "requirement_ids": [
+      "si1"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "nation-cymru",
+    "source_name": "Nation.Cymru",
+    "state": "emerging",
+    "summary": "Nation.Cymru reported on 4 April 2026 that the Wildlife Trust of South and West Wales had received 926,905 pounds from the Welsh Government's Nature Networks Fund for a project to manage invasive species including grey squirrel, American mink and rhododendron. The project covers 41 sites, including 14 invasive plants already present on its reserves, with better biosecurity and monitoring.",
+    "title": "Wildlife Trust of South and West Wales wins 926,905 pounds from the Nature Networks Fund to tackle invasive species on 41 sites",
+    "topics": [
+      "biosecurity",
+      "nature-and-ecosystems"
+    ],
+    "url": "https://nation.cymru/news/wildlife-trust-announces-new-project-to-tackle-invasive-species/"
+  },
+  {
+    "appearances": 1,
+    "assessments": [
+      {
+        "code": "SI8",
+        "direction": "informs_baseline",
+        "requirement_id": "si8",
+        "set_id": "nrw-corporate-plan"
+      },
+      {
+        "code": "SI2",
+        "direction": "neutral",
+        "requirement_id": "si2",
+        "set_id": "nrw-corporate-plan"
+      }
+    ],
+    "bucket": "watch",
+    "created_on": "2026-10-06",
+    "credibility": 2,
+    "directions": [
+      "neutral",
+      "informs_baseline"
+    ],
+    "distinct_sources": 1,
+    "event_horizon": null,
+    "flags": [],
+    "grading": "C2",
+    "hazards": [
+      "river-and-surface-water-flooding"
+    ],
+    "id": "wwf-cymru-nfm-under-2-percent-fcerm-2026",
+    "lane": "partnership-and-civil-society",
+    "lane_name": "Partnership and civil society",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
+    "places": [
+      "wales"
+    ],
+    "reliability": "C",
+    "report_type": "research",
+    "requirement_ids": [
+      "si8",
+      "si2"
+    ],
+    "set_ids": [
+      "nrw-corporate-plan"
+    ],
+    "source_id": "wwf-cymru",
+    "source_name": "WWF Cymru",
+    "state": "emerging",
+    "summary": "WWF Cymru published an independent report it commissioned (Sayers, July 2026) on flood risk and natural flood management in Wales. It found about 275,000 properties at risk of flooding, around 4,200 properties likely to flood each year with further climate change at about 93 million pounds a year in damage, and that less than 2 percent of flood risk management funding for 2022 to 2026 was directed at natural flood management. WWF Cymru called for the Sustainable Farming Scheme to be used to scale up nature-based solutions.",
+    "title": "WWF Cymru analysis finds less than 2 percent of Welsh flood risk funding for 2022 to 2026 went to natural flood management",
+    "topics": [
+      "flood-risk",
+      "nature-and-ecosystems",
+      "governance-and-funding"
+    ],
+    "url": "https://www.wwf.org.uk/updates/reducing-impact-flooding-working-nature"
+  },
+  {
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI1",
@@ -1865,18 +5078,16 @@
     "directions": [
       "supports"
     ],
-    "distinct_sources": 0,
+    "distinct_sources": 1,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "C3",
     "hazards": [],
     "id": "wwf-nature-petition-new-welsh-government-2026",
     "lane": "independent-media",
     "lane_name": "Independent media",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -1901,7 +5112,7 @@
     "url": "https://nation.cymru/news/wwf-launches-petition-urging-wales-to-act-on-nature-crisis/"
   },
   {
-    "appearances": 0,
+    "appearances": 1,
     "assessments": [
       {
         "code": "SI4",
@@ -1918,9 +5129,7 @@
     ],
     "distinct_sources": 0,
     "event_horizon": null,
-    "flags": [
-      "stale_verification"
-    ],
+    "flags": [],
     "grading": "D3",
     "hazards": [
       "legal-challenge"
@@ -1928,8 +5137,8 @@
     "id": "wye-lugg-usk-group-claim-avara-welsh-water",
     "lane": "legal-and-campaign",
     "lane_name": "Legal and campaign",
-    "last_changed": "2026-07-25",
-    "last_verified": "2026-07-24",
+    "last_changed": "2026-10-06",
+    "last_verified": "2026-10-06",
     "places": [
       "wales"
     ],
@@ -1944,8 +5153,8 @@
     "source_id": "leigh-day",
     "source_name": "Leigh Day environment",
     "state": "emerging",
-    "summary": "The largest domestic environmental pollution claim ever brought in the UK, filed at the High Court in autumn 2025, had its first case management hearing on 27 April 2026. More than 4,500 residents and businesses along the Wye, Lugg and Usk allege pollution from phosphorus, nitrogen and bacteria in poultry manure spread as fertiliser (Avara Foods and its subsidiary Freemans of Newent) and from sewage discharges (Welsh Water). All defendants deny the claims; claimants have sought disclosure of poultry operation locations across the region.",
-    "title": "Largest UK environmental pollution claim: over 4,500 claimants sue Avara Foods and Welsh Water over Wye, Lugg and Usk pollution",
+    "summary": "The largest domestic environmental pollution claim ever brought in the UK, filed at the High Court in autumn 2025, had its first case management hearing on 27 April 2026, when the court set a timetable and a cut-off date of 31 August 2026 for new claimants. By 5 August 2026 more than 5,100 residents and businesses along the Wye, Lugg and Usk had joined, and the claim closed to new claimants on 31 August. They allege pollution from phosphorus, nitrogen and bacteria in poultry manure spread as fertiliser (Avara Foods and its subsidiary Freemans of Newent) and from sewage discharges (Welsh Water). All defendants deny the claims; claimants have sought disclosure of poultry operation locations across the region. No trial date had been announced by 6 October 2026.",
+    "title": "Largest UK environmental pollution claim: over 5,100 claimants sue Avara Foods and Welsh Water over Wye, Lugg and Usk pollution",
     "topics": [
       "pollution-water-and-land"
     ],

@@ -1,0 +1,153 @@
+{
+  "actor_id": null,
+  "actor_name": null,
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI2",
+      "direction": "supports",
+      "name": "Increasing the rate of habitat restoration",
+      "requirement_id": "si2",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI9",
+      "direction": "supports",
+      "name": "Increasing the impact of partnership approaches which deliver multiple benefits and address the root causes of the nature, climate and pollution crises",
+      "requirement_id": "si9",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "heritagefund.org.uk/projects/supporting-nature-recovery-wales",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-df2c7b in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "nature-networks-private-finance-landscapes-2026",
+  "independent_confirmation": false,
+  "lane": "partnership-and-civil-society",
+  "lane_name": "Partnership and civil society",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "An early test of blended private finance for landscape-scale restoration (SI2) through a partnership model (SI9), in the same funding programme NRW co-delivers; outcomes will inform the Welsh nature finance framework.",
+  "owner": null,
+  "places": [
+    {
+      "id": "south-east-wales",
+      "name": "South East Wales"
+    },
+    {
+      "id": "mid-wales",
+      "name": "Mid Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "funding",
+  "requirement_ids": [
+    "si2",
+    "si9"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "medium",
+    "potential_impact": "medium",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-df2c7b",
+      "discipline": "osint_web",
+      "query_id": "web-nature-ecosystems-02",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000026",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.heritagefund.org.uk/projects/supporting-nature-recovery-wales"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-df2c7b",
+      "discipline": "osint_web",
+      "query_id": "web-nature-ecosystems-07",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000027",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.heritagefund.org.uk/projects/supporting-nature-recovery-wales"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-df2c7b",
+      "discipline": "osint_web",
+      "query_id": "web-partnership-society-04",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000028",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.heritagefund.org.uk/projects/supporting-nature-recovery-wales"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-df2c7b",
+      "discipline": "osint_web",
+      "query_id": "web-partnership-society-05",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000029",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.heritagefund.org.uk/projects/supporting-nature-recovery-wales"
+    }
+  ],
+  "source_id": null,
+  "source_name": "The National Lottery Heritage Fund",
+  "state": "emerging",
+  "summary": "The Heritage Fund published on 24 July 2026 a Nature Networks Fund Round 5 award, made on 15 December 2025 to the Royal Society of Wildlife Trusts, for a project to develop nature recovery proposals ready for private investment. It focuses on Bannau Brycheiniog National Park and the Gwent Levels, working with farmers, utilities and a National Park on carbon markets, nature-based solutions and voluntary biodiversity net gain, and is meant to feed Welsh Government policy on sustainable finance.",
+  "title": "Nature Networks Fund backs a Wildlife Trusts project to build investment-ready nature recovery proposals for Bannau Brycheiniog and the Gwent Levels",
+  "topics": [
+    {
+      "id": "nature-and-ecosystems",
+      "name": "Nature and ecosystems"
+    },
+    {
+      "id": "governance-and-funding",
+      "name": "Governance and funding"
+    },
+    {
+      "id": "partnership-and-society",
+      "name": "Partnership and society"
+    }
+  ],
+  "url": "https://www.heritagefund.org.uk/projects/supporting-nature-recovery-wales"
+}

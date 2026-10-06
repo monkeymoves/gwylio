@@ -1,0 +1,113 @@
+{
+  "actor_id": null,
+  "actor_name": null,
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI5",
+      "direction": "supports",
+      "name": "Decreasing the rate of pollution to air from industrial and non-industrial sources",
+      "requirement_id": "si5",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI10",
+      "direction": "informs_baseline",
+      "name": "Increasing the proportion of the population that act to mitigate and adapt to the nature, climate and pollution crises",
+      "requirement_id": "si10",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "park",
+  "canonical_url": "link.springer.com/article/10.1007/s00267-026-02463-8",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "supports",
+    "informs_baseline"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "C2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-665c6a in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "swansea-burn-alert-pilot-evaluation-2026",
+  "independent_confirmation": false,
+  "lane": "research-evidence",
+  "lane_name": "Research and evidence",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "Evidence for the domestic burning campaign in the 2026 awareness delivery plan; small sample, so treat as a design signal rather than proof of effect.",
+  "owner": null,
+  "places": [
+    {
+      "id": "south-west-wales",
+      "name": "South West Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "research",
+  "requirement_ids": [
+    "si5",
+    "si10"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "medium",
+    "potential_impact": "low",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-665c6a",
+      "discipline": "osint_web",
+      "query_id": "web-air-quality-02",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000996",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://link.springer.com/article/10.1007/s00267-026-02463-8"
+    }
+  ],
+  "source_id": null,
+  "source_name": "Environmental Management (Springer Nature)",
+  "state": "emerging",
+  "summary": "An article published in Environmental Management on 22 April 2026 evaluated a four week pilot in Swansea that sent postcode level PM2.5 alerts by text and email asking households not to burn during poor air quality episodes. Of 49 participants, 84 percent reported avoiding burning at least once after an alert and 606 hours of avoided burning were reported, with air quality literacy rising; recruitment was low, and the authors concluded that population level reductions depend on pairing such alerts with regulation, public information and help with energy costs.",
+  "title": "Peer-reviewed evaluation of a Swansea pilot finds voluntary burn alerts cut some domestic wood burning",
+  "topics": [
+    {
+      "id": "air-quality",
+      "name": "Air quality"
+    },
+    {
+      "id": "public-behaviour",
+      "name": "Public behaviour"
+    }
+  ],
+  "url": "https://link.springer.com/article/10.1007/s00267-026-02463-8"
+}

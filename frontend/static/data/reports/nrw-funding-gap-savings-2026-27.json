@@ -1,7 +1,7 @@
 {
   "actor_id": "senedd",
   "actor_name": "Senedd Cymru (Welsh Parliament)",
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI4",
@@ -38,15 +38,9 @@
   "directions": [
     "threatens"
   ],
-  "distinct_sources": 0,
+  "distinct_sources": 2,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-25, 73 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "B2",
   "hazards": [
     {
@@ -76,14 +70,24 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by welsh-government; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Re-read the Senedd Research article of 8 November 2024 (12 million pound savings, 233 posts, reduced low-category pollution response, gap projected at over 17 million pounds by 2026-27 without action) and searched for a 2027-28 draft budget or new NRW savings round: none found by 6 October 2026. The source still stands and the summary's framing is current.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "nrw-funding-gap-savings-2026-27",
   "independent_confirmation": false,
   "lane": "senedd",
   "lane_name": "Senedd",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-25",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "government",
   "notes": "The cross-cutting delivery-capacity signal. Read it as a delivered cut whose service effects persist, not as a gap still growing: the reduced response to low-category pollution incidents (SI4), and the recreation, outdoor and climate programme reductions (SI7, SI8), took effect from April 2025 and have not been reversed by the better 2026-27 settlement. Two things pull the other way on capacity: the improved Grant in Aid, and against it the phased budget reductions recouping the 14.6 million pound HMRC settlement (see the IR35 signal). Reframed on 25 July 2026 after verification found the forward-looking 17 million pound framing had gone stale, which is exactly the failure mode the date check exists to catch. The 265-job figure in some coverage was the October 2024 proposal; 233 is the confirmed outcome agreed by NRW's Board on 5 November 2024. A separate 15 million pound gap reported in July 2020 was a COVID-era story and is unrelated.",
   "owner": null,
@@ -111,7 +115,41 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-cfc43f",
+      "discipline": "osint_web",
+      "query_id": "web-governance-capacity-02",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000849",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/sites/default/files/publications/2025-11/evidence-by-the-cabinet-secretary-for-climate-change-and-rural-affairs_0.pdf"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-21612d",
+      "discipline": "osint_web",
+      "query_id": "web-governance-capacity-01",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000829",
+      "source_id": "senedd-research",
+      "source_name": "Senedd Research",
+      "url": "https://research.senedd.wales/research-articles/nrw-finds-12m-of-savings-what-does-this-mean-for-its-services/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-21612d",
+      "discipline": "osint_web",
+      "query_id": "web-governance-capacity-04",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000830",
+      "source_id": "senedd-research",
+      "source_name": "Senedd Research",
+      "url": "https://research.senedd.wales/research-articles/nrw-finds-12m-of-savings-what-does-this-mean-for-its-services/"
+    }
+  ],
   "source_id": "senedd-research",
   "source_name": "Senedd Research",
   "state": "emerging",

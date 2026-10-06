@@ -1,0 +1,126 @@
+{
+  "actor_id": "senedd",
+  "actor_name": "Senedd Cymru (Welsh Parliament)",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI8",
+      "direction": "threatens",
+      "name": "Increasing the proportion of the population living in places that will continue to support and contribute to their health and well-being in a changing climate",
+      "requirement_id": "si8",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI1",
+      "direction": "informs_baseline",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "brief",
+  "canonical_url": "research.senedd.wales/research-articles/extreme-heat-in-wales-causes-impacts-adaptations",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "threatens",
+    "informs_baseline"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B2",
+  "hazards": [
+    {
+      "family": "climate-extreme",
+      "family_name": "Climate extreme",
+      "id": "marine-heatwave",
+      "name": "Marine heatwave"
+    },
+    {
+      "family": "wildfire",
+      "family_name": "Wildfire",
+      "id": "upland-wildfire",
+      "name": "Upland and heathland wildfire"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-c4e7a8 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by senedd-research; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "wales-summer-2026-record-heat-red-warning",
+  "independent_confirmation": false,
+  "lane": "senedd",
+  "lane_name": "Senedd",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "government",
+  "notes": "A dated baseline for SI8 heat risk that sits alongside the drought and wildfire reports; the Climate Change Committee cooling recommendations and the proposed legal adaptation framework for Wales are levers NRW may be asked to inform.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "environmental",
+  "requirement_ids": [
+    "si8",
+    "si1"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "high",
+    "time_horizon": "immediate"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-c4e7a8",
+      "discipline": "osint_site",
+      "query_id": "site-ecological-early-warning-senedd",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001815",
+      "source_id": "senedd-research",
+      "source_name": "Senedd Research",
+      "url": "https://research.senedd.wales/research-articles/extreme-heat-in-wales-causes-impacts-adaptations/"
+    }
+  ],
+  "source_id": "senedd-research",
+  "source_name": "Senedd Research",
+  "state": "emerging",
+  "summary": "Senedd Research published an article on 24 September 2026 finding that summer 2026 was the hottest on record in Wales by average June to August temperature, almost 3C above the late twentieth century average, after the hottest spring and a driest, joint-hottest July. Wales had its first red extreme heat warning, official heatwaves in every month from May to August and marine heatwave conditions in Welsh seas for most of the summer. Fire and rescue services declared four major wildfire incidents in July and August, and the First Minister said he would convene a climate change and resilience summit on wildfires in October 2026.",
+  "title": "Summer 2026 was the hottest on record in Wales, with the first red extreme heat warning and persistent marine heatwave conditions",
+  "topics": [
+    {
+      "id": "people-place-and-resilience",
+      "name": "People, place and resilience"
+    },
+    {
+      "id": "marine-and-coastal",
+      "name": "Marine and coastal"
+    }
+  ],
+  "url": "https://research.senedd.wales/research-articles/extreme-heat-in-wales-causes-impacts-adaptations/"
+}

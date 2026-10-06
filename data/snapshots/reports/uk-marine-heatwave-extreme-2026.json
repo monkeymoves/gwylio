@@ -1,0 +1,115 @@
+{
+  "actor_id": null,
+  "actor_name": null,
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI1",
+      "direction": "threatens",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2026/long-lasting-uk-marine-heatwave-likely-to-reach-extreme-levels-next-week",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "threatens"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B2",
+  "hazards": [
+    {
+      "family": "climate-extreme",
+      "family_name": "Climate extreme",
+      "id": "marine-heatwave",
+      "name": "Marine heatwave"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-38ddb5 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "uk-marine-heatwave-extreme-2026",
+  "independent_confirmation": false,
+  "lane": "ecological-surveillance",
+  "lane_name": "Ecological surveillance",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "government",
+  "notes": "A recurring climate extreme for SI1 marine and coastal resilience: Welsh media and divers reported warm-water species, algal blooms and a Mediterranean anemone at Holyhead over summer 2026, early warning of shifts in protected marine features and fisheries.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "environmental",
+  "requirement_ids": [
+    "si1"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "high",
+    "potential_impact": "medium",
+    "time_horizon": "immediate"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-38ddb5",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-07",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000817",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2026/long-lasting-uk-marine-heatwave-likely-to-reach-extreme-levels-next-week"
+    }
+  ],
+  "source_id": null,
+  "source_name": "Met Office",
+  "state": "emerging",
+  "summary": "On 3 July 2026 the Met Office reported moderate to severe marine heatwave conditions across north-west European seas, with waters on average 2 degrees warmer than usual and anomalies of 4 to 5 degrees offshore parts of the Welsh and English coasts. Category 2 conditions covered much of the Welsh coastline, and in tidally mixed areas such as the Irish Sea the warming extended below the surface. It said the event could reach the rarely recorded extreme category the following week, and later coverage described it as the third and most intense UK marine heatwave of 2026.",
+  "title": "Met Office warns a long-lasting UK marine heatwave could reach extreme levels, with Welsh offshore waters 4 to 5 degrees above normal",
+  "topics": [
+    {
+      "id": "marine-and-coastal",
+      "name": "Marine and coastal"
+    },
+    {
+      "id": "climate-emissions",
+      "name": "Climate and emissions"
+    },
+    {
+      "id": "nature-and-ecosystems",
+      "name": "Nature and ecosystems"
+    }
+  ],
+  "url": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2026/long-lasting-uk-marine-heatwave-likely-to-reach-extreme-levels-next-week"
+}

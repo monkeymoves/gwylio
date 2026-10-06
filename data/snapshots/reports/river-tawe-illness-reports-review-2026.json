@@ -1,0 +1,119 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI4",
+      "direction": "neutral",
+      "name": "Decreasing the rate of pollution on land and entering water bodies",
+      "requirement_id": "si4",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI7",
+      "direction": "neutral",
+      "name": "Increasing the proportion of the population who have access to high quality green or blue space, and who use them sustainably",
+      "requirement_id": "si7",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "gov.wales/written-statement-update-river-tawe-water-quality",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "neutral"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B2",
+  "hazards": [
+    {
+      "family": "pollution-incident",
+      "family_name": "Pollution incident",
+      "id": "storm-overflow-discharges",
+      "name": "Storm overflow discharges"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-f152d1 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by welsh-government; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "river-tawe-illness-reports-review-2026",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "government",
+  "notes": "Shows political and public pressure over river recreation where NRW's monitoring is not designed for bathing risk, the gap that inland bathing water designation campaigns target.",
+  "owner": null,
+  "places": [
+    {
+      "id": "south-west-wales",
+      "name": "South West Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "incident",
+  "requirement_ids": [
+    "si4",
+    "si7"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "medium",
+    "potential_impact": "low",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-f152d1",
+      "discipline": "osint_site",
+      "query_id": "site-pollution-water-land-welsh-government",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001244",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/written-statement-update-river-tawe-water-quality"
+    }
+  ],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government",
+  "state": "emerging",
+  "summary": "On 2 September 2026 the Cabinet Minister for Rural Resilience and Sustainability updated the Senedd on reports of illness linked to recreational use of the River Tawe, first raised in the Senedd on 2 June 2026. NRW had reviewed incident reports, water quality data and storm overflow information and found no evidence of pollution, permit non-compliance or another incident that would explain the illnesses or warrant enforcement. The statement noted that routine monitoring of the Tawe assesses Water Framework Directive condition rather than bathing water quality.",
+  "title": "River Tawe illness reports: NRW review finds no pollution or permit breach to explain them; routine monitoring is not designed for bathing",
+  "topics": [
+    {
+      "id": "pollution-water-and-land",
+      "name": "Pollution of water and land"
+    },
+    {
+      "id": "people-place-and-resilience",
+      "name": "People, place and resilience"
+    }
+  ],
+  "url": "https://www.gov.wales/written-statement-update-river-tawe-water-quality"
+}

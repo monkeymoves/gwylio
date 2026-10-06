@@ -1,0 +1,112 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI6",
+      "direction": "supports",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "requirement_id": "si6",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI10",
+      "direction": "supports",
+      "name": "Increasing the proportion of the population that act to mitigate and adapt to the nature, climate and pollution crises",
+      "requirement_id": "si10",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "gov.wales/first-100-days-warmer-and-more-energy-efficient-homes-html",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-91f3ae in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by welsh-government; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "warm-homes-programme-first-100-days-review-2026",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "government",
+  "notes": "Home heating is a large share of the emissions that SI6 tracks and a visible form of public action under SI10; the review signals the new government's retrofit direction ahead of the next emissions reduction plan, though no funding figures were set on the page.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si6",
+    "si10"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "medium",
+    "novelty": "high",
+    "potential_impact": "medium",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-91f3ae",
+      "discipline": "osint_web",
+      "query_id": "web-public-behaviour-04",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001087",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/first-100-days-warmer-and-more-energy-efficient-homes-html"
+    }
+  ],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government",
+  "state": "emerging",
+  "summary": "On 16 July 2026 the Welsh Government published the report of its First 100 Days review of the Warm Homes Programme. It recorded that homes produce 8 percent of Welsh greenhouse gas emissions, that the Climate Change Committee pathway needs about 25,000 low carbon heating installations a year by 2030, and that 25 percent of households (340,000) were in fuel poverty in October 2024. It identified immediate opportunities to inject funding into the Nest and Optimise Retrofit schemes and to pilot area-based delivery over 18 months, with a longer cross-tenure review to inform the next emissions reduction plan.",
+  "title": "Welsh Government's First 100 Days review of the Warm Homes Programme proposes more funding for Nest and Optimise, area-based pilots and a cross-tenure retrofit review",
+  "topics": [
+    {
+      "id": "climate-emissions",
+      "name": "Climate and emissions"
+    },
+    {
+      "id": "public-behaviour",
+      "name": "Public behaviour"
+    }
+  ],
+  "url": "https://www.gov.wales/first-100-days-warmer-and-more-energy-efficient-homes-html"
+}

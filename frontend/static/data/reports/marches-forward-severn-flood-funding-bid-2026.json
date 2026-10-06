@@ -1,0 +1,134 @@
+{
+  "actor_id": null,
+  "actor_name": null,
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI8",
+      "direction": "neutral",
+      "name": "Increasing the proportion of the population living in places that will continue to support and contribute to their health and well-being in a changing climate",
+      "requirement_id": "si8",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI9",
+      "direction": "supports",
+      "name": "Increasing the impact of partnership approaches which deliver multiple benefits and address the root causes of the nature, climate and pollution crises",
+      "requirement_id": "si9",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "shropshirestar.com/news/shropshire-and-welsh-councils-unite-in-ps5m-bid-for-severn-flood-plans-9176737",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "supports",
+    "neutral"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": "2027-03-31",
+  "findings": [],
+  "grading": "C3",
+  "hazards": [
+    {
+      "family": "flood-storm",
+      "family_name": "Flood and storm",
+      "id": "river-and-surface-water-flooding",
+      "name": "River and surface water flooding"
+    },
+    {
+      "family": "funding-capacity",
+      "family_name": "Funding and capacity",
+      "id": "public-funding-pressure",
+      "name": "Public funding pressure"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-e491d0 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "marches-forward-severn-flood-funding-bid-2026",
+  "independent_confirmation": false,
+  "lane": "independent-media",
+  "lane_name": "Independent media",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "NRW co-leads the scheme, so the funding cliff on 31 March 2027 bears directly on cross-border flood resilience work in the upper Severn. The strategy itself was reported as due for publication in autumn 2026.",
+  "owner": null,
+  "places": [
+    {
+      "id": "severn",
+      "name": "River Severn"
+    },
+    {
+      "id": "mid-wales",
+      "name": "Mid Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "funding",
+  "requirement_ids": [
+    "si8",
+    "si9"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "high",
+    "potential_impact": "medium",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-e491d0",
+      "discipline": "osint_web",
+      "query_id": "web-people-place-resilience-08",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000574",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.shropshirestar.com/news/shropshire-and-welsh-councils-unite-in-ps5m-bid-for-severn-flood-plans-9176737"
+    }
+  ],
+  "source_id": null,
+  "source_name": "Shropshire Star",
+  "state": "emerging",
+  "summary": "The Shropshire Star reported on 26 September 2026 that the Marches Forward Partnership (Shropshire, Herefordshire, Powys and Monmouthshire councils) planned to ask the Senedd and Westminster for about 5 million pounds, 2.5 million from each, partly to deliver the Severn Valley Water Management Scheme strategy. The scheme, led by the Environment Agency, NRW, Powys and Shropshire councils, had about 14 million pounds of central funding, which ends at the close of the 2026-27 financial year. Two-way for SI8: a delivery route if funded, a gap if not.",
+  "title": "Marches Forward Partnership councils, including Powys and Monmouthshire, seek 5 million pounds to deliver the Severn Valley flood strategy",
+  "topics": [
+    {
+      "id": "flood-risk",
+      "name": "Flood risk"
+    },
+    {
+      "id": "governance-and-funding",
+      "name": "Governance and funding"
+    },
+    {
+      "id": "partnership-and-society",
+      "name": "Partnership and society"
+    }
+  ],
+  "url": "https://www.shropshirestar.com/news/shropshire-and-welsh-councils-unite-in-ps5m-bid-for-severn-flood-plans-9176737"
+}

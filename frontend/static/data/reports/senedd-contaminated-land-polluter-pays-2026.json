@@ -1,0 +1,126 @@
+{
+  "actor_id": "senedd",
+  "actor_name": "Senedd Cymru (Welsh Parliament)",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI4",
+      "direction": "supports",
+      "name": "Decreasing the rate of pollution on land and entering water bodies",
+      "requirement_id": "si4",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "follow_up",
+  "canonical_url": "fwi.co.uk/news/environment/senedd-backs-polluter-pays-call-over-contaminated-land",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "C3",
+  "hazards": [
+    {
+      "family": "funding-capacity",
+      "family_name": "Funding and capacity",
+      "id": "public-funding-pressure",
+      "name": "Public funding pressure"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-bd790e in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "senedd-contaminated-land-polluter-pays-2026",
+  "independent_confirmation": false,
+  "lane": "independent-media",
+  "lane_name": "Independent media",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "A new strategy and testing framework would likely draw on NRW's role on special sites and water receptors (SI4); the funding question and renewed attention to PCB tips around Wrexham signal rising public and political pressure.",
+  "owner": "Evidence team",
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si4"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "medium",
+    "novelty": "high",
+    "potential_impact": "medium",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-bd790e",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-05",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000241",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.fwi.co.uk/news/environment/senedd-backs-polluter-pays-call-over-contaminated-land"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-bd790e",
+      "discipline": "osint_web",
+      "query_id": "web-soil-land-04",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000242",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.fwi.co.uk/news/environment/senedd-backs-polluter-pays-call-over-contaminated-land"
+    }
+  ],
+  "source_id": null,
+  "source_name": "Farmers Weekly",
+  "state": "emerging",
+  "summary": "On 30 September 2026 a Senedd member debate led by Niamh Salkeld MS won cross-party support for a polluter pays approach to historic contaminated land, a national framework to test and assess potentially contaminated sites, more support for councils, and a UK Government funding mechanism where costs cannot be recovered. Farmers Weekly reported on 5 October 2026 that the Welsh Government called contaminated land a key priority and pledged a Wales-wide strategy to restore post-industrial land, strengthening the polluter pays principle. NRW said a 2015 survey had identified more than 9,000 potential sites needing investigation and that farmland near historic sites was monitored by risk rather than routinely.",
+  "title": "Senedd backs a polluter pays approach and a national testing framework for contaminated land; Welsh Government pledges a Wales-wide strategy",
+  "topics": [
+    {
+      "id": "pollution-water-and-land",
+      "name": "Pollution of water and land"
+    },
+    {
+      "id": "soil-and-land",
+      "name": "Soil and land"
+    },
+    {
+      "id": "governance-and-funding",
+      "name": "Governance and funding"
+    }
+  ],
+  "url": "https://www.fwi.co.uk/news/environment/senedd-backs-polluter-pays-call-over-contaminated-land"
+}

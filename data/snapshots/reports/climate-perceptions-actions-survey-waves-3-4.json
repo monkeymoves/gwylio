@@ -1,7 +1,7 @@
 {
   "actor_id": "welsh-government",
   "actor_name": "Welsh Government",
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI10",
@@ -24,15 +24,9 @@
   "directions": [
     "informs_baseline"
   ],
-  "distinct_sources": 0,
+  "distinct_sources": 1,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-25, 73 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "B2",
   "hazards": [],
   "history": [
@@ -45,14 +39,24 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by welsh-government; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Re-read the gov.wales release page for waves 3 and 4 (11 March 2026, six biannual waves planned); a search found no release of waves 5 or 6 by 6 October 2026. The source still stands.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "climate-perceptions-actions-survey-waves-3-4",
   "independent_confirmation": false,
   "lane": "welsh-government",
   "lane_name": "Welsh Government",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-25",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "government",
   "notes": "This measures the SI10 concept (the proportion of the population acting to mitigate and adapt) more directly than any source already on the register, and it was invisible to the scan until the public_behaviour cluster was added on 24 July 2026. Informs the SI10 baseline rather than pushing it. Also a candidate for the metric release calendar: waves 3 and 4 landed 11 March 2026 and the publication date for waves 5 and 6 is not stated, so no next_expected is recorded.",
   "owner": null,
@@ -78,7 +82,30 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-f2ffad",
+      "discipline": "osint_web",
+      "query_id": "web-public-behaviour-01",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001047",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/climate-change-perceptions-and-actions-survey-wave-3-and-4"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-f2ffad",
+      "discipline": "osint_web",
+      "query_id": "web-public-behaviour-02",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001048",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/climate-change-perceptions-and-actions-survey-wave-3-and-4"
+    }
+  ],
   "source_id": "welsh-government",
   "source_name": "Welsh Government",
   "state": "emerging",

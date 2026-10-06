@@ -1,0 +1,107 @@
+{
+  "actor_id": null,
+  "actor_name": null,
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI4",
+      "direction": "threatens",
+      "name": "Decreasing the rate of pollution on land and entering water bodies",
+      "requirement_id": "si4",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "follow_up",
+  "canonical_url": "envirolink.org/2026/05/23/new-welsh-minister-declares-river-protection-rules-for-farm-waste-spreading-ineffective",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "threatens"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "F3",
+  "hazards": [
+    {
+      "family": "pollution-incident",
+      "family_name": "Pollution incident",
+      "id": "agricultural-pollution",
+      "name": "Agricultural pollution"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-88d313 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "coap-closed-period-overhaul-minister-2026",
+  "independent_confirmation": false,
+  "lane": "independent-media",
+  "lane_name": "Independent media",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "NRW enforces these regulations, so a move from fixed closed periods to a condition or technology-led approach changes its regulatory model and the SI4 risk from slurry spreading. Other reporting (Farmers Weekly, NFU Cymru) names Cabinet Minister Llyr Gruffydd; confirm the formal proposal and any consultation, and link it to the 2025 review report.",
+  "owner": "Evidence team",
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "F",
+  "reliability_label": "cannot be judged",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si4"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "low",
+    "novelty": "high",
+    "potential_impact": "high",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-88d313",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-07",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000285",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.envirolink.org/2026/05/23/new-welsh-minister-declares-river-protection-rules-for-farm-waste-spreading-ineffective/"
+    }
+  ],
+  "source_id": null,
+  "source_name": "EnviroLink Network",
+  "state": "emerging",
+  "summary": "On 23 May 2026 EnviroLink reported that the new Welsh environment minister had declared that the ban on spreading muck and agricultural waste in the closed period \"doesn't work\". The report described this as a significant shift that could lead the government to revise or abandon the current approach to agricultural water protection under the Control of Agricultural Pollution Regulations. Farming unions had campaigned against the calendar-based closed periods ahead of the May 2026 Senedd election.",
+  "title": "New Welsh environment minister declares the closed-period ban on spreading slurry and manure ineffective, signalling a revision of the agricultural pollution rules",
+  "topics": [
+    {
+      "id": "pollution-water-and-land",
+      "name": "Pollution of water and land"
+    }
+  ],
+  "url": "https://www.envirolink.org/2026/05/23/new-welsh-minister-declares-river-protection-rules-for-farm-waste-spreading-ineffective/"
+}

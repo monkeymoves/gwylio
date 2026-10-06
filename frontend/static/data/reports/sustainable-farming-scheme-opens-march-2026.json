@@ -1,0 +1,139 @@
+{
+  "actor_id": null,
+  "actor_name": null,
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI1",
+      "direction": "supports",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI2",
+      "direction": "neutral",
+      "name": "Increasing the rate of habitat restoration",
+      "requirement_id": "si2",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI6",
+      "direction": "neutral",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "requirement_id": "si6",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "brief",
+  "canonical_url": "fwi.co.uk/news/farm-policy/key-elements-of-new-welsh-farm-support-scheme-incomplete",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "supports",
+    "neutral"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "C2",
+  "hazards": [
+    {
+      "family": "market-land-use-change",
+      "family_name": "Market and land use change",
+      "id": "farm-support-transition",
+      "name": "Farm support transition"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-751e7b in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "sustainable-farming-scheme-opens-march-2026",
+  "independent_confirmation": false,
+  "lane": "independent-media",
+  "lane_name": "Independent media",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "The SFS is the main lever for habitat, soil and carbon outcomes on enclosed farmland; how and when the Optional and Collaborative layers arrive decides how much SI1 and SI2 gain from it.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si1",
+    "si2",
+    "si6"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "high",
+    "time_horizon": "immediate"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-751e7b",
+      "discipline": "osint_web",
+      "query_id": "web-nature-ecosystems-06",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000107",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.fwi.co.uk/news/farm-policy/key-elements-of-new-welsh-farm-support-scheme-incomplete"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-c41a60",
+      "discipline": "osint_web",
+      "query_id": "web-soil-land-02",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000960",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/sustainable-farming-scheme-optional-and-collaborative-layers-overview-support-available-2026-html"
+    }
+  ],
+  "source_id": null,
+  "source_name": "Farmers Weekly",
+  "state": "emerging",
+  "summary": "Farmers Weekly reported on 27 February 2026 that farmers in Wales could apply for the Universal layer of the Sustainable Farming Scheme (SFS) from Monday 2 March 2026, but the Welsh Government confirmed that the Collaborative and Optional layers would not open until later in the year. Digon yw Digon and the Welsh Conservatives criticised asking farmers to commit to multi-year agreements before those layers were defined, while the Farmers' Union of Wales and NFU Cymru said their priority was a workable Universal layer.",
+  "title": "Sustainable Farming Scheme opens for applications on 2 March 2026 with its Optional and Collaborative layers not yet available",
+  "topics": [
+    {
+      "id": "nature-and-ecosystems",
+      "name": "Nature and ecosystems"
+    },
+    {
+      "id": "soil-and-land",
+      "name": "Soil and land"
+    }
+  ],
+  "url": "https://www.fwi.co.uk/news/farm-policy/key-elements-of-new-welsh-farm-support-scheme-incomplete"
+}

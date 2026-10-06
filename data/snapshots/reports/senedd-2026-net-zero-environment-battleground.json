@@ -1,7 +1,7 @@
 {
   "actor_id": "institute-of-welsh-affairs",
   "actor_name": "Institute of Welsh Affairs (IWA)",
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI6",
@@ -45,15 +45,9 @@
   "directions": [
     "threatens"
   ],
-  "distinct_sources": 0,
+  "distinct_sources": 2,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "C3",
   "hazards": [],
   "history": [
@@ -96,14 +90,29 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by nation-cymru; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Replaces the 'early analysis expects' framing with the dated Programme for Government of 22 September 2026, which sets a net zero by 2040 pathway.",
+      "kind": "updated",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Re-read the IWA article of 5 May 2026 and read the Welsh Government's Programme for Government 2026 to 2030 'New Ambition for Wales' (published 22 September 2026, reported by nation.cymru): its 'Climate and nature emergency' section commits to a Climate and Nature Action Plan with a pathway to net zero by 2040, nature recovery targets and an independent Office for Environmental Governance Wales.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "senedd-2026-net-zero-environment-battleground",
   "independent_confirmation": false,
   "lane": "research-evidence",
   "lane_name": "Research and evidence",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-24",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "partnership_society",
   "notes": "Strategically significant: an electoral risk to the whole policy context the SIs assume, surfaced by a non-government source (IWA) the old gov-only scan would never have caught. Post-election update (21 July 2026): the right-of-centre bloc did not take power, so the acute threat receded, but the structural risk is live: a minority government, Reform UK as second party committed to halting renewables and scrapping NRW, and net zero now a partisan dividing line rather than a consensus. Direction stays threatens with reduced immediacy (time horizon moved to medium term). Watch the programme for government and any cooperation agreements for SI-relevant commitments, and Reform positioning on NRW and renewables as pressure on the policy context. The IWA analysis (5 May 2026) predates the 7 May election and is cited only for the battleground framing; the result and government formation are sourced to post-election coverage (House of Commons Library CBP-10838 and ITV News Wales, 9 May 2026).",
   "owner": "Luke",
@@ -132,11 +141,56 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-6dbfe4",
+      "discipline": "osint_site",
+      "query_id": "site-air-climate-emissions-independent-media",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001470",
+      "source_id": "nation-cymru",
+      "source_name": "Nation.Cymru",
+      "url": "https://nation.cymru/news/plaid-cymru-pledges-to-make-wales-a-world-leader-in-renewable-energy/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-ca09d6",
+      "discipline": "osint_site",
+      "query_id": "site-air-climate-emissions-independent-media",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001474",
+      "source_id": "nation-cymru",
+      "source_name": "Nation.Cymru",
+      "url": "https://nation.cymru/feature/why-windfarms-and-electricity-pylons-have-become-a-major-issue-in-the-senedd-election/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-23eff3",
+      "discipline": "osint_web",
+      "query_id": "web-partnership-society-07",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000668",
+      "source_id": "institute-of-welsh-affairs",
+      "source_name": "Institute of Welsh Affairs",
+      "url": "https://www.iwa.wales/agenda/2026/05/iwa-view-senedd-2026-the-emergence-of-a-key-battle-ground-net-zero-and-the-environment/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-23eff3",
+      "discipline": "osint_site",
+      "query_id": "site-air-climate-emissions-research-evidence",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000669",
+      "source_id": "institute-of-welsh-affairs",
+      "source_name": "Institute of Welsh Affairs",
+      "url": "https://www.iwa.wales/agenda/2026/05/iwa-view-senedd-2026-the-emergence-of-a-key-battle-ground-net-zero-and-the-environment/"
+    }
+  ],
   "source_id": "institute-of-welsh-affairs",
   "source_name": "Institute of Welsh Affairs",
   "state": "emerging",
-  "summary": "Institute of Welsh Affairs analysis (5 May 2026) argued net zero had moved from cross-party consensus to a central Senedd election dividing line, with a right-of-centre bloc proposing to halt large onshore renewables, deprioritise net zero and scrap Natural Resources Wales. The 7 May 2026 election has now taken place: Plaid Cymru became the largest party (43 seats) and formed a minority government under Rhun ap Iorwerth, with Reform UK second (34), Labour third (9), the Conservatives on 7 and the Greens entering the Senedd with 2. The bloc that would have halted renewables and scrapped NRW did not take power, and early analysis expects net zero and wider climate policy to remain priorities, but the polarisation the IWA described is now embedded in the chamber and the government governs without a majority.",
+  "summary": "Institute of Welsh Affairs analysis (5 May 2026) argued net zero had moved from cross-party consensus to a central Senedd election dividing line, with a right-of-centre bloc proposing to halt large onshore renewables, deprioritise net zero and scrap Natural Resources Wales. In the 7 May 2026 election Plaid Cymru became the largest party (43 seats) and formed a minority government under Rhun ap Iorwerth, with Reform UK second (34), Labour third (9), the Conservatives on 7 and the Greens entering the Senedd with 2. The bloc that would have halted renewables and scrapped NRW did not take power. The government's Programme for Government 2026 to 2030, published on 22 September 2026, committed to a cross-government Climate and Nature Action Plan overseen by a Climate and Nature Board, identifying a pathway to net zero by 2040 (ten years ahead of the statutory 2050 target), ambitious targets for substantive nature recovery by 2050, a National Energy Strategy, and a strong, independent Office for Environmental Governance Wales. The polarisation the IWA described is embedded in the chamber, and the government governs without a majority.",
   "title": "Net zero was a Senedd 2026 dividing line; Plaid Cymru minority government holds the policy line, with Reform UK now the second party",
   "topics": [
     {

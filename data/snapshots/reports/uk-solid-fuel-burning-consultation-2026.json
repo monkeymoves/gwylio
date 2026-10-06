@@ -1,0 +1,100 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI5",
+      "direction": "supports",
+      "name": "Decreasing the rate of pollution to air from industrial and non-industrial sources",
+      "requirement_id": "si5",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "gov.wales/solid-fuel-burning",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B3",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-ad1fa9 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by welsh-government; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "uk-solid-fuel-burning-consultation-2026",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "government",
+  "notes": "Domestic burning is a leading PM2.5 source; which measures extend to Wales will shape progress against the PM2.5 target being set under the 2024 Act (see pm25-air-quality-target-regulations-wales-2026).",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si5"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "medium",
+    "potential_impact": "medium",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-ad1fa9",
+      "discipline": "osint_web",
+      "query_id": "web-air-quality-02",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001000",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/solid-fuel-burning"
+    }
+  ],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government",
+  "state": "emerging",
+  "summary": "From 22 January to 19 March 2026 the Welsh Government carried a consultation, held on the Defra site, on UK Government proposals to reduce fine particulate matter (PM2.5) and smoke from solid fuel burning, including a new emission limit for stoves, mandatory appliance labelling and mandatory health labelling of fuels. The page said some options would be taken forward UK-wide and some might apply in England only, and that responses were being reviewed.",
+  "title": "UK-wide consultation on stove emission limits and fuel labelling to cut PM2.5 closed; outcome awaited",
+  "topics": [
+    {
+      "id": "air-quality",
+      "name": "Air quality"
+    }
+  ],
+  "url": "https://www.gov.wales/solid-fuel-burning"
+}

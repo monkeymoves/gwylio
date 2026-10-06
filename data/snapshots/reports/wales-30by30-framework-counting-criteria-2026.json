@@ -1,0 +1,120 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI1",
+      "direction": "supports",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI2",
+      "direction": "supports",
+      "name": "Increasing the rate of habitat restoration",
+      "requirement_id": "si2",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI9",
+      "direction": "supports",
+      "name": "Increasing the impact of partnership approaches which deliver multiple benefits and address the root causes of the nature, climate and pollution crises",
+      "requirement_id": "si9",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "follow_up",
+  "canonical_url": "gov.wales/30by30-framework-wales-html",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-428a4d in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by welsh-government; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "wales-30by30-framework-counting-criteria-2026",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "government",
+  "notes": "Ties 30by30 reporting directly to NRW's protected site condition assessments, so NRW monitoring capacity becomes the gate on what Wales can claim against SI1 and SI2. Pairs with the Audit Wales finding on SSSI designation capacity.",
+  "owner": "Evidence team",
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si1",
+    "si2",
+    "si9"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "high",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-428a4d",
+      "discipline": "osint_site",
+      "query_id": "site-nature-ecosystems-welsh-government",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001115",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/30by30-framework-wales-html"
+    }
+  ],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government",
+  "state": "emerging",
+  "summary": "The Welsh Government's 'A 30by30 framework for Wales', first published on 18 June 2025 and last updated on 7 August 2026, sits within the updated Nature Recovery Action Plan (2026). It set criteria for areas counting towards protecting 30 percent of land, freshwater and sea by 2030: Sites of Special Scientific Interest, Special Areas of Conservation and Special Protection Areas count only where evidence supports a favourable or unfavourable recovering condition assessment. Designated sites covered about 11 percent of land and about 69 percent of the inshore marine area as of 2025, and voluntary Naturfa sites are Wales' recognition of other effective area-based conservation measures.",
+  "title": "Welsh Government 30by30 framework: only protected sites in favourable or recovering condition will count, with Naturfa sites as Wales' OECMs",
+  "topics": [
+    {
+      "id": "nature-and-ecosystems",
+      "name": "Nature and ecosystems"
+    },
+    {
+      "id": "marine-and-coastal",
+      "name": "Marine and coastal"
+    }
+  ],
+  "url": "https://www.gov.wales/30by30-framework-wales-html"
+}

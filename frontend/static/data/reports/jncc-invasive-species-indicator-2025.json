@@ -1,0 +1,128 @@
+{
+  "actor_id": "jncc",
+  "actor_name": "Joint Nature Conservation Committee (JNCC)",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI1",
+      "direction": "informs_baseline",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "park",
+  "canonical_url": "jncc.gov.uk/our-work/ukbi-invasive-species",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "informs_baseline"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B2",
+  "hazards": [
+    {
+      "family": "invasive-species",
+      "family_name": "Invasive species",
+      "id": "invasive-non-native-plants",
+      "name": "Invasive non-native plants"
+    },
+    {
+      "family": "invasive-species",
+      "family_name": "Invasive species",
+      "id": "invasive-aquatic-species",
+      "name": "Invasive aquatic species"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-8a8e6a in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by jncc; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "jncc-invasive-species-indicator-2025",
+  "independent_confirmation": false,
+  "lane": "uk-government-and-regulators",
+  "lane_name": "UK Government and regulators",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "government",
+  "notes": "A Great Britain baseline for invasive species pressure on Welsh ecosystems and the GBF Target 6 commitment in the UK NBSAP; no Wales breakdown on the page.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "data_release",
+  "requirement_ids": [
+    "si1"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "low",
+    "potential_impact": "medium",
+    "time_horizon": "long_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-8a8e6a",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-02",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000752",
+      "source_id": "jncc",
+      "source_name": "Joint Nature Conservation Committee (JNCC)",
+      "url": "https://jncc.gov.uk/our-work/ukbi-invasive-species/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-8a8e6a",
+      "discipline": "osint_site",
+      "query_id": "site-ecological-early-warning-uk-government-and-regulators",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000753",
+      "source_id": "jncc",
+      "source_name": "Joint Nature Conservation Committee (JNCC)",
+      "url": "https://jncc.gov.uk/our-work/ukbi-invasive-species/"
+    }
+  ],
+  "source_id": "jncc",
+  "source_name": "Joint Nature Conservation Committee (JNCC)",
+  "state": "emerging",
+  "summary": "In December 2025 JNCC updated the UK biodiversity indicator on pressure from invasive species, with data to 2024. It assessed the long term trend (1969 to 2024) in the number of invasive non-native species established across 10 percent or more of Great Britain as deteriorating in freshwater, marine (coastal) and terrestrial environments, with 14 freshwater, 30 marine and 64 terrestrial species at that extent in 2024, and found little or no change in the rate of new establishments. The indicator is the UK's headline measure for Global Biodiversity Framework Target 6.",
+  "title": "JNCC invasive species indicator 2025: pressure deteriorating in freshwater, marine and terrestrial environments of Great Britain",
+  "topics": [
+    {
+      "id": "biosecurity",
+      "name": "Biosecurity"
+    },
+    {
+      "id": "nature-and-ecosystems",
+      "name": "Nature and ecosystems"
+    }
+  ],
+  "url": "https://jncc.gov.uk/our-work/ukbi-invasive-species/"
+}

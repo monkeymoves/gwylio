@@ -1,7 +1,7 @@
 {
   "actor_id": "nation-cymru",
   "actor_name": "Nation.Cymru",
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI2",
@@ -31,15 +31,9 @@
   "directions": [
     "threatens"
   ],
-  "distinct_sources": 0,
+  "distinct_sources": 1,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "C3",
   "hazards": [],
   "history": [
@@ -62,14 +56,29 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by senedd-research; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Adds the official 2025-26 woodland creation statistics (680 hectares, 25 June 2026), which the notes said to watch and which corroborate the ECIU projection.",
+      "kind": "updated",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Re-read the nation.cymru report of 7 June 2026 on the ECIU analysis (14 percent of the 2030 target, 41,000 hectare UK shortfall); a search found Confor (25 June 2026) citing Forest Research provisional statistics of only 680 hectares of new woodland in Wales in the year to 31 March 2026, against a 6,000 hectare annual target.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "eciu-wales-tree-planting-14-percent-of-target",
   "independent_confirmation": false,
   "lane": "independent-media",
   "lane_name": "Independent media",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-24",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "partnership_society",
   "notes": "Direct challenge to the delivery trajectory behind the NRAP's 21,500 hectare by 2030 aspiration and the woodland share of net zero sequestration (SI6). A think-tank projection, so evidence medium, but the gap it names is enormous and no government source on the register says anything comparable. Watch official planting statistics against it.",
   "owner": null,
@@ -96,11 +105,23 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-fb68b5",
+      "discipline": "osint_site",
+      "query_id": "site-nature-ecosystems-senedd",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001123",
+      "source_id": "senedd-research",
+      "source_name": "Senedd Research",
+      "url": "https://research.senedd.wales/research-articles/what-is-the-countryside-for/"
+    }
+  ],
   "source_id": "nation-cymru",
   "source_name": "Nation.Cymru",
   "state": "emerging",
-  "summary": "Energy and Climate Intelligence Unit analysis (reported 7 June 2026) projects Wales will deliver only 14 percent of its 2030 woodland creation target, within a UK-wide cumulative shortfall of about 41,000 hectares by 2030. Over 70 percent of the carbon removal needed to 2050 depends on trees planted in the next five years, and polling shows 66 percent of Welsh adults support significantly increased planting.",
+  "summary": "Energy and Climate Intelligence Unit analysis (reported 7 June 2026) projects Wales will deliver only 14 percent of its 2030 woodland creation target, within a UK-wide cumulative shortfall of about 41,000 hectares by 2030. Over 70 percent of the carbon removal needed to 2050 depends on trees planted in the next five years, and polling shows 66 percent of Welsh adults support significantly increased planting. Official provisional statistics published by Forest Research on 25 June 2026 bear the projection out: only 680 hectares of new woodland were created in Wales in the year to 31 March 2026, about 10 percent of the 6,000 hectare annual target and down from 960 hectares in 2024-25.",
   "title": "ECIU analysis: Wales projected to deliver just 14 percent of its 2030 tree planting target",
   "topics": [
     {

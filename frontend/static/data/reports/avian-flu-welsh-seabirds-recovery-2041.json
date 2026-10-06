@@ -1,7 +1,7 @@
 {
   "actor_id": "nation-cymru",
   "actor_name": "Nation.Cymru",
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI1",
@@ -24,15 +24,9 @@
   "directions": [
     "threatens"
   ],
-  "distinct_sources": 0,
+  "distinct_sources": 1,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "C2",
   "hazards": [
     {
@@ -52,14 +46,24 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Re-read the nation.cymru article of 3 July 2026: it still reports the study projecting Grassholm gannet recovery by 2041 at best, after mortality rose from 11 to 47 percent and the colony fell 38 percent in 2023; no newer study or correction found. The source still stands.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "avian-flu-welsh-seabirds-recovery-2041",
   "independent_confirmation": false,
   "lane": "independent-media",
   "lane_name": "Independent media",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-24",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "partnership_society",
   "notes": "A biophysical shock to a flagship ecosystem-resilience population that the policy scan never surfaced. Threatens SI1: seabird colonies are a visible component of ecosystem resilience, and a nineteen-year recovery is a material, long-dated dent. Surfaced by the new ecological_early_warning lane. Verified date and framing against the nation.cymru report on 23 July 2026.",
   "owner": null,
@@ -85,7 +89,30 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-2e8158",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-03",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000762",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.northwaleswildlifetrust.org.uk/our-work-nature-reserves/bird-flu"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-4e8d65",
+      "discipline": "osint_site",
+      "query_id": "site-ecological-early-warning-independent-media",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001886",
+      "source_id": "nation-cymru",
+      "source_name": "Nation.Cymru",
+      "url": "https://nation.cymru/news/welsh-seabird-colony-may-not-recover-from-bird-flu-until-2041/"
+    }
+  ],
   "source_id": "nation-cymru",
   "source_name": "Nation.Cymru",
   "state": "emerging",

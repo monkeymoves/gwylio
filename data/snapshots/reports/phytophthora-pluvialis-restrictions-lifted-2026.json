@@ -1,0 +1,104 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI1",
+      "direction": "informs_baseline",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "park",
+  "canonical_url": "gov.wales/phytophthora-pluvialis",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "informs_baseline"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-b387d3 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by welsh-government; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "phytophthora-pluvialis-restrictions-lifted-2026",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "government",
+  "notes": "Removes a statutory control on the Welsh Government Woodland Estate that NRW manages; the Forestry Commission's companion page attributes the change to an updated 2026 rapid pest risk analysis finding it does not meet quarantine pest criteria.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si1"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "high",
+    "potential_impact": "low",
+    "time_horizon": "immediate"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-b387d3",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-01",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000736",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/phytophthora-pluvialis"
+    }
+  ],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government",
+  "state": "emerging",
+  "summary": "On 4 March 2026 the Welsh Government updated its Phytophthora pluvialis guidance to say the pathogen was no longer considered a threat to Welsh woodlands, that sightings no longer needed to be reported, and that the demarcated areas set up after the first Welsh finding in December 2021 had been revoked.",
+  "title": "Phytophthora pluvialis no longer treated as a threat in Wales; demarcated areas revoked",
+  "topics": [
+    {
+      "id": "biosecurity",
+      "name": "Biosecurity"
+    },
+    {
+      "id": "woodland-and-forestry",
+      "name": "Woodland and forestry"
+    }
+  ],
+  "url": "https://www.gov.wales/phytophthora-pluvialis"
+}

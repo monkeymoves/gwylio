@@ -1,7 +1,7 @@
 {
   "actor_id": "welsh-government",
   "actor_name": "Welsh Government",
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI1",
@@ -37,15 +37,9 @@
   "directions": [
     "supports"
   ],
-  "distinct_sources": 0,
+  "distinct_sources": 2,
   "event_horizon": "2028-04-27",
-  "findings": [
-    {
-      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "B2",
   "hazards": [],
   "history": [
@@ -88,14 +82,24 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.; created as matured by analyst override",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by institute-of-welsh-affairs; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Re-read the gov.wales announcement that the Bill passed the Senedd on 24 February 2026 and checked legislation.gov.uk (asc 2026/4, Royal Assent 27 April 2026); a search found no biodiversity target regulations or Office of Environmental Governance Wales chair appointment yet. The source still stands and the April 2028 horizon remains the statutory deadline.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "environment-principles-governance-biodiversity-targets-wales-act-2026",
   "independent_confirmation": false,
   "lane": "welsh-government",
   "lane_name": "Welsh Government",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-24",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "government",
   "notes": "Verified 22 July 2026: Royal Assent confirmed 27 April 2026; lifecycle moved to matured (Act is settled context); the live watch is the target regulations, event_horizon set to the two-year statutory deadline. A follow-on consultation on the Environmental Principles and Integrating Environmental Protection Statement launched 19 June 2026 (candidate for next triage).",
   "owner": null,
@@ -123,7 +127,52 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-e08e94",
+      "discipline": "osint_web",
+      "query_id": "web-partnership-society-07",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000670",
+      "source_id": "institute-of-welsh-affairs",
+      "source_name": "Institute of Welsh Affairs",
+      "url": "https://www.iwa.wales/agenda/2025/11/at-a-crossroads-why-wales-must-futureproof-its-new-green-governance/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-e339f2",
+      "discipline": "osint_web",
+      "query_id": "web-partnership-society-05",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000640",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.burges-salmon.com/articles/102mmhf/biodiversity-in-wales-what-the-new-environment-bill-means-for-welsh-consenting/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-9ad8ac",
+      "discipline": "osint_web",
+      "query_id": "web-nature-ecosystems-01",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000022",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/wales-strengthens-environmental-protections-landmark-bill-passes-senedd"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-9ad8ac",
+      "discipline": "osint_site",
+      "query_id": "site-ecological-early-warning-welsh-government",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000023",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/wales-strengthens-environmental-protections-landmark-bill-passes-senedd"
+    }
+  ],
   "source_id": "welsh-government",
   "source_name": "Welsh Government",
   "state": "matured",

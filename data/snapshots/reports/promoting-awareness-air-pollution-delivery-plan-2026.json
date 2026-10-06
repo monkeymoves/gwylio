@@ -1,0 +1,112 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI5",
+      "direction": "supports",
+      "name": "Decreasing the rate of pollution to air from industrial and non-industrial sources",
+      "requirement_id": "si5",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI10",
+      "direction": "supports",
+      "name": "Increasing the proportion of the population that act to mitigate and adapt to the nature, climate and pollution crises",
+      "requirement_id": "si10",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "gov.wales/promoting-awareness-air-pollution-wales-delivery-plan-2025-2028-html",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-148fca in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by welsh-government; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "promoting-awareness-air-pollution-delivery-plan-2026",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "government",
+  "notes": "The plan explicitly covers air pollution impacts on habitats and biodiversity, an SI5 lever where NRW's evidence on nitrogen deposition could feed national messaging.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si5",
+    "si10"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "medium",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-148fca",
+      "discipline": "osint_web",
+      "query_id": "web-air-quality-01",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000983",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/promoting-awareness-air-pollution-wales-delivery-plan-2025-2028-html"
+    }
+  ],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government",
+  "state": "emerging",
+  "summary": "On 27 March 2026 the Welsh Government published its delivery plan to meet the awareness duty in the Environment (Air Quality and Soundscapes) (Wales) Act 2024, after consulting from 5 August to 28 October 2025. The plan set actions under four themes (communities, health and well-being, children and young people, and cross-cutting), including campaigns on domestic burning, engine idling and fireworks, and messaging on air pollution's harm to habitats, noting that 88 percent of Welsh habitats are at risk. Delivery runs to the end of 2028 and will be evaluated.",
+  "title": "Welsh Government publishes its Promoting Awareness of Air Pollution delivery plan, 2025 to 2028",
+  "topics": [
+    {
+      "id": "air-quality",
+      "name": "Air quality"
+    },
+    {
+      "id": "public-behaviour",
+      "name": "Public behaviour"
+    }
+  ],
+  "url": "https://www.gov.wales/promoting-awareness-air-pollution-wales-delivery-plan-2025-2028-html"
+}

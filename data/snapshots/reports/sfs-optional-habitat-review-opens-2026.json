@@ -1,0 +1,111 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI2",
+      "direction": "supports",
+      "name": "Increasing the rate of habitat restoration",
+      "requirement_id": "si2",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "gov.wales/sfs-optional-habitat-review-general-guidance-html",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B2",
+  "hazards": [
+    {
+      "family": "market-land-use-change",
+      "family_name": "Market and land use change",
+      "id": "farm-support-transition",
+      "name": "Farm support transition"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-1b1824 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by welsh-government; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "sfs-optional-habitat-review-opens-2026",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "government",
+  "notes": "The Optional layer is the main route by which the SFS could raise the farmland habitat restoration rate under SI2; uptake, the exclusion of designated sites and the timing of the habitat actions grant are what to watch.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "funding",
+  "requirement_ids": [
+    "si2"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "medium",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-1b1824",
+      "discipline": "osint_site",
+      "query_id": "site-ecological-early-warning-welsh-government",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001812",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/sfs-optional-habitat-review-general-guidance-html"
+    }
+  ],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government",
+  "state": "emerging",
+  "summary": "The Welsh Government published guidance on 27 August 2026, updated on 14 September 2026, opening applications for the Habitat Review, an Optional layer category of the Sustainable Farming Scheme (SFS) for farmers who claimed the Universal Layer. Field Support Officers produce a five-year habitat management plan and schedule of works; the review carries no funding itself, and payment depends on a separate SFS Optional habitat actions grant that had not yet opened. A small pilot selection ran in the week commencing 14 September 2026, with the next selection scheduled for February 2027 and then about every two months.",
+  "title": "Sustainable Farming Scheme Optional layer opens its Habitat Review, with a pilot selection in September 2026",
+  "topics": [
+    {
+      "id": "nature-and-ecosystems",
+      "name": "Nature and ecosystems"
+    },
+    {
+      "id": "soil-and-land",
+      "name": "Soil and land"
+    }
+  ],
+  "url": "https://www.gov.wales/sfs-optional-habitat-review-general-guidance-html"
+}

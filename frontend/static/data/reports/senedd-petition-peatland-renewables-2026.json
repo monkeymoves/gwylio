@@ -1,0 +1,117 @@
+{
+  "actor_id": "nation-cymru",
+  "actor_name": "Nation.Cymru",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI6",
+      "direction": "neutral",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "requirement_id": "si6",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI1",
+      "direction": "threatens",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "nation.cymru/news/calls-to-protect-welsh-peatlands-amid-surge-in-renewable-energy-developments",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "threatens",
+    "neutral"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "C3",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-df1745 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by nation-cymru; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "senedd-petition-peatland-renewables-2026",
+  "independent_confirmation": false,
+  "lane": "independent-media",
+  "lane_name": "Independent media",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "Sets peat carbon against renewable energy deployment, a two-way pressure on si6 that touches NRW's planning advice and its National Peatland Action Programme; SoNaRR 2025 also flagged a rise in renewables applications affecting peat.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    },
+    {
+      "id": "mid-wales",
+      "name": "Mid Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si6",
+    "si1"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "low",
+    "novelty": "high",
+    "potential_impact": "medium",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-df1745",
+      "discipline": "osint_site",
+      "query_id": "site-people-place-resilience-independent-media",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001627",
+      "source_id": "nation-cymru",
+      "source_name": "Nation.Cymru",
+      "url": "https://nation.cymru/news/calls-to-protect-welsh-peatlands-amid-surge-in-renewable-energy-developments/"
+    }
+  ],
+  "source_id": "nation-cymru",
+  "source_name": "Nation.Cymru",
+  "state": "emerging",
+  "summary": "On 18 August 2026 Nation.Cymru reported that a Senedd petition, Stop all developments on peatlands across Wales, launched in April 2026 by Friends of the Earth Cymru with community groups, the Wildlife Trust of South and West Wales and the Cambrian Mountains Society, had reached 1,400 of the 10,000 signatures needed for a Senedd debate. The petitioners claimed that about 60 large renewable developments proposed in Wales threaten around 36 percent of the peat resource, naming Waun Hesgog energy park and Lluest y Gwynt wind farm. The figure is the campaigners' own and is unverified.",
+  "title": "Senedd petition seeks to stop all development on Welsh peatland, claiming renewable schemes threaten 36 percent of peat",
+  "topics": [
+    {
+      "id": "peatland",
+      "name": "Peatland"
+    },
+    {
+      "id": "climate-emissions",
+      "name": "Climate and emissions"
+    }
+  ],
+  "url": "https://nation.cymru/news/calls-to-protect-welsh-peatlands-amid-surge-in-renewable-energy-developments/"
+}

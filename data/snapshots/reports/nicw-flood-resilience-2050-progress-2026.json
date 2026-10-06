@@ -1,0 +1,141 @@
+{
+  "actor_id": "welsh-government",
+  "actor_name": "Welsh Government",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI8",
+      "direction": "neutral",
+      "name": "Increasing the proportion of the population living in places that will continue to support and contribute to their health and well-being in a changing climate",
+      "requirement_id": "si8",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI9",
+      "direction": "supports",
+      "name": "Increasing the impact of partnership approaches which deliver multiple benefits and address the root causes of the nature, climate and pollution crises",
+      "requirement_id": "si9",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "gov.wales/written-statement-progress-commitments-response-nicws-report-building-resilience-flooding-wales",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "supports",
+    "neutral"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B2",
+  "hazards": [
+    {
+      "family": "flood-storm",
+      "family_name": "Flood and storm",
+      "id": "river-and-surface-water-flooding",
+      "name": "River and surface water flooding"
+    },
+    {
+      "family": "flood-storm",
+      "family_name": "Flood and storm",
+      "id": "coastal-flooding-and-erosion",
+      "name": "Coastal flooding and erosion"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-b4f335 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by welsh-government; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "nicw-flood-resilience-2050-progress-2026",
+  "independent_confirmation": false,
+  "lane": "welsh-government",
+  "lane_name": "Welsh Government",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "government",
+  "notes": "NRW is a lead risk management authority and catchment partner; the deferred strategy and governance decisions shape its flood role after 2026, and the refusal of multi-year funding constrains natural flood management delivery under SI8.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si8",
+    "si9"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "medium",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-b4f335",
+      "discipline": "osint_web",
+      "query_id": "web-people-place-resilience-03",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000501",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/written-statement-progress-commitments-response-nicws-report-building-resilience-flooding-wales"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-b4f335",
+      "discipline": "osint_site",
+      "query_id": "site-people-place-resilience-welsh-government",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000502",
+      "source_id": "welsh-government",
+      "source_name": "Welsh Government",
+      "url": "https://www.gov.wales/written-statement-progress-commitments-response-nicws-report-building-resilience-flooding-wales"
+    }
+  ],
+  "source_id": "welsh-government",
+  "source_name": "Welsh Government",
+  "state": "emerging",
+  "summary": "On 25 March 2026 the Deputy First Minister published a written statement on progress against the National Infrastructure Commission for Wales (NICW) report Building Resilience to Flooding in Wales by 2050. It agreed in principle to a new long-term flood and coastal resilience strategy and deferred decisions on national governance and statutory roles to the next Senedd term, linking both to the water governance Green Paper. It reported over 5 million pounds for natural flood management in 2026-27, the Taff Strategy as the catchment pilot, and declined multi-year funding settlements because budgets are set annually.",
+  "title": "Welsh Government reports progress on the NICW flood resilience recommendations, deferring a new long-term strategy and governance changes to the next Senedd",
+  "topics": [
+    {
+      "id": "flood-risk",
+      "name": "Flood risk"
+    },
+    {
+      "id": "people-place-and-resilience",
+      "name": "People, place and resilience"
+    },
+    {
+      "id": "governance-and-funding",
+      "name": "Governance and funding"
+    }
+  ],
+  "url": "https://www.gov.wales/written-statement-progress-commitments-response-nicws-report-building-resilience-flooding-wales"
+}

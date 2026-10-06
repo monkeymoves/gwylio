@@ -1,0 +1,112 @@
+{
+  "actor_id": "green-alliance",
+  "actor_name": "Green Alliance",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI6",
+      "direction": "threatens",
+      "name": "Decreasing the rate of greenhouse gas emissions and increasing the rate of sustainable sequestration",
+      "requirement_id": "si6",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI5",
+      "direction": "threatens",
+      "name": "Decreasing the rate of pollution to air from industrial and non-industrial sources",
+      "requirement_id": "si5",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "green-alliance.org.uk/briefing/wrong-turn-why-watering-down-the-zero-emissions-mandate-endangers-carbon-budget-seven",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "threatens"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "C3",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-b4b8b2 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by green-alliance; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "green-alliance-zev-mandate-weakening-cb7-2026",
+  "independent_confirmation": false,
+  "lane": "research-evidence",
+  "lane_name": "Research and evidence",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "The mandate is UK-wide and covers Welsh car sales; Welsh transport emissions have fallen only 7 percent since 1990, so a weaker mandate makes the Welsh carbon budgets and roadside air quality harder to meet.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "policy",
+  "requirement_ids": [
+    "si6",
+    "si5"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "low",
+    "novelty": "high",
+    "potential_impact": "medium",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-b4b8b2",
+      "discipline": "osint_site",
+      "query_id": "site-air-climate-emissions-research-evidence",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001425",
+      "source_id": "green-alliance",
+      "source_name": "Green Alliance",
+      "url": "https://green-alliance.org.uk/briefing/wrong-turn-why-watering-down-the-zero-emissions-mandate-endangers-carbon-budget-seven/"
+    }
+  ],
+  "source_id": "green-alliance",
+  "source_name": "Green Alliance",
+  "state": "emerging",
+  "summary": "Green Alliance published a briefing on 22 June 2026 stating that the UK Government was reportedly preparing to consult on cutting the zero emission vehicle mandate for 2030 from 80 percent of new car sales to 50 percent. Its analysis found the change could leave about 70 million tonnes of extra carbon dioxide to remove during the Seventh Carbon Budget period (2038 to 2042). The consultation was reported, not confirmed, on the page.",
+  "title": "Green Alliance warns a reported cut to the zero emission vehicle mandate, from 80 to 50 percent, would add about 70 MtCO2 to Carbon Budget Seven",
+  "topics": [
+    {
+      "id": "climate-emissions",
+      "name": "Climate and emissions"
+    },
+    {
+      "id": "air-quality",
+      "name": "Air quality"
+    }
+  ],
+  "url": "https://green-alliance.org.uk/briefing/wrong-turn-why-watering-down-the-zero-emissions-mandate-endangers-carbon-budget-seven/"
+}

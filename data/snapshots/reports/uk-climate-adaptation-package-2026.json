@@ -26,13 +26,7 @@
   ],
   "distinct_sources": 0,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "B3",
   "hazards": [],
   "history": [
@@ -70,14 +64,19 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "Re-read the CCC response of 13 July 2026 (planning for a minimum of 2 degrees by 2050, funding falls short, over 2,700 heat deaths in the May to June heatwaves); a search found no Welsh Government adoption of the 2 degree planning assumption by 6 October 2026. The source still stands.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "uk-climate-adaptation-package-2026",
   "independent_confirmation": false,
   "lane": "uk-government-and-regulators",
   "lane_name": "UK Government and regulators",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-24",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "government",
   "notes": "A 2 degree planning assumption is directly relevant to how SI8 defines places that will continue to support health and well-being in a changing climate. Check whether Wales adopts the same planning assumption, since the Climate Adaptation Strategy for Wales 2024 is the Welsh instrument.",
   "owner": "Luke",

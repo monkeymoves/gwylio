@@ -1,0 +1,139 @@
+{
+  "actor_id": "senedd",
+  "actor_name": "Senedd Cymru (Welsh Parliament)",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI1",
+      "direction": "informs_baseline",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI2",
+      "direction": "informs_baseline",
+      "name": "Increasing the rate of habitat restoration",
+      "requirement_id": "si2",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "research.senedd.wales/research-articles/what-s-next-for-nature-and-climate-action",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "informs_baseline"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "B3",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-4a6000 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by senedd-research; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Date check: replaced future-framed wording in the summary with past-tense reporting of what the briefing said.",
+      "kind": "updated",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "senedd-research-30by30-wales-2-percent-2026",
+  "independent_confirmation": false,
+  "lane": "senedd",
+  "lane_name": "Senedd",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "government",
+  "notes": "Gives an external baseline for how far Wales is from protecting 30 percent of land for nature by 2030, which frames NRW's protected-site and restoration work under SI1 and SI2. The figure is second hand, from a sector report rather than an official statistic.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "B",
+  "reliability_label": "usually reliable",
+  "report_type": "research",
+  "requirement_ids": [
+    "si1",
+    "si2"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "medium",
+    "potential_impact": "medium",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-4a6000",
+      "discipline": "osint_site",
+      "query_id": "site-nature-ecosystems-senedd",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001117",
+      "source_id": "senedd-research",
+      "source_name": "Senedd Research",
+      "url": "https://research.senedd.wales/research-articles/what-s-next-for-nature-and-climate-action/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-4a6000",
+      "discipline": "osint_site",
+      "query_id": "site-air-climate-emissions-senedd",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001118",
+      "source_id": "senedd-research",
+      "source_name": "Senedd Research",
+      "url": "https://research.senedd.wales/research-articles/what-s-next-for-nature-and-climate-action/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-4a6000",
+      "discipline": "osint_site",
+      "query_id": "site-people-place-resilience-senedd",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001119",
+      "source_id": "senedd-research",
+      "source_name": "Senedd Research",
+      "url": "https://research.senedd.wales/research-articles/what-s-next-for-nature-and-climate-action/"
+    }
+  ],
+  "source_id": "senedd-research",
+  "source_name": "Senedd Research",
+  "state": "emerging",
+  "summary": "Senedd Research published 'What's next for nature and climate action?' on 5 June 2026 in its key issues collection for the Seventh Senedd. Citing the environment sector's 2025 UK-wide 30by30 progress report, it stated that only 2.14 percent of land in Wales met the 30by30 criteria, and that statutory biodiversity targets must be introduced by regulations by April 2028. It also recorded that the Office of Environmental Governance Wales was to be set up during the Seventh Senedd.",
+  "title": "Senedd Research: only 2.14 percent of Welsh land meets 30by30 criteria as the Seventh Senedd begins",
+  "topics": [
+    {
+      "id": "nature-and-ecosystems",
+      "name": "Nature and ecosystems"
+    },
+    {
+      "id": "governance-and-funding",
+      "name": "Governance and funding"
+    }
+  ],
+  "url": "https://research.senedd.wales/research-articles/what-s-next-for-nature-and-climate-action/"
+}

@@ -1,0 +1,104 @@
+{
+  "actor_id": "ukri",
+  "actor_name": "UK Research and Innovation (UKRI)",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI8",
+      "direction": "supports",
+      "name": "Increasing the proportion of the population living in places that will continue to support and contribute to their health and well-being in a changing climate",
+      "requirement_id": "si8",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "ukri.org/opportunity/what-works-centre-for-a-climate-resilient-uk",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": "2026-12-15",
+  "findings": [],
+  "grading": "C2",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-3e1db9 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by ukri; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "what-works-centre-climate-resilient-uk-2026",
+  "independent_confirmation": false,
+  "lane": "research-evidence",
+  "lane_name": "Research and evidence",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "A new UK-wide evidence body for adaptation that the Welsh Government co-sponsors; NRW could be a stakeholder or co-lead partner, and the centre may shape Welsh adaptation evidence and pilots.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "funding",
+  "requirement_ids": [
+    "si8"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "high",
+    "potential_impact": "medium",
+    "time_horizon": "medium_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-3e1db9",
+      "discipline": "osint_site",
+      "query_id": "site-people-place-resilience-research-evidence",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001569",
+      "source_id": "ukri",
+      "source_name": "UK Research and Innovation (UKRI)",
+      "url": "https://www.ukri.org/opportunity/what-works-centre-for-a-climate-resilient-uk/"
+    }
+  ],
+  "source_id": "ukri",
+  "source_name": "UK Research and Innovation (UKRI)",
+  "state": "emerging",
+  "summary": "UKRI and the Economic and Social Research Council opened a funding call on 1 October 2026, with Defra, DAERA, the Scottish Government and the Welsh Government, to establish an independent What Works Centre for a climate resilient UK. The centre can receive up to 21.1 million pounds, must start by 1 August 2027, and has the UK and devolved governments, including the Welsh Government, as its primary audience. The call is scheduled to close on 15 December 2026.",
+  "title": "UKRI opens a call for a What Works Centre for a climate resilient UK, worth up to 21.1 million pounds, with the Welsh Government as a partner",
+  "topics": [
+    {
+      "id": "people-place-and-resilience",
+      "name": "People, place and resilience"
+    },
+    {
+      "id": "governance-and-funding",
+      "name": "Governance and funding"
+    }
+  ],
+  "url": "https://www.ukri.org/opportunity/what-works-centre-for-a-climate-resilient-uk/"
+}

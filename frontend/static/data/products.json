@@ -9,7 +9,7 @@
       "label": "2026-10",
       "start": "2026-10-01"
     },
-    "report_count": 35,
+    "report_count": 95,
     "requirement_set_id": "nrw-corporate-plan",
     "section_headings": [
       "Summary",
@@ -17,11 +17,9 @@
       "Nature is Recovering (SI1, SI2, SI3)",
       "Communities are Resilient to Climate Change (SI6, SI7, SI8, SI10)",
       "Pollution is Minimised (SI4, SI5)",
+      "Outside the well-being objectives",
       "Quiet and blind spots",
       "Verification due",
-      "Passed event horizons",
-      "Future-framed language",
-      "Stale verifications",
       "Method note"
     ],
     "title": "Operational intelligence summary (INTSUM), October 2026"
@@ -36,7 +34,7 @@
       "label": "2026",
       "start": "2026-01-01"
     },
-    "report_count": 33,
+    "report_count": 93,
     "requirement_set_id": "nrw-corporate-plan",
     "section_headings": [
       "Purpose",

@@ -25,24 +25,8 @@
     "supports"
   ],
   "distinct_sources": 0,
-  "event_horizon": "2026-09-11",
-  "findings": [
-    {
-      "detail": "event horizon 2026-09-11 passed 25 days ago and nobody has updated or verified the report since",
-      "kind": "passed_horizon",
-      "severity": "act"
-    },
-    {
-      "detail": "summary uses future-framed language: 'consultation closes'",
-      "kind": "future_language",
-      "severity": "warn"
-    },
-    {
-      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "event_horizon": null,
+  "findings": [],
   "grading": "B2",
   "hazards": [],
   "history": [
@@ -55,16 +39,26 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "The consultation closed on 11 September 2026, so the summary is rewritten in dated past tense and the passed horizon is cleared pending a published outcome.",
+      "kind": "updated",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Checked the gov.wales consultation page 'Draft Environmental Principles and Integrating Environmental Protection Statement' on 6 October 2026: it shows the consultation ran 19 June to 11 September 2026, is closed, and the Welsh Government is reviewing responses; no outcome or final statement has been published yet.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "environmental-principles-statement-consultation-2026",
   "independent_confirmation": false,
   "lane": "welsh-government",
   "lane_name": "Welsh Government",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-24",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "government",
-  "notes": "First implementation step of the new Act that lands directly on NRW's own decision making. NRW will presumably respond formally; the final statement shapes how SI3's integration agenda is applied in practice. Follow up: ensure the consultation response is on the right desk before 11 September (event horizon set).",
+  "notes": "First implementation step of the new Act that lands directly on NRW's own decision making; the final statement shapes how SI3's integration agenda is applied in practice. The consultation closed on 11 September 2026 (verified 6 October 2026 on the gov.wales consultation page, which says responses are under review). Watch for the summary of responses and the final statement being laid before the Senedd; no date has been announced, so the event horizon is cleared.",
   "owner": "Luke",
   "places": [
     {
@@ -92,8 +86,8 @@
   "source_id": "welsh-government",
   "source_name": "Welsh Government",
   "state": "emerging",
-  "summary": "On 19 June 2026 the Welsh Government opened consultation on the draft Environmental Principles and Integrating Environmental Protection Statement under the Environment (Principles, Governance and Biodiversity Targets) (Wales) Act 2026. The statement operationalises the four principles (prevention, precaution, rectification at source, polluter pays) that Welsh Ministers and NRW must apply in policy making. Consultation closes 11 September 2026.",
-  "title": "Consultation opens on the Environmental Principles Statement that NRW must apply under the 2026 Act",
+  "summary": "On 19 June 2026 the Welsh Government opened consultation on the draft Environmental Principles and Integrating Environmental Protection Statement under the Environment (Principles, Governance and Biodiversity Targets) (Wales) Act 2026. The statement operationalises the four principles (prevention, precaution, rectification at source, polluter pays) that Welsh Ministers and NRW must apply in policy making. The consultation closed on 11 September 2026; as of 6 October 2026 the Welsh Government was reviewing responses and had not published the outcome or the final statement, which the Act requires to be laid before the Senedd with a summary of representations.",
+  "title": "Consultation on the Environmental Principles Statement that NRW must apply under the 2026 Act closed on 11 September 2026",
   "topics": [],
   "url": "https://www.gov.wales/written-statement-launch-consultation-environmental-principles-and-integrating-environmental"
 }

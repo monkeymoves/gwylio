@@ -1,0 +1,112 @@
+{
+  "actor_id": null,
+  "actor_name": null,
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI11",
+      "direction": "supports",
+      "name": "Increasing the proportion of organisations and businesses who act to mitigate and adapt to the nature, climate and pollution crises",
+      "requirement_id": "si11",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI8",
+      "direction": "supports",
+      "name": "Increasing the proportion of the population living in places that will continue to support and contribute to their health and well-being in a changing climate",
+      "requirement_id": "si8",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "atachcommunity.com/our-impact/case-studies/climate-adaptation-toolkit-the-experience-of-wales",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "C3",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-f37c91 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "nhs-wales-climate-adaptation-accelerator-2025-26",
+  "independent_confirmation": false,
+  "lane": "international",
+  "lane_name": "International",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "international",
+  "notes": "A rare public sighting of organisations acting on the crises (SI11, low scanability): a whole public sector in Wales planning for climate risk. The completed plans would be a baseline worth following.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "partnership",
+  "requirement_ids": [
+    "si11",
+    "si8"
+  ],
+  "scores": {
+    "confidence": "medium",
+    "evidence": "medium",
+    "novelty": "high",
+    "potential_impact": "low",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-f37c91",
+      "discipline": "osint_web",
+      "query_id": "web-people-place-resilience-06",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000542",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.atachcommunity.com/our-impact/case-studies/climate-adaptation-toolkit-the-experience-of-wales/"
+    }
+  ],
+  "source_id": null,
+  "source_name": "ATACH Community of Practice (Alliance for Transformative Action on Climate and Health)",
+  "state": "emerging",
+  "summary": "A case study published on the ATACH community of practice site in November 2025 reported that, through the Climate Adaptation Accelerator Programme 2025-2026, all 13 NHS Wales organisations were developing climate risk assessments and adaptation plans using a Climate Adaptation Toolkit. The programme trained Climate Preparedness Leads through workshops and e-learning and was presented as a systematic, sector-wide approach rather than ad hoc initiatives.",
+  "title": "All 13 NHS Wales organisations develop climate risk assessments and adaptation plans through the Climate Adaptation Accelerator Programme 2025-26",
+  "topics": [
+    {
+      "id": "people-place-and-resilience",
+      "name": "People, place and resilience"
+    },
+    {
+      "id": "partnership-and-society",
+      "name": "Partnership and society"
+    }
+  ],
+  "url": "https://www.atachcommunity.com/our-impact/case-studies/climate-adaptation-toolkit-the-experience-of-wales/"
+}

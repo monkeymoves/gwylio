@@ -1,7 +1,7 @@
 {
   "actor_id": "leigh-day",
   "actor_name": "Leigh Day (law firm)",
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI4",
@@ -26,13 +26,7 @@
   ],
   "distinct_sources": 0,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "D3",
   "hazards": [
     {
@@ -52,14 +46,29 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Updates the claimant count from over 4,500 to over 5,100 and records the court-ordered 31 August 2026 cut-off, which has now passed.",
+      "kind": "updated",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Re-read the Leigh Day release on the 27 April 2026 first hearing and checked Leigh Day's River Wye claim page and its release of 5 August 2026: more than 5,100 claimants had joined, the High Court set 31 August 2026 as the cut-off for new claimants, and Leigh Day is no longer accepting claims; no trial date was found.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "wye-lugg-usk-group-claim-avara-welsh-water",
   "independent_confirmation": false,
   "lane": "legal-and-campaign",
   "lane_name": "Legal and campaign",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-24",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "partnership_society",
   "notes": "Promoted from the weak-signal probe of 21 July 2026. Tagged supports for SI4 because the claim's existence changes the economics of agricultural and sewage pollution regardless of outcome: private litigation risk now sits alongside regulation as a deterrent, and disclosure could put poultry operation location data into the public domain, useful for the SI4 evidence base. The Usk is wholly Welsh and Welsh Water is a defendant, so this is not an England-only story. Watch the case management timetable and any disclosure ruling.",
   "owner": null,
@@ -85,12 +94,57 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-5026b2",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-10",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000327",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.watermagazine.co.uk/2026/04/28/high-court-begins-hearing-in-river-wye-pollution-claim/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-acbc9d",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-10",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000313",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.walesonline.co.uk/news/wales-news/river-wye-pollution-lawsuit-hit-33848728"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-b13371",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-02",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000174",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.petersandpeters.com/case/largest-uk-environmental-pollution-claim-issued-following-welsh-river-pollution/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-b13371",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-10",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000175",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.petersandpeters.com/case/largest-uk-environmental-pollution-claim-issued-following-welsh-river-pollution/"
+    }
+  ],
   "source_id": "leigh-day",
   "source_name": "Leigh Day environment",
   "state": "emerging",
-  "summary": "The largest domestic environmental pollution claim ever brought in the UK, filed at the High Court in autumn 2025, had its first case management hearing on 27 April 2026. More than 4,500 residents and businesses along the Wye, Lugg and Usk allege pollution from phosphorus, nitrogen and bacteria in poultry manure spread as fertiliser (Avara Foods and its subsidiary Freemans of Newent) and from sewage discharges (Welsh Water). All defendants deny the claims; claimants have sought disclosure of poultry operation locations across the region.",
-  "title": "Largest UK environmental pollution claim: over 4,500 claimants sue Avara Foods and Welsh Water over Wye, Lugg and Usk pollution",
+  "summary": "The largest domestic environmental pollution claim ever brought in the UK, filed at the High Court in autumn 2025, had its first case management hearing on 27 April 2026, when the court set a timetable and a cut-off date of 31 August 2026 for new claimants. By 5 August 2026 more than 5,100 residents and businesses along the Wye, Lugg and Usk had joined, and the claim closed to new claimants on 31 August. They allege pollution from phosphorus, nitrogen and bacteria in poultry manure spread as fertiliser (Avara Foods and its subsidiary Freemans of Newent) and from sewage discharges (Welsh Water). All defendants deny the claims; claimants have sought disclosure of poultry operation locations across the region. No trial date had been announced by 6 October 2026.",
+  "title": "Largest UK environmental pollution claim: over 5,100 claimants sue Avara Foods and Welsh Water over Wye, Lugg and Usk pollution",
   "topics": [
     {
       "id": "pollution-water-and-land",

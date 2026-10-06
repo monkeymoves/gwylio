@@ -1,0 +1,112 @@
+{
+  "actor_id": null,
+  "actor_name": null,
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI2",
+      "direction": "supports",
+      "name": "Increasing the rate of habitat restoration",
+      "requirement_id": "si2",
+      "set_id": "nrw-corporate-plan"
+    },
+    {
+      "code": "SI1",
+      "direction": "supports",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "watch",
+  "canonical_url": "nbn.org.uk/news/the-welsh-governments-nature-networks-fund-is-now-open",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 3,
+  "credibility_label": "possibly true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 0,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "C3",
+  "hazards": [],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-f683ac in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "nature-networks-fund-2026-round",
+  "independent_confirmation": false,
+  "lane": "partnership-and-civil-society",
+  "lane_name": "Partnership and civil society",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "NRW is a delivery partner; the round sets the pipeline of protected site restoration that counts towards SI2 and the 30 by 30 commitment.",
+  "owner": null,
+  "places": [
+    {
+      "id": "wales",
+      "name": "Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "funding",
+  "requirement_ids": [
+    "si2",
+    "si1"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "medium",
+    "novelty": "medium",
+    "potential_impact": "medium",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-f683ac",
+      "discipline": "osint_web",
+      "query_id": "web-partnership-society-04",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000613",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://nbn.org.uk/news/the-welsh-governments-nature-networks-fund-is-now-open/"
+    }
+  ],
+  "source_id": null,
+  "source_name": "National Biodiversity Network Trust",
+  "state": "emerging",
+  "summary": "On 15 July 2026 the National Biodiversity Network reported that the Welsh Government's Nature Networks Fund had opened a new round, delivered by the National Lottery Heritage Fund in partnership with NRW, offering grants of 250,000 pounds to 1 million pounds for work in and around Wales' network of protected sites. Expressions of interest were due by noon on 5 August 2026. Since its launch in 2021 the fund had awarded 147 projects a share of 54 million pounds.",
+  "title": "Nature Networks Fund reopens with grants of 250,000 pounds to 1 million pounds for protected site resilience",
+  "topics": [
+    {
+      "id": "nature-and-ecosystems",
+      "name": "Nature and ecosystems"
+    },
+    {
+      "id": "governance-and-funding",
+      "name": "Governance and funding"
+    }
+  ],
+  "url": "https://nbn.org.uk/news/the-welsh-governments-nature-networks-fund-is-now-open/"
+}

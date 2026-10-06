@@ -1,0 +1,28 @@
+{
+  "schema": "gwylio.submission/1",
+  "run_id": null,
+  "analyst": "Claude, gwylio-scan skill",
+  "rubric_version": "2026.10",
+  "received_on": "2026-10-06",
+  "dispositions": [],
+  "promotions": [],
+  "updates": [
+    {
+      "report_id": "section-7-priority-list-update-2026",
+      "set": {
+        "notes": "Widens what every Section 6 public authority must have regard to (SI3) and resets the priority baseline for SI1 resilience and for the statutory biodiversity targets, whose draft regulations the 2026 Act requires by April 2028; NRW advice and casework will need to reflect the longer list."
+      },
+      "change": "Date check: replaced future-framed wording in the notes with the statutory deadline."
+    },
+    {
+      "report_id": "senedd-research-30by30-wales-2-percent-2026",
+      "set": {
+        "summary": "Senedd Research published 'What's next for nature and climate action?' on 5 June 2026 in its key issues collection for the Seventh Senedd. Citing the environment sector's 2025 UK-wide 30by30 progress report, it stated that only 2.14 percent of land in Wales met the 30by30 criteria, and that statutory biodiversity targets must be introduced by regulations by April 2028. It also recorded that the Office of Environmental Governance Wales was to be set up during the Seventh Senedd."
+      },
+      "change": "Date check: replaced future-framed wording in the summary with past-tense reporting of what the briefing said."
+    }
+  ],
+  "reinforcements": [],
+  "verifications": [],
+  "method_note": "Out-of-run date check corrections on 6 October 2026, after ingesting run 20261006T2155Z-6ae7: two new reports used future-framed wording flagged by the date check; both rewritten, no other change."
+}

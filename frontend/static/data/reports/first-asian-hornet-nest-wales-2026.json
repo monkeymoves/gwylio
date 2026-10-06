@@ -1,7 +1,7 @@
 {
   "actor_id": null,
   "actor_name": null,
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI1",
@@ -26,13 +26,7 @@
   ],
   "distinct_sources": 0,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "B2",
   "hazards": [],
   "history": [
@@ -45,14 +39,24 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "The ITV Wales page timed out, so checked the BPCA and Deeside.com reports and the gov.wales yellow-legged hornet page: they confirm the dead nest found at Caergwrle near Wrexham, announced 20 January 2026, with the National Bee Unit asked to run targeted spring trapping; a search found no further confirmed Welsh nest by 6 October 2026. The source still stands.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "first-asian-hornet-nest-wales-2026",
   "independent_confirmation": false,
   "lane": "ecological-surveillance",
   "lane_name": "Ecological surveillance",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-24",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "government",
   "notes": "A classic weak signal: the first breach of an invasive pollinator-predator into Wales. Current impact is low (the nest was dead) but novelty is high, which the RUBRIC treats as a valid promotion for a watch signal. Threatens SI1 through pollinator predation if the species establishes; the Asian hornet can take up to 50 honeybees a day. Surfaced by the new ecological_early_warning lane; verified against Welsh Government coverage on 23 July 2026.",
   "owner": null,
@@ -78,7 +82,30 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-5a5102",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-02",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000748",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.dailypost.co.uk/news/north-wales-news/killer-asian-hornet-trapping-north-33751067"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-7b031c",
+      "discipline": "osint_web",
+      "query_id": "web-ecological-early-warning-02",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000750",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.bbc.co.uk/news/articles/cp3z94q2gn0o"
+    }
+  ],
   "source_id": null,
   "source_name": "itv.com",
   "state": "emerging",

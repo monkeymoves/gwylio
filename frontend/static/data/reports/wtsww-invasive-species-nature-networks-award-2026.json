@@ -1,0 +1,111 @@
+{
+  "actor_id": "nation-cymru",
+  "actor_name": "Nation.Cymru",
+  "appearances": 1,
+  "assessments": [
+    {
+      "code": "SI1",
+      "direction": "supports",
+      "name": "Increasing the proportion of ecosystems that are defined as resilient",
+      "requirement_id": "si1",
+      "set_id": "nrw-corporate-plan"
+    }
+  ],
+  "bucket": "park",
+  "canonical_url": "nation.cymru/news/wildlife-trust-announces-new-project-to-tackle-invasive-species",
+  "cited_in": [
+    "operational-2026-10",
+    "strategic-2026"
+  ],
+  "created_on": "2026-10-06",
+  "created_run_id": "20261006T2155Z-6ae7",
+  "credibility": 2,
+  "credibility_label": "probably true",
+  "directions": [
+    "supports"
+  ],
+  "distinct_sources": 1,
+  "event_horizon": null,
+  "findings": [],
+  "grading": "C2",
+  "hazards": [
+    {
+      "family": "invasive-species",
+      "family_name": "Invasive species",
+      "id": "invasive-non-native-plants",
+      "name": "Invasive non-native plants"
+    }
+  ],
+  "history": [
+    {
+      "change": "promoted from candidate c-20261006t2155z-6ae7-b15447 in run 20261006T2155Z-6ae7",
+      "kind": "created",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by nation-cymru; 1 run, 1 distinct source",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    }
+  ],
+  "id": "wtsww-invasive-species-nature-networks-award-2026",
+  "independent_confirmation": false,
+  "lane": "independent-media",
+  "lane_name": "Independent media",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
+  "lens": "partnership_society",
+  "notes": "A regional biosecurity investment on protected land in South West Wales that bears on SI1 site resilience; marginal on its own but useful context for invasive species pressure.",
+  "owner": null,
+  "places": [
+    {
+      "id": "south-west-wales",
+      "name": "South West Wales"
+    }
+  ],
+  "reliability": "C",
+  "reliability_label": "fairly reliable",
+  "report_type": "funding",
+  "requirement_ids": [
+    "si1"
+  ],
+  "scores": {
+    "confidence": "high",
+    "evidence": "high",
+    "novelty": "medium",
+    "potential_impact": "low",
+    "time_horizon": "near_term"
+  },
+  "set_ids": [
+    "nrw-corporate-plan"
+  ],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-b15447",
+      "discipline": "osint_site",
+      "query_id": "site-ecological-early-warning-independent-media",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-001880",
+      "source_id": "nation-cymru",
+      "source_name": "Nation.Cymru",
+      "url": "https://nation.cymru/news/wildlife-trust-announces-new-project-to-tackle-invasive-species/"
+    }
+  ],
+  "source_id": "nation-cymru",
+  "source_name": "Nation.Cymru",
+  "state": "emerging",
+  "summary": "Nation.Cymru reported on 4 April 2026 that the Wildlife Trust of South and West Wales had received 926,905 pounds from the Welsh Government's Nature Networks Fund for a project to manage invasive species including grey squirrel, American mink and rhododendron. The project covers 41 sites, including 14 invasive plants already present on its reserves, with better biosecurity and monitoring.",
+  "title": "Wildlife Trust of South and West Wales wins 926,905 pounds from the Nature Networks Fund to tackle invasive species on 41 sites",
+  "topics": [
+    {
+      "id": "biosecurity",
+      "name": "Biosecurity"
+    },
+    {
+      "id": "nature-and-ecosystems",
+      "name": "Nature and ecosystems"
+    }
+  ],
+  "url": "https://nation.cymru/news/wildlife-trust-announces-new-project-to-tackle-invasive-species/"
+}

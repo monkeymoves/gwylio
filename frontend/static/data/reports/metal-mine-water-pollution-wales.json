@@ -1,7 +1,7 @@
 {
   "actor_id": null,
   "actor_name": null,
-  "appearances": 0,
+  "appearances": 1,
   "assessments": [
     {
       "code": "SI4",
@@ -26,13 +26,7 @@
   ],
   "distinct_sources": 0,
   "event_horizon": null,
-  "findings": [
-    {
-      "detail": "last verified 2026-07-24, 74 days ago (more than 45)",
-      "kind": "stale_verification",
-      "severity": "warn"
-    }
-  ],
+  "findings": [],
   "grading": "B2",
   "hazards": [
     {
@@ -57,14 +51,29 @@
       "change": "Imported from the NRW SI horizon register (signals.json, scan date 2026-07-25). Grading defaulted on import and awaits analyst review.",
       "kind": "created",
       "on": "2026-07-25"
+    },
+    {
+      "change": "sighted in run 20261006T2155Z-6ae7 by an unwatched source; 1 run, 0 distinct sources",
+      "kind": "sighted",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "Adds the dated inquiry steps since July 2026 (evidence session, 21 July letter with a 7 September reply date, September follow-up) and the 22 September 2026 contaminated land strategy commitment, in place of the undated 'inquiry is live'.",
+      "kind": "updated",
+      "on": "2026-10-06"
+    },
+    {
+      "change": "The UK Parliament inquiry page returned 403, so checked Beyond the Vote's record of committee publications and nation.cymru: the Welsh Affairs Committee took oral evidence on 1 July 2026, wrote to the Secretary of State for Wales on 21 July 2026 asking for a reply by 7 September 2026, and nation.cymru (15 September 2026) reported a further letter pressing for coordinated testing; no published government reply was found. The Programme for Government (22 September 2026) adds a contaminated land strategy.",
+      "kind": "verified",
+      "on": "2026-10-06"
     }
   ],
   "id": "metal-mine-water-pollution-wales",
   "independent_confirmation": false,
   "lane": "uk-government-and-regulators",
   "lane_name": "UK Government and regulators",
-  "last_changed": "2026-07-25",
-  "last_verified": "2026-07-24",
+  "last_changed": "2026-10-06",
+  "last_verified": "2026-10-06",
   "lens": "government",
   "notes": "A chronic, major SI4 pressure the pollution cluster (focused on agriculture and sewage) never queried. It explains a significant share of why only 40 percent of Welsh water bodies reach good status, the SoNaRR baseline the indicator is read against, so it threatens SI4 and informs its baseline. Found via the July 2026 coverage audit; a metal-mine query was added to the pollution cluster.",
   "owner": null,
@@ -90,11 +99,45 @@
   "set_ids": [
     "nrw-corporate-plan"
   ],
-  "sightings": [],
+  "sightings": [
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-423a0b",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-08",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000305",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://committees.parliament.uk/writtenevidence/167637/html/"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-f23b99",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-08",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000298",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://www.dailypost.co.uk/news/north-wales-news/metal-mines-north-wales-toxic-34499926"
+    },
+    {
+      "candidate_id": "c-20261006t2155z-6ae7-081cf7",
+      "discipline": "osint_web",
+      "query_id": "web-pollution-water-land-08",
+      "run_id": "20261006T2155Z-6ae7",
+      "run_started_at": "2026-10-06T21:55:22.431740Z",
+      "sighting_id": "s-20261006t2155z-6ae7-000295",
+      "source_id": null,
+      "source_name": null,
+      "url": "https://committees.parliament.uk/work/9811/metal-mine-pollution-in-wales/"
+    }
+  ],
   "source_id": null,
   "source_name": "committees.parliament.uk",
   "state": "emerging",
-  "summary": "About 1,300 abandoned metal mines put over 500 tonnes of metals (zinc, lead, cadmium, iron) into Welsh rivers every year, causing roughly 700km, about 6 percent of Welsh rivers, to fail good chemical or ecological status. The Wales Metal Mines Programme (Natural Resources Wales with the Mining Remediation Authority, Welsh Government funded) is remediating priority sites, and a UK Parliament inquiry into metal mine pollution in Wales is live.",
+  "summary": "About 1,300 abandoned metal mines put over 500 tonnes of metals (zinc, lead, cadmium, iron) into Welsh rivers every year, causing roughly 700km, about 6 percent of Welsh rivers, to fail good chemical or ecological status. The Wales Metal Mines Programme (Natural Resources Wales with the Mining Remediation Authority, Welsh Government funded) is remediating priority sites. The House of Commons Welsh Affairs Committee inquiry into metal mine pollution in Wales took oral evidence on 1 July 2026 and on 21 July 2026 wrote to the Secretary of State for Wales calling for four-nation lead testing of children, food testing standards, farmer support and clearer public risk information, with a reply requested by 7 September 2026; the committee pressed again in a letter reported on 15 September 2026, and no government reply had been published by 6 October 2026. The Welsh Government's Programme for Government (22 September 2026) commits to a Wales-wide strategy to map, prioritise and restore contaminated post-industrial land and polluted waterways, while pressing the UK Government to fund it.",
   "title": "Abandoned metal mines pollute about 700km of Welsh rivers, a major SI4 pressure with a live inquiry",
   "topics": [
     {
