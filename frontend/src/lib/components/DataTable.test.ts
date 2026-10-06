@@ -69,4 +69,12 @@ describe('sortRows and nextSort', () => {
 		expect(nextSort({ key: 'name', direction: 'descending' }, 'name').direction).toBe('ascending');
 		expect(nextSort({ key: 'name', direction: 'descending' }, 'count').direction).toBe('ascending');
 	});
+
+	it('is not compact by default, and marks its container when asked to be', () => {
+		const { container, unmount } = render(Harness, { rows });
+		expect(container.querySelector('.table-scroll')).not.toHaveClass('compact');
+		unmount();
+		const compact = render(Harness, { rows, compact: true });
+		expect(compact.container.querySelector('.table-scroll')).toHaveClass('compact');
+	});
 });

@@ -1,15 +1,22 @@
 /**
  * Build-time reads of the published snapshot in `static/data/`.
  *
- * Used only by `+page.server.ts` files while prerendering: to declare the
- * `entries` of dynamic routes, so every report and requirement set page exists
+ * Used only by server files (`+page.server.ts`, `+server.ts`) while prerendering: to declare the
+ * `entries` of dynamic routes, so every report, requirement set, scan run and
+ * product page (and each product's Markdown) exists
  * as a static file, and to build the topic, hazard and place names the report
  * filters show (`reports.json` carries ids only). Browsers never run this; at
  * runtime the client fetches `/data/*.json` through `$lib/data/client`.
  */
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
-import type { Meta, ReportDetail, ReportSummary } from '$lib/data/types.generated';
+import type {
+	Meta,
+	ProductSummary,
+	ReportDetail,
+	ReportSummary,
+	RunSummary
+} from '$lib/data/types.generated';
 
 function snapshotDir(): string {
 	const candidates = [
@@ -55,4 +62,19 @@ export function tagNames(): TagNames {
 		for (const place of detail.places) names.places[place.id] = place.name;
 	}
 	return names;
+}
+
+/** Every scan run id in the snapshot; empty until a run is published. */
+export function runIds(): string[] {
+	return readSnapshot<RunSummary[]>('runs.json').map((run) => run.run_id);
+}
+
+/** Every product summary in the snapshot. */
+export function productSummaries(): ProductSummary[] {
+	return readSnapshot<ProductSummary[]>('products.json');
+}
+
+/** Every product id in the snapshot. */
+export function productIds(): string[] {
+	return productSummaries().map((product) => product.id);
 }

@@ -1,6 +1,12 @@
 /**
- * Shared test data: a ReportSummary builder and the real published enums and
- * reports, read from the snapshot under static/data.
+ * Shared test data: a ReportSummary builder, the real published enums and
+ * reports read from the snapshot under static/data, and the seed read models.
+ *
+ * The real snapshot has no scan runs yet, so the run, sources and coverage
+ * components are also proven against `tests/seed/`: copies of the
+ * backend's syrupy endpoint snapshots on the seed database
+ * (`backend/tests/api/__snapshots__/test_endpoints/`), which hold four runs.
+ * Refresh them by copying those files again after `make seed`.
  */
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
@@ -11,6 +17,13 @@ const dataDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..',
 
 export function snapshot<T>(relative: string): T {
 	return JSON.parse(readFileSync(path.join(dataDir, relative), 'utf8')) as T;
+}
+
+const seedDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), 'seed');
+
+/** One seed read model, by file name under tests/seed. */
+export function seed<T>(file: string): T {
+	return JSON.parse(readFileSync(path.join(seedDir, file), 'utf8')) as T;
 }
 
 export const enums: Enums = snapshot<Enums>('enums.json');

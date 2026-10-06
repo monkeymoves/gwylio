@@ -1,0 +1,116 @@
+{
+  "active_sources": 41,
+  "readings": {
+    "earning_its_place": 7,
+    "high_volume_no_promotions": 0,
+    "low_volume": 8,
+    "silent": 28
+  },
+  "runs_total": 4,
+  "silent_sources": [
+    "senedd-cymru",
+    "senedd-research",
+    "statswales",
+    "uk-legislation",
+    "jncc",
+    "ons",
+    "future-generations-commissioner",
+    "public-health-wales",
+    "wlga",
+    "ukri",
+    "keep-wales-tidy",
+    "rspb-cymru",
+    "unep",
+    "european-environment-agency",
+    "bevan-foundation",
+    "farmers-union-of-wales",
+    "wales-environment-link",
+    "institute-of-welsh-affairs",
+    "wales-centre-for-public-policy",
+    "green-alliance",
+    "wwf-cymru",
+    "national-trust",
+    "woodland-trust",
+    "fish-legal",
+    "leigh-day",
+    "senedd-petitions",
+    "plant-health-portal",
+    "gb-non-native-species-secretariat"
+  ],
+  "sources": 43,
+  "trend": [
+    {
+      "budget_exhausted": false,
+      "funnel": {
+        "dropped_negative": 5,
+        "dropped_own": 2,
+        "dropped_unrelated": 3,
+        "new": 17,
+        "passed": 20,
+        "raw": 30,
+        "reinforcements": 0,
+        "seen_before": 0,
+        "unique": 17
+      },
+      "request_budget": 150,
+      "requests_made": 148,
+      "run_id": "20260901T0900Z-0000",
+      "started_at": "2026-09-01T09:00:00.000000Z"
+    },
+    {
+      "budget_exhausted": false,
+      "funnel": {
+        "dropped_negative": 5,
+        "dropped_own": 2,
+        "dropped_unrelated": 3,
+        "new": 0,
+        "passed": 20,
+        "raw": 30,
+        "reinforcements": 10,
+        "seen_before": 7,
+        "unique": 17
+      },
+      "request_budget": 150,
+      "requests_made": 148,
+      "run_id": "20261001T0900Z-0000",
+      "started_at": "2026-10-01T09:00:00.000000Z"
+    },
+    {
+      "budget_exhausted": false,
+      "funnel": {
+        "dropped_negative": 1,
+        "dropped_own": 0,
+        "dropped_unrelated": 0,
+        "new": 3,
+        "passed": 12,
+        "raw": 13,
+        "reinforcements": 9,
+        "seen_before": 0,
+        "unique": 12
+      },
+      "request_budget": 150,
+      "requests_made": 148,
+      "run_id": "20261003T0900Z-0000",
+      "started_at": "2026-10-03T09:00:00.000000Z"
+    },
+    {
+      "budget_exhausted": false,
+      "funnel": {
+        "dropped_negative": 1,
+        "dropped_own": 0,
+        "dropped_unrelated": 0,
+        "new": 0,
+        "passed": 12,
+        "raw": 13,
+        "reinforcements": 9,
+        "seen_before": 3,
+        "unique": 12
+      },
+      "request_budget": 150,
+      "requests_made": 148,
+      "run_id": "20261004T0900Z-0000",
+      "started_at": "2026-10-04T09:00:00.000000Z"
+    }
+  ],
+  "window": 12
+}

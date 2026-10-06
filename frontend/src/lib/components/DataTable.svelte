@@ -61,7 +61,8 @@
 		rowKey,
 		caption,
 		initialSort = null,
-		stack = false
+		stack = false,
+		compact = false
 	}: {
 		rows: readonly T[];
 		columns: readonly Column<T>[];
@@ -76,6 +77,11 @@
 		 * headers as a row of sort buttons, instead of scrolling sideways.
 		 */
 		stack?: boolean;
+		/**
+		 * For wide tables: smaller type, tighter cells and headers that wrap
+		 * (sort glyph included), so many columns fit the content width.
+		 */
+		compact?: boolean;
 	} = $props();
 
 	let chosen = $state<SortState | null>(null);
@@ -87,7 +93,7 @@
 	}
 </script>
 
-<div class="table-scroll" class:stack>
+<div class="table-scroll" class:stack class:compact>
 	<table>
 		<caption class="visually-hidden">{caption}</caption>
 		<thead>
@@ -197,6 +203,30 @@
 		opacity: 0.8;
 	}
 
+	.compact table {
+		font-size: 0.8125rem;
+	}
+
+	@media (min-width: 601px) {
+		.compact th,
+		.compact td {
+			padding-inline: var(--space-2);
+		}
+
+		.compact th {
+			white-space: normal;
+		}
+
+		.compact th button {
+			flex-wrap: wrap;
+			text-align: inherit;
+		}
+
+		.compact th.end button {
+			justify-content: flex-end;
+		}
+	}
+
 	@media (max-width: 600px) {
 		.stack table,
 		.stack tbody,
@@ -234,7 +264,8 @@
 
 		.stack td {
 			display: grid;
-			grid-template-columns: 6.5rem minmax(0, 1fr);
+			/* A page can widen the label column with --stack-label for long single-word labels. */
+			grid-template-columns: var(--stack-label, 6.5rem) minmax(0, 1fr);
 			justify-items: start;
 			gap: var(--space-2);
 			padding: var(--space-1) 0;
@@ -244,8 +275,10 @@
 
 		.stack td::before {
 			content: attr(data-label);
+			min-width: 0;
 			color: var(--color-text-muted);
 			font-weight: 600;
+			overflow-wrap: anywhere;
 		}
 
 		.stack .end {

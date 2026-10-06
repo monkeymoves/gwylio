@@ -59,6 +59,38 @@
 	--chip-blind-hatch: rgba(255, 255, 255, 0.16);
 	--banner-bg: #fff6e0;
 	--banner-border: #e3c27a;
+
+	/*
+	 * Charts and heatmaps. One blue hue from the dataviz reference ramp, stepped
+	 * light to dark for magnitude and checked with its validator (ordinal mode:
+	 * monotone lightness, visible steps, light end at least 2:1 on the surface).
+	 * --seq-1 to --seq-5 colour heatmap cells by count, in the bins 1, 2, 3 to 4,
+	 * 5 to 9, and 10 or more; --seq-ink-N is the text colour that clears 4.5:1 on
+	 * step N. A quiet cell is the bare surface; a blind spot cell is a hatch,
+	 * never a step of the ramp and never the quiet surface. --funnel-1 to
+	 * --funnel-4 step the funnel stages from raw hits to new candidates.
+	 * --viz-series-1 colours a single series (trend columns, credibility bars).
+	 */
+	--seq-1: #86b6ef;
+	--seq-2: #5598e7;
+	--seq-3: #256abf;
+	--seq-4: #184f95;
+	--seq-5: #0d366b;
+	--seq-ink-1: #1d2422;
+	--seq-ink-2: #1d2422;
+	--seq-ink-3: #ffffff;
+	--seq-ink-4: #ffffff;
+	--seq-ink-5: #ffffff;
+	--heat-quiet-bg: #ffffff;
+	--heat-blind-bg: #f1f0ec;
+	--heat-blind-hatch: rgba(29, 36, 34, 0.34);
+	--funnel-1: #86b6ef;
+	--funnel-2: #5598e7;
+	--funnel-3: #256abf;
+	--funnel-4: #184f95;
+	--viz-series-1: #2a78d6;
+	--viz-grid: #e1e0d9;
+	--viz-axis: #c3c2b7;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -87,6 +119,27 @@
 		--chip-blind-hatch: rgba(0, 0, 0, 0.14);
 		--banner-bg: #2b2516;
 		--banner-border: #6b5a2c;
+
+		--seq-1: #184f95;
+		--seq-2: #256abf;
+		--seq-3: #3987e5;
+		--seq-4: #6da7ec;
+		--seq-5: #9ec5f4;
+		--seq-ink-1: #e7ece9;
+		--seq-ink-2: #e7ece9;
+		--seq-ink-3: #121715;
+		--seq-ink-4: #121715;
+		--seq-ink-5: #121715;
+		--heat-quiet-bg: #1a211f;
+		--heat-blind-bg: #232a28;
+		--heat-blind-hatch: rgba(231, 236, 233, 0.38);
+		--funnel-1: #184f95;
+		--funnel-2: #256abf;
+		--funnel-3: #3987e5;
+		--funnel-4: #6da7ec;
+		--viz-series-1: #3987e5;
+		--viz-grid: #2c2c2a;
+		--viz-axis: #383835;
 	}
 }
 
@@ -115,6 +168,27 @@
 	--chip-blind-hatch: rgba(0, 0, 0, 0.14);
 	--banner-bg: #2b2516;
 	--banner-border: #6b5a2c;
+
+	--seq-1: #184f95;
+	--seq-2: #256abf;
+	--seq-3: #3987e5;
+	--seq-4: #6da7ec;
+	--seq-5: #9ec5f4;
+	--seq-ink-1: #e7ece9;
+	--seq-ink-2: #e7ece9;
+	--seq-ink-3: #121715;
+	--seq-ink-4: #121715;
+	--seq-ink-5: #121715;
+	--heat-quiet-bg: #1a211f;
+	--heat-blind-bg: #232a28;
+	--heat-blind-hatch: rgba(231, 236, 233, 0.38);
+	--funnel-1: #184f95;
+	--funnel-2: #256abf;
+	--funnel-3: #3987e5;
+	--funnel-4: #6da7ec;
+	--viz-series-1: #3987e5;
+	--viz-grid: #2c2c2a;
+	--viz-axis: #383835;
 }
 
 /* Phone width: 16px side gutter. */

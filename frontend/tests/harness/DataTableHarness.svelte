@@ -7,7 +7,7 @@
 		count: number | null;
 	}
 
-	let { rows }: { rows: Row[] } = $props();
+	let { rows, compact = false }: { rows: Row[]; compact?: boolean } = $props();
 
 	const columns: Column<Row>[] = [
 		{ key: 'name', label: 'Name', sortValue: (r) => r.name },
@@ -16,7 +16,7 @@
 	];
 </script>
 
-<DataTable {rows} {columns} rowKey={(r) => r.id} caption="Test rows">
+<DataTable {rows} {columns} rowKey={(r) => r.id} caption="Test rows" {compact}>
 	{#snippet cell(row: Row, column: Column<Row>)}
 		{#if column.key === 'name'}{row.name}{:else if column.key === 'count'}{row.count ?? 'none'}{:else}n{/if}
 	{/snippet}

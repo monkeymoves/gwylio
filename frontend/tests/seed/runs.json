@@ -1,0 +1,128 @@
+[
+  {
+    "budget_exhausted": false,
+    "candidates": 17,
+    "disciplines": [
+      "osint_web",
+      "osint_feed",
+      "osint_site"
+    ],
+    "finished_at": "2026-09-01T09:00:00.000000Z",
+    "funnel": {
+      "dropped_negative": 5,
+      "dropped_own": 2,
+      "dropped_unrelated": 3,
+      "new": 17,
+      "passed": 20,
+      "raw": 30,
+      "reinforcements": 0,
+      "seen_before": 0,
+      "unique": 17
+    },
+    "instrument_version": "2026.10.0",
+    "promoted": 10,
+    "request_budget": 150,
+    "requests_made": 148,
+    "run_id": "20260901T0900Z-0000",
+    "started_at": "2026-09-01T09:00:00.000000Z",
+    "status": "complete",
+    "submissions": [
+      "20260901T0900Z-0000__1"
+    ],
+    "undisposed": 1
+  },
+  {
+    "budget_exhausted": false,
+    "candidates": 17,
+    "disciplines": [
+      "osint_web",
+      "osint_feed",
+      "osint_site"
+    ],
+    "finished_at": "2026-10-01T09:00:00.000000Z",
+    "funnel": {
+      "dropped_negative": 5,
+      "dropped_own": 2,
+      "dropped_unrelated": 3,
+      "new": 0,
+      "passed": 20,
+      "raw": 30,
+      "reinforcements": 10,
+      "seen_before": 7,
+      "unique": 17
+    },
+    "instrument_version": "2026.10.0",
+    "promoted": 0,
+    "request_budget": 150,
+    "requests_made": 148,
+    "run_id": "20261001T0900Z-0000",
+    "started_at": "2026-10-01T09:00:00.000000Z",
+    "status": "complete",
+    "submissions": [
+      "20261001T0900Z-0000__1"
+    ],
+    "undisposed": 0
+  },
+  {
+    "budget_exhausted": false,
+    "candidates": 12,
+    "disciplines": [
+      "osint_web",
+      "osint_feed",
+      "osint_site"
+    ],
+    "finished_at": "2026-10-03T09:00:00.000000Z",
+    "funnel": {
+      "dropped_negative": 1,
+      "dropped_own": 0,
+      "dropped_unrelated": 0,
+      "new": 3,
+      "passed": 12,
+      "raw": 13,
+      "reinforcements": 9,
+      "seen_before": 0,
+      "unique": 12
+    },
+    "instrument_version": "2026.10.0",
+    "promoted": 0,
+    "request_budget": 150,
+    "requests_made": 148,
+    "run_id": "20261003T0900Z-0000",
+    "started_at": "2026-10-03T09:00:00.000000Z",
+    "status": "complete",
+    "submissions": [
+      "20261003T0900Z-0000__1"
+    ],
+    "undisposed": 0
+  },
+  {
+    "budget_exhausted": false,
+    "candidates": 12,
+    "disciplines": [
+      "osint_web",
+      "osint_feed",
+      "osint_site"
+    ],
+    "finished_at": "2026-10-04T09:00:00.000000Z",
+    "funnel": {
+      "dropped_negative": 1,
+      "dropped_own": 0,
+      "dropped_unrelated": 0,
+      "new": 0,
+      "passed": 12,
+      "raw": 13,
+      "reinforcements": 9,
+      "seen_before": 3,
+      "unique": 12
+    },
+    "instrument_version": "2026.10.0",
+    "promoted": 0,
+    "request_budget": 150,
+    "requests_made": 148,
+    "run_id": "20261004T0900Z-0000",
+    "started_at": "2026-10-04T09:00:00.000000Z",
+    "status": "complete",
+    "submissions": [],
+    "undisposed": 0
+  }
+]
