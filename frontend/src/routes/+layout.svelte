@@ -1,11 +1,15 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 	import { page } from '$app/state';
+	import PasswordGate from '$lib/components/PasswordGate.svelte';
 	import { formatInstant } from '$lib/data/labels';
+	import { configuredGateHash } from '$lib/gate';
 	import '$lib/styles/tokens.css';
 	import type { LayoutData } from './$types';
 
 	let { data, children }: { data: LayoutData; children: Snippet } = $props();
+
+	const gateHash = configuredGateHash();
 
 	const setId = $derived(data.meta.default_requirement_set_id);
 	const nav = $derived([
@@ -25,42 +29,44 @@
 	}
 </script>
 
-<a class="skip" href="#main">Skip to content</a>
+<PasswordGate hash={gateHash}>
+	<a class="skip" href="#main">Skip to content</a>
 
-<header class="site-header">
-	<div class="inner bar">
-		<a class="brand" href="/">Gwylio</a>
-		<nav aria-label="Main">
-			<ul>
-				{#each nav as item (item.href)}
-					<li>
-						<a href={item.href} aria-current={isCurrent(item.match) ? 'page' : undefined}
-							>{#if item.title}<abbr title={item.title}>{item.label}</abbr>{:else}{item.label}{/if}</a
-						>
-					</li>
-				{/each}
+	<header class="site-header">
+		<div class="inner bar">
+			<a class="brand" href="/">Gwylio</a>
+			<nav aria-label="Main">
+				<ul>
+					{#each nav as item (item.href)}
+						<li>
+							<a href={item.href} aria-current={isCurrent(item.match) ? 'page' : undefined}
+								>{#if item.title}<abbr title={item.title}>{item.label}</abbr>{:else}{item.label}{/if}</a
+							>
+						</li>
+					{/each}
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main id="main" class="inner">
+		{@render children()}
+	</main>
+
+	<footer class="site-footer">
+		<div class="inner">
+			<ul class="facts">
+				<li>
+					Snapshot generated <time datetime={data.meta.generated_at}
+						>{formatInstant(data.meta.generated_at)}</time
+					>
+				</li>
+				<li>Instrument {data.meta.instrument_version}</li>
+				<li>Rubric {data.meta.rubric_version}</li>
 			</ul>
-		</nav>
-	</div>
-</header>
-
-<main id="main" class="inner">
-	{@render children()}
-</main>
-
-<footer class="site-footer">
-	<div class="inner">
-		<ul class="facts">
-			<li>
-				Snapshot generated <time datetime={data.meta.generated_at}
-					>{formatInstant(data.meta.generated_at)}</time
-				>
-			</li>
-			<li>Instrument {data.meta.instrument_version}</li>
-			<li>Rubric {data.meta.rubric_version}</li>
-		</ul>
-	</div>
-</footer>
+		</div>
+	</footer>
+</PasswordGate>
 
 <style>
 	.inner {

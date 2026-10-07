@@ -17,7 +17,7 @@ SEED_ENV := GWYLIO_DATA_DIR=$(SEED_DIR) GWYLIO_DB_PATH= GWYLIO_ACADEMIC=
 SEED_SITE := $(CURDIR)/.seed-site
 SEED_SITE_ENV := GWYLIO_DATA_DIR=$(SEED_SITE)/data GWYLIO_DB_PATH= GWYLIO_ACADEMIC=
 
-.PHONY: help setup check test e2e ci build schema seed dev serve frontend-dev collect ingest publish deploy seed-screenshots
+.PHONY: help setup check test e2e ci build schema seed dev serve frontend-dev collect ingest publish deploy site-password seed-screenshots
 
 help: ## List the targets
 	@grep -E '^[a-z][a-z-]*:.*## ' $(MAKEFILE_LIST) | awk -F ':.*## ' '{printf "  %-10s %s\n", $$1, $$2}'
@@ -88,6 +88,15 @@ deploy: ## Publish the snapshot, build the static site and deploy it to Firebase
 	$(UV) gwylio publish
 	$(PNPM) build
 	firebase deploy --only hosting
+
+site-password: ## Set the hosted site's password screen (prompts; keeps only a hash in the gitignored frontend/.env.production.local)
+	@read -r -s -p "Site password: " pw; echo; \
+	test -n "$$pw" || { echo "site-password: no password given, nothing changed" >&2; exit 1; }; \
+	read -r -s -p "Same again: " again; echo; \
+	test "$$pw" = "$$again" || { echo "site-password: the two entries differ, nothing changed" >&2; exit 1; }; \
+	hash=$$(printf 'gwylio-site:%s' "$$pw" | shasum -a 256 | cut -d' ' -f1); \
+	printf 'PUBLIC_GWYLIO_SITE_PASSWORD_SHA256=%s\n' "$$hash" > frontend/.env.production.local; \
+	echo "site-password: hash written to frontend/.env.production.local; run make deploy to put the screen live"
 
 seed-screenshots: ## Build a scratch copy of the site from the seed fixture, run Playwright on it, keep the screenshots in docs/evidence/seed
 	@if (exec 3<>/dev/tcp/127.0.0.1/4173) 2>/dev/null; then echo "seed-screenshots: port 4173 is in use; stop that server first" >&2; exit 1; fi

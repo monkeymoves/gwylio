@@ -134,6 +134,27 @@ not access control: the JSON files stay fetchable by URL. Real control means
 the data is served only after a server, or database security rules, has
 checked who is asking.
 
+### The password screen
+
+The hosted site can show a simple password screen before any page. It keeps
+casual visitors out, and that is all: it is the client-side curtain ADR 0005
+warns about, so the JSON under `/data/` stays fetchable by anyone who knows
+the URLs. Treat the published register as public either way.
+
+Set or change the password from the repository root, then deploy:
+
+```bash
+make site-password
+```
+
+It prompts twice and writes only a salted SHA-256 hash, as
+`PUBLIC_GWYLIO_SITE_PASSWORD_SHA256`, to `frontend/.env.production.local`,
+which is gitignored. Vite reads that file for production builds only, so
+`make dev`, continuous integration and the end to end tests run without the
+screen. A browser that has entered the password is remembered until the
+password changes. To remove the screen, delete that file and run
+`make deploy` again.
+
 ## Troubleshooting
 
 - **`deploy: the firebase command is missing`**: run `npm install -g

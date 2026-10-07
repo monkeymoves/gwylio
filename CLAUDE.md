@@ -31,6 +31,7 @@ make schema    # regenerate JSON Schema, TypeScript types, GLOSSARY.md and skill
 make seed      # recreate backend/tests/fixtures/seed; make seed-screenshots shows it as a site
 make dev       # read API (port 8000) and Vite dev server together
 make deploy    # publish, build, firebase deploy --only hosting (see docs/DEPLOY.md)
+make site-password  # password screen for the hosted site; stores only a hash (gitignored)
 gwylio check | rebuild | migrate | datecheck [--today D] | audit [--set ID] | yield
 gwylio collect [--discipline D] [--dry-run --out F | --fake] [--at INSTANT]
 gwylio probe "drought" --discipline osint_feed       # stores nothing

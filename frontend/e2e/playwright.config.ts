@@ -35,6 +35,9 @@ export default defineConfig({
 		cwd: '..',
 		url: 'http://localhost:4173',
 		reuseExistingServer: !process.env.CI,
+		// The password screen stays off under test, even when a local
+		// .env.production.local sets the hash (process env beats .env files).
+		env: { PUBLIC_GWYLIO_SITE_PASSWORD_SHA256: '' },
 		timeout: 180_000
 	}
 });

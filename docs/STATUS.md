@@ -55,9 +55,10 @@ Counts after the scan and the test fixes, on the owner's machine:
    later movement or as guidance, landing and index pages. An instrument
    review (date-bounded queries, a narrower site list) should cut the noise;
    changing the instrument is a separate, versioned change.
-4. **Access control is proposed only.** ADR 0005 is "proposed". The deployed
-   site is public by URL, including every file under `/data/`. A client-side
-   login over static files would not be access control.
+4. **Access control is proposed only.** ADR 0005 is "proposed". Since 7
+   October 2026 the deployed site shows a password screen (`make
+   site-password`, see `docs/DEPLOY.md`), but that is a client-side curtain,
+   not access control: every file under `/data/` is still public by URL.
 5. **The tactical level is a seam.** `gwylio product --level tactical` exits 4.
 6. **GEOINT (geospatial intelligence) and sensor disciplines are reserved
    values only.** There are no collectors for them, and osint_academic has not
@@ -181,7 +182,7 @@ Counts after the scan and the test fixes, on the owner's machine:
 | README, GUIDE, ARCHITECTURE, CLAUDE.md | built | Plus DEPLOY and this page. |
 | Scripted dry run (collect on cassettes, ingest, sweep, product, export, publish, rebuild) | built | Inside `make ci`; never touches the network. |
 | Final whole-repo review against the plan | built | This page. |
-| Access control for the hosted site | partial | ADR 0005 written, status proposed; nothing built, and the site is now public (limit 4). |
+| Access control for the hosted site | partial | ADR 0005 written, status proposed; a client-side password screen keeps casual visitors out, but the data stays public by URL (limit 4). |
 
 ## Deviations from the plan
 
